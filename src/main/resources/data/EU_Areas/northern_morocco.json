@@ -1,0 +1,22 @@
+{
+    "id": "northern_morocco",
+    "borders": [
+        "western_mediterranean",
+        "algiers",
+        "southern_morocco",
+        "central_atlantic"
+    ],
+    "provinces": [
+        "gharb",
+        "centa",
+        "fez",
+        "marrakech",
+        "tangiers"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        1820,
+        3856
+    ]
+}

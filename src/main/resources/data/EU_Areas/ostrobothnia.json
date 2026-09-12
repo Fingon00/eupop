@@ -1,0 +1,19 @@
+{
+    "id": "ostrobothnia",
+    "borders": [
+        "pomorye",
+        "norrland",
+        "finland",
+        "gulf_of_bothnia",
+        "karelia"
+    ],
+    "provinces": [
+        "osterbotten"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4879,
+        498
+    ]
+}

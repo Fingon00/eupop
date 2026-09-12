@@ -1,0 +1,24 @@
+{
+    "id": "prussia",
+    "borders": [
+        "pomerania",
+        "baltic_sea",
+        "wielkopolska",
+        "brandenburg",
+        "estonia_&_livonia",
+        "lithuania",
+        "mazovia_&_malopolska"
+    ],
+    "provinces": [
+        "danzig",
+        "kulm",
+        "osterode",
+        "konigsberg"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4590,
+        1479
+    ]
+}

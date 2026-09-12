@@ -1,0 +1,27 @@
+{
+    "id": "brittany_&_normandy",
+    "borders": [
+        "aquitaine",
+        "loire",
+        "bay_of_biscay",
+        "seine",
+        "english_channel"
+    ],
+    "provinces": [
+        "rennes",
+        "nantes",
+        "caux",
+        "maine",
+        "normandie"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2149,
+        2057
+    ],
+    "cube_location": [
+        2330,
+        2054
+    ]
+}

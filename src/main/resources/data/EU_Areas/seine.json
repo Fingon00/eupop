@@ -1,0 +1,27 @@
+{
+    "id": "seine",
+    "borders": [
+        "loire",
+        "flanders_&_wallonia",
+        "brittany_&_normandy",
+        "english_channel",
+        "burgundy",
+        "rhineland"
+    ],
+    "provinces": [
+        "champagne",
+        "paris",
+        "picardie",
+        "artois"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2842,
+        1934
+    ],
+    "cube_location": [
+        2757,
+        2043
+    ]
+}

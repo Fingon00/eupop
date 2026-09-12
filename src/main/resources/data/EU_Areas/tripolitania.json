@@ -1,0 +1,18 @@
+{
+    "id": "tripolitania",
+    "borders": [
+        "tunisia",
+        "central_mediterranean",
+        "north_sahara",
+        "cyrenaica"
+    ],
+    "provinces": [
+        "tripoli"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3672,
+        3984
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "vologda",
+    "borders": [
+        "pomorye",
+        "karelia",
+        "novgorod",
+        "central_russia",
+        "perm"
+    ],
+    "provinces": [
+        "beloozero",
+        "vologda"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5692,
+        941
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "north_sahara",
+    "borders": [
+        "tunisia",
+        "algiers",
+        "tripolitania"
+    ],
+    "provinces": [
+        "qafsah"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3111,
+        3827
+    ]
+}

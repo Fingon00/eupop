@@ -1,0 +1,25 @@
+{
+    "id": "central_italy",
+    "borders": [
+        "venetia",
+        "naples",
+        "adriatic_sea",
+        "gulf_of_lion",
+        "lombardy",
+        "central_mediterranean"
+    ],
+    "provinces": [
+        "ferrara",
+        "firenze",
+        "pisa",
+        "siena",
+        "roma",
+        "ancona"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3756,
+        2901
+    ]
+}

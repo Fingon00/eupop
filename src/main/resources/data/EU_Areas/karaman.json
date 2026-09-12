@@ -1,0 +1,26 @@
+{
+    "id": "karaman",
+    "borders": [
+        "eastern_mediterranean",
+        "aydin",
+        "northern_anatolia",
+        "rum",
+        "kurdistan",
+        "syria"
+    ],
+    "provinces": [
+        "adana",
+        "karaman"
+    ],
+    "mountain_borders": [
+        "aydin",
+        "rum",
+        "kurdistan",
+        "syria"
+    ],
+    "type": "area",
+    "religion_center": [
+        5659,
+        3339
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": "vestlandet",
+    "borders": [
+        "norwegian_sea",
+        "ostlandet",
+        "north_sea",
+        "trondelag"
+    ],
+    "provinces": [
+        "bergenlius"
+    ],
+    "mountain_borders": [
+        "ostlandet",
+        "trondelag"
+    ],
+    "type": "area",
+    "religion_center": [
+        3590,
+        402
+    ]
+}

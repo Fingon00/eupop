@@ -1,0 +1,18 @@
+{
+    "id": "southern_morocco",
+    "borders": [
+        "algiers",
+        "northern_morocco",
+        "central_atlantic"
+    ],
+    "provinces": [
+        "sus",
+        "tafilalt"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        1981,
+        3957
+    ]
+}

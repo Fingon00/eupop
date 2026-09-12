@@ -1,0 +1,19 @@
+{
+    "id": "palestine",
+    "borders": [
+        "eastern_mediterranean",
+        "syria",
+        "egypt"
+    ],
+    "provinces": [
+        "jaffa",
+        "gazzah",
+        "al-quds"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5651,
+        3984
+    ]
+}

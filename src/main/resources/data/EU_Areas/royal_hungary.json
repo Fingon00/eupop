@@ -1,0 +1,29 @@
+{
+    "id": "royal_hungary",
+    "borders": [
+        "austria",
+        "wielkopolska",
+        "hungarian_plain",
+        "croatia_&_bosnia",
+        "red_ruthenia",
+        "transylvania",
+        "bohemia",
+        "mazovia_&_malopolska"
+    ],
+    "provinces": [
+        "sopron",
+        "pozsony",
+        "szepes"
+    ],
+    "mountain_borders": [
+        "wielkopolska",
+        "mazovia_&_malopolska",
+        "red_ruthenia",
+        "transylvania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4333,
+        2060
+    ]
+}

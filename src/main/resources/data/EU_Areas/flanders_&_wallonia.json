@@ -1,0 +1,28 @@
+{
+    "id": "flanders_&_wallonia",
+    "borders": [
+        "seine",
+        "netherlands",
+        "english_channel",
+        "rhineland",
+        "westphalia"
+    ],
+    "provinces": [
+        "brugge",
+        "gent",
+        "antwerpen",
+        "namur",
+        "liege",
+        "luxembourg"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3035,
+        1880
+    ],
+    "cube_location": [
+        2870,
+        1789
+    ]
+}

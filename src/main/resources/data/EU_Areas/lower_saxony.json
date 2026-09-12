@@ -1,0 +1,29 @@
+{
+    "id": "lower_saxony",
+    "borders": [
+        "pomerania",
+        "brandenburg",
+        "netherlands",
+        "westphalia",
+        "jutland",
+        "north_sea",
+        "saxony"
+    ],
+    "provinces": [
+        "bremen",
+        "hamburg",
+        "hannover",
+        "magdeburg",
+        "braunschweig"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3590,
+        1590
+    ],
+    "cube_location": [
+        3482,
+        1521
+    ]
+}

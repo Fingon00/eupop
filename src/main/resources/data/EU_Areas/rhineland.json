@@ -1,0 +1,30 @@
+{
+    "id": "rhineland",
+    "borders": [
+        "switzerland",
+        "burgundy",
+        "seine",
+        "westphalia",
+        "bavaria_&_swabia",
+        "flanders_&_wallonia",
+        "saxony"
+    ],
+    "provinces": [
+        "mainz",
+        "pfalz",
+        "sundgau",
+        "lorraine"
+    ],
+    "mountain_borders": [
+        "switzerland"
+    ],
+    "type": "area",
+    "religion_center": [
+        3326,
+        2138
+    ],
+    "cube_location": [
+        3212,
+        2076
+    ]
+}

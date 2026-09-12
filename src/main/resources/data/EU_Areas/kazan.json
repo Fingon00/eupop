@@ -1,0 +1,17 @@
+{
+    "id": "kazan",
+    "borders": [
+        "central_russia",
+        "perm",
+        "saratov"
+    ],
+    "provinces": [
+        "kazan"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6563,
+        1667
+    ]
+}

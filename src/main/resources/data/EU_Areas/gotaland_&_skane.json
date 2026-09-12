@@ -1,0 +1,20 @@
+{
+    "id": "gotaland_&_skane",
+    "borders": [
+        "skagerrak",
+        "baltic_sea",
+        "svealand",
+        "ostlandet"
+    ],
+    "provinces": [
+        "lund",
+        "gotland",
+        "ostergotland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3885,
+        865
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "astrakhan",
+    "borders": [
+        "circassia",
+        "crimea",
+        "saratov",
+        "caucasus"
+    ],
+    "provinces": [
+        "majar",
+        "sarai",
+        "astrakhan"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6449,
+        2419
+    ]
+}

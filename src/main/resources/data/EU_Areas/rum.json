@@ -1,0 +1,26 @@
+{
+    "id": "rum",
+    "borders": [
+        "black_sea",
+        "circassia",
+        "transcaucasia",
+        "northern_anatolia",
+        "karaman",
+        "kurdistan"
+    ],
+    "provinces": [
+        "amasya",
+        "trebizond",
+        "erzurum"
+    ],
+    "mountain_borders": [
+        "transcaucasia",
+        "karaman",
+        "kurdistan"
+    ],
+    "type": "area",
+    "religion_center": [
+        6115,
+        3102
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "id": "mazovia_&_malopolska",
+    "borders": [
+        "red_ruthenia",
+        "royal_hungary",
+        "prussia",
+        "wielkopolska",
+        "lithuania"
+    ],
+    "provinces": [
+        "warszawa",
+        "lublin",
+        "krakow"
+    ],
+    "mountain_borders": [
+        "royal_hungary"
+    ],
+    "type": "area",
+    "religion_center": [
+        4703,
+        1619
+    ]
+}

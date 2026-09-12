@@ -1,0 +1,23 @@
+{
+    "id": "karelia",
+    "borders": [
+        "pomorye",
+        "vologda",
+        "novgorod",
+        "finland",
+        "estonia_&_livonia",
+        "ostrobothnia",
+        "gulf_of_bothnia"
+    ],
+    "provinces": [
+        "olonets",
+        "ladoga",
+        "neva"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5383,
+        500
+    ]
+}

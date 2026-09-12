@@ -1,0 +1,22 @@
+{
+    "id": "algiers",
+    "borders": [
+        "southern_morocco",
+        "northern_morocco",
+        "western_mediterranean",
+        "tunisia",
+        "north_sahara"
+    ],
+    "provinces": [
+        "tlemcen",
+        "oran",
+        "mitidja",
+        "kabylia"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2583,
+        3739
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "caucasus",
+    "borders": [
+        "circassia",
+        "transcaucasia",
+        "astrakhan"
+    ],
+    "provinces": [
+        "terek",
+        "shirvan"
+    ],
+    "mountain_borders": [
+        "transcaucasia"
+    ],
+    "type": "area",
+    "religion_center": [
+        6656,
+        2642
+    ]
+}

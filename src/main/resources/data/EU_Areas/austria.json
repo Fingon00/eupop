@@ -1,0 +1,26 @@
+{
+    "id": "austria",
+    "borders": [
+        "bavaria_&_swabia",
+        "tirol",
+        "venetia",
+        "royal_hungary",
+        "croatia_&_bosnia",
+        "bohemia"
+    ],
+    "provinces": [
+        "osterreich",
+        "wien",
+        "steiermark"
+    ],
+    "mountain_borders": [
+        "tirol",
+        "venetia",
+        "croatia_&_bosnia"
+    ],
+    "type": "area",
+    "religion_center": [
+        4043,
+        2318
+    ]
+}

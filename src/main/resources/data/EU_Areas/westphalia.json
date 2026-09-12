@@ -1,0 +1,27 @@
+{
+    "id": "westphalia",
+    "borders": [
+        "flanders_&_wallonia",
+        "rhineland",
+        "netherlands",
+        "lower_saxony",
+        "saxony"
+    ],
+    "provinces": [
+        "kleve",
+        "koln",
+        "trier",
+        "frankfurt",
+        "munster"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3421,
+        1690
+    ],
+    "cube_location": [
+        3261,
+        1770
+    ]
+}

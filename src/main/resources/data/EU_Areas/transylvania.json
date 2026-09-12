@@ -1,0 +1,27 @@
+{
+    "id": "transylvania",
+    "borders": [
+        "serbia_&_albania",
+        "wallachia_&_bulgaria",
+        "royal_hungary",
+        "hungarian_plain",
+        "moldavia",
+        "red_ruthenia"
+    ],
+    "provinces": [
+        "hunyad",
+        "torda"
+    ],
+    "mountain_borders": [
+        "royal_hungary",
+        "red_ruthenia",
+        "serbia_&_albania",
+        "wallachia_&_bulgaria",
+        "moldavia"
+    ],
+    "type": "area",
+    "religion_center": [
+        4826,
+        2223
+    ]
+}

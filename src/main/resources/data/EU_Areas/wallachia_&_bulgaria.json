@@ -1,0 +1,24 @@
+{
+    "id": "wallachia_&_bulgaria",
+    "borders": [
+        "serbia_&_albania",
+        "transylvania",
+        "moldavia",
+        "macedonia_&_thrace",
+        "black_sea"
+    ],
+    "provinces": [
+        "sofya",
+        "silistre",
+        "buzau",
+        "tirgoviste"
+    ],
+    "mountain_borders": [
+        "transylvania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4776,
+        2682
+    ]
+}

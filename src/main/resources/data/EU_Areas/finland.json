@@ -1,0 +1,18 @@
+{
+    "id": "finland",
+    "borders": [
+        "ostrobothnia",
+        "gulf_of_bothnia",
+        "karelia"
+    ],
+    "provinces": [
+        "abo",
+        "nyland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4879,
+        498
+    ]
+}

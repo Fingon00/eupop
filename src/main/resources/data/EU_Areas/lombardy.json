@@ -1,0 +1,32 @@
+{
+    "id": "lombardy",
+    "borders": [
+        "venetia",
+        "tirol",
+        "switzerland",
+        "languedoc",
+        "burgundy",
+        "gulf_of_lion",
+        "central_italy"
+    ],
+    "provinces": [
+        "piemonte",
+        "milano",
+        "brescia",
+        "parma",
+        "mantova",
+        "genova",
+        "cremona"
+    ],
+    "mountain_borders": [
+        "tirol",
+        "switzerland",
+        "languedoc",
+        "burgundy"
+    ],
+    "type": "area",
+    "religion_center": [
+        3279,
+        2694
+    ]
+}

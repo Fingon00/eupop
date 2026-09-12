@@ -1,0 +1,23 @@
+{
+    "id": "dalmatia",
+    "borders": [
+        "adriatic_sea",
+        "venetia",
+        "croatia_&_bosnia",
+        "serbia_&_albania"
+    ],
+    "provinces": [
+        "zara",
+        "rijeka",
+        "ragusa"
+    ],
+    "mountain_borders": [
+        "venetia",
+        "serbia_&_albania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4068,
+        2666
+    ]
+}

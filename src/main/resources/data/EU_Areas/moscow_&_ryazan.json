@@ -1,0 +1,22 @@
+{
+    "id": "moscow_&_ryazan",
+    "borders": [
+        "central_russia",
+        "novgorod",
+        "white_ruthenia",
+        "saratov",
+        "eastern_ukraine"
+    ],
+    "provinces": [
+        "tver",
+        "moskva",
+        "ryazan",
+        "odoyev"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5980,
+        1674
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": "scotland",
+    "borders": [
+        "northeastern_atlantic",
+        "doggerbank",
+        "northumbria"
+    ],
+    "provinces": [
+        "aberdeen",
+        "perth",
+        "lothian",
+        "ayrshire"
+    ],
+    "mountainborders": [],
+    "type": "area",
+    "religion_center": [
+        1962,
+        764
+    ],
+    "cube_location": [
+        1966,
+        879
+    ]
+}

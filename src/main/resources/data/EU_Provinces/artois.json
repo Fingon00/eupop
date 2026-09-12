@@ -1,0 +1,11 @@
+{
+    "id": "artois",
+    "area": "seine",
+    "type": "province",
+    "center": [
+        2842,
+        1934
+    ],
+    "size": "small",
+    "port": false
+}

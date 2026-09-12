@@ -1,0 +1,24 @@
+{
+    "id": "trondelag",
+    "borders": [
+        "norwegian_sea",
+        "ostlandet",
+        "vestlandet",
+        "norrland",
+        "svealand"
+    ],
+    "provinces": [
+        "trondheim"
+    ],
+    "mountain_borders": [
+        "ostlandet",
+        "vestlandet",
+        "norrland",
+        "svealand"
+    ],
+    "type": "area",
+    "religion_center": [
+        3590,
+        402
+    ]
+}

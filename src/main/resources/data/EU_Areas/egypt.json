@@ -1,0 +1,19 @@
+{
+    "id": "egypt",
+    "borders": [
+        "eastern_mediterranean",
+        "cyrenaica",
+        "palestine"
+    ],
+    "provinces": [
+        "qahirah",
+        "iskandariyya",
+        "dumyat"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5151,
+        3908
+    ]
+}

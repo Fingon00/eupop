@@ -1,0 +1,32 @@
+{
+    "id": "aragon",
+    "borders": [
+        "western_mediterranean",
+        "leon",
+        "castile",
+        "gulf_of_lion",
+        "bay_of_biscay",
+        "aquitaine",
+        "languedoc"
+    ],
+    "provinces": [
+        "navarra",
+        "zaragoza",
+        "barcelona",
+        "valencia"
+    ],
+    "mountain_borders": [
+        "leon",
+        "aquitaine",
+        "languedoc"
+    ],
+    "type": "area",
+    "religion_center": [
+        2378,
+        2858
+    ],
+    "cube_location": [
+        2466,
+        2846
+    ]
+}

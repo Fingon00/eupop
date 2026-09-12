@@ -1,0 +1,30 @@
+{
+    "id": "burgundy",
+    "borders": [
+        "languedoc",
+        "switzerland",
+        "lombardy",
+        "loire",
+        "rhineland",
+        "seine"
+    ],
+    "provinces": [
+        "franche-comte",
+        "bourgogne",
+        "lyon",
+        "savoie"
+    ],
+    "mountain_borders": [
+        "switzerland",
+        "lombardy"
+    ],
+    "type": "area",
+    "religion_center": [
+        2879,
+        2230
+    ],
+    "cube_location": [
+        2970,
+        2400
+    ]
+}

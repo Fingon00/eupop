@@ -1,0 +1,28 @@
+{
+    "id": "leon",
+    "borders": [
+        "portugal",
+        "bay_of_biscay",
+        "central_atlantic",
+        "castile",
+        "aragon",
+        "andalucia"
+    ],
+    "provinces": [
+        "galicia",
+        "salamanca",
+        "badajoz"
+    ],
+    "mountain_borders": [
+        "aragon"
+    ],
+    "type": "area",
+    "religion_center": [
+        1918,
+        2702
+    ],
+    "cube_location": [
+        1733,
+        2766
+    ]
+}

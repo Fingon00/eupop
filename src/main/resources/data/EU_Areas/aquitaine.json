@@ -1,0 +1,29 @@
+{
+    "id": "aquitaine",
+    "borders": [
+        "brittany_&_normandy",
+        "loire",
+        "bay_of_biscay",
+        "aragon",
+        "languedoc"
+    ],
+    "provinces": [
+        "bordeaux",
+        "anjou",
+        "armagnac",
+        "saintonge",
+        "poitou"
+    ],
+    "mountain_borders": [
+        "aragon"
+    ],
+    "type": "area",
+    "religion_center": [
+        2527,
+        2505
+    ],
+    "cube_location": [
+        2400,
+        2606
+    ]
+}

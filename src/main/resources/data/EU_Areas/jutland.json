@@ -1,0 +1,21 @@
+{
+    "id": "jutland",
+    "borders": [
+        "north_sea",
+        "skagerrak",
+        "pomerania",
+        "lower_saxony"
+    ],
+    "provinces": [
+        "slesvig",
+        "holstein",
+        "vestjylland",
+        "ostjylland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3439,
+        1127
+    ]
+}

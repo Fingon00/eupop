@@ -1,0 +1,25 @@
+{
+    "id": "red_ruthenia",
+    "borders": [
+        "white_ruthenia",
+        "lithuania",
+        "western_ukraine",
+        "royal_hungary",
+        "mazovia_&_malopolska",
+        "moldavia",
+        "transylvania"
+    ],
+    "provinces": [
+        "voluine",
+        "lwow"
+    ],
+    "mountain_borders": [
+        "royal_hungary",
+        "transylvania"
+    ],
+    "type": "area",
+    "religion_center": [
+        5063,
+        1738
+    ]
+}

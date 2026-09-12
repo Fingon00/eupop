@@ -1,0 +1,23 @@
+{
+    "id": "ireland",
+    "borders": [
+        "northeastern_atlantic",
+        "eastern_atlantic"
+    ],
+    "provinces": [
+        "ulaidh",
+        "pale",
+        "laighin",
+        "mhumhain"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        1628,
+        1271
+    ],
+    "cube_location": [
+        1590,
+        1402
+    ]
+}

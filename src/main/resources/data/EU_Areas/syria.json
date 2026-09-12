@@ -1,0 +1,22 @@
+{
+    "id": "syria",
+    "borders": [
+        "eastern_mediterranean",
+        "palestine",
+        "kurdistan",
+        "karaman"
+    ],
+    "provinces": [
+        "halab",
+        "tarabulus",
+        "dimashq"
+    ],
+    "mountain_borders": [
+        "karaman"
+    ],
+    "type": "area",
+    "religion_center": [
+        5965,
+        3525
+    ]
+}

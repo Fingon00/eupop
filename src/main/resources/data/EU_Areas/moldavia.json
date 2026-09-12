@@ -1,0 +1,24 @@
+{
+    "id": "moldavia",
+    "borders": [
+        "transylvania",
+        "wallachia_&_bulgaria",
+        "crimea",
+        "western_ukraine",
+        "red_ruthenia",
+        "black_sea"
+    ],
+    "provinces": [
+        "edisanas",
+        "suceava",
+        "basarabia"
+    ],
+    "mountain_borders": [
+        "transylvania"
+    ],
+    "type": "area",
+    "religion_center": [
+        5261,
+        2294
+    ]
+}

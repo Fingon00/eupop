@@ -1,0 +1,15 @@
+{
+    "id": "sjaelland_&_fyn",
+    "borders": [
+        "skagerrak"
+    ],
+    "provinces": [
+        "kobenhavn"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3815,
+        1219
+    ]
+}

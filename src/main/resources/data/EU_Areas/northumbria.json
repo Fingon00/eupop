@@ -1,0 +1,25 @@
+{
+    "id": "northumbria",
+    "borders": [
+        "northeastern_atlantic",
+        "doggerbank",
+        "scotland",
+        "wales_&_wessex",
+        "east_anglia"
+    ],
+    "provinces": [
+        "northumberland",
+        "lancashire",
+        "york"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2403,
+        1276
+    ],
+    "cube_location": [
+        2176,
+        1218
+    ]
+}

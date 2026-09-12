@@ -1,0 +1,17 @@
+{
+    "id": "aegean_archipelago",
+    "borders": [
+        "eastern_mediterranean"
+    ],
+    "provinces": [
+        "naxos",
+        "rhodes",
+        "creta"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5053,
+        3542
+    ]
+}

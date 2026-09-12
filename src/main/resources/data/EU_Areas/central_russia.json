@@ -1,0 +1,23 @@
+{
+    "id": "central_russia",
+    "borders": [
+        "kazan",
+        "moscow_&_ryazan",
+        "novgorod",
+        "vologda",
+        "perm",
+        "saratov"
+    ],
+    "provinces": [
+        "yaroslavl",
+        "suzdal",
+        "murom",
+        "vladimir"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6129,
+        1089
+    ]
+}

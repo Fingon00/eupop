@@ -1,0 +1,25 @@
+{
+    "id": "crimea",
+    "borders": [
+        "saratov",
+        "eastern_ukraine",
+        "western_ukraine",
+        "black_sea",
+        "circassia",
+        "astrakhan",
+        "moldavia"
+    ],
+    "provinces": [
+        "azov",
+        "crimea",
+        "caffa",
+        "zaporoze",
+        "kyzyl-yar"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6013,
+        2205
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "pomorye",
+    "borders": [
+        "karelia",
+        "vologda",
+        "perm",
+        "ostrobothnia"
+    ],
+    "provinces": [
+        "arkhangelsk"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5383,
+        500
+    ]
+}

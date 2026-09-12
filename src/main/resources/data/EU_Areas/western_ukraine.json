@@ -1,0 +1,20 @@
+{
+    "id": "western_ukraine",
+    "borders": [
+        "crimea",
+        "moldavia",
+        "eastern_ukraine",
+        "white_ruthenia",
+        "red_ruthenia"
+    ],
+    "provinces": [
+        "podole",
+        "kijevas"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5472,
+        2119
+    ]
+}

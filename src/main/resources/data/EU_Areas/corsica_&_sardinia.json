@@ -1,0 +1,17 @@
+{
+    "id": "corsica_&_sardinia",
+    "borders": [
+        "central_mediterranean",
+        "gulf_of_lion"
+    ],
+    "provinces": [
+        "sardenya",
+        "corsica"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3438,
+        3110
+    ]
+}

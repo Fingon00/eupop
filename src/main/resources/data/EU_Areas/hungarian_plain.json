@@ -1,0 +1,19 @@
+{
+    "id": "hungarian_plain",
+    "borders": [
+        "serbia_&_albania",
+        "croatia_&_bosnia",
+        "royal_hungary",
+        "transylvania"
+    ],
+    "provinces": [
+        "pest",
+        "szabolcs"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4324,
+        2379
+    ]
+}

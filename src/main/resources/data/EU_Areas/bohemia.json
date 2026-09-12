@@ -1,0 +1,23 @@
+{
+    "id": "bohemia",
+    "borders": [
+        "bavaria_&_swabia",
+        "saxony",
+        "brandenburg",
+        "royal_hungary",
+        "wielkopolska",
+        "austria"
+    ],
+    "provinces": [
+        "praha",
+        "olomouc",
+        "rudohori",
+        "budejovice"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4100,
+        1942
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "id": "languedoc",
+    "borders": [
+        "aquitaine",
+        "burgundy",
+        "loire",
+        "lombardy",
+        "aragon",
+        "gulf_of_lion"
+    ],
+    "provinces": [
+        "provence",
+        "toulouse",
+        "montpellier",
+        "avignon"
+    ],
+    "mountain_borders": [
+        "lombardy",
+        "aragon"
+    ],
+    "type": "area",
+    "religion_center": [
+        3043,
+        2678
+    ],
+    "cube_location": [
+        2631,
+        2760
+    ]
+}

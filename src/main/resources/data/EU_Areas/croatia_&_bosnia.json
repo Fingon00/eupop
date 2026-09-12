@@ -1,0 +1,24 @@
+{
+    "id": "croatia_&_bosnia",
+    "borders": [
+        "austria",
+        "hungarian_plain",
+        "royal_hungary",
+        "venetia",
+        "dalmatia",
+        "serbia_&_albania"
+    ],
+    "provinces": [
+        "zagreh",
+        "bosnia"
+    ],
+    "mountain_borders": [
+        "austria",
+        "venetia"
+    ],
+    "type": "area",
+    "religion_center": [
+        4326,
+        2709
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "iraq",
+    "borders": [
+        "kurdistan",
+        "transcaucasia"
+    ],
+    "provinces": [
+        "tikrit",
+        "kirkuk",
+        "baghdad"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6300,
+        3483
+    ]
+}

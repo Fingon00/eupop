@@ -1,0 +1,27 @@
+{
+    "id": "netherlands",
+    "borders": [
+        "flanders_&_wallonia",
+        "english_channel",
+        "westphalia",
+        "lower_saxony",
+        "north_sea"
+    ],
+    "provinces": [
+        "amsterdam",
+        "zeeland",
+        "gelre",
+        "breda",
+        "friesland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3223,
+        1431
+    ],
+    "cube_location": [
+        3119,
+        1448
+    ]
+}

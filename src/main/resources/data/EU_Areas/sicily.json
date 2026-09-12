@@ -1,0 +1,17 @@
+{
+    "id": "sicily",
+    "borders": [
+        "central_mediterranean"
+    ],
+    "provinces": [
+        "palermin",
+        "mesina",
+        "malta"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3837,
+        3616
+    ]
+}

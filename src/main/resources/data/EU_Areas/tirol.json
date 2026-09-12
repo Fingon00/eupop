@@ -1,0 +1,27 @@
+{
+    "id": "tirol",
+    "borders": [
+        "bavaria_&_swabia",
+        "switzerland",
+        "lombardy",
+        "venetia",
+        "austria"
+    ],
+    "provinces": [
+        "tirol",
+        "lienz",
+        "karnten"
+    ],
+    "mountain_borders": [
+        "bavaria_&_swabia",
+        "switzerland",
+        "lombardy",
+        "venetia",
+        "austria"
+    ],
+    "type": "area",
+    "religion_center": [
+        3626,
+        2387
+    ]
+}

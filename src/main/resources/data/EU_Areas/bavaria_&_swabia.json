@@ -1,0 +1,28 @@
+{
+    "id": "bavaria_&_swabia",
+    "borders": [
+        "switzerland",
+        "tirol",
+        "austria",
+        "bohemia",
+        "rhineland",
+        "saxony"
+    ],
+    "provinces": [
+        "ulm",
+        "regensburg",
+        "augsburg",
+        "munchen",
+        "landshut",
+        "salzburg"
+    ],
+    "mountain_borders": [
+        "switzerland",
+        "tirol"
+    ],
+    "type": "area",
+    "religion_center": [
+        3483,
+        2163
+    ]
+}

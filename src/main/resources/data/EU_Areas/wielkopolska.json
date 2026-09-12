@@ -1,0 +1,24 @@
+{
+    "id": "wielkopolska",
+    "borders": [
+        "prussia",
+        "royal_hungary",
+        "brandenburg",
+        "bohemia",
+        "mazovia_&_malopolska"
+    ],
+    "provinces": [
+        "sieradz",
+        "kalisz",
+        "poznan",
+        "silesia"
+    ],
+    "mountain_borders": [
+        "royal_hungary"
+    ],
+    "type": "area",
+    "religion_center": [
+        4104,
+        1747
+    ]
+}

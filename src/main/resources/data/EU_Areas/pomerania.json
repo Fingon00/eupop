@@ -1,0 +1,23 @@
+{
+    "id": "pomerania",
+    "borders": [
+        "prussia",
+        "baltic_sea",
+        "skagerrak",
+        "brandenburg",
+        "jutland",
+        "lower_saxony"
+    ],
+    "provinces": [
+        "lubeck",
+        "stettin",
+        "stralsund",
+        "mecklenburg"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4168,
+        1368
+    ]
+}

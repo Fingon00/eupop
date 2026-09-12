@@ -1,0 +1,29 @@
+{
+    "id": "venetia",
+    "borders": [
+        "lombardy",
+        "tirol",
+        "austria",
+        "central_italy",
+        "dalmatia",
+        "croatia_&_bosnia",
+        "adriatic_sea"
+    ],
+    "provinces": [
+        "verona",
+        "treviso",
+        "venezia",
+        "krain"
+    ],
+    "mountain_borders": [
+        "tirol",
+        "dalmatia",
+        "croatia_&_bosnia",
+        "austria"
+    ],
+    "type": "area",
+    "religion_center": [
+        3990,
+        2444
+    ]
+}

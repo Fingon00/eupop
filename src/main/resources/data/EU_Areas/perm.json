@@ -1,0 +1,20 @@
+{
+    "id": "perm",
+    "borders": [
+        "pomorye",
+        "kazan",
+        "central_russia",
+        "vologda"
+    ],
+    "provinces": [
+        "perm",
+        "viatka",
+        "nizhny_novgorod"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6446,
+        813
+    ]
+}

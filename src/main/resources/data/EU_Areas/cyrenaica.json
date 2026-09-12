@@ -1,0 +1,18 @@
+{
+    "id": "cyrenaica",
+    "borders": [
+        "eastern_mediterranean",
+        "central_mediterranean",
+        "egypt",
+        "tripolitania"
+    ],
+    "provinces": [
+        "bangazi"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5151,
+        3908
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "id": "aydin",
+    "borders": [
+        "eastern_mediterranean",
+        "karaman",
+        "northern_anatolia",
+        "aegean_sea"
+    ],
+    "provinces": [
+        "izmir",
+        "teke",
+        "mentese"
+    ],
+    "mountain_borders": [
+        "northern_anatolia",
+        "karaman"
+    ],
+    "type": "area",
+    "religion_center": [
+        5235,
+        3264
+    ]
+}

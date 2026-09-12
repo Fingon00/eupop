@@ -1,0 +1,27 @@
+{
+    "id": "switzerland",
+    "borders": [
+        "bavaria_&_swabia",
+        "tirol",
+        "lombardy",
+        "rhineland",
+        "burgundy"
+    ],
+    "provinces": [
+        "geneve",
+        "bern",
+        "st_gallen"
+    ],
+    "mountain_borders": [
+        "bavaria_&_swabia",
+        "tirol",
+        "lombardy",
+        "rhineland",
+        "burgundy"
+    ],
+    "type": "area",
+    "religion_center": [
+        3491,
+        2353
+    ]
+}

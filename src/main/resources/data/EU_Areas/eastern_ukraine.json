@@ -1,0 +1,20 @@
+{
+    "id": "eastern_ukraine",
+    "borders": [
+        "crimea",
+        "saratov",
+        "white_ruthenia",
+        "western_ukraine",
+        "moscow_&_ryazan"
+    ],
+    "provinces": [
+        "cernigovas",
+        "poltava"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5783,
+        1809
+    ]
+}

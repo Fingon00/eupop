@@ -1,0 +1,26 @@
+{
+    "id": "castile",
+    "borders": [
+        "western_mediterranean",
+        "leon",
+        "aragon",
+        "andalucia"
+    ],
+    "provinces": [
+        "madrid",
+        "burgos",
+        "murcia"
+    ],
+    "mountain_borders": [
+        "andalucia"
+    ],
+    "type": "area",
+    "religion_center": [
+        2245,
+        3103
+    ],
+    "cube_location": [
+        1733,
+        2766
+    ]
+}

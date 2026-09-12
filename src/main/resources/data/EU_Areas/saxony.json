@@ -1,0 +1,23 @@
+{
+    "id": "saxony",
+    "borders": [
+        "westphalia",
+        "brandenburg",
+        "bohemia",
+        "rhineland",
+        "bavaria_&_swabia",
+        "lower_saxony"
+    ],
+    "provinces": [
+        "leipzig",
+        "wittenberg",
+        "dresden",
+        "nurnberg"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3680,
+        1873
+    ]
+}

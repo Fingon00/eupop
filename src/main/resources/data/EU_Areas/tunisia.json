@@ -1,0 +1,20 @@
+{
+    "id": "tunisia",
+    "borders": [
+        "tripolitania",
+        "central_mediterranean",
+        "north_sahara",
+        "algiers"
+    ],
+    "provinces": [
+        "bizerte",
+        "tunis",
+        "sousse"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3528,
+        3901
+    ]
+}

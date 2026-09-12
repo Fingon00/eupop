@@ -1,0 +1,26 @@
+{
+    "id": "transcaucasia",
+    "borders": [
+        "circassia",
+        "caucasus",
+        "iraq",
+        "rum",
+        "kurdistan"
+    ],
+    "provinces": [
+        "tblisi",
+        "yerevan",
+        "tabriz"
+    ],
+    "mountain_borders": [
+        "caucasus",
+        "circassia",
+        "rum",
+        "kurdistan"
+    ],
+    "type": "area",
+    "religion_center": [
+        6618,
+        3079
+    ]
+}

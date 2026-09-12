@@ -1,0 +1,20 @@
+{
+    "id": "norrland",
+    "borders": [
+        "trondelag",
+        "ostrobothnia",
+        "svealand",
+        "gulf_of_bothnia"
+    ],
+    "provinces": [
+        "halsingland"
+    ],
+    "mountain_borders": [
+        "trondelag"
+    ],
+    "type": "area",
+    "religion_center": [
+        4141,
+        651
+    ]
+}

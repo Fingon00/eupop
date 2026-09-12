@@ -1,0 +1,24 @@
+{
+    "id": "estonia_&_livonia",
+    "borders": [
+        "gulf_of_bothnia",
+        "baltic_sea",
+        "novgorod",
+        "white_ruthenia",
+        "prussia",
+        "lithuania",
+        "karelia"
+    ],
+    "provinces": [
+        "reval",
+        "goldingen",
+        "riga",
+        "livland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5070,
+        1155
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "id": "serbia_&_albania",
+    "borders": [
+        "hungarian_plain",
+        "croatia_&_bosnia",
+        "transylvania",
+        "dalmatia",
+        "wallachia_&_bulgaria",
+        "greece",
+        "adriatic_sea",
+        "macedonia_&_thrace"
+    ],
+    "provinces": [
+        "beograd",
+        "kosovo",
+        "albania"
+    ],
+    "mountain_borders": [
+        "macedonia_&_thrace",
+        "greece",
+        "transylvania",
+        "dalmatia"
+    ],
+    "type": "area",
+    "religion_center": [
+        4656,
+        2823
+    ]
+}

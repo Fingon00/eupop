@@ -1,0 +1,23 @@
+{
+    "id": "white_ruthenia",
+    "borders": [
+        "estonia_&_livonia",
+        "novgorod",
+        "lithuania",
+        "eastern_ukraine",
+        "western_ukraine",
+        "red_ruthenia",
+        "moscow_&_ryazan"
+    ],
+    "provinces": [
+        "minskas",
+        "polockas",
+        "smolenskas"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5651,
+        1574
+    ]
+}

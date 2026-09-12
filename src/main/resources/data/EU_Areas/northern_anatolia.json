@@ -1,0 +1,23 @@
+{
+    "id": "northern_anatolia",
+    "borders": [
+        "black_sea",
+        "rum",
+        "karaman",
+        "aydin",
+        "aegean_sea"
+    ],
+    "provinces": [
+        "hudavendigar",
+        "ankara",
+        "kastamonu"
+    ],
+    "mountain_borders": [
+        "aydin"
+    ],
+    "type": "area",
+    "religion_center": [
+        5595,
+        3029
+    ]
+}

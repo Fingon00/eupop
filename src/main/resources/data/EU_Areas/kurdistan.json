@@ -1,0 +1,25 @@
+{
+    "id": "kurdistan",
+    "borders": [
+        "iraq",
+        "rum",
+        "karaman",
+        "syria",
+        "transcaucasia"
+    ],
+    "provinces": [
+        "urfa",
+        "mush",
+        "mosul"
+    ],
+    "mountain_borders": [
+        "rum",
+        "karaman",
+        "transcaucasia"
+    ],
+    "type": "area",
+    "religion_center": [
+        6008,
+        3235
+    ]
+}

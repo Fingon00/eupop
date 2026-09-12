@@ -1,0 +1,23 @@
+{
+    "id": "ostlandet",
+    "borders": [
+        "skagerrak",
+        "vestlandet",
+        "svealand",
+        "trondelag",
+        "gotaland_&_skane"
+    ],
+    "provinces": [
+        "akershus",
+        "borgarsysla"
+    ],
+    "mountain_borders": [
+        "vestlandet",
+        "trondelag"
+    ],
+    "type": "area",
+    "religion_center": [
+        3590,
+        402
+    ]
+}

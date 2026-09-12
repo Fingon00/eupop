@@ -1,0 +1,15 @@
+{
+    "id": "cyprus",
+    "borders": [
+        "eastern_mediterranean"
+    ],
+    "provinces": [
+        "cyprus"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5493,
+        3632
+    ]
+}

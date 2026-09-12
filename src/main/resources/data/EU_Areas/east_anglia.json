@@ -1,0 +1,24 @@
+{
+    "id": "east_anglia",
+    "borders": [
+        "english_channel",
+        "doggerbank",
+        "wales_&_wessex",
+        "northumbria"
+    ],
+    "provinces": [
+        "oxford",
+        "essex",
+        "london"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2433,
+        1399
+    ],
+    "cube_location": [
+        2431,
+        1519
+    ]
+}

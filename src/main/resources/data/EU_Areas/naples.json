@@ -1,0 +1,19 @@
+{
+    "id": "naples",
+    "borders": [
+        "central_italy",
+        "adriatic_sea",
+        "central_mediterranean"
+    ],
+    "provinces": [
+        "napoli",
+        "bari",
+        "salerno"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4087,
+        3118
+    ]
+}

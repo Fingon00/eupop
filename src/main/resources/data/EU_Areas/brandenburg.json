@@ -1,0 +1,22 @@
+{
+    "id": "brandenburg",
+    "borders": [
+        "prussia",
+        "saxony",
+        "bohemia",
+        "pomerania",
+        "wielkopolska",
+        "lower_saxony"
+    ],
+    "provinces": [
+        "berlin",
+        "potsdam",
+        "altmark"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3971,
+        1653
+    ]
+}

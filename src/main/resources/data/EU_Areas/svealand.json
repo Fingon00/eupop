@@ -1,0 +1,23 @@
+{
+    "id": "svealand",
+    "borders": [
+        "trondelag",
+        "baltic_sea",
+        "gotaland_&_skane",
+        "ostlandet",
+        "norrland",
+        "gulf_of_bothnia"
+    ],
+    "provinces": [
+        "bergslagen",
+        "stockholm"
+    ],
+    "mountain_borders": [
+        "trondelag"
+    ],
+    "type": "area",
+    "religion_center": [
+        4141,
+        651
+    ]
+}

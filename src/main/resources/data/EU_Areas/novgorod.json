@@ -1,0 +1,21 @@
+{
+    "id": "novgorod",
+    "borders": [
+        "estonia_&_livonia",
+        "white_ruthenia",
+        "karelia",
+        "vologda",
+        "central_russia",
+        "moscow_&_ryazan"
+    ],
+    "provinces": [
+        "pskov",
+        "novgorod"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5692,
+        941
+    ]
+}

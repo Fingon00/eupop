@@ -1,0 +1,24 @@
+{
+    "id": "circassia",
+    "borders": [
+        "astrakhan",
+        "crimea",
+        "caucasus",
+        "black_sea",
+        "rum",
+        "transcaucasia"
+    ],
+    "provinces": [
+        "imereti",
+        "guria",
+        "circassia"
+    ],
+    "mountain_borders": [
+        "transcaucasia"
+    ],
+    "type": "area",
+    "religion_center": [
+        6245,
+        2706
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "id": "loire",
+    "borders": [
+        "seine",
+        "brittany_&_normandy",
+        "aquitaine",
+        "burgundy",
+        "languedoc"
+    ],
+    "provinces": [
+        "orleans",
+        "berry",
+        "limousin",
+        "bourbon"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2813,
+        2577
+    ],
+    "cube_location": [
+        2732,
+        2496
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id": "andalucia",
+    "borders": [
+        "portugal",
+        "leon",
+        "central_atlantic",
+        "western_mediterranean",
+        "castile"
+    ],
+    "provinces": [
+        "sevilla",
+        "gibraltar",
+        "cordoba",
+        "granada"
+    ],
+    "mountain_borders": [
+        "castile"
+    ],
+    "type": "area",
+    "religion_center": [
+        2210,
+        3403
+    ],
+    "cube_location": [
+        2051,
+        3318
+    ]
+}

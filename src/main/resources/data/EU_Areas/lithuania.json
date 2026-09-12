@@ -1,0 +1,20 @@
+{
+    "id": "lithuania",
+    "borders": [
+        "white_ruthenia",
+        "red_ruthenia",
+        "estonia_&_livonia",
+        "prussia",
+        "mazovia_&_malopolska"
+    ],
+    "provinces": [
+        "zemaitija",
+        "vilnius"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4861,
+        1251
+    ]
+}

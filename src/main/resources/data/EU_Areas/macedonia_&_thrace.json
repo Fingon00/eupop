@@ -1,0 +1,23 @@
+{
+    "id": "macedonia_&_thrace",
+    "borders": [
+        "serbia_&_albania",
+        "greece",
+        "aegean_sea",
+        "wallachia_&_bulgaria",
+        "black_sea"
+    ],
+    "provinces": [
+        "selanik",
+        "edirne",
+        "constantinople"
+    ],
+    "mountain_borders": [
+        "serbia_&_albania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4659,
+        3094
+    ]
+}

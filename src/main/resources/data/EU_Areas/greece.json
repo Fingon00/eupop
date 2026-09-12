@@ -1,0 +1,23 @@
+{
+    "id": "greece",
+    "borders": [
+        "serbia_&_albania",
+        "adriatic_sea",
+        "macedonia_&_thrace",
+        "aegean_sea",
+        "eastern_mediterranean"
+    ],
+    "provinces": [
+        "yanya",
+        "morea",
+        "athina"
+    ],
+    "mountain_borders": [
+        "serbia_&_albania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4729,
+        3407
+    ]
+}

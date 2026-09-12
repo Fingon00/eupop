@@ -1,0 +1,25 @@
+{
+    "id": "wales_&_wessex",
+    "borders": [
+        "english_channel",
+        "northeastern_atlantic",
+        "east_anglia",
+        "northumbria",
+        "eastern_atlantic"
+    ],
+    "provinces": [
+        "wales",
+        "shrewsbury",
+        "wessex"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2128,
+        1443
+    ],
+    "cube_location": [
+        2126,
+        1441
+    ]
+}
