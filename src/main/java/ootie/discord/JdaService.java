@@ -31,7 +31,6 @@ import ootie.discord.listeners.ListenerManager;
 import ootie.executors.ExecutorServiceManager;
 import ootie.executors.ExecutorUtility;
 import ootie.executors.ShutdownResult;
-import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
 import ootie.helpers.Storage;
 import ootie.image.MapRenderPipeline;
@@ -262,8 +261,7 @@ public class JdaService {
     }
 
     public static void updatePresence() {
-        long activeGames = GameManager.getActiveGameCount();
-        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.playing(activeGames + " games of Async ootie"));
+        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.playing("Beep Boop"));
     }
 
     /**

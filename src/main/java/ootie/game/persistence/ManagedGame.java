@@ -1,7 +1,5 @@
 package ootie.game.persistence;
 
-import static java.util.stream.Collectors.*;
-
 import java.util.Objects;
 import lombok.Getter;
 import ootie.game.Game;
@@ -15,9 +13,11 @@ public class ManagedGame {
     // BE CAREFUL ADDING FIELDS TO THIS CLASS, AS IT CAN EASILY BALLOON THE DATA ON
     // THE HEAP BY MEGABYTES PER FIELD
     private final String name;
+    private final boolean hasEnded;
 
     public ManagedGame(Game game) {
         name = game.getName();
+        hasEnded = game.isHasEnded();
     }
 
     private static String sanitizeToNull(String str) {

@@ -21,7 +21,7 @@ public class GameProperties {
     private String launchPostThreadID;
     private String savedChannelID;
     private String name;
-
+    private boolean hasEnded;
     // Decks
     private List<String> secretObjectives;
     private List<String> actionCards;

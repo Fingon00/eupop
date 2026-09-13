@@ -6,9 +6,9 @@ import java.awt.image.BufferedImage;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import lombok.experimental.UtilityClass;
+import ootie.cache.CacheManager;
 import ootie.logging.BotLogger;
 import ootie.settings.GlobalSettings;
-import org.springframework.cache.CacheManager;
 
 @UtilityClass
 class ImageCache {

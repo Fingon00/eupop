@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import lombok.experimental.UtilityClass;
+import ootie.discord.commands.search.SearchCommand;
 
 @UtilityClass
 public class SlashCommandManager {

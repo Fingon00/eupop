@@ -126,7 +126,7 @@ public class GameManager {
     private static void handleMissingMatchingManagedGame(Game game) {
         if (game == null) return;
         var managedGame = gameNameToManagedGame.get(game.getName());
-        if (managedGame == null || !managedGame.matches(game)) {
+        if (managedGame == null) {
             gameNames.add(game.getName());
             gameNameToManagedGame.put(game.getName(), new ManagedGame(game));
         }
@@ -159,13 +159,6 @@ public class GameManager {
     public static int getGameCount() {
         waitFor(gameNamesLoadedLatch);
         return gameNames.size();
-    }
-
-    public static long getActiveGameCount() {
-        waitFor(gameNamesLoadedLatch);
-        return gameNameToManagedGame.values().stream()
-                .filter(ManagedGame::isActive)
-                .count();
     }
 
     @Nullable

@@ -66,6 +66,18 @@ public class MapGenerator implements AutoCloseable {
     private boolean isFoWPrivate;
     private Player fowPlayer;
 
+    public enum HorizontalAlign {
+        Left,
+        Center,
+        Right
+    }
+
+    public enum VerticalAlign {
+        Top,
+        Center,
+        Bottom
+    }
+
     // Map to aggregate unit coordinates by faction from all tiles with global coordinates
     private final Map<String, Map<String, List<Point>>> globalUnitCoordinatesByFaction = new HashMap<>();
 
@@ -132,6 +144,13 @@ public class MapGenerator implements AutoCloseable {
         // Create image
         mainImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         graphics = mainImage.getGraphics();
+    }
+
+    @Override
+    public void close() {
+        mainImage.flush();
+        graphics.dispose();
+        logDebug();
     }
 
     /**

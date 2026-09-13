@@ -132,6 +132,8 @@ public class Game extends GameProperties {
     private List<String> explore;
     private List<String> discardExplore = new ArrayList<>();
     private List<String> relics;
+    private boolean hasEnded;
+    private boolean isActive;
 
     private List<SimpleEntry<String, String>> tileNameAutocompleteOptionsCache;
 

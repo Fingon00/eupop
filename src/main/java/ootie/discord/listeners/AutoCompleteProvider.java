@@ -1,20 +1,14 @@
 package ootie.discord.listeners;
 
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.events.interaction.command.CommandAutoCompleteInteractionEvent;
-import ootie.discord.commands.Command;
 import ootie.game.Game;
 import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.service.game.GameNameService;
-
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.function.Consumers;
 import org.jetbrains.annotations.NotNull;
 
@@ -71,16 +65,16 @@ class AutoCompleteProvider {
                 if (!GameManager.isValid(gameName)) return;
                 Game game = GameManager.getManagedGame(gameName).getGame();
 
-                List<Command.Choice> options =
-                        GameUndoNameService.getUndoNamesToCommandText(game, 25).entrySet().stream()
-                                .sorted(Map.Entry.comparingByKey(
-                                        Comparator.comparing(GameUndoNameService::getUndoNumberFromFileName)
-                                                .reversed()))
-                                .limit(25)
-                                .map(entry ->
-                                        new Command.Choice(StringUtils.left(entry.getValue(), 100), entry.getKey()))
-                                .toList();
-                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+                // List<Command.Choice> options =
+                //         GameUndoNameService.getUndoNamesToCommandText(game, 25).entrySet().stream()
+                //                 .sorted(Map.Entry.comparingByKey(
+                //                         Comparator.comparing(GameUndoNameService::getUndoNumberFromFileName)
+                //                                 .reversed()))
+                //                 .limit(25)
+                //                 .map(entry ->
+                //                         new Command.Choice(StringUtils.left(entry.getValue(), 100), entry.getKey()))
+                //                 .toList();
+                // event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
             }
         }
     }

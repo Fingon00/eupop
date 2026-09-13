@@ -14,7 +14,6 @@ import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import ootie.service.game.GameNameService;
-
 import org.apache.commons.lang3.function.Consumers;
 
 @Getter
