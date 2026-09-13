@@ -1,4 +1,4 @@
-package ti4.discord.interactions.listeners;
+package ootie.discord.interactions.listeners;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,21 +8,21 @@ import net.dv8tion.jda.api.events.interaction.command.GenericCommandInteractionE
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.apache.commons.lang3.function.Consumers;
-import ti4.contest.replay.core.CombatContestSettings;
-import ti4.contest.replay.service.CombatReplayService;
-import ti4.discord.interactions.commands.Command;
-import ti4.discord.interactions.commands.GameStateContainer;
-import ti4.discord.interactions.commands.ParentCommand;
-import ti4.discord.interactions.commands.SlashCommandManager;
-import ti4.executors.ExecutionLockType;
-import ti4.executors.ExecutorServiceManager;
-import ti4.helpers.Constants;
-import ti4.logging.BotLogger;
-import ti4.logging.RollbarManager;
-import ti4.service.SusSlashCommandService;
-import ti4.service.game.GameNameService;
-import ti4.spring.context.SpringContext;
-import ti4.spring.service.usage.InteractionCountService;
+import ootie.contest.replay.core.CombatContestSettings;
+import ootie.contest.replay.service.CombatReplayService;
+import ootie.discord.interactions.commands.Command;
+import ootie.discord.interactions.commands.GameStateContainer;
+import ootie.discord.interactions.commands.ParentCommand;
+import ootie.discord.interactions.commands.SlashCommandManager;
+import ootie.executors.ExecutionLockType;
+import ootie.executors.ExecutorServiceManager;
+import ootie.helpers.Constants;
+import ootie.logging.BotLogger;
+import ootie.logging.RollbarManager;
+import ootie.service.SusSlashCommandService;
+import ootie.service.game.GameNameService;
+import ootie.spring.context.SpringContext;
+import ootie.spring.service.usage.InteractionCountService;
 
 class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
@@ -34,7 +34,8 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
     @Override
     public void onSlashCommandInteraction(@Nonnull SlashCommandInteractionEvent event) {
-        if (!canReceiveCommands(event)) return;
+        if (!canReceiveCommands(event))
+            return;
 
         if (!isModalCommand(event)) {
             Command<SlashCommandInteractionEvent> command = getCommand(event);
@@ -75,8 +76,9 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
         ParentCommand command = SlashCommandManager.getCommand(event.getName());
         Command<SlashCommandInteractionEvent> resolvedCommand = getCommand(event);
-        CombatReplayService combatReplayService =
-                CombatContestSettings.isEnabledStatic() ? SpringContext.getBean(CombatReplayService.class) : null;
+        CombatReplayService combatReplayService = CombatContestSettings.isEnabledStatic()
+                ? SpringContext.getBean(CombatReplayService.class)
+                : null;
         try {
             if (command.accept(event)) {
                 command.preExecute(event);
@@ -110,12 +112,13 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
     private static void logSlashCommand(SlashCommandInteractionEvent event) {
         Member member = event.getMember();
-        if (member == null) return;
+        if (member == null)
+            return;
 
         var command = SlashCommandManager.getCommand(event.getInteraction().getName());
         String susPrefix = command.isSuspicious(event) ? "sus" : "notSus";
-        String commandText =
-                "```" + susPrefix + "\n" + member.getEffectiveName() + " used " + event.getCommandString() + "\n```";
+        String commandText = "```" + susPrefix + "\n" + member.getEffectiveName() + " used " + event.getCommandString()
+                + "\n```";
         if (!event.getCommandString().contains("/rules ask")
                 && !event.getCommandString().contains("/fow whisper")
                 && !event.getCommandString().contains("/bothelper impersonate")) {

@@ -1,4 +1,4 @@
-package ti4.discord.interactions.listeners;
+package ootie.discord.interactions.listeners;
 
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.JDA;

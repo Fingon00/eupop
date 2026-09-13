@@ -1,56 +1,57 @@
-package ti4.discord.interactions.buttons;
+package ootie.discord.buttons;
 
 import java.text.DecimalFormat;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.List;
+
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.components.buttons.Button;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
-import ti4.contest.replay.buttons.CombatDoubleOrBustButtonIds;
-import ti4.contest.replay.buttons.CombatSideBetButtonIds;
-import ti4.contest.replay.core.CombatContestSettings;
-import ti4.contest.replay.service.CombatReplayService;
-import ti4.discord.interactions.buttons.handlers.faction.homebrew.theodisi.Ponthous.PonthousAbilityHandler;
-import ti4.discord.interactions.listeners.context.ButtonContext;
-import ti4.discord.interactions.routing.AnnotationHandler;
-import ti4.discord.interactions.routing.ButtonHandler;
-import ti4.discord.interactions.routing.HandlerRegistry;
-import ti4.executors.ExecutionLockType;
-import ti4.executors.ExecutorServiceManager;
-import ti4.game.Game;
-import ti4.game.Player;
-import ti4.game.Tile;
-import ti4.helpers.AgendaWhensAftersHelper;
-import ti4.helpers.ButtonHelper;
-import ti4.helpers.ButtonHelperAbilities;
-import ti4.helpers.ButtonHelperAgents;
-import ti4.helpers.ButtonHelperModifyUnits;
-import ti4.helpers.ButtonHelperStats;
-import ti4.helpers.Constants;
-import ti4.helpers.DateTimeHelper;
-import ti4.helpers.DisplayType;
-import ti4.helpers.SearchGameHelper;
-import ti4.helpers.StatusHelper;
-import ti4.helpers.TimedRunnable;
-import ti4.logging.BotLogger;
-import ti4.logging.LogOrigin;
-import ti4.logging.RollbarManager;
-import ti4.message.MessageHelper;
-import ti4.service.button.ReactionService;
-import ti4.service.game.GameNameService;
-import ti4.service.strategycard.PlayStrategyCardService;
-import ti4.settings.users.UserSettings;
-import ti4.settings.users.UserSettingsManager;
-import ti4.spring.context.SpringContext;
+import ootie.contest.replay.buttons.CombatDoubleOrBustButtonIds;
+import ootie.contest.replay.buttons.CombatSideBetButtonIds;
+import ootie.contest.replay.core.CombatContestSettings;
+import ootie.contest.replay.service.CombatReplayService;
+import ootie.discord.buttons.handlers.faction.homebrew.theodisi.Ponthous.PonthousAbilityHandler;
+import ootie.discord.listeners.context.ButtonContext;
+import ootie.discord.routing.AnnotationHandler;
+import ootie.discord.routing.ButtonHandler;
+import ootie.discord.routing.HandlerRegistry;
+import ootie.executors.ExecutionLockType;
+import ootie.executors.ExecutorServiceManager;
+import ootie.game.Game;
+import ootie.game.Player;
+import ootie.game.Tile;
+import ootie.helpers.AgendaWhensAftersHelper;
+import ootie.helpers.ButtonHelper;
+import ootie.helpers.ButtonHelperAbilities;
+import ootie.helpers.ButtonHelperAgents;
+import ootie.helpers.ButtonHelperModifyUnits;
+import ootie.helpers.ButtonHelperStats;
+import ootie.helpers.Constants;
+import ootie.helpers.DateTimeHelper;
+import ootie.helpers.DisplayType;
+import ootie.helpers.SearchGameHelper;
+import ootie.helpers.StatusHelper;
+import ootie.helpers.TimedRunnable;
+import ootie.logging.BotLogger;
+import ootie.logging.LogOrigin;
+import ootie.logging.RollbarManager;
+import ootie.message.MessageHelper;
+import ootie.service.button.ReactionService;
+import ootie.service.game.GameNameService;
+import ootie.service.strategycard.PlayStrategyCardService;
+import ootie.settings.users.UserSettings;
+import ootie.settings.users.UserSettingsManager;
+import ootie.spring.context.SpringContext;
 
 @UtilityClass
 public class ButtonProcessor {
 
-    private static final HandlerRegistry<ButtonContext> registry =
-            AnnotationHandler.buildHandlerRegistry(ButtonContext.class, ButtonHandler.class);
+    private static final HandlerRegistry<ButtonContext> registry = AnnotationHandler
+            .buildHandlerRegistry(ButtonContext.class, ButtonHandler.class);
     private static final ButtonRuntimeWarningService runtimeWarningService = new ButtonRuntimeWarningService();
 
     public static void checkButtonHandlersSetup() {
@@ -78,7 +79,8 @@ public class ButtonProcessor {
         long processStartTime = System.currentTimeMillis();
 
         ButtonContext context = new ButtonContext(event);
-        if (!context.isValid()) return;
+        if (!context.isValid())
+            return;
 
         long beforeTime = System.currentTimeMillis();
         log(event);
@@ -87,11 +89,12 @@ public class ButtonProcessor {
         long resolveRuntime = 0;
         long saveRuntime = 0;
         try {
-            CombatReplayService combatReplayService =
-                    CombatContestSettings.isEnabledStatic() ? SpringContext.getBean(CombatReplayService.class) : null;
+            CombatReplayService combatReplayService = CombatContestSettings.isEnabledStatic()
+                    ? SpringContext.getBean(CombatReplayService.class)
+                    : null;
             if (combatReplayService != null) {
-                CombatReplayService.PreInteractionSnapshot preInteractionSnapshot =
-                        combatReplayService.capturePreInteractionSnapshot(context.getGame());
+                CombatReplayService.PreInteractionSnapshot preInteractionSnapshot = combatReplayService
+                        .capturePreInteractionSnapshot(context.getGame());
                 combatReplayService.setPreInteractionSnapshot(preInteractionSnapshot);
             }
             try {
@@ -135,19 +138,19 @@ public class ButtonProcessor {
                 .run();
 
         new TimedRunnable("ButtonProcessor Rollbar setup", warningThresholdSeconds, () -> {
-                    RollbarManager.putInteractionMetadata("button", event);
-                    RollbarManager.put("button_id", event.getButton().getCustomId());
-                    RollbarManager.put("game_name", GameNameService.getGameNameFromChannel(event));
-                })
+            RollbarManager.putInteractionMetadata("button", event);
+            RollbarManager.put("button_id", event.getButton().getCustomId());
+            RollbarManager.put("game_name", GameNameService.getGameNameFromChannel(event));
+        })
                 .run();
 
         new TimedRunnable("ButtonProcessor user settings save", warningThresholdSeconds, () -> {
-                    User user = event.getUser();
-                    UserSettings userSettings = UserSettingsManager.get(user.getId());
-                    int currentHourUTC = ZonedDateTime.now(ZoneId.of("UTC")).getHour();
-                    userSettings.addActiveHour(currentHourUTC);
-                    UserSettingsManager.save(userSettings);
-                })
+            User user = event.getUser();
+            UserSettings userSettings = UserSettingsManager.get(user.getId());
+            int currentHourUTC = ZonedDateTime.now(ZoneId.of("UTC")).getHour();
+            userSettings.addActiveHour(currentHourUTC);
+            UserSettingsManager.save(userSettings);
+        })
                 .run();
     }
 
@@ -168,10 +171,12 @@ public class ButtonProcessor {
         MessageChannel mainGameChannel = context.getMainGameChannel();
 
         // Skip combat replay buttons when the feature is disabled
-        if (!CombatContestSettings.isEnabledStatic() && isCombatReplayButton(buttonID)) return;
+        if (!CombatContestSettings.isEnabledStatic() && isCombatReplayButton(buttonID))
+            return;
 
         // Check the list of ButtonHandlers first
-        if (registry.handle(buttonID, context)) return;
+        if (registry.handle(buttonID, context))
+            return;
 
         // TODO Convert all else..if..startsWith to use @ButtonHandler
         if (false) {
@@ -371,8 +376,8 @@ public class ButtonProcessor {
     @Deprecated
     private static void gain1tgFromCommander(
             ButtonInteractionEvent event, Player player, Game game, MessageChannel mainGameChannel) {
-        String message =
-                player.getRepresentation() + " gained 1 trade good " + player.gainTG(1) + " from their commander.";
+        String message = player.getRepresentation() + " gained 1 trade good " + player.gainTG(1)
+                + " from their commander.";
         ButtonHelperAbilities.pillageCheck(player, game);
         ButtonHelperAgents.resolveArtunoCheck(player, 1);
         MessageHelper.sendMessageToChannel(mainGameChannel, message);
@@ -420,9 +425,12 @@ public class ButtonProcessor {
     }
 
     private static List<Button> getRefreshInfoButtons(Game game) {
-        if (game == null) return Buttons.REFRESH_INFO_BUTTONS;
-        if (game.isTwilightsFallMode()) return Buttons.REFRESH_INFO_BUTTONS_TF;
-        if (game.isThundersEdge()) return Buttons.REFRESH_INFO_BUTTONS_TE;
+        if (game == null)
+            return Buttons.REFRESH_INFO_BUTTONS;
+        if (game.isTwilightsFallMode())
+            return Buttons.REFRESH_INFO_BUTTONS_TF;
+        if (game.isThundersEdge())
+            return Buttons.REFRESH_INFO_BUTTONS_TE;
         return Buttons.REFRESH_INFO_BUTTONS;
     }
 

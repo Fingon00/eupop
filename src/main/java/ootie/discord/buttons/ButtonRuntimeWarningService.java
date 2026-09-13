@@ -1,26 +1,25 @@
-package ti4.discord.interactions.buttons;
+package ootie.discord.interactions.buttons;
 
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+
 import lombok.Getter;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
-import ti4.AsyncTI4DiscordBot;
-import ti4.helpers.ButtonHelper;
-import ti4.helpers.DateTimeHelper;
-import ti4.logging.BotLogger;
-import ti4.service.statistics.SREStats;
+import ootie.AsyncootieDiscordBot;
+import ootie.helpers.ButtonHelper;
+import ootie.helpers.DateTimeHelper;
+import ootie.logging.BotLogger;
+import ootie.service.statistics.SREStats;
 
 class ButtonRuntimeWarningService {
 
     private static final int PREPROCESSING_WARNING_THRESHOLD_MILLISECONDS = 2500;
     private static final int PROCESSING_WARNING_THRESHOLD_MILLISECONDS = 1000;
     private static final int RUNTIME_WARNING_COUNT_THRESHOLD = 15;
-    private static final long RESET_WARNING_COUNT_AFTER_SECONDS =
-            Duration.ofMinutes(1).toSeconds();
-    private static final long PAUSE_AFTER_WARNING_SECONDS =
-            Duration.ofMinutes(5).toSeconds();
+    private static final long RESET_WARNING_COUNT_AFTER_SECONDS = Duration.ofMinutes(1).toSeconds();
+    private static final long PAUSE_AFTER_WARNING_SECONDS = Duration.ofMinutes(5).toSeconds();
 
     private int runtimeWarningCount;
     private Instant pauseWarningsUntil = Instant.now();
@@ -47,7 +46,8 @@ class ButtonRuntimeWarningService {
             long logRuntimeMs,
             long resolveRuntimeMs,
             long saveRuntimeMs) {
-        if (AsyncTI4DiscordBot.isUnstable()) return;
+        if (AsyncootieDiscordBot.isUnstable())
+            return;
 
         runtimeSubmissionCount++;
 
@@ -163,5 +163,6 @@ class ButtonRuntimeWarningService {
         return runtimeSubmissionCount == 0 ? 0 : runtimeThresholdMissCount / (double) runtimeSubmissionCount;
     }
 
-    private record ThresholdWarningReason(String occurredAt, String buttonRepresentation, String totalRuntime) {}
+    private record ThresholdWarningReason(String occurredAt, String buttonRepresentation, String totalRuntime) {
+    }
 }

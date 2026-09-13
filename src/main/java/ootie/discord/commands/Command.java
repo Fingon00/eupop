@@ -1,14 +1,15 @@
-package ti4.discord.interactions.commands;
+package ootie.discord.interactions.commands;
+
+import org.apache.commons.lang3.exception.ExceptionUtils;
+import org.apache.commons.lang3.function.Consumers;
 
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.command.MessageContextInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.UserContextInteractionEvent;
 import net.dv8tion.jda.api.requests.restaction.CommandListUpdateAction;
-import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.apache.commons.lang3.function.Consumers;
-import ti4.logging.BotLogger;
-import ti4.logging.LogOrigin;
+import ootie.logging.BotLogger;
+import ootie.logging.LogOrigin;
 
 public interface Command<T extends GenericInteractionCreateEvent> {
 
@@ -22,11 +23,13 @@ public interface Command<T extends GenericInteractionCreateEvent> {
         return false;
     }
 
-    default void preExecute(T event) {}
+    default void preExecute(T event) {
+    }
 
     void execute(T event);
 
-    default void postExecute(T event) {}
+    default void postExecute(T event) {
+    }
 
     String getName();
 
@@ -38,9 +41,11 @@ public interface Command<T extends GenericInteractionCreateEvent> {
         return false;
     }
 
-    default void register(CommandListUpdateAction update) {}
+    default void register(CommandListUpdateAction update) {
+    }
 
-    default void registerSearchCommands(CommandListUpdateAction update) {}
+    default void registerSearchCommands(CommandListUpdateAction update) {
+    }
 
     default void onException(T event, Throwable throwable) {
         String messageText = "Error trying to execute command: " + getName();

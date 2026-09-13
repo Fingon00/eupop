@@ -1,4 +1,4 @@
-package ti4.discord;
+package ootie.discord;
 
 import jakarta.annotation.Nullable;
 import java.util.EnumSet;
@@ -26,59 +26,59 @@ import net.dv8tion.jda.api.utils.ChunkingFilter;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 import org.apache.commons.lang3.function.Consumers;
-import ti4.AsyncTI4DiscordBot;
-import ti4.contest.cron.CombatReplayCron;
-import ti4.contest.cron.CombatReplayPromotionCron;
-import ti4.contest.cron.CombatReplayPromotionScoreBackfillCron;
-import ti4.contest.cron.CombatReplaySelectionCron;
-import ti4.contest.replay.core.CombatContestSettings;
-import ti4.cron.AutoPingCron;
-import ti4.cron.BothelperDashboardCron;
-import ti4.cron.CardsInfoPinCleanupCron;
-import ti4.cron.CategoryCleanupCron;
-import ti4.cron.CloseLaunchThreadsCron;
-import ti4.cron.CronManager;
-import ti4.cron.EndOldGamesCron;
-import ti4.cron.FastScFollowCron;
-import ti4.cron.GameMessageCleanupCron;
-import ti4.cron.InteractionLogCron;
-import ti4.cron.KeepThreadsAliveCron;
-import ti4.cron.LogButtonRuntimeStatisticsCron;
-import ti4.cron.LogCacheStatsCron;
-import ti4.cron.LongExecutionHistoryCron;
-import ti4.cron.MatchmakerCron;
-import ti4.cron.OldUndoFileCleanupCron;
-import ti4.cron.PersistToSqlCron;
-import ti4.cron.ReuploadStaleEmojisCron;
-import ti4.cron.SabotageAutoReactCron;
-import ti4.cron.TechSummaryCron;
-import ti4.cron.UploadRecentStatsCron;
-import ti4.cron.UploadStatsCron;
-import ti4.cron.WinningPathCron;
-import ti4.discord.interactions.commands.SlashCommandManager;
-import ti4.discord.interactions.context.ContextCommandManager;
-import ti4.discord.interactions.listeners.ListenerManager;
-import ti4.discord.interactions.selections.SelectionManager;
-import ti4.executors.ExecutorServiceManager;
-import ti4.executors.ExecutorUtility;
-import ti4.executors.ShutdownResult;
-import ti4.game.persistence.GameManager;
-import ti4.helpers.AliasHandler;
-import ti4.helpers.Constants;
-import ti4.helpers.Storage;
-import ti4.helpers.TIGLHelper;
-import ti4.image.MapRenderPipeline;
-import ti4.image.Mapper;
-import ti4.image.PositionMapper;
-import ti4.image.TileHelper;
-import ti4.logging.BotLogger;
-import ti4.logging.LogBufferManager;
-import ti4.service.draft.SliceGenerationPipeline;
-import ti4.service.emoji.ApplicationEmojiService;
-import ti4.service.statistics.StatisticsPipeline;
-import ti4.settings.GlobalSettings;
-import ti4.spring.context.SpringContext;
-import ti4.spring.service.deploy.ActiveLeaseService;
+import ootie.AsyncootieDiscordBot;
+import ootie.contest.cron.CombatReplayCron;
+import ootie.contest.cron.CombatReplayPromotionCron;
+import ootie.contest.cron.CombatReplayPromotionScoreBackfillCron;
+import ootie.contest.cron.CombatReplaySelectionCron;
+import ootie.contest.replay.core.CombatContestSettings;
+import ootie.cron.AutoPingCron;
+import ootie.cron.BothelperDashboardCron;
+import ootie.cron.CardsInfoPinCleanupCron;
+import ootie.cron.CategoryCleanupCron;
+import ootie.cron.CloseLaunchThreadsCron;
+import ootie.cron.CronManager;
+import ootie.cron.EndOldGamesCron;
+import ootie.cron.FastScFollowCron;
+import ootie.cron.GameMessageCleanupCron;
+import ootie.cron.InteractionLogCron;
+import ootie.cron.KeepThreadsAliveCron;
+import ootie.cron.LogButtonRuntimeStatisticsCron;
+import ootie.cron.LogCacheStatsCron;
+import ootie.cron.LongExecutionHistoryCron;
+import ootie.cron.MatchmakerCron;
+import ootie.cron.OldUndoFileCleanupCron;
+import ootie.cron.PersistToSqlCron;
+import ootie.cron.ReuploadStaleEmojisCron;
+import ootie.cron.SabotageAutoReactCron;
+import ootie.cron.TechSummaryCron;
+import ootie.cron.UploadRecentStatsCron;
+import ootie.cron.UploadStatsCron;
+import ootie.cron.WinningPathCron;
+import ootie.discord.interactions.commands.SlashCommandManager;
+import ootie.discord.interactions.context.ContextCommandManager;
+import ootie.discord.interactions.listeners.ListenerManager;
+import ootie.discord.interactions.selections.SelectionManager;
+import ootie.executors.ExecutorServiceManager;
+import ootie.executors.ExecutorUtility;
+import ootie.executors.ShutdownResult;
+import ootie.game.persistence.GameManager;
+import ootie.helpers.AliasHandler;
+import ootie.helpers.Constants;
+import ootie.helpers.Storage;
+import ootie.helpers.TIGLHelper;
+import ootie.image.MapRenderPipeline;
+import ootie.image.Mapper;
+import ootie.image.PositionMapper;
+import ootie.image.TileHelper;
+import ootie.logging.BotLogger;
+import ootie.logging.LogBufferManager;
+import ootie.service.draft.SliceGenerationPipeline;
+import ootie.service.emoji.ApplicationEmojiService;
+import ootie.service.statistics.StatisticsPipeline;
+import ootie.settings.GlobalSettings;
+import ootie.spring.context.SpringContext;
+import ootie.spring.service.deploy.ActiveLeaseService;
 
 @UtilityClass
 public class JdaService {
@@ -101,8 +101,8 @@ public class JdaService {
             CacheFlag.VOICE_STATE);
 
     // TODO:
-    //       we may not want to trust any old "Admin" role on a server
-    //       should actually have admin rights
+    // we may not want to trust any old "Admin" role on a server
+    // should actually have admin rights
     public static final Set<Role> adminRoles = new HashSet<>();
     public static final Set<Role> developerRoles = new HashSet<>();
     public static final Set<Role> bothelperRoles = new HashSet<>();
@@ -135,7 +135,7 @@ public class JdaService {
 
     private static final ExecutorService EVENT_EXECUTOR = Executors.newFixedThreadPool(
             Runtime.getRuntime().availableProcessors(),
-            Thread.ofPlatform().name("ti4-jda-event-", 0).factory());
+            Thread.ofPlatform().name("ootie-jda-event-", 0).factory());
 
     public static void startJdaAndRegisterListeners(String[] args) {
         BotLogger.info("STARTING JDA");
@@ -149,8 +149,10 @@ public class JdaService {
                         GatewayIntent.MESSAGE_CONTENT,
                         // Needed for emoji searches and validation
                         GatewayIntent.GUILD_EXPRESSIONS)
-                // It *appears* we need to pull all members or else the bot has trouble pinging players
-                // but that may be a misunderstanding, in case we want to try to use an LRU cache in the future
+                // It *appears* we need to pull all members or else the bot has trouble pinging
+                // players
+                // but that may be a misunderstanding, in case we want to try to use an LRU
+                // cache in the future
                 // and avoid loading every user at startup
                 .setMemberCachePolicy(MemberCachePolicy.ALL)
                 .setChunkingFilter(ChunkingFilter.ALL)
@@ -194,7 +196,8 @@ public class JdaService {
         // Async: FOW Chapter
         if (args.length >= 5) {
             guildFogOfWar = tryToInitGuild(args[4], false);
-            if (guildFogOfWar != null) fowServers.add(guildFogOfWar);
+            if (guildFogOfWar != null)
+                fowServers.add(guildFogOfWar);
         }
 
         // Async: Stroter's Paradise
@@ -245,7 +248,8 @@ public class JdaService {
         // Async: FOW Chapter Secondary
         if (args.length >= 15) {
             guildFogOfWarSecondary = tryToInitGuild(args[14], false);
-            if (guildFogOfWarSecondary != null) fowServers.add(guildFogOfWarSecondary);
+            if (guildFogOfWarSecondary != null)
+                fowServers.add(guildFogOfWarSecondary);
         }
 
         // Async: Tournament Server 1
@@ -284,11 +288,13 @@ public class JdaService {
                 + fowServers.size() + " Fog of War servers"
                 + "\n> Guilds: " + jda.getGuilds().stream().map(Guild::getName).collect(Collectors.toSet()));
 
-        if (isProduction()) leaveNonWhitelistedGuilds();
+        if (isProduction())
+            leaveNonWhitelistedGuilds();
 
         // Attempt to start a "Search Only" version of the bot on eligible servers
         for (Guild searchGuild : jda.getGuilds()) {
-            if (guilds.stream().anyMatch(g -> g.getId().equals(searchGuild.getId()))) continue;
+            if (guilds.stream().anyMatch(g -> g.getId().equals(searchGuild.getId())))
+                continue;
             startBotSearchOnly(searchGuild);
         }
 
@@ -305,14 +311,17 @@ public class JdaService {
         BotLogger.info("LOADING DATA");
         jda.getPresence().setActivity(Activity.customStatus("STARTING UP: Loading Data"));
         ApplicationEmojiService.uploadNewEmojis();
-        // load all /resources/planets/ and /resources/systems/ .json files, into 3 HashMaps (not 2)
+        // load all /resources/planets/ and /resources/systems/ .json files, into 3
+        // HashMaps (not 2)
         TileHelper.init();
         // load all /resources/positions/ .properties files, each into 1 Properties
         PositionMapper.init();
-        // load all /resources/data/ .json and .properties files, except logging.properties, each into 1 HashMap or
+        // load all /resources/data/ .json and .properties files, except
+        // logging.properties, each into 1 HashMap or
         // Properties
         Mapper.init();
-        // load all /resources/alias/ .properties files, except position_alias_old.properties, into
+        // load all /resources/alias/ .properties files, except
+        // position_alias_old.properties, into
         AliasHandler.init();
         // create directories for games files
         Storage.init();
@@ -370,13 +379,13 @@ public class JdaService {
         if (!guildID.matches("\\b[0-9]+\\b")) {
             BotLogger.error(
                     "Invalid Guild ID provided: `" + guildID
-                            + "` - If this is running in Production, please correct the ID [here](https://github.com/AsyncTI4/TI4_map_generator_bot/settings/variables/actions/GUILDID_LIST)");
+                            + "` - If this is running in Production, please correct the ID [here](https://github.com/Asyncootie/ootie_map_generator_bot/settings/variables/actions/GUILDID_LIST)");
             return null;
         }
         Guild guild = jda.getGuildById(guildID);
         if (guild == null) {
             BotLogger.error("JDA FAILED TO FIND GUILD with ID: `" + guildID
-                    + "` - please ensure AsyncTI4 is added to that server and has Admin permissions.");
+                    + "` - please ensure Asyncootie is added to that server and has Admin permissions.");
             return null;
         }
         if (!startBot(guild)) {
@@ -412,15 +421,20 @@ public class JdaService {
     }
 
     private static boolean startBotSearchOnly(Guild guild) {
-        // Do not set up search commands for test bots, and definitely never for the hub server, which several test bots
+        // Do not set up search commands for test bots, and definitely never for the hub
+        // server, which several test bots
         // are still in
-        if (guild == null) return false;
-        if (System.getenv("TESTING") != null) return false;
-        if (Constants.ASYNCTI4_HUB_SERVER_ID.equals(guild.getId())) return false;
+        if (guild == null)
+            return false;
+        if (System.getenv("TESTING") != null)
+            return false;
+        if (Constants.ASYNCootie_HUB_SERVER_ID.equals(guild.getId()))
+            return false;
 
         // Disable this for now
         boolean x = true;
-        if (x) return false;
+        if (x)
+            return false;
 
         try {
             CommandListUpdateAction commands = guild.updateCommands();
@@ -436,18 +450,20 @@ public class JdaService {
 
     public static void updatePresence() {
         long activeGames = GameManager.getActiveGameCount();
-        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.playing(activeGames + " games of Async TI4"));
+        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.playing(activeGames + " games of Async ootie"));
     }
 
     /**
-     * Initializes the whitelisted roles for the bot, including admin, developer, and bothelper roles.
+     * Initializes the whitelisted roles for the bot, including admin, developer,
+     * and bothelper roles.
      * <ul>
      * <li>Admins may execute /admin, /developer, and /bothelper commands</li>
      * <li>Developers may execute /developer commands</li>
      * <li>Bothelpers may execute /bothelper commands</li>
      * </ul>
      *
-     * Add your test server's role ID to enable access to these commands on your server
+     * Add your test server's role ID to enable access to these commands on your
+     * server
      */
     private static void initializeWhitelistedRoles() {
         // ADMIN ROLES
@@ -601,9 +617,11 @@ public class JdaService {
     @Nullable
     public static String getUsername(String userId) {
         Member member = guildPrimary.getMemberById(userId);
-        if (member != null) return member.getEffectiveName();
+        if (member != null)
+            return member.getEffectiveName();
         User user = jda.getUserById(userId);
-        if (user != null) return user.getEffectiveName();
+        if (user != null)
+            return user.getEffectiveName();
         return null;
     }
 
@@ -612,14 +630,15 @@ public class JdaService {
     }
 
     public static void leaveGuildIfNotWhitelisted(Guild guild) {
-        if (!isProduction() || isWhitelistedGuild(guild)) return;
+        if (!isProduction() || isWhitelistedGuild(guild))
+            return;
         BotLogger.warning(
                 "Leaving guild '" + guild.getName() + "' (" + guild.getId() + ") because it isn't whitelisted!");
         guild.leave().queue(Consumers.nop(), BotLogger::catchRestError);
     }
 
     public static boolean isProduction() {
-        return Constants.ASYNCTI4_HUB_SERVER_ID.equals(guildPrimaryID);
+        return Constants.ASYNCootie_HUB_SERVER_ID.equals(guildPrimaryID);
     }
 
     private static boolean isWhitelistedGuild(Guild guild) {
@@ -629,7 +648,7 @@ public class JdaService {
 
     public static void shutdown() {
         try {
-            AsyncTI4DiscordBot.markShuttingDown();
+            AsyncootieDiscordBot.markShuttingDown();
 
             jda.getPresence().setPresence(OnlineStatus.DO_NOT_DISTURB, Activity.customStatus("BOT IS SHUTTING DOWN"));
             BotLogger.info("SHUTDOWN PROCESS STARTED");

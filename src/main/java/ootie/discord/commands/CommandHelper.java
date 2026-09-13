@@ -1,15 +1,20 @@
-package ti4.discord.interactions.commands;
+package ootie.discord.interactions.commands;
 
+import java.lang.reflect.Member;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
+
 import javax.annotation.Nullable;
+import javax.management.relation.Role;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.function.Consumers;
+
 import lombok.experimental.UtilityClass;
-import net.dv8tion.jda.api.entities.Member;
-import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.command.GenericCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
@@ -19,20 +24,18 @@ import net.dv8tion.jda.api.interactions.commands.Command.Choice;
 import net.dv8tion.jda.api.interactions.commands.CommandInteractionPayload;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import net.dv8tion.jda.api.interactions.components.buttons.ButtonInteraction;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.function.Consumers;
-import ti4.discord.JdaService;
-import ti4.game.Game;
-import ti4.game.Player;
-import ti4.game.Tile;
-import ti4.game.persistence.GameManager;
-import ti4.helpers.AliasHandler;
-import ti4.helpers.Constants;
-import ti4.helpers.Helper;
-import ti4.image.Mapper;
-import ti4.image.TileHelper;
-import ti4.logging.BotLogger;
-import ti4.service.game.GameNameService;
+import ootie.discord.JdaService;
+import ootie.game.Game;
+import ootie.game.Player;
+import ootie.game.Tile;
+import ootie.game.persistence.GameManager;
+import ootie.helpers.AliasHandler;
+import ootie.helpers.Constants;
+import ootie.helpers.Helper;
+import ootie.image.Mapper;
+import ootie.image.TileHelper;
+import ootie.logging.BotLogger;
+import ootie.service.game.GameNameService;
 
 @UtilityClass
 public class CommandHelper {
@@ -109,8 +112,7 @@ public class CommandHelper {
 
         OptionMapping factionColorOption = event.getOption(Constants.FACTION_COLOR);
         if (factionColorOption != null) {
-            String factionColor =
-                    AliasHandler.resolveColor(factionColorOption.getAsString().toLowerCase());
+            String factionColor = AliasHandler.resolveColor(factionColorOption.getAsString().toLowerCase());
             Player player = getPlayerByFactionColor(factionColor, game);
             if (player != null) {
                 return player;
@@ -174,15 +176,15 @@ public class CommandHelper {
 
         OptionMapping factionColorOption = event.getOption(Constants.TARGET_FACTION_OR_COLOR);
         if (factionColorOption != null) {
-            String factionColor =
-                    AliasHandler.resolveColor(factionColorOption.getAsString().toLowerCase());
+            String factionColor = AliasHandler.resolveColor(factionColorOption.getAsString().toLowerCase());
             return getPlayerByFactionColor(factionColor, game);
         }
 
         return null;
     }
 
-    // Return game.getRealPlayers() if target is ALL, otherwise supports comma separated list
+    // Return game.getRealPlayers() if target is ALL, otherwise supports comma
+    // separated list
     public static List<Player> getTargetPlayersFromOption(Game game, SlashCommandInteractionEvent event) {
         List<Player> targetPlayers = new ArrayList<>();
         String targetOption = event.getOption(Constants.TARGET_FACTION_OR_COLOR, null, OptionMapping::getAsString);
@@ -207,8 +209,7 @@ public class CommandHelper {
         if (hasRole(event, acceptedRoles)) {
             return true;
         }
-        var acceptRolesStr =
-                acceptedRoles.stream().map(Role::getName).distinct().collect(Collectors.joining(", "));
+        var acceptRolesStr = acceptedRoles.stream().map(Role::getName).distinct().collect(Collectors.joining(", "));
         event.getHook()
                 .editOriginal("You are not authorized to use this command. You must have one of the following roles: "
                         + acceptRolesStr)
@@ -249,8 +250,7 @@ public class CommandHelper {
                 return colorFromString;
             }
         } else {
-            Player foundPlayer =
-                    getPlayerFromGame(game, event.getMember(), event.getUser().getId());
+            Player foundPlayer = getPlayerFromGame(game, event.getMember(), event.getUser().getId());
             if (foundPlayer != null) {
                 return foundPlayer.getColor();
             }

@@ -1,4 +1,4 @@
-package ti4;
+package ootie;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -9,21 +9,21 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import ti4.discord.JdaService;
-import ti4.discord.interactions.buttons.ButtonProcessor;
-import ti4.discord.interactions.listeners.ModalListener;
-import ti4.discord.interactions.selections.SelectionMenuProcessor;
-import ti4.game.persistence.GameManager;
-import ti4.game.persistence.migration.DataMigrationManager;
-import ti4.logging.BotLogger;
-import ti4.logging.RollbarManager;
-import ti4.settings.GlobalSettings;
-import ti4.spring.service.deploy.ActiveLeaseService;
-import ti4.spring.service.jda.JdaLifecycleService;
+import ootie.discord.JdaService;
+import ootie.discord.interactions.buttons.ButtonProcessor;
+import ootie.discord.interactions.listeners.ModalListener;
+import ootie.discord.interactions.selections.SelectionMenuProcessor;
+import ootie.game.persistence.GameManager;
+import ootie.game.persistence.migration.DataMigrationManager;
+import ootie.logging.BotLogger;
+import ootie.logging.RollbarManager;
+import ootie.settings.GlobalSettings;
+import ootie.spring.service.deploy.ActiveLeaseService;
+import ootie.spring.service.jda.JdaLifecycleService;
 
 @EnableScheduling
 @SpringBootApplication
-public class AsyncTI4DiscordBot {
+public class OotieBot {
 
     public static final long START_TIME_MILLISECONDS = System.currentTimeMillis();
     public static final String INSTANCE_ID = UUID.randomUUID().toString();
@@ -38,7 +38,7 @@ public class AsyncTI4DiscordBot {
         RollbarManager.init();
         BotLogger.info("\n# __BOT IS STARTING UP__");
 
-        ConfigurableApplicationContext applicationContext = SpringApplication.run(AsyncTI4DiscordBot.class, args);
+        ConfigurableApplicationContext applicationContext = SpringApplication.run(OotieBot.class, args);
         applicationContext.getBean(JdaLifecycleService.class);
         ActiveLeaseService activeLeaseService = applicationContext.getBean(ActiveLeaseService.class);
 
@@ -54,7 +54,7 @@ public class AsyncTI4DiscordBot {
         SelectionMenuProcessor.checkSelectionMenuHandlersSetup();
         ModalListener.checkModalHandlersSetup();
         BotLogger.info("FINISHED WARMING INTERACTION HANDLERS");
-        activeLeaseService.beginLeaseParticipation(AsyncTI4DiscordBot::runLeaseOwnedStartupWork);
+        activeLeaseService.beginLeaseParticipation(AsyncootieDiscordBot::runLeaseOwnedStartupWork);
         JdaService.registerAndStartCronJobs();
         JdaService.markProcessReady();
     }
@@ -70,8 +70,10 @@ public class AsyncTI4DiscordBot {
             return sourceArgs;
         }
 
-        // Compatibility bridge: the legacy startup path passes Discord config as positional args,
-        // while the Compose/docker-rollout deployment path provides the same values via env vars.
+        // Compatibility bridge: the legacy startup path passes Discord config as
+        // positional args,
+        // while the Compose/docker-rollout deployment path provides the same values via
+        // env vars.
         String botToken = System.getenv("DISCORD_BOT_TOKEN");
         String botUserId = System.getenv("DISCORD_BOT_USERID");
         String guildIdList = System.getenv("GUILDID_LIST");

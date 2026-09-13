@@ -1,13 +1,14 @@
-package ti4.discord.interactions.listeners;
+package ootie.discord.interactions.listeners;
+
+import org.apache.commons.lang3.function.Consumers;
 
 import net.dv8tion.jda.api.events.interaction.command.GenericCommandInteractionEvent;
-import org.apache.commons.lang3.function.Consumers;
-import ti4.AsyncTI4DiscordBot;
-import ti4.discord.JdaService;
-import ti4.helpers.DateTimeHelper;
-import ti4.logging.BotLogger;
-import ti4.logging.LogOrigin;
-import ti4.spring.service.deploy.ActiveLeaseService;
+import ootie.AsyncootieDiscordBot;
+import ootie.discord.JdaService;
+import ootie.helpers.DateTimeHelper;
+import ootie.logging.BotLogger;
+import ootie.logging.LogOrigin;
+import ootie.spring.service.deploy.ActiveLeaseService;
 
 interface CommandListener {
 
@@ -30,7 +31,8 @@ interface CommandListener {
 
     default <T extends GenericCommandInteractionEvent> void warnForLongRunningCommands(
             T event, long processStartTimeMs) {
-        if (AsyncTI4DiscordBot.isUnstable()) return;
+        if (AsyncootieDiscordBot.isUnstable())
+            return;
 
         long endTime = System.currentTimeMillis();
         long eventTimeMs = DateTimeHelper.getLongDateTimeFromDiscordSnowflake(event.getInteraction());

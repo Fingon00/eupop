@@ -1,22 +1,25 @@
-package ti4.discord.interactions.listeners;
+package ootie.discord.interactions.listeners;
 
 import java.time.Duration;
 import java.util.Set;
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.atomic.AtomicLong;
+
 import javax.annotation.Nonnull;
+
+import org.apache.commons.lang3.function.Consumers;
+
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import org.apache.commons.lang3.function.Consumers;
-import ti4.AsyncTI4DiscordBot;
-import ti4.contest.replay.buttons.CombatDoubleOrBustButtonIds;
-import ti4.contest.replay.buttons.CombatSideBetButtonIds;
-import ti4.discord.JdaService;
-import ti4.discord.interactions.buttons.ButtonProcessor;
-import ti4.helpers.ButtonHelper;
-import ti4.logging.BotLogger;
-import ti4.spring.service.deploy.ActiveLeaseService;
+import ootie.AsyncootieDiscordBot;
+import ootie.contest.replay.buttons.CombatDoubleOrBustButtonIds;
+import ootie.contest.replay.buttons.CombatSideBetButtonIds;
+import ootie.discord.JdaService;
+import ootie.discord.buttons.ButtonProcessor;
+import ootie.helpers.ButtonHelper;
+import ootie.logging.BotLogger;
+import ootie.spring.service.deploy.ActiveLeaseService;
 
 class ButtonListener extends ListenerAdapter {
 
@@ -25,7 +28,8 @@ class ButtonListener extends ListenerAdapter {
     private static ButtonListener instance;
 
     public static ButtonListener getInstance() {
-        if (instance == null) instance = new ButtonListener();
+        if (instance == null)
+            instance = new ButtonListener();
         return instance;
     }
 
@@ -37,7 +41,7 @@ class ButtonListener extends ListenerAdapter {
         }
         if (!JdaService.isReadyToReceiveCommands()) {
             event.reply("You pressed: " + ButtonHelper.getButtonRepresentation(event.getButton(), false)
-                            + "\nPlease try again in a few minutes. The bot is rebooting.")
+                    + "\nPlease try again in a few minutes. The bot is rebooting.")
                     .setEphemeral(true)
                     .queue(Consumers.nop(), BotLogger::catchRestError);
             return;
@@ -56,10 +60,12 @@ class ButtonListener extends ListenerAdapter {
     }
 
     /**
-     * @return whether a button should show the bot is thinking - need to add the following at end of execution:
-     * `    if (event instanceof ButtonInteractionEvent buttonEvent) {
-     * buttonEvent.getHook().deleteOriginal().queue(Consumers.nop(), BotLogger::catchRestError);
-     * }`
+     * @return whether a button should show the bot is thinking - need to add the
+     *         following at end of execution:
+     *         ` if (event instanceof ButtonInteractionEvent buttonEvent) {
+     *         buttonEvent.getHook().deleteOriginal().queue(Consumers.nop(),
+     *         BotLogger::catchRestError);
+     *         }`
      */
     private static boolean shouldShowBotIsThinking(ButtonInteractionEvent event) {
         String buttonId = event.getButton().getCustomId();
@@ -70,7 +76,8 @@ class ButtonListener extends ListenerAdapter {
     }
 
     /**
-     * @return whether the button spawns a Modal - modals must be a raw undeferred reply
+     * @return whether the button spawns a Modal - modals must be a raw undeferred
+     *         reply
      */
     private static boolean isModalSpawner(ButtonInteractionEvent event) {
         return event.getButton().getCustomId().contains("~MDL");
@@ -87,7 +94,8 @@ class ButtonListener extends ListenerAdapter {
         private static final AtomicLong lastWarningTimeMs = new AtomicLong(0);
 
         static void check(GenericInteractionCreateEvent event) {
-            if (AsyncTI4DiscordBot.isUnstable()) return;
+            if (AsyncootieDiscordBot.isUnstable())
+                return;
 
             long now = System.currentTimeMillis();
             long lastWarning = lastWarningTimeMs.get();
