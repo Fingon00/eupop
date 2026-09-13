@@ -119,9 +119,7 @@ class GameUndoService {
     }
 
     private static void sendUndoConfirmationMessage(Game gameToUndo, int undoIndex, int latestUndoIndex) {
-        if (gameToUndo.isFowMode()) {
-            return;
-        }
+
         Map<String, String> undoNamesToCommandText =
                 GameUndoNameService.getUndoNamesToCommandText(gameToUndo, latestUndoIndex - undoIndex);
         List<String> undoCommands = new ArrayList<>();

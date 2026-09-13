@@ -12,6 +12,7 @@ import lombok.experimental.UtilityClass;
 import ootie.ResourceHelper;
 import ootie.json.JsonMapperManager;
 import ootie.logging.BotLogger;
+import ootie.model.ModelInterface;
 import tools.jackson.databind.json.JsonMapper;
 
 @UtilityClass
@@ -65,7 +66,7 @@ public class Mapper {
                 continue;
             }
             try {
-                importJsonObjects(jsonFolderName + File.separator + file.getName(), objectMap, target);
+                // importJsonObjects(jsonFolderName + File.separator + file.getName(), objectMap, target);
             } catch (Exception e) {
                 BotLogger.error("Could not import JSON Objects from file: " + jsonFolderName + "/" + file.getName(), e);
             }

@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Set;
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
-import ootie.image.PositionMapper;
 
 @UtilityClass
 public class RegexHelper {
@@ -53,16 +52,6 @@ public class RegexHelper {
     public static String colorRegex(Game game, String group) {
         Set<String> colorNames = legalColors(game);
         return regexBuilder(group, colorNames);
-    }
-
-    /** @return group matching any legal tile position in the bot */
-    public static String posRegex(String group) {
-        return regexBuilder(group, PositionMapper.getTilePositions());
-    }
-
-    /** @return group "pos" matching any legal tile position in the bot */
-    public static String posRegex() {
-        return posRegex("pos");
     }
 
     /** @return group "ring" matching "ring<#>" or "ringcorners", and returns "<#>" or "corners" respectively */

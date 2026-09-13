@@ -157,8 +157,6 @@ public class Game extends GameProperties {
 
     public Game() {
         long currentTimeMillis = System.currentTimeMillis();
-        setCreationDateTime(currentTimeMillis);
-        setLastModifiedDate(currentTimeMillis);
     }
 
     public void newGameSetup() {

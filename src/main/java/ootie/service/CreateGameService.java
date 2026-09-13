@@ -29,10 +29,8 @@ import ootie.ResourceHelper;
 import ootie.discord.JdaService;
 import ootie.discord.utility.DiscordRoleUtility;
 import ootie.game.Game;
-import ootie.game.Player;
 import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
-import ootie.helpers.Helper;
 import ootie.helpers.ThreadArchiveHelper;
 import ootie.logging.BotLogger;
 import ootie.message.MessageHelper;
@@ -50,12 +48,7 @@ public class CreateGameService {
         Game newGame = new Game();
         newGame.newGameSetup();
         String ownerID = gameOwner.getId();
-        newGame.setOwnerID(ownerID);
-        newGame.setOwnerName(gameOwner.getEffectiveName());
         newGame.setName(gameName);
-        newGame.setAutoPing(true);
-        newGame.setAutoPingSpacer(12);
-        newGame.addPlayer(gameOwner.getId(), gameOwner.getEffectiveName());
         GameManager.save(newGame, "Game created");
         return newGame;
     }
@@ -74,12 +67,6 @@ public class CreateGameService {
         // SEARCH FOR EXISTING OPEN THREAD
         for (ThreadChannel threadChannel_ : threadChannels) {
             if (threadName.equals(threadChannel_.getName())) {
-                String guildName = game.getGuild() == null
-                        ? "Server Unknown"
-                        : game.getGuild().getName();
-                MessageHelper.sendMessageToChannel(
-                        threadChannel_,
-                        "Game: **" + game.getName() + "** on server **" + guildName + "** has been created.");
                 break;
             }
         }
@@ -129,23 +116,8 @@ public class CreateGameService {
 
         // CREATE GAME
         Game newGame = createNewGame(gameName, gameOwner);
-        if (event.getChannel() instanceof ThreadChannel thread) {
-            if (thread.getName().toLowerCase().contains("tigl")
-                    || newGame.getCustomName().toLowerCase().contains("tigl")
-                    || "making-tigl-games".equals(thread.getParentChannel().getName())) {
-                gameFunName = "TIGL " + gameFunName;
-            }
-        }
 
         // ADD PLAYERS
-        for (Member member : members) {
-            newGame.addPlayer(member.getId(), member.getEffectiveName());
-        }
-        newGame.setPlayerCountForMap(members.size());
-        newGame.setStrategyCardsPerPlayer(newGame.getSCList().size() / members.size());
-
-        // CREATE CHANNELS
-        newGame.setCustomName(gameFunName);
         gameFunName = gameFunName.replace(" ", "-");
         gameFunName = gameFunName.replace(".", "");
         gameFunName = gameFunName.replace(":", "");
@@ -160,14 +132,12 @@ public class CreateGameService {
                 .syncPermissionOverrides()
                 .addRolePermissionOverride(gameRoleID, permission, 0)
                 .complete();
-        newGame.setTableTalkChannelID(chatChannel.getId());
 
         // CREATE ACTIONS CHANNEL
         TextChannel actionsChannel = guild.createTextChannel(newActionsChannelName, categoryChannel)
                 .syncPermissionOverrides()
                 .addRolePermissionOverride(gameRoleID, permission, 0)
                 .complete();
-        newGame.setMainChannelID(actionsChannel.getId());
         List<Member> nonGameBothelpers = new ArrayList<>();
         Role bothelperRole = DiscordRoleUtility.getRole("Bothelper", guild);
         if (bothelperRole != null) {
@@ -206,15 +176,6 @@ public class CreateGameService {
                 .createThreadChannel(newBotThreadName)
                 .setAutoArchiveDuration(ThreadChannel.AutoArchiveDuration.TIME_1_WEEK)
                 .complete();
-        newGame.setBotMapUpdatesThreadID(botThread.getId());
-
-        // Create Cards Info Threads
-        for (Player player : newGame.getPlayers().values()) {
-            if (player.isNpc() || player.isDummy()) {
-                continue;
-            }
-            player.getCardsInfoThread();
-        }
 
         // Report Channel Creation back to Launch channel
         String message = "Role and Channels have been set up:\n> " + role.getName()
@@ -245,20 +206,10 @@ public class CreateGameService {
         return newGame;
     }
 
-    private static void introductionToActionsChannel(Game game) {
-        String actionsGetStartedMessage = game.getPing() + " - actions channel\n"
-                + "This channel is for taking actions in the game, primarily using buttons or the odd slash command.\n"
-                + "Generally, you don't want to chat in here once the game starts, as ideally this channel is a clean ledger of what has happened in the game for others to quickly read.\n";
-        MessageHelper.sendMessageToChannelAndPin(game.getActionsChannel(), actionsGetStartedMessage);
-    }
+    private static void introductionToActionsChannel(Game game) {}
 
     private static void introductionToTableTalkChannel(Game game) {
-        TextChannel chatChannel = game.getTableTalkChannel();
-        String tabletalkGetStartedMessage = game.getPing() + " - table talk channel\n"
-                + "This channel is for typical over the table conversation, as you would over the table while playing the game in real life.\n"
-                + "If this group has agreed to whispers (secret conversations), you can create private threads off this channel, or utilize the bots in built whispers (explained in more detail in your cards info once you're set up).\n"
-                + "Typical things that go here are: general conversation, deal proposals, memes - everything that isn't either an actual action in the game or a bot command\n";
-        // +
+
         // game.getPing()
         // + " if you are playing with strangers, you should take a few moments at the start here to discuss how you're
         // going handle disputes and take-backs. Async is an odd format, it can get messy "
@@ -274,7 +225,6 @@ public class CreateGameService {
         // "strive to treat the other people with respect, patience, and hopefully kindness. If you cannot, you should
         // step away, and if you ever feel the need to leave a game permanently, we do have a replacement system that
         // gets a fair amount of use (ping a bothelper for specifics)";
-        MessageHelper.sendMessageToChannelAndPin(chatChannel, tabletalkGetStartedMessage);
     }
 
     /**
@@ -442,9 +392,6 @@ public class CreateGameService {
             return null;
         }
         String gameNumberStr = StringUtils.substringAfter(gameName, "pbd");
-        if (!Helper.isInteger(gameNumberStr)) {
-            return null;
-        }
 
         // Find existing category name
         int gameNumber = Integer.parseInt(gameNumberStr);

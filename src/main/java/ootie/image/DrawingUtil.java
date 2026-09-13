@@ -38,8 +38,6 @@ import ootie.image.MapGenerator.HorizontalAlign;
 import ootie.image.MapGenerator.VerticalAlign;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
-import ootie.model.ColorModel;
-import ootie.service.emoji.TI4Emoji;
 
 @UtilityClass
 public class DrawingUtil {

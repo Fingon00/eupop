@@ -2,7 +2,6 @@ package ootie.spring.context;
 
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
-import ootie.game.Player;
 import ootie.logging.RollbarManager;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -28,10 +27,6 @@ public class RequestContext {
 
     public static Game getGame() {
         return game.get();
-    }
-
-    public static Player getPlayer() {
-        return getGame().getPlayer(getUserId());
     }
 
     static boolean shouldSaveGame() {

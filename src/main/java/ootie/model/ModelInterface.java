@@ -1,4 +1,4 @@
-package model;
+package ootie.model;
 
 public interface ModelInterface {
     boolean isValid();

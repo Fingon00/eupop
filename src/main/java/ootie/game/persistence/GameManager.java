@@ -1,7 +1,6 @@
 package ootie.game.persistence;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -20,8 +19,6 @@ import ootie.executors.ExecutorServiceManager;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.logging.BotLogger;
-import ootie.service.fow.LoreService;
-import ootie.spring.websocket.WebSocketNotifier;
 import org.apache.commons.lang3.StringUtils;
 
 @UtilityClass
@@ -86,10 +83,6 @@ public class GameManager {
     private static void handleManagedGameRemoval(String gameName) {
         gameNames.remove(gameName);
         var managedGame = gameNameToManagedGame.remove(gameName);
-        if (managedGame != null) {
-            managedGame.getPlayers().forEach(player -> player.removeGame(gameName));
-        }
-        LoreService.evictGameLore(gameName);
     }
 
     public static boolean isValid(String gameName) {
@@ -99,23 +92,14 @@ public class GameManager {
 
     public static void save(Game game, String reason) {
         waitFor(gameNamesLoadedLatch);
-        boolean wasActive = Optional.ofNullable(gameNameToManagedGame.get(game.getName()))
-                .map(ManagedGame::isActive)
-                .orElse(false);
+
         if (!GameSaveService.save(game, reason)) {
             throw new RuntimeException("Failed to save game " + game.getName() + ".");
         }
-        WebSocketNotifier.notifyGameStateChange(game);
 
         gameNames.add(game.getName());
         gameNameToManagedGame.put(game.getName(), new ManagedGame(game));
-
-        boolean isActive = Optional.ofNullable(gameNameToManagedGame.get(game.getName()))
-                .map(ManagedGame::isActive)
-                .orElse(false);
-        if (wasActive != isActive) {
-            JdaService.updatePresence();
-        }
+        JdaService.updatePresence();
     }
 
     public static boolean delete(String gameName) {

@@ -45,11 +45,6 @@ public final class Buttons {
         return makeButton(ButtonStyle.PRIMARY, buttonID, buttonLabel, emoji);
     }
 
-    /** A blue button (primary style) with an emoji */
-    public static Button blue(String buttonID, String buttonLabel, ootieEmoji emoji) {
-        return makeButton(ButtonStyle.PRIMARY, buttonID, buttonLabel, emoji == null ? null : emoji.toString());
-    }
-
     /** A gray button (secondary style) */
     public static Button gray(String buttonID, String buttonLabel) {
         return makeButton(ButtonStyle.SECONDARY, buttonID, buttonLabel, null);

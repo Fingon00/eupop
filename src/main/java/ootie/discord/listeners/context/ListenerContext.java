@@ -2,6 +2,7 @@ package ootie.discord.listeners.context;
 
 import lombok.Getter;
 import lombok.Setter;
+import net.dv8tion.jda.api.entities.Message.Interaction;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
@@ -12,9 +13,7 @@ import ootie.game.Player;
 import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
-import ootie.message.MessageHelper;
 import ootie.service.GameNameService;
-import ootie.service.event.EventAuditService;
 import org.apache.commons.lang3.function.Consumers;
 
 @Getter
@@ -125,13 +124,12 @@ public abstract class ListenerContext {
     }
 
     private void handlePlayerHittingButtonTheyDoNotOwn(Interaction event) {
-        String message = "To " + player.fogSafeEmoji() + ": these buttons are for someone else";
-        MessageHelper.sendMessageToChannel(event.getMessageChannel(), message);
+        String message = "To these buttons are for someone else";
     }
 
     public void save() {
         if (game != null) {
-            GameManager.save(game, EventAuditService.getReason(getEvent()));
+            GameManager.save(game, "eh");
         }
     }
 }

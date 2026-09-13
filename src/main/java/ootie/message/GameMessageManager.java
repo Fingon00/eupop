@@ -1,6 +1,5 @@
 package ootie.message;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -16,7 +15,6 @@ import javax.annotation.Nullable;
 import lombok.experimental.UtilityClass;
 import ootie.game.persistence.GameManager;
 import ootie.game.persistence.ManagedGame;
-import ootie.json.PersistenceManager;
 import ootie.logging.BotLogger;
 
 @UtilityClass
@@ -205,21 +203,13 @@ public class GameMessageManager {
             String gameName = entry.getKey();
             List<GameMessage> messages = entry.getValue();
             ManagedGame game = GameManager.getManagedGame(gameName);
-            if (game == null || game.isHasEnded() || messages.isEmpty()) {
+            if (game == null || messages.isEmpty()) {
                 iterator.remove();
                 removedGames.add(gameName);
                 continue;
             }
 
-            int playerCount = game.getRealPlayers().size();
             long twoWeeksAgo = System.currentTimeMillis() - TimeUnit.DAYS.toMillis(14);
-            boolean removed = messages.removeIf(
-                    msg -> (playerCount > 0 && msg.factionsThatReacted().size() >= playerCount)
-                            || msg.gameSaveTime() <= twoWeeksAgo);
-            if (removed) {
-                removedMessages = true;
-                BotLogger.info("GameMessageCleanupCron removed GameMessages for " + gameName);
-            }
 
             if (messages.isEmpty()) {
                 iterator.remove();
@@ -275,23 +265,10 @@ public class GameMessageManager {
     }
 
     private static GameMessages readFile() {
-        try {
-            GameMessages gameMessages =
-                    PersistenceManager.readObjectFromJsonFile(GAME_MESSAGES_FILE, GameMessages.class);
-            return gameMessages != null ? gameMessages : new GameMessages(new HashMap<>());
-        } catch (IOException e) {
-            BotLogger.error("Failed to read json data for GameMessages.", e);
-            return null;
-        }
+        return null;
     }
 
-    private static void persistFile(GameMessages toPersist) {
-        try {
-            PersistenceManager.writeObjectToJsonFile(GAME_MESSAGES_FILE, toPersist);
-        } catch (Exception e) {
-            BotLogger.error("Failed to write json data for GameMessages.", e);
-        }
-    }
+    private static void persistFile(GameMessages toPersist) {}
 
     private record GameMessages(Map<String, List<GameMessage>> gameNameToMessages) {}
 }

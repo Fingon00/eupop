@@ -22,7 +22,6 @@ import ootie.helpers.DateTimeHelper;
 import ootie.helpers.DiscordWebhook;
 import ootie.helpers.ThreadGetter;
 import ootie.message.MessageHelper;
-import ootie.service.statistics.SREStats;
 import ootie.settings.GlobalSettings;
 import ootie.settings.GlobalSettings.ImplementedSettings;
 import ootie.spring.service.deploy.ActiveLeaseService;
@@ -241,11 +240,6 @@ public class BotLogger {
             @Nonnull LogSeverity severity,
             @Nullable String threadName) {
         reportToRollbar(origin, message, err, severity);
-
-        // Count Error-severity logs once per entry
-        if (severity.isErrorOrHigher()) {
-            SREStats.incrementErrorCount();
-        }
 
         TextChannel channel;
         StringBuilder msg = new StringBuilder();

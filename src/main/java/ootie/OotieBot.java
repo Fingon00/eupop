@@ -49,10 +49,8 @@ public class OotieBot {
         JdaService.loadStaticDataAndResources();
         BotLogger.info("WARMING INTERACTION HANDLERS");
         ButtonProcessor.checkButtonHandlersSetup();
-        SelectionMenuProcessor.checkSelectionMenuHandlersSetup();
-        ModalListener.checkModalHandlersSetup();
         BotLogger.info("FINISHED WARMING INTERACTION HANDLERS");
-        activeLeaseService.beginLeaseParticipation(AsyncootieDiscordBot::runLeaseOwnedStartupWork);
+        activeLeaseService.beginLeaseParticipation(OotieBot::runLeaseOwnedStartupWork);
         JdaService.registerAndStartCronJobs();
         JdaService.markProcessReady();
     }

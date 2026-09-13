@@ -62,18 +62,6 @@ public final class ResourceHelper {
     }
 
     @Nullable
-    public String getUnitFile(UnitKey unit) {
-        String name = unit.getFileName();
-        return getCachedResource(unitCache, "units/", name);
-    }
-
-    @Nullable
-    public String getUnitFile(UnitKey unit, boolean eyes) {
-        String name = unit.getFileName(eyes);
-        return getCachedResource(unitCache, "units/", name);
-    }
-
-    @Nullable
     public String getDecalFile(String name) {
         return getCachedResource(decalCache, "decals/", name);
     }

@@ -43,9 +43,6 @@ public class MapRenderPipeline {
                         if (renderEvent.uploadToDiscord) {
                             uploadToDiscord(mapGenerator, renderEvent.callback());
                         }
-                        if (renderEvent.uploadToWebsite) {
-                            mapGenerator.uploadToWebsite();
-                        }
                     } catch (Exception e) {
                         BotLogger.error(new LogOrigin(renderEvent.game), "Failed to render event.", e);
                     }

@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
+import ootie.OotieBot;
 
 /**
  * Rollbar bootstrap, reporting facade, and thread-local context store.
@@ -172,7 +173,7 @@ public class RollbarManager {
     }
 
     private static String getDefaultCodeVersion() {
-        String implementationVersion = AsyncootieDiscordBot.class.getPackage().getImplementationVersion();
+        String implementationVersion = OotieBot.class.getPackage().getImplementationVersion();
         return implementationVersion == null || implementationVersion.isBlank() ? "dev" : implementationVersion;
     }
 

@@ -6,7 +6,6 @@ import java.awt.Point;
 import java.awt.color.ColorSpace;
 import java.awt.image.BufferedImage;
 import java.awt.image.ColorConvertOp;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,9 +19,7 @@ import ootie.helpers.DateTimeHelper;
 import ootie.helpers.DisplayType;
 import ootie.message.MessageHelper;
 import ootie.service.image.FileUploadService;
-import ootie.service.map.FractureService;
 import ootie.settings.GlobalSettings;
-import ootie.website.model.WebsiteOverlay;
 import org.apache.commons.lang3.time.StopWatch;
 
 public class MapGenerator implements AutoCloseable {
@@ -52,7 +49,6 @@ public class MapGenerator implements AutoCloseable {
     private byte[] mainImageBytes;
     private String imageFormat = "webp";
     private final GenericInteractionCreateEvent event;
-    private final int scoreTokenSpacing;
     private final Game game;
     private final DisplayType displayType;
     private final DisplayType displayTypeBasic;
@@ -61,7 +57,6 @@ public class MapGenerator implements AutoCloseable {
     private final int height;
     private final int heightForGameInfo;
 
-    private final List<WebsiteOverlay> websiteOverlays = new ArrayList<>();
     private final int mapWidth;
     private int minX = -1;
     private int minY = -1;
@@ -90,52 +85,22 @@ public class MapGenerator implements AutoCloseable {
         this.displayType = defaultIfNull(displayType);
         this.event = event;
 
-        // Get a control token to calculate needed width of objectives later based on number of players
-        String controlID = Mapper.getControlID("red");
-        BufferedImage bufferedImage = ImageHelper.readScaled(Mapper.getCCPath(controlID), 0.45f);
-        if (bufferedImage != null) scoreTokenSpacing = bufferedImage.getWidth() + 6;
-        else scoreTokenSpacing = 30;
-
         // Height of objectives section (=0 when there is 5 or less objectives in the column with most objectives)
         Set<String> revealedObjectives = game.getRevealedPublicObjectives().keySet();
         int stage1PublicObjCount = 0;
         int stage2PublicObjCount = 0;
-        for (String objective : revealedObjectives) {
-            if (Mapper.getPublicObjectivesStage1().containsKey(objective)) {
-                stage1PublicObjCount++;
-            } else if (Mapper.getPublicObjectivesStage2().containsKey(objective)) {
-                stage2PublicObjCount++;
-            }
-        }
         int otherObjCount = revealedObjectives.size() - stage1PublicObjCount - stage2PublicObjCount;
-        otherObjCount = Math.max(Objective.retrieveCustom(game).size(), otherObjCount);
         stage1PublicObjCount += game.getPublicObjectives1Peekable().size();
         stage2PublicObjCount += game.getPublicObjectives2Peekable().size();
         int mostObjectivesInAColumn = Math.max(Math.max(stage1PublicObjCount, stage2PublicObjCount), otherObjCount);
         int heightOfObjectivesSection = Math.max((mostObjectivesInAColumn - 5) * 43, 0);
 
         // Height of sections of players stats and agendas/events in play and objectives
-        int playerCountForMap = game.getRealPlayers().size() + game.getDummies().size();
-        if (game.getRealPlayers().size() > game.getRealPlayersNNeutral().size()) {
-            playerCountForMap--;
-        }
-        int heightOfPlayerAreasSection =
-                getHeightOfPlayerAreasSection(game, playerCountForMap, heightOfObjectivesSection);
 
-        // Height of map section
-        int mapHeight = getMapHeight(game);
-        // noFractureMode stops the Fracture entering play; it must not hide one that is already on the board
-        if (FractureService.isFractureRegionOnMap(game)) {
-            fractureYbump = 400;
-            mapHeight += fractureYbump;
-        }
-        if (FractureService.isFractureExpandedRegionOnMap(game)) {
-            fractureYbump += 600;
-            mapHeight += 600;
-        }
+        int heightOfPlayerAreasSection = getHeightOfPlayerAreasSection(game, 6, heightOfObjectivesSection);
 
         // Width of map section
-        mapWidth = Math.max(MINIMUM_WIDTH_OF_PLAYER_AREA, getMapWidth(game));
+        mapWidth = Math.max(MINIMUM_WIDTH_OF_PLAYER_AREA, 600);
 
         // Other things
         switch (this.displayType) {
@@ -156,22 +121,10 @@ public class MapGenerator implements AutoCloseable {
             case techskips:
             case attachments:
             case shipless:
-            case unlocked:
-                heightForGameInfo = mapHeight;
-                height = mapHeight + SPACE_FOR_TILE_HEIGHT * 2;
-                displayTypeBasic = DisplayType.map;
-                width = mapWidth;
-                break;
-            case landscape:
-                heightForGameInfo = 40;
-                height = Math.max(heightOfPlayerAreasSection, mapHeight);
-                displayTypeBasic = DisplayType.all;
-                width = mapWidth + 4 * 520 + EXTRA_X * 2;
-                break;
             case googly:
             default:
-                heightForGameInfo = mapHeight;
-                height = mapHeight + heightOfPlayerAreasSection;
+                heightForGameInfo = 500;
+                height = 5000 + heightOfPlayerAreasSection;
                 displayTypeBasic = DisplayType.all;
                 width = mapWidth;
         }
@@ -187,8 +140,6 @@ public class MapGenerator implements AutoCloseable {
     private static int getHeightOfPlayerAreasSection(Game game, int playerCountForMap, int objectivesY) {
         final int typicalPlayerAreaHeight = 340;
         int playersY = playerCountForMap * typicalPlayerAreaHeight;
-        int unrealPlayers = game.getNotRealPlayers().size();
-        playersY += Math.round(unrealPlayers / 20.0f) * 15;
         for (Player player : game.getPlayers().values()) {
             if ("neutral".equalsIgnoreCase(player.getFaction()) || (player.isNpc() && player.isDummy())) {
                 playersY -= 350;
@@ -293,28 +244,4 @@ public class MapGenerator implements AutoCloseable {
      * @param tileX The global X offset for this tile
      * @param tileY The global Y offset for this tile
      */
-    private void aggregateGlobalUnitCoordinates(TileGenerator tileGenerator, int tileX, int tileY) {
-        Map<String, Map<String, List<Point>>> tileCoordinates = tileGenerator.getUnitCoordinatesByFaction();
-        if (tileCoordinates != null) {
-            for (Map.Entry<String, Map<String, List<Point>>> factionEntry : tileCoordinates.entrySet()) {
-                String faction = factionEntry.getKey();
-                Map<String, List<Point>> unitMap = factionEntry.getValue();
-
-                for (Map.Entry<String, List<Point>> unitEntry : unitMap.entrySet()) {
-                    String unitId = unitEntry.getKey();
-                    List<Point> coordinates = unitEntry.getValue();
-
-                    // Apply global translation to each coordinate
-                    List<Point> globalCoordinates = coordinates.stream()
-                            .map(point -> new Point(point.x + tileX, point.y + tileY))
-                            .toList();
-
-                    globalUnitCoordinatesByFaction
-                            .computeIfAbsent(faction, _ -> new HashMap<>())
-                            .computeIfAbsent(unitId, _ -> new ArrayList<>())
-                            .addAll(globalCoordinates);
-                }
-            }
-        }
-    }
 }

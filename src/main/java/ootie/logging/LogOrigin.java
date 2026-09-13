@@ -8,12 +8,9 @@ import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
-import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;
 import ootie.discord.listeners.context.ListenerContext;
-import ootie.discord.selections.SelectionMenuProcessor;
 import ootie.game.Game;
 import ootie.game.Player;
-import ootie.helpers.ButtonHelper;
 import ootie.helpers.DateTimeHelper;
 import org.jetbrains.annotations.NotNull;
 
@@ -71,7 +68,7 @@ public class LogOrigin {
 
     private static String buildGameInfo(@Nullable Game game) {
         if (game == null) return null;
-        return "\nGame info: " + game.gameJumpLinks();
+        return "\nGame info: ";
     }
 
     @NotNull
@@ -86,13 +83,8 @@ public class LogOrigin {
                         .append("`\n");
             case ButtonInteractionEvent bEvent ->
                 builder.append("pressed button ")
-                        .append(ButtonHelper.getButtonRepresentation(bEvent.getButton()))
+                        .append(bEvent.getButton().getCustomId())
                         .append(buildInteractionLocationText(bEvent.getChannel().getName(), bEvent.getMessage()))
-                        .append('\n');
-            case StringSelectInteractionEvent sEvent ->
-                builder.append("selected ")
-                        .append(SelectionMenuProcessor.getSelectionMenuDebugText(sEvent))
-                        .append(buildInteractionLocationText(sEvent.getChannel().getName(), sEvent.getMessage()))
                         .append('\n');
             case ModalInteractionEvent mEvent ->
                 builder.append("used modal ")
