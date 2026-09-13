@@ -1,4 +1,4 @@
-package ootie.service;
+package ootie.service.game;
 
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.entities.channel.Channel;

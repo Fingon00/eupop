@@ -9,7 +9,6 @@ import java.util.Map;
 import ootie.executors.ExecutionLockManager;
 import ootie.executors.ExecutionLockType;
 import ootie.game.persistence.GameManager;
-import ootie.logging.BotLogger;
 import ootie.spring.service.deploy.ActiveLeaseService;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.http.HttpStatus;
@@ -113,16 +112,7 @@ public class GameLockAndRequestContextInterceptor implements HandlerInterceptor 
             var game = RequestContext.getGame();
             if (game == null) return;
 
-            if (exception == null && RequestContext.shouldSaveGame()) {
-                if (activeLeaseService.mayMutate()) {
-                    var player = RequestContext.getPlayer();
-                    GameManager.save(game, player.getUserName() + " called " + request.getRequestURI());
-                } else {
-                    BotLogger.warning(
-                            "Skipped web mutation save because this instance no longer owns the active lease. "
-                                    + request.getRequestURI());
-                }
-            }
+            if (exception == null && RequestContext.shouldSaveGame()) {}
 
             unlockGame(game.getName(), RequestContext.shouldSaveGame());
         } finally {

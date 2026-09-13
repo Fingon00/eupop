@@ -11,11 +11,8 @@ import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URI;
 import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.net.http.HttpTimeoutException;
 import java.time.Duration;
 import javax.annotation.Nullable;
 import javax.imageio.IIOImage;
@@ -27,8 +24,6 @@ import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.entities.emoji.CustomEmoji;
 import net.dv8tion.jda.api.entities.emoji.Emoji;
 import ootie.logging.BotLogger;
-import ootie.service.emoji.TI4Emoji;
-import ootie.website.EgressClientManager;
 import org.jetbrains.annotations.NotNull;
 
 @UtilityClass
@@ -78,11 +73,6 @@ public class ImageHelper {
         Emoji em = Emoji.fromFormatted(emoji);
         if (em instanceof CustomEmoji e) return readURLScaled(e.getImageUrl(), size, size);
         return null;
-    }
-
-    @Nullable
-    public static BufferedImage readEmojiImageScaled(TI4Emoji emoji, int size) {
-        return readEmojiImageScaled(emoji.emojiString(), size);
     }
 
     @Nullable
@@ -157,29 +147,6 @@ public class ImageHelper {
                 .GET()
                 .build();
 
-        try {
-            HttpResponse<InputStream> response =
-                    EgressClientManager.getHttpClient().send(request, HttpResponse.BodyHandlers.ofInputStream());
-
-            try (InputStream inputStream = response.body()) {
-                if (response.statusCode() != 200) {
-                    BotLogger.error("Failed to read image. URL: " + imageUrl + " Status: " + response.statusCode());
-                    return null;
-                }
-
-                BufferedImage image = ImageIO.read(inputStream);
-                if (image == null) {
-                    BotLogger.error("ImageIO could not decode stream from: " + imageUrl);
-                }
-                return image;
-            }
-        } catch (HttpTimeoutException e) {
-            BotLogger.spammyerror("Timeout fetching image: " + imageUrl);
-        } catch (IOException e) {
-            BotLogger.error("Network error fetching image: " + imageUrl, e);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
         return null;
     }
 

@@ -14,13 +14,14 @@ import ootie.discord.routing.HandlerRegistry;
 import ootie.executors.ExecutionLockType;
 import ootie.executors.ExecutorServiceManager;
 import ootie.game.Game;
+import ootie.game.Player;
 import ootie.helpers.DateTimeHelper;
 import ootie.helpers.TimedRunnable;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.logging.RollbarManager;
 import ootie.message.MessageHelper;
-import ootie.service.GameNameService;
+import ootie.service.game.GameNameService;
 
 @UtilityClass
 public class ButtonProcessor {

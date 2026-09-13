@@ -2,8 +2,6 @@ package ootie.message;
 
 import static ootie.discord.utility.DiscordErrorUtility.isDiscordServerError;
 import static ootie.discord.utility.DiscordErrorUtility.isIgnorableError;
-import static ootie.discord.utility.DiscordErrorUtility.isUnknownEmojiError;
-import static ootie.discord.utility.DiscordErrorUtility.isUnknownMessageError;
 
 import java.io.File;
 import java.net.SocketTimeoutException;
@@ -12,7 +10,6 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
-import java.util.StringTokenizer;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
@@ -37,7 +34,6 @@ import net.dv8tion.jda.api.entities.channel.middleman.GuildMessageChannel;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.entities.channel.unions.MessageChannelUnion;
 import net.dv8tion.jda.api.entities.emoji.CustomEmoji;
-import net.dv8tion.jda.api.entities.emoji.Emoji;
 import net.dv8tion.jda.api.entities.emoji.UnicodeEmoji;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
@@ -54,13 +50,8 @@ import ootie.game.Game;
 import ootie.game.Player;
 import ootie.game.persistence.GameManager;
 import ootie.game.persistence.ManagedGame;
-import ootie.helpers.AliasHandler;
-import ootie.helpers.ButtonHelper;
-import ootie.helpers.Helper;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
-import ootie.service.breakthrough.VisionariaSelectService;
-import ootie.service.emoji.ApplicationEmojiService;
 import ootie.service.game.GameNameService;
 import ootie.service.game.GameUndoNameService;
 import org.apache.commons.collections4.ListUtils;
@@ -201,59 +192,6 @@ public class MessageHelper {
             BotLogger.error("Error trying to make undo copy for map: " + gameName, e);
             return buttons;
         }
-    }
-
-    private static void addFactionReactToMessage(Game game, Player player, Message message) {
-        Emoji reactionEmoji = Helper.getPlayerReactionEmoji(game, player, message);
-        message.addReaction(reactionEmoji)
-                .queue(
-                        _ -> GameMessageManager.addReaction(game.getName(), player.getFaction(), message.getId()),
-                        error -> handleFailedReaction(game, player, message, error));
-    }
-
-    private static void handleFailedReaction(Game game, Player player, Message message, Throwable error) {
-        if (isUnknownMessageError(error) || isUnknownEmojiError(error)) {
-            return;
-        }
-        if (isDiscordServerError(error)) {
-            CircuitBreaker.incrementThresholdCount(
-                    "Discord server error while adding reaction to message " + message.getId());
-        }
-        Emoji reactionEmoji = Helper.getPlayerReactionEmoji(game, player, message);
-        String msg = "Failed to add reaction [" + reactionEmoji.getFormatted() + "] to message.";
-        String restFailMsg = getRestActionFailureMessage(message.getChannel(), msg, null, error);
-        BotLogger.error(new LogOrigin(game), restFailMsg, error);
-    }
-
-    public static void sendSCFollowMessageToChannel(MessageChannel channel, String messageText, Game game, int scNum) {
-        Consumer<Message> addFactionReact = (message) -> GameMessageManager.add(
-                game.getName(),
-                new GameMessage(
-                        message.getId(),
-                        GameMessageType.STRATEGY_FOLLOW,
-                        game.getLastModifiedDate(),
-                        game.getRound() + "_" + scNum));
-        splitAndSentWithAction(messageText, channel, addFactionReact);
-    }
-
-    public static void sendMessageToChannelWithPersistentReacts(
-            MessageChannel channel, String messageText, Game game, List<Button> buttons, GameMessageType messageType) {
-        Consumer<Message> addFactionReact = (message) -> {
-            StringTokenizer players =
-                    switch (messageType) {
-                        default -> {
-                            BotLogger.warning(new LogOrigin(game), "Unable to handle message type: " + messageType);
-                            yield null;
-                        }
-                    };
-
-            while (players != null && players.hasMoreTokens()) {
-                String playerString = players.nextToken();
-                Player player = game.getPlayerFromColorOrFaction(playerString);
-                addFactionReactToMessage(game, player, message);
-            }
-        };
-        splitAndSentWithAction(messageText, channel, addFactionReact, null, buttons);
     }
 
     public static void sendMessageToChannelAndPin(MessageChannel channel, String messageText) {
@@ -629,7 +567,6 @@ public class MessageHelper {
                         channel,
                         messageCreateData,
                         message -> {
-                            updateManagedMessages(finalMessageText, message, gameName);
                             if (restAction != null) {
                                 restAction.accept(message);
                             }
@@ -637,27 +574,6 @@ public class MessageHelper {
                         finalMessageText,
                         1);
             }
-        }
-    }
-
-    private static void updateManagedMessages(String text, Message message, String gameName) {
-        ManagedGame managedGame = GameManager.getManagedGame(gameName);
-        if (text == null || message == null || managedGame == null || managedGame.isFowMode()) return;
-
-        String id = message.getId();
-        long date = managedGame.getLastModifiedDate();
-
-        if (text.contains("Use buttons to do your turn")
-                || text.contains("Use buttons to end turn")
-                || text.contains("Use the buttons to end turn")) {
-            String old = GameMessageManager.replace(gameName, new GameMessage(id, GameMessageType.TURN, date));
-            if (old != null) {
-                message.getChannel().deleteMessageById(old).queue(Consumers.nop(), BotLogger::catchRestError);
-            }
-        }
-
-        if (text.contains(VisionariaSelectService.initialButtonHeader())) {
-            GameMessageManager.replace(gameName, new GameMessage(id, GameMessageType.VISIONARIA, date));
         }
     }
 
@@ -730,82 +646,6 @@ public class MessageHelper {
         return sb.toString();
     }
 
-    /**
-     * Send a private message to the player.
-     * <p>
-     * This implementation does not provide feedback
-     *
-     * @param player      Player to send a message to
-     * @param game        Active map
-     * @param messageText Message to send
-     * @return True if the message was sent successfully, false otherwise
-     */
-    public static boolean sendPrivateMessageToPlayer(Player player, Game game, String messageText) {
-        if (player != null && player.getUser() != null && player.getUser().isBot() && !game.isCommunityMode()) {
-            return true;
-        }
-        return sendPrivateMessageToPlayer(player, game, null, messageText, null, null);
-    }
-
-    /**
-     * Send a private message to the player.
-     *
-     * @param player          Player to send a message to
-     * @param game            Active map
-     * @param feedbackChannel Channel to send feedback to
-     * @param messageText     Message to send
-     * @param failText        Feedback if the message failed to send
-     * @param successText     Feedback if the message successfully sent
-     * @return True if the message was send successfully, false otherwise
-     */
-    public static boolean sendPrivateMessageToPlayer(
-            Player player,
-            Game game,
-            MessageChannel feedbackChannel,
-            String messageText,
-            String failText,
-            String successText) {
-        if (messageText == null || messageText.isEmpty()) return true; // blank message counts as a success
-        User user = player == null ? null : JdaService.jda.getUserById(player.getUserID());
-        if (user == null) {
-            sendMessageToChannel(feedbackChannel, failText);
-            return false;
-        } else {
-            MessageChannel privateChannel = player.getPrivateChannel();
-            if (!game.isFowMode()) {
-                privateChannel = player.getCardsInfoThread();
-            }
-            if (privateChannel == null) {
-                sendMessageToUser(game.getName() + " " + messageText, user, feedbackChannel, failText);
-            } else {
-                sendMessageToChannel(privateChannel, messageText);
-            }
-            sendMessageToChannel(feedbackChannel, successText);
-            return true;
-        }
-    }
-
-    public static boolean privatelyPingPlayerList(List<Player> players, Game game, String message) {
-        return privatelyPingPlayerList(players, game, null, message, null, null);
-    }
-
-    private static boolean privatelyPingPlayerList(
-            List<Player> players,
-            Game game,
-            MessageChannel feedbackChannel,
-            String message,
-            String failText,
-            String successText) {
-        int count = 0;
-        for (Player player : players) {
-            String playerRepresentation = player.getRepresentationUnfogged();
-            boolean success = sendPrivateMessageToPlayer(
-                    player, game, feedbackChannel, playerRepresentation + message, failText, successText);
-            if (success) count++;
-        }
-        return count == players.size();
-    }
-
     public static void sendMessageToUser(String messageText, GenericInteractionCreateEvent event) {
         sendMessageToUser(messageText, event.getUser());
     }
@@ -841,7 +681,7 @@ public class MessageHelper {
         }
 
         // GET CARDS INFO THREAD
-        ThreadChannel threadChannel = player.getCardsInfoThread();
+        ThreadChannel threadChannel = null;
 
         sendMessageToChannel(threadChannel, messageText);
     }
@@ -853,24 +693,6 @@ public class MessageHelper {
         }
 
         sendMessageToPlayerCardsInfoThread(player, messageText);
-    }
-
-    public static void sendMessageToPlayerCardsInfoThreadWithButtonsAndPin(
-            @NotNull Game game,
-            @NotNull Player player,
-            @NotNull String storedValueKeyPrefix,
-            String messageText,
-            List<Button> buttons) {
-        if (messageText == null || messageText.isEmpty()) {
-            return;
-        }
-
-        ThreadChannel threadChannel = player.getCardsInfoThread();
-        if (threadChannel == null) {
-            return;
-        }
-
-        sendMessageToChannelWithButtons(threadChannel, messageText, buttons);
     }
 
     /**
@@ -1212,7 +1034,7 @@ public class MessageHelper {
     }
 
     public static void sendMessageEmbedsToCardsInfoThread(Player player, String message, List<MessageEmbed> embeds) {
-        ThreadChannel channel = player.getCardsInfoThread();
+        ThreadChannel channel = null;
         if (embeds == null || embeds.isEmpty()) {
             return;
         }
@@ -1237,15 +1059,13 @@ public class MessageHelper {
             goodButtonIDs.add(button.getCustomId());
 
             // REMOVE EMOJIS IF BOT CAN'T SEE IT
-            if (button.getEmoji() instanceof CustomEmoji emoji
-                    && !ApplicationEmojiService.isValidAppEmoji(emoji)
-                    && JdaService.jda.getEmojiById(emoji.getId()) == null) {
+            if (button.getEmoji() instanceof CustomEmoji emoji && JdaService.jda.getEmojiById(emoji.getId()) == null) {
                 String label = button.getLabel();
                 if (label.isBlank()) {
                     label = String.format(":%s:", emoji.getName());
                 }
-                badButtonIDsAndReason.add("Button:  " + ButtonHelper.getButtonRepresentation(button)
-                        + "\n Error:  Emoji Not Found in Cache: " + emoji.getName() + " " + emoji.getId());
+                badButtonIDsAndReason.add("Button:  " + button.getCustomId() + "\n Error:  Emoji Not Found in Cache: "
+                        + emoji.getName() + " " + emoji.getId());
                 button = Button.of(button.getStyle(), button.getCustomId(), label);
             }
             if (button.getEmoji() instanceof UnicodeEmoji emoji
@@ -1255,8 +1075,8 @@ public class MessageHelper {
                 if (label.isBlank()) {
                     label = String.format(":%s:", emoji.getName());
                 }
-                badButtonIDsAndReason.add("Button:  " + ButtonHelper.getButtonRepresentation(button)
-                        + "\n Error:  Bad Unicode Emoji: " + emoji.getName());
+                badButtonIDsAndReason.add(
+                        "Button:  " + button.getCustomId() + "\n Error:  Bad Unicode Emoji: " + emoji.getName());
                 button = Button.of(button.getStyle(), button.getCustomId(), label);
             }
             newButtons.add(button);
@@ -1274,32 +1094,5 @@ public class MessageHelper {
             BotLogger.warning(sb.toString());
         }
         return newButtons;
-    }
-
-    private static String injectRules(String message) {
-        if (message == null) {
-            return null;
-        }
-        try {
-            StringBuilder edited = new StringBuilder(message);
-            StringBuilder copy = new StringBuilder(message.toLowerCase());
-            for (String keyWord : AliasHandler.getInjectedRules()) {
-                if ("bombardment".equals(keyWord) && message.contains("Tactical Bombardment")) continue;
-                if ("production".equals(keyWord) && message.contains("Monopolize Production")) continue;
-                if (copy.indexOf(keyWord) > -1) {
-                    String replace = "](https://www.tirules.com/" + AliasHandler.getInjectedRule(keyWord) + ")";
-                    int firstIndex = copy.indexOf(keyWord);
-                    int lastIndex = firstIndex + keyWord.length() + 1;
-                    copy.insert(firstIndex, "[");
-                    copy.insert(lastIndex, replace);
-                    edited.insert(firstIndex, "[");
-                    edited.insert(lastIndex, replace);
-                }
-            }
-            return edited.toString();
-        } catch (Exception e) {
-            BotLogger.error("Issue injecting Rules into message: " + message, e);
-            return message;
-        }
     }
 }

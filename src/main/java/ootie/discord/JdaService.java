@@ -36,7 +36,6 @@ import ootie.helpers.Constants;
 import ootie.helpers.Storage;
 import ootie.image.MapRenderPipeline;
 import ootie.image.Mapper;
-import ootie.image.PositionMapper;
 import ootie.logging.BotLogger;
 import ootie.logging.LogBufferManager;
 import ootie.settings.GlobalSettings;
@@ -166,8 +165,6 @@ public class JdaService {
         BotLogger.info("LOADING DATA");
         jda.getPresence().setActivity(Activity.customStatus("STARTING UP: Loading Data"));
 
-        // load all /resources/positions/ .properties files, each into 1 Properties
-        PositionMapper.init();
         // load all /resources/data/ .json and .properties files, except
         // logging.properties, each into 1 HashMap or
         // Properties
