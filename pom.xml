@@ -14,7 +14,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <java.version>26</java.version>
+    <java.version>25</java.version>
     <lombok.version>1.18.46</lombok.version>
     <jda.version>6.5.0</jda.version>
     <trove4j.version>3.0.3</trove4j.version>
