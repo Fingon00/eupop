@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 import javax.annotation.Nullable;
 import javax.management.relation.Role;
 import lombok.experimental.UtilityClass;
@@ -18,7 +17,6 @@ import net.dv8tion.jda.api.interactions.commands.Command.Choice;
 import net.dv8tion.jda.api.interactions.commands.CommandInteractionPayload;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import net.dv8tion.jda.api.interactions.components.buttons.ButtonInteraction;
-import ootie.discord.JdaService;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.game.persistence.GameManager;
@@ -40,10 +38,6 @@ public class CommandHelper {
     }
 
     static boolean acceptIfValidGame(SlashCommandInteractionEvent event, boolean checkChannel, boolean checkPlayer) {
-        if (hasRole(event, JdaService.bothelperRoles)) {
-            checkChannel = false;
-            checkPlayer = false;
-        }
 
         var gameName = GameNameService.getGameName(event);
         var managedGame = GameManager.getManagedGame(gameName);
@@ -59,12 +53,6 @@ public class CommandHelper {
         if (checkChannel && !event.getChannel().getName().startsWith(managedGame.getName() + "-")) {
             event.getHook()
                     .editOriginal("'" + event.getFullCommandName() + "' can only be executed in a game channel.")
-                    .queue(Consumers.nop(), BotLogger::catchRestError);
-            return false;
-        }
-        if (checkPlayer && getPlayerFromEvent(managedGame.getGame(), event) == null) {
-            event.getHook()
-                    .editOriginal("Command must be ran by a player in the game, please use `/game join gameName`.")
                     .queue(Consumers.nop(), BotLogger::catchRestError);
             return false;
         }
@@ -95,25 +83,13 @@ public class CommandHelper {
 
     @Nullable
     public static Player getPlayerFromGame(Game game, Member member, String userId) {
-        if (!game.isCommunityMode() || member == null) {
-            return game.getPlayer(userId);
-        }
 
-        Collection<Player> players = game.getPlayers().values();
-        List<Role> roles = member.getRoles();
-        for (Player player : players) {
-            if (roles.contains(player.getRoleForCommunity())
-                    || player.getTeamMateIDs().contains(member.getUser().getId())) {
-                return player;
-            }
-        }
         return null;
     }
 
     @Nullable
     private static Player getPlayerByFactionColor(String factionColor, Game game) {
         factionColor = StringUtils.substringBefore(factionColor, " "); // TO HANDLE UNRESOLVED AUTOCOMPLETE
-        factionColor = AliasHandler.resolveFaction(factionColor);
         for (Player player_ : game.getPlayers().values()) {
             if (Objects.equals(factionColor, player_.getFaction())
                     || Objects.equals(factionColor, player_.getColor())) {
@@ -137,17 +113,6 @@ public class CommandHelper {
     @Nullable
     public static Player getOtherPlayerFromEvent(Game game, SlashCommandInteractionEvent event) {
         OptionMapping playerOption = event.getOption(Constants.TARGET_PLAYER);
-        if (playerOption != null) {
-            String playerID = playerOption.getAsUser().getId();
-            return game.getPlayer(playerID);
-        }
-
-        OptionMapping factionColorOption = event.getOption(Constants.TARGET_FACTION_OR_COLOR);
-        if (factionColorOption != null) {
-            String factionColor =
-                    AliasHandler.resolveColor(factionColorOption.getAsString().toLowerCase());
-            return getPlayerByFactionColor(factionColor, game);
-        }
 
         return null;
     }
@@ -160,30 +125,12 @@ public class CommandHelper {
         if (targetOption == null) {
             return targetPlayers;
         }
-        if (Constants.ALL.equals(targetOption)) {
-            return game.getRealPlayers();
-        }
-        List<String> targets = Helper.getListFromCSV(targetOption);
-        for (String target : targets) {
-            String factionColor = AliasHandler.resolveColor(target.toLowerCase());
-            Player player = getPlayerByFactionColor(factionColor, game);
-            if (player != null) {
-                targetPlayers.add(player);
-            }
-        }
+
         return targetPlayers;
     }
 
     public static boolean acceptIfHasRoles(SlashCommandInteractionEvent event, Collection<Role> acceptedRoles) {
-        if (hasRole(event, acceptedRoles)) {
-            return true;
-        }
-        var acceptRolesStr =
-                acceptedRoles.stream().map(Role::getName).distinct().collect(Collectors.joining(", "));
-        event.getHook()
-                .editOriginal("You are not authorized to use this command. You must have one of the following roles: "
-                        + acceptRolesStr)
-                .queue(Consumers.nop(), BotLogger::catchRestError);
+
         return false;
     }
 

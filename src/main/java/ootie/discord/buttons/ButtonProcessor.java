@@ -3,7 +3,6 @@ package ootie.discord.buttons;
 import java.text.DecimalFormat;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
-
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
@@ -64,15 +63,14 @@ public class ButtonProcessor {
         long resolveRuntime = 0;
         long saveRuntime = 0;
         try {
-                beforeTime = System.currentTimeMillis();
-                resolveButtonInteractionEvent(context);
-                resolveRuntime = System.currentTimeMillis() - beforeTime;
+            beforeTime = System.currentTimeMillis();
+            resolveButtonInteractionEvent(context);
+            resolveRuntime = System.currentTimeMillis() - beforeTime;
 
-                beforeTime = System.currentTimeMillis();
-                context.save();
-                saveRuntime = System.currentTimeMillis() - beforeTime;
+            beforeTime = System.currentTimeMillis();
+            context.save();
+            saveRuntime = System.currentTimeMillis() - beforeTime;
 
-                
         } catch (Exception e) {
             BotLogger.error(new LogOrigin(event, context), "Something went wrong with button interaction", e);
         } finally {
@@ -110,8 +108,6 @@ public class ButtonProcessor {
                 .run();
     }
 
-   
-
     private static void resolveButtonInteractionEvent(ButtonContext context) {
         // pull values from context for easier access
         ButtonInteractionEvent event = context.getEvent();
@@ -121,15 +117,10 @@ public class ButtonProcessor {
         MessageChannel privateChannel = context.getPrivateChannel();
         MessageChannel mainGameChannel = context.getMainGameChannel();
 
-        
         // Check the list of ButtonHandlers first
         if (registry.handle(buttonID, context)) return;
-                    MessageHelper.sendMessageToEventChannel(
-                            event,
-                            "Button " + event.getButton().getCustomId()
-                                    + " pressed. This button does not do anything.");
-            
-        
+        MessageHelper.sendMessageToEventChannel(
+                event, "Button " + event.getButton().getCustomId() + " pressed. This button does not do anything.");
     }
 
     private static void trackButtonHandler(String handlerId) {

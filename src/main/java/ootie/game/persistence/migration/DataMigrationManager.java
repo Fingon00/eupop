@@ -1,8 +1,6 @@
 package ootie.game.persistence.migration;
 
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -131,30 +129,18 @@ public class DataMigrationManager {
             Boolean migrateEndedGames) {
         List<String> migrationsApplied = new ArrayList<>();
         for (var managedGame : games) {
-            if (managedGame.isHasEnded() && !migrateEndedGames) continue;
+            if (!migrateEndedGames) continue;
 
             LocalDate mapCreatedOn = null;
-            try {
-                mapCreatedOn = Instant.ofEpochMilli(managedGame.getCreationDateTime())
-                        .atZone(ZoneId.systemDefault())
-                        .toLocalDate();
-            } catch (Exception ignored) {
-            }
 
             if (mapCreatedOn == null || mapCreatedOn.isAfter(migrationForGamesBeforeDate)) {
                 continue;
             }
 
             var game = managedGame.getGame();
-            if (game.hasRunMigration(migrationName)) continue;
 
-            var changesMade = migrationMethod.apply(game);
-            game.addMigration(migrationName);
             // TODO: Confirm games aren't able to make changes during this
-            GameManager.save(game, "Data Migration - " + migrationName);
-            if (changesMade) {
-                migrationsApplied.add(game.getName());
-            }
+
         }
         return migrationsApplied;
     }

@@ -3,7 +3,6 @@ package ootie.discord.listeners.context;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
-import ootie.helpers.ButtonHelper;
 
 @Getter
 public class ButtonContext extends ListenerContext {
@@ -32,16 +31,6 @@ public class ButtonContext extends ListenerContext {
 
         // Proceed with additional button things
         messageID = event.getMessageId();
-
-        if (componentID.contains("deleteThisButton")) {
-            componentID = componentID.replace("deleteThisButton", "");
-            ButtonHelper.deleteButtonAndDeleteMessageIfEmpty(event);
-        }
-
-        if (componentID.contains("deleteThisMessage")) {
-            componentID = componentID.replace("deleteThisMessage", "");
-            ButtonHelper.deleteMessage(event);
-        }
     }
 
     @Override

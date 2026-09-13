@@ -2,13 +2,11 @@ package ootie.discord.listeners.context;
 
 import lombok.Getter;
 import lombok.Setter;
-import net.dv8tion.jda.api.Interaction;
-import net.dv8tion.jda.api.callbacks.IReplyCallback;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
+import net.dv8tion.jda.api.interactions.callbacks.IReplyCallback;
 import ootie.discord.JdaService;
-import ootie.discord.commands.CommandHelper;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.game.persistence.GameManager;
@@ -17,7 +15,6 @@ import ootie.logging.BotLogger;
 import ootie.message.MessageHelper;
 import ootie.service.GameNameService;
 import ootie.service.event.EventAuditService;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.function.Consumers;
 
 @Getter
@@ -46,9 +43,7 @@ public abstract class ListenerContext {
     }
 
     private boolean allowsNonPlayerInteraction() {
-        return "showGameAgain".equalsIgnoreCase(componentID)
-                || componentID.startsWith(CombatSideBetButtonIds.PREFIX)
-                || componentID.startsWith(CombatDoubleOrBustButtonIds.PREFIX);
+        return "showGameAgain".equalsIgnoreCase(componentID);
     }
 
     ListenerContext(GenericInteractionCreateEvent event, String compID) {
@@ -67,7 +62,6 @@ public abstract class ListenerContext {
 
         if (game != null) {
             String userID = event.getUser().getId();
-            player = CommandHelper.getPlayerFromGame(game, event.getMember(), userID);
 
             if (player == null && !allowsNonPlayerInteraction()) {
                 String message = event.getUser().getAsMention() + " is not a player of the game";
@@ -90,37 +84,6 @@ public abstract class ListenerContext {
                 contextIsValid = false;
                 creationEndTime = System.currentTimeMillis();
                 return;
-            }
-
-            if ("button".equals(getContextType())) {
-                game.increaseButtonPressCount();
-            }
-
-            if (game.isFowMode()) {
-                if (player != null && player.isRealPlayer() && player.getPrivateChannel() == null) {
-                    MessageHelper.sendMessageToChannel(
-                            event.getMessageChannel(),
-                            "Private channels are not set up for this game. Messages will be suppressed.");
-                    privateChannel = null;
-                } else if (player != null) {
-                    privateChannel = player.getPrivateChannel();
-                }
-            }
-
-            if (game.getMainGameChannel() != null) {
-                mainGameChannel = game.getMainGameChannel();
-            }
-
-            if (componentID.contains("dummyPlayerSpoof")) {
-                String identity = StringUtils.substringBefore(componentID, "_").replace("dummyPlayerSpoof", "");
-                player = game.getPlayerFromColorOrFaction(identity);
-                componentID = componentID.replace("dummyPlayerSpoof" + identity + "_", "");
-            }
-
-            if (player != null
-                    && game.getActivePlayerID() != null
-                    && player.getUserID().equalsIgnoreCase(game.getActivePlayerID())) {
-                AutoPingMetadataManager.delayPing(gameName);
             }
         }
 
@@ -151,7 +114,6 @@ public abstract class ListenerContext {
         if (player != null
                 && !componentID.startsWith(factionWhoPressedButton + "_")
                 && (!componentID.contains("firmament_") || !factionWhoPressedButton.contains("obsidian"))) {
-            handlePlayerHittingButtonTheyDoNotOwn(event);
             return false;
         }
         if (componentID.contains("firmament_") && factionWhoPressedButton.contains("obsidian")) {

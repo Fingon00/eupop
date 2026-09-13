@@ -9,7 +9,6 @@ import java.util.Map.Entry;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import lombok.experimental.UtilityClass;
-import ootie.service.emoji.ootieEmoji;
 import org.apache.commons.collections4.ListUtils;
 
 @UtilityClass
@@ -204,12 +203,6 @@ public final class StringHelper {
                 if (!replaceWithBlank) {
                     String category = emojiBits.group("cat");
                     String name = emojiBits.group("name");
-                    ootieEmoji emoji = ootieEmoji.findEmoji(category, name);
-                    if (emoji != null) {
-                        output.append(emoji.emojiString());
-                    } else {
-                        output.append(candidateEmoji);
-                    }
                 }
             } else {
                 output.append(candidateEmoji);

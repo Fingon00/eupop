@@ -10,7 +10,6 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
-import ootie.AsyncootieDiscordBot;
 
 /**
  * Rollbar bootstrap, reporting facade, and thread-local context store.

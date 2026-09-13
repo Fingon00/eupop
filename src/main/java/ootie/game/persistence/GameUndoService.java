@@ -11,17 +11,11 @@ import java.util.Map;
 import javax.annotation.Nullable;
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
-import ootie.game.Player;
-import ootie.helpers.ButtonHelper;
 import ootie.helpers.Constants;
 import ootie.helpers.Storage;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
-import ootie.message.GameMessageManager;
-import ootie.message.MessageHelper;
 import ootie.service.game.GameUndoNameService;
-import ootie.service.info.CardsInfoService;
-import ootie.spring.websocket.WebSocketNotifier;
 
 @UtilityClass
 class GameUndoService {
@@ -107,28 +101,11 @@ class GameUndoService {
             }
             WebSocketNotifier.notifyGameStateChange(loadedGame);
 
-            if (savedButtonsGame != null) {
-                generateSavedButtons(savedButtonsGame);
-            } else {
-                generateSavedButtons(gameToUndo);
-            }
-            sendAnyChangedCardsInfo(gameToUndo, loadedGame);
-            GameMessageManager.removeAfter(gameName, loadedGame.getLastModifiedDate());
-
             sendUndoConfirmationMessage(gameToUndo, undoIndex, latestUndoIndex);
             return loadedGame;
         } catch (Exception e) {
             BotLogger.error(new LogOrigin(gameToUndo), "Error trying to undo: " + gameName, e);
             return null;
-        }
-    }
-
-    private static void sendAnyChangedCardsInfo(Game game, Game loadedGame) {
-        for (Player p1 : loadedGame.getRealPlayers()) {
-            Player p2 = game.getPlayerFromColorOrFaction(p1.getFaction());
-            if (p2 != null && (p1.getAcCount() != p2.getAcCount() || p1.getSo() != p2.getSo())) {
-                CardsInfoService.sendCardsInfo(loadedGame, p1);
-            }
         }
     }
 
@@ -175,20 +152,6 @@ class GameUndoService {
                     .append("` ")
                     .append(undoCommands.get(i))
                     .append('\n');
-        }
-        ButtonHelper.findOrCreateThreadWithMessage(game, gameName + "-undo-log", sb.toString());
-    }
-
-    private static void generateSavedButtons(Game game) {
-        try {
-            if (!game.getSavedButtons().isEmpty()
-                    && game.getSavedChannel() != null
-                    && !game.getPhaseOfGame().contains("status")) {
-                MessageHelper.sendMessageToChannelWithButtons(
-                        game.getSavedChannel(), game.getSavedMessage(), ButtonHelper.getSavedButtons(game));
-            }
-        } catch (Exception e) {
-            BotLogger.error(new LogOrigin(game), "Error trying to generated saved buttons for " + game.getName(), e);
         }
     }
 

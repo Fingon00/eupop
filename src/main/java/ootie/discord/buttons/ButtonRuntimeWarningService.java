@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
-import ootie.AsyncootieDiscordBot;
 import ootie.helpers.ButtonHelper;
 import ootie.helpers.DateTimeHelper;
 import ootie.logging.BotLogger;

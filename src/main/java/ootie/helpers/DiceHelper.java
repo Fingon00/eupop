@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import lombok.Getter;
-import ootie.service.emoji.DiceEmojis;
 
 public final class DiceHelper {
 
@@ -17,19 +16,6 @@ public final class DiceHelper {
         public Die(int threshold) {
             this.threshold = threshold;
             result = ThreadLocalRandom.current().nextInt(1, 11);
-        }
-
-        public String getGreenDieIfSuccessOrRedDieIfFailure() {
-            if (isSuccess()) {
-                return DiceEmojis.getGreenDieEmoji(result);
-            } else {
-                return DiceEmojis.getRedDieEmoji(result);
-            }
-        }
-
-        public String getRedDieIfSuccessOrGrayDieIfFailure() {
-            if (isSuccess()) return DiceEmojis.getRedDieEmoji(result);
-            else return DiceEmojis.getGrayDieEmoji(result);
         }
 
         String printResult() {
@@ -108,7 +94,6 @@ public final class DiceHelper {
                 sb.append('\n');
             }
         }
-        sb.append(CombatMessageHelper.displayHitResults(countSuccesses(dice)).strip());
         return sb.toString();
     }
 }
