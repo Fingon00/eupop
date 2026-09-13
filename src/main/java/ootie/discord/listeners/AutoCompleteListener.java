@@ -1,7 +1,6 @@
-package ootie.discord.interactions.listeners;
+package ootie.discord.listeners;
 
 import javax.annotation.Nonnull;
-
 import net.dv8tion.jda.api.events.interaction.command.CommandAutoCompleteInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import ootie.discord.JdaService;

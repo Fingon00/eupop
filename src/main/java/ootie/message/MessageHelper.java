@@ -47,12 +47,8 @@ import net.dv8tion.jda.api.exceptions.ErrorResponseException;
 import net.dv8tion.jda.api.utils.FileUpload;
 import net.dv8tion.jda.api.utils.messages.MessageCreateBuilder;
 import net.dv8tion.jda.api.utils.messages.MessageCreateData;
-import org.apache.commons.collections4.ListUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.function.Consumers;
-import org.jetbrains.annotations.NotNull;
 import ootie.discord.JdaService;
-import ootie.discord.interactions.buttons.Buttons;
+import ootie.discord.buttons.Buttons;
 import ootie.executors.CircuitBreaker;
 import ootie.game.Game;
 import ootie.game.Player;
@@ -70,6 +66,10 @@ import ootie.service.button.ReactionService;
 import ootie.service.emoji.ApplicationEmojiService;
 import ootie.service.game.GameNameService;
 import ootie.service.game.GameUndoNameService;
+import org.apache.commons.collections4.ListUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.function.Consumers;
+import org.jetbrains.annotations.NotNull;
 
 @UtilityClass
 public class MessageHelper {
@@ -158,8 +158,7 @@ public class MessageHelper {
 
     public static void sendMessageToChannelWithButtons(
             MessageChannel channel, String messageText, List<Button> buttons) {
-        if (channel == null)
-            return;
+        if (channel == null) return;
         String gameName = GameNameService.getGameNameFromChannel(channel);
         if (GameManager.isValid(gameName)
                 && buttons instanceof ArrayList
@@ -229,49 +228,8 @@ public class MessageHelper {
         BotLogger.error(new LogOrigin(game), restFailMsg, error);
     }
 
-    public static void sendMessageToChannelWithFactionReact(
-            MessageChannel channel, String messageText, Game game, Player player, List<Button> buttons) {
-        sendMessageToChannelWithFactionReact(channel, messageText, game, player, buttons, false);
-    }
 
-    private static void sendMessageToChannelWithFactionReact(
-            MessageChannel channel,
-            String messageText,
-            Game game,
-            Player player,
-            List<Button> buttons,
-            boolean saboable) {
-        sendMessageToChannelWithEmbedsAndFactionReact(channel, messageText, game, player, null, buttons, saboable);
-    }
 
-    public static void sendMessageToChannelWithEmbedsAndFactionReact(
-            MessageChannel channel,
-            String messageText,
-            Game game,
-            Player player,
-            List<MessageEmbed> embeds,
-            List<Button> buttons,
-            boolean saboable) {
-        Consumer<Message> addFactionReact = (message) -> {
-            if (saboable) {
-                GameMessageManager.add(
-                        game.getName(),
-                        new GameMessage(message.getId(), GameMessageType.ACTION_CARD, game.getLastModifiedDate()));
-            }
-            addFactionReactToMessage(game, player, message);
-            if (!saboable) {
-                return;
-            }
-            for (Player p2 : game.getRealPlayers()) {
-                if (p2 == player || SabotageService.couldFeasiblySabotage(p2, game)) {
-                    continue;
-                }
-                addFactionReactToMessage(game, p2, message);
-            }
-            ReactionService.progressGameIfAllPlayersHaveReacted(message.getId(), game);
-        };
-        splitAndSentWithAction(messageText, channel, addFactionReact, embeds, buttons);
-    }
 
     public static void sendSCFollowMessageToChannel(MessageChannel channel, String messageText, Game game, int scNum) {
         Consumer<Message> addFactionReact = (message) -> GameMessageManager.add(
@@ -287,63 +245,13 @@ public class MessageHelper {
     public static void sendMessageToChannelWithPersistentReacts(
             MessageChannel channel, String messageText, Game game, List<Button> buttons, GameMessageType messageType) {
         Consumer<Message> addFactionReact = (message) -> {
-            StringTokenizer players = switch (messageType) {
-                case STATUS_SCORING -> {
-                    StringBuilder scored = new StringBuilder();
-                    for (Player player : game.getRealPlayers()) {
-                        String po = game.getStoredValue(player.getFaction() + "round" + game.getRound() + "PO");
-                        String so = game.getStoredValue(player.getFaction() + "round" + game.getRound() + "SO");
-
-                        if (!po.isEmpty() && !so.isEmpty()) {
-                            if (scored.isEmpty()) {
-                                scored = new StringBuilder(player.getFaction());
-                            } else {
-                                scored.append("_").append(player.getFaction());
-                            }
+            StringTokenizer players =
+                    switch (messageType) {
+                        default -> {
+                            BotLogger.warning(new LogOrigin(game), "Unable to handle message type: " + messageType);
+                            yield null;
                         }
-                    }
-                    yield new StringTokenizer(scored.toString(), "_");
-                }
-                case AGENDA_WHEN -> {
-                    String oldMessageId = GameMessageManager.replace(
-                            game.getName(),
-                            new GameMessage(
-                                    message.getId(), GameMessageType.AGENDA_WHEN, game.getLastModifiedDate()));
-                    if (oldMessageId != null) {
-                        game.getMainGameChannel()
-                                .deleteMessageById(oldMessageId)
-                                .queue(Consumers.nop(), BotLogger::catchRestError);
-                    }
-                    yield new StringTokenizer(game.getPlayersWhoHitPersistentNoWhen(), "_");
-                }
-                case AGENDA_AFTER -> {
-                    String oldMessageId = GameMessageManager.replace(
-                            game.getName(),
-                            new GameMessage(
-                                    message.getId(), GameMessageType.AGENDA_AFTER, game.getLastModifiedDate()));
-                    if (oldMessageId != null) {
-                        game.getMainGameChannel()
-                                .deleteMessageById(oldMessageId)
-                                .queue(Consumers.nop(), BotLogger::catchRestError);
-                    }
-                    yield new StringTokenizer(game.getPlayersWhoHitPersistentNoAfter(), "_");
-                }
-                case AGENDA_CONFOUNDING_CONFUSING_LEGAL_TEXT, AGENDA_DEADLY_PLOT -> {
-                    StringBuilder noShenanigans = new StringBuilder(game.getStoredValue("Pass On Shenanigans"));
-                    for (Player p2 : game.getRealPlayers()) {
-                        if (p2.getAcCount() == 0
-                                || IsPlayerElectedService.isPlayerElected(game, p2, "censure")
-                                || IsPlayerElectedService.isPlayerElected(game, p2, "absol_censure")) {
-                            noShenanigans.append("_").append(p2.getFaction());
-                        }
-                    }
-                    yield new StringTokenizer(noShenanigans.toString(), "_");
-                }
-                default -> {
-                    BotLogger.warning(new LogOrigin(game), "Unable to handle message type: " + messageType);
-                    yield null;
-                }
-            };
+                    };
 
             while (players != null && players.hasMoreTokens()) {
                 String playerString = players.nextToken();
@@ -542,8 +450,7 @@ public class MessageHelper {
      */
     public static void sendPagedSelectMenus(
             MessageChannel channel, String menuId, List<SelectOption> options, String prompt) {
-        if (channel == null || options.isEmpty())
-            return;
+        if (channel == null || options.isEmpty()) return;
         List<List<SelectOption>> pages = ListUtils.partition(options, SelectMenu.OPTIONS_MAX_AMOUNT);
         for (List<SelectOption> page : pages) {
             StringSelectMenu menu = StringSelectMenu.create(menuId)
@@ -613,8 +520,7 @@ public class MessageHelper {
         }
         MessageCreateData messageObject = message.addFiles(fileUpload).build();
         channel.sendMessage(messageObject).queue(msg -> {
-            if (pinMessage)
-                msg.pin().queue(Consumers.nop(), BotLogger::catchRestError);
+            if (pinMessage) msg.pin().queue(Consumers.nop(), BotLogger::catchRestError);
         });
     }
 
@@ -645,8 +551,7 @@ public class MessageHelper {
         }
         MessageCreateData messageObject = message.setFiles(filesUpload).build();
         channel.sendMessage(messageObject).queue(msg -> {
-            if (pinMessage)
-                msg.pin().queue(Consumers.nop(), BotLogger::catchRestError);
+            if (pinMessage) msg.pin().queue(Consumers.nop(), BotLogger::catchRestError);
         });
     }
 
@@ -746,8 +651,7 @@ public class MessageHelper {
 
     private static void updateManagedMessages(String text, Message message, String gameName) {
         ManagedGame managedGame = GameManager.getManagedGame(gameName);
-        if (text == null || message == null || managedGame == null || managedGame.isFowMode())
-            return;
+        if (text == null || message == null || managedGame == null || managedGame.isFowMode()) return;
 
         String id = message.getId();
         long date = managedGame.getLastModifiedDate();
@@ -870,8 +774,7 @@ public class MessageHelper {
             String messageText,
             String failText,
             String successText) {
-        if (messageText == null || messageText.isEmpty())
-            return true; // blank message counts as a success
+        if (messageText == null || messageText.isEmpty()) return true; // blank message counts as a success
         User user = player == null ? null : JdaService.jda.getUserById(player.getUserID());
         if (user == null) {
             sendMessageToChannel(feedbackChannel, failText);
@@ -907,8 +810,7 @@ public class MessageHelper {
             String playerRepresentation = player.getRepresentationUnfogged();
             boolean success = sendPrivateMessageToPlayer(
                     player, game, feedbackChannel, playerRepresentation + message, failText, successText);
-            if (success)
-                count++;
+            if (success) count++;
         }
         return count == players.size();
     }
@@ -989,11 +891,9 @@ public class MessageHelper {
      */
     public static List<String> splitLargeText(String messageText, int maxLength) {
         List<String> texts = new ArrayList<>();
-        if (messageText == null || messageText.isEmpty())
-            return Collections.emptyList();
+        if (messageText == null || messageText.isEmpty()) return Collections.emptyList();
         int messageLength = messageText.length();
-        if (messageLength <= maxLength)
-            return Collections.singletonList(messageText);
+        if (messageLength <= maxLength) return Collections.singletonList(messageText);
         int index = 0;
         while (index < messageLength) {
             String nextChars = messageText.substring(index, Math.min(index + maxLength, messageLength));
@@ -1034,12 +934,10 @@ public class MessageHelper {
      */
     public static List<String> packBlocksIntoMessages(List<String> blocks, int maxLength) {
         List<String> messages = new ArrayList<>();
-        if (blocks == null || blocks.isEmpty())
-            return messages;
+        if (blocks == null || blocks.isEmpty()) return messages;
         StringBuilder message = new StringBuilder();
         for (String block : blocks) {
-            if (block == null || block.isEmpty())
-                continue;
+            if (block == null || block.isEmpty()) continue;
             if (message.length() + block.length() > maxLength && message.length() > 0) {
                 messages.add(message.toString());
                 message.setLength(0);
@@ -1047,8 +945,7 @@ public class MessageHelper {
             if (block.length() > maxLength) {
                 // splitLargeText can trail an empty part, and Discord rejects an empty message.
                 for (String part : splitLargeText(block, maxLength)) {
-                    if (!part.isEmpty())
-                        messages.add(part);
+                    if (!part.isEmpty()) messages.add(part);
                 }
                 continue;
             }
@@ -1185,8 +1082,7 @@ public class MessageHelper {
         } catch (Exception e) {
             // Do nothing
         }
-        if (buttons == null || buttons.isEmpty())
-            return partitionedButtonRows;
+        if (buttons == null || buttons.isEmpty()) return partitionedButtonRows;
 
         List<List<Button>> partitions = ListUtils.partition(buttons, 5);
         List<ActionRow> buttonRows = new ArrayList<>();
@@ -1220,8 +1116,7 @@ public class MessageHelper {
             currentChars += len;
             currentList.add(embed);
         }
-        if (!currentList.isEmpty())
-            partition.add(currentList);
+        if (!currentList.isEmpty()) partition.add(currentList);
         return partition;
     }
 
@@ -1239,8 +1134,7 @@ public class MessageHelper {
                 || threadName == null
                 || messageToSend == null
                 || threadName.isEmpty()
-                || messageToSend.isEmpty())
-            return;
+                || messageToSend.isEmpty()) return;
         if (channel instanceof TextChannel) {
             channel.asTextChannel()
                     .createThreadChannel(threadName)
@@ -1260,11 +1154,9 @@ public class MessageHelper {
      * message.
      */
     public static void sendMessageToThread(MessageChannelUnion channel, String threadName, List<String> blocks) {
-        if (channel == null || threadName == null || threadName.isEmpty())
-            return;
+        if (channel == null || threadName == null || threadName.isEmpty()) return;
         List<String> messages = packBlocksIntoMessages(blocks, 2000);
-        if (messages.isEmpty())
-            return;
+        if (messages.isEmpty()) return;
         if (channel instanceof TextChannel) {
             channel.asTextChannel()
                     .createThreadChannel(threadName)
@@ -1337,16 +1229,13 @@ public class MessageHelper {
     }
 
     public static List<Button> sanitizeButtons(List<Button> buttons, MessageChannel channel) {
-        if (buttons == null)
-            return null;
+        if (buttons == null) return null;
         List<Button> newButtons = new ArrayList<>();
         List<String> goodButtonIDs = new ArrayList<>();
         List<String> badButtonIDsAndReason = new ArrayList<>();
         for (Button button : buttons) {
-            if (button == null)
-                continue;
-            if (button.getCustomId() == null && button.getStyle() != ButtonStyle.LINK)
-                continue;
+            if (button == null) continue;
+            if (button.getCustomId() == null && button.getStyle() != ButtonStyle.LINK) continue;
 
             // REMOVE DUPLICATE IDs
             if (goodButtonIDs.contains(button.getCustomId())) {
@@ -1370,7 +1259,7 @@ public class MessageHelper {
             }
             if (button.getEmoji() instanceof UnicodeEmoji emoji
                     && StringUtils.countMatches(emoji.getAsCodepoints(), "+") > 4) { // TODO: something better than
-                                                                                     // (plus_sign_count > 4)
+                // (plus_sign_count > 4)
                 String label = button.getLabel();
                 if (label.isBlank()) {
                     label = String.format(":%s:", emoji.getName());
@@ -1404,10 +1293,8 @@ public class MessageHelper {
             StringBuilder edited = new StringBuilder(message);
             StringBuilder copy = new StringBuilder(message.toLowerCase());
             for (String keyWord : AliasHandler.getInjectedRules()) {
-                if ("bombardment".equals(keyWord) && message.contains("Tactical Bombardment"))
-                    continue;
-                if ("production".equals(keyWord) && message.contains("Monopolize Production"))
-                    continue;
+                if ("bombardment".equals(keyWord) && message.contains("Tactical Bombardment")) continue;
+                if ("production".equals(keyWord) && message.contains("Monopolize Production")) continue;
                 if (copy.indexOf(keyWord) > -1) {
                     String replace = "](https://www.tirules.com/" + AliasHandler.getInjectedRule(keyWord) + ")";
                     int firstIndex = copy.indexOf(keyWord);

@@ -1,25 +1,19 @@
-package ootie.discord.interactions.listeners;
+package ootie.discord.listeners;
 
 import java.time.Duration;
 import java.util.Set;
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.atomic.AtomicLong;
-
 import javax.annotation.Nonnull;
-
-import org.apache.commons.lang3.function.Consumers;
-
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import ootie.AsyncootieDiscordBot;
-import ootie.contest.replay.buttons.CombatDoubleOrBustButtonIds;
-import ootie.contest.replay.buttons.CombatSideBetButtonIds;
+import ootie.OotieBot;
 import ootie.discord.JdaService;
 import ootie.discord.buttons.ButtonProcessor;
-import ootie.helpers.ButtonHelper;
 import ootie.logging.BotLogger;
 import ootie.spring.service.deploy.ActiveLeaseService;
+import org.apache.commons.lang3.function.Consumers;
 
 class ButtonListener extends ListenerAdapter {
 
@@ -28,8 +22,7 @@ class ButtonListener extends ListenerAdapter {
     private static ButtonListener instance;
 
     public static ButtonListener getInstance() {
-        if (instance == null)
-            instance = new ButtonListener();
+        if (instance == null) instance = new ButtonListener();
         return instance;
     }
 
@@ -40,8 +33,7 @@ class ButtonListener extends ListenerAdapter {
             return;
         }
         if (!JdaService.isReadyToReceiveCommands()) {
-            event.reply("You pressed: " + ButtonHelper.getButtonRepresentation(event.getButton(), false)
-                    + "\nPlease try again in a few minutes. The bot is rebooting.")
+            event.reply("You pressed something. Please try again in a few minutes. The bot is rebooting.")
                     .setEphemeral(true)
                     .queue(Consumers.nop(), BotLogger::catchRestError);
             return;
@@ -49,11 +41,7 @@ class ButtonListener extends ListenerAdapter {
 
         // Only defer if button does not spawn a Modal
         if (!isModalSpawner(event)) {
-            if (shouldShowBotIsThinking(event)) {
-                event.deferReply(true).queue(Consumers.nop(), BotLogger::catchRestError);
-            } else {
-                event.deferEdit().queue(Consumers.nop(), BotLogger::catchRestError);
-            }
+            event.deferReply(true).queue(Consumers.nop(), BotLogger::catchRestError);
         }
 
         ButtonProcessor.queue(event);
@@ -67,13 +55,7 @@ class ButtonListener extends ListenerAdapter {
      *         BotLogger::catchRestError);
      *         }`
      */
-    private static boolean shouldShowBotIsThinking(ButtonInteractionEvent event) {
-        String buttonId = event.getButton().getCustomId();
-        return BUTTONS_TO_THINK_ABOUT.contains(buttonId)
-                || (buttonId != null
-                        && (buttonId.startsWith(CombatSideBetButtonIds.PREFIX)
-                                || buttonId.startsWith(CombatDoubleOrBustButtonIds.PREFIX)));
-    }
+   
 
     /**
      * @return whether the button spawns a Modal - modals must be a raw undeferred
@@ -94,8 +76,7 @@ class ButtonListener extends ListenerAdapter {
         private static final AtomicLong lastWarningTimeMs = new AtomicLong(0);
 
         static void check(GenericInteractionCreateEvent event) {
-            if (AsyncootieDiscordBot.isUnstable())
-                return;
+            if (OotieBot.isUnstable()) return;
 
             long now = System.currentTimeMillis();
             long lastWarning = lastWarningTimeMs.get();

@@ -15,9 +15,6 @@ import net.dv8tion.jda.api.entities.channel.concrete.ThreadChannel.AutoArchiveDu
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.apache.commons.lang3.function.Consumers;
 import ootie.cron.CronManager;
 import ootie.discord.JdaService;
 import ootie.executors.CircuitBreaker;
@@ -29,6 +26,9 @@ import ootie.service.statistics.SREStats;
 import ootie.settings.GlobalSettings;
 import ootie.settings.GlobalSettings.ImplementedSettings;
 import ootie.spring.service.deploy.ActiveLeaseService;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
+import org.apache.commons.lang3.function.Consumers;
 
 @UtilityClass
 public class BotLogger {
@@ -257,14 +257,11 @@ public class BotLogger {
 
         if (origin != null) {
             // Add header text iff the error spans multiple lines
-            if (multiline || err != null)
-                msg.append(severity.headerText);
+            if (multiline || err != null) msg.append(severity.headerText);
             msg.append(ActiveLeaseService.getCurrentProcessLogPrefix());
             msg.append(origin.getOriginTimeFormatted());
-            if (origin.getEventString() != null)
-                msg.append(origin.getEventString());
-            if (origin.getGameInfo() != null)
-                msg.append(origin.getGameInfo());
+            if (origin.getEventString() != null) msg.append(origin.getEventString());
+            if (origin.getGameInfo() != null) msg.append(origin.getGameInfo());
         } else {
             msg.append(ActiveLeaseService.getCurrentProcessLogPrefix());
             msg.append(DateTimeHelper.getCurrentTimestamp());
@@ -277,7 +274,7 @@ public class BotLogger {
         msg.append(message);
         if (multiline && err != null)
             msg.append("\n_ _"); // Append a blank line iff the error spans multiple lines and there's no stack
-                                 // trace
+        // trace
 
         // Send off message
         String compiledMessage = msg.toString();
@@ -297,8 +294,7 @@ public class BotLogger {
         for (int i = 0; i < msgLength; i += MAX_DISCORD_MESSAGE_SIZE) {
             int end = Math.min(i + MAX_DISCORD_MESSAGE_SIZE, msgLength);
             String chunk = compiledMessage.substring(i, end);
-            if (StringUtils.isNotBlank(chunk))
-                messageChunks.add(chunk);
+            if (StringUtils.isNotBlank(chunk)) messageChunks.add(chunk);
         }
 
         if (threadName != null && channel != null) {
@@ -311,8 +307,7 @@ public class BotLogger {
             boolean isLastChunk = i == messageChunks.size() - 1;
 
             if (err == null || !isLastChunk) { // If length could overflow or there is no error to trace
-                if (channel == null)
-                    scheduleWebhookMessage(msgChunk); // Send message on webhook
+                if (channel == null) scheduleWebhookMessage(msgChunk); // Send message on webhook
                 else
                     channel.sendMessage(msgChunk)
                             .queue(Consumers.nop(), BotLogger::catchRestError); // Send message on channel
@@ -361,7 +356,7 @@ public class BotLogger {
      * Sends a message to the bot-log webhook.
      * <p>
      * Has a rudimentary fix for discord rate limiting on webhook messages.
-     * 
+     *
      * @param message - The message to send to the webhook
      */
     private static void scheduleWebhookMessage(@Nonnull String message) {
@@ -398,7 +393,8 @@ public class BotLogger {
             return null;
         }
         try {
-            botLogWebhookURL = channel.createWebhook("Asyncootie BotLogger").complete().getUrl();
+            botLogWebhookURL =
+                    channel.createWebhook("Asyncootie BotLogger").complete().getUrl();
             GlobalSettings.setSetting(ImplementedSettings.BOT_LOG_WEBHOOK_URL, botLogWebhookURL);
             System.out.println("Created bot-log webhook successfully: " + botLogWebhookURL);
             info("Created bot-log webhook successfully: " + botLogWebhookURL);
@@ -448,8 +444,7 @@ public class BotLogger {
                 GlobalSettings.ImplementedSettings.DEBUG.toString(), Boolean.class, Boolean.FALSE);
         if (System.getenv("TESTING") != null || debugMode) {
             // if it's ignored, it's not actionable.
-            if (isIgnorableError(e))
-                return;
+            if (isIgnorableError(e)) return;
             error("Encountered REST error", e);
         }
     }
@@ -465,8 +460,7 @@ public class BotLogger {
     @Nullable
     private TextChannel getLogChannel(@Nonnull LogSeverity severity) {
         Guild guild = JdaService.guildPrimary;
-        if (guild == null)
-            return null;
+        if (guild == null) return null;
 
         return guild.getTextChannelsByName(severity.channelName, false).stream()
                 .findFirst()

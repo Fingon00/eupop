@@ -10,7 +10,7 @@
   </parent>
 
   <groupId>me.terterro</groupId>
-  <artifactId>TI4_map_generator_discord_bot</artifactId>
+  <artifactId>ootie_map_generator_discord_bot</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>

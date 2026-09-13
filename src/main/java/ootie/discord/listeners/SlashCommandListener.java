@@ -1,4 +1,4 @@
-package ootie.discord.interactions.listeners;
+package ootie.discord.listeners;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,22 +7,17 @@ import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.GenericCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import org.apache.commons.lang3.function.Consumers;
-import ootie.contest.replay.core.CombatContestSettings;
-import ootie.contest.replay.service.CombatReplayService;
-import ootie.discord.interactions.commands.Command;
-import ootie.discord.interactions.commands.GameStateContainer;
-import ootie.discord.interactions.commands.ParentCommand;
-import ootie.discord.interactions.commands.SlashCommandManager;
+import ootie.discord.commands.Command;
+import ootie.discord.commands.ParentCommand;
+import ootie.discord.commands.SlashCommandManager;
 import ootie.executors.ExecutionLockType;
 import ootie.executors.ExecutorServiceManager;
 import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import ootie.logging.RollbarManager;
-import ootie.service.SusSlashCommandService;
-import ootie.service.game.GameNameService;
+import ootie.service.GameNameService;
 import ootie.spring.context.SpringContext;
-import ootie.spring.service.usage.InteractionCountService;
+import org.apache.commons.lang3.function.Consumers;
 
 class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
@@ -34,8 +29,7 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
     @Override
     public void onSlashCommandInteraction(@Nonnull SlashCommandInteractionEvent event) {
-        if (!canReceiveCommands(event))
-            return;
+        if (!canReceiveCommands(event)) return;
 
         if (!isModalCommand(event)) {
             Command<SlashCommandInteractionEvent> command = getCommand(event);
@@ -76,20 +70,12 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
         ParentCommand command = SlashCommandManager.getCommand(event.getName());
         Command<SlashCommandInteractionEvent> resolvedCommand = getCommand(event);
-        CombatReplayService combatReplayService = CombatContestSettings.isEnabledStatic()
-                ? SpringContext.getBean(CombatReplayService.class)
-                : null;
         try {
             if (command.accept(event)) {
                 command.preExecute(event);
-                if (combatReplayService != null && resolvedCommand instanceof GameStateContainer gameStateContainer) {
-                    combatReplayService.setPreInteractionSnapshot(
-                            combatReplayService.capturePreInteractionSnapshot(gameStateContainer.getGame()));
-                }
                 logSlashCommand(event);
                 command.execute(event);
                 command.postExecute(event);
-                InteractionCountService.get().incrementSlashCommand(event.getFullCommandName());
                 if (!isModalCommand(event) && !resolvedCommand.isEphemeral(event)) {
                     event.getHook().deleteOriginal().queue(Consumers.nop(), BotLogger::catchRestError);
                 }
@@ -97,9 +83,6 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
         } catch (Exception e) {
             command.onException(event, e);
         } finally {
-            if (combatReplayService != null) {
-                combatReplayService.clearPreInteractionSnapshot();
-            }
             RollbarManager.clear();
         }
 
@@ -112,13 +95,12 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
     private static void logSlashCommand(SlashCommandInteractionEvent event) {
         Member member = event.getMember();
-        if (member == null)
-            return;
+        if (member == null) return;
 
         var command = SlashCommandManager.getCommand(event.getInteraction().getName());
         String susPrefix = command.isSuspicious(event) ? "sus" : "notSus";
-        String commandText = "```" + susPrefix + "\n" + member.getEffectiveName() + " used " + event.getCommandString()
-                + "\n```";
+        String commandText =
+                "```" + susPrefix + "\n" + member.getEffectiveName() + " used " + event.getCommandString() + "\n```";
         if (!event.getCommandString().contains("/rules ask")
                 && !event.getCommandString().contains("/fow whisper")
                 && !event.getCommandString().contains("/bothelper impersonate")) {
@@ -127,7 +109,6 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
                     .queue(
                             m -> {
                                 BotLogger.logSlashCommand(event, m);
-                                SusSlashCommandService.checkIfShouldReportSusSlashCommand(event, m.getJumpUrl());
                             },
                             BotLogger::catchRestError);
         }

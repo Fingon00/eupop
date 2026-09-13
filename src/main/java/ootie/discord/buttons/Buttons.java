@@ -1,10 +1,7 @@
-package ootie.discord.interactions.buttons;
+package ootie.discord.buttons;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import org.apache.commons.lang3.StringUtils;
-
 import net.dv8tion.jda.api.components.actionrow.ActionRow;
 import net.dv8tion.jda.api.components.buttons.Button;
 import net.dv8tion.jda.api.components.buttons.ButtonStyle;
@@ -19,6 +16,7 @@ import ootie.service.emoji.PlanetEmojis;
 import ootie.service.emoji.TechEmojis;
 import ootie.service.emoji.ootieEmoji;
 import ootie.website.AsyncootieWebsiteHelper;
+import org.apache.commons.lang3.StringUtils;
 
 public final class Buttons {
 
@@ -30,15 +28,15 @@ public final class Buttons {
     }
 
     public static final Button GET_A_TECH = green("acquireATech", "Get a Technology");
-    public static final Button GET_A_UNIT_TECH_WITH_INF = green("acquireAUnitTechWithInf",
-            "Get a Unit Upgrade Technology");
+    public static final Button GET_A_UNIT_TECH_WITH_INF =
+            green("acquireAUnitTechWithInf", "Get a Unit Upgrade Technology");
     public static final Button GET_A_FREE_TECH = green("acquireAFreeTech", "Get a Technology");
     public static final Button REDISTRIBUTE_CCs = green("redistributeCCButtons", "Redistribute Command Tokens");
     public static final Button DONE_DELETE_BUTTONS = gray("deleteButtons", "Done");
     public static final Button CANCEL = gray("deleteButtons", "Cancel");
     public static final Button FACTION_EMBED = green("factionEmbedRefresh", "Refresh Faction Display");
-    public static final Button DEAL_2_SO = green("deal2SOToAll", "Deal 2 Secret Objectives To All",
-            CardEmojis.SecretObjectiveAlt);
+    public static final Button DEAL_2_SO =
+            green("deal2SOToAll", "Deal 2 Secret Objectives To All", CardEmojis.SecretObjectiveAlt);
 
     // Cards Info Buttons
     public static final Button EDIT_SUMMARIES = blue("editEndOfRoundSummaries", "Edit Summaries");
@@ -46,27 +44,27 @@ public final class Buttons {
     public static final Button POST_NOTEPAD = blue("notepadPost", "Post Notes");
     public static final Button REFRESH_INFO = green("refreshInfoButtons", "Other Info");
     private static final Button REFRESH_AC_INFO = green("refreshACInfo", "Action Card Info", CardEmojis.ActionCard);
-    private static final Button REFRESH_AC_INFO_TF = green("refreshACInfo", "Action Card Info",
-            CardEmojis.TF_Action_Card);
+    private static final Button REFRESH_AC_INFO_TF =
+            green("refreshACInfo", "Action Card Info", CardEmojis.TF_Action_Card);
     private static final Button REFRESH_PN_INFO = green("refreshPNInfo", "Promissory Notes Info", CardEmojis.PN);
-    private static final Button REFRESH_SO_INFO = green("refreshSOInfo", "Secret Objectives Info",
-            CardEmojis.SecretObjective);
+    private static final Button REFRESH_SO_INFO =
+            green("refreshSOInfo", "Secret Objectives Info", CardEmojis.SecretObjective);
     private static final Button REFRESH_ABILITY_INFO = green("refreshAbilityInfo", "Ability Info");
-    private static final Button REFRESH_BREAKTHROUGH_INFO = green(Constants.REFRESH_BREAKTHROUGH_INFO,
-            "Breakthrough Info");
-    public static final Button REFRESH_RELIC_INFO = green(Constants.REFRESH_RELIC_INFO, "Relic Info",
-            ExploreEmojis.Relic);
-    public static final Button REFRESH_LEADER_INFO = green(Constants.REFRESH_LEADER_INFO, "Leader Info",
-            LeaderEmojis.Hero);
-    public static final Button REFRESH_UNIT_INFO = green(Constants.REFRESH_UNIT_INFO, "Unit Info",
-            TechEmojis.UnitUpgradeTech);
+    private static final Button REFRESH_BREAKTHROUGH_INFO =
+            green(Constants.REFRESH_BREAKTHROUGH_INFO, "Breakthrough Info");
+    public static final Button REFRESH_RELIC_INFO =
+            green(Constants.REFRESH_RELIC_INFO, "Relic Info", ExploreEmojis.Relic);
+    public static final Button REFRESH_LEADER_INFO =
+            green(Constants.REFRESH_LEADER_INFO, "Leader Info", LeaderEmojis.Hero);
+    public static final Button REFRESH_UNIT_INFO =
+            green(Constants.REFRESH_UNIT_INFO, "Unit Info", TechEmojis.UnitUpgradeTech);
     public static final Button REFRESH_ALL_UNIT_INFO = green(Constants.REFRESH_ALL_UNIT_INFO, "Show All Units");
     public static final Button REFRESH_TECH_INFO = green(Constants.REFRESH_TECH_INFO, "Technology Info");
-    public static final Button REFRESH_PLANET_INFO = green(Constants.REFRESH_PLANET_INFO, "Planet Info",
-            PlanetEmojis.SemLor);
+    public static final Button REFRESH_PLANET_INFO =
+            green(Constants.REFRESH_PLANET_INFO, "Planet Info", PlanetEmojis.SemLor);
 
-    public static final Button OFFER_PING_OPTIONS_BUTTON = gray("playerPref_personalPingInterval",
-            "Personal Ping Interval");
+    public static final Button OFFER_PING_OPTIONS_BUTTON =
+            gray("playerPref_personalPingInterval", "Personal Ping Interval");
 
     // Map buttons
     private static final Button REFRESH_CARDS_INFO = green("cardsInfo", "Cards Info");
@@ -189,8 +187,7 @@ public final class Buttons {
     }
 
     public static Button rgToggle(boolean isDisable, String buttonID, String buttonLabel, ootieEmoji emoji) {
-        if (isDisable)
-            return red(buttonID, "Disable " + buttonLabel, emoji);
+        if (isDisable) return red(buttonID, "Disable " + buttonLabel, emoji);
         return green(buttonID, "Enable " + buttonLabel, emoji);
     }
 
@@ -215,8 +212,7 @@ public final class Buttons {
     }
 
     private static Emoji getEmoji(String emoji) {
-        if (StringUtils.isBlank(emoji))
-            return null; // no need to error on null/blank
+        if (StringUtils.isBlank(emoji)) return null; // no need to error on null/blank
         try {
             return Emoji.fromFormatted(emoji);
         } catch (Exception e) {
@@ -248,8 +244,7 @@ public final class Buttons {
     }
 
     private static Page paginate(List<Button> buttons, int page) {
-        if (buttons.isEmpty())
-            return new Page(1, 0, List.of());
+        if (buttons.isEmpty()) return new Page(1, 0, List.of());
 
         int total = (int) Math.ceil((double) buttons.size() / PAGE_SIZE);
         int current = Math.clamp(page, 1, total);

@@ -25,60 +25,24 @@ import net.dv8tion.jda.api.requests.restaction.CommandListUpdateAction;
 import net.dv8tion.jda.api.utils.ChunkingFilter;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
-import org.apache.commons.lang3.function.Consumers;
-import ootie.AsyncootieDiscordBot;
-import ootie.contest.cron.CombatReplayCron;
-import ootie.contest.cron.CombatReplayPromotionCron;
-import ootie.contest.cron.CombatReplayPromotionScoreBackfillCron;
-import ootie.contest.cron.CombatReplaySelectionCron;
-import ootie.contest.replay.core.CombatContestSettings;
-import ootie.cron.AutoPingCron;
-import ootie.cron.BothelperDashboardCron;
-import ootie.cron.CardsInfoPinCleanupCron;
-import ootie.cron.CategoryCleanupCron;
-import ootie.cron.CloseLaunchThreadsCron;
-import ootie.cron.CronManager;
-import ootie.cron.EndOldGamesCron;
-import ootie.cron.FastScFollowCron;
-import ootie.cron.GameMessageCleanupCron;
-import ootie.cron.InteractionLogCron;
-import ootie.cron.KeepThreadsAliveCron;
-import ootie.cron.LogButtonRuntimeStatisticsCron;
-import ootie.cron.LogCacheStatsCron;
-import ootie.cron.LongExecutionHistoryCron;
-import ootie.cron.MatchmakerCron;
-import ootie.cron.OldUndoFileCleanupCron;
-import ootie.cron.PersistToSqlCron;
-import ootie.cron.ReuploadStaleEmojisCron;
-import ootie.cron.SabotageAutoReactCron;
-import ootie.cron.TechSummaryCron;
-import ootie.cron.UploadRecentStatsCron;
-import ootie.cron.UploadStatsCron;
-import ootie.cron.WinningPathCron;
-import ootie.discord.interactions.commands.SlashCommandManager;
-import ootie.discord.interactions.context.ContextCommandManager;
-import ootie.discord.interactions.listeners.ListenerManager;
-import ootie.discord.interactions.selections.SelectionManager;
+import ootie.OotieBot;
+import ootie.discord.commands.SlashCommandManager;
+import ootie.discord.listeners.ListenerManager;
 import ootie.executors.ExecutorServiceManager;
 import ootie.executors.ExecutorUtility;
 import ootie.executors.ShutdownResult;
 import ootie.game.persistence.GameManager;
-import ootie.helpers.AliasHandler;
 import ootie.helpers.Constants;
 import ootie.helpers.Storage;
-import ootie.helpers.TIGLHelper;
 import ootie.image.MapRenderPipeline;
 import ootie.image.Mapper;
 import ootie.image.PositionMapper;
-import ootie.image.TileHelper;
 import ootie.logging.BotLogger;
 import ootie.logging.LogBufferManager;
-import ootie.service.draft.SliceGenerationPipeline;
-import ootie.service.emoji.ApplicationEmojiService;
-import ootie.service.statistics.StatisticsPipeline;
 import ootie.settings.GlobalSettings;
 import ootie.spring.context.SpringContext;
 import ootie.spring.service.deploy.ActiveLeaseService;
+import org.apache.commons.lang3.function.Consumers;
 
 @UtilityClass
 public class JdaService {
@@ -111,19 +75,6 @@ public class JdaService {
     public static String guildPrimaryID;
     public static boolean testingMode;
     public static Guild guildPrimary;
-    private static Guild guildSecondary;
-    private static Guild guildTertiary;
-    private static Guild guildQuaternary;
-    private static Guild guildQuinary;
-    private static Guild guildSenary;
-    private static Guild guildSeptenary;
-    private static Guild guildOctonary;
-    private static Guild guildNonary;
-    private static Guild guildDecenary;
-    private static Guild guildUndenary;
-    private static Guild guildDuodenary;
-    private static Guild guildTredenary;
-    private static Guild guildQuadrodenary;
     public static Guild guildFogOfWar;
     private static Guild guildFogOfWarSecondary;
     public static Guild guildCommunityPlays;
@@ -188,99 +139,6 @@ public class JdaService {
             return false;
         }
 
-        // Community Plays TI
-        if (args.length >= 4) {
-            guildCommunityPlays = tryToInitGuild(args[3], false);
-        }
-
-        // Async: FOW Chapter
-        if (args.length >= 5) {
-            guildFogOfWar = tryToInitGuild(args[4], false);
-            if (guildFogOfWar != null)
-                fowServers.add(guildFogOfWar);
-        }
-
-        // Async: Stroter's Paradise
-        if (args.length >= 6) {
-            guildSecondary = tryToInitGuild(args[5], true);
-        }
-
-        // Async: Dreadn't
-        if (args.length >= 7) {
-            guildTertiary = tryToInitGuild(args[6], true);
-        }
-
-        // Async: War Sun Tzu
-        if (args.length >= 8) {
-            guildQuaternary = tryToInitGuild(args[7], true);
-        }
-
-        // Async: Fighter Club
-        if (args.length >= 9) {
-            guildQuinary = tryToInitGuild(args[8], true);
-        }
-
-        // Async: Tommer Hawk
-        if (args.length >= 10) {
-            guildSenary = tryToInitGuild(args[9], true);
-        }
-
-        // Async: Duder's Domain
-        if (args.length >= 11) {
-            guildSeptenary = tryToInitGuild(args[10], true);
-        }
-
-        // Async: What's up Dock
-        if (args.length >= 12) {
-            guildOctonary = tryToInitGuild(args[11], true);
-        }
-
-        // Async: Megagame server
-        if (args.length >= 13) {
-            guildMegagame = tryToInitGuild(args[12], false);
-        }
-
-        // Async: Ship Flag
-        if (args.length >= 14) {
-            guildNonary = tryToInitGuild(args[13], true);
-        }
-
-        // Async: FOW Chapter Secondary
-        if (args.length >= 15) {
-            guildFogOfWarSecondary = tryToInitGuild(args[14], false);
-            if (guildFogOfWarSecondary != null)
-                fowServers.add(guildFogOfWarSecondary);
-        }
-
-        // Async: Tournament Server 1
-        if (args.length >= 16) {
-            guildTourney = tryToInitGuild(args[15], false);
-        }
-
-        // Async: Great Carrier Reef
-        if (args.length >= 17) {
-            guildDecenary = tryToInitGuild(args[16], true);
-        }
-
-        // Async: PDStrians
-        if (args.length >= 18) {
-            guildUndenary = tryToInitGuild(args[17], true);
-        }
-
-        // Async: Stroaty McStroatface
-        if (args.length >= 19) {
-            guildDuodenary = tryToInitGuild(args[18], true);
-        }
-
-        // Async: Planetary Duck System
-        if (args.length >= 20) {
-            guildTredenary = tryToInitGuild(args[19], true);
-        }
-
-        // Async: Dannel's Camp Ground
-        if (args.length >= 21) {
-            guildQuadrodenary = tryToInitGuild(args[20], true);
-        }
 
         BotLogger.info("FINISHED INITIALIZING SERVERS\n> "
                 + guilds.size() + " total servers connected\n> "
@@ -288,13 +146,11 @@ public class JdaService {
                 + fowServers.size() + " Fog of War servers"
                 + "\n> Guilds: " + jda.getGuilds().stream().map(Guild::getName).collect(Collectors.toSet()));
 
-        if (isProduction())
-            leaveNonWhitelistedGuilds();
+        if (isProduction()) leaveNonWhitelistedGuilds();
 
         // Attempt to start a "Search Only" version of the bot on eligible servers
         for (Guild searchGuild : jda.getGuilds()) {
-            if (guilds.stream().anyMatch(g -> g.getId().equals(searchGuild.getId())))
-                continue;
+            if (guilds.stream().anyMatch(g -> g.getId().equals(searchGuild.getId()))) continue;
             startBotSearchOnly(searchGuild);
         }
 
@@ -310,55 +166,20 @@ public class JdaService {
     public static void loadStaticDataAndResources() {
         BotLogger.info("LOADING DATA");
         jda.getPresence().setActivity(Activity.customStatus("STARTING UP: Loading Data"));
-        ApplicationEmojiService.uploadNewEmojis();
-        // load all /resources/planets/ and /resources/systems/ .json files, into 3
-        // HashMaps (not 2)
-        TileHelper.init();
+
         // load all /resources/positions/ .properties files, each into 1 Properties
         PositionMapper.init();
         // load all /resources/data/ .json and .properties files, except
         // logging.properties, each into 1 HashMap or
         // Properties
         Mapper.init();
-        // load all /resources/alias/ .properties files, except
-        // position_alias_old.properties, into
-        AliasHandler.init();
         // create directories for games files
         Storage.init();
-        SelectionManager.init();
-        initializeWhitelistedRoles();
-        TIGLHelper.validateTIGLness();
     }
 
     public static void registerAndStartCronJobs() {
-        AutoPingCron.register();
-        ReuploadStaleEmojisCron.register();
-        LogCacheStatsCron.register();
-        WinningPathCron.register();
-        PersistToSqlCron.register();
-        UploadStatsCron.register();
-        UploadRecentStatsCron.register();
-        OldUndoFileCleanupCron.register();
-        EndOldGamesCron.register();
-        GameMessageCleanupCron.register();
-        CardsInfoPinCleanupCron.register();
-        LogButtonRuntimeStatisticsCron.register();
-        TechSummaryCron.register();
-        SabotageAutoReactCron.register();
-        FastScFollowCron.register();
-        MatchmakerCron.register();
-        CloseLaunchThreadsCron.register();
-        KeepThreadsAliveCron.register();
-        if (CombatContestSettings.isEnabledStatic()) {
-            CombatReplaySelectionCron.register();
-            CombatReplayPromotionCron.register();
-            CombatReplayPromotionScoreBackfillCron.register();
-            CombatReplayCron.register();
-        }
-        InteractionLogCron.register();
-        LongExecutionHistoryCron.register();
-        CategoryCleanupCron.register();
-        BothelperDashboardCron.register();
+        //AutoPingCron.register();
+        //PersistToSqlCron.register();
     }
 
     public static void markProcessReady() {
@@ -409,7 +230,7 @@ public class JdaService {
         try {
             CommandListUpdateAction commands = guild.updateCommands();
             SlashCommandManager.getCommands().forEach(command -> command.register(commands));
-            ContextCommandManager.getCommands().forEach(cmd -> cmd.register(commands));
+            //ContextCommandManager.getCommands().forEach(cmd -> cmd.register(commands));
             commands.queue(Consumers.nop(), BotLogger::catchRestError);
             BotLogger.info("BOT STARTED UP: " + guild.getName());
             guilds.add(guild);
@@ -424,17 +245,13 @@ public class JdaService {
         // Do not set up search commands for test bots, and definitely never for the hub
         // server, which several test bots
         // are still in
-        if (guild == null)
-            return false;
-        if (System.getenv("TESTING") != null)
-            return false;
-        if (Constants.ASYNCootie_HUB_SERVER_ID.equals(guild.getId()))
-            return false;
+        if (guild == null) return false;
+        if (System.getenv("TESTING") != null) return false;
+        if (Constants.ASYNCOOTIE_HUB_SERVER_ID.equals(guild.getId())) return false;
 
         // Disable this for now
         boolean x = true;
-        if (x)
-            return false;
+        if (x) return false;
 
         try {
             CommandListUpdateAction commands = guild.updateCommands();
@@ -617,11 +434,9 @@ public class JdaService {
     @Nullable
     public static String getUsername(String userId) {
         Member member = guildPrimary.getMemberById(userId);
-        if (member != null)
-            return member.getEffectiveName();
+        if (member != null) return member.getEffectiveName();
         User user = jda.getUserById(userId);
-        if (user != null)
-            return user.getEffectiveName();
+        if (user != null) return user.getEffectiveName();
         return null;
     }
 
@@ -630,15 +445,14 @@ public class JdaService {
     }
 
     public static void leaveGuildIfNotWhitelisted(Guild guild) {
-        if (!isProduction() || isWhitelistedGuild(guild))
-            return;
+        if (!isProduction() || isWhitelistedGuild(guild)) return;
         BotLogger.warning(
                 "Leaving guild '" + guild.getName() + "' (" + guild.getId() + ") because it isn't whitelisted!");
         guild.leave().queue(Consumers.nop(), BotLogger::catchRestError);
     }
 
     public static boolean isProduction() {
-        return Constants.ASYNCootie_HUB_SERVER_ID.equals(guildPrimaryID);
+        return guildPrimaryID.equals(Constants.ASYNCOOTIE_HUB_SERVER_ID);
     }
 
     private static boolean isWhitelistedGuild(Guild guild) {
@@ -648,7 +462,7 @@ public class JdaService {
 
     public static void shutdown() {
         try {
-            AsyncootieDiscordBot.markShuttingDown();
+            OotieBot.markShuttingDown();
 
             jda.getPresence().setPresence(OnlineStatus.DO_NOT_DISTURB, Activity.customStatus("BOT IS SHUTTING DOWN"));
             BotLogger.info("SHUTDOWN PROCESS STARTED");
@@ -658,10 +472,8 @@ public class JdaService {
 
             logShutdownResult(JDA_EVENT_POOL_NAME, shutdownEventExecutor());
             logShutdownResult(ExecutorServiceManager.class.getSimpleName(), ExecutorServiceManager.shutdown());
-            logShutdownResult(CronManager.class.getSimpleName(), CronManager.shutdown());
-            logShutdownResult(SliceGenerationPipeline.class.getSimpleName(), SliceGenerationPipeline.shutdown());
+            //logShutdownResult(CronManager.class.getSimpleName(), CronManager.shutdown());
             logShutdownResult(MapRenderPipeline.class.getSimpleName(), MapRenderPipeline.shutdown());
-            logShutdownResult(StatisticsPipeline.class.getSimpleName(), StatisticsPipeline.shutdown());
 
             SpringContext.getBean(ActiveLeaseService.class).releaseLease();
             BotLogger.info("RELEASED ACTIVE LEASE");

@@ -1,4 +1,4 @@
-package ootie.discord.interactions.commands;
+package ootie.discord.commands;
 
 import java.lang.reflect.Member;
 import java.util.ArrayList;
@@ -19,7 +19,6 @@ import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.command.GenericCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
-import net.dv8tion.jda.api.interactions.Interaction;
 import net.dv8tion.jda.api.interactions.commands.Command.Choice;
 import net.dv8tion.jda.api.interactions.commands.CommandInteractionPayload;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
@@ -27,15 +26,10 @@ import net.dv8tion.jda.api.interactions.components.buttons.ButtonInteraction;
 import ootie.discord.JdaService;
 import ootie.game.Game;
 import ootie.game.Player;
-import ootie.game.Tile;
 import ootie.game.persistence.GameManager;
-import ootie.helpers.AliasHandler;
 import ootie.helpers.Constants;
-import ootie.helpers.Helper;
-import ootie.image.Mapper;
-import ootie.image.TileHelper;
 import ootie.logging.BotLogger;
-import ootie.service.game.GameNameService;
+import ootie.service.GameNameService;
 
 @UtilityClass
 public class CommandHelper {
@@ -102,28 +96,6 @@ public class CommandHelper {
         return null;
     }
 
-    @Nullable
-    public static Player getPlayerFromEvent(Game game, GenericCommandInteractionEvent event) {
-        OptionMapping playerOption = event.getOption(Constants.PLAYER);
-        if (playerOption != null) {
-            String playerID = playerOption.getAsUser().getId();
-            return game.getPlayer(playerID);
-        }
-
-        OptionMapping factionColorOption = event.getOption(Constants.FACTION_COLOR);
-        if (factionColorOption != null) {
-            String factionColor = AliasHandler.resolveColor(factionColorOption.getAsString().toLowerCase());
-            Player player = getPlayerByFactionColor(factionColor, game);
-            if (player != null) {
-                return player;
-            }
-        }
-        Player player = getPlayerFromChannel(game, event);
-        if (player != null) {
-            return player;
-        }
-        return getPlayerFromGame(game, event.getMember(), event.getUser().getId());
-    }
 
     @Nullable
     public static Player getPlayerFromGame(Game game, Member member, String userId) {
@@ -176,7 +148,8 @@ public class CommandHelper {
 
         OptionMapping factionColorOption = event.getOption(Constants.TARGET_FACTION_OR_COLOR);
         if (factionColorOption != null) {
-            String factionColor = AliasHandler.resolveColor(factionColorOption.getAsString().toLowerCase());
+            String factionColor =
+                    AliasHandler.resolveColor(factionColorOption.getAsString().toLowerCase());
             return getPlayerByFactionColor(factionColor, game);
         }
 
@@ -209,7 +182,8 @@ public class CommandHelper {
         if (hasRole(event, acceptedRoles)) {
             return true;
         }
-        var acceptRolesStr = acceptedRoles.stream().map(Role::getName).distinct().collect(Collectors.joining(", "));
+        var acceptRolesStr =
+                acceptedRoles.stream().map(Role::getName).distinct().collect(Collectors.joining(", "));
         event.getHook()
                 .editOriginal("You are not authorized to use this command. You must have one of the following roles: "
                         + acceptRolesStr)
@@ -241,43 +215,6 @@ public class CommandHelper {
         return " used the force";
     }
 
-    @Nullable
-    public static String getColor(Game game, SlashCommandInteractionEvent event) {
-        OptionMapping factionColorOption = event.getOption(Constants.FACTION_COLOR);
-        if (factionColorOption != null) {
-            String colorFromString = getColorFromString(game, factionColorOption.getAsString());
-            if (Mapper.isValidColor(colorFromString)) {
-                return colorFromString;
-            }
-        } else {
-            Player foundPlayer = getPlayerFromGame(game, event.getMember(), event.getUser().getId());
-            if (foundPlayer != null) {
-                return foundPlayer.getColor();
-            }
-        }
-        return null;
-    }
 
-    public static String getColorFromString(Game game, String factionColor) {
-        factionColor = AliasHandler.resolveColor(factionColor);
-        factionColor = AliasHandler.resolveFaction(factionColor);
-        for (Player player_ : game.getPlayers().values()) {
-            if (Objects.equals(factionColor, player_.getFaction())
-                    || Objects.equals(factionColor, player_.getColor())) {
-                return player_.getColor();
-            }
-        }
-        return factionColor;
-    }
-
-    public Tile getTile(SlashCommandInteractionEvent event, Game game) {
-        String tileName = StringUtils.substringBefore(
-                event.getOption(Constants.TILE_NAME).getAsString().toLowerCase(), " ");
-        return TileHelper.getTile(event, tileName, game);
-    }
-
-    public Tile getTile(SlashCommandInteractionEvent event, Game game, String tileName) {
-        tileName = StringUtils.substringBefore(tileName.toLowerCase(), " ");
-        return TileHelper.getTile(event, tileName, game);
-    }
+   
 }

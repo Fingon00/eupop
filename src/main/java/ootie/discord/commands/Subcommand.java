@@ -1,4 +1,4 @@
-package ootie.discord.interactions.commands;
+package ootie.discord.commands;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,4 +1,4 @@
-package ootie.discord.interactions.commands;
+package ootie.discord.commands;
 
 import java.util.Map;
 
@@ -20,8 +20,7 @@ public abstract class SubcommandGroup extends SubcommandGroupData implements Com
     }
 
     public boolean accept(SlashCommandInteractionEvent event) {
-        if (!getName().equals(event.getInteraction().getSubcommandGroup()))
-            return false;
+        if (!getName().equals(event.getInteraction().getSubcommandGroup())) return false;
 
         Subcommand subcommand = getGroupSubcommands().get(event.getInteraction().getSubcommandName());
         return subcommand != null && subcommand.accept(event);
@@ -40,7 +39,8 @@ public abstract class SubcommandGroup extends SubcommandGroupData implements Com
     @Override
     public boolean isSuspicious(SlashCommandInteractionEvent event) {
         return getGroupSubcommands().values().stream()
-                .anyMatch(subcommand -> subcommand.getName().equals(event.getInteraction().getSubcommandName())
-                        && subcommand.isSuspicious(event));
+                .anyMatch(subcommand ->
+                        subcommand.getName().equals(event.getInteraction().getSubcommandName())
+                                && subcommand.isSuspicious(event));
     }
 }
