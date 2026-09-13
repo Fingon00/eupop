@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
 import ootie.game.Leader;

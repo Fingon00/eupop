@@ -14,7 +14,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
-import ootie.game.Player;
 import ootie.game.persistence.GameManager;
 import ootie.game.persistence.ManagedGame;
 import ootie.logging.BotLogger;
@@ -159,6 +158,4 @@ public class DataMigrationManager {
         }
         return migrationsApplied;
     }
-
-   
 }

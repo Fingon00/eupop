@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.regex.Pattern;
-
 import javax.annotation.Nullable;
-
 import ootie.helpers.Constants;
 import ootie.helpers.RandomHelper;
 import ootie.helpers.Storage;

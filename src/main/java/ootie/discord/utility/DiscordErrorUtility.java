@@ -1,10 +1,9 @@
 package ootie.discord.utility;
 
-import org.apache.commons.lang3.exception.ExceptionUtils;
-
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.exceptions.ErrorResponseException;
 import net.dv8tion.jda.api.requests.Response;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 
 @UtilityClass
 public class DiscordErrorUtility {

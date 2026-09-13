@@ -21,18 +21,10 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.stream.Collectors;
-
 import javax.annotation.Nullable;
-
-import org.apache.commons.collections4.ListUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.time.StopWatch;
-
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
-import ootie.discord.commands.CommandHelper;
 import ootie.game.Expeditions;
 import ootie.game.Game;
 import ootie.game.Planet;
@@ -54,19 +46,20 @@ import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.message.MessageHelper;
 import ootie.model.AgendaModel;
-import ootie.model.BorderAnomalyHolder;
 import ootie.model.ColorModel;
 import ootie.model.EventModel;
 import ootie.model.ModelInterface;
 import ootie.model.PlanetModel;
 import ootie.model.StrategyCardModel;
-import ootie.service.fow.UserOverridenGenericInteractionCreateEvent;
 import ootie.service.image.FileUploadService;
 import ootie.service.map.FractureService;
 import ootie.service.option.FOWOptionService.FOWOption;
 import ootie.settings.GlobalSettings;
 import ootie.website.AsyncTi4WebsiteHelper;
 import ootie.website.model.WebsiteOverlay;
+import org.apache.commons.collections4.ListUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.time.StopWatch;
 
 public class MapGenerator implements AutoCloseable {
 

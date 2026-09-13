@@ -3,14 +3,12 @@ package ootie.spring.service.deploy;
 import java.time.Instant;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicBoolean;
-
-import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
-
 import lombok.RequiredArgsConstructor;
 import ootie.OotieBot;
 import ootie.logging.BotLogger;
 import ootie.spring.context.SpringContext;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 
 /**
  * Owns the shared active lease and the local process state that decides whether this instance may serve traffic,

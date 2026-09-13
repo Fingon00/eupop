@@ -1,17 +1,14 @@
 package ootie.image;
 
+import com.github.benmanes.caffeine.cache.Cache;
+import com.github.benmanes.caffeine.cache.Caffeine;
 import java.awt.image.BufferedImage;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
-
-import org.springframework.cache.CacheManager;
-
-import com.github.benmanes.caffeine.cache.Cache;
-import com.github.benmanes.caffeine.cache.Caffeine;
-
 import lombok.experimental.UtilityClass;
 import ootie.logging.BotLogger;
 import ootie.settings.GlobalSettings;
+import org.springframework.cache.CacheManager;
 
 @UtilityClass
 class ImageCache {

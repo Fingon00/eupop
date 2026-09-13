@@ -21,14 +21,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
 import javax.annotation.Nullable;
-
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.Strings;
-import org.apache.commons.lang3.function.Consumers;
-import org.jetbrains.annotations.NotNull;
-
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.components.buttons.Button;
 import net.dv8tion.jda.api.components.buttons.ButtonStyle;
@@ -56,6 +49,10 @@ import ootie.image.Mapper;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.message.MessageHelper;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Strings;
+import org.apache.commons.lang3.function.Consumers;
+import org.jetbrains.annotations.NotNull;
 
 public final class Helper {
     private static final int TRIPLE_SYSTEM_TOKEN_PLANET_GAP_OFFSET = 65;

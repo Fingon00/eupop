@@ -1,5 +1,6 @@
 package ootie.game;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,16 +20,7 @@ import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
 import javax.annotation.Nullable;
-
-import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.collections4.MapUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.jetbrains.annotations.NotNull;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import lombok.Getter;
 import lombok.Setter;
 import net.dv8tion.jda.api.EmbedBuilder;
@@ -65,6 +57,10 @@ import ootie.message.GameMessage;
 import ootie.message.GameMessageManager;
 import ootie.message.GameMessageType;
 import ootie.message.MessageHelper;
+import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.MapUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.jetbrains.annotations.NotNull;
 
 public class Player extends PlayerProperties {
 
@@ -72,8 +68,6 @@ public class Player extends PlayerProperties {
 
     @Getter
     private final Game game;
-
-   
 
     @Getter
     private final Map<String, Integer> actionCards = new LinkedHashMap<>();

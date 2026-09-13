@@ -12,9 +12,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Predicate;
-
 import javax.annotation.Nullable;
-
 import lombok.experimental.UtilityClass;
 import ootie.game.persistence.GameManager;
 import ootie.game.persistence.ManagedGame;

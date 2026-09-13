@@ -10,10 +10,8 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class SlashCommandManager {
 
-    private static final Map<String, ParentCommand> commands = Stream.of(
-
-                    new SearchCommand())
-            .collect(Collectors.toMap(ParentCommand::getName, command -> command));
+    private static final Map<String, ParentCommand> commands =
+            Stream.of(new SearchCommand()).collect(Collectors.toMap(ParentCommand::getName, command -> command));
 
     public static ParentCommand getCommand(String name) {
         return commands.get(name);

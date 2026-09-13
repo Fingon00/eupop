@@ -1,9 +1,7 @@
 package ootie.service;
 
-import java.awt.image.BufferedImage;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -11,15 +9,9 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
-
 import javax.annotation.Nullable;
-
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.function.Consumers;
-
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.Permission;
-import net.dv8tion.jda.api.components.buttons.Button;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.ISnowflake;
 import net.dv8tion.jda.api.entities.Member;
@@ -33,11 +25,8 @@ import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.managers.channel.concrete.TextChannelManager;
 import net.dv8tion.jda.api.managers.channel.concrete.ThreadChannelManager;
 import net.dv8tion.jda.api.requests.restaction.ChannelAction;
-import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.discord.JdaService;
-import ootie.discord.buttons.Buttons;
-import ootie.discord.commands.CommandHelper;
 import ootie.discord.utility.DiscordRoleUtility;
 import ootie.game.Game;
 import ootie.game.Player;
@@ -45,12 +34,11 @@ import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
 import ootie.helpers.Helper;
 import ootie.helpers.ThreadArchiveHelper;
-import ootie.image.ImageHelper;
 import ootie.logging.BotLogger;
-import ootie.logging.LogOrigin;
 import ootie.message.MessageHelper;
-import ootie.service.image.FileUploadService;
 import ootie.settings.GlobalSettings;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.function.Consumers;
 
 @UtilityClass
 public class CreateGameService {
@@ -236,7 +224,6 @@ public class CreateGameService {
 
         reportNewGameCreated(newGame);
 
-
         // AUTOCLOSE LAUNCH THREAD AFTER RUNNING COMMAND
         if (event.getChannel() instanceof ThreadChannel thread
                 && ("making-new-games".equals(thread.getParentChannel().getName())
@@ -289,7 +276,6 @@ public class CreateGameService {
         // gets a fair amount of use (ping a bothelper for specifics)";
         MessageHelper.sendMessageToChannelAndPin(chatChannel, tabletalkGetStartedMessage);
     }
-
 
     /**
      * @param guild   guild to invite users to

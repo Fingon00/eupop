@@ -55,7 +55,6 @@ class ButtonListener extends ListenerAdapter {
      *         BotLogger::catchRestError);
      *         }`
      */
-   
 
     /**
      * @return whether the button spawns a Modal - modals must be a raw undeferred

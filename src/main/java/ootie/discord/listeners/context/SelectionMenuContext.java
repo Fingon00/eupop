@@ -2,7 +2,6 @@ package ootie.discord.listeners.context;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import lombok.Getter;
 import net.dv8tion.jda.api.events.interaction.component.EntitySelectInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;

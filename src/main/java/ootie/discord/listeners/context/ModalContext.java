@@ -3,14 +3,11 @@ package ootie.discord.listeners.context;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import lombok.Getter;
 import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
 import net.dv8tion.jda.api.interactions.modals.ModalMapping;
 import ootie.game.persistence.GameManager;
-import ootie.helpers.ButtonHelper;
-import ootie.service.event.EventAuditService;
 
 @Getter
 public class ModalContext extends ListenerContext {

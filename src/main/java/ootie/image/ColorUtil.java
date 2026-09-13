@@ -6,14 +6,12 @@ import java.awt.Paint;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.util.Map;
-
-import org.apache.commons.lang3.StringUtils;
-
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.model.ColorModel;
 import ootie.model.StrategyCardModel;
+import org.apache.commons.lang3.StringUtils;
 
 @UtilityClass
 class ColorUtil {

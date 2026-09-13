@@ -139,7 +139,6 @@ public class JdaService {
             return false;
         }
 
-
         BotLogger.info("FINISHED INITIALIZING SERVERS\n> "
                 + guilds.size() + " total servers connected\n> "
                 + serversToCreateNewGamesOn.size() + " Overflow servers for new games\n> "
@@ -178,8 +177,8 @@ public class JdaService {
     }
 
     public static void registerAndStartCronJobs() {
-        //AutoPingCron.register();
-        //PersistToSqlCron.register();
+        // AutoPingCron.register();
+        // PersistToSqlCron.register();
     }
 
     public static void markProcessReady() {
@@ -230,7 +229,7 @@ public class JdaService {
         try {
             CommandListUpdateAction commands = guild.updateCommands();
             SlashCommandManager.getCommands().forEach(command -> command.register(commands));
-            //ContextCommandManager.getCommands().forEach(cmd -> cmd.register(commands));
+            // ContextCommandManager.getCommands().forEach(cmd -> cmd.register(commands));
             commands.queue(Consumers.nop(), BotLogger::catchRestError);
             BotLogger.info("BOT STARTED UP: " + guild.getName());
             guilds.add(guild);
@@ -472,7 +471,7 @@ public class JdaService {
 
             logShutdownResult(JDA_EVENT_POOL_NAME, shutdownEventExecutor());
             logShutdownResult(ExecutorServiceManager.class.getSimpleName(), ExecutorServiceManager.shutdown());
-            //logShutdownResult(CronManager.class.getSimpleName(), CronManager.shutdown());
+            // logShutdownResult(CronManager.class.getSimpleName(), CronManager.shutdown());
             logShutdownResult(MapRenderPipeline.class.getSimpleName(), MapRenderPipeline.shutdown());
 
             SpringContext.getBean(ActiveLeaseService.class).releaseLease();

@@ -12,13 +12,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
-
-import org.apache.commons.lang3.function.Consumers;
-import org.reflections.Reflections;
-import org.reflections.scanners.SubTypesScanner;
-import org.reflections.util.ClasspathHelper;
-import org.reflections.util.ConfigurationBuilder;
-
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
@@ -36,6 +29,11 @@ import ootie.game.Game;
 import ootie.game.Player;
 import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
+import org.apache.commons.lang3.function.Consumers;
+import org.reflections.Reflections;
+import org.reflections.scanners.SubTypesScanner;
+import org.reflections.util.ClasspathHelper;
+import org.reflections.util.ConfigurationBuilder;
 
 @UtilityClass
 public class AnnotationHandler {

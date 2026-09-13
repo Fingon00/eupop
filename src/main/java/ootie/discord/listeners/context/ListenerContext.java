@@ -1,21 +1,13 @@
 package ootie.discord.listeners.context;
 
-import java.util.Collections;
-import java.util.List;
-
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.function.Consumers;
-
 import lombok.Getter;
 import lombok.Setter;
-import net.dv8tion.jda.api.components.buttons.Button;
+import net.dv8tion.jda.api.Interaction;
+import net.dv8tion.jda.api.callbacks.IReplyCallback;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
-import net.dv8tion.jda.api.Interaction;
-import net.dv8tion.jda.api.callbacks.IReplyCallback;
 import ootie.discord.JdaService;
-import ootie.discord.buttons.Buttons;
 import ootie.discord.commands.CommandHelper;
 import ootie.game.Game;
 import ootie.game.Player;
@@ -23,8 +15,10 @@ import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import ootie.message.MessageHelper;
-import ootie.service.event.EventAuditService;
 import ootie.service.GameNameService;
+import ootie.service.event.EventAuditService;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.function.Consumers;
 
 @Getter
 public abstract class ListenerContext {
@@ -171,7 +165,6 @@ public abstract class ListenerContext {
     private void handlePlayerHittingButtonTheyDoNotOwn(Interaction event) {
         String message = "To " + player.fogSafeEmoji() + ": these buttons are for someone else";
         MessageHelper.sendMessageToChannel(event.getMessageChannel(), message);
-        
     }
 
     public void save() {

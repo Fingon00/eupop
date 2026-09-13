@@ -7,13 +7,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
-
 import javax.annotation.Nullable;
 import javax.management.relation.Role;
-
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.function.Consumers;
-
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.command.GenericCommandInteractionEvent;
@@ -30,6 +25,8 @@ import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import ootie.service.GameNameService;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.function.Consumers;
 
 @UtilityClass
 public class CommandHelper {
@@ -95,7 +92,6 @@ public class CommandHelper {
         }
         return null;
     }
-
 
     @Nullable
     public static Player getPlayerFromGame(Game game, Member member, String userId) {
@@ -214,7 +210,4 @@ public class CommandHelper {
         }
         return " used the force";
     }
-
-
-   
 }

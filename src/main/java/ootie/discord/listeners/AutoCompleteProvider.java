@@ -1,43 +1,21 @@
 package ootie.discord.listeners;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Locale.Category;
 import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.function.Consumers;
-import org.jetbrains.annotations.NotNull;
-
 import lombok.experimental.UtilityClass;
-import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.interaction.command.CommandAutoCompleteInteractionEvent;
-import net.dv8tion.jda.api.interactions.commands.OptionMapping;
-import ootie.discord.JdaService;
 import ootie.discord.commands.Command;
-import ootie.discord.commands.CommandHelper;
 import ootie.game.Game;
-import ootie.game.Player;
 import ootie.game.persistence.GameManager;
-import ootie.game.persistence.ManagedGame;
 import ootie.helpers.Constants;
-import ootie.image.Mapper;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.service.GameNameService;
-import ootie.settings.GlobalSettings;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.function.Consumers;
+import org.jetbrains.annotations.NotNull;
 
 @UtilityClass
 class AutoCompleteProvider {
@@ -106,13 +84,12 @@ class AutoCompleteProvider {
         }
     }
 
-
     private static void resolveDeveloperCommandAutoComplete(
             @NotNull CommandAutoCompleteInteractionEvent event,
             @NotNull String subCommandName,
             @NotNull String optionName) {
         switch (subCommandName) {
-           
+
             // case Constants.RUN_CRON -> {
             //     if (!Constants.CRON_NAME.equals(optionName)) return;
             //     replyWith25ChoicesThatContainValue(event, CronManager.getCronNames());
@@ -127,16 +104,11 @@ class AutoCompleteProvider {
             @NotNull String optionName) {
         if (!Constants.SEARCH.equals(optionName)) return;
         switch (subCommandName) {
-
-
         }
     }
 
     private static void resolveFindAutoComplete(
-            @NotNull CommandAutoCompleteInteractionEvent event, @NotNull String optionName) {
-        
-    }
-
+            @NotNull CommandAutoCompleteInteractionEvent event, @NotNull String optionName) {}
 
     // private static void resolveEventAutoComplete(
     //         CommandAutoCompleteInteractionEvent event, String subCommandName, String optionName, String gameName) {
@@ -154,7 +126,6 @@ class AutoCompleteProvider {
     //             .collect(Collectors.toList());
     //     event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
     // }
-
 
     // private static void replyWith25ChoicesThatContainValue(
     //         CommandAutoCompleteInteractionEvent event, Collection<String> toFilter) {

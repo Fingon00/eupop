@@ -4,7 +4,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
-
 import ootie.discord.listeners.context.ListenerContext;
 import ootie.logging.RollbarManager;
 

@@ -16,7 +16,6 @@ import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import ootie.logging.RollbarManager;
 import ootie.service.GameNameService;
-import ootie.spring.context.SpringContext;
 import org.apache.commons.lang3.function.Consumers;
 
 class SlashCommandListener extends ListenerAdapter implements CommandListener {

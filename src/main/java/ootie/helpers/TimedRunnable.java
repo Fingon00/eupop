@@ -1,11 +1,9 @@
 package ootie.helpers;
 
 import java.util.Objects;
-
-import org.apache.commons.lang3.time.StopWatch;
-
 import lombok.Getter;
 import ootie.logging.BotLogger;
+import org.apache.commons.lang3.time.StopWatch;
 
 public class TimedRunnable implements Runnable {
 

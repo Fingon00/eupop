@@ -15,12 +15,10 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
-
 import javax.annotation.Nullable;
-
-import org.apache.commons.lang3.SerializationUtils;
 import ootie.game.Game;
 import ootie.logging.BotLogger;
+import org.apache.commons.lang3.SerializationUtils;
 
 // Handles positions of map
 public final class PositionMapper {

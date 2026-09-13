@@ -1,9 +1,7 @@
 package ootie.message;
 
-import java.util.LinkedHashSet;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
-
+import java.util.LinkedHashSet;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 

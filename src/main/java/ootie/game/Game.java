@@ -65,7 +65,6 @@ public class Game extends GameProperties {
 
     private final Map<String, Planet> planets = new HashMap<>();
 
-
     @Getter
     private final Map<Integer, Boolean> scPlayed = new HashMap<>();
 
@@ -78,12 +77,9 @@ public class Game extends GameProperties {
     @Getter
     private Map<String, String> currentAgendaVotes = new HashMap<>();
 
-
     @Setter
     @Getter
     private DisplayType displayTypeForced;
-
-   
 
     @Setter
     @Getter
@@ -98,8 +94,6 @@ public class Game extends GameProperties {
     @Getter
     @Setter
     private Map<String, Integer> eventsInEffect = new LinkedHashMap<>();
-
-  
 
     @Setter
     @Getter
@@ -187,7 +181,6 @@ public class Game extends GameProperties {
     @Setter
     private Map<String, Integer> tileDistances = new HashMap<>();
 
-
     @Setter
     @Getter
     private String miltyDraftString;
@@ -195,9 +188,6 @@ public class Game extends GameProperties {
     @Setter
     @Getter
     private String draftSystemSettingsJson;
-
-
-
 
     private Map<String, String> debtPoolIcons = new HashMap<>();
 

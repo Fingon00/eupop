@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
-
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

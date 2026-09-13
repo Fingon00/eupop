@@ -1,12 +1,11 @@
 package ootie.spring.context;
 
-import org.jetbrains.annotations.NotNull;
-import org.springframework.security.core.context.SecurityContextHolder;
-
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.logging.RollbarManager;
+import org.jetbrains.annotations.NotNull;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 @UtilityClass
 public class RequestContext {

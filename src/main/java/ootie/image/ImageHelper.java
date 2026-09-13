@@ -2,6 +2,8 @@ package ootie.image;
 
 import static org.apache.commons.lang3.StringUtils.*;
 
+import com.luciad.imageio.webp.CompressionType;
+import com.luciad.imageio.webp.WebPWriteParam;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -15,18 +17,11 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpTimeoutException;
 import java.time.Duration;
-
 import javax.annotation.Nullable;
 import javax.imageio.IIOImage;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
-
-import org.jetbrains.annotations.NotNull;
-
-import com.luciad.imageio.webp.CompressionType;
-import com.luciad.imageio.webp.WebPWriteParam;
-
 import lombok.SneakyThrows;
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.entities.emoji.CustomEmoji;
@@ -34,6 +29,7 @@ import net.dv8tion.jda.api.entities.emoji.Emoji;
 import ootie.logging.BotLogger;
 import ootie.service.emoji.TI4Emoji;
 import ootie.website.EgressClientManager;
+import org.jetbrains.annotations.NotNull;
 
 @UtilityClass
 public class ImageHelper {

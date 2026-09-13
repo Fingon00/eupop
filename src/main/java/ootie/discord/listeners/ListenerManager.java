@@ -9,8 +9,6 @@ public class ListenerManager {
     public static void registerListeners(JDA jda) {
         jda.addEventListener(
                 // Priority Listeners First
-                new SlashCommandListener(),
-                ButtonListener.getInstance(),
-                new AutoCompleteListener());
+                new SlashCommandListener(), ButtonListener.getInstance(), new AutoCompleteListener());
     }
 }

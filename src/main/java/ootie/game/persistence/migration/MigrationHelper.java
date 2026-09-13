@@ -1,17 +1,12 @@
 package ootie.game.persistence.migration;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import lombok.experimental.UtilityClass;
-import ootie.game.Game;
-import ootie.game.Player;
-import ootie.logging.BotLogger;
 
 @UtilityClass
 class MigrationHelper {
-
 
     private static <K, V> boolean replaceKey(Map<K, V> map, K toReplace, K replacement) {
         if (map.containsKey(toReplace)) {
@@ -41,5 +36,4 @@ class MigrationHelper {
         }
         return replaced;
     }
-
 }

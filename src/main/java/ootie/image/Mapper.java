@@ -2,6 +2,8 @@ package ootie.image;
 
 import static org.apache.commons.lang3.StringUtils.*;
 
+import com.github.benmanes.caffeine.cache.Cache;
+import com.github.benmanes.caffeine.cache.Caffeine;
 import java.awt.Color;
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,14 +25,7 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
 import javax.annotation.Nullable;
-
-import org.jetbrains.annotations.NotNull;
-
-import com.github.benmanes.caffeine.cache.Cache;
-import com.github.benmanes.caffeine.cache.Caffeine;
-
 import lombok.Getter;
 import lombok.experimental.UtilityClass;
 import ootie.ResourceHelper;
@@ -78,6 +73,7 @@ import ootie.model.TokenModel;
 import ootie.model.UnitModel;
 import ootie.model.WormholeModel;
 import ootie.service.emoji.CardEmojis;
+import org.jetbrains.annotations.NotNull;
 import tools.jackson.core.JsonParser;
 import tools.jackson.databind.DeserializationContext;
 import tools.jackson.databind.JavaType;
