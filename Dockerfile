@@ -23,7 +23,7 @@ WORKDIR /app
 # needed to handle fonts
 RUN apk add --no-cache fontconfig ttf-dejavu
 
-COPY --from=build /opt/app/target/ootie_map_generator_discord_bot-1.0-SNAPSHOT.jar tibot.jar
+COPY --from=build /opt/app/target/ootie_map_generator_discord_bot-1.0-SNAPSHOT.jar ootiebot.jar
 
 ENV DB_PATH=/opt/STORAGE
 ENV RESOURCE_PATH=/opt/resources
@@ -32,4 +32,4 @@ ENTRYPOINT ["java", \
             "-XX:MaxRAMPercentage=70.0", \
             "-XX:InitialRAMPercentage=20.0", \
             "-XX:+UseStringDeduplication", \
-            "-jar", "tibot.jar"]
+            "-jar", "ootiebot.jar"]

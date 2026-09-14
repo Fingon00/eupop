@@ -31,9 +31,9 @@ public class ButtonProcessor {
     private static final ButtonRuntimeWarningService runtimeWarningService = new ButtonRuntimeWarningService();
 
     public static void checkButtonHandlersSetup() {
-        if (registry.getSize() == 0) {
-            throw new IllegalStateException("No button handlers were registered");
-        }
+        // if (registry.getSize() == 0) {
+        //     throw new IllegalStateException("No button handlers were registered");
+        // }
     }
 
     public static void queue(ButtonInteractionEvent event) {

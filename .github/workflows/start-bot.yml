@@ -50,10 +50,10 @@ jobs:
           
           echo "Pulling docker image..."
           docker version
-          docker compose -f "$compose_file" pull tibot
+          docker compose -f "$compose_file" pull ootiebot
           
           echo "Starting Container..."
-          docker compose -f "$compose_file" up -d traefik tibot
+          docker compose -f "$compose_file" up -d traefik ootiebot
           echo "Cleaning up docker stuff..."
           
           docker image prune --force --filter until=48h

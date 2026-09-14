@@ -11,7 +11,7 @@ This is the **AsyncTI4 Game Management Bot**: a Java/Spring Boot Discord bot for
 - **Language**: Java 21
 - **Build**: Maven (`pom.xml`); Spring Boot 4.x parent POM
 - **Discord API**: JDA 6.x (`net.dv8tion:JDA`)
-- **Database**: SQLite via Hibernate/JPA (`spring.datasource.url = jdbc:sqlite:${DB_PATH}/tibot.db`); `ddl-auto=update` auto-creates/migrates columns
+- **Database**: SQLite via Hibernate/JPA (`spring.datasource.url = jdbc:sqlite:${DB_PATH}/ootiebot.db`); `ddl-auto=update` auto-creates/migrates columns
 - **Image generation**: Custom Java AWT rendering pipeline (`ootie.image.*`)
 - **Data**: Game content (factions, tiles, technologies, etc.) stored as JSON and `.properties` files under `src/main/resources/data/`
 - **Formatting**: Spotless Maven plugin enforces code style (run `mvn spotless:apply` before pushing)

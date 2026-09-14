@@ -51,12 +51,12 @@ jobs:
           
           echo "Pulling docker image..."
           docker version
-          docker compose -f "$compose_file" pull tibot
+          docker compose -f "$compose_file" pull ootiebot
           
           docker compose -f "$compose_file" up -d traefik
 
           echo "Rolling out one new TIBot container..."
-          COMPOSE_FILE="$compose_file" ROLLOUT_TIMEOUT_SECONDS=540 bash scripts/deploy_tibot_single_instance.sh
+          COMPOSE_FILE="$compose_file" ROLLOUT_TIMEOUT_SECONDS=540 bash scripts/deploy_ootiebot_single_instance.sh
           echo "Cleaning up docker stuff..."
           
           docker image prune --force --filter until=48h
