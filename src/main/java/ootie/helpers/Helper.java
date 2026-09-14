@@ -15,31 +15,11 @@ import net.dv8tion.jda.api.entities.channel.unions.DefaultGuildChannelUnion;
 import ootie.logging.BotLogger;
 
 public final class Helper {
-    private static final int TRIPLE_SYSTEM_TOKEN_PLANET_GAP_OFFSET = 65;
+    
 
-    private static final List<Point> TOKEN_PLANET_POSITIONS = List.of(
-            new Point(87, 79),
-            new Point(258, 79),
-            new Point(87, 221),
-            new Point(258, 221),
-            new Point(172, 79),
-            new Point(172, 221));
 
-    private static final List<Point> TRIPLE_SYSTEM_TOKEN_PLANET_POSITIONS = List.of(
-            new Point(87, 221),
-            new Point(258, 221),
-            new Point(87, 79),
-            new Point(258, 79),
-            new Point(172, 221),
-            new Point(172, 79));
 
-    private static final List<Point> TWO_PLANET_OR_WORMHOLE_TOKEN_PLANET_POSITIONS = List.of(
-            new Point(Constants.TOKEN_PLANET_POSITION),
-            new Point(78, 178),
-            new Point(258, 221),
-            new Point(87, 221),
-            new Point(172, 79),
-            new Point(172, 221));
+    
 
     public static int getCurrentHour() {
         long currentTime = System.currentTimeMillis();

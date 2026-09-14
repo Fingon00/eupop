@@ -221,7 +221,7 @@ public class AnnotationHandler {
                 String paramString = "(" + String.join(", ", paramTypes) + ")";
                 String argsString = "(" + String.join(", ", argTypes) + ")";
 
-                String error = Constants.jazzPing() + " button handler failed. Please fix the configuration.\n";
+                String error = " button handler failed. Please fix the configuration.\n";
                 error += "`Expected: " + methodName + paramString + "`\n";
                 error += "`Received: " + methodName + argsString + "`";
                 BotLogger.error(error, e);
@@ -263,13 +263,9 @@ public class AnnotationHandler {
             Class<C> contextClass, Class<H> handlerClass) {
         try {
             if (!handlers().contains(handlerClass)) {
-                BotLogger.warning(
-                        "Unknown handler class `" + handlerClass.getName() + "`. Please fix " + Constants.jazzPing());
                 return new HandlerRegistry<>();
             }
             if (!contexts().contains(contextClass)) {
-                BotLogger.warning(
-                        "Unknown context class `" + contextClass.getName() + "`. Please fix " + Constants.jazzPing());
                 return new HandlerRegistry<>();
             }
 
@@ -278,12 +274,15 @@ public class AnnotationHandler {
             BotLogger.info("Registered " + handlerRegistry.getSize() + " handlers of type " + handlerClass.getName());
             return handlerRegistry;
         } catch (SecurityException e) {
-            BotLogger.error(Constants.jazzPing() + " bot cannot read methods in the file.", e);
+            BotLogger.error(" bot cannot read methods in the file.", e);
         } catch (Exception e) {
-            BotLogger.error(Constants.jazzPing() + " some other issue registering buttons.", e);
+            BotLogger.error(" some other issue registering buttons.", e);
         }
         return new HandlerRegistry<>();
     }
+
+
+
 
     private static <C extends ListenerContext, H extends Annotation> void registerHandlers(
             Class<C> contextClass, Class<H> handlerClass, HandlerRegistry<C> handlerRegistry) {
@@ -296,7 +295,7 @@ public class AnnotationHandler {
                 String methodName = klass.getName() + "." + method.getName();
                 if (!Modifier.isStatic(method.getModifiers())) {
                     BotLogger.warning(
-                            "Method `" + methodName + "` is not static. Please fix it " + Constants.jazzPing());
+                            "Method `" + methodName + "` is not static. Please fix it ");
                     continue;
                 }
 

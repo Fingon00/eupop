@@ -12,7 +12,7 @@ import ootie.helpers.Storage;
 
 public final class ResourceHelper {
 
-    private static final Pattern PATTERN = Pattern.compile(Constants.UNIT_DD);
+    
     private static ResourceHelper resourceHelper;
     private final Map<String, String> unitCache = new HashMap<>();
     private final Map<String, String> decalCache = new HashMap<>();
@@ -53,13 +53,7 @@ public final class ResourceHelper {
     }
 
     // @Deprecated
-    @Nullable
-    public String getUnitFile(String name) {
-        if (name.endsWith(Constants.UNIT_DD) && RandomHelper.isOneInX(Constants.EYE_CHANCE)) {
-            name = PATTERN.matcher(name).replaceFirst(Constants.UNIT_DD_EYE);
-        }
-        return getCachedResource(unitCache, "units/", name);
-    }
+    
 
     @Nullable
     public String getDecalFile(String name) {

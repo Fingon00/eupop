@@ -22,10 +22,7 @@ import org.apache.commons.lang3.function.Consumers;
 class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
     private static final List<String> SLASHCOMMANDS_WITH_MODALS = Arrays.asList(
-            Constants.ADD_TILE_LIST,
-            Constants.ADD_TILE_LIST_RANDOM,
-            Constants.EDIT_TRACK_RECORD,
-            Constants.IMPORT_MAP_JSON);
+            Constants.EDIT_TRACK_RECORD);
 
     @Override
     public void onSlashCommandInteraction(@Nonnull SlashCommandInteractionEvent event) {
