@@ -3,10 +3,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "OotieBot",
+            "name": "eupop",
             "request": "launch",
             "mainClass": "ootie.OotieBot",
-            "projectName": "eupop",
+            "projectName": "ootie_map_generator_discord_bot",
             "args": [
                 "MTU0ODM0OTIwNjM4Nzg4NDA1Mw.GTWqgP.-f5E2QcoVhirFkPLkeIpvkQA-hkIvRgodF8deI",
                 "1548349206387884053",
