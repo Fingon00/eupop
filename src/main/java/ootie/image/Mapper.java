@@ -1,28 +1,27 @@
 package ootie.image;
 
-import static org.apache.commons.lang3.StringUtils.*;
-
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 import lombok.experimental.UtilityClass;
 import ootie.ResourceHelper;
 import ootie.json.JsonMapperManager;
 import ootie.logging.BotLogger;
+import ootie.model.EventModel;
 import ootie.model.ModelInterface;
+import ootie.model.SourceModel;
+import tools.jackson.databind.JavaType;
 import tools.jackson.databind.json.JsonMapper;
 
 @UtilityClass
 public class Mapper {
 
-    private static final Properties decals = new Properties();
-    private static final Properties general = new Properties();
-    private static final Properties hyperlaneAdjacencies = new Properties();
-    private static final Properties specialCase = new Properties();
-    private static final Properties tokensFromProperties = new Properties();
+    private static final Map<String, EventModel> events = new HashMap<>();
+    private static final Map<String, SourceModel> sources = new HashMap<>();
 
     private static final JsonMapper jsonMapper =
             JsonMapperManager.basic().rebuild().build();
@@ -36,21 +35,51 @@ public class Mapper {
     }
 
     static void loadData() throws Exception {
-        // must be first for validating later models
-
+        importJsonObjectsFromFolder("events", events, EventModel.class);
+        importJsonObjectsFromFolder("sources", sources, SourceModel.class);
     }
 
-    private static void readData(String propertyFileName, Properties properties) throws IOException {
-        properties.clear();
-        String propFile = ResourceHelper.getInstance().getDataFile(propertyFileName);
-        if (propFile != null) {
-            try (InputStream input = new FileInputStream(propFile)) {
-                properties.load(input);
-            } catch (IOException e) {
-                BotLogger.error("Could not read .property file: " + propertyFileName, e);
+    public static boolean isValidEvent(String eventID) {
+        return events.containsKey(eventID);
+    }
+
+    public static Map<String, EventModel> getEvents() {
+        return new HashMap<>(events);
+    }
+
+    public static EventModel getEvent(String eventID) {
+        return events.get(eventID);
+    }
+
+    private static <T extends ModelInterface> void importJsonObjects(
+            String jsonFileName, Map<String, T> objectMap, Class<T> target) throws Exception {
+        List<T> allObjects = new ArrayList<>();
+        String filePath = ResourceHelper.getInstance().getDataFile(jsonFileName);
+        JavaType type = jsonMapper.getTypeFactory().constructCollectionType(ArrayList.class, target);
+
+        if (filePath != null) {
+            try {
+                InputStream input = new FileInputStream(filePath);
+                allObjects = jsonMapper.readValue(input, type);
+            } catch (Exception e) {
+                BotLogger.error("Could not import JSON Objects from file: " + jsonFileName, e);
                 throw e;
             }
         }
+
+        List<String> badObjects = new ArrayList<>();
+        for (T obj : allObjects) {
+            if (objectMap.containsKey(obj.getAlias())) { // duplicate found
+                BotLogger.warning("Duplicate **" + target.getSimpleName() + "** found: " + obj.getAlias());
+            }
+            objectMap.put(obj.getAlias(), obj);
+            if (!obj.isValid()) {
+                badObjects.add(obj.getAlias());
+            }
+        }
+        if (!badObjects.isEmpty())
+            BotLogger.warning("The following **" + target.getSimpleName() + "** are improperly formatted:\n> "
+                    + String.join("\n> ", badObjects));
     }
 
     private static <T extends ModelInterface> void importJsonObjectsFromFolder(
@@ -66,7 +95,7 @@ public class Mapper {
                 continue;
             }
             try {
-                // importJsonObjects(jsonFolderName + File.separator + file.getName(), objectMap, target);
+                importJsonObjects(jsonFolderName + File.separator + file.getName(), objectMap, target);
             } catch (Exception e) {
                 BotLogger.error("Could not import JSON Objects from file: " + jsonFolderName + "/" + file.getName(), e);
             }

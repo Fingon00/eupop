@@ -1,14 +1,24 @@
 package ootie.discord.listeners;
 
+import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.events.interaction.command.CommandAutoCompleteInteractionEvent;
+import net.dv8tion.jda.api.interactions.commands.Command;
+import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import ootie.game.Game;
 import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
+import ootie.image.Mapper;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
-import ootie.service.game.GameNameService;
+import ootie.model.EmbeddableModel;
+import ootie.model.ModelInterface;
+import ootie.model.Source.ComponentSource;
 import org.apache.commons.lang3.function.Consumers;
 import org.jetbrains.annotations.NotNull;
 
@@ -30,26 +40,21 @@ class AutoCompleteProvider {
         String subCommandName = event.getSubcommandName();
         String optionName = event.getFocusedOption().getName();
 
-        if (Constants.FIND.equals(commandName)) {
-            resolveFindAutoComplete(event, optionName);
-            if (event.isAcknowledged()) return;
-        }
-
         if (subCommandName != null) {
             switch (commandName) {
                 case Constants.DEVELOPER -> resolveDeveloperCommandAutoComplete(event, subCommandName, optionName);
-                case Constants.SEARCH, "search2" -> resolveSearchCommandAutoComplete(event, subCommandName, optionName);
+                case Constants.SEARCH -> resolveSearchCommandAutoComplete(event, subCommandName, optionName);
             }
             if (event.isAcknowledged()) return;
         }
 
-        String gameName = GameNameService.getGameNameFromChannel(event);
-        if (GameManager.isValid(gameName) && subCommandName != null) {
-            if (event.isAcknowledged()) return;
-        }
+        // String gameName = GameNameService.getGameNameFromChannel(event);
+        // if (GameManager.isValid(gameName) && subCommandName != null) {
+        //     if (event.isAcknowledged()) return;
+        // }
 
         // GENERIC HANDLING OF OPTIONS
-        handleOptions(event, optionName, subCommandName, gameName);
+        handleOptions(event, optionName, subCommandName, "none");
         if (!event.isAcknowledged()) {
             event.replyChoices(Collections.emptyList()).queue(Consumers.nop(), BotLogger::catchRestError);
         }
@@ -76,6 +81,15 @@ class AutoCompleteProvider {
                 //                 .toList();
                 // event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
             }
+            case Constants.SOURCE -> {
+                String enteredValue = event.getFocusedOption().getValue();
+                List<Command.Choice> options = Stream.of(ComponentSource.values())
+                        .filter(token -> token.toString().contains(enteredValue))
+                        .limit(25)
+                        .map(token -> new Command.Choice(token.toString(), token.toString()))
+                        .collect(Collectors.toList());
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
         }
     }
 
@@ -98,8 +112,29 @@ class AutoCompleteProvider {
             @NotNull String subCommandName,
             @NotNull String optionName) {
         if (!Constants.SEARCH.equals(optionName)) return;
+        ComponentSource source =
+                ComponentSource.fromString(event.getOption(Constants.SOURCE, null, OptionMapping::getAsString));
+        List<Command.Choice> options = null;
         switch (subCommandName) {
+            case Constants.SEARCH_EVENTS ->
+                options = searchModels(event, Mapper.getEvents().values(), source, true);
         }
+        event.replyChoices(Objects.requireNonNullElse(options, Collections.emptyList()))
+                .queue(Consumers.nop(), BotLogger::catchRestError);
+    }
+
+    private static <T extends ModelInterface & EmbeddableModel> List<Command.Choice> searchModels(
+            CommandAutoCompleteInteractionEvent event,
+            Collection<T> models,
+            ComponentSource source,
+            boolean limithomebrew) {
+        String enteredValue = event.getFocusedOption().getValue().toLowerCase();
+        return models.stream()
+                .filter(model -> model.getSource() != null)
+                .filter(model -> model.search(enteredValue, source))
+                .limit(25)
+                .map(model -> new Command.Choice(model.getAutoCompleteName(), model.getAlias()))
+                .toList();
     }
 
     private static void resolveFindAutoComplete(

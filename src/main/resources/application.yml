@@ -34,7 +34,7 @@ spring:
       include-binding-errors: never
       include-message: always
 
-eupop:
+ootie:
   deploy:
     lease-key: discord-bot
     lease-duration-seconds: 30

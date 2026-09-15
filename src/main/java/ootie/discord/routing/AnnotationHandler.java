@@ -27,7 +27,6 @@ import ootie.discord.listeners.context.SelectionMenuContext;
 import ootie.executors.CircuitBreaker;
 import ootie.game.Game;
 import ootie.game.Player;
-import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import org.apache.commons.lang3.function.Consumers;
 import org.reflections.Reflections;
@@ -281,9 +280,6 @@ public class AnnotationHandler {
         return new HandlerRegistry<>();
     }
 
-
-
-
     private static <C extends ListenerContext, H extends Annotation> void registerHandlers(
             Class<C> contextClass, Class<H> handlerClass, HandlerRegistry<C> handlerRegistry) {
         for (Class<?> klass : getAllClasses()) {
@@ -294,8 +290,7 @@ public class AnnotationHandler {
 
                 String methodName = klass.getName() + "." + method.getName();
                 if (!Modifier.isStatic(method.getModifiers())) {
-                    BotLogger.warning(
-                            "Method `" + methodName + "` is not static. Please fix it ");
+                    BotLogger.warning("Method `" + methodName + "` is not static. Please fix it ");
                     continue;
                 }
 

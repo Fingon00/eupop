@@ -21,8 +21,7 @@ import org.apache.commons.lang3.function.Consumers;
 
 class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
-    private static final List<String> SLASHCOMMANDS_WITH_MODALS = Arrays.asList(
-            Constants.EDIT_TRACK_RECORD);
+    private static final List<String> SLASHCOMMANDS_WITH_MODALS = Arrays.asList(Constants.EDIT_TRACK_RECORD);
 
     @Override
     public void onSlashCommandInteraction(@Nonnull SlashCommandInteractionEvent event) {

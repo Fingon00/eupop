@@ -1,6 +1,5 @@
 package ootie.helpers;
 
-import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -15,11 +14,6 @@ import net.dv8tion.jda.api.entities.channel.unions.DefaultGuildChannelUnion;
 import ootie.logging.BotLogger;
 
 public final class Helper {
-    
-
-
-
-    
 
     public static int getCurrentHour() {
         long currentTime = System.currentTimeMillis();

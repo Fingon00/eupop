@@ -84,12 +84,6 @@ class GameSaveService {
         writer.write(System.lineSeparator());
         // game information
 
-        writer.write(Constants.SO + " " + String.join(",", game.getSecretObjectives()));
-        writer.write(System.lineSeparator());
-
-        writer.write(Constants.AC + " " + String.join(",", game.getActionCards()));
-        writer.write(System.lineSeparator());
-
         // Player information
         writer.write(PLAYERINFO);
         writer.write(System.lineSeparator());
@@ -102,16 +96,6 @@ class GameSaveService {
             writer.write(player.getUserID());
             writer.write(System.lineSeparator());
             writer.write(player.getUserName());
-            writer.write(System.lineSeparator());
-
-            writer.write(Constants.FACTION + " " + player.getFaction());
-            writer.write(System.lineSeparator());
-
-            writer.write(Constants.TOTAL_EXPENSES + " " + player.getTotalExpenses());
-            writer.write(System.lineSeparator());
-            writeIntLine(writer, Constants.BONUS_SCORED_SECRETS, player.getBonusScoredSecrets());
-
-            writer.write(Constants.COMMODITIES + " " + player.getCommodities());
             writer.write(System.lineSeparator());
             writer.write(ENDPLAYER);
             writer.write(System.lineSeparator());

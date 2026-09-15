@@ -4,15 +4,11 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.regex.Pattern;
 import javax.annotation.Nullable;
-import ootie.helpers.Constants;
-import ootie.helpers.RandomHelper;
 import ootie.helpers.Storage;
 
 public final class ResourceHelper {
 
-    
     private static ResourceHelper resourceHelper;
     private final Map<String, String> unitCache = new HashMap<>();
     private final Map<String, String> decalCache = new HashMap<>();
@@ -53,7 +49,6 @@ public final class ResourceHelper {
     }
 
     // @Deprecated
-    
 
     @Nullable
     public String getDecalFile(String name) {

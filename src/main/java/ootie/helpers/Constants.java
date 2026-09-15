@@ -8,7 +8,6 @@ import java.util.Map;
 
 public final class Constants {
     // Staff Pings
-    
 
     // Server IDs
     public static final String ASYNCOOTIE_HUB_SERVER_ID = "943410040369479690";
@@ -34,25 +33,20 @@ public final class Constants {
             entry("1243245147551170582", "Emoji Farm 18"),
             entry("1303437221361352715", "Emoji Farm 19"));
 
-
     public static final String dicecordId = "572698679618568193";
 
     // Game Modes
-   
+
     public static final String SHOW_GAME = "show_game";
-   
-   
-   
 
     public static final String SAVE_GAMES = "save_games";
     public static final String SAVE_GAME = "save_game";
 
     /* From \data\ */
-   
+
     // no /search colors yet, but there is /help sample_colors
     // no /search combat_modifiers yet
     public static final String SEARCH_DECKS = "decks";
-    public static final String SEARCH_EVENTS = "events";
     public static final String SEARCH_EXPLORES = "explores";
     public static final String SEARCH_FACTIONS = "factions";
     // no /search franken_errata yet
@@ -69,6 +63,7 @@ public final class Constants {
     // no /search strategy_card_sets yet
     public static final String SEARCH_STRATEGY_CARDS = "strategy_cards";
     public static final String SEARCH_TECHS = "techs";
+    public static final String SEARCH_EVENTS = "events";
     public static final String SEARCH_TOKENS = "tokens";
     public static final String SEARCH_UNITS = "units";
     /* From \resources\ */
@@ -82,10 +77,7 @@ public final class Constants {
     public static final String STATISTICS_FACTION_GAMES = "faction_games";
     public static final String STATISTICS_POLITICS_POSITION = "politics_position";
     public static final String SEARCH_FOR_GAME = "for_game";
-    public static final String SEARCH_MY_TITLES = "my_titles";
-    public static final String SEARCH_WINNING_PATH = "winning_path_games";
 
-    public static final String FIX_THE_FRANKENS = "fix_the_frankens";
     public static final String RELOAD_GAME = "reload_game";
     public static final String GAME_NAME = "game_name";
     public static final String CREATE_GAME = "create";
@@ -102,116 +94,17 @@ public final class Constants {
     public static final String HELP_DOCUMENTATION = "documentation";
     public static final String SETUP_TEMPLATES = "setup_templates";
 
-
     public static final String CREATION_DATE_TIME = "creation_date_time";
     public static final String CREATION_DATE = "creation_date";
     public static final String LAST_MODIFIED_DATE = "last_modified_date";
-    
+
     public static final String LABEL = "label";
     public static final String MESSAGE = "message";
     public static final String LAST_TIME_GAMES_CHECKED = "last_time_games_checked";
     public static final String AUTO_PING = "auto_ping";
-    public static final String FOW_FILTER_DARK_GREY = "Dark grey (default)";
-    public static final String FOW_FILTER_FROG = "Frog";
-    public static final String FOW_FILTER_SEPIA = "Sepia";
-    public static final String FOW_FILTER_WHITE = "White";
-    public static final String FOW_FILTER_PINK = "Pink";
-    public static final String FOW_FILTER_PURPLE = "Purple";
-
-    // milty draft stuff
-    public static final String MILTY = "milty";
-    public static final String QUICKSTART = "quickstart";
-    public static final String SLICE_COUNT = "slice_count";
-    public static final String FACTION_COUNT = "faction_count";
-    public static final String BAN_COMMODITIES = "ban_commodities";
-    public static final String BAN_FLEET = "ban_fleet";
-    public static final String BAN_HS = "ban_hs";
-    public static final String BAN_STARTING_TECH = "ban_starting_tech";
-    public static final String ANOMALIES_CAN_TOUCH = "anomalies_can_touch";
-    public static final String INCLUDE_DS_TILES = "include_ds_tiles";
-    public static final String INCLUDE_DS_FACTIONS = "include_ds_factions";
-    public static final String INCLUDE_BR_FACTIONS = "include_br_factions";
-    public static final String USE_MAP_TEMPLATE = "use_map_template";
 
     // /custom command
     public static final String CUSTOM = "custom";
-
-    public static final String ADD_AGENDA_TO_GAME = "add_agenda_from_game";
-    public static final String ADD_AC_TO_GAME = "add_ac_to_game";
-    public static final String ADD_SO_TO_GAME = "add_so_to_game";
-    public static final String ADD_PO_TO_GAME = "add_po_to_game";
-    public static final String ADD_SC_TO_GAME = "add_sc_to_game";
-
-    public static final String REMOVE_AGENDA_FROM_GAME = "remove_agenda_from_game";
-    public static final String REMOVE_AC_FROM_GAME = "remove_ac_from_game";
-    public static final String REMOVE_SO_FROM_GAME = "remove_so_from_game";
-    public static final String REMOVE_PO_FROM_GAME = "remove_po_from_game";
-    public static final String REMOVE_SC_FROM_GAME = "remove_sc_from_game";
-    public static final String REMOVE_RELIC_FROM_GAME = "remove_relic_from_game";
-
-    public static final String SET_PO_DECK = "set_po_deck";
-    public static final String SET_PO_DECK_STAGE1_LIST = "stage1_ids";
-    public static final String SET_PO_DECK_STAGE2_LIST = "stage2_ids";
-    public static final String SET_PO_DECK_SHUFFLE = "shuffle";
-
-    public static final String SO_ID = "so_id";
-    public static final String AGENDA_ID = "agenda_id";
-    public static final String CURRENT_AGENDA_INFO = "current_agenda_info";
-    public static final String CURRENT_ACDRAWSTATUS_INFO = "current_acdrawstatus_info";
-    public static final String AGENDA_VOTE_INFO = "agenda_vote_info";
-    public static final String CHECK_REACTS_INFO = "check_reacts_info";
-    public static final String GAME_STATS = "game_stats";
-    public static final String PLAYER_STORED_VALUES = "player_stored_values";
-    public static final String THALNOS_UNITS = "thalnos_units";
-    public static final String DISPLACED_UNITS_SYSTEM = "displaced_units_system";
-    public static final String DISPLACED_UNITS_ACTIVATION = "displaced_units_activation";
-    public static final String DISPLACED_UNITS_ACTIVATION_NEW = "displaced_units_activation_new";
-    public static final String AC_ID = "ac_id";
-
-    public static final String EXPEDITION_TECHSKIP = "expedition_skip";
-    public static final String EXPEDITION_TRADEGOODS = "expedition_tgs";
-    public static final String EXPEDITION_FIVERES = "expedition_5r";
-    public static final String EXPEDITION_FIVEINF = "expedition_5i";
-    public static final String EXPEDITION_SECRET = "expedition_so";
-    public static final String EXPEDITION_ACTIONCARDS = "expedition_acs";
-
-    public static final String INACTIVE_LEADER = "hero_unplay";
-    public static final String ACTIVE_LEADER = "hero_play";
-    public static final String UNLOCK_LEADER = "unlock";
-    public static final String LOCK_LEADER = "lock";
-    public static final String EXHAUST_LEADER = "exhaust";
-    public static final String REFRESH_LEADER = "ready";
-    public static final String PURGE_LEADER = "purge";
-    public static final String LEADER_ADD = "leader_add";
-    public static final String LEADER_REMOVE = "leader_remove";
-    public static final String LEADER_1 = "leader_1";
-    public static final String LEADER_2 = "leader_2";
-    public static final String LEADER_3 = "leader_3";
-    public static final String LEADER_4 = "leader_4";
-    public static final String PURGE_SO = "purge_so";
-    public static final String ADD_LEADER = "add";
-    public static final String LEADERS = "leaders";
-    public static final String SC = "sc";
-
-    public static final String LEADERSHIP_PRIMARY = "leadership_primary";
-    public static final String DIPLOMACY_PRIMARY = "diplomacy_primary";
-    public static final String POLITICS_PRIMARY = "politics_primary";
-    public static final String CONSTRUCTION_PRIMARY = "construction_primary";
-    public static final String TRADE_PRIMARY = "trade_primary";
-    public static final String WARFARE_PRIMARY = "warfare_primary";
-    public static final String TECHNOLOGY_PRIMARY = "technology_primary";
-    public static final String IMPERIAL_PRIMARY = "imperial_primary";
-    public static final String CUSTOM_PRIMARY = "custom_primary";
-
-    public static final String LEADERSHIP_SECONDARY = "leadership_secondary";
-    public static final String DIPLOMACY_SECONDARY = "diplomacy_secondary";
-    public static final String POLITICS_SECONDARY = "politics_secondary";
-    public static final String CONSTRUCTION_SECONDARY = "construction_secondary";
-    public static final String TRADE_SECONDARY = "trade_secondary";
-    public static final String WARFARE_SECONDARY = "warfare_secondary";
-    public static final String TECHNOLOGY_SECONDARY = "technology_secondary";
-    public static final String IMPERIAL_SECONDARY = "imperial_secondary";
-    public static final String CUSTOM_SECONDARY = "custom_secondary";
 
     public static final String GAME = "game";
     public static final String MAP = "map";
@@ -219,11 +112,6 @@ public final class Constants {
     public static final String SHUFFLE_EXPLORES = "shuffle_explores";
     public static final String CHANGE_TYPE = "change_type";
     public static final String START_FRANKEN_DRAFT = "start_franken_draft";
-
-    public static final String FORCE_BAG_PASS = "franken_force_bag_pass";
-    public static final String FRANKEN_EDIT = "franken_edit";
-    public static final String FRANKEN_EDIT_ACTION = "edit_action";
-    public static final String FRANKEN_ITEM = "item";
 
     public static final String SHOW_BAG = "show_bag";
     public static final String PN_RESET = "reset";
@@ -303,78 +191,9 @@ public final class Constants {
     public static final String CORRECT_FACTION = "correct_faction";
     public static final String GAME_CHANNEL_SETUP = "game_channel_setup";
     public static final String PLANETS = "planets";
-    public static final String PLANETS_EXHAUSTED = "planets_exhausted";
-    public static final String PLANETS_ABILITY_EXHAUSTED = "planets_ability_exhausted";
-    public static final String PLANET = "planet";
-    public static final String PLANET2 = "planet2";
-    public static final String PLANET3 = "planet3";
-    public static final String PLANET4 = "planet4";
-    public static final String PLANET5 = "planet5";
-    public static final String PLANET6 = "planet6";
-    public static final String TECH = "tech";
-    public static final String SPENT_THINGS = "spent_things";
-    public static final String BOMBARD_UNITS = "bombard_units";
-    public static final String TRANSACTION_ITEMS = "transaction_items";
-    public static final String TEAMMATE_IDS = "teammate_ids";
-    public static final String TECH_EXHAUSTED = "tech_exhausted";
-    public static final String TECH_PURGED = "tech_purged";
-    public static final String TECH2 = "tech2";
-    public static final String TECH3 = "tech3";
-    public static final String TECH4 = "tech4";
-    public static final String UNIT_TECH = "unit_tech";
-    public static final String TACTICAL = "tactical_cc";
-    public static final String FLEET = "fleet_cc";
-    public static final String STRATEGY = "strategy_cc";
-    public static final String TG = "trade_goods";
-    public static final String ACTUAL_HITS = "actual_hits";
-    public static final String EXPECTED_HITS_TIMES_10 = "expected_hits_times_10";
-    public static final String TOTAL_EXPENSES = "total_expenses";
-    public static final String BONUS_SCORED_SECRETS = "bonus_scored_secrets";
+
     public static final String TURN_COUNT = "turn_count";
     public static final String COMMODITIES = "commodities";
-    public static final String PERSONAL_PING_INTERVAL = "personal_ping_interval";
-    public static final String COMMODITIES_TOTAL = "commodities_total";
-    public static final String COMMODITIES_BASE = "commodities_base";
-    public static final String STASIS_INFANTRY = "stasis_infantry";
-    public static final String MARK_FOLLOWED = "mark_followed";
-    public static final String AUTO_SABO_PASS_MEDIAN = "auto_sabo_pass_median";
-    public static final String FACTION = "faction";
-    public static final String FACTION2 = "faction2";
-    public static final String FACTION3 = "faction3";
-    public static final String FACTION4 = "faction4";
-    public static final String FACTION5 = "faction5";
-    public static final String FACTION6 = "faction6";
-    public static final String AC = "action_cards";
-    public static final String ACTION_CARD = "action_card";
-    public static final String AC_DECK = "ac_deck";
-    public static final String STAGE_1_PUBLIC_DECK = "s1_public_deck";
-    public static final String STAGE_2_PUBLIC_DECK = "s2_public_deck";
-    public static final String EXPLORATION_DECKS = "exploration_decks";
-    public static final String AC_DISCARDED = "action_cards_discarded";
-    public static final String AC_STATUS = "action_cards_status";
-    public static final String AC_PLAYED = "action_cards_played";
-    public static final String AC_PURGED = "action_cards_purged";
-    public static final String SO = "secret_objectives";
-    public static final String PRODUCED_UNITS = "produced_units";
-    public static final String MESSAGEID_FOR_SABOS = "messageid_for_sabos";
-    public static final String SECRET_OBJECTIVE = "secret_objective";
-    public static final String SO_DECK = "so_deck";
-    public static final String SO_SCORED = "secret_objectives_scored";
-    public static final String CRF = "cultural_relic_fragment";
-    public static final String HRF = "hazardous_relic_fragment";
-    public static final String IRF = "industrial_relic_fragment";
-    public static final String VRF = "void_relic_fragment";
-    public static final String STRATEGY_CARD = "strategy_card";
-    public static final String STRATEGY_CARD_SET = "strategy_card_set";
-    public static final String CAPTURE = "capture";
-    public static final String SC2 = "2nd_choice";
-    public static final String SC3 = "3rd_choice";
-    public static final String SC4 = "4th_choice";
-    public static final String SC5 = "5th_choice";
-    public static final String SC6 = "6th_choice";
-    public static final String STRAT_PINGS = "strat_pings";
-    public static final String DUMMY = "dummy";
-    public static final String NPC = "npc";
 
     public static final String NUMBER_OF_TURNS = "number_of_turns";
     public static final String TOTAL_TURN_TIME = "total_turn_time";
