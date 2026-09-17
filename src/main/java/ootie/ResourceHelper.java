@@ -102,6 +102,11 @@ public final class ResourceHelper {
         return getResourceFromFolder("extra/", name);
     }
 
+    @Nullable
+    public String getEventFile(String name) {
+        return getResourceFromFolder("images/events/", name + ".jpg");
+    }
+
     private String getCachedResource(Map<String, String> cache, String folder, String name) {
         if (cache.containsKey(name)) {
             return cache.get(name);
