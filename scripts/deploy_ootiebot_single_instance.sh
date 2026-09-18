@@ -2,7 +2,7 @@
 set -euo pipefail
 
 compose_file="${COMPOSE_FILE:-docker-compose.production.yml}"
-service="${SERVICE:-tibot}"
+service="${SERVICE:-ootiebot}"
 rollout_timeout_seconds="${ROLLOUT_TIMEOUT_SECONDS:-540}"
 wait_after_healthy_seconds="${WAIT_AFTER_HEALTHY_SECONDS:-2}"
 stop_timeout_seconds="${STOP_TIMEOUT_SECONDS:-600}"

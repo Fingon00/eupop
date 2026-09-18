@@ -71,7 +71,7 @@ jobs:
               echo "Pulling deployment config from GitHub..."
               cd ${{ vars.HOST_OOTIE_REPO_DIR }}
               git pull --ff-only
-              export HOST_TI4_REPO_DIR="${{ vars.HOST_TI4_REPO_DIR }}"
+              export HOST_OOTIE_REPO_DIR="${{ vars.HOST_OOTIE_REPO_DIR }}"
               export GUILDID_LIST="${{ vars.GUILDID_LIST }}"
               export COMPOSE_PROJECT_NAME="ootie-bot"
               export IMAGE_REPOSITORY="${{ env.IMAGE_REPOSITORY }}"
