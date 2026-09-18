@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
 import lombok.Data;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;
@@ -22,6 +21,7 @@ public class EventModel implements ModelInterface, EmbeddableModel {
 
     private String id;
     private String name;
+    private String text;
     private String type;
     private int age;
     private String half;
@@ -112,8 +112,7 @@ public class EventModel implements ModelInterface, EmbeddableModel {
     }
 
     public void drawEventImage(MessageChannel messageChannel) {
-        BufferedImage eventImage =
-                ImageHelper.read(ResourceHelper.getInstance().getEventFile(id));
+        BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance().getEventFile(id));
 
         FileUpload fileUpload =
                 FileUploadService.createFileUpload(eventImage, id).setDescription(name);
