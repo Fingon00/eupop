@@ -1,9 +1,8 @@
-package ootie.discord.interactions.commands;
-
-import org.jetbrains.annotations.NotNull;
+package ootie.discord.commands;
 
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.build.SubcommandData;
+import org.jetbrains.annotations.NotNull;
 
 public abstract class Subcommand extends SubcommandData implements Command<SlashCommandInteractionEvent> {
 

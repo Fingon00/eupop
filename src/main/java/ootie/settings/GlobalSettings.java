@@ -1,3 +1,4 @@
+// GlobalSettings.java
 package ootie.settings;
 
 import java.io.File;
@@ -54,8 +55,7 @@ public final class GlobalSettings {
     private static Map<String, Object> settings = new HashMap<>();
 
     public static <T> T getSetting(String attr, Class<T> clazz, T defaultValue) {
-        if (!settings.containsKey(attr))
-            return defaultValue;
+        if (!settings.containsKey(attr)) return defaultValue;
         return clazz.cast(settings.get(attr));
     }
 
@@ -96,7 +96,8 @@ public final class GlobalSettings {
 
     public static String getSettingsRepresentation() {
         StringBuilder sb = new StringBuilder("### Global Settings:\n```");
-        for (Entry<String, Object> entries : settings.entrySet().stream().sorted(Entry.comparingByKey()).toList()) {
+        for (Entry<String, Object> entries :
+                settings.entrySet().stream().sorted(Entry.comparingByKey()).toList()) {
             sb.append(entries.getKey()).append(": ").append(entries.getValue()).append('\n');
         }
         sb.append("```");

@@ -1,0 +1,47 @@
+on: workflow_dispatch
+name: StopBot
+concurrency:
+  group: "Start Bot"
+jobs:
+  build:
+    name: Stop Bot
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOSTINGER_SSH_HOST }}
+        username: ${{ secrets.HOSTINGER_SSH_USER }}
+        password: ${{ secrets.HOSTINGER_SSH_PASSWORD }}
+        port: ${{ secrets.HOSTINGER_SSH_PORT }}
+        script: |
+          set -eu
+          
+          cd ${{ vars.HOST_TI4_REPO_DIR }}
+
+          echo "Pulling deployment config from GitHub..."
+          git pull --ff-only
+
+          export COMPOSE_PROJECT_NAME="ootie-bot"
+          docker version
+
+          running_ootiebot_containers="$(docker ps -q --filter "label=com.docker.compose.project=${COMPOSE_PROJECT_NAME}" --filter "label=com.docker.compose.service=ootiebot" || true)"
+          if [ -z "$running_ootiebot_containers" ]; then
+            echo "No running TIBot containers found."
+          fi
+
+          for container in $running_ootiebot_containers; do
+            echo "Draining TIBot container $container"
+            docker exec "$container" sh -c 'wget -qO- --post-data="" http://127.0.0.1:8081/api/public/deploy/drain || true; for i in $(seq 1 15); do wget -q -O - http://127.0.0.1:8081/api/public/ready >/dev/null 2>&1 || break; sleep 1; done' || true
+
+            echo "Stopping TIBot container $container... giving 600 seconds to shutdown"
+            docker stop --time 600 "$container"
+          done
+
+          stopped_ootiebot_containers="$(docker ps -a -q --filter "label=com.docker.compose.project=${COMPOSE_PROJECT_NAME}" --filter "label=com.docker.compose.service=ootiebot" || true)"
+          for container in $stopped_ootiebot_containers; do
+            echo "Removing stopped TIBot container $container"
+            docker rm "$container" || true
+          done
+
+          echo "DONE!"

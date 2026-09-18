@@ -1,0 +1,30 @@
+[
+    {
+        "source": "base",
+        "name": "Base",
+        "canal": "official",
+        "credits": "Paradox",
+        "description": "Base"
+    },
+    {
+        "source": "deluxe",
+        "name": "Deluxe",
+        "canal": "official",
+        "credits": "Paradox",
+        "description": "Deluxe"
+    },
+    {
+        "source": "flavor",
+        "name": "Flavor",
+        "canal": "official",
+        "credits": "Paradox",
+        "description": "Base"
+    },
+    {
+        "source": "defying_destiny",
+        "name": "Defying Destiny",
+        "canal": "official",
+        "credits": "Paradox",
+        "description": "Defying Destiny"
+    }
+]

@@ -1,0 +1,136 @@
+package ootie.model;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import lombok.Data;
+import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.components.textdisplay.TextDisplay;
+import net.dv8tion.jda.api.entities.MessageEmbed;
+import ootie.model.Source.ComponentSource;
+
+@Data
+public class SourceModel implements ModelInterface, EmbeddableModel {
+
+    private ComponentSource source; // unique identifiying name
+    private String name; // Long fancy name
+    private String canal; // Must be "official" or "community", must be non null
+    private String subcanal; // Sub value of canal when canal = "community"
+    private String credits; // Creator/Responsible.s
+    private String description; // Content list (aggregated by component types)
+    private List<String> data; // Links to rules, content, discussion/help channels, etc.
+
+    public boolean isValid() {
+        return source != null && name != null && canal != null;
+    }
+
+    @Override
+    public String getAlias() {
+        return source.toString();
+    }
+
+    public String getNameRepresentation() {
+        return "_" + name;
+    }
+
+    @Override
+    public MessageEmbed getRepresentationEmbed() {
+        return getRepresentationEmbed(null);
+    }
+
+    public MessageEmbed getRepresentationEmbed(Map<String, Integer> occurrences) {
+        EmbedBuilder eb = new EmbedBuilder();
+
+        StringBuilder content = new StringBuilder();
+        if (description != null) content.append("*").append(description).append("*\n\n");
+        if (data != null) content.append("Links:\n").append(getDataFormatted()).append('\n');
+        if (occurrences != null) content.append("Implementation: ").append(compTypeOccurrences(occurrences));
+        eb.setDescription(content);
+
+        StringBuilder footer = new StringBuilder();
+        footer.append("Source: ").append(source).append("    Type: ").append(canal);
+        if (subcanal != null) footer.append(" > ").append(subcanal);
+        footer.append("\nCredits: ").append(credits);
+        eb.setFooter(footer.toString());
+
+        return eb.build();
+    }
+
+    public List<TextDisplay> getRepresentationTextDisplays() {
+        List<TextDisplay> components = new ArrayList<>();
+
+        // Title
+        components.add(TextDisplay.of("### " + " __" + name + "__"));
+
+        // Body
+        StringBuilder content = new StringBuilder();
+        if (description != null) content.append("*").append(description).append("*\n");
+        if (data != null) content.append(getDataFormatted()).append("\n");
+        if (!content.isEmpty()) {
+            components.add(TextDisplay.of(content.toString()));
+        }
+
+        // Footer
+        if (credits != null && !credits.isBlank()) {
+            components.add(TextDisplay.of("-# Credits: " + credits));
+        }
+        return components;
+    }
+
+    /**
+     * Search in fields String 'name' and ComponentSource 'source'
+     */
+    @Override
+    public boolean search(String searchString) {
+        return name.toLowerCase().contains(searchString)
+                || source.toString().toLowerCase().contains(searchString);
+    }
+
+    /**
+     * Give the full name for the source
+     */
+    @Override
+    public String getAutoCompleteName() {
+        return name;
+    }
+
+    /**
+     * List all items of the 'data' field
+     * @return StringBuilder
+     */
+    private String getDataFormatted() {
+        StringBuilder sb = new StringBuilder();
+        for (String s : data) {
+            sb.append("- ").append(s).append('\n');
+        }
+        return sb.toString();
+    }
+
+    /**
+     *
+     * @return true if field 'Canal' = "Official", false otherwise
+     */
+    public boolean isCanalOfficial() {
+        return "official".equals(canal);
+    }
+
+    /**
+     * List the result of the SearchSources function getOccurrencesByCompType(ComponentSource x)
+     * @param occurrences HashMap with Key is Component Type and Value is occurrences for specific Source in Component Type json files
+     * @return StringBuilder
+     */
+    private String compTypeOccurrences(Map<String, Integer> occurrences) {
+        StringBuilder implementation = new StringBuilder();
+        for (Map.Entry<String, Integer> entry : occurrences.entrySet()) {
+            if (entry.getValue() != 0) {
+                if (!implementation.toString().isEmpty()) implementation.append(", ");
+                implementation
+                        .append(entry.getKey())
+                        .append(" (")
+                        .append(entry.getValue())
+                        .append(")");
+            }
+        }
+        return implementation.toString();
+    }
+}

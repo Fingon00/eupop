@@ -1,154 +1,18 @@
-package ootie.discord.interactions.commands;
+package ootie.discord.commands;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
 import lombok.experimental.UtilityClass;
-import ootie.discord.interactions.commands.admin.AdminCommand;
-import ootie.discord.interactions.commands.agenda.AgendaCommand;
-import ootie.discord.interactions.commands.async.AsyncCommand;
-import ootie.discord.interactions.commands.bothelper.BothelperCommand;
-import ootie.discord.interactions.commands.breakthrough.BreakthroughCommand;
-import ootie.discord.interactions.commands.button.GenericButtonCommand;
-import ootie.discord.interactions.commands.cardsac.ACCardsCommand;
-import ootie.discord.interactions.commands.cardspn.PNCardsCommand;
-import ootie.discord.interactions.commands.cardsso.SOCardsCommand;
-import ootie.discord.interactions.commands.combat.CombatCommand;
-import ootie.discord.interactions.commands.custom.CustomCommand;
-import ootie.discord.interactions.commands.developer.DeveloperCommand;
-import ootie.discord.interactions.commands.draft.DraftCommand;
-import ootie.discord.interactions.commands.ds.DiscordantStarsCommand;
-import ootie.discord.interactions.commands.event.EventCommand;
-import ootie.discord.interactions.commands.explore.ExploreCommand;
-import ootie.discord.interactions.commands.fow.FOWCommand;
-import ootie.discord.interactions.commands.franken.FrankenCommand;
-import ootie.discord.interactions.commands.frankendraz.FrankenDrazCommand;
-import ootie.discord.interactions.commands.game.GameCommand;
-import ootie.discord.interactions.commands.help.HelpCommand;
-import ootie.discord.interactions.commands.installation.InstallationCommand;
-import ootie.discord.interactions.commands.lazax.LazaxCommand;
-import ootie.discord.interactions.commands.leaders.LeaderCommand;
-import ootie.discord.interactions.commands.map.MapCommand;
-import ootie.discord.interactions.commands.milty.MiltyCommand;
-import ootie.discord.interactions.commands.monuments.MonumentsCommand;
-import ootie.discord.interactions.commands.omega_phase.OmegaPhaseCommand;
-import ootie.discord.interactions.commands.planet.PlanetCommand;
-import ootie.discord.interactions.commands.player.PlayerCommand;
-import ootie.discord.interactions.commands.plot.FrankenCommand2;
-import ootie.discord.interactions.commands.relic.RelicCommand;
-import ootie.discord.interactions.commands.rules.RulesCommand;
-import ootie.discord.interactions.commands.search.FindCommand;
-import ootie.discord.interactions.commands.search.SearchCommand;
-import ootie.discord.interactions.commands.search.SearchCommand2;
-import ootie.discord.interactions.commands.special.Special2Command;
-import ootie.discord.interactions.commands.special.SpecialCommand;
-import ootie.discord.interactions.commands.spin.SpinCommand;
-import ootie.discord.interactions.commands.statistics.StatisticsCommand;
-import ootie.discord.interactions.commands.statistics.StatisticsCommand2;
-import ootie.discord.interactions.commands.status.StatusCommand;
-import ootie.discord.interactions.commands.tech.TechCommand;
-import ootie.discord.interactions.commands.tf.TwilightFallCommand;
-import ootie.discord.interactions.commands.tigl.TiglCommand;
-import ootie.discord.interactions.commands.tokens.AddCCCommand;
-import ootie.discord.interactions.commands.tokens.AddFrontierTokensCommand;
-import ootie.discord.interactions.commands.tokens.AddTokenCommand;
-import ootie.discord.interactions.commands.tokens.RemoveAllCC;
-import ootie.discord.interactions.commands.tokens.RemoveCCCommand;
-import ootie.discord.interactions.commands.tokens.RemoveTokenCommand;
-import ootie.discord.interactions.commands.transaction.TransactionCommand;
-import ootie.discord.interactions.commands.uncategorized.AllInfoCommand;
-import ootie.discord.interactions.commands.uncategorized.CardsInfoCommand;
-import ootie.discord.interactions.commands.uncategorized.SelectionBoxDemoCommand;
-import ootie.discord.interactions.commands.uncategorized.ShowDistancesCommand;
-import ootie.discord.interactions.commands.uncategorized.ShowGameCommand;
-import ootie.discord.interactions.commands.units.AddUnitDamage;
-import ootie.discord.interactions.commands.units.AddUnits;
-import ootie.discord.interactions.commands.units.CaptureCommand;
-import ootie.discord.interactions.commands.units.LandUnits;
-import ootie.discord.interactions.commands.units.ModifyUnitsButtons;
-import ootie.discord.interactions.commands.units.MoveUnits;
-import ootie.discord.interactions.commands.units.RemoveAllUnitDamage;
-import ootie.discord.interactions.commands.units.RemoveAllUnits;
-import ootie.discord.interactions.commands.units.RemoveUnitDamage;
-import ootie.discord.interactions.commands.units.RemoveUnits;
-import ootie.discord.interactions.commands.user.UserCommand;
+import ootie.discord.commands.search.SearchCommand;
 
 @UtilityClass
 public class SlashCommandManager {
 
-    private static final Map<String, ParentCommand> commands = Stream.of(
-            new AddUnits(),
-            new LandUnits(),
-            new RemoveUnits(),
-            new RemoveAllUnits(),
-            new AllInfoCommand(),
-            new CardsInfoCommand(),
-            new ShowGameCommand(),
-            new ShowDistancesCommand(),
-            new AddCCCommand(),
-            new RemoveCCCommand(),
-            new RemoveAllCC(),
-            new SearchCommand2(),
-            new FindCommand(),
-            new AddFrontierTokensCommand(),
-            new MoveUnits(),
-            new ModifyUnitsButtons(),
-            new RemoveTokenCommand(),
-            new AddTokenCommand(),
-            new AddUnitDamage(),
-            new RemoveUnitDamage(),
-            new RemoveAllUnitDamage(),
-            new TransactionCommand(),
-            new MapCommand(),
-            new HelpCommand(),
-            new SearchCommand(),
-            new ExploreCommand(),
-            new RelicCommand(),
-            new RulesCommand(),
-            new AdminCommand(),
-            new DeveloperCommand(),
-            new BothelperCommand(),
-            new PlayerCommand(),
-            new GameCommand(),
-            new ACCardsCommand(),
-            new PNCardsCommand(),
-            new SOCardsCommand(),
-            new StatusCommand(),
-            new AgendaCommand(),
-            new EventCommand(),
-            new SpecialCommand(),
-            new Special2Command(),
-            new LeaderCommand(),
-            new CombatCommand(),
-            new CustomCommand(),
-            new FOWCommand(),
-            new InstallationCommand(),
-            new MiltyCommand(),
-            new MonumentsCommand(),
-            new FrankenCommand(),
-            new FrankenDrazCommand(),
-            new CaptureCommand(),
-            new GenericButtonCommand(),
-            new DiscordantStarsCommand(),
-            new TwilightFallCommand(),
-            new StatisticsCommand(),
-            new StatisticsCommand2(),
-            new TechCommand(),
-            new BreakthroughCommand(),
-            new FrankenCommand2(),
-            new PlanetCommand(),
-            new SelectionBoxDemoCommand(),
-            new UserCommand(),
-            new LazaxCommand(),
-            new TiglCommand(),
-            new AsyncCommand(),
-            new OmegaPhaseCommand(),
-            new DraftCommand(),
-            new SpinCommand())
-            .collect(Collectors.toMap(ParentCommand::getName, command -> command));
+    private static final Map<String, ParentCommand> commands =
+            Stream.of(new SearchCommand()).collect(Collectors.toMap(ParentCommand::getName, command -> command));
 
     public static ParentCommand getCommand(String name) {
         return commands.get(name);

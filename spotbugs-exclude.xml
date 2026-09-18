@@ -1,0 +1,3 @@
+<FindBugsFilter>
+    <!-- Checked exceptions suck. Deal with it. -->
+</FindBugsFilter>

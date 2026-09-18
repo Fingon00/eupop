@@ -1,9 +1,8 @@
-package ootie.discord.interactions.commands;
+package ootie.discord.commands;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
@@ -13,8 +12,7 @@ public interface ParentCommand extends Command<SlashCommandInteractionEvent> {
 
     @Override
     default boolean accept(SlashCommandInteractionEvent event) {
-        if (!Command.super.accept(event))
-            return false;
+        if (!Command.super.accept(event)) return false;
 
         Command<SlashCommandInteractionEvent> subcommand = getSubcommand(event);
         if (subcommand != null) {
@@ -27,26 +25,22 @@ public interface ParentCommand extends Command<SlashCommandInteractionEvent> {
 
     default void preExecute(SlashCommandInteractionEvent event) {
         Command<SlashCommandInteractionEvent> subcommand = getSubcommand(event);
-        if (subcommand != null)
-            subcommand.preExecute(event);
+        if (subcommand != null) subcommand.preExecute(event);
     }
 
     default void execute(SlashCommandInteractionEvent event) {
         Command<SlashCommandInteractionEvent> subcommand = getSubcommand(event);
-        if (subcommand != null)
-            subcommand.execute(event);
+        if (subcommand != null) subcommand.execute(event);
     }
 
     default void postExecute(SlashCommandInteractionEvent event) {
         Command<SlashCommandInteractionEvent> subcommand = getSubcommand(event);
-        if (subcommand != null)
-            subcommand.postExecute(event);
+        if (subcommand != null) subcommand.postExecute(event);
     }
 
     default void onException(SlashCommandInteractionEvent event, Throwable throwable) {
         Command<SlashCommandInteractionEvent> subcommand = getSubcommand(event);
-        if (subcommand != null)
-            subcommand.onException(event, throwable);
+        if (subcommand != null) subcommand.onException(event, throwable);
     }
 
     default Command<SlashCommandInteractionEvent> getSubcommand(SlashCommandInteractionEvent event) {
@@ -79,8 +73,7 @@ public interface ParentCommand extends Command<SlashCommandInteractionEvent> {
     }
 
     default void registerSearchCommands(CommandListUpdateAction commands) {
-        if (getSearchSubcommands().isEmpty())
-            return;
+        if (getSearchSubcommands().isEmpty()) return;
         var command = Commands.slash(getName(), getDescription())
                 .addSubcommands(getSearchSubcommands().values())
                 .addOptions(getOptions());

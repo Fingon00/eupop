@@ -1,11 +1,9 @@
-package ootie.discord.interactions.commands;
+package ootie.discord.commands;
 
 import java.util.Map;
-
-import org.jetbrains.annotations.NotNull;
-
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.build.SubcommandGroupData;
+import org.jetbrains.annotations.NotNull;
 
 public abstract class SubcommandGroup extends SubcommandGroupData implements Command<SlashCommandInteractionEvent> {
 
@@ -20,8 +18,7 @@ public abstract class SubcommandGroup extends SubcommandGroupData implements Com
     }
 
     public boolean accept(SlashCommandInteractionEvent event) {
-        if (!getName().equals(event.getInteraction().getSubcommandGroup()))
-            return false;
+        if (!getName().equals(event.getInteraction().getSubcommandGroup())) return false;
 
         Subcommand subcommand = getGroupSubcommands().get(event.getInteraction().getSubcommandName());
         return subcommand != null && subcommand.accept(event);
@@ -40,7 +37,8 @@ public abstract class SubcommandGroup extends SubcommandGroupData implements Com
     @Override
     public boolean isSuspicious(SlashCommandInteractionEvent event) {
         return getGroupSubcommands().values().stream()
-                .anyMatch(subcommand -> subcommand.getName().equals(event.getInteraction().getSubcommandName())
-                        && subcommand.isSuspicious(event));
+                .anyMatch(subcommand ->
+                        subcommand.getName().equals(event.getInteraction().getSubcommandName())
+                                && subcommand.isSuspicious(event));
     }
 }
