@@ -129,6 +129,25 @@ for second in $(seq 1 "$rollout_timeout_seconds"); do
   sleep 1
 done
 
+if [ "$state" = "running" ] && [ "$health" = "none" ]; then
+  echo "Container is running without a health check; waiting 45 seconds for application startup."
+
+  for readiness_second in $(seq 1 30); do
+    state="$(container_status "$new_container_id")"
+
+    if [ "$state" != "running" ]; then
+      echo "Container stopped during startup."
+      docker logs --tail 100 "$new_container_id"
+      exit 1
+    fi
+
+    sleep 1
+  done
+
+  echo "Container remained running after startup grace period."
+  break
+fi
+
 final_status="$(health_status "$new_container_id")"
 if [ "$final_status" != "healthy" && "$final_status" != "none"]; then
   echo "New $service container did not become healthy; rolling back." >&2
