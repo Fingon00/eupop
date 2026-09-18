@@ -9,7 +9,7 @@
     <version>4.1.1</version>
   </parent>
 
-  <groupId>me.terterro</groupId>
+  <groupId>fin</groupId>
   <artifactId>ootie_map_generator_discord_bot</artifactId>
   <version>1.0-SNAPSHOT</version>
 
