@@ -1,4 +1,13 @@
 services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ootiebot
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
   ootiebot:
     image: ${IMAGE_REPOSITORY}:${IMAGE_TAG:-master}
     restart: unless-stopped
@@ -15,6 +24,8 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       DISCORD_CLIENT_ID: ${DISCORD_CLIENT_ID}
       DISCORD_CLIENT_SECRET: ${DISCORD_CLIENT_SECRET}
+    depends_on:
+      - db
 
     volumes:
       - ${HOST_OOTIE_REPO_DIR}/src/main/resources:/opt/resources:ro
