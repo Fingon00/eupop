@@ -1,3 +1,4 @@
+// GlobalSettings.java
 package ootie.settings;
 
 import java.io.File;

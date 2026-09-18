@@ -1,3 +1,4 @@
+// RollbarManager.java
 package ootie.logging;
 
 import com.rollbar.api.payload.data.Level;
