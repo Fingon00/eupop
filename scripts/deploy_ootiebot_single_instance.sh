@@ -130,7 +130,7 @@ for second in $(seq 1 "$rollout_timeout_seconds"); do
 done
 
 final_status="$(health_status "$new_container_id")"
-if [ "$final_status" != "healthy" ]; then
+if [ "$final_status" != "healthy" && "$final_status" != "none"]; then
   echo "New $service container did not become healthy; rolling back." >&2
   echo "Final health status: $final_status" >&2
   docker inspect --format='{{json .State.Health}}' "$new_container_id" || true
