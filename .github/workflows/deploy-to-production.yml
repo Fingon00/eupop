@@ -7,7 +7,7 @@ permissions:
   contents: read
   packages: write
 env:
-  IMAGE_REPOSITORY: ghcr.io/Fingon00/eupop
+  IMAGE_REPOSITORY: ghcr.io/fingon00/eupop
 concurrency:
   group: deploy-to-production-master
   cancel-in-progress: true
