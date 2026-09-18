@@ -50,6 +50,10 @@ health_status() {
   docker inspect --format='{{if .State.Health}}{{.State.Health.Status}}{{else}}none{{end}}' "$1"
 }
 
+container_status() {
+  docker inspect --format='{{.State.Status}}' "$1"
+}
+
 trap 'cleanup_tmp_files' EXIT
 
 existing_container_ids="$(compose ps --all -q "$service" || true)"
@@ -97,15 +101,29 @@ fi
 new_container_id="$(cat "$new_ids_file")"
 trap 'handle_signal' INT TERM HUP
 
-echo "Waiting for new $service container to become healthy: $new_container_id"
+echo "Waiting for new $service container to start: $new_container_id"
+
 for second in $(seq 1 "$rollout_timeout_seconds"); do
-  status="$(health_status "$new_container_id")"
-  if [ "$status" = "healthy" ]; then
+  health="$(health_status "$new_container_id")"
+  state="$(container_status "$new_container_id")"
+
+  # Accept containers that are running with either a healthy check or no check.
+  if [ "$state" = "running" ] && {
+    [ "$health" = "healthy" ] || [ "$health" = "none" ];
+  }; then
+    echo "Container is running successfully."
     break
   fi
 
+  # Stop immediately if the container has already failed.
+  if [ "$state" = "exited" ] || [ "$state" = "dead" ]; then
+    echo "Container stopped unexpectedly."
+    docker logs --tail 100 "$new_container_id"
+    exit 1
+  fi
+
   if [ "$second" -eq 1 ] || [ $((second % 30)) -eq 0 ]; then
-    echo "Still waiting for $new_container_id health status: $status (${second}s elapsed)"
+    echo "Still waiting for $new_container_id: state=$state health=$health (${second}s elapsed)"
   fi
 
   sleep 1
