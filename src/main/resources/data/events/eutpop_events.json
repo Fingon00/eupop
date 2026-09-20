@@ -33,7 +33,7 @@
         "content": [
             "Region (Central and Balkan)"
         ],
-        "text": "A)War for Bohemia:Place 3 and add X to 2/，inone of BOHEMIA,AUSTRIA,OrROYAL HUNGARY.Flip allin BOHEMIA to theside.Hungary,ifan NPR Declares War onthe/Owners.\n\nB)Expel the occupants:AddXto all and on Hungarian Core Provinces.Place a totalof4 in the affected Areas.You gain 1 military power"
+        "text": "A)War for Bohemia:Place 3 and add X to 2/，in one of BOHEMIA,AUSTRIA,OrROYAL HUNGARY.Flip allin BOHEMIA to theside.Hungary,ifan NPR Declares War onthe/Owners.\n\nB)Expel the occupants:Add X to all and on Hungarian Core Provinces.Place a total of 4 in the affected Areas.You gain 1 military power"
     },
     {
         "id": "11A-3",
@@ -52,7 +52,7 @@
         "content": [
             "HRE"
         ],
-        "text": "You gain 1 military power.Increase by 1. Select 1-2Areas adjacent by land to the Emperor'sRealm,where there are on Provinces which arenot Core Provinces of their Owners. AddXon3such in each of those Areas(if possible).Distribute among the chosen Areas,but maximum4 in a single Area. If you area nH REmember Realm, Exhaust 2 to gain"
+        "text": "You gain 1 military power.Increase by 1. Select 1-2Areas adjacent by land to the Emperor'sRealm,where there are on Provinces which arenot Core Provinces of their Owners. Add x on 3 such in each of those Areas(if possible).Distribute among the chosen Areas,but maximum4 in a single Area. If you area nH REmember Realm, Exhaust 2 to gain"
     },
     {
         "id": "11A-4",
@@ -72,7 +72,7 @@
         "content": [
             "Kumbaya (good for everyone)"
         ],
-        "text": "A)Letthe serfs move:Pay 3 to develop a Small into a Large in your Capital Area and gain 2\n\nB)The serfs belong on their turf: Pay 2X and gain 1 to Research the\"Serfdom\"Idea. All Opponents may then pay 2 to also makea choice between Aand B"
+        "text": "A)Letthe serfs move:Pay 3 to develop a Small Town into a Large Town in your Capital Area and gain 2\n\nB)The serfs belong on their turf: Pay 2X and gain 1 to Research the\"Serfdom\"Idea. All Opponents may then pay 2 to also makea choice between Aand B"
     },
     {
         "id": "12A-1",
@@ -106,7 +106,7 @@
             "Native Uprising"
         ],
         "content": [],
-        "text": "Pick an independent Realm with 1+ on it and fip these tothe side.\n\nA)War of Succession:Take a free Declare War Action,targeting only that Realm.Gain 2X upon DoW if target is adjacent to your Realm.\n\nB)Support for local noble:Lose 2，andgain 4 in the chosen Realm ifit isan NPR."
+        "text": "Pick an independent Realm with 1+ on it and fip these to the side.\n\nA)War of Succession:Take a free Declare War Action,targeting only that Realm.Gain 2X upon DoW if target is adjacent to your Realm.\n\nB)Support for local noble:Lose 2，and gain 4 in the chosen Realm ifit isan NPR."
     },
     {
         "id": "12A-3",
@@ -144,7 +144,7 @@
             "Pirates"
         ],
         "content": [],
-        "text": "Place an in an Area with your and another in an Area adjacent to it.For every 2 on this Event, placean in a new Area adjacent to the previous token placed. All players must remove/2 of their Unitsin these Areas as Casualties (roundup).Reduce a Large in oneof these Areas to a Small Note:Provinces in Areas with provide/2 tax Income(round down)."
+        "text": "Place an in an Area with your and another in an Area adjacent to it.For every 2 on this Event, place an in a new Area adjacent to the previous token placed. All players must remove/2 of their Unitsin these Areas as Casualties (roundup).Reduce a Large Town in one of these Areas to a Small Town Note:Provinces in Areas with provide/2 tax Income(round down)."
     },
     {
         "id": "13A-2",
@@ -163,7 +163,7 @@
         "content": [
             "Chaos (bad for everyone)"
         ],
-        "text": "You gain 1 military power All players who have negative or3+Exhausted must: Decrease theirby 1 andgain 1 for every 2Exhausted.Then， placeafor each added All players must immediately roll Rebel Dice for affected Areas."
+        "text": "You gain 1 military power All players who have negative or3+Exhausted must: Decrease theirby 1 and gain 1 for every 2Exhausted.Then， place afor each added All players must immediately roll Rebel Dice for affected Areas."
     },
     {
         "id": "13A-3",
@@ -182,7 +182,7 @@
         "content": [
             "Kumbaya (good for everyone)"
         ],
-        "text": "A)Weare blessed!:Gain 1 and receive a number of equal tothe amount of placed on this card.\n\nB)Invest the profits:Draw a number of Action Cards(of any types)equal to 1plus the number of onthis card and reveal them forall tosee. Starting with you,players may pick oneof these to add to their hand. Discard any remaining cards."
+        "text": "A)Weare blessed!:Gain 1 and receive a number of equal to the amount of placed on this card.\n\nB)Invest the profits:Draw a number of Action Cards(of any types)equal to 1plus the number of onthis card and reveal them forall tosee. Starting with you,players may pick one of these to add to their hand. Discard any remaining cards."
     },
     {
         "id": "14A-1",
@@ -198,7 +198,7 @@
             "Lost at Sea"
         ],
         "content": [],
-        "text": "A)Press claim:Gain 1X,placea in any Area adjacent to your Realm and lose a total of3 from that Area or Areas adjacent to it.\n\nB)Don't press claim:Lose(2） gain 1，and place 2 in an Area adjacent to your Realm."
+        "text": "A)Press claim:Gain 1X,place a in any Area adjacent to your Realm and lose a total of3 from that Area or Areas adjacent to it.\n\nB)Don't press claim:Lose(2） gain 1，and place 2 in an Area adjacent to your Realm."
     },
     {
         "id": "14A-2",
@@ -217,7 +217,7 @@
         "content": [
             "Region (West)"
         ],
-        "text": "All players witha with Burgundy may place in2Areas with Bur- gun dian Provinces or Vassals. France may place in SEINE and BURGUNDY,orpay 3Xto gain on all Burgundian Provinces there. Then,unless you are France,if you have a with Burgundy,you may pay 3y to gain on all remaining Burgundian Provinces and Vassals. Add to all of these Vassals."
+        "text": "All players witha with Burgundy may place in2Areas with Bur- gun dian Provinces or Vassals. France may place in SEINE and BURGUNDY,or pay 3Xto gain on all Burgundian Provinces there. Then,unless you are France,if you have a with Burgundy,you may pay 3y to gain on all remaining Burgundian Provinces and Vassals. Add to all of these Vassals."
     },
     {
         "id": "14A-3",
@@ -290,7 +290,7 @@
             "Pirates"
         ],
         "content": [],
-        "text": "Lose,then select another player to choose:\n\nA)Execute the troublemakers: Lose 1 andgain 1X\n\nB)Abolish a tax:Gain 2"
+        "text": "Lose,then select another player to choose:\n\nA)Execute the troublemakers: Lose 1 and gain 1X\n\nB)Abolish a tax:Gain 2"
     },
     {
         "id": "153B",
@@ -326,7 +326,7 @@
         "content": [
             "Religion"
         ],
-        "text": "Choose an Area with your and one Area adjacent to it,and place Diverse Faiths tokens in both Areas Areas whose Religion isnot already Diverse Faiths must be chosen,if possible. Add Xon oneof your own in thefirst Area,and on any 2 in the second Area. Then you may pay 3 to Research the“Tolerance”Idea."
+        "text": "Choose an Area with your and one Area adjacent to it,and place Diverse Faiths tokens in both Areas Areas whose Religion is not already Diverse Faiths must be chosen,if possible. Add X on one of your own in thefirst Area,and on any 2 in the second Area. Then you may pay 3 to Research the“Tolerance”Idea."
     },
     {
         "id": "155B",
@@ -365,7 +365,7 @@
         "content": [
             "Religion"
         ],
-        "text": "A)Establish Inquisition:Pay 3 to Research the“Inquisition”Idea,and optionally another 1 to change the the Religion in one of your Areas with Diverse Faiths to your State Religion.\n\nB)Deus Vult!:Pay 3 to Research the“Deus Vult\"Idea or,if your PRis Catholic,optionally pay 1 todo a Call Crusade Papal Action instead and Commit tothe Crusade."
+        "text": "A)Establish Inquisition:Pay 3 to Research the“Inquisition”Idea,and optionally another 1 to change the the Religion in one of your Areas with Diverse Faiths to your State Religion.\n\nB)Deus Vult!:Pay 3 to Research the“Deus Vult\"Idea or,if your PRis Catholic,optionally pay 1 todo a Call Crusade Papal Action instead and Commit to the Crusade."
     },
     {
         "id": "157B",
@@ -417,7 +417,7 @@
         "content": [
             "Kumbaya (good for everyone)"
         ],
-        "text": "You gain 1 and 1.Then all players must choose:\n\nA)Knowledge is power:Gain 1 for each Large on Provinces you Own（max.4） and place a Diverse Faiths token inyour Capital Area.\n\nB)Spread the gospel:Pay 1 to place a Religion token matching your State Religion in oneof your Areas."
+        "text": "You gain 1 and 1.Then all players must choose:\n\nA)Knowledge is power:Gain 1 for each Large Town on Provinces you Own（max.4） and place a Diverse Faiths token inyour Capital Area.\n\nB)Spread the gospel:Pay 1 to place a Religion token matching your State Religion in one of your Areas."
     },
     {
         "id": "160B",
@@ -513,7 +513,7 @@
             "Native Uprising"
         ],
         "content": [],
-        "text": "Pick any PR with 1+of:Interregnum, Ruler with on their Capital -2/-3，or3+X.They must choose：\n\nA)The king is dead..:Novus Rex becomes your Ruler.Set your fto-1 Flip on your Capital tothe eside.\n\nB)Crush the rebellion:In one of your Areas,gain 2 and place 3 Novus Rex"
+        "text": "Pick any PR with 1+of:Interregnum, Ruler with on their Capital -2/-3，or3+X.They must choose：\n\nA)The king is dead..:Novus Rex becomes your Ruler.Set your fto-1 Flip on your Capital to the eside.\n\nB)Crush the rebellion:In one of your Areas,gain 2 and place 3 Novus Rex"
     },
     {
         "id": "165B",
@@ -569,7 +569,7 @@
         "content": [
             "Religion"
         ],
-        "text": "A)Let the Fug gers sell indulgences: Add 1-3among Catholic Areas.For each，the Province Owner gains5 and the Papal Controller gains 3 Add Diverse Faiths to 1affected Area\n\nB)Procure funds from the Fug gers: Pay 1 to gain 12 and 1 You may then Appoint Jakob Fugger. Jakob Fugger"
+        "text": "A)Let the Fug gers sell indulgences: Add 1-3 among Catholic Areas.For each，the Province Owner gains5 and the Papal Controller gains 3 Add Diverse Faiths to 1 affected Area\n\nB)Procure funds from the Fug gers: Pay 1 to gain 12 and 1 You may then Appoint Jakob Fugger. Jakob Fugger"
     },
     {
         "id": "168B",
@@ -604,7 +604,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Hunting accident:Flip allon oneNPR's Capital totheir side, or select aPR who must add 1 to their Ruler.You gain 1X\n\nB)A powerful regent:Flip all on your Capital to their side. PRs whose were flipped gain 1X Remove your from2NPRs. Anne becomes your new Ruler. Anne"
+        "text": "A)Hunting accident:Flip allon oneNPR's Capital to their side, or select aPR who must add 1 to their Ruler.You gain 1X\n\nB)A powerful regent:Flip all on your Capital to their side. PRs whose were flipped gain 1X Remove your from2NPRs. Anne becomes your new Ruler. Anne"
     },
     {
         "id": "170B",
@@ -641,7 +641,7 @@
         "content": [
             "Region (West)"
         ],
-        "text": "If at War vs.England,gain 2X.Eng land gains 1Xanda in IRELAND.\n\nA)Back the Earl of Desmond’splot: If England has no in IRELAND, remove their /fromM hum hain andgain an with Desmond.\n\nB)Equip dela Pole with an army: Pay 1Xand 4 toadd 1Xand 3 inWALES&WESSEX."
+        "text": "If at War vs.England,gain 2X.Eng land gains 1Xanda in IRELAND.\n\nA)Back the Earl of Desmond’splot: If England has no in IRELAND, remove their /fromM hum hain and gain an with Desmond.\n\nB)Equip dela Pole with an army: Pay 1Xand 4 toadd 1Xand 3 inWALES&WESSEX."
     },
     {
         "id": "181B",
@@ -693,7 +693,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Italy is our domain l:Austria gains 3X,and in each of these Areas with French JO LOMBARDY,C.ITALY,VENETIA,and NAPLES.France gets a inLOM- BARD Y and an with Florence.\n\nB)Ease tension:Austria loses but gains 2 in oneof the Areas above.You gain 1 Maximilian I"
+        "text": "A)Italy is our domain l:Austria gains 3X,and in each of these Areas with French JO LOMBARDY,C.ITALY,VENETIA,and NAPLES.France gets a inLOM- BARD Y and an with Florence.\n\nB)Ease tension:Austria loses but gains 2 in one of the Areas above.You gain 1 Maximilian I"
     },
     {
         "id": "101-3",
@@ -727,7 +727,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Create thisnew council:Austria loses 1 but may Appoint a Diplo- matic Advisor from the discards for free,and/orpay 2 to Research any Diplomatic Idea on display.\n\nB)Leave such affairs tothe nobles: Austria gains 1 and may remove 1 from their Realm.You gain 1 Maximilian I"
+        "text": "A)Create thisnew council:Austria loses 1 but may Appoint a Diplo- matic Advisor from the discards for free,and/or pay 2 to Research any Diplomatic Idea on display.\n\nB)Leave such affairs to the nobles: Austria gains 1 and may remove 1 from their Realm.You gain 1 Maximilian I"
     },
     {
         "id": "102-1",
@@ -760,7 +760,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Hire Columbus:Castile may pay to take a free Explore Action and,if necessary,Research“Quest for the New World\"for2 todoso.If Castile has already taken anEvent this Round,you may do this instead.\n\nB)Ignore him:Add agreen on a vacant Territory adjacent tothe CARIBBEANSEA.You gain 1 Fernando V"
+        "text": "A)Hire Columbus:Castile may pay to take a free Explore Action and,if necessary,Research“Quest for the New World\"for2 todoso.If Castile has already taken anEvent this Round,you may do this instead.\n\nB)Ignore him:Add agreen on a vacant Territory adjacent to the CARIBBEANSEA.You gain 1 Fernando V"
     },
     {
         "id": "102-3",
@@ -776,7 +776,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Repudiate Joanna's legitimacy: Castile gains 1，2X，and either3 or4 in ARAGON.You gain 1 military power\n\nB)Name Joanna asheir:Castile gains 3 in PORTUGAL,but loses 1 and 2 in ARAGON. Castile may then offer ato aPR orto an NPR they have in. Enrique IV"
+        "text": "A)Repudiate Joanna's legitimacy: Castile gains 1，2X，and either3 or4 in ARAGON.You gain 1 military power\n\nB)Name Joanna asheir:Castile gains 3 in PORTUGAL,but loses 1 and 2 in ARAGON. Castile may then offer ato aPR or to an NPR they have in. Enrique IV"
     },
     {
         "id": "103-1",
@@ -827,11 +827,11 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Add 3 and 3 in NORTHUMBRIA.\n\nA)Seek continental allies:England gains 2 and a with Burgundy and may pay 3 to gain an with them andsend thema Call toArms, even if already atWar.You gain 1X\n\nB)Reconcile the houses:England loses(2）and 2X，and gains 1 Edward IV"
+        "text": "Add 3 and 3 in NORTHUMBRIA.\n\nA)Seek continental allies:England gains 2 and a with Burgundy and may pay 3 to gain an with them andsend thema Call to Arms, even if already atWar.You gain 1X\n\nB)Reconcile the houses:England loses(2）and 2X，and gains 1 Edward IV"
     },
     {
         "id": "103-4",
-        "name": "Morton's Fork",
+        "name": "Mor ton's Fork",
         "type": "Realm",
         "age": 1,
         "half": "2",
@@ -844,7 +844,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Improve tax collection:England gains 2 and may add tooneof their own to gain8\n\nB)Support noble revolt in France: England may pay 1 and 3 toadd 2 and 2 in LOIRE or BRITTANY&NORMANDY and 2 in the latter Area.You gain 1X Henry VII"
+        "text": "A)Improve tax collection:England gains 2 and may add toone of their own to gain8\n\nB)Support noble revolt in France: England may pay 1 and 3 toadd 2 and 2 in LOIRE or BRITTANY&NORMANDY and 2 in the latter Area.You gain 1X Henry VII"
     },
     {
         "id": "104-1",
@@ -861,7 +861,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Itis not over yet:France and England gain 1X.You gain 1 military power\n\nB)Surrender of Maine:England,if atPeace,may cede Maine to France. If they do,France and England gain 1，enter aTruce,and losea in the other'sRealm.If not,they both gain 1X，lose 1，and any Truce between them ends.You gain 1 LouisXI"
+        "text": "A)Itis not over yet:France and England gain 1X.You gain 1 military power\n\nB)Surrender of Maine:England,if atPeace,may cede Maine to France. If they do,France and England gain 1，enter a truce,and losea in the other'sRealm.If not,they both gain 1X，lose 1，and any Truce between them ends.You gain 1 LouisXI"
     },
     {
         "id": "104-2",
@@ -928,7 +928,7 @@
             "Pirates"
         ],
         "content": [],
-        "text": "A)Venice shelters fugitive slave: Ottomans may Declare War on Venice.If they do,they gain 1X and a On AEGEAN ARCHIPELAGO or GREECE,and the Papal Controller may pay 1 toCall Crusade on an Ottoman Area.You gain 1 military power\n\nB)Venetian Aegean hegemony:Ot- tomans lose and 1X，aswell asa adjacent tothe AEGEAN SEA."
+        "text": "A)Venice shelters fugitive slave: Ottomans may Declare War on Venice.If they do,they gain 1X and a On AEGEAN ARCHIPELAGO or GREECE,and the Papal Controller may pay 1 toCall Crusade on an Ottoman Area.You gain 1 military power\n\nB)Venetian Aegean hegemony:Ot- tomans lose and 1X，aswell asa adjacent to the AEGEAN SEA."
     },
     {
         "id": "106-2",
@@ -945,7 +945,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Addblue on Tabriz,all Provinces inIRAQ.and 4Provinces adjacent to IRAQ aswell as on Isfahan,Fars,and Herat onthe INDIA&ARABIA map.\n\nA)Stop them:Ottomans gain 2X and must Declare War on Persia.\n\nB)Sah kulu rebellion:AddXto 3/that are adjacent to Persia. Bay ez id II"
+        "text": "Addblue on Tabriz,all Provinces inIRAQ.and 4Provinces adjacent to IRAQ aswell as on Isfahan,Fars,and Herat onthe INDIA&ARABIA map.\n\nA)Stop them:Ottomans gain 2X and must Declare War on Persia.\n\nB)Sah kulu rebellion:Add xto 3/that are adjacent to Persia. Bay ez id II"
     },
     {
         "id": "106-3",
@@ -962,7 +962,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Build Imperial Hal ic Shipyard: Ottomans may build up to8Galleys at 2 cost,gaining1Xper4 spent.\n\nB)Raids of Kemal Reis:Ottomans must place a Pirate in the Genoa or Adriatic Sea,addtoa adjacent tothe chosen Trade Node and Appoint an Admiral for free from any discard pile.You gain 1X Bayezid H"
+        "text": "A)Build Imperial Hal ic Shipyard: Ottomans may build up to8Galleys at 2 cost,gaining1Xper4 spent.\n\nB)Raids of Kemal Reis:Ottomans must place a Pirate in the Genoa or Adriatic Sea,addtoa adjacent to the chosen Trade Node and Appoint an Admiral for free from any discard pile.You gain 1X Bayezid H"
     },
     {
         "id": "107-1",
@@ -996,7 +996,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Aid Prussian Confederation: Poland gains a in PRUSSIA,and may Declare War on the Teutonic Order to immediately gain a on Danzig.You gain 1X\n\nB)Jagiellonian dynasty:Poland gains with both Bohemia and Hungary.Flip allon oneof these Realms to the side.You gain 2 Zy gm untI Stary"
+        "text": "A)Aid Prussian Confederation: Poland gains a in PRUSSIA,and may Declare War on the Teutonic Order to immediately gain a on Danzig.You gain 1X\n\nB)Jagiellonian dynasty:Poland gains with both Bohemia and Hungary.Flip allon one of these Realms to the side.You gain 2 Zy gm untI Stary"
     },
     {
         "id": "108-1",
@@ -1080,7 +1080,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Death tothe traitor:Portugal gains 1，butmust discard an Advisor(Administrative if possible)\n\nB)Trust our beloved mentor:Add 3 to Portuguese and 2 in PORTUGAL.You gain 1 AfonsoV"
+        "text": "A)Death to the traitor:Portugal gains 1，butmust discard an Advisor(Administrative if possible)\n\nB)Trust our beloved mentor:Add 3 to Portuguese and 2 in PORTUGAL.You gain 1 AfonsoV"
     },
     {
         "id": "110-2",
@@ -1113,7 +1113,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Drain wetlands:Netherlands may develop up to 2Small into Large by paying1 and 2 for each You gain 4\n\nB)Invest in other projects:Nether- lands may gainup to 3Light Ships, paying just 2perShip.You may take a free Trade Action. (Estates-General)"
+        "text": "A)Drain wetlands:Netherlands may develop up to 2Small Town into Large Town by paying1 and 2 for each You gain 4\n\nB)Invest in other projects:Nether- lands may gainup to 3Light Ships, paying just 2perShip.You may take a free Trade Action. (Estates-General)"
     },
     {
         "id": "111-2",
@@ -1129,7 +1129,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Support Flemish Primitives: Netherlands may pay 4 to gain 2 and optionally Appoint any Advisor from the Administrative discard pile at no additional cost.\n\nB)Send lavish gifts of art:Nether- lands may pay 4 to either takea free Forge Alliance Action or gain in any Areas adjacent tothem. (Estates-General)"
+        "text": "A)Support Flemish Primitives: Netherlands may pay 4 to gain 2 and optionally Appoint any Advisor from the Administrative discard pile at no additional cost.\n\nB)Send lavish gifts of art:Nether- lands may pay 4 to either takea free Forge Alliance Action or gain in any Areas adjacent to them. (Estates-General)"
     },
     {
         "id": "112-1",
@@ -1178,7 +1178,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Pawning of Neumark:Branden- burg may pay 1 and 5 to develop Berlin from a Small into a Large andgain and 2 in PRUSSIA.You gain\n\nB)The offer is rejected:Branden- burg loses 2）,but gains a in PRUssIA.You gain 1X. JohnII Cicero"
+        "text": "A)Pawning of Neumark:Branden- burg may pay 1 and 5 to develop Berlin from a Small Town into a Large Town and gain and 2 in PRUSSIA.You gain\n\nB)The offer is rejected:Branden- burg loses 2）,but gains a in PRUssIA.You gain 1X. JohnII Cicero"
     },
     {
         "id": "113-2",
@@ -1194,7 +1194,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Claim Pomerania by force: Brandenburg gains a inPOMER- ANIAand,if Pomerania isan NPR must Declare War on Pomerania or lose 3}.You gain 1 military power.\n\nB)En fe off Pomeranian duchy:If Stettin is Owned by an NPR thatis atPeace,Brandenburg may placea withXon it.You gain 1 Joachim I Nestor"
+        "text": "A)Claim Pomerania by force: Brandenburg gains a inPOMER- ANIAand,if Pomerania isan NPR must Declare War on Pomerania or lose 3}.You gain 1 military power.\n\nB)En fe off Pomeranian duchy:If Stettin is Owned by an NPR thatis atPeace,Brandenburg may place a withX on it.You gain 1 Joachim I Nestor"
     },
     {
         "id": "114-1",
@@ -1260,7 +1260,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Support Cem Sultan'sclaim: Mamluks may Exhaust 3 and pay 6 toadd 2 and 3 inan Ottoman Area.Ottomans gain a in a Mamluk Area.You gain 1 military power\n\nB)Try to maintain spice trade: Mamluks lose 2，but may gain an with any NPR adjacent tothe E.MEDITERRANEAN Or INDIA NO CN. Q ansu hII"
+        "text": "A)Support Cem Sultan'sclaim: Mamluks may Exhaust 3 and pay 6 toadd 2 and 3 inan Ottoman Area.Ottomans gain a in a Mamluk Area.You gain 1 military power\n\nB)Try to maintain spice trade: Mamluks lose 2，but may gain an with any NPR adjacent to the E.MEDITERRANEAN Or INDIA NO CN. Q ansu hII"
     },
     {
         "id": "116-1",
@@ -1294,7 +1294,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Integrate our brethren:Byzan- tiu m may pay 1per Vassal/Ally witha Base Tax of1,toAnnex them andgain a there.\n\nB)Renovate old ties:Byzantium may pay 1 to gain with up to 3NPR s witha Base Tax of2 or less,adjacent tothe BLACK SEA orE MEDITERRANEAN.You gain 1 military power Andreas I"
+        "text": "A)Integrate our brethren:Byzan- tiu m may pay 1per Vassal/Ally witha Base Tax of1,toAnnex them and gain a there.\n\nB)Renovate old ties:Byzantium may pay 1 to gain with up to 3NPR s witha Base Tax of2 or less,adjacent to the BLACK SEA orE MEDITERRANEAN.You gain 1 military power Andreas I"
     },
     {
         "id": "117-1",
@@ -1312,7 +1312,7 @@
         "content": [
             "Religion"
         ],
-        "text": "Ulm may pay 1 to develop a Small into a Large\n\nA)162 meters:Ulm may gain a forfree,rpay 3 toRe sea reh the \"Church Attendance Duty Idea.\n\nB)Nota cathedral:Ulm mayAp- pointan Advisor for free,from their hand or a discard pile.You gain 1"
+        "text": "Ulm may pay 1 to develop a Small Town into a Large Town\n\nA)162 meters:Ulm may gain a for free,rpay 3 toRe sea reh the \"Church Attendance Duty Idea.\n\nB)Nota cathedral:Ulm mayAp- pointan Advisor for free,from their hand or a discard pile.You gain 1"
     },
     {
         "id": "117-2",
@@ -1345,7 +1345,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Follow Alfons'testament:Remove all Aragonese /from Nea pol- itan Core Provinces.Aragon gains a on Navarra,an and a with Naples,and either a or2 in CENTRALITALY.You gain 2\n\nB)Keep Naples:Aragon loses a and 1,and gains Xon allof their /in NAPLES.You gain 2X JoanII"
+        "text": "A)Follow Alfons'testament:Remove all Aragonese /from Nea pol- itan Core Provinces.Aragon gains a on Navarra,an and a with Naples,and either a or2 in CENTRALITALY.You gain 2\n\nB)Keep Naples:Aragon loses a and 1,and gains X on all of their /in NAPLES.You gain 2X JoanII"
     },
     {
         "id": "118-2",
@@ -1396,7 +1396,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)The Succession of Landshut:You may either develop a Small into a Large in BAVARIA&SWABIA，or add 1 and 2 there andgain 1X\n\nB)Take Kunigunde'shand:Bavaria gains a with Austria and ain BAVARIA&SWABIA Or RHINELAND Austria must place a CB token on Munchen.You gainI Albrecht IV"
+        "text": "A)The Succession of Landshut:You may either develop a Small Town into a Large Town in BAVARIA&SWABIA，or add 1 and 2 there and gain 1X\n\nB)Take Kunigunde'shand:Bavaria gains a with Austria and ain BAVARIA&SWABIA Or RHINELAND Austria must place a CB token on Munchen.You gainI Albrecht IV"
     },
     {
         "id": "120-1",
@@ -1413,7 +1413,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Reconcile Hussites and Catholics Bohemia may Research“Tolerance forfree.If they do,the Papal Controller may Excommunicate Bohemia for free.You gain 1\n\nB)Bend theknee toRome:Bohemia gains 2，a，anda and an witha non-HRE,Catholic NPR where they have.You gain 1 Jimi"
+        "text": "A)Reconcile Hussites and Catholics Bohemia may Research“Tolerance for free.If they do,the Papal Controller may Excommunicate Bohemia for free.You gain 1\n\nB)Bend theknee toRome:Bohemia gains 2，a，anda and an witha non-HRE,Catholic NPR where they have.You gain 1 Jimi"
     },
     {
         "id": "120-2",
@@ -1430,7 +1430,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Manage Hungarian relationship: Bohemia enters a with Hungary. Pick Bohemia or Hungary and flip all thereto their side.You gain an with that Realm ora inone of their Areas adjacent to your Realm.\n\nB)Strengthen Polish ties:Bohemia enters a with Poland and may offer them an.You gain 1 Vladislav Il"
+        "text": "A)Manage Hungarian relationship: Bohemia enters a with Hungary. Pick Bohemia or Hungary and flip all thereto their side.You gain an with that Realm ora in one of their Areas adjacent to your Realm.\n\nB)Strengthen Polish ties:Bohemia enters a with Poland and may offer them an.You gain 1 Vladislav Il"
     },
     {
         "id": "121-1",
@@ -1497,7 +1497,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Place a Diverse Faiths token in or adjacent by land to CENTRAL ITALY.\n\nA)Defy Rome:If able to Ex com- muni cate you,the Papal Controller must do so（forfree)or lose 2）.You lose 1，remove 1，andgain 2\n\nB)Oust the Pi agnon i:Gain a or an with Papal States or Florence. Girolamo(CITALy)"
+        "text": "Place a Diverse Faiths token in or adjacent by land to CENTRAL ITALY.\n\nA)Defy Rome:If able to Ex com- muni cate you,the Papal Controller must do so（for free)or lose 2）.You lose 1，remove 1，and gain 2\n\nB)Oust the Pi agnon i:Gain a or an with Papal States or Florence. Girolamo(CITALy)"
     },
     {
         "id": "123-1",
@@ -1514,7 +1514,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Gain 1X.Great Hordes Opponents within2Areas of them must choose:\n\nA)Stand firm:Great Horde gains a in oneof your Areas and you gain inone of theirs.Both gain 1X\n\nB)Payup:Pay 5 to Great Horde. If at Peace with them,gain a Truce,or pay 5@ extra for an，with them Ahmad"
+        "text": "Gain 1X.Great Hordes Opponents within2Areas of them must choose:\n\nA)Stand firm:Great Horde gains a in one of your Areas and you gain in one of theirs.Both gain 1X\n\nB)Payup:Pay 5 to Great Horde. If at Peace with them,gain a Truce,or pay 5@ extra for an，with them Ahmad"
     },
     {
         "id": "123-2",
@@ -1530,7 +1530,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Showwho'sthe strongest:Great Horde may pay 2X and Exhaust 2 to gain 3 inKAZAN,CRIMEA,or CAUCAsUS and gain with No gai and an NPR in oneof the listed Areas.\n\nB)Seek more powerful allies:Great Horde must offer an to aPR ad- jacent to them.You gain an with an NPR adjacent to Great Horde Shaikh Ahmad"
+        "text": "A)Show who's the strongest:Great Horde may pay 2X and Exhaust 2 to gain 3 inKAZAN,CRIMEA,or CAUCAsUS and gain with No gai and an NPR in one of the listed Areas.\n\nB)Seek more powerful allies:Great Horde must offer an to a PR adjacent to them.You gain an with an NPR adjacent to Great Horde Shaikh Ahmad"
     },
     {
         "id": "124-1",
@@ -1547,7 +1547,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Create a professional army: Hungary gains 1Xand ain an Area adjacent to their Realm,and may Recruit up to7Land Units at 2 cost. You gain IX\n\nB)Concentrate on political reforms: Hungary gains 1，and may develop oneof their Small into a Large or remove 2.You gain 1 MatvasI"
+        "text": "A)Create a professional army: Hungary gains 1 X and a in an Area adjacent to their Realm,and may Recruit up to 7 Land Units at 2 cost. You gain IX\n\nB)Concentrate on political reforms: Hungary gains 1，and may develop one of their Small Town into a Large Town or remove 2.You gain 1 MatvasI"
     },
     {
         "id": "124-2",
@@ -1564,7 +1564,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Jagiellon king elected:Hungary gains aand an with Bohemia.\n\nB)John Corvinus triumphs:Hun- gary reject sUla szl6II and gains 1 Flip all in Hungary totheir side.Hungary must Disband 4Units. You gain 2Xanda in a Hungarian Area adjacent to your Realm. Ulaszl61l"
+        "text": "A)Jagiellon king elected:Hungary gains aand an with Bohemia.\n\nB)John Corvinus triumphs:Hun- gary reject sUla szl6II and gains 1 Flip all in Hungary to their side.Hungary must Disband 4Units. You gain 2Xanda in a Hungarian Area adjacent to your Realm. Ulaszl61l"
     },
     {
         "id": "125-1",
@@ -1580,7 +1580,7 @@
             "Cardinal Dies"
         ],
         "content": [],
-        "text": "A)Form Polish-Lithuanian Union: Lithuania gains 21，an and with Poland,and 3 in Polish Areas.You gain 1,or a in a Lithuanian Area adjacent to your PR.\n\nB)The terms are unacceptable l: Lithuania loses 1，1，andany with Poland,but gains 1Xand in a Polish Area.Flip allin Poland to the side.You gain 1X"
+        "text": "A)Form Polish-Lithuanian Union: Lithuania gains 21，an and with Poland,and 3 in Polish Areas.You gain 1, or a in a Lithuanian Area adjacent to your PR.\n\nB)The terms are unacceptable l: Lithuania loses 1，1，andany with Poland,but gains 1Xand in a Polish Area.Flip allin Poland to the side.You gain 1X"
     },
     {
         "id": "125-2",
@@ -1597,7 +1597,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "All PRs adjacent to E.UkRAINE gain a in or adjacent to that Area.\n\nA)War on two fronts:You gain 2X and an with Livonian Order or Crimea,and must Declare War on 2Realms adjacent toE.UKRAINE.\n\nB)Border raids:Place 3adjacent to placed this Turn.You gain 1X Aleksandras"
+        "text": "All PRs adjacent to E.UkRAINE gain a in or adjacent to that Area.\n\nA)War on two fronts:You gain 2X and an with Livonian Order or Crimea,and must Declare War on 2 Realms adjacent toE.UKRAINE.\n\nB)Border raids:Place 3adjacent to placed this Turn.You gain 1X Aleksandras"
     },
     {
         "id": "126-1",
@@ -1650,7 +1650,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Watt as sid fightback:Morocco loses 1 and 1Advisor.Add 2 and 2 inS.MOROCCO.All PRs adjacent by land to Morocco may gain an with,or remove aTruce with,Morocco.You gain 1 military power\n\nB)Idris id Sharifs prevail:Morocco rejects Muhammad I,gains 2，and loses 2 and 1Advisor.You gain 1 Muhammad"
+        "text": "A)Watt as sid fightback:Morocco loses 1 and 1Advisor.Add 2 and 2 in S.MOROCCO.All PRs adjacent by land to Morocco may gain an with,or remove a Truce with,Morocco.You gain 1 military power\n\nB)Idris id Sharifs prevail:Morocco rejects Muhammad I,gains 2，and loses 2 and 1Advisor.You gain 1 Muhammad"
     },
     {
         "id": "127-2",
@@ -1667,7 +1667,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Employ intellectuals:Morocco may pay 2 to Research an Admin- is trat ive Idea and Appoint an Advisor from the top5discards of any deck Add 2 and 1 inS.MOROcCO.\n\nB)Aid our brothers!:If PRs Control all Provinces in ANDALUCIA Morocco gains a there and+1*and may develop a Small into a Large Muhammad Il"
+        "text": "A)Employ intellectuals:Morocco may pay 2 to Research an Admin- is trat ive Idea and Appoint an Advisor from the top5discards of any deck Add 2 and 1 inS.MOROcCO.\n\nB)Aid our brothers!:If PRs Control all Provinces in ANDALUCIA Morocco gains a there and+1*and may develop a Small Town into a Large Town Muhammad Il"
     },
     {
         "id": "128-1",
@@ -1785,7 +1785,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Trust duchess Yolande:Savoy gains 3 in any French Areas and and an with France,but loses 2 from any HRE Areas.\n\nB)Defy her wishes:Savoy gains 2among HRE Areas adjacent to Savoy and a and an withthe Emperor,but loses 1 and 2 among French Areas.You gain 2 Amedeo IX"
+        "text": "A)Trust duchess Yolande:Savoy gains 3 in any French Areas and and an with France,but loses 2 from any HRE Areas.\n\nB)Defy her wishes:Savoy gains 2 among HRE Areas adjacent to Savoy and a and an withthe Emperor,but loses 1 and 2 among French Areas.You gain 2 Amedeo IX"
     },
     {
         "id": "131-2",
@@ -1801,11 +1801,11 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Stay neutral:Savoy gains aTruce with all non-Hostile PRs adjacent to their Realm.If those PRshave Units adjacent to LOMBARDY,they gain there and 1X,and may move these Units to any Savoyard Area for free.You gain 2\n\nB)Makea stand:Savoy loses 1 You gain 2Xora in LOMBARDY Carlo III"
+        "text": "A)Stay neutral:Savoy gains a truce with all non-Hostile PRs adjacent to their Realm.If those PRshave Units adjacent to LOMBARDY,they gain there and 1X,and may move these Units to any Savoyard Area for free.You gain 2\n\nB)Makea stand:Savoy loses 1 You gain 2Xora in LOMBARDY Carlo III"
     },
     {
         "id": "132-1",
-        "name": "Saxon Fratricidal War",
+        "name": "Sax on Fratricidal War",
         "type": "Realm",
         "age": 1,
         "half": "1",
@@ -1818,7 +1818,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Addto 2 in SAxONY.\n\nA)Peace of Naumburg:Saxony may replace one of their in SAXONY witha and a to remove allof their and gain 1.You gain 1\n\nB)All-outwar:Saxony loses 1 must add 2 in SAxONY,and gains in BOHEMIA.You gain 1 military power Ernst"
+        "text": "Addto 2 in Saxony.\n\nA)Peace of Naumburg:Saxony may replace one of their in SAXONY witha and a to remove all of their and gain 1.You gain 1\n\nB)All-outwar:Saxony loses 1 must add 2 in SaxonY, and gains in BOHEMIA.You gain 1 military power Ernst"
     },
     {
         "id": "132-2",
@@ -1835,7 +1835,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Found the university:You gain 1.Saxony may pay 2 and 5 toc ither:Research an Administrative Idea.ordraw 3Administrative Cards then keep2 and discard 1 of them.\n\nB)Imperial politics:Saxony gains adjacent to their Realm and a with Bohemia.Other PRs adja- cent to BOHEMIA gain a there. Frederick III"
+        "text": "A)Found the university:You gain 1.Saxony may pay 2 and 5 toc ither:Research an Administrative Idea or draw 3 Administrative Cards then keep 2 and discard 1 of them.\n\nB)Imperial politics:Saxony gains adjacent to their Realm and a with Bohemia.Other PRs adja- cent to BOHEMIA gain a there. Frederick III"
     },
     {
         "id": "133-1",
@@ -1869,7 +1869,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Add 1 and 2 in ScOTLAND.\n\nA)TheDuke of Rothesay triumphs: Scotland may pay 1 or1Xto remove all X and in SCOTLAND orto gain a in NORTHUMBRIA.\n\nB)Bythe sword of Robert the Bruce: Scotland gains 1X rejects James IV and keeps their current Ruler. JamesIV"
+        "text": "Add 1 and 2 in ScOTLAND.\n\nA)TheDuke of Rothesay triumphs: Scotland may pay 1 or 1 X to remove all X and in SCOTLAND or to gain a in NORTHUMBRIA.\n\nB)Bythe sword of Robert the Bruce: Scotland gains 1X rejects James IV and keeps their current Ruler. JamesIV"
     },
     {
         "id": "134-1",
@@ -1886,7 +1886,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Escalate the conflict:Placea ona Teutonic Port.Poland Declares War on Teutonic Order.Teutonic Order gains 1X and may Recruit up to5Mercenary Units atV2 cost.You gain lXanda in PRUSSIA.\n\nB)Grant merchant rights:Teutonic Order loses 2 and 2but may take a free Trade Action.You gain 1 Ludwig"
+        "text": "A)Escalate the conflict:Place a on a Teutonic Port.Poland Declares War on Teutonic Order.Teutonic Order gains 1X and may Recruit up to 5 Mercenary Units at V2 cost.You gain l X and a in PRUSSIA.\n\nB)Grant merchant rights:Teutonic Order loses 2 and 2 but may take a free Trade Action.You gain 1 Ludwig"
     },
     {
         "id": "134-2",
@@ -1903,7 +1903,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Challenge Polish dominance: Teutonic Order gains an with a Realm adjacent to Poland,and 2 in that Realm ifit isan NPR.You may take a free Declare War Action.\n\nB)Pledge fealty to the Polish king: Teutonic Order loses 2 and 2X, but gains 2 and an with Poland. You gain 1 Martin"
+        "text": "A)Challenge Polish dominance: Teutonic Order gains an with a Realm adjacent to Poland,and 2 in that Realm if it is an NPR.You may take a free Declare War Action.\n\nB)Pledge fealty to the Polish king: Teutonic Order loses 2 and 2X, but gains 2 and an with Poland. You gain 1 Martin"
     },
     {
         "id": "135-1",
@@ -1919,7 +1919,7 @@
             "Pirates"
         ],
         "content": [],
-        "text": "A)Let the trade fow:Tunis may place 2among Areas facing a Sea Zone marked with ，and either develop oneof their Small into a Large or Expand the Genoa You gain a free Trade Action.\n\nB)Pacify the hinterlands:Tunis gains 1X and a in ALGERIA or NORTHSAHARA.You gain a free Recruit Units Action."
+        "text": "A)Let the trade fow:Tunis may place 2 among Areas facing a Sea Zone marked with ，and either develop one of their Small Town into a Large Town or Expand the Genoa You gain a free Trade Action.\n\nB)Pacify the hinterlands:Tunis gains 1X and a in ALGERIA or NORTHSAHARA.You gain a free Recruit Units Action."
     },
     {
         "id": "135-2",
@@ -1975,7 +1975,7 @@
             "Region (Mediterranean and Italy)",
             "Religion"
         ],
-        "text": "Placea Counter-Reformed token in CENTRALITALY.All Catholic PRs must choose either:\n\nA)Enact Counter-Reformation: Pay 3 or lose 1，toadopt Counter-Reformed as State Religion and place a Counter-Reformed token in your Capital Area.\n\nB)Stayin different:Lose 2）"
+        "text": "Place a Counter-Reformed token in CENTRALITALY.All Catholic PRs must choose either:\n\nA)Enact Counter-Reformation: Pay 3 or lose 1，toadopt Counter-Reformed as State Religion and place a Counter-Reformed token in your Capital Area.\n\nB)Stayin different:Lose 2）"
     },
     {
         "id": "21A-3",
@@ -1996,7 +1996,7 @@
         "content": [
             "DNPR-creation"
         ],
-        "text": "Select an NPR adjacent to 1+PRs and currently at Peace to become aD NPR PickaO color with available tokens in the General Supply,and place Oon all of theNPR's Core Provinces and those of its Vassals.If onthe Main Map.perform DNPR Expansion0-3 times for this DNPR. Then,in an Area adjacent to the newDNPR,addXto 2/and place 3"
+        "text": "Select an NPR adjacent to 1+PRs and currently at Peace to become aD NPR PickaO color with available tokens in the General Supply,and place Oon all of theNPR's Core Provinces and those of its Vassals.If onthe Main Map.perform DNPR Expansion0-3 times for this DNPR. Then,in an Area adjacent to the newDNPR,add xto 2/and place 3"
     },
     {
         "id": "22A-1",
@@ -2014,7 +2014,7 @@
             "DNPR-Expansion (Pink)"
         ],
         "content": [],
-        "text": "Place an in an Area with your and another in an Area adjacent to it.For every 2 on this Event, placean in a new Area adjacent to the previous token placed. All players must remove Vof their Unitsin these Areas as Casualties (roundup).Reduce a Large in oneof these Areas to a Small Note:Provinces in Areas with provide V Tax Income(round down)."
+        "text": "Place an in an Area with your and another in an Area adjacent to it.For every 2 on this Event, place an in a new Area adjacent to the previous token placed. All players must remove Vof their Unitsin these Areas as Casualties (roundup).Reduce a Large Town in one of these Areas to a Small Town Note:Provinces in Areas with provide V Tax Income(round down)."
     },
     {
         "id": "22A-2",
@@ -2032,7 +2032,7 @@
             "Disloyal Vassals"
         ],
         "content": [],
-        "text": "Pick an independent Realm with 1+ on it and flip these tothe side.\n\nA)War of Succession:Take a free Declare War Action,targeting only that Realm.Gain 2X upon DoW if target is adjacent to your Realm.\n\nB)Support for local noble:Lose 2，andgain 4 in the chosen Realm ifit isan NPR."
+        "text": "Pick an independent Realm with 1+ on it and flip these to the side.\n\nA)War of Succession:Take a free Declare War Action,targeting only that Realm.Gain 2X upon DoW if target is adjacent to your Realm.\n\nB)Support for local noble:Lose 2，and gain 4 in the chosen Realm ifit isan NPR."
     },
     {
         "id": "22A-3",
@@ -2072,7 +2072,7 @@
             "Chaos (bad for everyone)",
             "Religion"
         ],
-        "text": "You gain 1 military power.All PRs with negative ，3+Exhausted*，or1+Areas with Religious Dissent must choose:\n\nA)Grant concessions:Pay 3 and and lose(3)\n\nB)Remind them of their place:Lose 1 andgain 2.Then gain 2Xand 1X per negative point of.Place in each Area per gained there"
+        "text": "You gain 1 military power.All PRs with negative ，3+Exhausted*，or1+Areas with Religious Dissent must choose:\n\nA)Grant concessions:Pay 3 and and lose(3)\n\nB)Remind them of their place:Lose 1 and gain 2.Then gain 2Xand 1X per negative point of.Place in each Area per gained there"
     },
     {
         "id": "23A-1",
@@ -2092,7 +2092,7 @@
             "HRE",
             "Religion"
         ],
-        "text": "Place Protestant tokens in2 Catholic Areasin theHRE that are not adja- cent to Sea Zones marked witha and that contain no Provinces Owned bythe Emperor.SwITZERLAND and SAxONY must be chosen if eligible. Pick English，French，Scottish or Danish Areas instead if there are no more eligible HRE Areas. All HRE Areas with Diverse Faiths turn Protestant."
+        "text": "Place Protestant tokens in2 Catholic Areasin theHRE that are not adja- cent to Sea Zones marked witha and that contain no Provinces Owned bythe Emperor.SwITZERLAND and Saxony must be chosen if eligible. Pick English，French，Scottish or Danish Areas instead if there are no more eligible HRE Areas. All HRE Areas with Diverse Faiths turn Protestant."
     },
     {
         "id": "23A-2",
@@ -2112,7 +2112,7 @@
             "Chaos (bad for everyone)",
             "Religion"
         ],
-        "text": "Affects all Catholic PRs that have 2+ Protestant Areas and all Protestant PRs that have 2+Catholic Areas. Each affected PR gains 2 and must add 4 in oneof their affected Areas,and 1 and 2 in another affected Area. Affected PRs may pay 4 to Research the“Tolerance\"Idea"
+        "text": "Affects all Catholic PRs that have 2+ Protestant Areas and all Protestant PRs that have 2+Catholic Areas. Each affected PR gains 2 and must add 4 in one of their affected Areas,and 1 and 2 in another affected Area. Affected PRs may pay 4 to Research the“Tolerance\"Idea"
     },
     {
         "id": "23A-3",
@@ -2134,7 +2134,7 @@
             "DNPR-creation",
             "Region (Middle East)"
         ],
-        "text": "Add to Delhi and Doab(Mughals pink),Samarkand(Bukhara,green), and Kazakhstan (Kazakh,blue).\n\nA)Open embassies:Gain an with oneof the DNPR s above,or take a free Trade Action,drawing5 trade Cards.\n\nB)Keep them atbay:Gain 1X，anda in an area adjacent toone of these DNPR sand 1+of your orShips."
+        "text": "Add to Delhi and Doab(Mughals pink),Samarkand(Bukhara,green), and Kazakhstan (Kazakh,blue).\n\nA)Open embassies:Gain an with one of the DNPR s above,or take a free Trade Action,drawing5 trade Cards.\n\nB)Keep them at bay:Gain 1X，and a in an area adjacent toone of these DNPR sand 1+of your orShips."
     },
     {
         "id": "23A-4",
@@ -2153,7 +2153,7 @@
         "content": [
             "Religion"
         ],
-        "text": "A)European migrations:Place a Protestant tokenin an on-Protestant Area in or adjacent by land tothe HRE and a Counter-Reformed token in an Area adjacent by land to thefirst. If you placed a token in your own Realm,you gain 2 and may adopt that faith as your State Religion\n\nB)Migrations to the colonies:If you have 1+Colonial you gain 2"
+        "text": "A)European migrations:Place a Protestant tokenin an on-Protestant Area in or adjacent by land to the HRE and a Counter-Reformed token in an Area adjacent by land to thefirst. If you placed a token in your own Realm,you gain 2 and may adopt that faith as your State Religion\n\nB)Migrations to the colonies:If you have 1+Colonial you gain 2"
     },
     {
         "id": "24A-1",
@@ -2174,7 +2174,7 @@
             "Region (West)",
             "Religion"
         ],
-        "text": "Place a Diverse Faiths tokenin each of NETHERLANDS and FLANDERS& WALLONIA,unless they are already Protestant. Add X to all/onDutch Core Provinces,unless the Owner's Capital is located within oneof the Areas above. Add 3 in FLANDERS&WALLO NIA if there is at least oneX there."
+        "text": "Place a Diverse Faiths tokenin each of NETHERLANDS and FLANDERS& WALLONIA,unless they are already Protestant. Add X to all/onDutch Core Provinces,unless the Owner's Capital is located within one of the Areas above. Add 3 in FLANDERS&WALLO NIA if there is at least oneX there."
     },
     {
         "id": "24A-2",
@@ -2195,7 +2195,7 @@
             "DNPR-creation",
             "Region (West)"
         ],
-        "text": "Add X to all Dutch Core Provinces witha /onthem,and place orange below these Place orange D onall the remaining Dutch Core Provinces (prefer Amsterdam as Capital). NETHERLANDs leaves theH RE and the Emperor loses 1，ifat least 3Provinces join the DNPR appear in NETHERLANDs if there is at least oneX there."
+        "text": "Add X to all Dutch Core Provinces witha /onthem,and place orange below these Place orange D on all the remaining Dutch Core Provinces (prefer Amsterdam as Capital). NETHERLANDs leaves theH RE and the Emperor loses 1，ifat least 3Provinces join the DNPR appear in NETHERLANDs if there is at least oneX there."
     },
     {
         "id": "24A-3",
@@ -2230,7 +2230,7 @@
             "Power Struggle"
         ],
         "content": [],
-        "text": "Take a free Trade Action targeting a Maritime Trade Node.Onlyyou collect income from this Action. Then,place a Pirate in this Trade Node,and add to any two Opponent /facing aSea Zone adjacent to that Node. Targeted players must roll Rebel Dicefor affected Areas,and may placea in an Area adjacent tothe sameSea Zone."
+        "text": "Take a free Trade Action targeting a Maritime Trade Node.Onlyyou collect income from this Action. Then,place a Pirate in this Trade Node,and add to any two Opponent /facing aSea Zone adjacent to that Node. Targeted players must roll Rebel Dicefor affected Areas,and may place a in an Area adjacent to the sameSea Zone."
     },
     {
         "id": "251B",
@@ -2248,11 +2248,11 @@
         "content": [
             "Region (Mediterranean and Italy)"
         ],
-        "text": "Addto 3 owned by Christian Realms,adjacent toSea Zones marked with a.Targeted players gain a ALGIERS or TUNISIA.Place a Pirate in the Genoa or Adriatic Sea If your Realm is Muslim,you may pay 1X，1，and6to gain 2 in either ALGIERS or TUNISIA,gain onall NPR Provinces there,and Appoint Hay reddin asan Admiral. Hay reddin"
+        "text": "Addto 3 owned by Christian Realms,adjacent to Sea Zones marked with a.Targeted players gain a ALGIERS or TUNISIA.Place a Pirate in the Genoa or Adriatic Sea If your Realm is Muslim,you may pay 1X，1，and 6 to gain 2 in either ALGIERS or TUNISIA,gain on all NPR Provinces there,and Appoint Hay reddin asan Admiral. Hay reddin"
     },
     {
         "id": "252B",
-        "name": "Smallpox Epidemic",
+        "name": "Small Townpox Epidemic",
         "type": "B-event",
         "age": 2,
         "half": "X",
@@ -2266,7 +2266,7 @@
         "content": [
             "Distant Continents"
         ],
-        "text": "Place anin an Area on the AMERICA map which is adjacent to a or and another in another Area adjacent to the token just placed. For every 2 on this Event,place an in a new Area adjacent to the previous token placed. Note:Distant Provinces with on them provide of their normal strength when calculating MC for NPR defense purposes."
+        "text": "Place an in an Area on the AMERICA map which is adjacent to a or and another in another Area adjacent to the token just placed. For every 2 on this Event,place an in a new Area adjacent to the previous token placed. Note:Distant Provinces with on them provide of their normal strength when calculating MC for NPR defense purposes."
     },
     {
         "id": "253B",
@@ -2284,7 +2284,7 @@
         "content": [
             "Distant Continents"
         ],
-        "text": "A)Conquistadors!:Pay 2X to place a and Declare War ona Distant Realm adjacent toone of your Recruit up to 4Unitsat/2 costin an Army in that 's Area and move theArmy to attack that Realm,if able The Distant Realm defends with 12 MC in the ensuing Battle.\n\nB)Rush of Colonists:If you have a Colonial gain 3h."
+        "text": "A)Conquistadors!:Pay 2X to place a and Declare War on a Distant Realm adjacent toone of your Recruit up to 4Unitsat/2 costin an Army in that 's Area and move theArmy to attack that Realm,if able The Distant Realm defends with 12 MC in the ensuing Battle.\n\nB)Rush of Colonists:If you have a Colonial gain 3h."
     },
     {
         "id": "254B",
@@ -2322,7 +2322,7 @@
         "content": [
             "HRE"
         ],
-        "text": "You gain 1X.Increase by 1. Select 1-2Areas adjacent by land to the Emperor'sRealm,where there are on Provinces which are not Core Provinces of their Owners. Ineach of those Areas,addXon 3such (if possible).Distribute among the chosen Areas,but maximum4 in one Area. If you are anH REmember Realm, Exhaust 2*,to gain"
+        "text": "You gain 1X.Increase by 1. Select 1-2Areas adjacent by land to the Emperor'sRealm,where there are on Provinces which are not Core Provinces of their Owners. Ineach of those Areas,add x on 3such (if possible).Distribute among the chosen Areas,but maximum4 in one Area. If you are anH REmember Realm, Exhaust 2*,to gain"
     },
     {
         "id": "256B",
@@ -2358,7 +2358,7 @@
             "Lost at Sea"
         ],
         "content": [],
-        "text": "A)Issue Letter of Marque:Pay 1X todraw 3 trade Cards,and selecta Maritime Trade Node on oneof these Activate an Opponent's Merchant in this Node and place aPirate there to collect the income from the top of the left column on thecard.\n\nB)Strike down on piracy:Pay 1X to move a Pirate from one Maritime Trade Node to another.Gain 1"
+        "text": "A)Issue Letter of Marque:Pay 1X todraw 3 trade Cards,and select a Maritime Trade Node on one of these Activate an Opponent's Merchant in this Node and place aPirate there to collect the income from the top of the left column on thecard.\n\nB)Strike down on piracy:Pay 1X to move a Pirate from one Maritime Trade Node to another.Gain 1"
     },
     {
         "id": "258B",
@@ -2394,7 +2394,7 @@
             "Disloyal Vassals"
         ],
         "content": [],
-        "text": "A)Forward,toglory!:Pay 1 and 4，to gain 1X，1，and 2 in an area adjacent to your Realm.\n\nB)Tragedy strikes atthe joust: Selecta Catholic PR witha Ruler who provides Battle Dice and add to their Ruler,orflip all on oneNPR's Capital to the side. You gain 1"
+        "text": "A)Forward,toglory!:Pay 1 and 4，to gain 1X，1，and 2 in an area adjacent to your Realm.\n\nB)Tragedy strikes atthe joust: Select a Catholic PR witha Ruler who provides Battle Dice and add to their Ruler,orflip all on oneNPR's Capital to the side. You gain 1"
     },
     {
         "id": "260B",
@@ -2412,7 +2412,7 @@
         "content": [
             "Distant Continents"
         ],
-        "text": "Place green on3 of Pernambuco Bahia,Gold Coast,Angola,Kilwa, Hormuz,andGoa.\n\nA)Spice trade disrupted:Placea Pirate in both the Indian Ocean and the Alexandria.Exhaust all Merchants in oneof these nodes.\n\nB)Colonial rivalry:AddXto 2 adjacent tothe that were placed."
+        "text": "Place green on3 of Pernambuco Bahia,Gold Coast,Angola,Kilwa, Hormuz,andGoa.\n\nA)Spice trade disrupted:Place a Pirate in both the Indian Ocean and the Alexandria.Exhaust all Merchants in one of these nodes.\n\nB)Colonial rivalry:Add xto 2 adjacent to the that were placed."
     },
     {
         "id": "261B",
@@ -2430,7 +2430,7 @@
         "content": [
             "Kumbaya (good for everyone)"
         ],
-        "text": "All players witha ora Ship on a Distant Continent may develop a Small into a Large,for free.\n\nA)Growth of cities:You may devel- opan additional coastal,Small into a Large forfree.\n\nB)Growth of commerce:You gain 6，and may Expand a Maritime Trade Node,for free."
+        "text": "All players witha ora Ship on a Distant Continent may develop a Small Town into a Large Town,for free.\n\nA)Growth of cities:You may devel- opan additional coastal,Small Town into a Large Town for free.\n\nB)Growth of commerce:You gain 6，and may Expand a Maritime Trade Node,for free."
     },
     {
         "id": "262B",
@@ -2467,7 +2467,7 @@
         "content": [
             "Region (East)"
         ],
-        "text": "Youlose 1 andgain 1X\n\nA)The Sacking of Moscow:Place 4，and add 2X，to inMOs- COW&RYAZAN.\n\nB)Raid on Ruthenia:Place 4 and add 2X，in WESTERN UKRAINE oran adjacent non-Muslim Area"
+        "text": "Youlose 1 and gain 1X\n\nA)The Sacking of Moscow:Place 4，and add 2X，to inMOs- COW&RYAZAN.\n\nB)Raid on Ruthenia:Place 4 and add 2X，in WESTERN UKRAINE oran adjacent non-Muslim Area"
     },
     {
         "id": "264B",
@@ -2525,7 +2525,7 @@
         "content": [
             "Region (Mediterranean and Italy)"
         ],
-        "text": "A)Expand the shipyards:You may Recruit up to8Galleys at/2 cost.\n\nB)Engage the enemy:Perform a free Naval Activation or Declare War Action.If any Naval Battle is triggered, P RAllies on both sides can move Ships inrange tojoin,and you may,if you have 1+and 1+Galleys,Appoint Andrea as an Admiral forfree. Andrea(LOMBARDY)"
+        "text": "A)Expand the shipyards:You may Recruit up to8Galleys at/2 cost.\n\nB)Engage the enemy:Perform a free Naval Activation or Declare War Action.If any Naval Battle is triggered, P RAllies on both sides can move Ships inrange tojoin,and you may,if you have 1+and 1+Galleys,Appoint Andrea as an Admiral for free. Andrea(LOMBARDY)"
     },
     {
         "id": "267B",
@@ -2567,7 +2567,7 @@
         "content": [
             "HRE"
         ],
-        "text": "ChoOse 1-3 ofC.ITALY,LOMBARDY and SwITZERLAND to leave theH RE (place ）.Reduce by 1.\n\nA)Take advantage:Gain a inone of the Areas that just left theH RE and an with one of theN PRs there.\n\nB)Support the Emperor:Gain an withthe Emperor and 2 in HRE Areas."
+        "text": "ChoOse 1-3 ofC.ITALY,LOMBARDY and SwITZERLAND to leave theH RE (place ）.Reduce by 1.\n\nA)Take advantage:Gain a in one of the Areas that just left theH RE and an with one of theN PRs there.\n\nB)Support the Emperor:Gain an withthe Emperor and 2 in HRE Areas."
     },
     {
         "id": "269B",
@@ -2603,7 +2603,7 @@
         "content": [
             "Region (West)"
         ],
-        "text": "Castile and Austria enter into a and an with each other,and may each place 4 in their new Ally s Areas,orin HRE Areas.You gain 2X\n\nA)Bow tothe Emperor:You gain an with the Emperor.Increase by 1\n\nB)Support the Valois:You gain an with France,and may take a free Influence Action,placing2*"
+        "text": "Castile and Austria enter into a and an with each other,and may each place 4 in their new Ally s Areas,orin HRE Areas.You gain 2X\n\nA)Bow to the Emperor:You gain an with the Emperor.Increase by 1\n\nB)Support the Valois:You gain an with France,and may take a free Influence Action,placing2*"
     },
     {
         "id": "271B",
@@ -2624,7 +2624,7 @@
             "DNPR-creation",
             "Region (Central and Balkan)"
         ],
-        "text": "Place O-5blue on Hun yad,Torda Ti rgovi ste,Buzau,Suceava,or Basara- bia.PRs adjacent to the new DNPR each gain a in oneof its Areas\n\nA)Install a puppet voivode:Gain 2 andon2listed Provinces in an area adjacent to your Realm.\n\nB)Cossack and Tatar raids:Add 2 in or adjacent to MOLDAVIA."
+        "text": "Place O-5blue on Hun yad,Torda Ti rgovi ste,Buzau,Suceava,or Basara- bia.PRs adjacent to the new DNPR each gain a in one of its Areas\n\nA)Install a puppet voivode:Gain 2 andon2listed Provinces in an area adjacent to your Realm.\n\nB)Cossack and Tatar raids:Add 2 in or adjacent to MOLDAVIA."
     },
     {
         "id": "272B",
@@ -2661,7 +2661,7 @@
             "Character (Mercenary Leader)"
         ],
         "content": [],
-        "text": "A)Let Gonzaga govern:Take a free Declare War Action,orpay 3X to Research a Military Idea on display\n\nB)Grab the spoils of war:Pay 1X to Appoint Ferrante asa General, andgain a freeLand Activation.If you Siege any Provinces this Turn,add an in that Area and lose 1，but gain 1Xand 10 Ferrante(LoMBARDY)"
+        "text": "A)Let Gonzaga govern:Take a free Declare War Action,or pay 3X to Research a Military Idea on display\n\nB)Grab the spoils of war:Pay 1X to Appoint Ferrante asa General, and gain a freeLand Activation.If you Siege any Provinces this Turn,add an in that Area and lose 1，but gain 1Xand 10 Ferrante(LoMBARDY)"
     },
     {
         "id": "274B",
@@ -2717,7 +2717,7 @@
             "HRE",
             "Religion"
         ],
-        "text": "A)Cuius regio,eius religio:Pick an HRE Area with your and either change its Religion to match your State Religion or remove a from it.\n\nB)It's complicated:Place a Diverse Faiths token andgain ain an HRE Area adjacent to your Realm.You, and any PRs adjacent to this Are again IXeach."
+        "text": "A)Cuius regio,eius religio:Pick an HRE Area with your and either change its Religion to match your State Religion or remove a from it.\n\nB)It's complicated:Place a Diverse Faiths token and gain ain an HRE Area adjacent to your Realm.You, and any PRs adjacent to this Are again IXeach."
     },
     {
         "id": "201-1",
@@ -2768,7 +2768,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Expand the Habsburg dynasty: Austria gains aand an with 1 of Castile,Burgundy,or Bohemia and 4 in their new Ally's Areas or in HRE Areas.Increase by 1.PRs not Allied to Austria gain 1Xeach.\n\nB)Dynastic dispute:Austria rejects Karl Vand must flip oneof their to but gains 2X.Lowerby 1 KarlV"
+        "text": "A)Expand the Habsburg dynasty: Austria gains aand an with 1 of Castile,Burgundy,or Bohemia and 4 in their new Ally's Areas or in HRE Areas.Increase by 1.PRs not Allied to Austria gain 1Xeach.\n\nB)Dynastic dispute:Austria rejects Karl Vand must flip one of their to but gains 2X.Lowerby 1 KarlV"
     },
     {
         "id": "202-1",
@@ -2785,7 +2785,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Increase tension:Castile gains 2X,and in each of these Areas with French /:LOMBARDY, C.ITALY,VENETIA,NAPLES,SICILY. France gets in the above Areas with Castilian /.You gain 1 military power\n\nB)Ease tensions:Castile loses but gains 2 in oneof the Areas above.You gain 1 CarlosI(V)"
+        "text": "A)Increase tension:Castile gains 2X,and in each of these Areas with French /:LOMBARDY, C.ITALY,VENETIA,NAPLES,SICILY. France gets in the above Areas with Castilian /.You gain 1 military power\n\nB)Ease tensions:Castile loses but gains 2 in one of the Areas above.You gain 1 CarlosI(V)"
     },
     {
         "id": "202-2",
@@ -2819,7 +2819,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Marriage of Philip to Mary: Castile enters a with England You gain 2 or2X\n\nB)Support the Catholic cause:If England is Protestant,Castile may pay 2 to adopt Counter-Reformed as their State Religion and adda and 1 x in EAST ANGLIA.England,if Catholic,enters an with Castile CarlosI(V)"
+        "text": "A)Marriage of Philip to Mary: Castile enters a with England You gain 2 or 2 X\n\nB)Support the Catholic cause:If England is Protestant,Castile may pay 2 to adopt Counter-Reformed as their State Religion and add a and 1 x in EAST ANGLIA.England,if Catholic,enters an with Castile CarlosI(V)"
     },
     {
         "id": "203-1",
@@ -2852,7 +2852,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Add 1 and 2 in NORTH UMBRIA.England may pay 1 to develop a Small into a Large\n\nA)Found London Stock Exchange: England gains 1 and P equal to their number of deployed Light Ships.\n\nB)Reinforce the navy:England may build up to 3 ships at 2 cost. Elizabeth I"
+        "text": "Add 1 and 2 in NORTH UMBRIA.England may pay 1 to develop a Small Town into a Large Town\n\nA)Found London Stock Exchange: England gains 1 and P equal to their number of deployed Light Ships.\n\nB)Reinforce the navy:England may build up to 3 ships at 2 cost. Elizabeth I"
     },
     {
         "id": "203-3",
@@ -2903,7 +2903,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Adda Protestant token,3X，and in any French Area.France loses 1.Placea on Paris.\n\nA)Edict of Nantes:France may pay 3 to Research the“Tolerance”Idea.\n\nB)Huguenots massacred:France loses another1，and must Exhaust 2.You gain 1 military power HenriIV"
+        "text": "Add a Protestant token,3X，and in any French Area.France loses 1.Place a on Paris.\n\nA)Edict of Nantes:France may pay 3 to Research the“Tolerance”Idea.\n\nB)Huguenots massacred:France loses another1，and must Exhaust 2.You gain 1 military power HenriIV"
     },
     {
         "id": "205-1",
@@ -2920,7 +2920,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Muscovy loses 1 and may Appoint any Advisor from the Diplomatic discard pile at no cost.\n\nA)Banish the boyars:Muscovy gains 1，1，and 2X\n\nB)Sack of Novgorod:Novgorod,if Owned by Muscovy,is reduced to a Small You gain 1 military power IvanIV"
+        "text": "Muscovy loses 1 and may Appoint any Advisor from the Diplomatic discard pile at no cost.\n\nA)Banish the boyars:Muscovy gains 1，1，and 2X\n\nB)Sack of Novgorod:Novgorod,if Owned by Muscovy,is reduced to a Small Town You gain 1 military power IvanIV"
     },
     {
         "id": "205-2",
@@ -2954,7 +2954,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)The Great Legal Reform: Ottomans gain and 2，and may remove 2X.You gain 1\n\nB)Commander of the Faithful: Ottomans gain 1X and a in Hejaz,IRAQ Or HUNGARIAN PLAIN, and must Declare War ona Realm which this is valid for(remove any Truce/if needed）.You gain 2X S uley manI"
+        "text": "A)The Great Legal Reform: Ottomans gain and 2，and may remove 2X.You gain 1\n\nB)Commander of the Faithful: Ottomans gain 1X and a in Hejaz,IRAQ Or HUNGARIAN PLAIN, and must Declare War on a Realm which this is valid for(remove any Truce/if needed）.You gain 2X S uley manI"
     },
     {
         "id": "206-2",
@@ -2971,7 +2971,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Pay troops now:Ottomans must Kue oX ppe in a Hostile Area where they have Ottoman Units,or pay P equal to 2 their Tax Income if unable to.They gain 1X if they have the\"Tercios/Janissaries\"Idea.\n\nB)Refuse their demands:IfOtto mans have the“Tercios/Janissaries Idea,they lose 1.You gain 1 MuradII"
+        "text": "A)Pay troops now:Ottomans must add unrest in a Hostile Area where they have Ottoman Units, or pay P equal to 2 their Tax Income if unable to.They gain 1X if they have the\"Tercios/Janissaries\"Idea.\n\nB)Refuse their demands:If Ottomans have the“Tercios/Janissaries Idea,they lose 1. You gain 1 MuradII"
     },
     {
         "id": "207-1",
@@ -2988,7 +2988,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Poland inherits Mazovia:Any Polish Small on Warszawa develops into a Large.If there is a Polish here,it becomes a Polish Small You gain 1\n\nB)Mazovia n independence:Replace any Polish /on Warszawa with a Polish Truce token instead.Poland gains a in theArea.You gain 1 Zy gm untI I August"
+        "text": "A)Poland inherits Mazovia:Any Polish Small Town on Warszawa develops into a Large Town.If there is a Polish here,it becomes a Polish Small Town You gain 1\n\nB)Mazovia n independence:Replace any Polish /on Warszawa with a Polish Truce token instead.Poland gains a in theArea.You gain 1 Zy gm untI I August"
     },
     {
         "id": "207-2",
@@ -3005,7 +3005,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Invalidate the agreement: Poland gains 2 of their choice but loses 2.Add 3X to Polish /.You gain 1 military power.\n\nB)Succumb tothe Sejm:Poland loses 2 and 10,and must Ex- haust6.Poland may remove 1X You gain 1 Zy gm untI Il"
+        "text": "A)Invalidate the agreement: Poland gains 2 of their choice but loses 2.Add 3X to Polish /.You gain 1 military power.\n\nB)Succumb to the Sejm:Poland loses 2 and 10,and must Ex- haust6.Poland may remove 1X You gain 1 Zy gm untI Il"
     },
     {
         "id": "208-1",
@@ -3039,7 +3039,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Strengthen Dutch ties:Expand the North Sea Denmark gains and 2 in NETHERLANDS. You gain 2\n\nB)Build domestic trade network: Denmark gains a Light Ship,and may develop a Small into a Large in JUTLAND or VEST LANDET. You gain 1. Frederik II"
+        "text": "A)Strengthen Dutch ties:Expand the North Sea Denmark gains and 2 in NETHERLANDS. You gain 2\n\nB)Build domestic trade network: Denmark gains a Light Ship,and may develop a Small Town into a Large Town in JUTLAND or VEST LANDET. You gain 1. Frederik II"
     },
     {
         "id": "209-1",
@@ -3056,7 +3056,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Reform:SVEALAND becomes Protestant.Sweden adopts Protestantism, gains P equal to Base Tax x2,and may pay 1 and 1 X to develop a Small into a Large andgain.Sweden must discard 3 from Catholic Areas.You gain 1 military power\n\nB)Let things be:Sweden loses but gains 1.You gain 1 GustavI"
+        "text": "A)Reform:SVEALAND becomes Protestant.Sweden adopts Protestantism, gains P equal to Base Tax x2,and may pay 1 and 1 X to develop a Small Town into a Large Town and gain.Sweden must discard 3 from Catholic Areas.You gain 1 military power\n\nB)Let things be:Sweden loses but gains 1.You gain 1 GustavI"
     },
     {
         "id": "209-2",
@@ -3089,7 +3089,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Disrupt Muslim trade:If Portugal has a Ship on the INDIA&ARABIA map, they may remove aPirate or an Opponent Ship from there,and take a free Trade Action.\n\nB)Ally witha local prince:Portugal may gain a free with any Distant Realm adjacent to one of their Ships. You gain 1 JoaoIIl"
+        "text": "A)Disrupt Muslim trade:If Portugal has a Ship on the INDIA&ARABIA map, they may remove aPirate or an Opponent Ship from there, and take a free Trade Action.\n\nB)Ally witha local prince:Portugal may gain a free with any Distant Realm adjacent to one of their Ships. You gain 1 JoaoIIl"
     },
     {
         "id": "210-2",
@@ -3106,7 +3106,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Crusade l:Place the Crusade token in a Moroccan Area.Ottomans may Ally with Morocco.Portugal may the neither lose 1,or Declare War on Morocco and tag the Committed to Crusades lotto gain 1，2,1X and 2 Mercenary Infantry Units.\n\nB)Trade ventures:Portugal loses and gains a free Trade Action. Sebasti aoI"
+        "text": "A)Crusade l:Place the Crusade token in a Moroccan Area. Ottomans may Ally with Morocco. Portugal may the neither lose 1,or Declare War on Morocco and tag the Committed to Crusades lotto gain 1，2,1X and 2 Mercenary Infantry Units.\n\nB)Trade ventures:Portugal loses and gains a free Trade Action. Sebasti aoI"
     },
     {
         "id": "211-1",
@@ -3123,7 +3123,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Egmont and Horn beheaded: Netherlands gains 2，2，2 and equal to their Base Tax,and must adopt Protestantism.NETHER- LANDs becomes Protestant.You may offer an to a Protestant Opponent, andgain 1Xif they accept.\n\nB)Attempt reconciliation:Nether- lands gains 1 and 3 WillemI"
+        "text": "A)Egmont and Horn beheaded: Netherlands gains 2，2，2 and equal to their Base Tax,and must adopt Protestantism.NETHER- LANDs becomes Protestant.You may offer an to a Protestant Opponent, and gain 1Xif they accept.\n\nB)Attempt reconciliation:Nether- lands gains 1 and 3 WillemI"
     },
     {
         "id": "211-2",
@@ -3140,7 +3140,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "All players must roll Rebel Dicefor their X in Protestant Areas. Netherlands gains 2X,and may pay 2 to gain onall`Dutch Core Provinces Owned by NPR s and place in NETHERLANDS and FLANDERS&WALLONIA. Netherlands may Recruit up to 8Mercenary Units at/2 cost. You gain 1 military power Maurits I"
+        "text": "All players must roll Rebel Dicefor their X in Protestant Areas. Netherlands gains 2X,and may pay 2 to gain on all`Dutch Core Provinces Owned by NPR s and place in NETHERLANDS and FLANDERS&WALLONIA. Netherlands may Recruit up to 8Mercenary Units at/2 cost. You gain 1 military power Maurits I"
     },
     {
         "id": "212-1",
@@ -3206,7 +3206,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Hohenzollern succession:Bran- d enburg gains and with 2  NPRs,either in adjacent Areas,orin HRE Areas where they have 3+ Thenyou must fip a lion oneof these NPR sto their side.\n\nB)Prussia is Polish:Brandenburg may offer an to Poland.If they accept,both parties gain 1X Johann GeorgI"
+        "text": "A)Hohenzollern succession:Bran- d enburg gains and with 2  NPRs,either in adjacent Areas,orin HRE Areas where they have 3+ Thenyou must fip a lion one of these NPR sto their side.\n\nB)Prussia is Polish:Brandenburg may offer an to Poland.If they accept,both parties gain 1X Johann GeorgI"
     },
     {
         "id": "214-1",
@@ -3239,7 +3239,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Outfit Muslim corsairs:Venice may pay 6 to place 2 Pirates, in total, in the Sevilla or the Indian Ocean ，and subsequently take a free Trade Action.You gain 1 military power\n\nB)Invest in our routes:Expand the Adriatic Sea or the Alexandria forfree.You gain 1 Pasquale"
+        "text": "A)Outfit Muslim corsairs:Venice may pay 6 to place 2 Pirates, in total, in the Sevilla or the Indian Ocean ，and subsequently take a free Trade Action.You gain 1 military power\n\nB)Invest in our routes:Expand the Adriatic Sea or the Alexandria for free.You gain 1 Pasquale"
     },
     {
         "id": "215-1",
@@ -3306,7 +3306,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Caesar is Pontifex Maximus: Byzantium gains 3.They must add X toone of their ineach Area thathas their State Religion, andgain 5per X added.\n\nB)Respect Patriarch's authority: Byzantium loses 2），but gains 1 You gain 1 Konstantinos XII"
+        "text": "A)Caesar is Pontifex Maximus: Byzantium gains 3.They must add X toone of their ineach Area thathas their State Religion, and gain 5per X added.\n\nB)Respect Patriarch's authority: Byzantium loses 2），but gains 1 You gain 1 Konstantinos XII"
     },
     {
         "id": "217-1",
@@ -3341,7 +3341,7 @@
         "content": [
             "Religion"
         ],
-        "text": "A)What Jesus wanted:Ulm must adopt Protestantism.They lose 1 and 3·from Catholic Areas,and may either Research\"Shrewd Trade Practices\"forfree orgain d equal to BaseT a xx2（minimum8）\n\nB)Who?:Ulm may pay 2 and gain Xon2,to Research In guis it ion\"You gain 1 Horowitz Tico lens ic"
+        "text": "A)What Jesus wanted:Ulm must adopt Protestantism.They lose 1 and 3·from Catholic Areas,and may either Research\"Shrewd Trade Practices\"for free orgain d equal to BaseT a xx2（minimum8）\n\nB)Who?:Ulm may pay 2 and gain X on2,to Research In guis it ion\"You gain 1 Horowitz Tico lens ic"
     },
     {
         "id": "218-1",
@@ -3375,7 +3375,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Forma Holy League:Aragon gains an with 2 of Papal States, Venice,Florence,and Genoa,and among these Realms.Muslim PRs may each gain 1Xorpay 1 to place a in SiCILY oran adjacent Area with Aragonese\n\nB)Damned pirates!:Add aPirate to the Genoa.You gain 3 Galleys. Ferran"
+        "text": "A)Forma Holy League:Aragon gains an with 2 of Papal States, Venice,Florence,and Genoa,and among these Realms.Muslim PRs may each gain 1Xor pay 1 to place a in SiCILY oran adjacent Area with Aragonese\n\nB)Damned pirates!:Add aPirate to the Genoa.You gain 3 Galleys. Ferran"
     },
     {
         "id": "219-1",
@@ -3409,7 +3409,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Promote Jesuit values:Bavaria adopts Counter-Reformed as their State Religion and may place a Counter-Reformed token in oneof their Areas.They gain awith a Catholic H REmember.You gain 1 military power\n\nB)Eradicate witchcraft:Bavaria loses 1 and oneof their Advisors You gain 2. Wilhelm V"
+        "text": "A)Promote Jesuit values:Bavaria adopts Counter-Reformed as their State Religion and may place a Counter-Reformed token in one of their Areas.They gain awith a Catholic H REmember.You gain 1 military power\n\nB)Eradicate witchcraft:Bavaria loses 1 and one of their Advisors You gain 2. Wilhelm V"
     },
     {
         "id": "220-1",
@@ -3476,7 +3476,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)There isonly one Church!:Add a Counter-Ref.or a Protestant token 2，and 4 in a Burgundian Area. Burgundy gains 1X.You gain 1 military power\n\nB)Seek peace:Burgundy gains aTruce with an adjacent PRat Peace,and may pay 3 to:Research“Tolerance remove 1X,and move their Capital to any Core Province that they Own. Albert"
+        "text": "A)There isonly one Church!:Add a Counter-Ref.or a Protestant token 2，and 4 in a Burgundian Area. Burgundy gains 1X.You gain 1 military power\n\nB)Seek peace:Burgundy gains a truce with an adjacent PRat Peace,and may pay 3 to:Research“Tolerance remove 1X,and move their Capital to any Core Province that they Own. Albert"
     },
     {
         "id": "222-1",
@@ -3543,7 +3543,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Join the Turks:Great Horde must offer an to Ottomans,and gains a in an Area adjacent to both Realms.Both parties gain 1X if the is accepted.You gain 1X\n\nB)Back tothe roots:Great Horde picks 2 Distant Areas adjacent to their Realm,then gains a oran with an NPR,in each.You gain 1 GhaziII"
+        "text": "A)Join the Turks:Great Horde must offer an to Ottomans,and gains a in an Area adjacent to both Realms.Both parties gain 1X if the is accepted.You gain 1X\n\nB)Back to the roots:Great Horde picks 2 Distant Areas adjacent to their Realm,then gains a oran with an NPR,in each.You gain 1 GhaziII"
     },
     {
         "id": "224-1",
@@ -3611,7 +3611,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Jesuit academy in Vilnius: You gain 2.The Owner of Vilnius may pay 3 to Research an Admin is trat ive Idea and place a Counter-Ref. token in or adjacent to LITHUANIA.\n\nB)Fund Great Hetman:The Owner of Edis anas may Appoint Step on as as a General forfree,then take a free Land Activation.You gain 1 military power Steponas REDRUTH TRANSYIV."
+        "text": "A)Jesuit academy in Vilnius: You gain 2.The Owner of Vilnius may pay 3 to Research an Admin is trat ive Idea and place a Counter-Ref. token in or adjacent to LITHUANIA.\n\nB)Fund Great Hetman:The Owner of Edis anas may Appoint Step on as as a General for free,then take a free Land Activation.You gain 1 military power Steponas REDRUTH TRANSYIV."
     },
     {
         "id": "226-1",
@@ -3646,7 +3646,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)A suitable Viceroy:Milan must offer an and a to an adjacent PR.If accepted,Milan gains 1 but loses all their .You may develop a Small into a Large \n\nB)In the service of our lord:Pay 1X to Appoint Carlo as your General or Admiral,and immediately take a free Activate Units Action. CarlO(CENTRALITAIY)"
+        "text": "A)A suitable Viceroy:Milan must offer an and a to an adjacent PR.If accepted,Milan gains 1 but loses all their .You may develop a Small Town into a Large Town \n\nB)In the service of our lord:Pay 1X to Appoint Carlo as your General or Admiral,and immediately take a free Activate Units Action. CarlO(CENTRALITAIY)"
     },
     {
         "id": "227-1",
@@ -3680,7 +3680,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Sudanese Expedition:Morocco may gain a in an Area adjacent to them,on the AFRICA map,ran with Timbuktu,Mali,or Songhai. You gain 1 X or 2\n\nB)The South blossoms:Morocco may develop Marrakech, Sus, or Tafilalt into a Large or perform a free Trade Action.You gain 1 "
+        "text": "A)Sudanese Expedition:Morocco may gain a in an Area adjacent to them,on the AFRICA map,ran with Timbuktu,Mali,or Songhai. You gain 1 X or 2\n\nB)The South blossoms:Morocco may develop Marrakech, Sus, or Tafilalt into a Large Town or perform a free Trade Action.You gain 1 "
     },
     {
         "id": "228-1",
@@ -3713,7 +3713,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)North Sea connections:Norway may develop a Small into a Large and either gain a with Scot- landor Expand the North Sea You may take a free Trade Action.\n\nB)Reestablish Greenland settlement: You gain 1.Norway may take a free Explore Action or pay 3 to Research\"Mercantilism\" Christina"
+        "text": "A)North Sea connections:Norway may develop a Small Town into a Large Town and either gain a with Scot- landor Expand the North Sea You may take a free Trade Action.\n\nB)Reestablish Greenland settlement: You gain 1.Norway may take a free Explore Action or pay 3 to Research\"Mercantilism\" Christina"
     },
     {
         "id": "229-1",
@@ -3747,7 +3747,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Form Russia:If Novgorod Owns all Provinces in MOsCOw&RYAZAN they gain 3X and may reject Pimen to play on as Muscovy/Russia.\n\nB)Massacre of Novgorod:Reduce Novgorod to a Small .Novgorod loses 2，gains an with Lithuania and,if they Own all Provinces in LITH- UANIA,may play on as Lithuania. Pimen"
+        "text": "A)Form Russia:If Novgorod Owns all Provinces in MOsCOw&RYAZAN they gain 3X and may reject Pimen to play on as Muscovy/Russia.\n\nB)Massacre of Novgorod:Reduce Novgorod to a Small Town .Novgorod loses 2，gains an with Lithuania and,if they Own all Provinces in LITH- UANIA,may play on as Lithuania. Pimen"
     },
     {
         "id": "230-1",
@@ -3781,7 +3781,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Enact G hil man Reform:Persia may either gain a in oneof their Distant Areas or pay 3X to Research Te rcio sf Janis s aries You gain 1\n\nB)Hire the Shirley brothers:Persia may pay 3 X to Research“Cannons or pay 1 X to pick a Military Display Card from the discards and play it at no further cost.You gain 1 AbbasI"
+        "text": "A)Enact G hil man Reform:Persia may either gain a in one of their Distant Areas or pay 3X to Research Te rcio sf Janis s aries You gain 1\n\nB)Hire the Shirley brothers:Persia may pay 3 X to Research“Cannons or pay 1 X to pick a Military Display Card from the discards and play it at no further cost.You gain 1 AbbasI"
     },
     {
         "id": "231-1",
@@ -3799,7 +3799,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Secure autonomy:The Owner of Piemonte may develop it into a Large move their Capital there and/or remove any 1 in LOMBARDY.\n\nB)In foreign service:If at Peace with Savoy,Appoint Emanuele Ifor free as a General andgain an with Savoy.Then, Declare War on a Realm chosen bySavoy.Savoy gains 1X. Emanuele I(to MBAR DY"
+        "text": "A)Secure autonomy:The Owner of Piemonte may develop it into a Large Town move their Capital there and/or remove any 1 in LOMBARDY.\n\nB)In foreign service:If at Peace with Savoy,Appoint Emanuele Ifor free as a General and gain an with Savoy.Then, Declare War on a Realm chosen bySavoy.Savoy gains 1X. Emanuele I(to MBAR DY"
     },
     {
         "id": "231-2",
@@ -3833,7 +3833,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Saxony adopts Protestantism,places a in 1 of their Areas and gains 15\n\nA)Back the Emperor:Saxony gains an with the Emperor.Place 2 in SAxONY,anda ona Saxon\n\nB)The Schmalkaldic League:Saxony gains with 2 Protestant NPR s,and must Declare War on the Emperor. MoritzI"
+        "text": "Saxony adopts Protestantism,places a in 1 of their Areas and gains 15\n\nA)Back the Emperor:Saxony gains an with the Emperor.Place 2 in Saxony,and a on a Sax on\n\nB)The Schmalkaldic League:Saxony gains with 2 Protestant NPR s,and must Declare War on the Emperor. MoritzI"
     },
     {
         "id": "232-2",
@@ -3850,7 +3850,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Book of Concord or Calvinism Saxony may either place a Diverse Faiths token in SAxONY to Research “Tolerance”for free,orpay 2 to Research“Church Attendance Duty\"\n\nB)Grum bach Feud:Saxony loses 1 and gains 2X.You may remove 2 of your inHRE Areas to discard August from thegame andgain 1X. August"
+        "text": "A)Book of Concord or Calvinism Saxony may either place a Diverse Faiths token in Saxony to Research “Tolerance”for free,or pay 2 to Research“Church Attendance Duty\"\n\nB)Grum bach Feud:Saxony loses 1 and gains 2X.You may remove 2 of your inHRE Areas to discard August from thegame and gain 1X. August"
     },
     {
         "id": "233-1",
@@ -3919,7 +3919,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Der Deutsch meister:You gain a with Poland and an witha Realm adjacent to Poland,and 2 in that Realm.Flip allin Poland to their side,and take a free Declare War Action.Placea Counter-Reform token adjacent to WIELKOPOLSKA.\n\nB)Stay loyal:Teutonic Order gains an with Poland,1，and 1 Maximilian MAZ&MAL ROYALHUN"
+        "text": "A)Der Deutsch meister:You gain a with Poland and an witha Realm adjacent to Poland,and 2 in that Realm.Flip allin Poland to their side,and take a free Declare War Action.Place a Counter-Reform token adjacent to WIELKOPOLSKA.\n\nB)Stay loyal:Teutonic Order gains an with Poland,1，and 1 Maximilian MAZ&MAL ROYALHUN"
     },
     {
         "id": "235-1",
@@ -3993,7 +3993,7 @@
         "content": [
             "Kumbaya (good for everyone)"
         ],
-        "text": "All players with or Ships on2+ Distant Continents may either gain a third Merchant or develop a Small into aLarge forfree.\n\nA)Growth of cities:You may develop a coastal,Small into a Large forfree.\n\nB)Growth of commerce:Expand any Maritime Trade Node for free."
+        "text": "All players with or Ships on2+ Distant Continents may either gain a third Merchant or develop a Small Town into a Large Town for free.\n\nA)Growth of cities:You may develop a coastal,Small Town into a Large Town for free.\n\nB)Growth of commerce:Expand any Maritime Trade Node for free."
     },
     {
         "id": "31A-3",
@@ -4032,7 +4032,7 @@
             "Native Uprising"
         ],
         "content": [],
-        "text": "A)Issue Letter of Marque:Pay 1X todraw 3 trade Cards,and selecta Maritime Trade Node on oneof these. Activate an Opponent's Merchant in this Node and place a Pirate there to collect the income from the top of the column on thecard.\n\nB)Strike down on piracy:Pay 1X to move a Pirate from one Maritime Trade Node to another.Gain 1"
+        "text": "A)Issue Letter of Marque:Pay 1X todraw 3 trade Cards,and selecta Maritime Trade Node on one of these. Activate an Opponent's Merchant in this Node and place a Pirate there to collect the income from the top of the column on thecard.\n\nB)Strike down on piracy:Pay 1X to move a Pirate from one Maritime Trade Node to another.Gain 1"
     },
     {
         "id": "32A-2",
@@ -4050,7 +4050,7 @@
             "DNPR-Expansion (Orange)"
         ],
         "content": [],
-        "text": "Pick an independent Realm with 1+ on it and fip these tothe side.\n\nA)War of Succession:Take a free Declare War Action,targeting only that Realm.Gain 2X upon DoW if target is adjacent to your Realm.\n\nB)Support for local noble:Lose 2，andgain 4 in the chosen Realm ifit isan NPR."
+        "text": "Pick an independent Realm with 1+ on it and fip these to the side.\n\nA)War of Succession:Take a free Declare War Action,targeting only that Realm.Gain 2X upon DoW if target is adjacent to your Realm.\n\nB)Support for local noble:Lose 2，and gain 4 in the chosen Realm ifit isan NPR."
     },
     {
         "id": "32A-3",
@@ -4087,7 +4087,7 @@
             "Spread of Religion"
         ],
         "content": [],
-        "text": "Place anin an Area with your and another in an Area adjacent to it.For every 2 on this Event, placean in a new Area adjacent to the previous token placed. All players must remove V2 of their Unitsin these Areas as Casualties (roundup).Reducea Large in oneof these Areas to a Small Note:Provinces in Areas with provide Tax Income（round down)."
+        "text": "Place anin an Area with your and another in an Area adjacent to it.For every 2 on this Event, place an in a new Area adjacent to the previous token placed. All players must remove V2 of their Unitsin these Areas as Casualties (roundup).Reducea Large Town in one of these Areas to a Small Town Note:Provinces in Areas with provide Tax Income（round down)."
     },
     {
         "id": "33A-2",
@@ -4125,7 +4125,7 @@
         "content": [
             "Distant Continents"
         ],
-        "text": "Adda Pirate in each of N.America S.America6，and Indian Ocean\n\nA)Hunt these sea dogs down!:Take a free Naval Activation targeting a Sea Zone adjacent to a Trade Node with 1+Pirates,and attack the Pirates.\n\nB)Tax the loot:Add 3adjacent to a Trade Node with 1+Pirates.Gain 5 if you Own1+Ports adjacent to it"
+        "text": "Add a Pirate in each of N.America S.America6，and Indian Ocean\n\nA)Hunt these sea dogs down!:Take a free Naval Activation targeting a Sea Zone adjacent to a Trade Node with 1+Pirates,and attack the Pirates.\n\nB)Tax the loot:Add 3adjacent to a Trade Node with 1+Pirates.Gain 5 if you Own1+Ports adjacent to it"
     },
     {
         "id": "34A-1",
@@ -4261,7 +4261,7 @@
             "Region (Central and Balkan)",
             "Religion"
         ],
-        "text": "A)Defenestration of Prague:Adda Protestant token,3，andto all /in BOHEMIA.The Emperor gains a in a Protestant HRE Area, and may Appoint any General from the discards for free.You gain 1 military power， and an with an NPR in the HRE with the same faith asyou.\n\nB)Confirm religious freedom: The Emperor loses 2 and 1"
+        "text": "A)Defenestration of Prague:Add a Protestant token,3，andto all /in BOHEMIA.The Emperor gains a in a Protestant HRE Area, and may Appoint any General from the discards for free.You gain 1 military power， and an with an NPR in the HRE with the same faith asyou.\n\nB)Confirm religious freedom: The Emperor loses 2 and 1"
     },
     {
         "id": "354B",
@@ -4296,7 +4296,7 @@
             "Unrest/Rebellion"
         ],
         "content": [],
-        "text": "A)Myenemy'senemy...:You may take a General from an Army of any Opponent youare at War with then place him in oneof your own Armies,and immediately Activate this Army for free.You and the targeted Opponent both gain 1X\n\nB)Support rebellion:Asa Covert Action add 5and 2 toone Area with Opponent"
+        "text": "A)Myenemy'senemy...:You may take a General from an Army of any Opponent youare at War with then place him in one of your own Armies,and immediately Activate this Army for free.You and the targeted Opponent both gain 1X\n\nB)Support rebellion:Asa Covert Action add 5and 2 toone Area with Opponent"
     },
     {
         "id": "356B",
@@ -4332,7 +4332,7 @@
             "Lost at Sea"
         ],
         "content": [],
-        "text": "Take a free Trade Action targeting a Maritime Trade Node.Onlyyou collect income from this Action. Then,place a Pirate in this Trade Node,and addXto anytwo Opponent /facing aSea Zone adjacent to that Node. Targeted players must roll Rebel Dice for affected Areas,and may placea in an Area adjacent tothe sameSea Zone."
+        "text": "Take a free Trade Action targeting a Maritime Trade Node.Onlyyou collect income from this Action. Then,place a Pirate in this Trade Node,and add xto anytwo Opponent /facing aSea Zone adjacent to that Node. Targeted players must roll Rebel Dice for affected Areas,and may place a in an Area adjacent to the sameSea Zone."
     },
     {
         "id": "358B",
@@ -4349,7 +4349,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Succumb tothe pretender:Re- quires5+or5+in your Realm. Remove ofall or Xin your Realm,andgain Oliver as Ruler.Lose 2，Exhaust 2，gain 2X，and draw 2 Military Cards.\n\nB)Rebels onthe move:Moveall in anyone Area to any Area adjacent byland.You gain 1 military power Oliver"
+        "text": "A)Succumb to the pretender:Re- quires5+or5+in your Realm. Remove ofall or Xin your Realm,and gain Oliver as Ruler.Lose 2，Exhaust 2，gain 2X，and draw 2 Military Cards.\n\nB)Rebels onthe move:Moveall in anyone Area to any Area adjacent byland.You gain 1 military power Oliver"
     },
     {
         "id": "359B",
@@ -4417,7 +4417,7 @@
             "Pirates"
         ],
         "content": [],
-        "text": "A)We will not tolerate insults:Pick an Opponent-if possible,oneyou are Allied to.Cancel any between you (atno cost).They lose ③,gain 1X,and must place aCB token on your Capital.You gain (2 and 1x\n\nB)Dont trust the ml Remove all from1Area,thenadd 2 of your own there.Affected Opponents must placea CB token on your Capital."
+        "text": "A)We will not tolerate insults:Pick an Opponent-if possible,oneyou are Allied to.Cancel any between you (atno cost).They lose ③,gain 1X,and must place aCB token on your Capital.You gain (2 and 1x\n\nB)Dont trust the ml Remove all from1Area,thenadd 2 of your own there.Affected Opponents must place a CB token on your Capital."
     },
     {
         "id": "363B",
@@ -4455,7 +4455,7 @@
         "content": [
             "Region (East)"
         ],
-        "text": "Youlose 1 or1X\n\nA)Military ambitions:Add 3 and9inan Area adjacent by land to either KARELIA,MOSCOW& RYAZAN,OIASTRAKHAN.\n\nB)Diplomatic potency:Remove all and from one Area adjacent tothe BALTIC SEA,and one Area adjacent tothe BLACK SEA."
+        "text": "Youlose 1 or1X\n\nA)Military ambitions:Add 3 and9inan Area adjacent by land to either KARELIA,MOSCOW& RYAZAN,OIASTRAKHAN.\n\nB)Diplomatic potency:Remove all and from one Area adjacent to the BALTIC SEA,and one Area adjacent to the BLACK SEA."
     },
     {
         "id": "365B",
@@ -4474,7 +4474,7 @@
         "content": [
             "Distant Continents"
         ],
-        "text": "A)Sympathy with the natives:All PRs with Distant gain 2Xin their Core Provinces.You may pay 2 to Research“Tolerance”,orgain 2\n\nB)Support local resistance:ThePR with the highest Tax Income(vour choice iftied)gains 3Xin their on non-Core Provinces. You may adda or2 inonc of the affected Areas."
+        "text": "A)Sympathy with the natives:All PRs with Distant gain 2Xin their Core Provinces.You may pay 2 to Research“Tolerance”,orgain 2\n\nB)Support local resistance:ThePR with the highest Tax Income(vour choice iftied)gains 3Xin their on non-Core Provinces. You may add a or2 inonc of the affected Areas."
     },
     {
         "id": "366B",
@@ -4608,7 +4608,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Convention of Milan:Oneof your Enemies must remove their from2 of your or your Allies de jure Provinces,then relocate their Units thereto their nearest Friendly Area.\n\nB)Eugene will lead our campaign: If you are not France,you may pay 1X to Appoint Eugene asa General and take aLand Activation. Eugene WESTPHALIA LOMBARDY."
+        "text": "A)Convention of Milan:One of your Enemies must remove their from2 of your or your Allies de jure Provinces,then relocate their Units thereto their nearest Friendly Area.\n\nB)Eugene will lead our campaign: If you are not France,you may pay 1X to Appoint Eugene asa General and take aLand Activation. Eugene WESTPHALIA LOMBARDY."
     },
     {
         "id": "373B",
@@ -4649,7 +4649,7 @@
         "content": [
             "Region (North)"
         ],
-        "text": "A)Governor and defacto ruler: Develop Neva into a Large and takea free Recruit Action.\n\nB)March Across the Belts:You may Appoint Alexander asa General or Admiral for free,or take a freeLand Activation where you may move through the SKAGERRAK or GULF OF BOTHNIA like a Friendly LandArea Alexander(NovGoRoD)"
+        "text": "A)Governor and defacto ruler: Develop Neva into a Large Town and takea free Recruit Action.\n\nB)March Across the Belts:You may Appoint Alexander asa General or Admiral for free,or take a freeLand Activation where you may move through the SKAGERRAK or GULF OF BOTHNIA like a Friendly LandArea Alexander(NovGoRoD)"
     },
     {
         "id": "380B",
@@ -4705,7 +4705,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Austria,if Catholic,gains 2with Catholic NPR sin theH RE.\n\nA)Chastise Protestant Electors: The Emperor gains 1X for every Elector Area which is Protestant, and a in oneof these Areas.\n\nB)Edict of Restitution:Changea Protestant HRE Area to Catholic. Ferdinand II"
+        "text": "Austria,if Catholic,gains 2with Catholic NPR sin theH RE.\n\nA)Chastise Protestant Electors: The Emperor gains 1X for every Elector Area which is Protestant, and a in one of these Areas.\n\nB)Edict of Restitution:Changea Protestant HRE Area to Catholic. Ferdinand II"
     },
     {
         "id": "301-2",
@@ -4739,7 +4739,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Place in2HRE Areas with Occ u- pied Provinces and/or Units Hostile to 1+Realms in theArea.Reduce a Large to a Small in each of the Areas.\n\nA)Shield the Er bland e:Austria may remove 2 and 1 from their Realm\n\nB)Repair relations:Remove 1 from anH RE Area to gain 2 there. Ferdinand IIl"
+        "text": "Place in2HRE Areas with Occ u- pied Provinces and/or Units Hostile to 1+Realms in theArea.Reduce a Large Town to a Small Town in each of the Areas.\n\nA)Shield the Er bland e:Austria may remove 2 and 1 from their Realm\n\nB)Repair relations:Remove 1 from anH RE Area to gain 2 there. Ferdinand IIl"
     },
     {
         "id": "302-1",
@@ -4789,7 +4789,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Rule without Parliament: England scores must Exhaust 4，and gains 1 in each Area adjacent tothe North Sea.Dis- tribute 2 moreand7 among up to 2affected Areas.You gain 2X\n\nB)Yield to Parliament:England loses 2）,2，and 3X，and must Disband 4Units.You gain 1 Charles I"
+        "text": "A)Rule without Parliament: England scores must Exhaust 4，and gains 1 in each Area adjacent to the North Sea.Dis- tribute 2 moreand7 among up to 2affected Areas.You gain 2X\n\nB)Yield to Parliament:England loses 2）,2，and 3X，and must Disband 4Units.You gain 1 Charles I"
     },
     {
         "id": "303-2",
@@ -4806,7 +4806,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Invite a foreign monarch: England gains an with an NPR of matching faith.You gain 1 military power\n\nB)Support the Stuarts:England rejects William IIl,and mayA point a Ruler from their hand.England gainsan witha Catholic NPR and if Protestant loses 2.Add to 2English in Protestant Areas. William III"
+        "text": "A)Invite a foreign monarch: England gains an with an NPR of matching faith.You gain 1 military power\n\nB)Support the Stuarts:England rejects William IIl,and mayA point a Ruler from their hand.England gains an witha Catholic NPR and if Protestant loses 2.Add to 2English in Protestant Areas. William III"
     },
     {
         "id": "303-3",
@@ -4839,7 +4839,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Let Richelieu take command: AddXto 2 French and place ，in total,in affected Areas. France may draw an Action Card, and place a Counter-Reformed token in one of their Areas.You gain 1X.\n\nB)Leave Huguenots in peace: France loses and 1.You gain Louis XIII"
+        "text": "A)Let Richelieu take command: Add xto 2 French and place ，in total,in affected Areas. France may draw an Action Card, and place a Counter-Reformed token in one of their Areas.You gain 1X.\n\nB)Leave Huguenots in peace: France loses and 1.You gain Louis XIII"
     },
     {
         "id": "304-2",
@@ -4856,7 +4856,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Expel the traitors:France may change the Religion of oneof their Areas to match their State Religion, andgain 2）,by adding X to 1 in this Area,and Exhausting2.If they have the“Tolerance”Idea,they lose it.You gain 1 military power\n\nB)Have mercy:France loses 1 and(2).You gain 1 Louis XIV"
+        "text": "A)Expel the traitors:France may change the Religion of one of their Areas to match their State Religion, and gain 2）,by adding X to 1 in this Area,and Exhausting2.If they have the“Tolerance”Idea,they lose it.You gain 1 military power\n\nB)Have mercy:France loses 1 and(2).You gain 1 Louis XIV"
     },
     {
         "id": "305-1",
@@ -4924,7 +4924,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Kara Mustafa's ambition:Add 3X to Ottoman Ottomans may Declare War on an Opponent. If they do,they gain 2Xand may Refresh/2 of their Exhausted\n\nB)End the Dev shir me:Ottomans lose 1 but gain 1X.If they have it,they lose the“Tercios/Janissaries Idea andgain another Military Idea. Mehmed IV"
+        "text": "A)Kara Mustafa's ambition:Add 3X to Ottoman Ottomans may Declare War on an Opponent. If they do,they gain 2Xand may Refresh/2 of their Exhausted\n\nB)End the Dev shir me:Ottomans lose 1 but gain 1X.If they have it,they lose the“Tercios/Janissaries Idea and gain another Military Idea. Mehmed IV"
     },
     {
         "id": "307-1",
@@ -4958,7 +4958,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Sobieski an Army Reforms: Poland gains 2Xand 1，and may Refresh of Exhausted.You may placea adjacent to Poland.\n\nB)Limit the power of the Sejm: Poland loses 2，gains 1X，and may Research an Idea ata discount of4.Add to a Polish and 4 in that Area.You gain 1 JanIIlI"
+        "text": "A)Sobieski an Army Reforms: Poland gains 2Xand 1，and may Refresh of Exhausted.You may place a adjacent to Poland.\n\nB)Limit the power of the Sejm: Poland loses 2，gains 1X，and may Research an Idea ata discount of4.Add to a Polish and 4 in that Area.You gain 1 JanIIlI"
     },
     {
         "id": "308-1",
@@ -4975,7 +4975,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Furnish an expedition:Denmark may pay 1 to perform an Explore Action and thena Trade Action.You gain 1X.\n\nB)Focus domestically:Denmark may gain ain an Area where they Own all Provinces and/or develop a Small into a Large ononeof their Core Provinces.You gain 1 Christian IV"
+        "text": "A)Furnish an expedition:Denmark may pay 1 to perform an Explore Action and thena Trade Action.You gain 1X.\n\nB)Focus domestically:Denmark may gain ain an Area where they Own all Provinces and/or develop a Small Town into a Large Town onone of their Core Provinces.You gain 1 Christian IV"
     },
     {
         "id": "308-2",
@@ -4992,7 +4992,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Seize control of Rigsraad et: Denmark gains 3.They must either pay 10，or lose 1.Add X to a Danish\n\nB)Ulf el dt defects tothe enemy: Pick any PR adjacent to Denmark They will gain 2X，anda in a Danish Area.Denmark loses 1X You gain 1 Frederick III"
+        "text": "A)Seize control of Rigsraad et: Denmark gains 3.They must either pay 10，or lose 1.Add X to a Danish\n\nB)Ulf el dt defects to the enemy: Pick any PR adjacent to Denmark They will gain 2X，anda in a Danish Area.Denmark loses 1X You gain 1 Frederick III"
     },
     {
         "id": "309-1",
@@ -5009,7 +5009,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Regional conscription:Sweden may take a Military Reforms card from the discards and play it for free, with no loss,ordraw 2 Military Action Cards.You gain 2X\n\nB)Naval&mercantile reforms: Expand the Baltic Sea.Sweden gains a LightShip and a free Trade Action.You gain 1 Gustav II Adolf"
+        "text": "A)Regional conscription:Sweden may take a Military Reforms card from the discards and play it for free, with no loss,or draw 2 Military Action Cards.You gain 2X\n\nB)Naval&mercantile reforms: Expand the Baltic Sea.Sweden gains a LightShip and a free Trade Action.You gain 1 Gustav II Adolf"
     },
     {
         "id": "309-2",
@@ -5026,7 +5026,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Introduce Allotment System: Sweden may pay 2X to Research a Military Idea on display,and perma- nen t ly gain+1\n\nB)Perfected shock tactics:Sweden may Activate oneof its Armies for free,and if this Action results in a Battle,they mayroll3extra Battle Dice of their choice.You gain 2X Charles XII"
+        "text": "A)Introduce Allotment System: Sweden may pay 2X to Research a Military Idea on display,and perma- nen t ly gain+1\n\nB)Perfected shock tactics:Sweden may Activate one of its Armies for free,and if this Action results in a Battle,they mayroll3extra Battle Dice of their choice.You gain 2X Charles XII"
     },
     {
         "id": "310-1",
@@ -5126,7 +5126,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Strict ordinances:Papal States may pay 3 to gain equal to BaseT a xx2 and remove up to 2 from the Curia.You gain i\n\nB)Compulsory Mass attendance: Papal States gains 1,and loses 2 All Catholic PRs must pay 5 to Papal States,andgain 1 in each of their Areas with Religious Dissent. Innocentius XI"
+        "text": "A)Strict ordinances:Papal States may pay 3 to gain equal to BaseT a xx2 and remove up to 2 from the Curia.You gain i\n\nB)Compulsory Mass attendance: Papal States gains 1,and loses 2 All Catholic PRs must pay 5 to Papal States,and gain 1 in each of their Areas with Religious Dissent. Innocentius XI"
     },
     {
         "id": "313-1",
@@ -5143,7 +5143,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "If Brandenburg/Prussia has a or in PRUSSIA,they may offer d tobuy 1Province in PRUsSIA from aRealm they are at Peace with. An NPR will accept the offer.Any player rejecting this offer loses 1 and 1X.If accepted,Brandenburg/ Prussia gains and 1X,the parties enter aTruce,and the seller may gain an with Brandenburg/Prussia. Friedrich Wilh.I"
+        "text": "If Brandenburg/Prussia has a or in PRUSSIA,they may offer d tobuy 1Province in PRUsSIA from aRealm they are at Peace with. An NPR will accept the offer.Any player rejecting this offer loses 1 and 1X.If accepted,Brandenburg/ Prussia gains and 1X,the parties enter a truce,and the seller may gain an with Brandenburg/Prussia. Friedrich Wilh.I"
     },
     {
         "id": "313-2",
@@ -5160,7 +5160,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Welcome Protestant refugees: Br.burg/Prussia loses 1 and 3 permanently gains+2*，and may develop a Small into a Large If their State Religion is Protestant, they gain 1.If not,they gain 3\n\nB)We cannot afford this:Br.burg Prussia gains 2 and,if their State Religion is Protestant,they lose Friedrich I(III)"
+        "text": "A)Welcome Protestant refugees: Br.burg/Prussia loses 1 and 3 permanently gains+2*，and may develop a Small Town into a Large Town If their State Religion is Protestant, they gain 1.If not,they gain 3\n\nB)We cannot afford this:Br.burg Prussia gains 2 and,if their State Religion is Protestant,they lose Friedrich I(III)"
     },
     {
         "id": "314-1",
@@ -5210,7 +5210,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Circassian faction prevails: Mamluks gain 2,but must fire an Advisor.Add 2 to Mamluk In SYRIA.KARAMAN,Or KURDISTAN, and 3 inone affected Area.\n\nB)Kip chak faction seizes citadel: Mamluks lose 2，and gain Xin Qahirah.All other Muslim PRs may placea in a Mamluk Area. Ridwan al-Faqari"
+        "text": "A)Circassian faction prevails: Mamluks gain 2,but must fire an Advisor.Add 2 to Mamluk In SYRIA.KARAMAN,Or KURDISTAN, and 3 in one affected Area.\n\nB)Kip chak faction seizes citadel: Mamluks lose 2，and gain Xin Qahirah.All other Muslim PRs may place a in a Mamluk Area. Ridwan al-Faqari"
     },
     {
         "id": "315-2",
@@ -5244,7 +5244,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)For the Glory of God: Byzantium gains 1X,and In any two Muslim Areas adjacent to their Realm.They must immediately Declare War ona Muslim Realm.\n\nB)Placate the heathens:Byzantium loses 3）,but may take a free Trade Action.You gain 1 Andronikos VI"
+        "text": "A)For the Glory of God: Byzantium gains 1X,and In any two Muslim Areas adjacent to their Realm.They must immediately Declare War on a Muslim Realm.\n\nB)Placate the heathens:Byzantium loses 3）,but may take a free Trade Action.You gain 1 Andronikos VI"
     },
     {
         "id": "316-2",
@@ -5261,7 +5261,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Reducea Large adjacent to the AEGEAN SEAto a Small\n\nA)Rise tothe occasion:Byzantium mustpay P equal to their Base Tax. They may then discard an Advisor to gain 5of matching type.\n\nB)A Pretender arises:Add 2 and in MACEDONIA&THRACE. Helena"
+        "text": "Reducea Large Town adjacent to the AEGEAN SEAto a Small Town\n\nA)Rise to the occasion:Byzantium mustpay P equal to their Base Tax. They may then discard an Advisor to gain 5of matching type.\n\nB)A Pretender arises:Add 2 and in MACEDONIA&THRACE. Helena"
     },
     {
         "id": "317-1",
@@ -5366,7 +5366,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)b Arrange strategic marriages: Bavaria gains with 2 Realms with aBase Tax Income of8or higher, and 3among Areas of their new partners.Flip all in one of the chosen Realms to their side.\n\nB)Onthe battlefields of Europe: Pay Ito Appoint Maximilian Has your General.You gain 1X Maximilian II BAv&swA"
+        "text": "A)b Arrange strategic marriages: Bavaria gains with 2 Realms with aBase Tax Income of8or higher, and 3 among Areas of their new partners.Flip all in one of the chosen Realms to their side.\n\nB)Onthe battlefields of Europe: Pay Ito Appoint Maximilian Has your General.You gain 1X Maximilian II BAv&swA"
     },
     {
         "id": "320-1",
@@ -5383,7 +5383,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Oust the Habsburgs:Bohemia loses any with Austria,but gains an and a with another HRE Member.Flip on Praha tothe side.BOHEMIA turns Protestant,and Austria gains a there.You gain 2X\n\nB)Recognize Ferdinand Il:Bohemia rejects Fridrich I,gains 3 and an and a with Austria,and loses(2) Fridrich I"
+        "text": "A)Oust the Habsburgs:Bohemia loses any with Austria,but gains an and a with another HRE Member.Flip on Praha to the side.BOHEMIA turns Protestant,and Austria gains a there.You gain 2X\n\nB)Recognize Ferdinand Il:Bohemia rejects Fridrich I,gains 3 and an and a with Austria,and loses(2) Fridrich I"
     },
     {
         "id": "320-2",
@@ -5400,7 +5400,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Protestant nobility decimated: Bohemia adopts Counter-Reformed as their State Religion and may place a Counter-Reformed token inoneof their Areas.They lose 2，but gain an with Austria.You gain 1\n\nB)Fight on for autonomy:Bohemia rejects Leopold I and must Declare War on Austria.You gain 1 military power Leopold I"
+        "text": "A)Protestant nobility decimated: Bohemia adopts Counter-Reformed as their State Religion and may place a Counter-Reformed token in one of their Areas.They lose 2，but gain an with Austria.You gain 1\n\nB)Fight on for autonomy:Bohemia rejects Leopold I and must Declare War on Austria.You gain 1 military power Leopold I"
     },
     {
         "id": "321-1",
@@ -5434,7 +5434,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Picka side:Burgundy gains (orkeeps)an with France,Austria, Castile/Spain,or Aragon,and loses all withthe other3Realms.You gain 1X and an with Bavaria.\n\nB)Military Academy of Brussels: Appoint Maximilian as your General for free and gain 1X.Burgundy may pay 3X to Research a Military Idea. Maximilian（BAw&swas.)"
+        "text": "A)Picka side:Burgundy gains (or keeps)an with France,Austria, Castile/Spain,or Aragon,and loses all withthe other3Realms.You gain 1X and an with Bavaria.\n\nB)Military Academy of Brussels: Appoint Maximilian as your General for free and gain 1X.Burgundy may pay 3X to Research a Military Idea. Maximilian（BAw&swas.)"
     },
     {
         "id": "322-1",
@@ -5484,7 +5484,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Settle them by the Volga delta:The Owner of Astrakhan may develop it into a Large C.They gain 1X，1 and a inK hiva.You gain 1X\n\nB)Stop the Oi rat migration:Add 4andtoa in an Area adja cent to Tyumen.Great Horde places aCBon an NPR adjacent to this and rejects Kho Orluk.You gain 1X Kho Orluk"
+        "text": "A)Settle them by the Volga delta:The Owner of Astrakhan may develop it into a Large Town C.They gain 1X，1 and a inK hiva.You gain 1X\n\nB)Stop the Oi rat migration:Add 4andtoa in an Area adja cent to Tyumen.Great Horde places aCBon an NPR adjacent to this and rejects Kho Orluk.You gain 1X Kho Orluk"
     },
     {
         "id": "323-2",
@@ -5569,7 +5569,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Dominant families:You gain I and must replace each of Lithuania's Advisors with oneof the matching type from the top5discards（ifa matching replacement exists).\n\nB)Loss of control:Lithuania loses 1，gains 3，and must Exhaust 4*.You gain a in a Lithuanian Area adjacent to your Realm and 2X Mv kola sI"
+        "text": "A)Dominant families:You gain I and must replace each of Lithuania's Advisors with one of the matching type from the top5discards（ifa matching replacement exists).\n\nB)Loss of control:Lithuania loses 1，gains 3，and must Exhaust 4*.You gain a in a Lithuanian Area adjacent to your Realm and 2X Mv kola sI"
     },
     {
         "id": "327-1",
@@ -5586,7 +5586,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Ally withthe pirates:Morocco gains a free Trade Action,and may Activate a Merchant other than their ownin the chosen node(still using their own Trade Power).The Opponent gains a inN.MOROCCO.Placea Pirate in the Sevilla.You gain 1X\n\nB)Expel these scoundrels!:Morocco gains+1 and 1.You gain 1 Muhammad III"
+        "text": "A)Ally withthe pirates:Morocco gains a free Trade Action,and may Activate a Merchant other than their ownin the chosen node(still using their own Trade Power).The Opponent gains a inN.MOROCCO.Place a Pirate in the Sevilla.You gain 1X\n\nB)Expel these scoundrels!:Morocco gains+1 and 1.You gain 1 Muhammad III"
     },
     {
         "id": "327-2",
@@ -5603,7 +5603,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)End Christian occupation: Morocco gains a in an Area where both they and a Christian Realm have /，and must Declare War on a Realm in that Area.You gain 1X\n\nB)Reinin tribal power:Morocco may pay 1X to remove up to 3X orto gain ain an Area where they Own all Provinces.You gain 1 Isma'il"
+        "text": "A)End Christian occupation: Morocco gains a in an Area where both they and a Christian Realm have /，and must Declare War on a Realm in that Area.You gain 1X\n\nB)Reinin tribal power:Morocco may pay 1X to remove up to 3X or to gain ain an Area where they Own all Provinces.You gain 1 Isma'il"
     },
     {
         "id": "328-1",
@@ -5620,7 +5620,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Found Kongsberg Silver Works: Norway may pay 2 and 4 to: develop a Small into a Large Expand the North Sea,and Appoint any Administrative Advisor from the discards.You gain 1\n\nB)Sell licenses to private investors: Norway gains8.You may takea free Trade Action. Hannibal"
+        "text": "A)Found Kongsberg Silver Works: Norway may pay 2 and 4 to: develop a Small Town into a Large Town Expand the North Sea,and Appoint any Administrative Advisor from the discards.You gain 1\n\nB)Sell licenses to private investors: Norway gains8.You may takea free Trade Action. Hannibal"
     },
     {
         "id": "328-2",
@@ -5686,7 +5686,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Accept French military support: Savoy/Piedmont loses 3 from LOMBARDY orC.ITALY,lipsall on their Capital tothe side,and gains an with France.\n\nB)Massacre of the Waldensians: Savoy/Piedmont gains 1 and 2 and must reduce oneof their Large to a Small.You gain IX. Carlo Emanuele l"
+        "text": "A)Accept French military support: Savoy/Piedmont loses 3 from LOMBARDY orC.ITALY,lipsall on their Capital to the side,and gains an with France.\n\nB)Massacre of the Waldensians: Savoy/Piedmont gains 1 and 2 and must reduce one of their Large Town to a Small Town.You gain IX. Carlo Emanuele l"
     },
     {
         "id": "331-2",
@@ -5703,7 +5703,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Outof the shadow of...:Savoy Piedmont loses their with their Ally with the highest Base Tax,and gains a in oneof LOMBARDY SARDINIA&CORSICA,Or SICILY and an with another adjacent Realm.You gain 2X\n\nB)Cultural legacy:Savoy/Piedmont may pay 2 to Research any Idea. Vittorio Amedeo lI"
+        "text": "A)Outof the shadow of...:Savoy Piedmont loses their with their Ally with the highest Base Tax,and gains a in one of LOMBARDY SARDINIA&CORSICA,Or SICILY and an with another adjacent Realm.You gain 2X\n\nB)Cultural legacy:Savoy/Piedmont may pay 2 to Research any Idea. Vittorio Amedeo lI"
     },
     {
         "id": "332-1",
@@ -5720,11 +5720,11 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Back our fellow confession ists: Saxony gains an witha Realm of the same faith as them.and must Declare War onan H REMember of another faith.You gain 1X\n\nB)Empire ovcr faith:Saxony gains and an with the Em pcr or and must Declare War on aR calm of a different faith than the Emperor. Johann Georgl"
+        "text": "A)Back our fellow confession ists: Saxony gains an witha Realm of the same faith as them.and must Declare War on an H REMember of another faith.You gain 1X\n\nB)Empire ovcr faith:Saxony gains and an with the Em pcr or and must Declare War on aR calm of a different faith than the Emperor. Johann Georgl"
     },
     {
         "id": "332-2",
-        "name": "The Saxon Hercules",
+        "name": "The Sax on Hercules",
         "type": "Realm",
         "age": 3,
         "half": "2",
@@ -5737,7 +5737,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Pursue royal ambitions:Saxony gains an and a with Poland/ Polish-Lith.Commonwealth.You gain 3 inMAZ.&MALOPOLSKA,and may fip all there totheir side.\n\nB)Make Dresden a baroque center: Saxony may gain 2，orpay 4 to Research an Administrative Idea and draw 2Administrative Action Cards. Friedrich August l"
+        "text": "A)Pursue royal ambitions:Saxony gains an and a with Poland/ Polish-Lith.Commonwealth.You gain 3 inMAZ.&MALOPOLSKA,and may fip all there to their side.\n\nB)Make Dresden a baroque center: Saxony may gain 2，or pay 4 to Research an Administrative Idea and draw 2Administrative Action Cards. Friedrich August l"
     },
     {
         "id": "333-1",
@@ -5754,7 +5754,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Among IRELAND,SCOTLAND,and WALEs&W,add 5andgain 1 thenadd 2 in each of those with\n\nA)Support the English Parliament: Scotland rejects Charles I,but gains 1X.You gain 1 military power\n\nB)Join the English Royalists:Add or remove 2 in1Area listed above. Charles I"
+        "text": "Among IRELAND,SCOTLAND,and WALEs&W,add 5and gain 1 thenadd 2 in each of those with\n\nA)Support the English Parliament: Scotland rejects Charles I,but gains 1X.You gain 1 military power\n\nB)Join the English Royalists:Add or remove 2 in1Area listed above. Charles I"
     },
     {
         "id": "333-2",
@@ -5771,7 +5771,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)The episcopalian Kirk:Scotland gains 2 or3，and may adda Protestant token in one of their Areas but must discard an Advisor and loses all with Catholic Realms.\n\nB)A Catholic heir:Scotland loses 1 and gains 2X，and gains 2 in Catholic Areas,but may pay 2 to Research\"Tolerance\" Charles Il"
+        "text": "A)The episcopalian Kirk:Scotland gains 2 or3，and may add a Protestant token in one of their Areas but must discard an Advisor and loses all with Catholic Realms.\n\nB)A Catholic heir:Scotland loses 1 and gains 2X，and gains 2 in Catholic Areas,but may pay 2 to Research\"Tolerance\" Charles Il"
     },
     {
         "id": "334-1",
@@ -5789,7 +5789,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Build a navy:Teutonic Order gainsan with aRealm adjacent to PRUSSIA,and may Recruit up to 6Ships at/2 cost.You gain 1\n\nB)Tangled into Imperial conflicts: Teutonic Order gains an with an H REMember,and must Declare War on another H REMember or a Realm at War with the Emperor.You gain 1 military power JakOb ESTONIA&LIVONIA)"
+        "text": "A)Build a navy:Teutonic Order gains an with aRealm adjacent to PRUSSIA,and may Recruit up to 6Ships at/2 cost.You gain 1\n\nB)Tangled into Imperial conflicts: Teutonic Order gains an with an H REMember,and must Declare War on another H REMember or a Realm at War with the Emperor.You gain 1 military power JakOb ESTONIA&LIVONIA)"
     },
     {
         "id": "334-2",
@@ -5824,7 +5824,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)A Bey dynasty:Tunis may take afree Trade Action,where they gain 1per Pirate in the chosen node and ignore negative Pirate effects.You may develop a Small into a Large\n\nB)The Dey retains power:Tunis gains 1X and an with Ottomans. You may remove a Pirate or pay 1 to Appoint Murad Ias an Admiral. MuradI(TUNISIAAIGIERS)"
+        "text": "A)A Bey dynasty:Tunis may take afree Trade Action,where they gain 1per Pirate in the chosen node and ignore negative Pirate effects.You may develop a Small Town into a Large Town\n\nB)The Dey retains power:Tunis gains 1X and an with Ottomans. You may remove a Pirate or pay 1 to Appoint Murad Ias an Admiral. MuradI(TUNISIAAIGIERS)"
     },
     {
         "id": "335-2",
@@ -5841,7 +5841,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Everyone isan enemy:AddXto 5 tunisian outside of TUNISIA and place 2 in each affected Area You gain 1 military power and may pay 1 to gain a in an affected Area.\n\nB)Bowto the Turks:Tunis loses 2 and rejects Muhammad II,but gains an with Oto mans.Add 3 and place 5in TUNISIA. Muhammad II"
+        "text": "A)Everyone isan enemy:Add xto 5 tunisian outside of TUNISIA and place 2 in each affected Area You gain 1 military power and may pay 1 to gain a in an affected Area.\n\nB)Bowto the Turks:Tunis loses 2 and rejects Muhammad II,but gains an with Oto mans.Add 3 and place 5in TUNISIA. Muhammad II"
     },
     {
         "id": "41A-1",
@@ -5881,7 +5881,7 @@
             "Native Uprising"
         ],
         "content": [],
-        "text": "You may pay 3 to Research the “Industrial Revolution\"Idea and take a free Trade Action,provided that you meet at least 3 of these conditions: Own2+Large Ports on Main Map Own2+Distant Provinces Have the“Scientific Revolution\"Idea Own no Gold Provinces Otherwise,gain 2"
+        "text": "You may pay 3 to Research the “Industrial Revolution\"Idea and take a free Trade Action,provided that you meet at least 3 of these conditions: Own2+Large Town Ports on Main Map Own2+Distant Provinces Have the“Scientific Revolution\"Idea Own no Gold Provinces Otherwise,gain 2"
     },
     {
         "id": "41A-3",
@@ -5921,7 +5921,7 @@
             "Power Struggle"
         ],
         "content": [],
-        "text": "Pick an independent Realm with 1+ on it and fip these tothe side.\n\nA)War of Succession:Take a free Declare War Action,targeting only that Realm.Gain 2X upon DoW if target is adjacent to your Realm.\n\nB)Support for local noble:Lose 2，andgain 4 in the chosen Realm ifit isan NPR."
+        "text": "Pick an independent Realm with 1+ on it and fip these to the side.\n\nA)War of Succession:Take a free Declare War Action,targeting only that Realm.Gain 2X upon DoW if target is adjacent to your Realm.\n\nB)Support for local noble:Lose 2，and gain 4 in the chosen Realm ifit isan NPR."
     },
     {
         "id": "42A-2",
@@ -6000,7 +6000,7 @@
             "Unrest/Rebellion"
         ],
         "content": [],
-        "text": "Take a Military Reforms card from the discards,and play it forfree.Then you must Research the“Revolutionary Regime\"Idea ata1X discount,or lose 4.Remove all andX from your Realm.Then you gain 2 and add 3 in oneof your Areas. Opponents without“Reu ol uti on ary Regime”,that are adjacent to your Realm,lose 2 andgain 2X.They each gain a inone of your Areas."
+        "text": "Take a Military Reforms card from the discards,and play it for free.Then you must Research the “Revolutionary Regime\"Idea at a 1X discount,or lose 4.Remove all andX from your Realm.Then you gain 2 and add 3 in one of your Areas. Opponents without“Reu ol uti on ary Regime”,that are adjacent to your Realm,lose 2 and gain 2X.They each gain a in one of your Areas."
     },
     {
         "id": "43A-3",
@@ -6020,7 +6020,7 @@
         "content": [
             "DNPR-creation"
         ],
-        "text": "A)Acknowledge their sovereignty: Remove from all Provinces you Ownin an Area where youhave no Core Provinces,gain P equal to their Tax Value.and 2 and an  in that Area.Addto all adjacent except your own.IfatWar,send your newAlly a free Call toArms.\n\nB)Deny the false claims!:Gain 2X and 2 in your non-Core Provinces."
+        "text": "A)Acknowledge their sovereignty: Remove from all Provinces you Ownin an Area where youhave no Core Provinces,gain P equal to their Tax Value.and 2 and an  in that Area.Addto all adjacent except your own.IfatWar,send your newAlly a free Call to Arms.\n\nB)Deny the false claims!:Gain 2X and 2 in your non-Core Provinces."
     },
     {
         "id": "44A-1",
@@ -6040,7 +6040,7 @@
         "content": [
             "Chaos (bad for everyone)"
         ],
-        "text": "All players must choose:\n\nA)Help the starving poor:You mustpay P equal to 12yourTax Income,aswell as 1 for each of your Large\n\nB)“Let them eat cake”:You gain 3X and lose 2"
+        "text": "All players must choose:\n\nA)Help the starving poor:You mustpay P equal to 12yourTax Income,aswell as 1 for each of your Large Town\n\nB)“Let them eat cake”:You gain 3X and lose 2"
     },
     {
         "id": "44A-2",
@@ -6058,7 +6058,7 @@
             "Unrest/Rebellion"
         ],
         "content": [],
-        "text": "You gain 1,and may Research the“Tolerance\"Idea for3.All other players may pay 3 and 1 to Research it too.Players with the \"Revolutionary Regime”Idea geta further discount of1 All players who nowhave the \"Tolerance\"Ideamay then remove 2 from their Realm.All players with the“Absolute Monarchy\"Idea lose 1 andgain 3X."
+        "text": "You gain 1,and may Research the“Tolerance\"Idea for3.All other players may pay 3 and 1 to Research it too.Players with the \"Revolutionary Regime”Idea geta further discount of1 All players who nowhave the \"Tolerance\"Ideamay then remove 2 from their Realm.All players with the“Absolute Monarchy\"Idea lose 1 and gain 3X."
     },
     {
         "id": "44A-3",
@@ -6096,7 +6096,7 @@
             "Chaos (bad for everyone)",
             "Distant Continents"
         ],
-        "text": "All players with Distant must pick:\n\nA)Reform colonial rule:Discard oneof your Advisors.Either add to 2 of your Distant orpay 3 and add X toone Distant\n\nB)Look the other way:Lose add X toone of your Distant andpay equal to twice the Tax Value ofall your Distant"
+        "text": "All players with Distant must pick:\n\nA)Reform colonial rule:Discard one of your Advisors.Either add to 2 of your Distant or pay 3 and add X toone Distant\n\nB)Look the other way:Lose add X toone of your Distant andpay equal to twice the Tax Value ofall your Distant"
     },
     {
         "id": "452B",
@@ -6115,7 +6115,7 @@
         "content": [
             "Chaos (bad for everyone)"
         ],
-        "text": "All players must either pay 3 and 2X，or lose 1 and add X to all their Large Players with the“Constitutional Mon arc by\"Idea may draw a Diplo- matic Action Card. Players with the“Absolute Monar chy”Idea lose 1（in addition tothe above effect)but gain 1X"
+        "text": "All players must either pay 3 and 2X，or lose 1 and add X to all their Large Town Players with the“Constitutional Mon arc by\"Idea may draw a Diplo- matic Action Card. Players with the“Absolute Monar chy”Idea lose 1（in addition to the above effect)but gain 1X"
     },
     {
         "id": "453B",
@@ -6154,7 +6154,7 @@
         "content": [
             "Kumbaya (good for everyone)"
         ],
-        "text": "All players must choose:\n\nA)Levee en masse:Either lose 1 orpay 3X,to Research the“Mass Conscription\"Idea.If you have the “Revolutionary Regime”Idea,placea and gain ain an Area adjacent byland to your Realm.\n\nB)Decline reform:Pay 3 to gain 1 and remove 1X.Exhaust 3"
+        "text": "All players must choose:\n\nA)Levee en masse:Either lose 1 or pay 3X,to Research the“Mass Conscription\"Idea.If you have the “Revolutionary Regime”Idea,place a and gain ain an Area adjacent byland to your Realm.\n\nB)Decline reform:Pay 3 to gain 1 and remove 1X.Exhaust 3"
     },
     {
         "id": "455B",
@@ -6212,7 +6212,7 @@
             "DNPR-creation",
             "Distant Continents"
         ],
-        "text": "In2Areas with adjacent to the North America and all Areas withO/ adjacent by land tothe chosen Areas,addpink （even in those with Core Provinces of PRs) Remove all/in those Areas that already had Xor and add and 1 to each remaining Area Then,you may either take a free Declare War Action targeting this DNPR or gain an with them."
+        "text": "In2Areas with adjacent to the North America and all Areas withO/ adjacent by land to the chosen Areas,addpink （even in those with Core Provinces of PRs) Remove all/in those Areas that already had Xor and add and 1 to each remaining Area Then,you may either take a free Declare War Action targeting this DNPR or gain an with them."
     },
     {
         "id": "458B",
@@ -6248,7 +6248,7 @@
         "content": [
             "Distant Continents"
         ],
-        "text": "Choose aPR and gain up to 3 in any Distant Areas with their that are adjacent to your Realm. The chosen PR gains up to 2 in any Distant Areas with your thatare adjacent to their Realm. Addin oneof the Areas where you gained a Then,take a free Declare War Action,targeting the chosen PR,to gain 1Xand(2）"
+        "text": "Choose aPR and gain up to 3 in any Distant Areas with their that are adjacent to your Realm. The chosen PR gains up to 2 in any Distant Areas with your thatare adjacent to their Realm. Addin one of the Areas where you gained a Then,take a free Declare War Action,targeting the chosen PR,to gain 1Xand(2）"
     },
     {
         "id": "460B",
@@ -6300,7 +6300,7 @@
             "Spread of Revolution"
         ],
         "content": [],
-        "text": "A)An uneasy peace:You may pay 1 to cn done of your current Wars,on“Keep Current Board State terms (as per Peace Resolution rules) but placing noTruce tokens.\n\nB)Turn foe to friend:Gain a“White Peace”and with an NPR Enemy whose Capital you Occupy,and 2 in their Capital Area.You may then payIto send them a Call toArms."
+        "text": "A)An uneasy peace:You may pay 1 to cn done of your current Wars,on“Keep Current Board State terms (as per Peace Resolution rules) but placing noTruce tokens.\n\nB)Turn foe to friend:Gain a“White Peace”and with an NPR Enemy whose Capital you Occupy,and 2 in their Capital Area.You may then pay I to send them a Call to Arms."
     },
     {
         "id": "463B",
@@ -6419,7 +6419,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Crown Prince and regent:If your Enemy Controls at most 2 of your de jure Provinces,you may lose 1 to end your War with them on \"White Peace”terms.Then,gain 1 and offer an to an Opponent.\n\nB)Marshal of the Empire:Appoint Jean-Baptiste asa General forfree, anddraw 3 Military Action Cards. Jean-Baptiste rna6o.b.1763-d1811"
+        "text": "A)Crown Prince and regent:If your Enemy Controls at most 2 of your de jure Provinces,you may lose 1 to end your War with them on \"White Peace”terms.Then,gain 1 and offer an to an Opponent.\n\nB)Marshal of the Empire:Appoint Jean-Baptiste asa General for free, anddraw 3 Military Action Cards. Jean-Baptiste rna6o.b.1763-d1811"
     },
     {
         "id": "480B",
@@ -6472,7 +6472,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Foreign recognition:Austria may pay 2 to gain with 2 NPRs adjacent to their Realm,and place in their Areas.You gain 1\n\nB)Domestic recognition:Austria may remove 2 from their and place 2 in an Area where they have Flip all tokens on Wien totheir side. Maria Theresia I"
+        "text": "A)Foreign recognition:Austria may pay 2 to gain with 2 NPRs adjacent to their Realm,and place in their Areas.You gain 1\n\nB)Domestic recognition:Austria may remove 2 from their and place 2 in an Area where they have Flip all tokens on Wien to their side. Maria Theresia I"
     },
     {
         "id": "401-2",
@@ -6489,7 +6489,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Form Holy Alliance:Austria may pay 1 tooffer to up to two Christian Opponent Realms.In each case,if accepted，both parties of thegain 1.You gain 1\n\nB)Crush liberalism:Austria gains 4，Researches the“Absolute Mona r chy\"Idea forfree,and may pay 1X to remove 2 from their Realm. FranzII"
+        "text": "A)Form Holy Alliance:Austria may pay 1 tooffer to up to two Christian Opponent Realms.In each case,if accepted，both parties of thegain 1.You gain 1\n\nB)Crush liberalism:Austria gains 4，Researches the“Absolute Mona r chy\"Idea for free,and may pay 1X to remove 2 from their Realm. FranzII"
     },
     {
         "id": "401-3",
@@ -6505,7 +6505,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Time foran Empress:Increase by 1.The Emperor gains an with an NPR H REmember.PRs adjacent tothe Emperor each gain ain an HREArea.You gain 1X\n\nB)Onlymen canrule:Reduce by 2 and remove 2Imperial.The Emperor gains X equal tothe lost.You gain 2 in Elector Areas. Maria Theresia l"
+        "text": "A)Time foran Empress:Increase by 1.The Emperor gains an with an NPR H REmember.PRs adjacent to the Emperor each gain ain an HREArea.You gain 1X\n\nB)Onlymen canrule:Reduce by 2 and remove 2Imperial.The Emperor gains X equal to the lost.You gain 2 in Elector Areas. Maria Theresia l"
     },
     {
         "id": "402-1",
@@ -6522,7 +6522,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Bourbon rule:Castile/Spain may Research the\"Absolute Monarchy Idea forfree.Ifso,add 4 totheir in NAPLES,SICILY,or ARAGON, and place 4 in one affected Area Castile/Spain gains 1 if Allied to France,and loses 1 if not.\n\nB)Retain Habsburgs:Castile/Spain loses 3,and must reject Felipe V. FelipeV"
+        "text": "A)Bourbon rule:Castile/Spain may Research the\"Absolute Monarchy Idea for free.Ifso,add 4 to their in NAPLES,SICILY,or ARAGON, and place 4 in one affected Area Castile/Spain gains 1 if Allied to France,and loses 1 if not.\n\nB)Retain Habsburgs:Castile/Spain loses 3,and must reject Felipe V. FelipeV"
     },
     {
         "id": "402-2",
@@ -6539,7 +6539,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Restore absolutism:Castile/Spain gains 1 and 1X，and must add to all their Large on the Main Map.\n\nB)Triumph of liberalism:Castile/ Spain rejects Fernando VIl,and must Disband and Exhaust all Land Units on the Distant Continents.They may pay 3 to Research“Constitutional Monarchy\". Fernando VII"
+        "text": "A)Restore absolutism:Castile/Spain gains 1 and 1X，and must add to all their Large Town on the Main Map.\n\nB)Triumph of liberalism:Castile/ Spain rejects Fernando VIl,and must Disband and Exhaust all Land Units on the Distant Continents.They may pay 3 to Research“Constitutional Monarchy\". Fernando VII"
     },
     {
         "id": "403-1",
@@ -6555,7 +6555,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Anson's expedition:England may Disband aLight Ship ona Distant Continent to take two Explore Actions and place a on any Distant Area with an Opponent's or\n\nB)Avenge this insultl:England gains a adjacent to the CARIBBEAN SEA,and may use that to Declare War andgain 1X.You gain 1X. George II"
+        "text": "A)Anson's expedition:England may Disband aLight Ship on a Distant Continent to take two Explore Actions and place a on any Distant Area with an Opponent's or\n\nB)Avenge this insultl:England gains a adjacent to the CARIBBEAN SEA,and may use that to Declare War and gain 1X.You gain 1X. George II"
     },
     {
         "id": "403-2",
@@ -6619,7 +6619,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Puta inSEINE.Louis XVI can only become the new French Ruler if Louis XV is their current Ruler.\n\nA)Abolish feudalism:France may Research“Revolutionary Regime\"or \"Constitutional Monarchy\"forfree.\n\nB)Seize them!:France gains 2X，and 4X，and loses 1 Louis XVI"
+        "text": "Puta inSEINE.Louis XVI can only become the new French Ruler if Louis XV is their current Ruler.\n\nA)Abolish feudalism:France may Research“Revolutionary Regime\"or \"Constitutional Monarchy\"for free.\n\nB)Seize them!:France gains 2X，and 4X，and loses 1 Louis XVI"
     },
     {
         "id": "405-1",
@@ -6635,7 +6635,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Control Baltic:Muscovy/Russia gains 1X.They may either develop a Small into a Large orplace a adjacent to the BALTIC SEA or GULFOFBOTHNIA.You gain 1 military power\n\nB)Secure southern borders: Muscovy/Russia gains a inor adjacent to ASTRAKHAN,and may take a free Convert Area Action. Elizaveta I"
+        "text": "A)Control Baltic:Muscovy/Russia gains 1X.They may either develop a Small Town into a Large Town orplace a adjacent to the BALTIC SEA or GULFOFBOTHNIA.You gain 1 military power\n\nB)Secure southern borders: Muscovy/Russia gains a inor adjacent to ASTRAKHAN,and may take a free Convert Area Action. Elizaveta I"
     },
     {
         "id": "405-2",
@@ -6651,7 +6651,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Keep the masses in chains: Muscovy/Russia may pay 2Xto Research the“Serfdom”Idea,or1 to Refresh y 2 of their Exhausted\n\nB)Introduce ideas of freedom': Muscovy/Russia loses\"Serfdom\",if they have it,butmay Research any other Idea for free.Place 3X，and 6in MOSCOW&RYAZAN. Yekaterina Il"
+        "text": "A)Keep the masses in chains: Muscovy/Russia may pay 2 X to Research the “Serfdom” Idea,or 1 to Refresh y 2 of their Exhausted\n\nB)Introduce ideas of freedom': Muscovy/Russia loses\"Serfdom\",if they have it,butmay Research any other Idea for free.Place 3X，and 6in MOSCOW&RYAZAN. Yekaterina Il"
     },
     {
         "id": "406-1",
@@ -6667,7 +6667,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Strengthen army traditions: Ottomans may pay 2 and 2 to either Research a Military Idea orto gain 2X and remove 3 You gain 1 military power.\n\nB)Adopt Western ideals:Add to 4Ottoman Ottomans lose 2X，but gain 4 or the“Scientific Revolution\"Idea.You gain 1 Ahmed Ill"
+        "text": "A)Strengthen army traditions: Ottomans may pay 2 and 2 to either Research a Military Idea or to gain 2X and remove 3 You gain 1 military power.\n\nB)Adopt Western ideals:Add to 4Ottoman Ottomans lose 2X，but gain 4 or the“Scientific Revolution\"Idea.You gain 1 Ahmed Ill"
     },
     {
         "id": "406-2",
@@ -6683,7 +6683,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Get me his head!:Ottomans lose 2X，and must Exhaust4\n\nB)Insubordinate Pasha:Remove all Ottoman Units(max.6)from one Area as Casualties.If possible,pickan Area with 3+Ottoman Units（ifno Units to remove,pick GREECE).Then add an equal number of（min.4) andX toany 3/inthis Area. Mahmud II"
+        "text": "A)Get me his head!:Ottomans lose 2X，and must Exhaust 4\n\nB)Insubordinate Pasha:Remove all Ottoman Units(max.6)from one Area as Casualties.If possible,pickan Area with 3+Ottoman Units（ifno Units to remove,pick GREECE).Then add an equal number of（min.4) andX toany 3/inthis Area. Mahmud II"
     },
     {
         "id": "407-1",
@@ -6700,7 +6700,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Intimidate the szlachta:Poland may pay 3 to Research theA bso- lute Monarchy”Idea.Add 3 to Polish and 5in one affected Area.You gain 1 military power.\n\nB)Let foreigners mediate:Poland gains 1,but loses 2Xand the \"Absolute Mon arc by”Idea,if they have it.You gain 1 Augustus II"
+        "text": "A)Intimidate the szlachta:Poland may pay 3 to Research the \"Absolute Monarchy” Idea. Add 3 to Polish and 5in one affected Area.You gain 1 military power.\n\nB)Let foreigners mediate:Poland gains 1,but loses 2Xand the \"Absolute Mon arc by”Idea,if they have it.You gain 1 Augustus II"
     },
     {
         "id": "407-2",
@@ -6717,7 +6717,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Abolish liberum veto:Poland gains any 3，and may Research the“Constitutional Mon arc by\"Idea forfree,but loses 1.Add 4 to Polish.All Opponents adjacent to Poland gain a in a Polish Area\n\nB)Maintain the old:Poland loses 2Xand 3），but gains 1.You gainIs Stanis tawI I Aug."
+        "text": "A)Abolish liberum veto:Poland gains any 3，and may Research the “Constitutional Monarchy\"Idea for free, but loses 1. Add 4 to Polish.All Opponents adjacent to Poland gain a in a Polish Area\n\nB)Maintain the old:Poland loses 2Xand 3），but gains 1.You gainIs Stanis tawI I Aug."
     },
     {
         "id": "408-1",
@@ -6734,7 +6734,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Endorse Piet ism:If Denmark's State Religion is Protestant,they may Appoint any Advisor from the Administrative discard pile for free and either pay 3 to Research the “Tolerance”Idea,rgain 2if they have already Researched it.\n\nB)Outlaw Piet ism:Denmark gains 2l.You gain 1 Frederick IV"
+        "text": "A)Endorse Pietism: If Denmark's State Religion is Protestant,they may Appoint any Advisor from the Administrative discard pile for free and either pay 3 to Research the “Tolerance”Idea,rgain 2if they have already Researched it.\n\nB)Outlaw Piet ism:Denmark gains 2l.You gain 1 Frederick IV"
     },
     {
         "id": "408-2",
@@ -6750,7 +6750,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)LetS true n see run affairs:Den- markmay reject Christian VIl,and instead appoint a Ruler from the top 5Administrative discards.They also lose 1X，and may optionally lose 1 to Research an Administrative Idea for free.\n\nB)Have him executed:Denmark gains 1.You gain 1 military power Christian VII"
+        "text": "A)Let Struensee run affairs:Denmark may reject Christian VIl,and instead appoint a Ruler from the top 5 Administrative discards.They also lose 1X，and may optionally lose 1 to Research an Administrative Idea for free.\n\nB)Have him executed:Denmark gains 1.You gain 1 military power Christian VII"
     },
     {
         "id": "409-1",
@@ -6766,7 +6766,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Sweden may pay 3 to Research the“Constitutional Monarchy\"Idea.\n\nA)TheHats dominate:You gain a adjacent to SVEALAND.\n\nB)Arvid Horn and theCaps: Sweden loses 1X,and may offer an to an adjacent Opponent.If accepted,both gain 1 Fredrik I"
+        "text": "Sweden may pay 3 to Research the “Constitutional Monarchy\"Idea.\n\nA)The Hats dominate:You gain a adjacent to SVEALAND.\n\nB)Arvid Horn and the Caps: Sweden loses 1X,and may offer an to an adjacent Opponent.If accepted,both gain 1 Fredrik I"
     },
     {
         "id": "409-2",
@@ -6783,7 +6783,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Sweden may either gain 2Xorpay 3 to Research Absolute Monarchy You gain a adjacent to SVEALAND or GULF OF BOTHNIA.\n\nA)The Anja la League:Sweden must Exhaust 3 and add X to all their in FINLAND.You gain 1 military power\n\nB)Back down:Sweden loses 2X Gustav III"
+        "text": "Sweden may either gain 2Xor pay 3 to Research Absolute Monarchy You gain a adjacent to SVEALAND or GULF OF BOTHNIA.\n\nA)The Anja la League:Sweden must Exhaust 3 and add X to all their in FINLAND.You gain 1 military power\n\nB)Back down:Sweden loses 2X Gustav III"
     },
     {
         "id": "410-1",
@@ -6800,7 +6800,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Reduce Lisboa to a Small and placean in PORTUGAL.\n\nA)Marques de Pombal:Portugal gains 2，and may pay 3 to Research\"Absolute Monarchy\"\n\nB)Attempted regicide:Portugal gains 1X，loses 1，and JoseI enters play with 1.You gain 1 military power JoseI"
+        "text": "Reduce Lisboa to a Small Town and place an in PORTUGAL.\n\nA)Marques de Pombal:Portugal gains 2，and may pay 3 to Research\"Absolute Monarchy\"\n\nB)Attempted regicide:Portugal gains 1X，loses 1，and JoseI enters play with 1.You gain 1 military power JoseI"
     },
     {
         "id": "410-2",
@@ -6816,7 +6816,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Relocate the court:Portugal loses 2），but gains 2，and may pay 1 to develop a Distant Small into a Large\n\nB)Reinforce defences:Portugal may pay 3X to Research the“Defensive Mentality”Idea.If they donot,add X to Lisboa and 3 inPORTU- GAL.You gain 1 military power MariaI"
+        "text": "A)Relocate the court:Portugal loses 2），but gains 2，and may pay 1 to develop a Distant Small Town into a Large Town\n\nB)Reinforce defences:Portugal may pay 3X to Research the“Defensive Mentality”Idea.If they donot,add X to Lisboa and 3 inPORTU- GAL.You gain 1 military power MariaI"
     },
     {
         "id": "411-1",
@@ -6864,7 +6864,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Issue Papal Bull:Papal States must,ifable,pay 2 to remove 2 ofall the from the Curia.All Catholic PRs gain 5，2XonDis tant and must roll Rebel Dice for these.You gain 1\n\nB)Dismiss criticism:All Catholic PRs,except Papal States,may pay 2 to either remove 2Xorgain 1 Benedictus XIV"
+        "text": "A)Issue Papal Bull:Papal States must,ifable,pay 2 to remove 2 ofall the from the Curia.All Catholic PRs gain 5，2X onDis tant and must roll Rebel Dice for these.You gain 1\n\nB)Dismiss criticism:All Catholic PRs,except Papal States,may pay 2 to either remove 2Xorgain 1 Benedictus XIV"
     },
     {
         "id": "412-2",
@@ -6931,7 +6931,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Line aMo ceni go:Venice may pay 1 to end oneof their current Wars,keeping the current board state.Return occupied Capitals to their owners,and place Truce tokens as needed.You gain 1\n\nB)Rights to the Aegean:Venice gainsain an Area adjacent to the AEGEANSEA.You gain 1 military power Alvise III"
+        "text": "A)Line aMo ceni go:Venice may pay 1 to end one of their current Wars,keeping the current board state.Return occupied Capitals to their owners,and place Truce tokens as needed.You gain 1\n\nB)Rights to the Aegean:Venice gains ain an Area adjacent to the AEGEANSEA.You gain 1 military power Alvise III"
     },
     {
         "id": "414-2",
@@ -6998,7 +6998,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "In all Areas adjacent by land to Byzantium,addXtoy 2 ofall the owned by non-Orthodox PRs. If the largest Orthodox PR has aBase Tax Income which is higher than or equal to that of the largest Orthodox NPR,they gain in 3Areas where X was added. You gain 2X. Ioannes XI"
+        "text": "In all Areas adjacent by land to Byzantium,add xtoy 2 ofall the owned by non-Orthodox PRs. If the large townst Orthodox PR has aBase Tax Income which is higher than or equal to that of the large townst Orthodox NPR,they gain in 3Areas where X was added. You gain 2X. Ioannes XI"
     },
     {
         "id": "416-2",
@@ -7015,7 +7015,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Addin GREECE and an adjacent Area.AddXto 2 the in these.\n\nA)Teardown the old:Byzantium loses 3，rejects Mi kha elX as Ruler, and may then Research“Revolutionary Regime”atthe normal cost.\n\nB)Crush the liberals:Place 6 oneof these Areas.You gain 2X Mi kha elX"
+        "text": "Addin GREECE and an adjacent Area.Add xto 2 the in these.\n\nA)Teardown the old:Byzantium loses 3，rejects Mi kha elX as Ruler, and may then Research“Revolutionary Regime”atthe normal cost.\n\nB)Crush the liberals:Place 6 one of these Areas.You gain 2X Mi kha elX"
     },
     {
         "id": "417-1",
@@ -7035,7 +7035,7 @@
             "HRE",
             "Region (West)"
         ],
-        "text": "A)Bad wine year:Ulm gains 2 in ARAGON.FLANDERS&WALLONIA orAreas adjacent to those.They may Declare War ona Realm which one of these are valid for,to gain 2X and draw a Military Action Card.\n\nB)Good wine year:Ulm gains 1 and a in any Area outside the HRE.You gain 1"
+        "text": "A)Bad wine year:Ulm gains 2 in ARAGON.FLANDERS&WALLONIA orAreas adjacent to those.They may Declare War on a Realm which one of these are valid for,to gain 2X and draw a Military Action Card.\n\nB)Good wine year:Ulm gains 1 and a in any Area outside the HRE.You gain 1"
     },
     {
         "id": "417-2",
@@ -7052,7 +7052,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)World Conquest l:Ulm gains 2X,may place a.and must Research the\"Revolutionary Regime Idea forfree.Ulm may also gain up to 3by gaining1Xfor each\n\nB)A modern toilet:Ulm gains 3X and may Research the“Industrial Rev olution\"Idea forfree.You gain 1"
+        "text": "A)World Conquest l:Ulm gains 2X,may place a.and must Research the\"Revolutionary Regime Idea for free.Ulm may also gain up to 3by gaining1Xfor each\n\nB)A modern toilet:Ulm gains 3X and may Research the“Industrial Rev olution\"Idea for free.You gain 1"
     },
     {
         "id": "418-1",
@@ -7069,7 +7069,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Proto-industrialization:Aragon may pay 3 to Research“Shrewd Trade Practices”or“Mercantilism”,and develop a Small into a Large You gain I\n\nB)Find an Italian prince:Aragon rejects Carles IlI and gains aand an with an NPR in or adjacent byland toC.ITALY.You gain 2 Carles Ill"
+        "text": "A)Proto-industrialization:Aragon may pay 3 to Research“Shrewd Trade Practices”or“Mercantilism”,and develop a Small Town into a Large Town You gain I\n\nB)Find an Italian prince:Aragon rejects Carles IlI and gains aand an with an NPR in or adjacent byland toC.ITALY.You gain 2 Carles Ill"
     },
     {
         "id": "418-2",
@@ -7085,7 +7085,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Enact liberal reforms:Place a in ARAGON.Aragon may Research “Revolutionary Regime”or“Const itu- tional Mon arc by\"forfree.\n\nB)Discredit the liberals:You gain 1X and may remove a from one of your Areas.Aragon gains 2 and may gain ain an Area with adjacent to their Realm. Supreme Central Junta"
+        "text": "A)Enact liberal reforms:Place a in ARAGON.Aragon may Research “Revolutionary Regime”or“Const itu- tional Mon arc by\"for free.\n\nB)Discredit the liberals:You gain 1X and may remove a from one of your Areas.Aragon gains 2 and may gain ain an Area with adjacent to their Realm. Supreme Central Junta"
     },
     {
         "id": "419-1",
@@ -7119,7 +7119,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Join Confederation of the Rhine Bavaria gains an with France or any Realm with Revolutionary State Religion.The Emperor gains a in BAVARIA&SWABIA.Reduce by 1. Adda in one of your Areas.\n\nB)Join the Sixth Coalition:Bavaria gainsan with the Emperor. Removea from oneof your Areas. Maximilian IV Joseph"
+        "text": "A)Join Confederation of the Rhine Bavaria gains an with France or any Realm with Revolutionary State Religion.The Emperor gains a in BAVARIA&SWABIA.Reduce by 1. Add a in one of your Areas.\n\nB)Join the Sixth Coalition:Bavaria gains an with the Emperor. Remove a from one of your Areas. Maximilian IV Joseph"
     },
     {
         "id": "420-1",
@@ -7153,7 +7153,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Czech National Revival:Bohemia may gain 2，orpay 2 to Research any Administrative Idea and Appoint an Administrative Advisor from the discards.Bohemia rejects Franti sekI.\n\nB)German ize institutions:Bohemia gains 2 inHRE Areas and an with anH REMember,but loses 2 Increase byl. Franti sekI"
+        "text": "A)Czech National Revival:Bohemia may gain 2，or pay 2 to Research any Administrative Idea and Appoint an Administrative Advisor from the discards.Bohemia rejects Franti sekI.\n\nB)German ize institutions:Bohemia gains 2 inHRE Areas and an with anH REMember,but loses 2 Increase byl. Franti sekI"
     },
     {
         "id": "421-1",
@@ -7171,7 +7171,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Burgundy loses all their.You gain 1X and a in RHINELAND or FLANDERS&WALLONIA.\n\nA)d Align with Austria:Burgundy gainsan and a with Austria.\n\nB)Findour ownpath:Burgundy gains an with France or England. Appoint Karl asa General forfree. KarI(RHINELAND)"
+        "text": "Burgundy loses all their.You gain 1X and a in RHINELAND or FLANDERS&WALLONIA.\n\nA)d Align with Austria:Burgundy gains an and a with Austria.\n\nB)Findour ownpath:Burgundy gains an with France or England. Appoint Karl asa General for free. KarI(RHINELAND)"
     },
     {
         "id": "421-2",
@@ -7188,7 +7188,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Statist reaction:Burgundy may Research“Constitutional Monarchy forfree,gains 3，and removes a from one of their Areas.You gain 1\n\nB)Von c kist triumph:Burgundy may Research“Revolutionary Regime forfree,adds ato oneof their Areas,and rejects Hendrik.Add 2 and 4 in a Burgundian Area. Hendrik"
+        "text": "A)Statist reaction:Burgundy may Research“Constitutional Monarchy for free,gains 3，and removes a from one of their Areas.You gain 1\n\nB)Von c kist triumph:Burgundy may Research“Revolutionary Regime for free,adds ato one of their Areas,and rejects Hendrik.Add 2 and 4 in a Burgundian Area. Hendrik"
     },
     {
         "id": "422-1",
@@ -7204,7 +7204,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Reverse bans and abolish taxes: Florence/Tuscany may pay 1 and 8to Research“Free Trade”Also,if they have“Church Attendance Duty or“Inquisition”they must lose oneand gain“Tolerance”（no《P) gained).\n\nB)The Tuscan question:You gain a and an with Florence/Tuscany and a in CENTRAL ITALY. Gian Gastone"
+        "text": "A)Reverse bans and abolish taxes: Florence/Tuscany may pay 1 and 8to Research “Free Trade” Also,if they have “Church Attendance Duty or “Inquisition” they must lose one and gain“Tolerance”（no《P) gained).\n\nB)The Tuscan question:You gain a and an with Florence/Tuscany and a in CENTRAL ITALY. Gian Gastone"
     },
     {
         "id": "422-2",
@@ -7222,7 +7222,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)A Bourbon King:Florence Tuscany gains an and a with France or Castile/Spain,and may Research b“Constitutional Monarch ry Or“Revolutionary Regime”ata2 discount.Placea in anyArea\n\nB)An Imperial duchy:Florence/ Tuscany gains an and a with the Emperor.Increase by 1. Lodovico ICI ALY"
+        "text": "A)A Bourbon King:Florence Tuscany gains an and a with France or Castile/Spain,and may Research “Constitutional Monarchry Or “Revolutionary Regime” at a 2 discount.Place a in anyArea\n\nB)An Imperial duchy:Florence/ Tuscany gains an and a with the Emperor.Increase by 1. Lodovico ICI ALY"
     },
     {
         "id": "423-1",
@@ -7239,7 +7239,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Learn from Johan Ren at:Great Horde may pay 3X to Research Superior Firepower”or“Line Infantry”\n\nB)Christianization and reform SARATOV turns Orthodox.Great Horde may adopt Orthodoxy to gain 2,an with a Christian PR,and lose the“Steppe Horde\"Gov.Form. You may take a free Trade Action Don duk Dashi"
+        "text": "A)Learn from Johan Ren at:Great Horde may pay 3X to Research Superior Firepower” or “Line Infantry”\n\nB)Christianization and reform SARATOV turns Orthodox.Great Horde may adopt Orthodoxy to gain 2,an with a Christian PR,and lose the“Steppe Horde\"Gov.Form. You may take a free Trade Action Don duk Dashi"
     },
     {
         "id": "423-2",
@@ -7256,7 +7256,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Great exodus:Great Horde must replace with on 5 of their non Core Provinces on the Main Map. Opponents adjacent to affected Areas gain there.For each replaced, Great Horde gains I ora in a Distant Area adjacent to their Realm\n\nB)Resist atall costs:Great Horde gains 3Xbut loses alland Ubashi"
+        "text": "A)Great exodus:Great Horde must replace with on 5 of their non Core Provinces on the Main Map. Opponents adjacent to affected Areas gain there. For each replaced, Great Horde gains I ora in a Distant Area adjacent to their Realm\n\nB)Resist atall costs:Great Horde gains 3Xbut loses alland Ubashi"
     },
     {
         "id": "424-1",
@@ -7272,7 +7272,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Revive national heritage:Hungary loses 1 and any with Austria, but gains 2 and may Research a Military Idea for free.You gain 1\n\nB)Welcome the exiled Land ler s: TRANSYLVANIA turns Protestant. Hungary gains an and a with Austria and 2,and may draw 2 Action Cards of any type(s)andkeep1 Janos"
+        "text": "A)Revive national heritage:Hungary loses 1 and any with Austria, but gains 2 and may Research a Military Idea for free.You gain 1\n\nB)Welcome the exiled Landler s: TRANSYLVANIA turns Protestant. Hungary gains an and a with Austria and 2,and may draw 2 Action Cards of any type(s)andkeep1 Janos"
     },
     {
         "id": "424-2",
@@ -7323,7 +7323,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Wars of Revolution:You must Declare War on a Realm adjacent to LITHUANIA and may Research“Revolutionary Regime”ata2X discount.\n\nB)Reform government:Lithuania loses the“Absolute Monarchy”Idea but may pick and play an Admin is- trat ive Display Card from the discards forfree.You gain I. Governing Commission"
+        "text": "A)Wars of Revolution:You must Declare War on a Realm adjacent to LITHUANIA and may Research “Revolutionary Regime” at a 2X discount.\n\nB)Reform government:Lithuania loses the“Absolute Monarchy”Idea but may pick and play an Admin is- trat ive Display Card from the discards for free.You gain I. Governing Commission"
     },
     {
         "id": "427-1",
@@ -7340,7 +7340,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "Reduce a Large on a Port in N.MOROcCO to a Small\n\nA)Six times Sultan for a reason: Morocco may Appoint an Advisor from any to p 5 discards for free.\n\nB)Plots to kill the Sultan:Morocco must pay lor reject'AbdAllah You gain a inN.MOROCCO 'AbdAllah"
+        "text": "Reduce a Large Town on a Port in N.MOROcCO to a Small Town\n\nA)Six times Sultan for a reason: Morocco may Appoint an Advisor from any to p 5 discards for free.\n\nB)Plots to kill the Sultan:Morocco must pay lor reject'AbdAllah You gain a inN.MOROCCO 'AbdAllah"
     },
     {
         "id": "427-2",
@@ -7357,7 +7357,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Defend our shores:If you have 1+ Heavy Ships adjacent to Nor theRN MOROccO,you may pay 1 to gain and add 1 there,or to develop aSmall into aLarge there.\n\nB)Unlikely friends:Morocco may, adjacent to theN.W.ATLANTIC:gain an with an NPR or replace a that has X witha pink Muhammad II"
+        "text": "A)Defend our shores:If you have 1+ Heavy Ships adjacent to Northern MOROccO,you may pay 1 to gain and add 1 there,or to develop a Small Town into a Large Town there.\n\nB)Unlikely friends:Morocco may, adjacent to theN.W.ATLANTIC:gain an with an NPR or replace a that has X witha pink Muhammad II"
     },
     {
         "id": "428-1",
@@ -7476,7 +7476,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Forma coalition:Saxony gains with 2  of Poland/P.-L.C.wealth Austria,France,or Muscovy/Russia and must Declare War ona Realm in BRANDENBURG,POMERANIA,Or PRUSSIA.You gain 1 military power.\n\nB)Polish succession:Flip allin Poland/P-L.C.wealth to their side. You gain an with them or1X Friedrich August HI"
+        "text": "A)Forma coalition:Saxony gains with 2  of Poland/P.-L.C.wealth Austria,France,or Muscovy/Russia and must Declare War on a Realm in BRANDENBURG,POMERANIA,Or PRUSSIA.You gain 1 military power.\n\nB)Polish succession:Flip allin Poland/P-L.C.wealth to their side. You gain an with them or1X Friedrich August HI"
     },
     {
         "id": "432-2",
@@ -7493,7 +7493,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Join Confederation of the Rhine: Saxony gains an with France or any Realm with Revolutionary State Religion.Brandenburg/Prussia gains a in SAxONY.Reduce by 1 Adda in one of your Areas.\n\nB)Stand by Prussia:Saxony gains ue X with Brandenburg/Prussia Removea from oneof your Areas. Friedrich August HII"
+        "text": "A)Join Confederation of the Rhine: Saxony gains an with France or any Realm with Revolutionary State Religion.Brandenburg/Prussia gains a in Saxony.Reduce by 1 Add a in one of your Areas.\n\nB)Stand by Prussia:Saxony gains ue X with Brandenburg/Prussia Remove a from one of your Areas. Friedrich August HII"
     },
     {
         "id": "433-1",
@@ -7528,7 +7528,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)d Wealth of Nations:You gain 1.Scotland loses“Mercantilism” but may Research up to 2 of“Free Trade”\"\"Constitutional Monarchy”, “Industrial Revolution”,or“National Bank” at a 2 discount each.\n\nB)Growth and emigration:Scotland may gain 2 or develop a Small into a Large You gain 2 CharleS(NORTHUMBRIA)"
+        "text": "A)d Wealth of Nations:You gain 1.Scotland loses“Mercantilism” but may Research up to 2 of“Free Trade”\"\"Constitutional Monarchy”, “Industrial Revolution”,or“National Bank” at a 2 discount each.\n\nB)Growth and emigration:Scotland may gain 2 or develop a Small Town into a Large Town You gain 2 CharleS(NORTHUMBRIA)"
     },
     {
         "id": "435-1",
@@ -7545,7 +7545,7 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)The revolting nephew triumphs: Tunis rejects Husayn and loses6 but gains an with aMuslim Realm adjacent to them.Add 1 and place 2 in TUNISIA.\n\nB)Succession is secured:Add 2 in ALGIERs.You gain a in,and may place 5in,a Tunisian Area. Place 3Pirates in any Trade Nodes. Husayn"
+        "text": "A)The revolting nephew triumphs: Tunis rejects Husayn and loses 6 but gains an with a Muslim Realm adjacent to them.Add 1 and place 2 in TUNISIA.\n\nB)Succession is secured:Add 2 in ALGIERs.You gain a in,and may place 5in,a Tunisian Area. Place 3Pirates in any Trade Nodes. Husayn"
     },
     {
         "id": "435-2",
@@ -7562,6 +7562,6 @@
             "Character (Ruler)"
         ],
         "content": [],
-        "text": "A)Bombard the shores:Adjacent to 1+of your Heavy Ships in-marked Sea Zones:addXto 1 ofaPR with a different State Religion than you.The chosen PR loses 2 and you gain 2(of any types).\n\nB)The pirate menace: Gain X equal tothe number of Pirates adjacent to your Ships in-marked Sea Zones Hammuda"
+        "text": "A)Bombard the shores:Adjacent to 1+ of your Heavy Ships in-marked Sea Zones:add xto 1 ofaPR with a different State Religion than you.The chosen PR loses 2 and you gain 2(of any types).\n\nB)The pirate menace: Gain X equal to the number of Pirates adjacent to your Ships in-marked Sea Zones Hammuda"
     }
 ]

@@ -123,6 +123,7 @@ public class EventModel implements ModelInterface, EmbeddableModel {
     public boolean search(String searchString) {
         return id.contains(searchString)
                 || name.toLowerCase().contains(searchString)
+                || text.toLowerCase().contains(searchString)
                 || getRealm().orElse(" ").toLowerCase().contains(searchString)
                 || (source != null && source.toString().toLowerCase().contains(searchString))
                 || secondary_effects.contains(searchString)
