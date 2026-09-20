@@ -122,12 +122,12 @@ public class EventModel implements ModelInterface, EmbeddableModel {
     @Override
     public boolean search(String searchString) {
         return id.contains(searchString)
-                || name.toLowerCase().contains(searchString)
-                || text.toLowerCase().contains(searchString)
-                || getRealm().orElse(" ").toLowerCase().contains(searchString)
-                || (source != null && source.toString().toLowerCase().contains(searchString))
-                || secondary_effects.contains(searchString)
-                || content.contains(searchString);
+                || name.toLowerCase().contains(searchString.toLowerCase())
+                || text.toLowerCase().contains(searchString.toLowerCase())
+                || getRealm().orElse(" ").toLowerCase().contains(searchString.toLowerCase())
+                || (source != null && source.toString().toLowerCase().contains(searchString.toLowerCase()))
+                || secondary_effects.contains(searchString.toLowerCase())
+                || content.contains(searchString.toLowerCase());
     }
 
     @Override
