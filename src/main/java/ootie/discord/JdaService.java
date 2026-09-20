@@ -135,12 +135,14 @@ public class JdaService {
         if (guildPrimary == null) {
             BotLogger.critical("Failed to start the bot on the primary guild. Aborting.");
             return false;
+        } else {
+            if (args.length >= 4) {
+                guildCommunityPlays = tryToInitGuild(args[3], false);
+            }
         }
 
         BotLogger.info("FINISHED INITIALIZING SERVERS\n> "
                 + guilds.size() + " total servers connected\n> "
-                + serversToCreateNewGamesOn.size() + " Overflow servers for new games\n> "
-                + fowServers.size() + " Fog of War servers"
                 + "\n> Guilds: " + jda.getGuilds().stream().map(Guild::getName).collect(Collectors.toSet()));
 
         if (isProduction()) leaveNonWhitelistedGuilds();
