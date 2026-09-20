@@ -13,7 +13,8 @@ abstract class SearchComponentModelSubcommand extends Subcommand {
                         OptionType.STRING,
                         Constants.SEARCH,
                         "Searches the text and limits results to those containing this string.")
-                .setAutoComplete(true));
+                .setAutoComplete(true)
+                .setRequired(true));
         addOptions(new OptionData(OptionType.STRING, Constants.SOURCE, "Limit results to a specific source.")
                 .setAutoComplete(true));
     }
