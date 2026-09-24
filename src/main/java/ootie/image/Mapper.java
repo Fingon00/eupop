@@ -13,6 +13,7 @@ import ootie.json.JsonMapperManager;
 import ootie.logging.BotLogger;
 import ootie.model.EventModel;
 import ootie.model.ModelInterface;
+import ootie.model.ProvinceModel;
 import ootie.model.SourceModel;
 import tools.jackson.databind.JavaType;
 import tools.jackson.databind.json.JsonMapper;
@@ -22,6 +23,7 @@ public class Mapper {
 
     private static final Map<String, EventModel> events = new HashMap<>();
     private static final Map<String, SourceModel> sources = new HashMap<>();
+    private static final Map<String, ProvinceModel> provinces = new HashMap<>();
 
     private static final JsonMapper jsonMapper =
             JsonMapperManager.basic().rebuild().build();
@@ -37,6 +39,7 @@ public class Mapper {
     static void loadData() throws Exception {
         importJsonObjectsFromFolder("events", events, EventModel.class);
         importJsonObjectsFromFolder("sources", sources, SourceModel.class);
+        importJsonObjectsFromFolder("provinces", provinces, ProvinceModel.class);
     }
 
     public static boolean isValidEvent(String eventID) {
@@ -45,6 +48,10 @@ public class Mapper {
 
     public static Map<String, EventModel> getEvents() {
         return new HashMap<>(events);
+    }
+
+    public static Map<String, ProvinceModel> getProvinces() {
+        return new HashMap<>(provinces);
     }
 
     public static EventModel getEvent(String eventID) {

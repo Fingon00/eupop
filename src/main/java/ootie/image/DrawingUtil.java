@@ -35,7 +35,7 @@ public class DrawingUtil {
 
     private static final Pattern PATTERN = Pattern.compile("[\\n\n]");
 
-    private static BasicStroke stroke(int size) {
+    public static BasicStroke stroke(int size) {
         return new BasicStroke(size);
     }
 

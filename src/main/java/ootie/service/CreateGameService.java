@@ -457,14 +457,7 @@ public class CreateGameService {
         return createCategoryAction.complete();
     }
 
-    public static String getNewPlayerInfoText() {
-        String path = ResourceHelper.getInstance().getHelpFile("NewPlayerIntro.txt");
-        try {
-            return Files.readString(Paths.get(path));
-        } catch (Exception e) {
-            return "NewPlayerIntro HELP FILE IS BLANK";
-        }
-    }
+ 
 
     public static boolean isGameCreationAllowed() {
         return GlobalSettings.getSetting(

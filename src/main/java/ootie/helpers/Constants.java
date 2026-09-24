@@ -199,6 +199,7 @@ public final class Constants {
     public static final String TOTAL_TURN_TIME = "total_turn_time";
 
     public static final String TXT = ".txt";
+    public static final String JSON = ".json";
     public static final String JPG = ".jpg";
     public static final String PNG = ".png";
     public static final String ADMIN = "admin";

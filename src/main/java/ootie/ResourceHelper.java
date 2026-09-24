@@ -107,6 +107,11 @@ public final class ResourceHelper {
         return getResourceFromFolder("images/events/", name + ".jpg");
     }
 
+    @Nullable
+    public String getMapFile(String name) {
+        return getResourceFromFolder("images/Maps/", name + ".jpg");
+    }
+
     private String getCachedResource(Map<String, String> cache, String folder, String name) {
         if (cache.containsKey(name)) {
             return cache.get(name);

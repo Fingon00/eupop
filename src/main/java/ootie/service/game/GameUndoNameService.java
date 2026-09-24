@@ -13,6 +13,9 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
+
+import org.apache.commons.lang3.StringUtils;
+
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
 import ootie.helpers.Constants;
@@ -20,14 +23,13 @@ import ootie.helpers.DateTimeHelper;
 import ootie.helpers.Storage;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
-import org.apache.commons.lang3.StringUtils;
 
 @UtilityClass
 public class GameUndoNameService {
 
     private static final Pattern lastestCommandPattern = Pattern.compile("^(?>latest_command ).*$");
     private static final Pattern lastModifiedPattern = Pattern.compile("^(?>last_modified_date ).*$");
-    private static final Pattern undoFileNamePattern = Pattern.compile("([A-Za-z0-9_-]+_\\d+\\.txt)");
+    private static final Pattern undoFileNamePattern = Pattern.compile("([A-Za-z0-9_-]+_\\d+\\.json)");
     private static final Comparator<File> fileComparator =
             Comparator.comparingInt(file -> getUndoNumberFromFileName(file.getName()));
 
@@ -104,7 +106,7 @@ public class GameUndoNameService {
             List<Integer> undoNumbers = new ArrayList<>();
             for (Path path : stream) {
                 String fileName = path.getFileName().toString();
-                String undoNumberStr = StringUtils.substringBetween(fileName, gameNameFileNamePrefix, Constants.TXT);
+                String undoNumberStr = StringUtils.substringBetween(fileName, gameNameFileNamePrefix, Constants.JSON);
                 if (undoNumberStr != null) {
                     try {
                         undoNumbers.add(Integer.parseInt(undoNumberStr));

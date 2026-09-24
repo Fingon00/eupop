@@ -8,7 +8,9 @@ import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 import javax.annotation.Nullable;
+
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
 import ootie.helpers.Constants;
@@ -25,7 +27,7 @@ class GameUndoService {
         return GameFileLockManager.wrapWithReadLock(gameName, () -> {
             int latestIndex = cleanUpExcessUndoFilesAndReturnLatestIndex(gameName);
             if (latestIndex < 0) return -1;
-            File gameFile = Storage.getGameFile(gameName + Constants.TXT);
+            File gameFile = Storage.getGameFile(gameName + Constants.JSON);
             if (!gameFile.exists()) return -1;
             try {
                 int createdUndoIndex = latestIndex + 1;
@@ -83,7 +85,7 @@ class GameUndoService {
         if (latestUndoIndex <= 1) return null;
         String gameName = gameToUndo.getName();
         try {
-            File currentGameFile = Storage.getGameFile(gameName + Constants.TXT);
+            File currentGameFile = Storage.getGameFile(gameName + Constants.JSON);
             if (!currentGameFile.exists()) {
                 BotLogger.error(new LogOrigin(gameToUndo), "Game file for " + gameName + " doesn't exist!");
                 return null;
@@ -116,7 +118,7 @@ class GameUndoService {
     }
 
     private static String getUndoFileName(String gameName, int undoIndex) {
-        return gameName + "_" + undoIndex + Constants.TXT;
+        return gameName + "_" + undoIndex + Constants.JSON;
     }
 
     private static void sendUndoConfirmationMessage(Game gameToUndo, int undoIndex, int latestUndoIndex) {
@@ -169,7 +171,7 @@ class GameUndoService {
             return null;
         }
         int latestUndoIndex = sortedUndoNumbers.getLast();
-        File currentGameFile = Storage.getGameFile(gameName + Constants.TXT);
+        File currentGameFile = Storage.getGameFile(gameName + Constants.JSON);
         try {
             replaceGameFileWithUndo(gameName, latestUndoIndex, currentGameFile.toPath());
             Game loadedGame = GameLoadService.load(gameName);

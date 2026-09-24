@@ -27,8 +27,8 @@ public class SearchCommand implements ParentCommand {
         return subcommands;
     }
 
-    private final Map<String, Subcommand> searchSubcommands =
-            Stream.of(new SearchRules()).collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
+    private final Map<String, Subcommand> searchSubcommands = Stream.of(new SearchEventsSubcommand())
+            .collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
 
     @Override
     public Map<String, Subcommand> getSearchSubcommands() {

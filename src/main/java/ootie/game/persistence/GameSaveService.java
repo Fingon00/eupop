@@ -12,6 +12,8 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
 import ootie.game.Player;
@@ -36,7 +38,7 @@ class GameSaveService {
 
     private static boolean save(Game game) {
 
-        Path gameSavePath = Storage.getGamePath(game.getName() + Constants.TXT);
+        Path gameSavePath = Storage.getGamePath(game.getName() + Constants.JSON);
         Path gameSaveDirectory = gameSavePath.getParent();
         Path temporarySavePath = null;
         try {
@@ -68,11 +70,22 @@ class GameSaveService {
     }
 
     private static void saveGame(Game game, Path path) throws IOException {
-        try (BufferedWriter writer = Files.newBufferedWriter(path, StandardCharsets.UTF_8)) {
+        // try (BufferedWriter writer = Files.newBufferedWriter(path, StandardCharsets.UTF_8)) {
 
-            writer.write(game.getName().toLowerCase());
-            writer.write(System.lineSeparator());
-            saveGameInfo(writer, game);
+        //     writer.write(game.getName().toLowerCase());
+        //     writer.write(System.lineSeparator());
+        //     saveGameInfo(writer, game);
+        // }
+        Map<String, PlayerSaveData> players = game.getPlayers().entrySet().stream()
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        entry -> new PlayerSaveData(
+                                entry.getValue().getUserID(), entry.getValue().getUserName())));
+
+        GameSaveData saveData = new GameSaveData(1, game.getName(), players);
+
+        try (BufferedWriter writer = Files.newBufferedWriter(path, StandardCharsets.UTF_8)) {
+            mapper.writeValue(writer, saveData);
         }
     }
 
@@ -200,12 +213,12 @@ class GameSaveService {
 
     static boolean delete(String gameName) {
         return GameFileLockManager.wrapWithWriteLock(gameName, () -> {
-            File mapStorage = Storage.getGameFile(gameName + Constants.TXT);
+            File mapStorage = Storage.getGameFile(gameName + Constants.JSON);
             if (!mapStorage.exists()) {
                 return false;
             }
             File deletedMapStorage =
-                    Storage.getDeletedGame(gameName + "_" + System.currentTimeMillis() + Constants.TXT);
+                    Storage.getDeletedGame(gameName + "_" + System.currentTimeMillis() + Constants.JSON);
             return mapStorage.renameTo(deletedMapStorage);
         });
     }
