@@ -1,7 +1,5 @@
-package ootie.service;
+package ootie.service.game;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -25,7 +23,6 @@ import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.managers.channel.concrete.TextChannelManager;
 import net.dv8tion.jda.api.managers.channel.concrete.ThreadChannelManager;
 import net.dv8tion.jda.api.requests.restaction.ChannelAction;
-import ootie.ResourceHelper;
 import ootie.discord.JdaService;
 import ootie.discord.utility.DiscordRoleUtility;
 import ootie.game.Game;
@@ -457,8 +454,6 @@ public class CreateGameService {
         return createCategoryAction.complete();
     }
 
- 
-
     public static boolean isGameCreationAllowed() {
         return GlobalSettings.getSetting(
                 GlobalSettings.ImplementedSettings.ALLOW_GAME_CREATION.toString(), Boolean.class, Boolean.TRUE);
@@ -502,7 +497,7 @@ public class CreateGameService {
             "Nanite", "Glacier", "Astrolabe", "Ultraviolet", "Enthalpy", "Observatory", "Solar", "Vacuum",
             "Infrared", "Kaleidoscope", "Magnetosphere", "Gyroscope", "Diamond", "Optic", "Enzyme", "Causality"));
         // extra words: "Waypoint", "Faraday", "Perihelion", "Penumbra", "Barycentric", "Helical", "Stoichiometry", "Mechatronic", "Cognitive", "Newtonian"
-        // avoid words that are similar to names of TI4 components (or parts thereof) e.g. "Quantum"
+        // avoid words that are similar to names of OOTIE components (or parts thereof) e.g. "Quantum"
         // also avoid words that are similar to existing words or the list e.g. "Cyberspace" -> Nullspace", "Subspace", "Hyperspace"
         // spotless:on
 

@@ -17,7 +17,7 @@ jobs:
         script: |
           set -eu
           
-          cd ${{ vars.HOST_TI4_REPO_DIR }}
+          cd ${{ vars.HOST_OOTIE_REPO_DIR }}
 
           echo "Pulling deployment config from GitHub..."
           git pull --ff-only

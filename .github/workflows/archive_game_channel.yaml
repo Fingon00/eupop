@@ -22,4 +22,4 @@ jobs:
         envs: DISCORD_BOT_KEY, CHANNEL_ID
         script: |
           docker version
-          docker run --rm -v ${{ vars.HOST_TI4_SAVES_DIR }}/exported_channels:/out --user $(id -u):$(id -g) tyrrrz/discordchatexporter:stable export -t $DISCORD_BOT_KEY -c $CHANNEL_ID
+          docker run --rm -v ${{ vars.HOST_OOTIE_SAVES_DIR }}/exported_channels:/out --user $(id -u):$(id -g) tyrrrz/discordchatexporter:stable export -t $DISCORD_BOT_KEY -c $CHANNEL_ID

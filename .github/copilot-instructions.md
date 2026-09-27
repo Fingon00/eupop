@@ -1,8 +1,8 @@
-# AsyncTI4 Map Generator Bot — Copilot Instructions
+# AsyncOOTIE Map Generator Bot — Copilot Instructions
 
 ## Project Overview
 
-This is the **AsyncTI4 Game Management Bot**: a Java/Spring Boot Discord bot for running asynchronous Twilight Imperium 4 (TI4) games. It handles slash commands, button interactions, map image generation, server management, drafting, statistics, and much more. It uses [JDA (Java Discord API)](https://github.com/discord-jda/JDA) and is deployed as a long-running Spring Boot application.
+This is the **AsyncOOTIE Game Management Bot**: a Java/Spring Boot Discord bot for running asynchronous Twilight Imperium 4 (OOTIE) games. It handles slash commands, button interactions, map image generation, server management, drafting, statistics, and much more. It uses [JDA (Java Discord API)](https://github.com/discord-jda/JDA) and is deployed as a long-running Spring Boot application.
 
 ---
 
@@ -50,7 +50,7 @@ src/
         technologies/, planets/, tiles/, leaders/, etc.
       config/application.yml      # Spring Boot config (DB path, JPA, server port 8081)
   test/
-    java/ootie/                     # JUnit 5 tests; BaseTi4Test initializes static data before suites
+    java/ootie/                     # JUnit 5 tests; BaseOotieTest initializes static data before suites
 ```
 
 ---
@@ -137,7 +137,7 @@ public void handleMyButton(ButtonInteractionEvent event, Game game, Player playe
 
 ### 6. Emojis
 
-- Emojis are Discord application emojis (not Unicode). They are defined as Java enums implementing `TI4Emoji` (e.g., `MiscEmojis`, `FactionEmojis`, `UnitEmojis`).
+- Emojis are Discord application emojis (not Unicode). They are defined as Java enums implementing `OOTIEEmoji` (e.g., `MiscEmojis`, `FactionEmojis`, `UnitEmojis`).
 - `ApplicationEmojiService.spoofEmojis()` is called in tests to avoid Discord API calls.
 
 ### 7. Logging
@@ -160,7 +160,7 @@ Scheduled tasks live in `ootie.cron.*`. They are started by `JdaService` after b
 ## Common Gotchas & Workarounds
 
 1. **Formatting must pass**: The build will fail if `mvn spotless:apply` has not been run. Always format before committing. The pre-push hook automates this.
-2. **Tests require environment variables**: Set `DB_PATH` and `RESOURCE_PATH` when running tests outside Docker. `BaseTi4Test` handles this for the test suite via `Storage.setResourcePath(...)`.
+2. **Tests require environment variables**: Set `DB_PATH` and `RESOURCE_PATH` when running tests outside Docker. `BaseOotieTest` handles this for the test suite via `Storage.setResourcePath(...)`.
 3. **`JdaService.testingMode = true`**: Must be set in tests to disable Discord API calls and randomness.
 4. **`ButtonHelper` is enormous** (~8300 lines): when searching for button logic, prefer searching for the `@ButtonHandler` annotation near where the button is created rather than grep-searching `ButtonHelper`.
 5. **Color "null" string**: `Player.getColor()` returns the string `"null"` (not Java null) when unset. Always filter before calling `Mapper.getColor(...)`.
@@ -183,7 +183,7 @@ Scheduled tasks live in `ootie.cron.*`. They are started by `JdaService` after b
 | New selection menu handler | Annotate method with `@SelectionHandler("prefix")` |
 | New game content (faction, tech, etc.) | Edit JSON files in `src/main/resources/data/` |
 | New game setting | Add to `GameSettings` or relevant settings class in `ootie.helpers.settingsFramework` |
-| New emoji | Add to relevant `TI4Emoji` enum in `ootie.service.emoji.*` |
+| New emoji | Add to relevant `OOTIEEmoji` enum in `ootie.service.emoji.*` |
 | New scheduled task | Create class in `ootie.cron.*`, register in `JdaService` |
 | New REST endpoint | Add controller in `ootie.spring.api.*` |
 
@@ -191,7 +191,7 @@ Scheduled tasks live in `ootie.cron.*`. They are started by `JdaService` after b
 
 ## Testing
 
-- Tests extend `BaseTi4Test` which calls `globalBeforeAll()` once to initialize `Mapper`, `TileHelper`, `AliasHandler`, `PositionMapper`, `SelectionManager`, and spoof emojis.
+- Tests extend `BaseOotieTest` which calls `globalBeforeAll()` once to initialize `Mapper`, `TileHelper`, `AliasHandler`, `PositionMapper`, `SelectionManager`, and spoof emojis.
 - JUnit 5; run with `mvn test`.
 - No Discord connection is made during tests (`JdaService.testingMode = true`).
 

@@ -15,7 +15,7 @@ jobs:
           password: ${{ secrets.HOSTINGER_SSH_PASSWORD }}
           port: ${{ secrets.HOSTINGER_SSH_PORT }}
           script: |
-            cd ${{ vars.HOST_TI4_SAVES_DIR }}/maps/undo
+            cd ${{ vars.HOST_OOTIE_SAVES_DIR }}/maps/undo
             
             echo "Total number of files in 'undo' (including subdirectories):"
             find . -type f | wc -l

@@ -5,7 +5,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 import lombok.Getter;
-import lombok.Setter;
 
 public class Player extends PlayerProperties {
 
@@ -18,34 +17,9 @@ public class Player extends PlayerProperties {
     private final Map<String, Integer> actionCards = new LinkedHashMap<>();
 
     @Getter
-    private final Map<String, Integer> events = new LinkedHashMap<>();
-
-    @Getter
-    private final Map<String, Integer> trapCards = new LinkedHashMap<>();
-
-    @Getter
-    private final Map<String, Integer> secrets = new LinkedHashMap<>();
-
-    // Map of (SecretObjectiveModel ID, Random Number ID)
-    @Getter
-    private final Map<String, Integer> secretsScored = new LinkedHashMap<>();
-
-    @Getter
-    private final Map<String, Integer> unitCaps = new HashMap<>();
-
-    @Getter
     private final Map<String, String> trapCardsPlanets = new LinkedHashMap<>();
 
-    private final Map<String, String> fowSeenTiles = new HashMap<>();
-    private final Map<String, String> fowCustomLabels = new HashMap<>();
-
-    @Setter
-    @Getter
-    private Map<String, Integer> promissoryNotes = new LinkedHashMap<>();
-
     private @Getter Map<String, Integer> currentProducedUnits = new HashMap<>();
-    // <pool: <color: count>>
-    private final Map<String, Map<String, Integer>> debtTokens = new LinkedHashMap<>();
 
     public Player(String userID, String userName, Game game) {
         setUserID(userID);

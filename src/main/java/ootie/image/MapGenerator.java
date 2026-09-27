@@ -165,8 +165,6 @@ public class MapGenerator implements AutoCloseable {
             }
             if (player.isEliminated()) {
                 playersY -= 190;
-            } else if (player.getSecretsScored().size() >= 4) {
-                playersY += (player.getSecretsScored().size() - 4) * 43 + 23;
             }
             playersY += (player.getTeamMateIDs().size() - 1) * 35;
         }

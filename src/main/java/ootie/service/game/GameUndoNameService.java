@@ -13,9 +13,6 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
-
-import org.apache.commons.lang3.StringUtils;
-
 import lombok.experimental.UtilityClass;
 import ootie.game.Game;
 import ootie.helpers.Constants;
@@ -23,6 +20,7 @@ import ootie.helpers.DateTimeHelper;
 import ootie.helpers.Storage;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
+import org.apache.commons.lang3.StringUtils;
 
 @UtilityClass
 public class GameUndoNameService {
