@@ -59,9 +59,9 @@ public class ShowGameCommand extends GameStateCommand {
             double ny = (y - miny) / (maxy - miny);
             int px = (int) (nx * w);
             int py = (int) ((1 - ny) * h);
-            if ("paris".equalsIgnoreCase(province) || "maine".equalsIgnoreCase(province)) {
-                System.out.println(province + " " + nx + " " + ny + " " + px + " " + py + " " + x + " " + y);
-            }
+            // if ("paris".equalsIgnoreCase(province) || "maine".equalsIgnoreCase(province)) {
+            //     System.out.println(province + " " + nx + " " + ny + " " + px + " " + py + " " + x + " " + y);
+            // }
             DrawingUtil.superDrawStringCentered(g, province, px, py, Color.BLACK, DrawingUtil.stroke(6), Color.WHITE);
         }
 

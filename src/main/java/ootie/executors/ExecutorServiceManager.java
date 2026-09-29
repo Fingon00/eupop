@@ -1,6 +1,6 @@
 package ootie.executors;
 
-import static org.apache.commons.lang3.StringUtils.isNotBlank;
+import static org.apache.commons.lang3.StringUtils.*;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

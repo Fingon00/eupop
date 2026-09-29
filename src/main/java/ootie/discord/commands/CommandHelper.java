@@ -60,6 +60,29 @@ public class CommandHelper {
         return true;
     }
 
+    @Nullable
+    public static Player getPlayerFromEvent(Game game, GenericCommandInteractionEvent event) {
+        OptionMapping playerOption = event.getOption(Constants.PLAYER);
+        if (playerOption != null) {
+            String playerID = playerOption.getAsUser().getId();
+            return game.getPlayer(playerID);
+        }
+
+        OptionMapping factionColorOption = event.getOption(Constants.FACTION_COLOR);
+        if (factionColorOption != null) {
+            String factionColor = factionColorOption.getAsString().toLowerCase();
+            Player player = getPlayerByRealmColor(factionColor, game);
+            if (player != null) {
+                return player;
+            }
+        }
+        Player player = getPlayerFromChannel(game, event);
+        if (player != null) {
+            return player;
+        }
+        return getPlayerFromGame(game, event.getMember(), event.getUser().getId());
+    }
+
     /**
      * Supported inputs include:
      * <ul>
@@ -84,16 +107,14 @@ public class CommandHelper {
 
     @Nullable
     public static Player getPlayerFromGame(Game game, Member member, String userId) {
-
-        return null;
+        return game.getPlayer(userId);
     }
 
     @Nullable
-    private static Player getPlayerByFactionColor(String factionColor, Game game) {
+    private static Player getPlayerByRealmColor(String factionColor, Game game) {
         factionColor = StringUtils.substringBefore(factionColor, " "); // TO HANDLE UNRESOLVED AUTOCOMPLETE
         for (Player player_ : game.getPlayers().values()) {
-            if (Objects.equals(factionColor, player_.getFaction())
-                    || Objects.equals(factionColor, player_.getColor())) {
+            if (Objects.equals(factionColor, player_.getRealm()) || Objects.equals(factionColor, player_.getColor())) {
                 return player_;
             }
         }
@@ -104,7 +125,7 @@ public class CommandHelper {
     private static Player getPlayerFromChannel(Game game, GenericCommandInteractionEvent event) {
         String channelId = event.getChannel().getId();
         for (Player player : game.getPlayers().values()) {
-            if (channelId.equals(player.getPrivateChannelID()) || channelId.equals(player.getCardsInfoThreadID())) {
+            if (channelId.equals(player.getCardsInfoThreadID())) {
                 return player;
             }
         }

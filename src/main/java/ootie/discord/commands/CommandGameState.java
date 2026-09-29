@@ -32,13 +32,13 @@ record CommandGameState(boolean saveGame, boolean playerCommand) {
         if (!playerCommand) {
             return;
         }
-        // var player = CommandHelper.getPlayerFromEvent(game, event);
-        // if (player == null) {
-        //     throw new IllegalArgumentException("Unable to determine player while attempting to run event "
-        //             + event.getName() + " in channel " + event.getChannel().getName() + " for game " + gameName);
-        // }
-        // CommandGameState.player.set(player);
-        // RollbarManager.put("player_id", player.getUserID());
+        var player = CommandHelper.getPlayerFromEvent(game, event);
+        if (player == null) {
+            throw new IllegalArgumentException("Unable to determine player while attempting to run event "
+                    + event.getName() + " in channel " + event.getChannel().getName() + " for game " + gameName);
+        }
+        CommandGameState.player.set(player);
+        RollbarManager.put("player_id", player.getUserID());
     }
 
     void postExecute(SlashCommandInteractionEvent event) {

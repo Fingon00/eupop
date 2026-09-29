@@ -1,8 +1,5 @@
 package ootie.game;
 
-import static java.util.function.Predicate.*;
-import static org.apache.commons.collections4.CollectionUtils.*;
-
 import java.util.AbstractMap.SimpleEntry;
 import java.util.ArrayList;
 import java.util.Date;
@@ -159,6 +156,18 @@ public class Game extends GameProperties {
 
     public Game() {
         long currentTimeMillis = System.currentTimeMillis();
+    }
+
+    public Player addPlayer(String id, String name) {
+        Player player = new Player(this);
+        player.setUserID(id);
+        player.setUserName(name);
+        players.put(id, player);
+        return player;
+    }
+
+    public Player getPlayer(String id) {
+        return players.get(id);
     }
 
     public void newGameSetup() {

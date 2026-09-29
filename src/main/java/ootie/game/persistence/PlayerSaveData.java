@@ -1,3 +1,6 @@
 package ootie.game.persistence;
 
-record PlayerSaveData(String userID, String userName) {}
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
+import ootie.game.PlayerProperties;
+
+record PlayerSaveData(@JsonUnwrapped PlayerProperties properties) {}

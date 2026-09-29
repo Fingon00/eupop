@@ -108,7 +108,7 @@ public abstract class ListenerContext {
             return true;
         }
         componentID = componentID.replace("FFCC_", "");
-        String factionWhoPressedButton = player == null ? "nullPlayer" : player.getFaction();
+        String factionWhoPressedButton = player == null ? "nullPlayer" : player.getRealm();
 
         if (player != null
                 && !componentID.startsWith(factionWhoPressedButton + "_")

@@ -1,8 +1,5 @@
 package ootie.game.persistence;
 
-import static ootie.game.persistence.GamePersistenceKeys.*;
-import static org.apache.commons.lang3.StringUtils.*;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -26,6 +23,7 @@ import ootie.helpers.StringHelper;
 import ootie.json.JsonMapperManager;
 import ootie.logging.BotLogger;
 import org.jetbrains.annotations.NotNull;
+import org.springframework.beans.BeanUtils;
 import tools.jackson.databind.json.JsonMapper;
 
 @UtilityClass
@@ -139,17 +137,18 @@ class GameLoadService {
 
             GameSaveData saveData = mapper.readValue(reader, GameSaveData.class);
 
-            if (saveData.saveVersion() != 1) {
-                throw new IOException("Unsupported game save version: " + saveData.saveVersion());
+            Game game = new Game();
+            if (saveData.properties() != null) {
+                BeanUtils.copyProperties(saveData.properties(), game);
             }
 
-            Game game = new Game();
-            game.setName(saveData.name().toLowerCase());
-
             for (PlayerSaveData playerData : saveData.players().values()) {
-                Player player = new Player(playerData.userID(), playerData.userName(), game);
+                Player player = new Player(game);
+                if (playerData.properties() != null) {
+                    BeanUtils.copyProperties(playerData.properties(), player);
+                }
 
-                game.getPlayers().put(playerData.userID(), player);
+                game.getPlayers().put(player.getUserID(), player);
             }
 
             return game;

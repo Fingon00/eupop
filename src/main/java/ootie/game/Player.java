@@ -21,11 +21,7 @@ public class Player extends PlayerProperties {
 
     private @Getter Map<String, Integer> currentProducedUnits = new HashMap<>();
 
-    public Player(String userID, String userName, Game game) {
-        setUserID(userID);
-        setUserName(userName);
-        setStatsTrackedUserID(userID);
-        setStatsTrackedUserName(userName);
+    public Player(Game game) {
         this.game = game;
     }
 
@@ -34,19 +30,20 @@ public class Player extends PlayerProperties {
         return getUserID().equals(p2.getUserID());
     }
 
-    public String getFactionCheckerPrefix() {
+    public String getRepresentation() {
+        return "<@" + getUserID() + ">";
+    }
+
+    public String getRealmCheckerPrefix() {
         return factionButtonChecker();
     }
 
     public String factionButtonChecker() {
-        if (isNpc() || isDummy()) {
-            return dummyPlayerSpoof();
-        }
-        return "FFCC_" + getFaction() + "_";
+        return "FFCC_" + getRealm() + "_";
     }
 
     public String dummyPlayerSpoof() {
-        return "dummyPlayerSpoof" + getFaction() + "_";
+        return "dummyPlayerSpoof" + getRealm() + "_";
     }
 
     @Override

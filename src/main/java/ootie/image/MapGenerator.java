@@ -159,15 +159,6 @@ public class MapGenerator implements AutoCloseable {
     private static int getHeightOfPlayerAreasSection(Game game, int playerCountForMap, int objectivesY) {
         final int typicalPlayerAreaHeight = 340;
         int playersY = playerCountForMap * typicalPlayerAreaHeight;
-        for (Player player : game.getPlayers().values()) {
-            if ("neutral".equalsIgnoreCase(player.getFaction()) || (player.isNpc() && player.isDummy())) {
-                playersY -= 350;
-            }
-            if (player.isEliminated()) {
-                playersY -= 190;
-            }
-            playersY += (player.getTeamMateIDs().size() - 1) * 35;
-        }
         final int columnsOfLaws = 2;
         final int lawHeight = 115;
         int lawsY = (game.getLaws().size() / columnsOfLaws + 1) * lawHeight;

@@ -1,7 +1,6 @@
 package ootie.discord.listeners;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.channel.concrete.ThreadChannel;
 import net.dv8tion.jda.api.events.channel.ChannelCreateEvent;
@@ -13,10 +12,6 @@ import ootie.spring.service.deploy.ActiveLeaseService;
 import org.jetbrains.annotations.NotNull;
 
 class ChannelCreationListener extends ListenerAdapter {
-
-    private static final String FOW_MAKING_GAMES_CHANNEL = "making-fow-games";
-
-    private static final String FOW_REPLACEMENT_TAG = "1336539499668443229";
 
     @Override
     public void onChannelCreate(@NotNull ChannelCreateEvent event) {
@@ -42,19 +37,6 @@ class ChannelCreationListener extends ListenerAdapter {
             if (owner == null || owner.getUser().isBot()) return;
 
             CreateGameLaunchPostService.postLaunchButtons(channel, List.of(owner), "");
-        } else if (FOW_MAKING_GAMES_CHANNEL.equalsIgnoreCase(parentName) && !hasTag(channel, FOW_REPLACEMENT_TAG)) {
-            String message = """
-                To launch a new Fog of War game, please run the command `/fow create_fow_game_button`, \
-                filling in the players, GM and fun game name. This will create a button that you may press to launch the game after confirming the members \
-                are correct.
-
-                If you need a GM and don't seem to find one, give `@Game Supervisor` a ping.
-                """;
-            channel.sendMessage(message).queueAfter(5, TimeUnit.SECONDS);
         }
-    }
-
-    private boolean hasTag(ThreadChannel channel, String tagId) {
-        return channel.getAppliedTags().stream().anyMatch(tag -> tag.getId().equals(tagId));
     }
 }

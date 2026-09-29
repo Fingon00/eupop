@@ -44,8 +44,8 @@ public class CreateGameService {
     public static Game createNewGame(String gameName, Member gameOwner) {
         Game newGame = new Game();
         newGame.newGameSetup();
-        String ownerID = gameOwner.getId();
         newGame.setName(gameName);
+        newGame.addPlayer(gameOwner.getId(), gameOwner.getEffectiveName());
         GameManager.save(newGame, "Game created");
         return newGame;
     }
@@ -186,9 +186,6 @@ public class CreateGameService {
         if (event.getChannel() instanceof ThreadChannel thread
                 && ("making-new-games".equals(thread.getParentChannel().getName())
                         || "making-private-games"
-                                .equals(thread.getParentChannel().getName())
-                        || "making-tigl-games".equals(thread.getParentChannel().getName())
-                        || "making-superfast-games"
                                 .equals(thread.getParentChannel().getName()))) {
             newGame.setLaunchPostThreadID(thread.getId());
             ThreadChannelManager manager = thread.getManager()

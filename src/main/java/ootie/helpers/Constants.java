@@ -45,6 +45,11 @@ public final class Constants {
     /* From \data\ */
 
     // no /search colors yet, but there is /help sample_colors
+
+    public static final String REALM = "realm";
+    public static final String COLOR = "color";
+    public static final String DUCATS = "ducats";
+
     // no /search combat_modifiers yet
     public static final String SEARCH_DECKS = "decks";
     public static final String SEARCH_EXPLORES = "explores";

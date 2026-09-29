@@ -39,7 +39,7 @@ public final class ResourceHelper {
     }
 
     @Nullable
-    public String getFactionFile(String name) {
+    public String getRealmFile(String name) {
         return getCachedResource(factionCache, "factions/", name);
     }
 
