@@ -1,0 +1,333 @@
+{
+  "SaveName": "",
+  "Date": "",
+  "VersionNumber": "",
+  "GameMode": "",
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Table": "",
+  "Sky": "",
+  "Note": "",
+  "TabStates": {},
+  "LuaScript": "",
+  "LuaScriptState": "",
+  "XmlUI": "",
+  "ObjectStates": [
+    {
+      "GUID": "243d76",
+      "Name": "Deck",
+      "Transform": {
+        "posX": -31.2928486,
+        "posY": 0.990222633,
+        "posZ": 11.6924706,
+        "rotX": 1.810138E-05,
+        "rotY": 179.999985,
+        "rotZ": 180.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "LargeCard",
+        "Tradegood"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        59100,
+        59101,
+        59102,
+        59103
+      ],
+      "CustomDeck": {
+        "591": {
+          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36698355688577530/1A44C4C6E8E55DCC8F1B5CF79EEAD28B59EA7FCA/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416751460/F198423DF3F28AB08437426905E4F12FEAC3EF0A/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "731431",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.86905,
+            "posY": 0.963578641,
+            "posZ": 11.97109,
+            "rotX": 0.000602127344,
+            "rotY": 180.000076,
+            "rotZ": -0.004345868,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "LargeCard",
+            "Tradegood"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 59100,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "591": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36698355688577530/1A44C4C6E8E55DCC8F1B5CF79EEAD28B59EA7FCA/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416751460/F198423DF3F28AB08437426905E4F12FEAC3EF0A/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "55d7a3",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.67219,
+            "posY": 1.00551033,
+            "posZ": 11.9711084,
+            "rotX": 0.0101467166,
+            "rotY": 180.0,
+            "rotZ": 359.982361,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "LargeCard",
+            "Tradegood"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 59101,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "591": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36698355688577530/1A44C4C6E8E55DCC8F1B5CF79EEAD28B59EA7FCA/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416751460/F198423DF3F28AB08437426905E4F12FEAC3EF0A/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "bea223",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.8776627,
+            "posY": 1.03960574,
+            "posZ": 12.1941633,
+            "rotX": -0.000679104,
+            "rotY": 180.0,
+            "rotZ": 359.988,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "LargeCard",
+            "Tradegood"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 59102,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "591": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36698355688577530/1A44C4C6E8E55DCC8F1B5CF79EEAD28B59EA7FCA/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416751460/F198423DF3F28AB08437426905E4F12FEAC3EF0A/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "2e34dc",
+          "Name": "Card",
+          "Transform": {
+            "posX": -30.9455872,
+            "posY": 0.9633223,
+            "posZ": 11.7614584,
+            "rotX": 0.00324179768,
+            "rotY": 179.999832,
+            "rotZ": 180.023376,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "LargeCard",
+            "Tradegood"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 59103,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "591": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36698355688577530/1A44C4C6E8E55DCC8F1B5CF79EEAD28B59EA7FCA/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416751460/F198423DF3F28AB08437426905E4F12FEAC3EF0A/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "XmlUI": ""
+        }
+      ]
+    }
+  ]
+}

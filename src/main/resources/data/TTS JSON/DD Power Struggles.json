@@ -1,0 +1,435 @@
+{
+  "SaveName": "",
+  "Date": "",
+  "VersionNumber": "",
+  "GameMode": "",
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Table": "",
+  "Sky": "",
+  "Note": "",
+  "TabStates": {},
+  "LuaScript": "",
+  "LuaScriptState": "",
+  "XmlUI": "",
+  "ObjectStates": [
+    {
+      "GUID": "6bc222",
+      "Name": "Deck",
+      "Transform": {
+        "posX": -4.91757154,
+        "posY": 1.0046556,
+        "posZ": 16.81185,
+        "rotX": 2.32385028E-05,
+        "rotY": 90.0033,
+        "rotZ": 179.999985,
+        "scaleX": 0.693170249,
+        "scaleY": 1.0,
+        "scaleZ": 0.693170249
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.929411769,
+        "g": 0.8901961,
+        "b": 0.0
+      },
+      "Tags": [
+        "PowerStruggle",
+        "SmallCard"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": true,
+      "DeckIDs": [
+        55100,
+        55101,
+        55102,
+        55103,
+        55104,
+        55105,
+        55106
+      ],
+      "CustomDeck": {
+        "551": {
+          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36696998981743029/8085338D8923DB6C737A9BD9DB79B35A5331E4A3/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416775918/C436DB4F099AE941E86DC1807FA35809E9BAC7FD/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "062b6e",
+          "Name": "Card",
+          "Transform": {
+            "posX": -4.91756,
+            "posY": 1.019099,
+            "posZ": 16.811842,
+            "rotX": 1.617107E-05,
+            "rotY": 90.00318,
+            "rotZ": 179.999985,
+            "scaleX": 0.693170249,
+            "scaleY": 1.0,
+            "scaleZ": 0.693170249
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.929411769,
+            "g": 0.8901961,
+            "b": 0.0
+          },
+          "Tags": [
+            "PowerStruggle",
+            "SmallCard"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "Hands": true,
+          "CardID": 55100,
+          "SidewaysCard": true,
+          "XmlUI": "",
+          "ContainedObjects": []
+        },
+        {
+          "GUID": "de150f",
+          "Name": "Card",
+          "Transform": {
+            "posX": -4.91756,
+            "posY": 1.019099,
+            "posZ": 16.811842,
+            "rotX": 1.617107E-05,
+            "rotY": 90.00318,
+            "rotZ": 179.999985,
+            "scaleX": 0.693170249,
+            "scaleY": 1.0,
+            "scaleZ": 0.693170249
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.929411769,
+            "g": 0.8901961,
+            "b": 0.0
+          },
+          "Tags": [
+            "PowerStruggle",
+            "SmallCard"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "Hands": true,
+          "CardID": 55101,
+          "SidewaysCard": true,
+          "XmlUI": "",
+          "ContainedObjects": []
+        },
+        {
+          "GUID": "ed8d3a",
+          "Name": "Card",
+          "Transform": {
+            "posX": -4.91756,
+            "posY": 1.019099,
+            "posZ": 16.811842,
+            "rotX": 1.617107E-05,
+            "rotY": 90.00318,
+            "rotZ": 179.999985,
+            "scaleX": 0.693170249,
+            "scaleY": 1.0,
+            "scaleZ": 0.693170249
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.929411769,
+            "g": 0.8901961,
+            "b": 0.0
+          },
+          "Tags": [
+            "PowerStruggle",
+            "SmallCard"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "Hands": true,
+          "CardID": 55102,
+          "SidewaysCard": true,
+          "XmlUI": "",
+          "ContainedObjects": []
+        },
+        {
+          "GUID": "b4c7f9",
+          "Name": "Card",
+          "Transform": {
+            "posX": -4.91756,
+            "posY": 1.019099,
+            "posZ": 16.811842,
+            "rotX": 1.617107E-05,
+            "rotY": 90.00318,
+            "rotZ": 179.999985,
+            "scaleX": 0.693170249,
+            "scaleY": 1.0,
+            "scaleZ": 0.693170249
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.929411769,
+            "g": 0.8901961,
+            "b": 0.0
+          },
+          "Tags": [
+            "PowerStruggle",
+            "SmallCard"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "Hands": true,
+          "CardID": 55103,
+          "SidewaysCard": true,
+          "XmlUI": "",
+          "ContainedObjects": []
+        },
+        {
+          "GUID": "2eff75",
+          "Name": "Card",
+          "Transform": {
+            "posX": -4.91756,
+            "posY": 1.019099,
+            "posZ": 16.811842,
+            "rotX": 1.617107E-05,
+            "rotY": 90.00318,
+            "rotZ": 179.999985,
+            "scaleX": 0.693170249,
+            "scaleY": 1.0,
+            "scaleZ": 0.693170249
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.929411769,
+            "g": 0.8901961,
+            "b": 0.0
+          },
+          "Tags": [
+            "PowerStruggle",
+            "SmallCard"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "Hands": true,
+          "CardID": 55104,
+          "SidewaysCard": true,
+          "XmlUI": "",
+          "ContainedObjects": []
+        },
+        {
+          "GUID": "48547e",
+          "Name": "Card",
+          "Transform": {
+            "posX": -4.91756,
+            "posY": 1.019099,
+            "posZ": 16.811842,
+            "rotX": 1.617107E-05,
+            "rotY": 90.00318,
+            "rotZ": 179.999985,
+            "scaleX": 0.693170249,
+            "scaleY": 1.0,
+            "scaleZ": 0.693170249
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.929411769,
+            "g": 0.8901961,
+            "b": 0.0
+          },
+          "Tags": [
+            "PowerStruggle",
+            "SmallCard"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "Hands": true,
+          "CardID": 55105,
+          "SidewaysCard": true,
+          "XmlUI": "",
+          "ContainedObjects": []
+        },
+        {
+          "GUID": "8546c1",
+          "Name": "Card",
+          "Transform": {
+            "posX": -4.91756,
+            "posY": 1.019099,
+            "posZ": 16.811842,
+            "rotX": 1.617107E-05,
+            "rotY": 90.00318,
+            "rotZ": 179.999985,
+            "scaleX": 0.693170249,
+            "scaleY": 1.0,
+            "scaleZ": 0.693170249
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.929411769,
+            "g": 0.8901961,
+            "b": 0.0
+          },
+          "Tags": [
+            "PowerStruggle",
+            "SmallCard"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "Hands": true,
+          "CardID": 55106,
+          "SidewaysCard": true,
+          "XmlUI": "",
+          "ContainedObjects": []
+        }
+      ]
+    }
+  ]
+}

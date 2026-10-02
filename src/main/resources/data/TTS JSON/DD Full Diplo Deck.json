@@ -1,0 +1,3086 @@
+{
+  "SaveName": "",
+  "Date": "",
+  "VersionNumber": "",
+  "GameMode": "",
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Table": "",
+  "Sky": "",
+  "Note": "",
+  "TabStates": {},
+  "LuaScript": "",
+  "LuaScriptState": "",
+  "XmlUI": "",
+  "ObjectStates": [
+    {
+      "GUID": "19eba0",
+      "Name": "Deck",
+      "Transform": {
+        "posX": -24.0625134,
+        "posY": 1.19240677,
+        "posZ": 7.75648832,
+        "rotX": 1.23019681E-05,
+        "rotY": 270.000122,
+        "rotZ": 180.000031,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "ActionCardDiplo",
+        "LargeCard",
+        "RulerGeneral",
+        "Tuckable"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        42726,
+        64304,
+        64309,
+        64303,
+        64307,
+        64305,
+        64306,
+        64302,
+        64308,
+        64301,
+        64300,
+        42729,
+        42722,
+        42730,
+        42705,
+        42734,
+        42723,
+        42724,
+        42710,
+        42725,
+        42727,
+        42720,
+        42707,
+        42700,
+        42718,
+        42732,
+        42708,
+        42735,
+        42715,
+        42733,
+        42702,
+        42714,
+        42706,
+        42716,
+        42717,
+        42704,
+        42703,
+        42719,
+        42709,
+        42711,
+        42721,
+        42712,
+        42731,
+        42701,
+        42728,
+        42713
+      ],
+      "CustomDeck": {
+        "427": {
+          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "643": {
+          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "be55db",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77286,
+            "posY": 1.30799007,
+            "posZ": 7.22471952,
+            "rotX": 0.00467867963,
+            "rotY": 270.010925,
+            "rotZ": 9.899418,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-06-2 Study Technology",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42726,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "fbcd55",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77295,
+            "posY": 1.26318264,
+            "posZ": 6.673173,
+            "rotX": 0.004218069,
+            "rotY": 270.0122,
+            "rotZ": 9.948319,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64304,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "3ddae0",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.773056,
+            "posY": 1.21755278,
+            "posZ": 6.12171745,
+            "rotX": 0.00419245567,
+            "rotY": 270.012329,
+            "rotZ": 9.948319,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64309,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "dd4764",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7731628,
+            "posY": 1.17494774,
+            "posZ": 5.57038,
+            "rotX": 0.003873571,
+            "rotY": 270.012848,
+            "rotZ": 10.0644522,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64303,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "0c67e8",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7733154,
+            "posY": 1.144716,
+            "posZ": 5.02008963,
+            "rotX": 0.00171309686,
+            "rotY": 270.0194,
+            "rotZ": 10.5907927,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64307,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "4fb92c",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7731361,
+            "posY": 1.11882162,
+            "posZ": 4.4770937,
+            "rotX": 359.98996,
+            "rotY": 270.003845,
+            "rotZ": 1.72460091,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64305,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "fe1948",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.773056,
+            "posY": 1.10519767,
+            "posZ": 3.92738557,
+            "rotX": 359.992462,
+            "rotY": 269.999268,
+            "rotZ": 2.758184,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64306,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1941eb",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77308,
+            "posY": 1.10658336,
+            "posZ": 3.37432647,
+            "rotX": 359.992249,
+            "rotY": 270.0019,
+            "rotZ": 2.758163,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64302,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "fc8469",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77294,
+            "posY": 1.11305761,
+            "posZ": 2.8240602,
+            "rotX": 0.0104911709,
+            "rotY": 270.001831,
+            "rotZ": 6.803442,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64308,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "599494",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77297,
+            "posY": 1.11510324,
+            "posZ": 2.27331114,
+            "rotX": 0.0101507287,
+            "rotY": 270.006165,
+            "rotZ": 6.80344057,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64301,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "51186e",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77289,
+            "posY": 1.11838043,
+            "posZ": 1.72517157,
+            "rotX": 0.011134916,
+            "rotY": 270.014343,
+            "rotZ": 9.03081,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64300,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "643": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743749969/9538E3DD527683A3B63382B8740C735DB80E84D6/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "08dfe2",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77328,
+            "posY": 1.11009181,
+            "posZ": 1.17870724,
+            "rotX": 0.0406827442,
+            "rotY": 270.016785,
+            "rotZ": 8.525244,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-06-5 Study Technology",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42729,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "e139c9",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77328,
+            "posY": 1.07867575,
+            "posZ": 0.6286559,
+            "rotX": 0.0179881044,
+            "rotY": 270.00705,
+            "rotZ": 359.053467,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-05-3 Spy Network",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42722,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "6134ef",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7733879,
+            "posY": 1.04876745,
+            "posZ": 0.08066405,
+            "rotX": 0.0180130769,
+            "rotY": 270.0068,
+            "rotZ": 359.053467,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-07-1 Subjugate",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42730,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "a2de48",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7732925,
+            "posY": 1.01731515,
+            "posZ": -0.47018683,
+            "rotX": 0.0284702573,
+            "rotY": 270.002075,
+            "rotZ": 2.16733146,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-02-1 Naval Traditions",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42705,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "545fdd",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77333,
+            "posY": 1.04643834,
+            "posZ": -1.02276862,
+            "rotX": 0.0284702573,
+            "rotY": 270.002075,
+            "rotZ": 2.16733122,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-07-5 Subjugate",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42734,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "04259f",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7732849,
+            "posY": 1.055687,
+            "posZ": -1.57413316,
+            "rotX": 0.00336450851,
+            "rotY": 269.9931,
+            "rotZ": 5.358,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-05-4 Spy Network",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42723,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "c0f04a",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7732735,
+            "posY": 1.06824136,
+            "posZ": -2.12461042,
+            "rotX": -0.000859536638,
+            "rotY": 269.997284,
+            "rotZ": 5.420819,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-05-5 Spy Network",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42724,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "9ee3ae",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7732277,
+            "posY": 1.07725346,
+            "posZ": -2.674333,
+            "rotX": 0.0299784616,
+            "rotY": 269.9982,
+            "rotZ": 359.699371,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-03-2 New Alliance",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42710,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "b62399",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77324,
+            "posY": 1.13014436,
+            "posZ": -3.2251482,
+            "rotX": 0.0299784746,
+            "rotY": 269.9982,
+            "rotZ": 359.699371,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-06-1 Study Technology",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42725,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "21efc5",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77306,
+            "posY": 1.17212164,
+            "posZ": -3.773235,
+            "rotX": 359.9826,
+            "rotY": 269.994659,
+            "rotZ": 0.994406641,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-06-3 Study Technology",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42727,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "54937b",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7728462,
+            "posY": 1.21923637,
+            "posZ": -4.32120943,
+            "rotX": 359.982483,
+            "rotY": 269.994171,
+            "rotZ": 1.76601708,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-05-1 Spy Network",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42720,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "32850e",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77278,
+            "posY": 1.25222945,
+            "posZ": -4.873574,
+            "rotX": 359.982483,
+            "rotY": 269.994171,
+            "rotZ": 1.7660172,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-02-3 Naval Traditions",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42707,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "12b5bb",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77259,
+            "posY": 1.3080101,
+            "posZ": -5.41457033,
+            "rotX": 359.982422,
+            "rotY": 269.994141,
+            "rotZ": 2.107559,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-01-1 Counterespionage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42700,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "d77c47",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7725258,
+            "posY": 1.33771,
+            "posZ": -5.9671216,
+            "rotX": 359.982422,
+            "rotY": 269.994141,
+            "rotZ": 2.1075592,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-04-4 Royal Marriage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42718,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "079b50",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7725372,
+            "posY": 1.39264631,
+            "posZ": -6.512878,
+            "rotX": 359.982422,
+            "rotY": 269.9947,
+            "rotZ": 2.19301414,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-07-3 Subjugate",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42732,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "edbcc8",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77248,
+            "posY": 1.42152214,
+            "posZ": -7.065473,
+            "rotX": 359.982422,
+            "rotY": 269.9947,
+            "rotZ": 2.19301438,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-02-4 Naval Traditions",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42708,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "be0224",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7721672,
+            "posY": 1.68554008,
+            "posZ": -7.709867,
+            "rotX": 0.04223704,
+            "rotY": 270.0363,
+            "rotZ": 17.1595078,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-07-6 Subjugate",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42735,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "bc60fd",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7724266,
+            "posY": 1.57072639,
+            "posZ": -8.251173,
+            "rotX": 0.04223704,
+            "rotY": 270.0363,
+            "rotZ": 17.1595078,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-04-1 Royal Marriage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42715,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "9da0df",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7727356,
+            "posY": 1.48470724,
+            "posZ": -8.792143,
+            "rotX": 0.0405525453,
+            "rotY": 270.046082,
+            "rotZ": 17.3050251,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-07-4 Subjugate",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42733,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "318cf4",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7731171,
+            "posY": 1.36936951,
+            "posZ": -9.3339,
+            "rotX": 0.0401990823,
+            "rotY": 270.045349,
+            "rotZ": 17.47924,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-01-3 Counterespionage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42702,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1c1968",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7735062,
+            "posY": 1.2538234,
+            "posZ": -9.877813,
+            "rotX": 0.0212837234,
+            "rotY": 270.0404,
+            "rotZ": 16.92373,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-03-6 New Alliance",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42714,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "195005",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7727165,
+            "posY": 1.1596483,
+            "posZ": -10.4116211,
+            "rotX": 0.0164513644,
+            "rotY": 270.040283,
+            "rotZ": 7.75049925,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-02-2 Naval Traditions",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42706,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "3f2db9",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7731,
+            "posY": 1.13487256,
+            "posZ": -10.9644146,
+            "rotX": 0.01645179,
+            "rotY": 270.040283,
+            "rotZ": 7.75049829,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-04-2 Royal Marriage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42716,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "b08dc8",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77342,
+            "posY": 1.10415924,
+            "posZ": -11.5148687,
+            "rotX": 0.0101184985,
+            "rotY": 270.043182,
+            "rotZ": 8.214991,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-04-3 Royal Marriage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42717,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "9004e2",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.772995,
+            "posY": 1.08325,
+            "posZ": -12.0564127,
+            "rotX": 359.7868,
+            "rotY": 269.9749,
+            "rotZ": 5.382023,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-01-5 Counterespionage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42704,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "588f71",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7727623,
+            "posY": 1.08134031,
+            "posZ": -12.6097584,
+            "rotX": 359.7868,
+            "rotY": 269.9749,
+            "rotZ": 5.382023,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-01-4 Counterespionage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42703,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "d8d12c",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77331,
+            "posY": 1.09451127,
+            "posZ": -13.1624165,
+            "rotX": 359.867035,
+            "rotY": 269.9969,
+            "rotZ": 5.91760445,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-04-5 Royal Marriage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42719,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "559379",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7733,
+            "posY": 1.08742929,
+            "posZ": -13.71572,
+            "rotX": 359.867035,
+            "rotY": 269.9969,
+            "rotZ": 5.91760445,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-03-1 New Alliance",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42709,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "8f7cc2",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77333,
+            "posY": 1.07779109,
+            "posZ": -14.2674475,
+            "rotX": 359.942749,
+            "rotY": 269.996216,
+            "rotZ": 6.12267637,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-03-3 New Alliance",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42711,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "12bbf0",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.77337,
+            "posY": 1.06891382,
+            "posZ": -14.8199081,
+            "rotX": 359.9627,
+            "rotY": 269.99762,
+            "rotZ": 6.106728,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-05-2 Spy Network",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42721,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "b2d2ac",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7734337,
+            "posY": 1.086734,
+            "posZ": -15.3564034,
+            "rotX": 359.987762,
+            "rotY": 269.989258,
+            "rotZ": 6.163081,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-03-4 New Alliance",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42712,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "b55fad",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7733574,
+            "posY": 1.07731533,
+            "posZ": -15.9086447,
+            "rotX": -0.00445328327,
+            "rotY": 269.984161,
+            "rotZ": 6.161218,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-07-2 Subjugate",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42731,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "6c0a2a",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7731972,
+            "posY": 1.06818116,
+            "posZ": -16.4595375,
+            "rotX": 0.00202643173,
+            "rotY": 269.9702,
+            "rotZ": 6.15937948,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-01-2 Counterespionage",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42701,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "8c66ac",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7728348,
+            "posY": 1.08615124,
+            "posZ": -17.011858,
+            "rotX": 359.990936,
+            "rotY": 270.109375,
+            "rotZ": 355.783264,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-06-4 Study Technology",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42728,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "a3b3b6",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.7738647,
+            "posY": 1.17653692,
+            "posZ": -17.5577736,
+            "rotX": 359.990936,
+            "rotY": 270.109375,
+            "rotZ": 355.783264,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "DIP-03-5 New Alliance",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardDiplo",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42713,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "427": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680165/666DBB3AE4EE0BEB82DDF608A6705905A60704F9/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416680453/59952380AF30D0833F11EFA06BAFFCF3F18CAB57/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    }
+  ]
+}

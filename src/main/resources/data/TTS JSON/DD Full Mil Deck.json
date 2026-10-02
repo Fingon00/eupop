@@ -1,0 +1,3086 @@
+{
+  "SaveName": "",
+  "Date": "",
+  "VersionNumber": "",
+  "GameMode": "",
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Table": "",
+  "Sky": "",
+  "Note": "",
+  "TabStates": {},
+  "LuaScript": "",
+  "LuaScriptState": "",
+  "XmlUI": "",
+  "ObjectStates": [
+    {
+      "GUID": "853bd9",
+      "Name": "Deck",
+      "Transform": {
+        "posX": -24.0624371,
+        "posY": 1.19240594,
+        "posZ": 5.55636,
+        "rotX": -1.98513371E-05,
+        "rotY": 270.000031,
+        "rotZ": 180.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Tags": [
+        "ActionCardWar",
+        "LargeCard",
+        "RulerGeneral",
+        "Tuckable"
+      ],
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": false,
+      "SidewaysCard": false,
+      "DeckIDs": [
+        42818,
+        42829,
+        42815,
+        42828,
+        42826,
+        42835,
+        42805,
+        42830,
+        42831,
+        42800,
+        42821,
+        42827,
+        42824,
+        42825,
+        42834,
+        42813,
+        42801,
+        42816,
+        42823,
+        42822,
+        42808,
+        42809,
+        42817,
+        42832,
+        42802,
+        42810,
+        42804,
+        64501,
+        64503,
+        64507,
+        42814,
+        42811,
+        42833,
+        42803,
+        42806,
+        42819,
+        42807,
+        64508,
+        64506,
+        64509,
+        64505,
+        64502,
+        42820,
+        64504,
+        64500,
+        42812
+      ],
+      "CustomDeck": {
+        "428": {
+          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "645": {
+          "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "1be288",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.374218,
+            "posY": 1.5796982,
+            "posZ": -19.3544559,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-06-3 Military Traditions",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42818,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "12a221",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3748856,
+            "posY": 1.4668926,
+            "posZ": -18.808176,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-09-3 Siege Assault",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42829,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "51f45b",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3744125,
+            "posY": 1.46559393,
+            "posZ": -18.2760048,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-05-4 Military Reforms",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42815,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "be58c2",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3744278,
+            "posY": 1.46748221,
+            "posZ": -17.722084,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-09-2 Siege Assault",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42828,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "bc99d3",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3742828,
+            "posY": 1.46912372,
+            "posZ": -17.1684361,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-08-4 One Step Ahead",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42826,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "e53a37",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3744659,
+            "posY": 1.47231781,
+            "posZ": -16.63459,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-11-4 Tactical Retreat",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42835,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "a77135",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3743172,
+            "posY": 1.47743809,
+            "posZ": -16.0810852,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-02-2 Inspired Leadership",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42805,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "fb4b4d",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3741646,
+            "posY": 1.4869293,
+            "posZ": -15.5274258,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-10-1 Superior Tactics",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42830,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "fdc703",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37402,
+            "posY": 1.47152483,
+            "posZ": -14.9737387,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-10-2 Superior Tactics",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42831,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "4f5d72",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37393,
+            "posY": 1.48554051,
+            "posZ": -14.4099817,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-01-1 Forced March",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42800,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "8e7472",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3741646,
+            "posY": 1.47568977,
+            "posZ": -13.856679,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-07-2 Naval Maneuver",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42821,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "7370cb",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37393,
+            "posY": 1.48995054,
+            "posZ": -13.3160572,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-09-1 Siege Assault",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42827,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "7fa361",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3737679,
+            "posY": 1.507177,
+            "posZ": -12.7641115,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-08-2 One Step Ahead",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42824,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "845e3c",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37372,
+            "posY": 1.51784122,
+            "posZ": -12.2123871,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-08-3 One Step Ahead",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42825,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "cc266f",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37476,
+            "posY": 1.5350076,
+            "posZ": -11.6680508,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-11-3 Tactical Retreat",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42834,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "4fdb1f",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3744659,
+            "posY": 1.55714262,
+            "posZ": -11.1153374,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-05-2 Military Reforms",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42813,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1f537a",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3741722,
+            "posY": 1.54673994,
+            "posZ": -10.5628014,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-01-2 Forced March",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42801,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "85c096",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3741226,
+            "posY": 1.68189132,
+            "posZ": -10.0257082,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-06-1 Military Traditions",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42816,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "ba3226",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3742027,
+            "posY": 1.46872294,
+            "posZ": -9.482403,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-08-1 One Step Ahead",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42823,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "fc4f77",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37394,
+            "posY": 1.48589909,
+            "posZ": -8.887748,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-07-3 Naval Maneuver",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42822,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "aee959",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3739357,
+            "posY": 1.47396314,
+            "posZ": -8.333822,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-03-3 Logistics Master",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42808,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "638156",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37412,
+            "posY": 1.48605883,
+            "posZ": -7.78393126,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-04-1 Mercenaries",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42809,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "91db1c",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3739777,
+            "posY": 1.47541726,
+            "posZ": -7.230441,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-06-2 Military Traditions",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42817,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "75b1b5",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37423,
+            "posY": 1.491063,
+            "posZ": -6.67939663,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-11-1 Tactical Retreat",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42832,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "edd5fc",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3740654,
+            "posY": 1.48366892,
+            "posZ": -6.126297,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-01-3 Forced March",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42802,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "f876cf",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3739433,
+            "posY": 1.477162,
+            "posZ": -5.5771904,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-04-2 Mercenaries",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42810,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "a299e4",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3738441,
+            "posY": 1.48686016,
+            "posZ": -4.47690964,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-02-1 Inspired Leadership",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42804,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "fa11af",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3732,
+            "posY": 1.4647671,
+            "posZ": 4.334443,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64501,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "8727bc",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3728752,
+            "posY": 1.46657431,
+            "posZ": 4.88780069,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64503,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "d86312",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3726845,
+            "posY": 1.40813291,
+            "posZ": 5.44111633,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64507,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "7142e2",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37376,
+            "posY": 1.48136055,
+            "posZ": -3.92431712,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-05-3 Military Reforms",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42814,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "093f64",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3737068,
+            "posY": 1.47670591,
+            "posZ": -3.37507534,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-04-3 Mercenaries",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42811,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "2bc337",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37399,
+            "posY": 1.4922322,
+            "posZ": -2.823722,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-11-2 Tactical Retreat",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42833,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "29ee64",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3738556,
+            "posY": 1.48891842,
+            "posZ": -2.27072573,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-01-4 Forced March",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42803,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "759140",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3737526,
+            "posY": 1.48333967,
+            "posZ": -1.7222,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-03-1 Logistics Master",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42806,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "e44c71",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3736534,
+            "posY": 1.48240316,
+            "posZ": -1.17001307,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-06-4 Military Traditions",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42819,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "9091b5",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3735847,
+            "posY": 1.48166573,
+            "posZ": -0.6182292,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-03-2 Logistics Master",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42807,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "2b4a42",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3733253,
+            "posY": 1.47868645,
+            "posZ": 1.58455086,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64508,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "5dad04",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.37333,
+            "posY": 1.48027265,
+            "posZ": 2.13657427,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64506,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "aba351",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3732262,
+            "posY": 1.47129476,
+            "posZ": 2.68653274,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64509,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "70e928",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3735847,
+            "posY": 1.46515191,
+            "posZ": 3.23001266,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64505,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "ac8dff",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3734055,
+            "posY": 1.46433628,
+            "posZ": 3.78152847,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64502,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "42acf1",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3734741,
+            "posY": 1.48201644,
+            "posZ": -0.06651718,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-07-1 Naval Maneuver",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42820,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "2d0be8",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3733559,
+            "posY": 1.48293483,
+            "posZ": 0.4841622,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64504,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "c3625c",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3733444,
+            "posY": 1.48557007,
+            "posZ": 1.03414488,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 64500,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "645": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/36700717743750730/F9E00E82F67F1501285F5C0CB389DB115494F545/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "77ef83",
+          "Name": "Card",
+          "Transform": {
+            "posX": -33.3738747,
+            "posY": 1.49312842,
+            "posZ": -5.03052,
+            "rotX": 0.0,
+            "rotY": 270.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "MIL-05-1 Military Reforms",
+          "Description": "",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "ColorDiffuse": {
+            "r": 0.713235259,
+            "g": 0.713235259,
+            "b": 0.713235259
+          },
+          "Tags": [
+            "ActionCardWar",
+            "LargeCard",
+            "RulerGeneral",
+            "Tuckable"
+          ],
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "CardID": 42812,
+          "SidewaysCard": false,
+          "CustomDeck": {
+            "428": {
+              "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681063/BCDDD2B3D637AAEA5736013623CBE63E8949C3D1/",
+              "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/1842547323416681461/EED13AAEFA311A63CA499CB441A1822A84BB9D61/",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    }
+  ]
+}
