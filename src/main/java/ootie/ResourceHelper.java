@@ -4,8 +4,11 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
+
 import javax.annotation.Nullable;
+
 import ootie.helpers.Storage;
+import software.amazon.awssdk.utils.StringUtils;
 
 public final class ResourceHelper {
 
@@ -110,6 +113,11 @@ public final class ResourceHelper {
     @Nullable
     public String getMapFile(String name) {
         return getResourceFromFolder("images/Maps/", name + ".jpg");
+    }
+
+    @Nullable
+    public String getPlayerFile(String color, String name) {
+        return getResourceFromFolder("images/" + StringUtils.capitalize(color) + " Tokens/", name + ".jpg");
     }
 
     private String getCachedResource(Map<String, String> cache, String folder, String name) {

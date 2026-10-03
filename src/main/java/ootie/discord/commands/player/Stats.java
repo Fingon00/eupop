@@ -9,6 +9,7 @@ import ootie.discord.commands.GameStateSubcommand;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.helpers.Constants;
+import ootie.helpers.PlayerHelper;
 import ootie.message.MessageHelper;
 import ootie.service.player.PlayerStatsService;
 
@@ -35,7 +36,10 @@ class Stats extends GameStateSubcommand {
         optionMappings.remove(event.getOption(Constants.FACTION_COLOR));
         // NO OPTIONS SELECTED, JUST DISPLAY STATS
 
-        if (optionMappings.isEmpty()) return;
+        if (optionMappings.isEmpty()) {
+            PlayerHelper.drawPlayerArea(player, event);
+            return;
+        }
 
         MessageHelper.sendMessageToEventChannel(event, player.getUserName() + " player stats changed:");
 
