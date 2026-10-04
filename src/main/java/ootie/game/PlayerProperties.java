@@ -2,7 +2,9 @@ package ootie.game;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.annotation.Nullable;
+
 import lombok.Data;
 
 @Data
@@ -18,10 +20,27 @@ public class PlayerProperties {
     // State and settings
     private boolean passed;
     private int ducats = 15;
+    private int adminPower = 3;
+    private int diploPower = 3;
+    private int militaryPower = 3;
+    private int manpowerExhausted;
+    private int manpowerAvailable;
+    private String stateReligion = "Catholic";
+    private String diploAdvisor;
+    private String militaryAdvisor;
+    private String adminAdvisor;
+    private String ruler;
+    private boolean isBot;
+    private boolean changedNatFocus;
+    private boolean usedEvent;
+    private int stability;
 
     // private Map<String, Integer> breakthroughTGs = new LinkedHashMap<>();
 
     // private Set<String> abilities = new HashSet<>();
     private List<String> largeProvinces = new ArrayList<>();
     private List<String> smallProvinces = new ArrayList<>();
+    private List<String> vassalProvinces = new ArrayList<>();
+    private List<String> actionCards = new ArrayList<>();
+    private List<String> missions = new ArrayList<>();
 }

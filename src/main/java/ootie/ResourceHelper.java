@@ -107,17 +107,22 @@ public final class ResourceHelper {
 
     @Nullable
     public String getEventFile(String name) {
-        return getResourceFromFolder("images/events/", name + ".jpg");
+        return getResourceFromFolder("images/events/", name + ".png");
     }
 
     @Nullable
     public String getMapFile(String name) {
-        return getResourceFromFolder("images/Maps/", name + ".jpg");
+        return getResourceFromFolder("images/Maps/", name + ".png");
     }
 
     @Nullable
     public String getPlayerFile(String color, String name) {
-        return getResourceFromFolder("images/" + StringUtils.capitalize(color) + " Tokens/", name + ".jpg");
+        return getResourceFromFolder("images/" + StringUtils.capitalize(color) + " Tokens/", name + ".png");
+    }
+
+    @Nullable
+    public String getMiscFile(String name) {
+        return getResourceFromFolder("images/Misc Symbols/", name + ".png");
     }
 
     private String getCachedResource(Map<String, String> cache, String folder, String name) {

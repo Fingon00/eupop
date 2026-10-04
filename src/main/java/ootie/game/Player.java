@@ -13,13 +13,13 @@ public class Player extends PlayerProperties {
     @Getter
     private final Game game;
 
-    @Getter
-    private final Map<String, Integer> actionCards = new LinkedHashMap<>();
+    // @Getter
+    // private final Map<String, Integer> actionCards = new LinkedHashMap<>();
 
-    @Getter
-    private final Map<String, String> trapCardsPlanets = new LinkedHashMap<>();
+    // @Getter
+    // private final Map<String, String> trapCardsPlanets = new LinkedHashMap<>();
 
-    private @Getter Map<String, Integer> currentProducedUnits = new HashMap<>();
+    // private @Getter Map<String, Integer> currentProducedUnits = new HashMap<>();
 
     public Player(Game game) {
         this.game = game;

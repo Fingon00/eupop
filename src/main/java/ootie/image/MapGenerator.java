@@ -9,8 +9,11 @@ import java.awt.image.ColorConvertOp;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
+
 import javax.annotation.Nullable;
+
+import org.apache.commons.lang3.time.StopWatch;
+
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.game.Game;
@@ -20,7 +23,6 @@ import ootie.helpers.DisplayType;
 import ootie.message.MessageHelper;
 import ootie.service.image.FileUploadService;
 import ootie.settings.GlobalSettings;
-import org.apache.commons.lang3.time.StopWatch;
 
 public class MapGenerator implements AutoCloseable {
 
@@ -94,22 +96,14 @@ public class MapGenerator implements AutoCloseable {
         if (debug) debugAbsoluteStartTime = StopWatch.createStarted();
 
         this.game = game;
-        this.displayType = defaultIfNull(displayType);
+        this.displayType = displayType;
         this.event = event;
 
         // Height of objectives section (=0 when there is 5 or less objectives in the column with most objectives)
-        Set<String> revealedObjectives = game.getRevealedPublicObjectives().keySet();
-        int stage1PublicObjCount = 0;
-        int stage2PublicObjCount = 0;
-        int otherObjCount = revealedObjectives.size() - stage1PublicObjCount - stage2PublicObjCount;
-        stage1PublicObjCount += game.getPublicObjectives1Peekable().size();
-        stage2PublicObjCount += game.getPublicObjectives2Peekable().size();
-        int mostObjectivesInAColumn = Math.max(Math.max(stage1PublicObjCount, stage2PublicObjCount), otherObjCount);
-        int heightOfObjectivesSection = Math.max((mostObjectivesInAColumn - 5) * 43, 0);
-
+       
         // Height of sections of players stats and agendas/events in play and objectives
 
-        int heightOfPlayerAreasSection = getHeightOfPlayerAreasSection(game, 6, heightOfObjectivesSection);
+        
 
         // Width of map section
         mapWidth = Math.max(MINIMUM_WIDTH_OF_PLAYER_AREA, 600);
@@ -118,7 +112,7 @@ public class MapGenerator implements AutoCloseable {
         switch (this.displayType) {
             case stats:
                 heightForGameInfo = 40;
-                height = heightOfPlayerAreasSection;
+                height = 1000;
                 displayTypeBasic = DisplayType.stats;
                 width = mapWidth;
                 break;
@@ -136,7 +130,7 @@ public class MapGenerator implements AutoCloseable {
             case googly:
             default:
                 heightForGameInfo = 500;
-                height = 5000 + heightOfPlayerAreasSection;
+                height = 5000;
                 displayTypeBasic = DisplayType.all;
                 width = mapWidth;
         }
@@ -161,20 +155,10 @@ public class MapGenerator implements AutoCloseable {
         int playersY = playerCountForMap * typicalPlayerAreaHeight;
         final int columnsOfLaws = 2;
         final int lawHeight = 115;
-        int lawsY = (game.getLaws().size() / columnsOfLaws + 1) * lawHeight;
-        lawsY += (game.getEventsInEffect().size() / columnsOfLaws + 1) * lawHeight;
-        return playersY + lawsY + objectivesY + EXTRA_Y * 3;
+
+        return playersY + objectivesY + EXTRA_Y * 3;
     }
 
-    private DisplayType defaultIfNull(DisplayType displayType) {
-        if (game.getDisplayTypeForced() != null) {
-            return game.getDisplayTypeForced();
-        }
-        if (displayType == null) {
-            return DisplayType.all;
-        }
-        return displayType;
-    }
 
     FileUpload createFileUpload() {
         if (debug) debugDiscordTime = StopWatch.createStarted();
