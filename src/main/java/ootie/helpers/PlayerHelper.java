@@ -71,8 +71,8 @@ public class PlayerHelper {
         g.setComposite(AlphaComposite.SrcOver);
 
         BufferedImage stabilityImage =
-                ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Town"), 0.20f);
-        g.drawImage(stabilityImage, 80 + player.getStability() + 3 * (stabilityImage.getWidth() + 10), 65, null);
+                ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Town"), 0.30f);
+        g.drawImage(stabilityImage, 80 + player.getStability() + 3 * (stabilityImage.getWidth() + 10), 67, null);
 
         String stateReligion = player.getStateReligion();
         if (stateReligion != null) {

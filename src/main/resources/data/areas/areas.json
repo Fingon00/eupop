@@ -1,0 +1,2244 @@
+[
+{
+    "id": "aegean_archipelago",
+    "borders": [
+        "eastern_mediterranean"
+    ],
+    "provinces": [
+        "naxos",
+        "rhodes",
+        "creta"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5053,
+        3542
+    ]
+},
+{
+    "id": "algiers",
+    "borders": [
+        "southern_morocco",
+        "northern_morocco",
+        "western_mediterranean",
+        "tunisia",
+        "north_sahara"
+    ],
+    "provinces": [
+        "tlemcen",
+        "oran",
+        "mitidja",
+        "kabylia"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2583,
+        3739
+    ]
+},
+{
+    "id": "andalucia",
+    "borders": [
+        "portugal",
+        "leon",
+        "central_atlantic",
+        "western_mediterranean",
+        "castile"
+    ],
+    "provinces": [
+        "sevilla",
+        "gibraltar",
+        "cordoba",
+        "granada"
+    ],
+    "mountain_borders": [
+        "castile"
+    ],
+    "type": "area",
+    "religion_center": [
+        2210,
+        3403
+    ],
+    "cube_location": [
+        2051,
+        3318
+    ]
+},
+{
+    "id": "aquitaine",
+    "borders": [
+        "brittany_&_normandy",
+        "loire",
+        "bay_of_biscay",
+        "aragon",
+        "languedoc"
+    ],
+    "provinces": [
+        "bordeaux",
+        "anjou",
+        "armagnac",
+        "saintonge",
+        "poitou"
+    ],
+    "mountain_borders": [
+        "aragon"
+    ],
+    "type": "area",
+    "religion_center": [
+        2527,
+        2505
+    ],
+    "cube_location": [
+        2400,
+        2606
+    ]
+},
+{
+    "id": "aragon",
+    "borders": [
+        "western_mediterranean",
+        "leon",
+        "castile",
+        "gulf_of_lion",
+        "bay_of_biscay",
+        "aquitaine",
+        "languedoc"
+    ],
+    "provinces": [
+        "navarra",
+        "zaragoza",
+        "barcelona",
+        "valencia"
+    ],
+    "mountain_borders": [
+        "leon",
+        "aquitaine",
+        "languedoc"
+    ],
+    "type": "area",
+    "religion_center": [
+        2378,
+        2858
+    ],
+    "cube_location": [
+        2466,
+        2846
+    ]
+},
+{
+    "id": "astrakhan",
+    "borders": [
+        "circassia",
+        "crimea",
+        "saratov",
+        "caucasus"
+    ],
+    "provinces": [
+        "majar",
+        "sarai",
+        "astrakhan"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6449,
+        2419
+    ]
+},
+{
+    "id": "austria",
+    "borders": [
+        "bavaria_&_swabia",
+        "tirol",
+        "venetia",
+        "royal_hungary",
+        "croatia_&_bosnia",
+        "bohemia"
+    ],
+    "provinces": [
+        "osterreich",
+        "wien",
+        "steiermark"
+    ],
+    "mountain_borders": [
+        "tirol",
+        "venetia",
+        "croatia_&_bosnia"
+    ],
+    "type": "area",
+    "religion_center": [
+        4043,
+        2318
+    ]
+},
+{
+    "id": "aydin",
+    "borders": [
+        "eastern_mediterranean",
+        "karaman",
+        "northern_anatolia",
+        "aegean_sea"
+    ],
+    "provinces": [
+        "izmir",
+        "teke",
+        "mentese"
+    ],
+    "mountain_borders": [
+        "northern_anatolia",
+        "karaman"
+    ],
+    "type": "area",
+    "religion_center": [
+        5235,
+        3264
+    ]
+},
+{
+    "id": "bavaria_&_swabia",
+    "borders": [
+        "switzerland",
+        "tirol",
+        "austria",
+        "bohemia",
+        "rhineland",
+        "saxony"
+    ],
+    "provinces": [
+        "ulm",
+        "regensburg",
+        "augsburg",
+        "munchen",
+        "landshut",
+        "salzburg"
+    ],
+    "mountain_borders": [
+        "switzerland",
+        "tirol"
+    ],
+    "type": "area",
+    "religion_center": [
+        3483,
+        2163
+    ]
+},
+{
+    "id": "bohemia",
+    "borders": [
+        "bavaria_&_swabia",
+        "saxony",
+        "brandenburg",
+        "royal_hungary",
+        "wielkopolska",
+        "austria"
+    ],
+    "provinces": [
+        "praha",
+        "olomouc",
+        "rudohori",
+        "budejovice"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4100,
+        1942
+    ]
+},
+{
+    "id": "brandenburg",
+    "borders": [
+        "prussia",
+        "saxony",
+        "bohemia",
+        "pomerania",
+        "wielkopolska",
+        "lower_saxony"
+    ],
+    "provinces": [
+        "berlin",
+        "potsdam",
+        "altmark"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3971,
+        1653
+    ]
+},
+{
+    "id": "brittany_&_normandy",
+    "borders": [
+        "aquitaine",
+        "loire",
+        "bay_of_biscay",
+        "seine",
+        "english_channel"
+    ],
+    "provinces": [
+        "rennes",
+        "nantes",
+        "caux",
+        "maine",
+        "normandie"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2149,
+        2057
+    ],
+    "cube_location": [
+        2330,
+        2054
+    ]
+},
+{
+    "id": "burgundy",
+    "borders": [
+        "languedoc",
+        "switzerland",
+        "lombardy",
+        "loire",
+        "rhineland",
+        "seine"
+    ],
+    "provinces": [
+        "franche-comte",
+        "bourgogne",
+        "lyon",
+        "savoie"
+    ],
+    "mountain_borders": [
+        "switzerland",
+        "lombardy"
+    ],
+    "type": "area",
+    "religion_center": [
+        2879,
+        2230
+    ],
+    "cube_location": [
+        2970,
+        2400
+    ]
+},
+{
+    "id": "castile",
+    "borders": [
+        "western_mediterranean",
+        "leon",
+        "aragon",
+        "andalucia"
+    ],
+    "provinces": [
+        "madrid",
+        "burgos",
+        "murcia"
+    ],
+    "mountain_borders": [
+        "andalucia"
+    ],
+    "type": "area",
+    "religion_center": [
+        2245,
+        3103
+    ],
+    "cube_location": [
+        1733,
+        2766
+    ]
+},
+{
+    "id": "caucasus",
+    "borders": [
+        "circassia",
+        "transcaucasia",
+        "astrakhan"
+    ],
+    "provinces": [
+        "terek",
+        "shirvan"
+    ],
+    "mountain_borders": [
+        "transcaucasia"
+    ],
+    "type": "area",
+    "religion_center": [
+        6656,
+        2642
+    ]
+},
+{
+    "id": "central_italy",
+    "borders": [
+        "venetia",
+        "naples",
+        "adriatic_sea",
+        "gulf_of_lion",
+        "lombardy",
+        "central_mediterranean"
+    ],
+    "provinces": [
+        "ferrara",
+        "firenze",
+        "pisa",
+        "siena",
+        "roma",
+        "ancona"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3756,
+        2901
+    ]
+},
+{
+    "id": "central_russia",
+    "borders": [
+        "kazan",
+        "moscow_&_ryazan",
+        "novgorod",
+        "vologda",
+        "perm",
+        "saratov"
+    ],
+    "provinces": [
+        "yaroslavl",
+        "suzdal",
+        "murom",
+        "vladimir"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6129,
+        1089
+    ]
+},
+{
+    "id": "circassia",
+    "borders": [
+        "astrakhan",
+        "crimea",
+        "caucasus",
+        "black_sea",
+        "rum",
+        "transcaucasia"
+    ],
+    "provinces": [
+        "imereti",
+        "guria",
+        "circassia"
+    ],
+    "mountain_borders": [
+        "transcaucasia"
+    ],
+    "type": "area",
+    "religion_center": [
+        6245,
+        2706
+    ]
+},
+{
+    "id": "corsica_&_sardinia",
+    "borders": [
+        "central_mediterranean",
+        "gulf_of_lion"
+    ],
+    "provinces": [
+        "sardenya",
+        "corsica"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3438,
+        3110
+    ]
+},
+{
+    "id": "crimea",
+    "borders": [
+        "saratov",
+        "eastern_ukraine",
+        "western_ukraine",
+        "black_sea",
+        "circassia",
+        "astrakhan",
+        "moldavia"
+    ],
+    "provinces": [
+        "azov",
+        "crimea",
+        "caffa",
+        "zaporoze",
+        "kyzyl-yar"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6013,
+        2205
+    ]
+},
+{
+    "id": "croatia_&_bosnia",
+    "borders": [
+        "austria",
+        "hungarian_plain",
+        "royal_hungary",
+        "venetia",
+        "dalmatia",
+        "serbia_&_albania"
+    ],
+    "provinces": [
+        "zagreh",
+        "bosnia"
+    ],
+    "mountain_borders": [
+        "austria",
+        "venetia"
+    ],
+    "type": "area",
+    "religion_center": [
+        4326,
+        2709
+    ]
+},
+{
+    "id": "cyprus",
+    "borders": [
+        "eastern_mediterranean"
+    ],
+    "provinces": [
+        "cyprus"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5493,
+        3632
+    ]
+},
+{
+    "id": "cyrenaica",
+    "borders": [
+        "eastern_mediterranean",
+        "central_mediterranean",
+        "egypt",
+        "tripolitania"
+    ],
+    "provinces": [
+        "bangazi"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5151,
+        3908
+    ]
+},
+{
+    "id": "dalmatia",
+    "borders": [
+        "adriatic_sea",
+        "venetia",
+        "croatia_&_bosnia",
+        "serbia_&_albania"
+    ],
+    "provinces": [
+        "zara",
+        "rijeka",
+        "ragusa"
+    ],
+    "mountain_borders": [
+        "venetia",
+        "serbia_&_albania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4068,
+        2666
+    ]
+},
+{
+    "id": "east_anglia",
+    "borders": [
+        "english_channel",
+        "doggerbank",
+        "wales_&_wessex",
+        "northumbria"
+    ],
+    "provinces": [
+        "oxford",
+        "essex",
+        "london"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2433,
+        1399
+    ],
+    "cube_location": [
+        2431,
+        1519
+    ]
+},
+{
+    "id": "eastern_ukraine",
+    "borders": [
+        "crimea",
+        "saratov",
+        "white_ruthenia",
+        "western_ukraine",
+        "moscow_&_ryazan"
+    ],
+    "provinces": [
+        "cernigovas",
+        "poltava"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5783,
+        1809
+    ]
+},
+{
+    "id": "egypt",
+    "borders": [
+        "eastern_mediterranean",
+        "cyrenaica",
+        "palestine"
+    ],
+    "provinces": [
+        "qahirah",
+        "iskandariyya",
+        "dumyat"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5151,
+        3908
+    ]
+},
+{
+    "id": "estonia_&_livonia",
+    "borders": [
+        "gulf_of_bothnia",
+        "baltic_sea",
+        "novgorod",
+        "white_ruthenia",
+        "prussia",
+        "lithuania",
+        "karelia"
+    ],
+    "provinces": [
+        "reval",
+        "goldingen",
+        "riga",
+        "livland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5070,
+        1155
+    ]
+},
+{
+    "id": "finland",
+    "borders": [
+        "ostrobothnia",
+        "gulf_of_bothnia",
+        "karelia"
+    ],
+    "provinces": [
+        "abo",
+        "nyland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4879,
+        498
+    ]
+},
+{
+    "id": "flanders_&_wallonia",
+    "borders": [
+        "seine",
+        "netherlands",
+        "english_channel",
+        "rhineland",
+        "westphalia"
+    ],
+    "provinces": [
+        "brugge",
+        "gent",
+        "antwerpen",
+        "namur",
+        "liege",
+        "luxembourg"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3035,
+        1880
+    ],
+    "cube_location": [
+        2870,
+        1789
+    ]
+},
+{
+    "id": "gotaland_&_skane",
+    "borders": [
+        "skagerrak",
+        "baltic_sea",
+        "svealand",
+        "ostlandet"
+    ],
+    "provinces": [
+        "lund",
+        "gotland",
+        "ostergotland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3885,
+        865
+    ]
+},
+{
+    "id": "greece",
+    "borders": [
+        "serbia_&_albania",
+        "adriatic_sea",
+        "macedonia_&_thrace",
+        "aegean_sea",
+        "eastern_mediterranean"
+    ],
+    "provinces": [
+        "yanya",
+        "morea",
+        "athina"
+    ],
+    "mountain_borders": [
+        "serbia_&_albania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4729,
+        3407
+    ]
+},
+{
+    "id": "hungarian_plain",
+    "borders": [
+        "serbia_&_albania",
+        "croatia_&_bosnia",
+        "royal_hungary",
+        "transylvania"
+    ],
+    "provinces": [
+        "pest",
+        "szabolcs"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4324,
+        2379
+    ]
+},
+{
+    "id": "iraq",
+    "borders": [
+        "kurdistan",
+        "transcaucasia"
+    ],
+    "provinces": [
+        "tikrit",
+        "kirkuk",
+        "baghdad"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6300,
+        3483
+    ]
+},
+{
+    "id": "ireland",
+    "borders": [
+        "northeastern_atlantic",
+        "eastern_atlantic"
+    ],
+    "provinces": [
+        "ulaidh",
+        "pale",
+        "laighin",
+        "mhumhain"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        1628,
+        1271
+    ],
+    "cube_location": [
+        1590,
+        1402
+    ]
+},
+{
+    "id": "jutland",
+    "borders": [
+        "north_sea",
+        "skagerrak",
+        "pomerania",
+        "lower_saxony"
+    ],
+    "provinces": [
+        "slesvig",
+        "holstein",
+        "vestjylland",
+        "ostjylland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3439,
+        1127
+    ]
+},
+{
+    "id": "karaman",
+    "borders": [
+        "eastern_mediterranean",
+        "aydin",
+        "northern_anatolia",
+        "rum",
+        "kurdistan",
+        "syria"
+    ],
+    "provinces": [
+        "adana",
+        "karaman"
+    ],
+    "mountain_borders": [
+        "aydin",
+        "rum",
+        "kurdistan",
+        "syria"
+    ],
+    "type": "area",
+    "religion_center": [
+        5659,
+        3339
+    ]
+},
+{
+    "id": "karelia",
+    "borders": [
+        "pomorye",
+        "vologda",
+        "novgorod",
+        "finland",
+        "estonia_&_livonia",
+        "ostrobothnia",
+        "gulf_of_bothnia"
+    ],
+    "provinces": [
+        "olonets",
+        "ladoga",
+        "neva"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5383,
+        500
+    ]
+},
+{
+    "id": "kazan",
+    "borders": [
+        "central_russia",
+        "perm",
+        "saratov"
+    ],
+    "provinces": [
+        "kazan"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6563,
+        1667
+    ]
+},
+{
+    "id": "kurdistan",
+    "borders": [
+        "iraq",
+        "rum",
+        "karaman",
+        "syria",
+        "transcaucasia"
+    ],
+    "provinces": [
+        "urfa",
+        "mush",
+        "mosul"
+    ],
+    "mountain_borders": [
+        "rum",
+        "karaman",
+        "transcaucasia"
+    ],
+    "type": "area",
+    "religion_center": [
+        6008,
+        3235
+    ]
+},
+{
+    "id": "languedoc",
+    "borders": [
+        "aquitaine",
+        "burgundy",
+        "loire",
+        "lombardy",
+        "aragon",
+        "gulf_of_lion"
+    ],
+    "provinces": [
+        "provence",
+        "toulouse",
+        "montpellier",
+        "avignon"
+    ],
+    "mountain_borders": [
+        "lombardy",
+        "aragon"
+    ],
+    "type": "area",
+    "religion_center": [
+        3043,
+        2678
+    ],
+    "cube_location": [
+        2631,
+        2760
+    ]
+},
+{
+    "id": "leon",
+    "borders": [
+        "portugal",
+        "bay_of_biscay",
+        "central_atlantic",
+        "castile",
+        "aragon",
+        "andalucia"
+    ],
+    "provinces": [
+        "galicia",
+        "salamanca",
+        "badajoz"
+    ],
+    "mountain_borders": [
+        "aragon"
+    ],
+    "type": "area",
+    "religion_center": [
+        1918,
+        2702
+    ],
+    "cube_location": [
+        1733,
+        2766
+    ]
+},
+{
+    "id": "lithuania",
+    "borders": [
+        "white_ruthenia",
+        "red_ruthenia",
+        "estonia_&_livonia",
+        "prussia",
+        "mazovia_&_malopolska"
+    ],
+    "provinces": [
+        "zemaitija",
+        "vilnius"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4861,
+        1251
+    ]
+},
+{
+    "id": "loire",
+    "borders": [
+        "seine",
+        "brittany_&_normandy",
+        "aquitaine",
+        "burgundy",
+        "languedoc"
+    ],
+    "provinces": [
+        "orleans",
+        "berry",
+        "limousin",
+        "bourbon"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2813,
+        2577
+    ],
+    "cube_location": [
+        2732,
+        2496
+    ]
+},
+{
+    "id": "lombardy",
+    "borders": [
+        "venetia",
+        "tirol",
+        "switzerland",
+        "languedoc",
+        "burgundy",
+        "gulf_of_lion",
+        "central_italy"
+    ],
+    "provinces": [
+        "piemonte",
+        "milano",
+        "brescia",
+        "parma",
+        "mantova",
+        "genova",
+        "cremona"
+    ],
+    "mountain_borders": [
+        "tirol",
+        "switzerland",
+        "languedoc",
+        "burgundy"
+    ],
+    "type": "area",
+    "religion_center": [
+        3279,
+        2694
+    ]
+},
+{
+    "id": "lower_saxony",
+    "borders": [
+        "pomerania",
+        "brandenburg",
+        "netherlands",
+        "westphalia",
+        "jutland",
+        "north_sea",
+        "saxony"
+    ],
+    "provinces": [
+        "bremen",
+        "hamburg",
+        "hannover",
+        "magdeburg",
+        "braunschweig"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3590,
+        1590
+    ],
+    "cube_location": [
+        3482,
+        1521
+    ]
+},
+{
+    "id": "macaronesia",
+    "borders": [
+        "central_atlantic"
+    ],
+    "provinces": [
+        "madeira",
+        "canarias"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        1350,
+        3824
+    ]
+},
+{
+    "id": "macedonia_&_thrace",
+    "borders": [
+        "serbia_&_albania",
+        "greece",
+        "aegean_sea",
+        "wallachia_&_bulgaria",
+        "black_sea"
+    ],
+    "provinces": [
+        "selanik",
+        "edirne",
+        "constantinople"
+    ],
+    "mountain_borders": [
+        "serbia_&_albania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4659,
+        3094
+    ]
+},
+{
+    "id": "mazovia_&_malopolska",
+    "borders": [
+        "red_ruthenia",
+        "royal_hungary",
+        "prussia",
+        "wielkopolska",
+        "lithuania"
+    ],
+    "provinces": [
+        "warszawa",
+        "lublin",
+        "krakow"
+    ],
+    "mountain_borders": [
+        "royal_hungary"
+    ],
+    "type": "area",
+    "religion_center": [
+        4703,
+        1619
+    ]
+},
+{
+    "id": "moldavia",
+    "borders": [
+        "transylvania",
+        "wallachia_&_bulgaria",
+        "crimea",
+        "western_ukraine",
+        "red_ruthenia",
+        "black_sea"
+    ],
+    "provinces": [
+        "edisanas",
+        "suceava",
+        "basarabia"
+    ],
+    "mountain_borders": [
+        "transylvania"
+    ],
+    "type": "area",
+    "religion_center": [
+        5261,
+        2294
+    ]
+},
+{
+    "id": "moscow_&_ryazan",
+    "borders": [
+        "central_russia",
+        "novgorod",
+        "white_ruthenia",
+        "saratov",
+        "eastern_ukraine"
+    ],
+    "provinces": [
+        "tver",
+        "moskva",
+        "ryazan",
+        "odoyev"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5980,
+        1674
+    ]
+},
+{
+    "id": "naples",
+    "borders": [
+        "central_italy",
+        "adriatic_sea",
+        "central_mediterranean"
+    ],
+    "provinces": [
+        "napoli",
+        "bari",
+        "salerno"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4087,
+        3118
+    ]
+},
+{
+    "id": "netherlands",
+    "borders": [
+        "flanders_&_wallonia",
+        "english_channel",
+        "westphalia",
+        "lower_saxony",
+        "north_sea"
+    ],
+    "provinces": [
+        "amsterdam",
+        "zeeland",
+        "gelre",
+        "breda",
+        "friesland"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3223,
+        1431
+    ],
+    "cube_location": [
+        3119,
+        1448
+    ]
+},
+{
+    "id": "norrland",
+    "borders": [
+        "trondelag",
+        "ostrobothnia",
+        "svealand",
+        "gulf_of_bothnia"
+    ],
+    "provinces": [
+        "halsingland"
+    ],
+    "mountain_borders": [
+        "trondelag"
+    ],
+    "type": "area",
+    "religion_center": [
+        4141,
+        651
+    ]
+},
+{
+    "id": "north_sahara",
+    "borders": [
+        "tunisia",
+        "algiers",
+        "tripolitania"
+    ],
+    "provinces": [
+        "qafsah"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3111,
+        3827
+    ]
+},
+{
+    "id": "northern_anatolia",
+    "borders": [
+        "black_sea",
+        "rum",
+        "karaman",
+        "aydin",
+        "aegean_sea"
+    ],
+    "provinces": [
+        "hudavendigar",
+        "ankara",
+        "kastamonu"
+    ],
+    "mountain_borders": [
+        "aydin"
+    ],
+    "type": "area",
+    "religion_center": [
+        5595,
+        3029
+    ]
+},
+{
+    "id": "northern_morocco",
+    "borders": [
+        "western_mediterranean",
+        "algiers",
+        "southern_morocco",
+        "central_atlantic"
+    ],
+    "provinces": [
+        "gharb",
+        "centa",
+        "fez",
+        "marrakech",
+        "tangiers"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        1820,
+        3856
+    ]
+},
+{
+    "id": "northumbria",
+    "borders": [
+        "northeastern_atlantic",
+        "doggerbank",
+        "scotland",
+        "wales_&_wessex",
+        "east_anglia"
+    ],
+    "provinces": [
+        "northumberland",
+        "lancashire",
+        "york"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2403,
+        1276
+    ],
+    "cube_location": [
+        2176,
+        1218
+    ]
+},
+{
+    "id": "novgorod",
+    "borders": [
+        "estonia_&_livonia",
+        "white_ruthenia",
+        "karelia",
+        "vologda",
+        "central_russia",
+        "moscow_&_ryazan"
+    ],
+    "provinces": [
+        "pskov",
+        "novgorod"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5692,
+        941
+    ]
+},
+{
+    "id": "ostlandet",
+    "borders": [
+        "skagerrak",
+        "vestlandet",
+        "svealand",
+        "trondelag",
+        "gotaland_&_skane"
+    ],
+    "provinces": [
+        "akershus",
+        "borgarsysla"
+    ],
+    "mountain_borders": [
+        "vestlandet",
+        "trondelag"
+    ],
+    "type": "area",
+    "religion_center": [
+        3590,
+        402
+    ]
+},
+{
+    "id": "ostrobothnia",
+    "borders": [
+        "pomorye",
+        "norrland",
+        "finland",
+        "gulf_of_bothnia",
+        "karelia"
+    ],
+    "provinces": [
+        "osterbotten"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4879,
+        498
+    ]
+},
+{
+    "id": "palestine",
+    "borders": [
+        "eastern_mediterranean",
+        "syria",
+        "egypt"
+    ],
+    "provinces": [
+        "jaffa",
+        "gazzah",
+        "al-quds"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5651,
+        3984
+    ]
+},
+{
+    "id": "perm",
+    "borders": [
+        "pomorye",
+        "kazan",
+        "central_russia",
+        "vologda"
+    ],
+    "provinces": [
+        "perm",
+        "viatka",
+        "nizhny_novgorod"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6446,
+        813
+    ]
+},
+{
+    "id": "pomerania",
+    "borders": [
+        "prussia",
+        "baltic_sea",
+        "skagerrak",
+        "brandenburg",
+        "jutland",
+        "lower_saxony"
+    ],
+    "provinces": [
+        "lubeck",
+        "stettin",
+        "stralsund",
+        "mecklenburg"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4168,
+        1368
+    ]
+},
+{
+    "id": "pomorye",
+    "borders": [
+        "karelia",
+        "vologda",
+        "perm",
+        "ostrobothnia"
+    ],
+    "provinces": [
+        "arkhangelsk"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5383,
+        500
+    ]
+},
+{
+    "id": "portugal",
+    "borders": [
+        "central_atlantic",
+        "leon",
+        "andalucia"
+    ],
+    "provinces": [
+        "lisboa",
+        "beira",
+        "porto"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        1657,
+        3292
+    ],
+    "cube_location": [
+        1618,
+        3209
+    ]
+},
+{
+    "id": "prussia",
+    "borders": [
+        "pomerania",
+        "baltic_sea",
+        "wielkopolska",
+        "brandenburg",
+        "estonia_&_livonia",
+        "lithuania",
+        "mazovia_&_malopolska"
+    ],
+    "provinces": [
+        "danzig",
+        "kulm",
+        "osterode",
+        "konigsberg"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        4590,
+        1479
+    ]
+},
+{
+    "id": "red_ruthenia",
+    "borders": [
+        "white_ruthenia",
+        "lithuania",
+        "western_ukraine",
+        "royal_hungary",
+        "mazovia_&_malopolska",
+        "moldavia",
+        "transylvania"
+    ],
+    "provinces": [
+        "voluine",
+        "lwow"
+    ],
+    "mountain_borders": [
+        "royal_hungary",
+        "transylvania"
+    ],
+    "type": "area",
+    "religion_center": [
+        5063,
+        1738
+    ]
+},
+{
+    "id": "rhineland",
+    "borders": [
+        "switzerland",
+        "burgundy",
+        "seine",
+        "westphalia",
+        "bavaria_&_swabia",
+        "flanders_&_wallonia",
+        "saxony"
+    ],
+    "provinces": [
+        "mainz",
+        "pfalz",
+        "sundgau",
+        "lorraine"
+    ],
+    "mountain_borders": [
+        "switzerland"
+    ],
+    "type": "area",
+    "religion_center": [
+        3326,
+        2138
+    ],
+    "cube_location": [
+        3212,
+        2076
+    ]
+},
+{
+    "id": "royal_hungary",
+    "borders": [
+        "austria",
+        "wielkopolska",
+        "hungarian_plain",
+        "croatia_&_bosnia",
+        "red_ruthenia",
+        "transylvania",
+        "bohemia",
+        "mazovia_&_malopolska"
+    ],
+    "provinces": [
+        "sopron",
+        "pozsony",
+        "szepes"
+    ],
+    "mountain_borders": [
+        "wielkopolska",
+        "mazovia_&_malopolska",
+        "red_ruthenia",
+        "transylvania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4333,
+        2060
+    ]
+},
+{
+    "id": "rum",
+    "borders": [
+        "black_sea",
+        "circassia",
+        "transcaucasia",
+        "northern_anatolia",
+        "karaman",
+        "kurdistan"
+    ],
+    "provinces": [
+        "amasya",
+        "trebizond",
+        "erzurum"
+    ],
+    "mountain_borders": [
+        "transcaucasia",
+        "karaman",
+        "kurdistan"
+    ],
+    "type": "area",
+    "religion_center": [
+        6115,
+        3102
+    ]
+},
+{
+    "id": "saratov",
+    "borders": [
+        "central_russia",
+        "crimea",
+        "astrakhan",
+        "moscow_&_ryazan",
+        "eastern_ukraine",
+        "kazan"
+    ],
+    "provinces": [
+        "tambov",
+        "saratov"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        6563,
+        1667
+    ]
+},
+{
+    "id": "saxony",
+    "borders": [
+        "westphalia",
+        "brandenburg",
+        "bohemia",
+        "rhineland",
+        "bavaria_&_swabia",
+        "lower_saxony"
+    ],
+    "provinces": [
+        "leipzig",
+        "wittenberg",
+        "dresden",
+        "nurnberg"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3680,
+        1873
+    ]
+},
+{
+    "id": "scotland",
+    "borders": [
+        "northeastern_atlantic",
+        "doggerbank",
+        "northumbria"
+    ],
+    "provinces": [
+        "aberdeen",
+        "perth",
+        "lothian",
+        "ayrshire"
+    ],
+    "mountainborders": [],
+    "type": "area",
+    "religion_center": [
+        1962,
+        764
+    ],
+    "cube_location": [
+        1966,
+        879
+    ]
+},
+{
+    "id": "seine",
+    "borders": [
+        "loire",
+        "flanders_&_wallonia",
+        "brittany_&_normandy",
+        "english_channel",
+        "burgundy",
+        "rhineland"
+    ],
+    "provinces": [
+        "champagne",
+        "paris",
+        "picardie",
+        "artois"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2842,
+        1934
+    ],
+    "cube_location": [
+        2757,
+        2043
+    ]
+},
+{
+    "id": "serbia_&_albania",
+    "borders": [
+        "hungarian_plain",
+        "croatia_&_bosnia",
+        "transylvania",
+        "dalmatia",
+        "wallachia_&_bulgaria",
+        "greece",
+        "adriatic_sea",
+        "macedonia_&_thrace"
+    ],
+    "provinces": [
+        "beograd",
+        "kosovo",
+        "albania"
+    ],
+    "mountain_borders": [
+        "macedonia_&_thrace",
+        "greece",
+        "transylvania",
+        "dalmatia"
+    ],
+    "type": "area",
+    "religion_center": [
+        4656,
+        2823
+    ]
+},
+{
+    "id": "sicily",
+    "borders": [
+        "central_mediterranean"
+    ],
+    "provinces": [
+        "palermin",
+        "mesina",
+        "malta"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3837,
+        3616
+    ]
+},
+{
+    "id": "sjaelland_&_fyn",
+    "borders": [
+        "skagerrak"
+    ],
+    "provinces": [
+        "kobenhavn"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3815,
+        1219
+    ]
+},
+{
+    "id": "southern_morocco",
+    "borders": [
+        "algiers",
+        "northern_morocco",
+        "central_atlantic"
+    ],
+    "provinces": [
+        "sus",
+        "tafilalt"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        1981,
+        3957
+    ]
+},
+{
+    "id": "svealand",
+    "borders": [
+        "trondelag",
+        "baltic_sea",
+        "gotaland_&_skane",
+        "ostlandet",
+        "norrland",
+        "gulf_of_bothnia"
+    ],
+    "provinces": [
+        "bergslagen",
+        "stockholm"
+    ],
+    "mountain_borders": [
+        "trondelag"
+    ],
+    "type": "area",
+    "religion_center": [
+        4141,
+        651
+    ]
+},
+{
+    "id": "switzerland",
+    "borders": [
+        "bavaria_&_swabia",
+        "tirol",
+        "lombardy",
+        "rhineland",
+        "burgundy"
+    ],
+    "provinces": [
+        "geneve",
+        "bern",
+        "st_gallen"
+    ],
+    "mountain_borders": [
+        "bavaria_&_swabia",
+        "tirol",
+        "lombardy",
+        "rhineland",
+        "burgundy"
+    ],
+    "type": "area",
+    "religion_center": [
+        3491,
+        2353
+    ]
+},
+{
+    "id": "syria",
+    "borders": [
+        "eastern_mediterranean",
+        "palestine",
+        "kurdistan",
+        "karaman"
+    ],
+    "provinces": [
+        "halab",
+        "tarabulus",
+        "dimashq"
+    ],
+    "mountain_borders": [
+        "karaman"
+    ],
+    "type": "area",
+    "religion_center": [
+        5965,
+        3525
+    ]
+},
+{
+    "id": "tirol",
+    "borders": [
+        "bavaria_&_swabia",
+        "switzerland",
+        "lombardy",
+        "venetia",
+        "austria"
+    ],
+    "provinces": [
+        "tirol",
+        "lienz",
+        "karnten"
+    ],
+    "mountain_borders": [
+        "bavaria_&_swabia",
+        "switzerland",
+        "lombardy",
+        "venetia",
+        "austria"
+    ],
+    "type": "area",
+    "religion_center": [
+        3626,
+        2387
+    ]
+},
+{
+    "id": "transcaucasia",
+    "borders": [
+        "circassia",
+        "caucasus",
+        "iraq",
+        "rum",
+        "kurdistan"
+    ],
+    "provinces": [
+        "tblisi",
+        "yerevan",
+        "tabriz"
+    ],
+    "mountain_borders": [
+        "caucasus",
+        "circassia",
+        "rum",
+        "kurdistan"
+    ],
+    "type": "area",
+    "religion_center": [
+        6618,
+        3079
+    ]
+},
+{
+    "id": "transylvania",
+    "borders": [
+        "serbia_&_albania",
+        "wallachia_&_bulgaria",
+        "royal_hungary",
+        "hungarian_plain",
+        "moldavia",
+        "red_ruthenia"
+    ],
+    "provinces": [
+        "hunyad",
+        "torda"
+    ],
+    "mountain_borders": [
+        "royal_hungary",
+        "red_ruthenia",
+        "serbia_&_albania",
+        "wallachia_&_bulgaria",
+        "moldavia"
+    ],
+    "type": "area",
+    "religion_center": [
+        4826,
+        2223
+    ]
+},
+{
+    "id": "tripolitania",
+    "borders": [
+        "tunisia",
+        "central_mediterranean",
+        "north_sahara",
+        "cyrenaica"
+    ],
+    "provinces": [
+        "tripoli"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3672,
+        3984
+    ]
+},
+{
+    "id": "trondelag",
+    "borders": [
+        "norwegian_sea",
+        "ostlandet",
+        "vestlandet",
+        "norrland",
+        "svealand"
+    ],
+    "provinces": [
+        "trondheim"
+    ],
+    "mountain_borders": [
+        "ostlandet",
+        "vestlandet",
+        "norrland",
+        "svealand"
+    ],
+    "type": "area",
+    "religion_center": [
+        3590,
+        402
+    ]
+},
+{
+    "id": "tunisia",
+    "borders": [
+        "tripolitania",
+        "central_mediterranean",
+        "north_sahara",
+        "algiers"
+    ],
+    "provinces": [
+        "bizerte",
+        "tunis",
+        "sousse"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3528,
+        3901
+    ]
+},
+{
+    "id": "venetia",
+    "borders": [
+        "lombardy",
+        "tirol",
+        "austria",
+        "central_italy",
+        "dalmatia",
+        "croatia_&_bosnia",
+        "adriatic_sea"
+    ],
+    "provinces": [
+        "verona",
+        "treviso",
+        "venezia",
+        "krain"
+    ],
+    "mountain_borders": [
+        "tirol",
+        "dalmatia",
+        "croatia_&_bosnia",
+        "austria"
+    ],
+    "type": "area",
+    "religion_center": [
+        3990,
+        2444
+    ]
+},
+{
+    "id": "vestlandet",
+    "borders": [
+        "norwegian_sea",
+        "ostlandet",
+        "north_sea",
+        "trondelag"
+    ],
+    "provinces": [
+        "bergenlius"
+    ],
+    "mountain_borders": [
+        "ostlandet",
+        "trondelag"
+    ],
+    "type": "area",
+    "religion_center": [
+        3590,
+        402
+    ]
+},
+{
+    "id": "vologda",
+    "borders": [
+        "pomorye",
+        "karelia",
+        "novgorod",
+        "central_russia",
+        "perm"
+    ],
+    "provinces": [
+        "beloozero",
+        "vologda"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5692,
+        941
+    ]
+},
+{
+    "id": "wales_&_wessex",
+    "borders": [
+        "english_channel",
+        "northeastern_atlantic",
+        "east_anglia",
+        "northumbria",
+        "eastern_atlantic"
+    ],
+    "provinces": [
+        "wales",
+        "shrewsbury",
+        "wessex"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        2128,
+        1443
+    ],
+    "cube_location": [
+        2126,
+        1441
+    ]
+},
+{
+    "id": "wallachia_&_bulgaria",
+    "borders": [
+        "serbia_&_albania",
+        "transylvania",
+        "moldavia",
+        "macedonia_&_thrace",
+        "black_sea"
+    ],
+    "provinces": [
+        "sofya",
+        "silistre",
+        "buzau",
+        "tirgoviste"
+    ],
+    "mountain_borders": [
+        "transylvania"
+    ],
+    "type": "area",
+    "religion_center": [
+        4776,
+        2682
+    ]
+},
+{
+    "id": "western_ukraine",
+    "borders": [
+        "crimea",
+        "moldavia",
+        "eastern_ukraine",
+        "white_ruthenia",
+        "red_ruthenia"
+    ],
+    "provinces": [
+        "podole",
+        "kijevas"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5472,
+        2119
+    ]
+},
+{
+    "id": "westphalia",
+    "borders": [
+        "flanders_&_wallonia",
+        "rhineland",
+        "netherlands",
+        "lower_saxony",
+        "saxony"
+    ],
+    "provinces": [
+        "kleve",
+        "koln",
+        "trier",
+        "frankfurt",
+        "munster"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        3421,
+        1690
+    ],
+    "cube_location": [
+        3261,
+        1770
+    ]
+},
+{
+    "id": "white_ruthenia",
+    "borders": [
+        "estonia_&_livonia",
+        "novgorod",
+        "lithuania",
+        "eastern_ukraine",
+        "western_ukraine",
+        "red_ruthenia",
+        "moscow_&_ryazan"
+    ],
+    "provinces": [
+        "minskas",
+        "polockas",
+        "smolenskas"
+    ],
+    "mountain_borders": [],
+    "type": "area",
+    "religion_center": [
+        5651,
+        1574
+    ]
+},
+{
+    "id": "wielkopolska",
+    "borders": [
+        "prussia",
+        "royal_hungary",
+        "brandenburg",
+        "bohemia",
+        "mazovia_&_malopolska"
+    ],
+    "provinces": [
+        "sieradz",
+        "kalisz",
+        "poznan",
+        "silesia"
+    ],
+    "mountain_borders": [
+        "royal_hungary"
+    ],
+    "type": "area",
+    "religion_center": [
+        4104,
+        1747
+    ]
+}
+]
