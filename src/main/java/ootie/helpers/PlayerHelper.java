@@ -4,7 +4,6 @@ import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
@@ -18,7 +17,9 @@ public class PlayerHelper {
 
     public static void drawPlayerArea(Player player, SlashCommandInteractionEvent event) {
         String color = player.getColor();
-        color = "Purple";
+        if (player.getColor() == null || player.getColor().isEmpty()) {
+            color = "Purple";
+        }
         BufferedImage mapImage = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "PlayerArea"));
 
         BufferedImage finalImage =
@@ -30,9 +31,9 @@ public class PlayerHelper {
         g.setFont(g.getFont().deriveFont(80f));
         DrawingUtil.superDrawStringCentered(
                 g, "" + player.getDucats(), 215, 638, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
-        
+
         int powerStringy = 720;
-        
+
         DrawingUtil.superDrawStringCentered(
                 g, "" + player.getAdminPower(), 740, powerStringy, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
         DrawingUtil.superDrawStringCentered(
@@ -69,6 +70,9 @@ public class PlayerHelper {
         }
         g.setComposite(AlphaComposite.SrcOver);
 
+        BufferedImage stabilityImage =
+                ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Town"), 0.20f);
+        g.drawImage(stabilityImage, 80 + player.getStability() + 3 * (stabilityImage.getWidth() + 10), 65, null);
 
         String stateReligion = player.getStateReligion();
         if (stateReligion != null) {
@@ -76,12 +80,6 @@ public class PlayerHelper {
                     ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile(stateReligion), 0.60f);
             g.drawImage(religionImage, 429, 728, null);
         }
-
-
-
-
-
-
 
         FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "playerArea");
         MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);

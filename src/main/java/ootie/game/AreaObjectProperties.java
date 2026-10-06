@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import javax.annotation.Nullable;
-
 import lombok.Data;
 
 @Data
@@ -19,7 +16,6 @@ public class AreaObjectProperties {
     private List<String> units = new ArrayList<>();
     private List<String> influenceCubes = new ArrayList<>();
     private String type;
+    private List<String> claims = new ArrayList<>();
     private int[] religiousCenter;
-    
-    
 }

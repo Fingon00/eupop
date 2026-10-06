@@ -19,7 +19,26 @@ class Stats extends GameStateSubcommand {
         super(Constants.STATS, "Player Stats: Command tokens, trade goods, commodities", true, true);
         addOptions(new OptionData(
                         OptionType.STRING, Constants.DUCATS, "Ducat count - can use +1/-1 etc. to add/subtract"))
-                .addOptions(new OptionData(OptionType.STRING, Constants.PASSED, "Set whether player has passed y/n"))
+                .addOptions(new OptionData(
+                        OptionType.STRING,
+                        Constants.ADMIN_POWER,
+                        "Admin power count - can use +1/-1 etc. to add/subtract"))
+                .addOptions(new OptionData(
+                        OptionType.STRING,
+                        Constants.MILITARY_POWER,
+                        "Military power count - can use +1/-1 etc. to add/subtract"))
+                .addOptions(new OptionData(
+                        OptionType.STRING,
+                        Constants.DIPLO_POWER,
+                        "Diplomatic power count - can use +1/-1 etc. to add/subtract"))
+                .addOptions(new OptionData(
+                        OptionType.STRING, Constants.STABILITY, "Stability count - can use +1/-1 etc. to add/subtract"))
+                .addOptions(new OptionData(OptionType.STRING, Constants.STATE_RELIGION, "State religion"))
+                .addOptions(new OptionData(OptionType.STRING, Constants.COLOR, "Color"))
+                .addOptions(new OptionData(OptionType.BOOLEAN, Constants.PASSED, "Set whether player has passed y/n"))
+                .addOptions(new OptionData(OptionType.BOOLEAN, Constants.BOT, "Set whether player is a bot"))
+                .addOptions(new OptionData(
+                        OptionType.BOOLEAN, Constants.CHANGED_FOCUS, "Set whether player has changed focus"))
                 .addOptions(new OptionData(OptionType.USER, Constants.PLAYER, "Player for which you set stats"))
                 .addOptions(new OptionData(
                                 OptionType.STRING, Constants.FACTION_COLOR, "Set stats for another Faction or Color")
@@ -48,17 +67,52 @@ class Stats extends GameStateSubcommand {
             PlayerStatsService.setValue(event, game, player, ducats, player::setDucats, player::getDucats);
         }
 
+        OptionMapping diploPower = event.getOption(Constants.DIPLO_POWER);
+        if (diploPower != null) {
+            PlayerStatsService.setValue(event, game, player, diploPower, player::setDiploPower, player::getDiploPower);
+        }
+        OptionMapping adminPower = event.getOption(Constants.ADMIN_POWER);
+        if (adminPower != null) {
+            PlayerStatsService.setValue(event, game, player, adminPower, player::setAdminPower, player::getAdminPower);
+        }
+        OptionMapping militaryPower = event.getOption(Constants.MILITARY_POWER);
+        if (militaryPower != null) {
+            PlayerStatsService.setValue(
+                    event, game, player, militaryPower, player::setMilitaryPower, player::getMilitaryPower);
+        }
+
+        OptionMapping stability = event.getOption(Constants.STABILITY);
+        if (stability != null) {
+            PlayerStatsService.setValue(event, game, player, stability, player::setStability, player::getStability);
+        }
+
+        OptionMapping stateReligion = event.getOption(Constants.STATE_RELIGION);
+        if (stateReligion != null) {
+            String value = stateReligion.getAsString();
+            player.setStateReligion(value);
+            MessageHelper.sendMessageToEventChannel(event, ">  set **" + stateReligion.getName() + "** to " + value);
+        }
+
+        OptionMapping color = event.getOption(Constants.COLOR);
+        if (color != null) {
+            String value = color.getAsString();
+            player.setColor(value);
+            MessageHelper.sendMessageToEventChannel(event, ">  set **" + color.getName() + "** to " + value);
+        }
+
         OptionMapping optionPassed = event.getOption(Constants.PASSED);
         if (optionPassed != null) {
             StringBuilder message = new StringBuilder(getGeneralMessage(optionPassed));
-            String value = optionPassed.getAsString().toLowerCase();
-            if ("y".equals(value) || "yes".equals(value)) {
-                player.setPassed(true);
-            } else if ("n".equals(value) || "no".equals(value)) {
-                player.setPassed(false);
-            } else {
-                message.append(", which is not a valid input. Please use one of `y` `yes` `n` or `no`.");
-            }
+            boolean value = optionPassed.getAsBoolean();
+            player.setPassed(value);
+            MessageHelper.sendMessageToEventChannel(event, message.toString());
+        }
+
+        OptionMapping optionChangedFocus = event.getOption(Constants.CHANGED_FOCUS);
+        if (optionChangedFocus != null) {
+            StringBuilder message = new StringBuilder(getGeneralMessage(optionChangedFocus));
+            boolean value = optionChangedFocus.getAsBoolean();
+            player.setChangedNatFocus(value);
             MessageHelper.sendMessageToEventChannel(event, message.toString());
         }
     }

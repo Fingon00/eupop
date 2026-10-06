@@ -9,11 +9,7 @@ import java.awt.image.ColorConvertOp;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import javax.annotation.Nullable;
-
-import org.apache.commons.lang3.time.StopWatch;
-
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.game.Game;
@@ -23,6 +19,7 @@ import ootie.helpers.DisplayType;
 import ootie.message.MessageHelper;
 import ootie.service.image.FileUploadService;
 import ootie.settings.GlobalSettings;
+import org.apache.commons.lang3.time.StopWatch;
 
 public class MapGenerator implements AutoCloseable {
 
@@ -100,10 +97,8 @@ public class MapGenerator implements AutoCloseable {
         this.event = event;
 
         // Height of objectives section (=0 when there is 5 or less objectives in the column with most objectives)
-       
-        // Height of sections of players stats and agendas/events in play and objectives
 
-        
+        // Height of sections of players stats and agendas/events in play and objectives
 
         // Width of map section
         mapWidth = Math.max(MINIMUM_WIDTH_OF_PLAYER_AREA, 600);
@@ -158,7 +153,6 @@ public class MapGenerator implements AutoCloseable {
 
         return playersY + objectivesY + EXTRA_Y * 3;
     }
-
 
     FileUpload createFileUpload() {
         if (debug) debugDiscordTime = StopWatch.createStarted();

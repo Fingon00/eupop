@@ -2,9 +2,7 @@ package ootie.game;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.annotation.Nullable;
-
 import lombok.Data;
 
 @Data
@@ -23,6 +21,7 @@ public class PlayerProperties {
     private int adminPower = 3;
     private int diploPower = 3;
     private int militaryPower = 3;
+    private int stability = 0;
     private int manpowerExhausted;
     private int manpowerAvailable;
     private String stateReligion = "Catholic";
@@ -33,7 +32,6 @@ public class PlayerProperties {
     private boolean isBot;
     private boolean changedNatFocus;
     private boolean usedEvent;
-    private int stability;
 
     // private Map<String, Integer> breakthroughTGs = new LinkedHashMap<>();
 
