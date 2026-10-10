@@ -12,6 +12,7 @@ import ootie.ResourceHelper;
 import ootie.json.JsonMapperManager;
 import ootie.logging.BotLogger;
 import ootie.model.AreaModel;
+import ootie.model.CharacterModel;
 import ootie.model.EventModel;
 import ootie.model.ModelInterface;
 import ootie.model.ProvinceModel;
@@ -26,6 +27,7 @@ public class Mapper {
     private static final Map<String, SourceModel> sources = new HashMap<>();
     private static final Map<String, ProvinceModel> provinces = new HashMap<>();
     private static final Map<String, AreaModel> areas = new HashMap<>();
+    private static final Map<String, CharacterModel> characters = new HashMap<>();
 
     private static final JsonMapper jsonMapper =
             JsonMapperManager.basic().rebuild().build();
@@ -43,6 +45,7 @@ public class Mapper {
         importJsonObjectsFromFolder("sources", sources, SourceModel.class);
         importJsonObjectsFromFolder("provinces", provinces, ProvinceModel.class);
         importJsonObjectsFromFolder("areas", areas, AreaModel.class);
+        importJsonObjectsFromFolder("characters", characters, CharacterModel.class);
     }
 
     public static boolean isValidEvent(String eventID) {
@@ -59,6 +62,10 @@ public class Mapper {
 
     public static Map<String, AreaModel> getAreas() {
         return new HashMap<>(areas);
+    }
+
+    public static Map<String, CharacterModel> getCharacters() {
+        return new HashMap<>(characters);
     }
 
     public static EventModel getEvent(String eventID) {

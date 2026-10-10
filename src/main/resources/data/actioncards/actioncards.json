@@ -1,0 +1,434 @@
+[
+    {
+        "id": "ADM-01-1",
+        "name": "Central Authority"
+    },
+    {
+        "id": "ADM-01-2",
+        "name": "Central Authority"
+    },
+    {
+        "id": "ADM-01-3",
+        "name": "Central Authority"
+    },
+    {
+        "id": "ADM-01-4",
+        "name": "Central Authority"
+    },
+    {
+        "id": "ADM-02-1",
+        "name": "Development"
+    },
+    {
+        "id": "ADM-02-2",
+        "name": "Development"
+    },
+    {
+        "id": "ADM-02-3",
+        "name": "Development"
+    },
+    {
+        "id": "ADM-02-4",
+        "name": "Development"
+    },
+    {
+        "id": "ADM-03-1",
+        "name": "Exceptional Year"
+    },
+    {
+        "id": "ADM-03-2",
+        "name": "Exceptional Year"
+    },
+    {
+        "id": "ADM-03-3",
+        "name": "Exceptional Year"
+    },
+    {
+        "id": "ADM-03-4",
+        "name": "Exceptional Year"
+    },
+    {
+        "id": "ADM-03-5",
+        "name": "Exceptional Year"
+    },
+    {
+        "id": "ADM-04-1",
+        "name": "Commercial Growth"
+    },
+    {
+        "id": "ADM-04-2",
+        "name": "Commercial Growth"
+    },
+    {
+        "id": "ADM-04-3",
+        "name": "Commercial Growth"
+    },
+    {
+        "id": "ADM-04-4",
+        "name": "Commercial Growth"
+    },
+    {
+        "id": "ADM-04-5",
+        "name": "Commercial Growth"
+    },
+    {
+        "id": "ADM-05-1",
+        "name": "Harbor Refugees"
+    },
+    {
+        "id": "ADM-05-2",
+        "name": "Harbor Refugees"
+    },
+    {
+        "id": "ADM-05-3",
+        "name": "Harbor Refugees"
+    },
+    {
+        "id": "ADM-05-4",
+        "name": "Harbor Refugees"
+    },
+    {
+        "id": "ADM-06-1",
+        "name": "Increase Stability"
+    },
+    {
+        "id": "ADM-06-2",
+        "name": "Increase Stability"
+    },
+    {
+        "id": "ADM-06-3",
+        "name": "Increase Stability"
+    },
+    {
+        "id": "ADM-07-1",
+        "name": "Man of the Church"
+    },
+    {
+        "id": "ADM-07-2",
+        "name": "Man of the Church"
+    },
+    {
+        "id": "ADM-07-3",
+        "name": "Man of the Church"
+    },
+    {
+        "id": "ADM-07-4",
+        "name": "Man of the Church"
+    },
+    {
+        "id": "ADM-07-5",
+        "name": "Man of the Church"
+    },
+    {
+        "id": "ADM-08-1",
+        "name": "Revolutionary Ideas"
+    },
+    {
+        "id": "ADM-08-2",
+        "name": "Revolutionary Ideas"
+    },
+    {
+        "id": "ADM-08-3",
+        "name": "Revolutionary Ideas"
+    },
+    {
+        "id": "ADM-08-4",
+        "name": "Revolutionary Ideas"
+    },
+    {
+        "id": "ADM-08-5",
+        "name": "Revolutionary Ideas"
+    },
+    {
+        "id": "ADM-08-6",
+        "name": "Revolutionary Ideas"
+    },
+    {
+        "id": "DIP-01-1",
+        "name": "Counterespionage"
+    },
+    {
+        "id": "DIP-01-2",
+        "name": "Counterespionage"
+    },
+    {
+        "id": "DIP-01-3",
+        "name": "Counterespionage"
+    },
+    {
+        "id": "DIP-01-4",
+        "name": "Counterespionage"
+    },
+    {
+        "id": "DIP-01-5",
+        "name": "Counterespionage"
+    },
+    {
+        "id": "DIP-02-1",
+        "name": "Naval Traditions"
+    },
+    {
+        "id": "DIP-02-2",
+        "name": "Naval Traditions"
+    },
+    {
+        "id": "DIP-02-3",
+        "name": "Naval Traditions"
+    },
+    {
+        "id": "DIP-02-4",
+        "name": "Naval Traditions"
+    },
+    {
+        "id": "DIP-03-1",
+        "name": "New Alliance"
+    },
+    {
+        "id": "DIP-03-2",
+        "name": "New Alliance"
+    },
+    {
+        "id": "DIP-03-3",
+        "name": "New Alliance"
+    },
+    {
+        "id": "DIP-03-4",
+        "name": "New Alliance"
+    },
+    {
+        "id": "DIP-03-5",
+        "name": "New Alliance"
+    },
+    {
+        "id": "DIP-03-6",
+        "name": "New Alliance"
+    },
+    {
+        "id": "DIP-04-1",
+        "name": "Royal Marriage"
+    },
+    {
+        "id": "DIP-04-2",
+        "name": "Royal Marriage"
+    },
+    {
+        "id": "DIP-04-3",
+        "name": "Royal Marriage"
+    },
+    {
+        "id": "DIP-04-4",
+        "name": "Royal Marriage"
+    },
+    {
+        "id": "DIP-04-5",
+        "name": "Royal Marriage"
+    },
+    {
+        "id": "DIP-05-1",
+        "name": "Spy Network"
+    },
+    {
+        "id": "DIP-05-2",
+        "name": "Spy Network"
+    },
+    {
+        "id": "DIP-05-3",
+        "name": "Spy Network"
+    },
+    {
+        "id": "DIP-05-4",
+        "name": "Spy Network"
+    },
+    {
+        "id": "DIP-05-5",
+        "name": "Spy Network"
+    },
+    {
+        "id": "DIP-06-1",
+        "name": "Study Technology"
+    },
+    {
+        "id": "DIP-06-2",
+        "name": "Study Technology"
+    },
+    {
+        "id": "DIP-06-3",
+        "name": "Study Technology"
+    },
+    {
+        "id": "DIP-06-4",
+        "name": "Study Technology"
+    },
+    {
+        "id": "DIP-06-5",
+        "name": "Study Technology"
+    },
+    {
+        "id": "DIP-07-1",
+        "name": "Subjugate"
+    },
+    {
+        "id": "DIP-07-2",
+        "name": "Subjugate"
+    },
+    {
+        "id": "DIP-07-3",
+        "name": "Subjugate"
+    },
+    {
+        "id": "DIP-07-4",
+        "name": "Subjugate"
+    },
+    {
+        "id": "DIP-07-5",
+        "name": "Subjugate"
+    },
+    {
+        "id": "DIP-07-6",
+        "name": "Subjugate"
+    },
+    {
+        "id": "MIL-01-1",
+        "name": "Forced March"
+    },
+    {
+        "id": "MIL-01-2",
+        "name": "Forced March"
+    },
+    {
+        "id": "MIL-01-3",
+        "name": "Forced March"
+    },
+    {
+        "id": "MIL-01-4",
+        "name": "Forced March"
+    },
+    {
+        "id": "MIL-02-1",
+        "name": "Inspired Leadership"
+    },
+    {
+        "id": "MIL-02-2",
+        "name": "Inspired Leadership"
+    },
+    {
+        "id": "MIL-03-1",
+        "name": "Logistics Master"
+    },
+    {
+        "id": "MIL-03-2",
+        "name": "Logistics Master"
+    },
+    {
+        "id": "MIL-03-3",
+        "name": "Logistics Master"
+    },
+    {
+        "id": "MIL-04-1",
+        "name": "Mercenaries"
+    },
+    {
+        "id": "MIL-04-2",
+        "name": "Mercenaries"
+    },
+    {
+        "id": "MIL-04-3",
+        "name": "Mercenaries"
+    },
+    {
+        "id": "MIL-05-1",
+        "name": "Military Reforms"
+    },
+    {
+        "id": "MIL-05-2",
+        "name": "Military Reforms"
+    },
+    {
+        "id": "MIL-05-3",
+        "name": "Military Reforms"
+    },
+    {
+        "id": "MIL-05-4",
+        "name": "Military Reforms"
+    },
+    {
+        "id": "MIL-06-1",
+        "name": "Military Traditions"
+    },
+    {
+        "id": "MIL-06-2",
+        "name": "Military Traditions"
+    },
+    {
+        "id": "MIL-06-3",
+        "name": "Military Traditions"
+    },
+    {
+        "id": "MIL-06-4",
+        "name": "Military Traditions"
+    },
+    {
+        "id": "MIL-07-1",
+        "name": "Naval Maneuver"
+    },
+    {
+        "id": "MIL-07-2",
+        "name": "Naval Maneuver"
+    },
+    {
+        "id": "MIL-07-3",
+        "name": "Naval Maneuver"
+    },
+    {
+        "id": "MIL-08-1",
+        "name": "One Step Ahead"
+    },
+    {
+        "id": "MIL-08-2",
+        "name": "One Step Ahead"
+    },
+    {
+        "id": "MIL-08-3",
+        "name": "One Step Ahead"
+    },
+    {
+        "id": "MIL-08-4",
+        "name": "One Step Ahead"
+    },
+    {
+        "id": "MIL-09-1",
+        "name": "Siege Assault"
+    },
+    {
+        "id": "MIL-09-2",
+        "name": "Siege Assault"
+    },
+    {
+        "id": "MIL-09-3",
+        "name": "Siege Assault"
+    },
+    {
+        "id": "MIL-10-1",
+        "name": "Superior Tactics"
+    },
+    {
+        "id": "MIL-10-2",
+        "name": "Superior Tactics"
+    },
+    {
+        "id": "MIL-11-1",
+        "name": "Tactical Retreat"
+    },
+    {
+        "id": "MIL-11-2",
+        "name": "Tactical Retreat"
+    },
+    {
+        "id": "MIL-11-3",
+        "name": "Tactical Retreat"
+    },
+    {
+        "id": "MIL-11-4",
+        "name": "Tactical Retreat"
+    }
+]

@@ -57,6 +57,8 @@ public final class Constants {
     // no /search franken_errata yet
     // no /search generic_cards yet
     public static final String SEARCH_LEADERS = "leaders";
+    public static final String SEARCH_CHARACTERS = "characters";
+    public static final String CHARACTER = "character";
     public static final String SEARCH_GENOMES = "genomes";
     public static final String SEARCH_PARADIGMS = "paradigms";
     // no /search map_templates yet

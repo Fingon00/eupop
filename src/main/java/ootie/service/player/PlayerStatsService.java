@@ -58,7 +58,6 @@ public class PlayerStatsService {
                 if (!suppressMessage) MessageHelper.sendMessageToEventChannel(event, messageToSend);
             } else {
                 int newNumber = existingNumber + number;
-                newNumber = Math.max(newNumber, 0);
                 consumer.accept(newNumber);
                 String messageToSend =
                         getChangeValueMessage(optionName, number, existingNumber, newNumber, explanation);

@@ -1,6 +1,7 @@
 package ootie.discord.commands.player;
 
 import java.util.List;
+
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
@@ -115,6 +116,7 @@ class Stats extends GameStateSubcommand {
             player.setChangedNatFocus(value);
             MessageHelper.sendMessageToEventChannel(event, message.toString());
         }
+        PlayerHelper.drawPlayerArea(player, event);
     }
 
     private static String getGeneralMessage(OptionMapping option) {

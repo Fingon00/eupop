@@ -4,6 +4,7 @@ import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
@@ -71,8 +72,8 @@ public class PlayerHelper {
         g.setComposite(AlphaComposite.SrcOver);
 
         BufferedImage stabilityImage =
-                ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Town"), 0.30f);
-        g.drawImage(stabilityImage, 80 + player.getStability() + 3 * (stabilityImage.getWidth() + 10), 67, null);
+                ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Town"), 0.31f);
+        g.drawImage(stabilityImage, 107 + (player.getStability() + 2) * (stabilityImage.getWidth() + 8), 70, null);
 
         String stateReligion = player.getStateReligion();
         if (stateReligion != null) {

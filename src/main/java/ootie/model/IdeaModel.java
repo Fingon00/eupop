@@ -2,9 +2,7 @@ package ootie.model;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+
 import lombok.Data;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;
@@ -17,20 +15,12 @@ import ootie.model.Source.ComponentSource;
 import ootie.service.image.FileUploadService;
 
 @Data
-public class EventModel implements ModelInterface, EmbeddableModel {
+public class IdeaModel implements ModelInterface, EmbeddableModel {
 
     private String id;
     private String name;
-    private String text;
     private String type;
-    private int age;
-    private String half;
-    private String kind;
-    private String realm;
-    private String ruler;
-    private ComponentSource source;
-    private List<String> secondary_effects = new ArrayList<>();
-    private List<String> content;
+    private ComponentSource source = ComponentSource.base;
 
     @Override
     public boolean isValid() {
@@ -42,17 +32,6 @@ public class EventModel implements ModelInterface, EmbeddableModel {
         return id;
     }
 
-    public Optional<String> getRealm() {
-        return Optional.ofNullable(realm);
-    }
-
-    public Optional<String> getRuler() {
-        return Optional.ofNullable(ruler);
-    }
-
-    public Optional<String> getKind() {
-        return Optional.ofNullable(kind);
-    }
 
     public MessageEmbed getRepresentationEmbed() {
         return getRepresentationEmbed(false);
@@ -119,24 +98,14 @@ public class EventModel implements ModelInterface, EmbeddableModel {
         MessageHelper.sendFileUploadToChannel(messageChannel, fileUpload);
     }
 
-
     @Override
     public boolean search(String searchString) {
         return id.contains(searchString)
-                || name.toLowerCase().contains(searchString.toLowerCase())
-                || text.toLowerCase().contains(searchString.toLowerCase())
-                || getRealm().orElse(" ").toLowerCase().contains(searchString.toLowerCase())
-                || (source != null && source.toString().toLowerCase().contains(searchString.toLowerCase()))
-                || secondary_effects.contains(searchString.toLowerCase())
-                || content.contains(searchString.toLowerCase());
+                || name.toLowerCase().contains(searchString.toLowerCase());
     }
 
     @Override
     public String getAutoCompleteName() {
-        String realm = getRealm().orElse("");
-        if (!realm.isEmpty()) {
-            realm = " (" + realm + ") ";
-        }
-        return name + " (" + id + ")" + realm + " [" + source + "]";
+        return name + " (" + id + ")";
     }
 }
