@@ -1,6 +1,7 @@
 package ootie.model;
 
 import java.awt.Color;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 import lombok.Data;
@@ -100,10 +101,23 @@ public class CharacterModel implements ModelInterface, EmbeddableModel {
     }
 
     public void drawCharacterImage(MessageChannel messageChannel) {
-        BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance().getEventFile(id));
-
+        BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(id));
+        int cropX = 0;
+        int cropY = 464;
+        int cropWidth = eventImage.getWidth();
+        int cropHeight = 91;
+        BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+        Graphics2D g2d = croppedImage.createGraphics();
+        g2d.drawImage(
+            eventImage, 
+            0, 0, cropWidth, cropHeight,              
+            cropX, cropY, cropX + cropWidth, cropY + cropHeight, 
+            null
+        );
+        g2d.dispose();
+    
         FileUpload fileUpload =
-                FileUploadService.createFileUpload(eventImage, id).setDescription(name);
+                FileUploadService.createFileUpload(croppedImage, id).setDescription(name);
         MessageHelper.sendFileUploadToChannel(messageChannel, fileUpload);
     }
 

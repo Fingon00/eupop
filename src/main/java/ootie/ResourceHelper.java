@@ -4,7 +4,9 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
+
 import javax.annotation.Nullable;
+
 import ootie.helpers.Storage;
 import software.amazon.awssdk.utils.StringUtils;
 
@@ -106,6 +108,11 @@ public final class ResourceHelper {
     @Nullable
     public String getEventFile(String name) {
         return getResourceFromFolder("images/events/", name + ".png");
+    }
+
+    @Nullable
+    public String getCharacterFile(String name) {
+        return getResourceFromFolder("images/Action Cards/", name + ".png");
     }
 
     @Nullable

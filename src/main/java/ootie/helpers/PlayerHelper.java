@@ -24,24 +24,67 @@ public class PlayerHelper {
         BufferedImage mapImage = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "PlayerArea"));
 
         BufferedImage finalImage =
-                new BufferedImage(mapImage.getWidth(), mapImage.getHeight(), BufferedImage.TYPE_INT_ARGB);
+                new BufferedImage(mapImage.getWidth(), mapImage.getHeight()+91, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = finalImage.createGraphics();
         g.setComposite(AlphaComposite.SrcOver);
         g.drawImage(mapImage, 0, 0, null);
-
         g.setFont(g.getFont().deriveFont(80f));
+
+
         DrawingUtil.superDrawStringCentered(
                 g, "" + player.getDucats(), 215, 638, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
 
-        int powerStringy = 720;
+        int powerY = 720;
+        DrawingUtil.superDrawStringCentered(
+                g, "" + player.getAdminPower(), 740, powerY, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
+        DrawingUtil.superDrawStringCentered(
+                g, "" + player.getDiploPower(), 1125, powerY, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
+        DrawingUtil.superDrawStringCentered(
+                g, "" + player.getMilitaryPower(), 1515, powerY, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
 
-        DrawingUtil.superDrawStringCentered(
-                g, "" + player.getAdminPower(), 740, powerStringy, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
-        DrawingUtil.superDrawStringCentered(
-                g, "" + player.getDiploPower(), 1125, powerStringy, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
-        DrawingUtil.superDrawStringCentered(
-                g, "" + player.getMilitaryPower(), 1515, powerStringy, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
+        
+        drawTownsandVassals(player, g, color);
+        drawStability(player, g, color);
+        drawStateReligion(player, g);
+        drawCharacters(player, g, color);
 
+        FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "playerArea");
+        MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
+    }
+
+    public static void drawCharacters(Player player, Graphics2D g, String color) {
+        int cropX = 0;
+        int cropY = 464;
+        int cropWidth = 376;
+        int cropHeight = 91;
+        if(player.getRuler() != null){
+                BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(player.getRuler()));
+                BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+                Graphics2D g2d = croppedImage.createGraphics();
+                g2d.drawImage(
+                eventImage, 
+                0, 0, cropWidth, cropHeight,              
+                cropX, cropY, cropX + cropWidth, cropY + cropHeight, 
+                null);
+                g2d.dispose();
+                g.drawImage(croppedImage,200, 789, null);
+        }
+        if(player.getAdminAdvisor() != null){
+                BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(player.getAdminAdvisor()));
+                BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+                Graphics2D g2d = croppedImage.createGraphics();
+                g2d.drawImage(
+                eventImage, 
+                0, 0, cropWidth, cropHeight,              
+                cropX, cropY, cropX + cropWidth, cropY + cropHeight, 
+                null);
+                g2d.dispose();
+                g.drawImage(croppedImage,550, 789, null);
+        }
+
+    }
+
+    public static void drawTownsandVassals(Player player, Graphics2D g, String color) {
         BufferedImage townImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Town"), 0.46f);
         float alpha = 0.55f;
@@ -69,20 +112,24 @@ public class PlayerHelper {
             if (x < player.getLargeProvinces().size()) continue;
             g.drawImage(vassalImage, 580 + x * (vassalImage.getWidth() + 15), 480, null);
         }
-        g.setComposite(AlphaComposite.SrcOver);
 
+        g.setComposite(AlphaComposite.SrcOver);
+    }
+
+
+
+    public static void drawStability(Player player, Graphics2D g, String color) {
         BufferedImage stabilityImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Town"), 0.31f);
         g.drawImage(stabilityImage, 107 + (player.getStability() + 2) * (stabilityImage.getWidth() + 8), 70, null);
+    }
 
+    public static void drawStateReligion(Player player, Graphics2D g) {
         String stateReligion = player.getStateReligion();
         if (stateReligion != null) {
             BufferedImage religionImage =
                     ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile(stateReligion), 0.60f);
             g.drawImage(religionImage, 429, 728, null);
         }
-
-        FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "playerArea");
-        MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
     }
 }

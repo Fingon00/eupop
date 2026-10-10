@@ -3,13 +3,14 @@ package ootie.discord.commands.search;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
 import ootie.discord.commands.ParentCommand;
 import ootie.discord.commands.Subcommand;
 import ootie.helpers.Constants;
 
 public class SearchCommand implements ParentCommand {
 
-    private final Map<String, Subcommand> subcommands = Stream.of(new SearchEventsSubcommand())
+    private final Map<String, Subcommand> subcommands = Stream.of(new SearchEventsSubcommand(), new SearchCharacters())
             .collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
 
     @Override

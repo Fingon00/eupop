@@ -17,10 +17,10 @@ class SearchCharacters extends SearchComponentModelSubcommand {
         String searchString = event.getOption(Constants.SEARCH, null, OptionMapping::getAsString);
 
         if (Mapper.getCharacters().containsKey(searchString)) {
-            Mapper.getEvent(searchString).drawEventImage(event.getChannel());
+            Mapper.getCharacters().get(searchString).drawCharacterImage(event.getChannel());
             return;
-        }else{
-            MessageHelper.sendMessageToChannel(event.getChannel(), "Cannot find "+searchString);
+        } else {
+            MessageHelper.sendMessageToChannel(event.getChannel(), "Cannot find " + searchString);
         }
     }
 }
