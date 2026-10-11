@@ -4,7 +4,6 @@ import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
@@ -24,12 +23,11 @@ public class PlayerHelper {
         BufferedImage mapImage = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "PlayerArea"));
 
         BufferedImage finalImage =
-                new BufferedImage(mapImage.getWidth(), mapImage.getHeight()+91, BufferedImage.TYPE_INT_ARGB);
+                new BufferedImage(mapImage.getWidth(), mapImage.getHeight() + 91, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = finalImage.createGraphics();
         g.setComposite(AlphaComposite.SrcOver);
         g.drawImage(mapImage, 0, 0, null);
         g.setFont(g.getFont().deriveFont(80f));
-
 
         DrawingUtil.superDrawStringCentered(
                 g, "" + player.getDucats(), 215, 638, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
@@ -42,7 +40,6 @@ public class PlayerHelper {
         DrawingUtil.superDrawStringCentered(
                 g, "" + player.getMilitaryPower(), 1515, powerY, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
 
-        
         drawTownsandVassals(player, g, color);
         drawStability(player, g, color);
         drawStateReligion(player, g);
@@ -53,35 +50,51 @@ public class PlayerHelper {
     }
 
     public static void drawCharacters(Player player, Graphics2D g, String color) {
-        int cropX = 0;
+        int cropX = 10;
         int cropY = 464;
-        int cropWidth = 376;
+        int cropWidth = 356;
         int cropHeight = 91;
-        if(player.getRuler() != null){
-                BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(player.getRuler()));
-                BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
-                Graphics2D g2d = croppedImage.createGraphics();
-                g2d.drawImage(
-                eventImage, 
-                0, 0, cropWidth, cropHeight,              
-                cropX, cropY, cropX + cropWidth, cropY + cropHeight, 
-                null);
-                g2d.dispose();
-                g.drawImage(croppedImage,200, 789, null);
+        int leaderheightLoc = 789 + 97;
+        if (player.getRuler() != null) {
+            BufferedImage eventImage =
+                    ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(player.getRuler()));
+            BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+            Graphics2D g2d = croppedImage.createGraphics();
+            g2d.drawImage(
+                    eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
+            g2d.dispose();
+            g.drawImage(croppedImage, 118, leaderheightLoc, null);
         }
-        if(player.getAdminAdvisor() != null){
-                BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(player.getAdminAdvisor()));
-                BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
-                Graphics2D g2d = croppedImage.createGraphics();
-                g2d.drawImage(
-                eventImage, 
-                0, 0, cropWidth, cropHeight,              
-                cropX, cropY, cropX + cropWidth, cropY + cropHeight, 
-                null);
-                g2d.dispose();
-                g.drawImage(croppedImage,550, 789, null);
+        if (player.getAdminAdvisor() != null) {
+            BufferedImage eventImage =
+                    ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(player.getAdminAdvisor()));
+            BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+            Graphics2D g2d = croppedImage.createGraphics();
+            g2d.drawImage(
+                    eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
+            g2d.dispose();
+            g.drawImage(croppedImage, 572, leaderheightLoc, null);
         }
-
+        if (player.getDiploAdvisor() != null) {
+            BufferedImage eventImage =
+                    ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(player.getDiploAdvisor()));
+            BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+            Graphics2D g2d = croppedImage.createGraphics();
+            g2d.drawImage(
+                    eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
+            g2d.dispose();
+            g.drawImage(croppedImage, 950, leaderheightLoc, null);
+        }
+        if (player.getMilitaryAdvisor() != null) {
+            BufferedImage eventImage =
+                    ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(player.getMilitaryAdvisor()));
+            BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+            Graphics2D g2d = croppedImage.createGraphics();
+            g2d.drawImage(
+                    eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
+            g2d.dispose();
+            g.drawImage(croppedImage, 1340, leaderheightLoc, null);
+        }
     }
 
     public static void drawTownsandVassals(Player player, Graphics2D g, String color) {
@@ -115,8 +128,6 @@ public class PlayerHelper {
 
         g.setComposite(AlphaComposite.SrcOver);
     }
-
-
 
     public static void drawStability(Player player, Graphics2D g, String color) {
         BufferedImage stabilityImage =

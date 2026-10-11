@@ -42,7 +42,6 @@ public class CharacterModel implements ModelInterface, EmbeddableModel {
         return id;
     }
 
-
     public MessageEmbed getRepresentationEmbed() {
         return getRepresentationEmbed(false);
     }
@@ -109,13 +108,9 @@ public class CharacterModel implements ModelInterface, EmbeddableModel {
         BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
         Graphics2D g2d = croppedImage.createGraphics();
         g2d.drawImage(
-            eventImage, 
-            0, 0, cropWidth, cropHeight,              
-            cropX, cropY, cropX + cropWidth, cropY + cropHeight, 
-            null
-        );
+                eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
         g2d.dispose();
-    
+
         FileUpload fileUpload =
                 FileUploadService.createFileUpload(croppedImage, id).setDescription(name);
         MessageHelper.sendFileUploadToChannel(messageChannel, fileUpload);
@@ -123,12 +118,21 @@ public class CharacterModel implements ModelInterface, EmbeddableModel {
 
     @Override
     public boolean search(String searchString) {
-        return id.contains(searchString)
-                || name.toLowerCase().contains(searchString.toLowerCase());
+        return id.contains(searchString) || name.toLowerCase().contains(searchString.toLowerCase()) || getAutoCompleteName().toLowerCase().contains(searchString.toLowerCase());
     }
 
     @Override
     public String getAutoCompleteName() {
-        return name + " (" + id + ")";
+        String auto = name + " (" + id + ")";
+        if (adminPower > 0) {
+            auto += " " + adminPower + "A";
+        }
+        if (diploPower > 0) {
+            auto += " " + diploPower + "D";
+        }
+        if (militaryPower > 0) {
+            auto += " " + militaryPower + "M";
+        }
+        return auto;
     }
 }

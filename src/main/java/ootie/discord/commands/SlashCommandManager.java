@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import lombok.experimental.UtilityClass;
 import ootie.discord.commands.bothelper.BothelperCommand;
+import ootie.discord.commands.character.CharacterCommand;
 import ootie.discord.commands.game.GameCommand;
 import ootie.discord.commands.player.PlayerCommand;
 import ootie.discord.commands.search.SearchCommand;
@@ -19,7 +20,8 @@ public class SlashCommandManager {
                     new ShowGameCommand(),
                     new BothelperCommand(),
                     new GameCommand(),
-                    new PlayerCommand())
+                    new PlayerCommand(),
+                    new CharacterCommand())
             .collect(Collectors.toMap(ParentCommand::getName, command -> command));
 
     public static ParentCommand getCommand(String name) {

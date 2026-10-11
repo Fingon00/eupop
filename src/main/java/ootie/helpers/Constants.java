@@ -49,6 +49,8 @@ public final class Constants {
     public static final String REALM = "realm";
     public static final String COLOR = "color";
     public static final String DUCATS = "ducats";
+    public static final String ADD = "add";
+    public static final String REMOVE = "remove";
 
     // no /search combat_modifiers yet
     public static final String SEARCH_DECKS = "decks";

@@ -92,7 +92,7 @@ class AutoCompleteProvider {
             }
             case Constants.CHARACTER -> {
                 List<Command.Choice> options =
-                                searchModels(event, Mapper.getCharacters().values(), null);
+                        searchModels(event, Mapper.getCharacters().values(), null);
                 event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
             }
         }
@@ -131,9 +131,7 @@ class AutoCompleteProvider {
     }
 
     private static <T extends ModelInterface & EmbeddableModel> List<Command.Choice> searchModels(
-            CommandAutoCompleteInteractionEvent event,
-            Collection<T> models,
-            ComponentSource source) {
+            CommandAutoCompleteInteractionEvent event, Collection<T> models, ComponentSource source) {
         String enteredValue = event.getFocusedOption().getValue().toLowerCase();
         return models.stream()
                 .filter(model -> model.getSource() != null)

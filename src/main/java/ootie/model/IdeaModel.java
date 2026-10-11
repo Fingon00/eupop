@@ -2,7 +2,6 @@ package ootie.model;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
-
 import lombok.Data;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;
@@ -31,7 +30,6 @@ public class IdeaModel implements ModelInterface, EmbeddableModel {
     public String getAlias() {
         return id;
     }
-
 
     public MessageEmbed getRepresentationEmbed() {
         return getRepresentationEmbed(false);
@@ -100,8 +98,7 @@ public class IdeaModel implements ModelInterface, EmbeddableModel {
 
     @Override
     public boolean search(String searchString) {
-        return id.contains(searchString)
-                || name.toLowerCase().contains(searchString.toLowerCase());
+        return id.contains(searchString) || name.toLowerCase().contains(searchString.toLowerCase());
     }
 
     @Override

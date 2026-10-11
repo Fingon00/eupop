@@ -119,7 +119,6 @@ public class EventModel implements ModelInterface, EmbeddableModel {
         MessageHelper.sendFileUploadToChannel(messageChannel, fileUpload);
     }
 
-
     @Override
     public boolean search(String searchString) {
         return id.contains(searchString)

@@ -3,7 +3,6 @@ package ootie.discord.commands.search;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
 import ootie.discord.commands.ParentCommand;
 import ootie.discord.commands.Subcommand;
 import ootie.helpers.Constants;
