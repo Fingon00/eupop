@@ -1,7 +1,5 @@
 package ootie.discord.listeners;
 
-import java.util.Arrays;
-import java.util.List;
 import javax.annotation.Nonnull;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.GenericCommandInteractionEvent;
@@ -13,7 +11,6 @@ import ootie.discord.commands.ParentCommand;
 import ootie.discord.commands.SlashCommandManager;
 import ootie.executors.ExecutionLockType;
 import ootie.executors.ExecutorServiceManager;
-import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import ootie.logging.RollbarManager;
 import ootie.service.game.GameNameService;
@@ -21,18 +18,12 @@ import org.apache.commons.lang3.function.Consumers;
 
 class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
-
-
     @Override
     public void onSlashCommandInteraction(@Nonnull SlashCommandInteractionEvent event) {
         if (!canReceiveCommands(event)) return;
 
-       
-            Command<SlashCommandInteractionEvent> command = getCommand(event);
-            event.getInteraction()
-                    .deferReply(command.isEphemeral(event))
-                    .queue(Consumers.nop(), BotLogger::catchRestError);
-        
+        Command<SlashCommandInteractionEvent> command = getCommand(event);
+        event.getInteraction().deferReply(command.isEphemeral(event)).queue(Consumers.nop(), BotLogger::catchRestError);
 
         queue(event);
     }
@@ -84,8 +75,6 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
         warnForLongRunningCommands(event, processStartTime);
     }
-
-
 
     private static void logSlashCommand(SlashCommandInteractionEvent event) {
         Member member = event.getMember();

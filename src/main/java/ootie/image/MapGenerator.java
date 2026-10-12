@@ -112,17 +112,6 @@ public class MapGenerator implements AutoCloseable {
                 width = mapWidth;
                 break;
             case map:
-            case wormholes:
-            case anomalies:
-            case legendaries:
-            case empties:
-            case aetherstream:
-            case spacecannon:
-            case traits:
-            case techskips:
-            case attachments:
-            case shipless:
-            case googly:
             default:
                 heightForGameInfo = 500;
                 height = 5000;

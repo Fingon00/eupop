@@ -1,0 +1,272 @@
+[
+    {
+        "id": "ADM-Absolute-Monarchy",
+        "name": "Absolute Monarchy",
+        "type": "administrative",
+        "governmentForm": true,
+        "instantEffect": "Lose 1 stability, gain 2 monarch power, and pick any Display Card from the discards",
+        "effect": "Gain 1 stability each time you Enforce a Peace on an Opponent in a Peace Resolution",
+        "age": 3
+    },
+    {
+        "id": "DIP-Benign-Diplomats",
+        "name": "Benign Diplomats",
+        "type": "diplomatic",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "Whenever you place 3 or more influence at once during an Influence Action, place 1 influence extra for free. You may place up to 3 influence in each Area per Influence action, and also in Areas adjacent to any of your Ships.",
+        "age": 1
+    },
+    {
+        "id": "MIL-Cannons",
+        "name": "Cannons",
+        "type": "military",
+        "governmentForm": false,
+        "instantEffect": "Gain 1 Artillery Unit in an existing Army",
+        "effect": "Allows you to recruit Artillery Units in your Armies.",
+        "age": 1
+    },
+    {
+        "id": "ADM-Bureaucracy",
+        "name": "Bureaucracy",
+        "type": "administrative",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "During Phase 4, Step B: Gain 2 ducats extra, plus 1 ducat more for every full 10 ducats of Base Tax Income that you have.",
+        "age": 1
+    },
+    {
+        "id": "ADM-Church-Attendance-Duty",
+        "name": "Church Attendance Duty",
+        "type": "administrative",
+        "governmentForm": false,
+        "instantEffect": "You may remove 1 unrest.",
+        "effect": "Increase Stability costs 1 diplomatic power less (applies to both the Basic Action and all card Actions).",
+        "age": 1
+    },
+    {
+        "id": "ADM-Deus-Vult",
+        "name": "Deus Vult",
+        "type": "administrative",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "Permanent Holy War CB against adjacent Distant Realms and Realms with a State Religion other than yours (except other Christian Realms if your PR is Christian). If at War with such a Realm, Mercenary Units cost 1 ducat less.",
+        "age": 1
+    },
+    {
+        "id": "ADM-Colonization-Policy",
+        "name": "Colonization Policy",
+        "type": "administrative",
+        "governmentForm": false,
+        "instantEffect": "Gain 2 colonists.",
+        "effect": "The Colonize Action costs 1 diplomatic power or 1 colonist less.",
+        "age": 1
+    },
+    {
+        "id": "ADM-Industrial-Revolution",
+        "name": "Industrial Revolution",
+        "type": "administrative",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "At the end of Phase 2 (when all players have passed), take a free Trade Action, even using an activated Merchant, drawing from the top of the discard pile, or developing a Small Town into a Large Town for free.",
+        "age": 4
+    },
+    {
+        "id": "ADM-Inquisition",
+        "name": "Inquisition",
+        "type": "administrative",
+        "governmentForm": false,
+        "instantEffect": "If your State Religion is Catholic, gain 1 cardinal.",
+        "effect": "The Convert Area Action and the Man of the Church card both cost 1 diplomatic power and 1 ducat less.",
+        "age": 1
+    },
+    {
+        "id": "ADM-National-Bank",
+        "name": "National Bank",
+        "type": "administrative",
+        "governmentForm": false,
+        "instantEffect": "Remove half of the loans from your Treasury.",
+        "effect": "From now on, gain 8 ducats for each Loan taken, and pay 9 ducats to repay a Loan. Gain 1 loan fewer from Events than normal and none from Gold cards.",
+        "age": 3
+    },
+    {
+        "id": "ADM-Scientific-Revolution",
+        "name": "Scientific Revolution",
+        "type": "administrative",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "The Research Action costs 1 monarch power less. As a Minor Action, you may replace one of the unpicked Ideas on display with another Idea of your choice, at a cost of 1 diplomatic power. Requires: Have 2+ Ideas Researched.",
+        "age": 1
+    },
+    {
+        "id": "ADM-Tolerance",
+        "name": "Tolerance",
+        "type": "administrative",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "During Phase 3, Steps G and I: When adding unrest for Religious Dissent, add 2 fewer unrest than normal. Twice, immediately after rolling for an Area, you may re-roll one Rebel Die.",
+        "age": 1
+    },
+    {
+        "id": "DIP-Cabinet",
+        "name": "Cabinet",
+        "type": "diplomatic",
+        "governmentForm": false,
+        "instantEffect": "You may gain a Royal Marriage with an NPR that has the same State Religion as you.",
+        "effect": "Add one more alliance token and one more royal marriage token to your Supply.",
+        "age": 1
+    },
+    {
+        "id": "DIP-Constitutional-Monarchy",
+        "name": "Constitutional Monarchy",
+        "type": "diplomatic",
+        "governmentForm": true,
+        "instantEffect": "You may pay 3 diplomatic power to gain 1 stability.",
+        "effect": "At the start of Phase 3: Gain 1 diplomatic power if you are at Peace. Gain 1 stability as well if all Opponents adjacent to your Realm are at Peace too.",
+        "age": 3
+    },
+    {
+        "id": "DIP-Efficient-Spies",
+        "name": "Efficient Spies",
+        "type": "diplomatic",
+        "governmentForm": false,
+        "instantEffect": "Take a Spy Network card from the discards into your hand.",
+        "effect": "All Actions on the Spy Network card cost 1 diplomatic power less.",
+        "age": 1
+    },
+    {
+        "id": "DIP-Free-Trade",
+        "name": "Free Trade",
+        "type": "diplomatic",
+        "governmentForm": false,
+        "instantEffect": "Perform a free Trade Action.",
+        "effect": "Gain a third Merchant and place it in any Main Map Trade Node. You lose this Idea if you Research the \"Mercantilism\" Idea.",
+        "age": 1
+    },
+    {
+        "id": "DIP-Mercantilism",
+        "name": "Mercantilism",
+        "type": "diplomatic",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "If you have 3+ trade power from Key Provinces when collecting Trade Income, gain 3 ducats extra, while Opponents gain 3 ducats less. You may not have more than 2 Merchants, and you lose this Idea if you Research the \"Free Trade\" Idea.",
+        "age": 1
+    },
+    {
+        "id": "DIP-Pride-and-Glory",
+        "name": "Pride and Glory",
+        "type": "diplomatic",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "You may place one claim per diplomatic power spent during a Fabricate Claim Action. You may place your claim adjacent to any Sea Zone on the Main Map where you are PR with the most Ships.",
+        "age": 1
+    },
+    {
+        "id": "DIP-Quest-for-the-New-World",
+        "name": "Quest for the New World",
+        "type": "diplomatic",
+        "governmentForm": false,
+        "instantEffect": "Gain 1 monarch power of your choice.",
+        "effect": "You may use your Ships when performing the Explore Action.",
+        "age": 1
+    },
+    {
+        "id": "DIP-Trade-Companies",
+        "name": "Trade Companies",
+        "type": "diplomatic",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "When you collect Trade Income from a Trade Node on any Distant Continent, no Ship is required to trace a connection to your Capital Area through any non-Hostile Distant Sea Zone that is faced by 1+ of your Ports.",
+        "age": 3
+    },
+    {
+        "id": "DIP-Shrewd-Trade-Practices",
+        "name": "Shrewd Trade Practices",
+        "type": "diplomatic",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "Draw 4 Trade Cards (instead of 3) whenever you take a Trade Action.",
+        "age": 1
+    },
+    {
+        "id": "MIL-Defensive-Mentality",
+        "name": "Defensive Mentality",
+        "type": "military",
+        "governmentForm": false,
+        "instantEffect": "Draw 2 Military Cards.",
+        "effect": "For each Province you Own that is being Sieged, roll an Artillery Die. On an artillery result, the besieger suffers a Casualty, and you may then pay 1 military power to make the Siege fail.",
+        "age": 1
+    },
+    {
+        "id": "MIL-Line-Infantry",
+        "name": "Line Infantry",
+        "type": "military",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "Each Infantry+Hollow Infantry result on your Battle Dice now counts as 2 Infantry results. Each Infantry Unit may still only inflict 1 Casualty. Cancels the effect of \"Tercios/Janissaries\" (for both sides) in your Battles.",
+        "age": 3
+    },
+    {
+        "id": "MIL-Glorious-Arms",
+        "name": "Glorious Arms",
+        "type": "military",
+        "governmentForm": false,
+        "instantEffect": "Draw 2 Military Cards.",
+        "effect": "Gain 2 resources each time you win a Land Battle where a PR Enemy participated with 3+ Units.",
+        "age": 1
+    },
+    {
+        "id": "MIL-Serfdom",
+        "name": "Serfdom",
+        "type": "military",
+        "governmentForm": false,
+        "instantEffect": "Gain +1 resource per Area where you Own all Provinces (max. 4).",
+        "effect": "When taking a Replenish Manpower Action, gain the indicated resource instead of paying its cost. Refill 4 Exhausted units gained. During Phase 3, Step G, gain 1 extra resource per qualifying item in your Realm.",
+        "age": 1
+    },
+    {
+        "id": "MIL-Mass-Conscription",
+        "name": "Mass Conscription",
+        "type": "military",
+        "governmentForm": false,
+        "instantEffect": "Refresh all manpower, gain 2 unrest, and lose \"Serfdom\" if you have it. Lose 1 stability unles you have \"Revolutionary Regime\".",
+        "effect": "Refresh 6 Exhausted manpower per military power spent during a Replenish Manpower Action. You cannot Research \"Serfdom\".",
+        "age": 4
+    },
+    {
+        "id": "MIL-Revolutionary-Regime",
+        "name": "Revolutionary Regime",
+        "type": "military",
+        "governmentForm": true,
+        "instantEffect": "Gain 2 military power. Set stability to -3 and set your State Religion to Revolutionary Ideology.",
+        "effect": "Gain 1 stability whenever an Opponent Researches this Idea. At the start of Phase 3, lose 1 stability if not at War. During Phase 4, gain 2 military power extra. The research cost of this idea is modified by your current stability.",
+        "age": 4
+    },
+    {
+        "id": "MIL-Tercios-Janissaries",
+        "name": "Tercios/Janissaries",
+        "type": "military",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "Each Infantry+Hollow Infantry result on your Battle Dice now counts as 2 Infantry results. Each Infantry Unit may still only inflict 1 Casualty.",
+        "age": 1
+    },
+    {
+        "id": "MIL-Noble-Knights",
+        "name": "Noble Knights",
+        "type": "military",
+        "governmentForm": false,
+        "instantEffect": "",
+        "effect": "At the end of Step 1 of the Battle Sequence, roll 1 Cavalry Die per Cavalry Unit you have and inflict 1 Casualty per Cavalry result rolled. Never roll more dice than the number of Enemy Infantry Units or 6 minus the number of Enemy Military Ideas. Your Regular Cavalry Units cost 4 ducats.",
+        "age": 1
+    },
+    {
+        "id": "MIL-Military-Drill",
+        "name": "Military Drill",
+        "type": "military",
+        "governmentForm": false,
+        "instantEffect": "Gain 1 loan.",
+        "effect": "When you fight a Land Battle, at the end of Step 1 of the Battle Sequence, remove one of your Enemy's Battle Dice from the Battle.",
+        "age": 1
+    }
+]

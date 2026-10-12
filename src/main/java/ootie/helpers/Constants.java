@@ -61,13 +61,9 @@ public final class Constants {
     public static final String SEARCH_LEADERS = "leaders";
     public static final String SEARCH_CHARACTERS = "characters";
     public static final String CHARACTER = "character";
-    public static final String SEARCH_GENOMES = "genomes";
-    public static final String SEARCH_PARADIGMS = "paradigms";
-    // no /search map_templates yet
-    public static final String SEARCH_PROMISSORY_NOTES = "promissory_notes";
-    public static final String SEARCH_PUBLIC_OBJECTIVES = "public_objectives";
-    public static final String SEARCH_RELICS = "relics";
-    public static final String SEARCH_SECRET_OBJECTIVES = "secret_objectives";
+    public static final String EVENTS = "events";
+    public static final String SHOW = "show";
+
     public static final String SEARCH_SOURCES = "sources";
     // no /search strategy_card_sets yet
     public static final String SEARCH_STRATEGY_CARDS = "strategy_cards";
@@ -204,26 +200,7 @@ public final class Constants {
     public static final String MILITARY_POWER = "military_power";
     public static final String STABILITY = "stability";
     public static final String STATE_RELIGION = "state_religion";
-
-    public static final String STATUS = "status";
-    public static final String SYSTEM = "system";
     public static final String CLEANUP = "cleanup";
-    public static final String PERSONAL_CLEANUP = "personal_cleanup";
-    public static final String REVEAL_STAGE1 = "po_reveal_stage1";
-    public static final String REVEAL_SPECIFIC_STAGE1 = "reveal_specific_stage1";
-    public static final String REVEAL_SPECIFIC_STAGE2 = "reveal_specific_stage2";
-    public static final String SETUP_PEAKABLE_OBJECTIVES = "setup_peakable_objectives";
-    public static final String NUMBER_OF_OBJECTIVES = "number_of_objectives";
-    public static final String NUMBER_OF_STAGE1_OBJECTIVES = "number_of_stage1_objectives";
-    public static final String NUMBER_OF_STAGE2_OBJECTIVES = "number_of_stage2_objectives";
-    public static final String SWAP_STAGE2 = "swap_stage2";
-    public static final String SWAP_STAGE1 = "swap_stage1";
-    public static final String LOCATION1 = "location1";
-    public static final String STAGE_1_OR_2 = "stage_1_or_2";
-    public static final String SHUFFLE_BACK_IN_UNREVEALED_OBJ = "shuffle_back_in_unrevealed_obj";
-    public static final String LOCATION2 = "location2";
-    public static final String PEEK_AT_STAGE1 = "peek_at_stage1";
-    public static final String PEEK_AT_STAGE2 = "peek_at_stage2";
 
     public static final String TURN_ORDER = "turn_order";
     public static final String AVERAGE_TURN_STATS = "average_turn_stats";
@@ -473,7 +450,7 @@ public final class Constants {
     public static final String SET_ORCHESTRATOR_OPTION = "set_orchestrator_type";
     public static final String SAVE_DATA_OPTION = "save_data";
     public static final String AC_TYPE = "ac_type";
-   
+
     public static final String EXHAUSTED_ABILITIES = "exhausted_abilities";
     public static final String ABILITY_INFO = "ability_info";
     public static final String ABILITY_ADD = "ability_add";
@@ -592,19 +569,15 @@ public final class Constants {
     public static final String BENTOR_HAS_FOUND_HFRAG = "has_found_hfrag";
     public static final String BENTOR_HAS_FOUND_IFRAG = "has_found_ifrag";
     public static final String BENTOR_HAS_FOUND_UFRAG = "has_found_ufrag";
-   
-    
+
     public static final String IMAGE_GEN_COUNT = "image_gen_count";
     public static final String RUN_DATA_MIGRATIONS = "run_data_migrations";
     public static final String ENDED_DATE = "ended_date";
     public static final String REPLACEMENT_MADE = "replacement_made";
-   
-   
+
     public static final String ADD_REMOVE = "add_remove";
 
     public static final String COMBAT = "combat";
-
-  
 
     public static final String MIGRATION_NAME = "migration_name";
     public static final String RUN_MANUAL_DATA_MIGRATION = "run_manual_data_migration";
@@ -616,8 +589,6 @@ public final class Constants {
     public static final String HELIOS_ATTACHMENT_2 = "attachment_helios2.png";
     public static final String PLOT_CARDS = "plot_cards";
     public static final String PLOT_FACTIONS = "plot_factions";
-
-   
 
     public static final String CHECK_DISTANCE = "check_distance";
     public static final String CHECK_ALL_DISTANCE = "check_all_distance";

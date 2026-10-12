@@ -124,6 +124,11 @@ public final class ResourceHelper {
     }
 
     @Nullable
+    public String getCardBackFile(String name) {
+        return getResourceFromFolder("images/Card Backs/", name + ".png");
+    }
+
+    @Nullable
     public String getMiscFile(String name) {
         return getResourceFromFolder("images/Misc Symbols/", name + ".png");
     }

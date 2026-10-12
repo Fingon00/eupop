@@ -2,7 +2,9 @@ package ootie.game;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.annotation.Nullable;
+
 import lombok.Data;
 
 @Data
@@ -22,6 +24,7 @@ public class PlayerProperties {
     private int diploPower = 3;
     private int militaryPower = 3;
     private int stability = 0;
+    private int prestige;
     private int manpowerExhausted;
     private int manpowerAvailable;
     private String stateReligion = "Catholic";
@@ -41,4 +44,5 @@ public class PlayerProperties {
     private List<String> vassalProvinces = new ArrayList<>();
     private List<String> actionCards = new ArrayList<>();
     private List<String> missions = new ArrayList<>();
+    private List<String> ideas = new ArrayList<>();
 }

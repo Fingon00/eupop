@@ -24,6 +24,12 @@ public class GameProperties {
     private List<String> militaryActionCardDeck = new ArrayList<>();
     private List<String> administrativeActionCardDeck = new ArrayList<>();
 
+    private List<String> eventDeck = new ArrayList<>();
+    private List<String> revealedEventCards = new ArrayList<>();
+    private List<String> unrevealedEventCards = new ArrayList<>();
+
+    private int age = 1;
+
     // private Map<String, Integer> discardActionCards = new LinkedHashMap<>();
     // private Set<String> playedActionCards = new LinkedHashSet<>();
 

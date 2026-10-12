@@ -113,7 +113,6 @@ public class EventModel implements ModelInterface, EmbeddableModel {
 
     public void drawEventImage(MessageChannel messageChannel) {
         BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance().getEventFile(id));
-
         FileUpload fileUpload =
                 FileUploadService.createFileUpload(eventImage, id).setDescription(name);
         MessageHelper.sendFileUploadToChannel(messageChannel, fileUpload);
