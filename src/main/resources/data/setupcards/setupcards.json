@@ -1,5 +1,597 @@
 [
     {
+        "realm": "austria",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Wien (L)",
+            "Ostereich",
+            "Steiermark",
+            "Karnten",
+            "Lienz",
+            "Tirol",
+            "Krain",
+            "Sundgau"
+        ],
+        "influence": [
+            "Royal Hungary (2)",
+            "Bavaria & Swabia (2)",
+            "Bohemia (1)",
+            "Lombardy (1)",
+            "Dalmatia (1)",
+            "Central Italy (1)"
+        ],
+        "imperial_influence": [
+            "Rhineland (1)",
+            "Westphalia (1)",
+            "Saxony (1)"
+        ],
+        "relations": [
+            "Emperor of HRE (3)",
+            "Hungary"
+        ],
+        "merchants": [
+            "Wien",
+            "Saxony"
+        ],
+        "military": [
+            "Austria (Army 1: 2 infantry)",
+            "Adriatic Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Castile",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Madrid (L)",
+            "Salamanca (L)",
+            "Sevilla (L)",
+            "Galicia",
+            "Badajoz",
+            "Córdoba",
+            "Burgos",
+            "Murcia",
+            "Canarias"
+        ],
+        "influence": [
+            "Aragon (2)",
+            "Portugal (1)",
+            "Burgundy (1)",
+            "C. Italy (1)"
+        ],
+        "relations": [
+            "Andalucia"
+        ],
+        "merchants": [
+            "Sevilla",
+            "Genoa"
+        ],
+        "military": [
+            "Castile (Army 1: 2 Infantry)",
+            "W. Mediterranean (L. Ship)",
+            "C. Atlantic (L. Ship)"
+        ]
+    },
+    {
+        "realm": "England",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "London (L)",
+            "Bordeaux (L)",
+            "Northumberland",
+            "York",
+            "Lancashire",
+            "Pale",
+            "Shrewsbury",
+            "Wales",
+            "Wessex",
+            "Oxford",
+            "Essex",
+            "Caux",
+            "Normandie",
+            "Maine"
+        ],
+        "influence": [
+            "Scotland (2)",
+            "Portugal (2)",
+            "Brittany & Normandy (1)",
+            "Seine (1)",
+            "Flanders & Wall. (1)"
+        ],
+        "relations": [
+            "Portugal"
+        ],
+        "merchants": [
+            "English Channel",
+            "Bordeaux"
+        ],
+        "military": [
+            "East Anglia (Army 1: 2 Infantry)",
+            "English Channel (2 L. Ships)",
+            "E. Atlantic (L. Ship)"
+        ]
+    },
+    {
+        "realm": "France",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Paris (L)",
+            "Champagne (L)",
+            "Orléans (L)",
+            "Lyon (L)",
+            "Saintonge",
+            "Poitou",
+            "Armagnac",
+            "Limousin",
+            "Berry",
+            "Bourbon",
+            "Toulouse",
+            "Montpellier"
+        ],
+        "influence": [
+            "Languedoc (2)",
+            "Scotland (2)",
+            "Burgundy (1)",
+            "Lombardy (1)"
+        ],
+        "relations": [
+            "Scotland",
+            "Provence",
+            "Aquitaine",
+            "Brit. & Normandy"
+        ],
+        "merchants": [
+            "Champ.",
+            "Bordeaux"
+        ],
+        "military": [
+            "Seine (Army 1: 2 Infantry, 1 Cavalry)",
+            "Aquitaine (Army 2: 1 Infantry)",
+            "Bay of Biscay (L. Ship)",
+            "Gulf of Lion (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Muscovy",
+        "year": "1444",
+        "state_religion": "Orthodox",
+        "provinces": [
+            "Moskva",
+            "Rzhev",
+            "Vladimir",
+            "Kasimov",
+            "Murom",
+            "Suzdal",
+            "Vologda",
+            "Galich",
+            "Viatka",
+            "Nizhny Novgorod"
+        ],
+        "distant_provinces": [
+            "Belozero",
+            "Perm",
+            "Yaroslavl",
+            "Pskov"
+        ],
+        "influence": [
+            "Moscow & Ryazan (2)",
+            "Novgorod (1)",
+            "Vologda (1)",
+            "Central Russia (1)"
+        ],
+        "relations": [
+            "Tver",
+            "Odoyev"
+        ],
+        "merchants": [
+            "Kazan",
+            "Novgorod"
+        ],
+        "military": [
+            "Moscow & Ryazan (Army 1: 2 Infantry, 1 Cavalry)"
+        ]
+    },
+    {
+        "realm": "Ottomans",
+        "year": "1444",
+        "state_religion": "Muslim",
+        "provinces": [
+            "Edirne (L)",
+            "Hüdavendigar (L)",
+            "Selanik (L)",
+            "Yanya",
+            "Sofya",
+            "Silistre",
+            "Ankara",
+            "Izmir",
+            "Kütahya",
+            "Menteşe",
+            "Teke",
+            "Amasya",
+            "Sivas"
+        ],
+        "influence": [
+            "Karaman (2)",
+            "Kurdistan (1)",
+            "Rum (1)",
+            "Wallachia & Bulgaria (1)",
+            "Serbia & Albania (1)"
+        ],
+        "relations": [
+            "Macedonia & Thrace"
+        ],
+        "merchants": [
+            "Black Sea",
+            "Alexandria"
+        ],
+        "military": [
+            "Macedonia & Thrace (Army 1: 2 Infantry, 1 Cavalry)",
+            "Aegean Sea (L. Ship, Fleet: 3 Galleys)"
+        ]
+    },
+    {
+        "realm": "Poland",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Kraków (L)",
+            "Lublin",
+            "Sandomierz",
+            "Poznań",
+            "Kalisz",
+            "Sieradz",
+            "Lwów",
+            "Podole"
+        ],
+        "distant_provinces": [
+            "Warszawa",
+            "Suçeava",
+            "Basarabia"
+        ],
+        "influence": [
+            "Lithuania (2)",
+            "Red Ruthenia (1)",
+            "Mazovia & Malopolska (1)",
+            "Bohemia (1)",
+            "Royal Hungary (1)"
+        ],
+        "relations": [
+            "Lithuania"
+        ],
+        "merchants": [
+            "Krakow",
+            "Kiev"
+        ],
+        "military": [
+            "Mazovia & Malopolska (Army 1: 2 Infantry)"
+        ]
+    },
+    {
+        "realm": "Denmark",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "København (L)",
+            "Lund (L)",
+            "Gotland",
+            "Vestjyland",
+            "Østjyland"
+        ],
+        "distant_provinces": [
+            "Slesvig",
+            "Holstein"
+        ],
+        "influence": [
+            "Götaland & Skåne (2)",
+            "Østlandet (2)",
+            "Vestlandet (1)",
+            "Trøndelag (1)",
+            "Svealand (1)",
+            "Jutland (1)",
+            "Pomerania (1)"
+        ],
+        "relations": [
+            "Sweden",
+            "Norway"
+        ],
+        "merchants": [
+            "Lübeck",
+            "North Sea"
+        ],
+        "military": [
+            "Jutland (Army 1: 2 Infantry)",
+            "North Sea (L. Ship)",
+            "Skagerrak (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Sweden",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Stockholm (L)",
+            "Bergslagen",
+            "Östergötland",
+            "Hälsingland",
+            "Österbotten",
+            "Åbo",
+            "Nyland"
+        ],
+        "influence": [
+            "Trøndelag (2)",
+            "Østlandet (1)",
+            "Jutland (1)",
+            "Pomerania (1)"
+        ],
+        "relations": [
+            "Denmark",
+            "Norway"
+        ],
+        "merchants": [
+            "Baltic Sea",
+            "Lübeck"
+        ],
+        "military": [
+            "Svealand (Army 1: 2 Infantry)",
+            "Baltic Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Portugal",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Lisboa (L)",
+            "Porto",
+            "Beira",
+            "Ceuta",
+            "Madeira"
+        ],
+        "influence": [
+            "Aragon (2)",
+            "Central Italy (1)"
+        ],
+        "relations": [
+            "England"
+        ],
+        "distant_relations": [
+            "Gold Coast"
+        ],
+        "merchants": [
+            "Sevilla",
+            "Bordeaux"
+        ],
+        "military": [
+            "Portugal (Army 1: 2 Infantry)",
+            "C. Atlantic (2 L. Ships)"
+        ]
+    },
+    {
+        "realm": "Netherlands",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "province_choices": [
+            [
+                "Amsterdam",
+                "Zeeland"
+            ],
+            [
+                "Brugge",
+                "Gent"
+            ],
+            [
+                "Antwerpen",
+                "Breda"
+            ]
+        ],
+        "influence": [
+            "Netherlands (2)",
+            "Flanders & Wallonia (2)",
+            "Westphalia (1)",
+            "Lower Saxony (1)",
+            "Seine (1)",
+            "Rhineland (1)"
+        ],
+        "relations": [
+            "Burgundy"
+        ],
+        "merchants": [
+            "English Channel",
+            "North Sea"
+        ],
+        "military": [
+            "English Channel (L. Ship)",
+            "North Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Papal States",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Roma (L)",
+            "Ancona",
+            "Avignon"
+        ],
+        "influence": [
+            "Central Italy (2)",
+            "Lombardy (2)",
+            "Venetia (1)",
+            "Naples (1)",
+            "Aragon (1)",
+            "Burgundy (1)",
+            "Bavaria & Swabia (1)",
+            "Rhineland (1)",
+            "Westphalia (1)",
+            "Flanders & Wallonia (1)"
+        ],
+        "merchants": [
+            "Genoa",
+            "Adriatic Sea"
+        ],
+        "military": [
+            "Central Italy (Army 1: 1 Infantry)"
+        ]
+    },
+    {
+        "realm": "Brandenburg",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Berlin",
+            "Potsdam",
+            "Altmark"
+        ],
+        "influence": [
+            "Pomerania (2)",
+            "Prussia (1)",
+            "Jutland (1)",
+            "Lower Saxony (1)",
+            "Westphalia (1)",
+            "Bohemia (1)"
+        ],
+        "merchants": [
+            "Saxony",
+            "Wien"
+        ],
+        "military": [
+            "Brandenburg (Army 1: 1 Infantry)"
+        ]
+    },
+    {
+        "realm": "Venice",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Venezia (L)",
+            "Verona",
+            "Treviso",
+            "Brescia",
+            "Zara",
+            "Creta"
+        ],
+        "distant_provinces": [
+            "Naxos"
+        ],
+        "influence": [
+            "Lombardy (1)",
+            "Central Italy (1)",
+            "Dalmatia (1)",
+            "Greece (1)",
+            "Aegean Archipelago (1)",
+            "Egypt (1)"
+        ],
+        "relations": [
+            "Albania",
+            "Knights"
+        ],
+        "merchants": [
+            "Adriatic Sea",
+            "Alexandria"
+        ],
+        "military": [
+            "Venetia (Army 1: 2 Infantry)",
+            "Adriatic Sea (L. Ship, Fleet: 2 Galleys)",
+            "E. Mediterranean (L. Ship)",
+            "Aegean Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Mamluks",
+        "year": "1444",
+        "state_religion": "Muslim",
+        "provinces": [
+            "Qahirah (L)",
+            "Halab (L)",
+            "Bangazi",
+            "Iskandariyya",
+            "Dumyat",
+            "Fayyum",
+            "Gazzah",
+            "Jaffa",
+            "Al-Quds",
+            "Tarabulus",
+            "Dimashq"
+        ],
+        "distant_provinces": [
+            "Upper Egypt (L)",
+            "Hejaz"
+        ],
+        "influence": [
+            "Karaman (2)",
+            "Kurdistan (1)",
+            "Tripolitania (1)"
+        ],
+        "merchants": [
+            "Alexandria",
+            "Aleppo"
+        ],
+        "military": [
+            "Egypt (Army 1: 2 Infantry, 1 Cavalry)",
+            "E. Mediterranean (L. Ship, Fleet: 2 Galleys)"
+        ]
+    },
+    {
+        "realm": "Byzantium",
+        "year": "1444",
+        "state_religion": "Orthodox",
+        "provinces": [
+            "Constantinople (L)",
+            "Morea",
+            "Athina"
+        ],
+        "influence": [
+            "Greece (1)",
+            "Aegean Archipelago (1)",
+            "Cyprus (1)",
+            "Serbia & Albania (1)",
+            "Rum (1)",
+            "Circassia (1)",
+            "Transcaucasia (1)"
+        ],
+        "relations": [
+            "Macedonia & Thrace",
+            "Greece"
+        ],
+        "merchants": [
+            "Black Sea",
+            "Alexandria"
+        ],
+        "military": [
+            "Macedonia & Thrace (Army 1: 2 Infantry)",
+            "Black Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Ulm",
+        "year": "1444",
+        "state_religion": "Catholic",
+        "provinces": [
+            "Ulm"
+        ],
+        "influence": [
+            "Bavaria & Swabia (2)",
+            "Switzerland (2)",
+            "Rhineland (1)",
+            "Saxony (1)",
+            "Westphalia (1)"
+        ],
+        "relations": [
+            "Wien",
+            "Saxony"
+        ],
+        "merchants": [
+            "Wien",
+            "Saxony"
+        ],
+        "military": [
+            "Bavaria & Swabia (Army 1: 1 Infantry)"
+        ]
+    },
+    {
         "realm": "Austria",
         "year": "1618",
         "state_religion": "Counter-Reformed",
