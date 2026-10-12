@@ -3,7 +3,6 @@ package ootie.model;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-
 import lombok.Data;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;
@@ -118,7 +117,9 @@ public class CharacterModel implements ModelInterface, EmbeddableModel {
 
     @Override
     public boolean search(String searchString) {
-        return id.contains(searchString) || name.toLowerCase().contains(searchString.toLowerCase()) || getAutoCompleteName().toLowerCase().contains(searchString.toLowerCase());
+        return id.contains(searchString)
+                || name.toLowerCase().contains(searchString.toLowerCase())
+                || getAutoCompleteName().toLowerCase().contains(searchString.toLowerCase());
     }
 
     @Override

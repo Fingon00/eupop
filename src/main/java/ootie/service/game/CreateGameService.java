@@ -29,8 +29,10 @@ import ootie.game.Game;
 import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
 import ootie.helpers.ThreadArchiveHelper;
+import ootie.image.Mapper;
 import ootie.logging.BotLogger;
 import ootie.message.MessageHelper;
+import ootie.model.ActionCardModel;
 import ootie.settings.GlobalSettings;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.function.Consumers;
@@ -46,6 +48,10 @@ public class CreateGameService {
         newGame.newGameSetup();
         newGame.setName(gameName);
         newGame.addPlayer(gameOwner.getId(), gameOwner.getEffectiveName());
+        for (ActionCardModel mod : Mapper.getActionCards().values()) {
+            newGame.addActionCard(mod.getId());
+        }
+
         GameManager.save(newGame, "Game created");
         return newGame;
     }

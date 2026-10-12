@@ -1,0 +1,716 @@
+[
+    {
+        "realm": "Austria",
+        "year": "1618",
+        "state_religion": "Counter-Reformed",
+        "ideas": [
+            "Deus Vult",
+            "Cabinet",
+            "Cannons"
+        ],
+        "provinces": [
+            "All in Austria",
+            "Tirol",
+            "Bohemia",
+            "Royal Hungary",
+            "Sundgau",
+            "Zagreb",
+            "Rijeka",
+            "Krain",
+            "Silesia"
+        ],
+        "influence": [
+            "Bavaria & Swabia (1)",
+            "Lombardy (1)",
+            "Central Italy (1)"
+        ],
+        "imperial_influence": [
+            "Bavaria & Swabia (1)",
+            "Rhineland (1)"
+        ],
+        "relations": [
+            "Emperor of HRE (2)",
+            "Bavaria",
+            "Spain I",
+            "Tuscany"
+        ],
+        "merchants": [
+            "Wien",
+            "Adriatic Sea"
+        ],
+        "military": [
+            "Austria (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Adriatic Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Spain I (Castile)",
+        "year": "1618",
+        "state_religion": "Counter-Reformed",
+        "ideas": [
+            "QftNW",
+            "Cannons",
+            "Tercios/Jan."
+        ],
+        "provinces": [
+            "All in Castile, Leon, Andalucia",
+            "Canarias"
+        ],
+        "distant_provinces": [
+            "Mexico (L)",
+            "C. America (L)",
+            "Cuzco (L)",
+            "Florida",
+            "Antilles",
+            "New Granada",
+            "Quito",
+            "Charcas",
+            "Chile",
+            "La Plata",
+            "Philippines"
+        ],
+        "influence": [
+            "Portugal (2)",
+            "C. Italy (1)"
+        ],
+        "relations": [
+            "Portugal",
+            "Spain II (perm.)",
+            "Austria",
+            "France"
+        ],
+        "merchants": [
+            "Sevilla",
+            "N. America"
+        ],
+        "military": [
+            "Castile (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "C. Atlantic (L. Ship)",
+            "Caribbean Sea (L. Ship)",
+            "S.W. Atlantic (L. Ship)",
+            "S.E. Pacific (L. Ship)",
+            "East Indies (L. Ship)"
+        ]
+    },
+    {
+        "realm": "England",
+        "year": "1618",
+        "state_religion": "Protestant",
+        "ideas": [
+            "QftNW",
+            "Mercantilism",
+            "Cannons"
+        ],
+        "provinces": [
+            "All in East Anglia, Wales & Wessex, Northumbria",
+            "Pale",
+            "Mhumhain",
+            "Ulaidh"
+        ],
+        "influence": [
+            "Scotland (2)",
+            "Portugal (2)"
+        ],
+        "relations": [
+            "Scotland",
+            "Netherlands",
+            "Denmark",
+            "Palatinate"
+        ],
+        "distant_provinces": [
+            "New England",
+            "Virginia"
+        ],
+        "merchants": [
+            "English Channel",
+            "North Sea"
+        ],
+        "colonists": [
+            "2"
+        ],
+        "military": [
+            "E. Anglia (Army 1: 2 Infantry, 1 Artillery)",
+            "English Ch. (L. Ship, Fleet: 2 H. Ships)",
+            "Doggerbank (2 L. Ships)",
+            "E. Atlantic (L. Ship)",
+            "N.E. Atlantic (L. Ship)",
+            "N.W. Atlantic (L. Ship)"
+        ]
+    },
+    {
+        "realm": "France",
+        "year": "1618",
+        "state_religion": "Counter-Reformed",
+        "ideas": [
+            "QftNW",
+            "Mercantilism",
+            "Cannons"
+        ],
+        "provinces": [
+            "All in Brit. & Norm., Aquitaine, Loire",
+            "Paris (L)",
+            "Champagne (L)",
+            "Bourgogne (L)",
+            "Provence (L)",
+            "Lyon (L)",
+            "Picardie",
+            "Toulouse",
+            "Montpellier"
+        ],
+        "influence": [
+            "Scotland (1)",
+            "Lombardy (1)",
+            "Rhineland (1)",
+            "Svealand (1)"
+        ],
+        "relations": [
+            "Spain I",
+            "Burgundy",
+            "Seine"
+        ],
+        "distant_relations": [
+            "Canada",
+            "New England"
+        ],
+        "merchants": [
+            "Champ.",
+            "Bordeaux"
+        ],
+        "colonists": [
+            "2"
+        ],
+        "military": [
+            "Seine (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Gulf of Lion (L. Ship)",
+            "Bay of Biscay (L. Ship, Fleet: H. Ship)",
+            "E. Atlantic (L. Ship)",
+            "N.W. Atlantic (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Russia",
+        "year": "1618",
+        "state_religion": "Orthodox",
+        "ideas": [
+            "Cannons",
+            "Noble Knights"
+        ],
+        "provinces": [
+            "All in Moscow & Ryazan, C. Russia, Perm, Novgorod, Vologda, Pomorye, Saratov, Kazan",
+            "Astrakhan",
+            "Sarai",
+            "Ladoga",
+            "Olonets",
+            "Majar"
+        ],
+        "distant_provinces": [
+            "Volga (L)",
+            "Tyumen",
+            "Ural",
+            "W. Siberia"
+        ],
+        "influence": [
+            "Crimea (1)",
+            "Circassia (1)"
+        ],
+        "relations": [
+            "Truce: Sweden",
+            "White Ruthenia",
+            "Eastern Ukraine"
+        ],
+        "merchants": [
+            "Kazan",
+            "Novgorod"
+        ],
+        "military": [
+            "Moscow & Ryazan (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)"
+        ]
+    },
+    {
+        "realm": "Ottomans I (Rumelia)",
+        "year": "1618",
+        "state_religion": "Muslim",
+        "ideas": [
+            "Tolerance",
+            "Cannons",
+            "Tercios/Jan."
+        ],
+        "provinces": [
+            "All in Maced. & Thrace, Northern Anatolia, Aydin, Greece, Serbia & Albania, Hungarian Plain",
+            "Naxos",
+            "Rhodes",
+            "Bosnia",
+            "Sofya",
+            "Silistre",
+            "Basarabia",
+            "Caffa",
+            "Azov"
+        ],
+        "distant_provinces": [
+            "Torda",
+            "Hunyad",
+            "Tirgoviste",
+            "Buzau",
+            "Suceava",
+            "Crimea",
+            "Kyzyl-Yar",
+            "Ragusa"
+        ],
+        "influence": [
+            "Crimea (2)",
+            "Wallachia & Bulgaria (1)",
+            "Transylvania (1)"
+        ],
+        "relations": [
+            "Ottomans II (perm.)",
+            "Royal Hungary",
+            "Aegean Archipelago"
+        ],
+        "merchants": [
+            "Black Sea",
+            "Adriatic Sea"
+        ],
+        "military": [
+            "Mace. & Thra. (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Aegean Sea (L. Ship, Fleet: 3 Galleys)",
+            "Black Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Polish-Lithuanian Commonwealth",
+        "year": "1618",
+        "state_religion": "Counter-Reformed",
+        "ideas": [
+            "Tolerance",
+            "Cannons",
+            "Noble Knights"
+        ],
+        "provinces": [
+            "All in Mazovia & Malopolska, Red Ruthenia, Lithuania, White Ruthenia, W. Ukraine, E. Ukraine",
+            "Danzig",
+            "Kulm",
+            "Poznań",
+            "Kalisz",
+            "Sieradz",
+            "Livland",
+            "Riga",
+            "Goldingen",
+            "Edisanas",
+            "Zaporozye"
+        ],
+        "influence": [
+            "Estonia & Livonia (1)",
+            "Moldavia (1)",
+            "Crimea (1)"
+        ],
+        "merchants": [
+            "Kiev",
+            "Krakow"
+        ],
+        "military": [
+            "Mazovia & Malopolska (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Baltic Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Denmark",
+        "year": "1618",
+        "state_religion": "Protestant",
+        "ideas": [
+            "QftNW",
+            "Mercantilism",
+            "Cannons"
+        ],
+        "provinces": [
+            "København (L)",
+            "Lund (L)",
+            "Gotland",
+            "Vestjyland",
+            "Østjyland",
+            "Slesvig",
+            "Borgarsysla",
+            "Akershus",
+            "Bergenhus",
+            "Trondheim",
+            "Holstein"
+        ],
+        "influence": [
+            "Lower Saxony (2)",
+            "Saxony (2)",
+            "Jutland (1)",
+            "Pomerania (1)"
+        ],
+        "relations": [
+            "Bremen",
+            "Brunswick",
+            "England"
+        ],
+        "merchants": [
+            "Lübeck",
+            "North Sea"
+        ],
+        "military": [
+            "Sjælland & Fyn (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Skagerrak (2 L. Ships)",
+            "North Sea (L. Ship)",
+            "Baltic Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Sweden",
+        "year": "1618",
+        "state_religion": "Protestant",
+        "ideas": [
+            "QftNW",
+            "Cannons",
+            "Line Infantry"
+        ],
+        "provinces": [
+            "Stockholm (L)",
+            "Bergslagen",
+            "Östergötland",
+            "Hälsingland",
+            "Österbotten",
+            "Åbo",
+            "Nyland",
+            "Neva",
+            "Reval"
+        ],
+        "influence": [
+            "Seine (1)",
+            "Lower Saxony (1)",
+            "Saxony (1)",
+            "Pomerania (1)"
+        ],
+        "relations": [
+            "Truce: Russia",
+            "Estonia & Livonia",
+            "Pomerania"
+        ],
+        "merchants": [
+            "Baltic Sea",
+            "Lübeck"
+        ],
+        "military": [
+            "Svealand (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Baltic Sea (L. Ship)",
+            "Gulf of Bothnia (L. Ship)",
+            "Skagerrak (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Portugal",
+        "year": "1618",
+        "state_religion": "Counter-Reformed",
+        "ideas": [
+            "QftNW",
+            "Free Trade",
+            "Cannons"
+        ],
+        "provinces": [
+            "Lisboa (L)",
+            "Porto",
+            "Beira",
+            "Tangiers",
+            "Ceuta",
+            "Madeira"
+        ],
+        "distant_provinces": [
+            "Pernambuco",
+            "Bahia",
+            "Rio de Janeiro",
+            "Gold Coast",
+            "Angola",
+            "Hormuz",
+            "Goa",
+            "Malacca",
+            "Kongo (L)",
+            "Kilwa"
+        ],
+        "influence": [
+            "East Anglia (2)",
+            "Seine (1)",
+            "Central Italy (1)"
+        ],
+        "relations": [
+            "Spain I"
+        ],
+        "distant_relations": [
+            "South America"
+        ],
+        "merchants": [
+            "Sevilla",
+            "S. America",
+            "Indian Ocean"
+        ],
+        "colonists": [
+            "1"
+        ],
+        "military": [
+            "Portugal (Army 1: 2 Infantry, 1 Cavalry)",
+            "C. Atlantic (2 L. Ships)",
+            "S.W. Atlantic (L. Ship)",
+            "S.E. Atlantic (L. Ship)",
+            "East African Coast (L. Ship)",
+            "Indian Ocean (L. Ship)",
+            "East Indies (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Netherlands",
+        "year": "1618",
+        "state_religion": "Protestant",
+        "ideas": [
+            "QftNW",
+            "Free Trade",
+            "Cannons",
+            "Line Infantry"
+        ],
+        "provinces": [
+            "All in Netherlands"
+        ],
+        "distant_provinces": [
+            "Guyana",
+            "Moluccas",
+            "Timor"
+        ],
+        "influence": [
+            "Jutland (1)",
+            "Westphalia (1)",
+            "Lower Saxony (1)",
+            "Rhineland (1)"
+        ],
+        "relations": [
+            "England",
+            "Flanders & Wall.",
+            "Cape of Good Hope"
+        ],
+        "merchants": [
+            "English Channel",
+            "North America",
+            "East Indies"
+        ],
+        "colonists": [
+            "2"
+        ],
+        "military": [
+            "Nether. (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "English Ch. (L. Ship)",
+            "North Sea (L. Ship)",
+            "E. Atlantic (L. Ship)",
+            "Carib. Sea (L. Ship)",
+            "S.E. Atlantic (L. Ship)",
+            "East Afr. Coast (L. Ship)",
+            "Indian Ocn. (L. Ship)",
+            "East Indies (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Papal States",
+        "year": "1618",
+        "state_religion": "Counter-Reformed",
+        "ideas": [
+            "Inquisition",
+            "Cannons"
+        ],
+        "provinces": [
+            "Roma (L)",
+            "Ancona",
+            "Ferrara",
+            "Avignon"
+        ],
+        "influence": [
+            "Central Italy (2)",
+            "Lombardy (2)",
+            "Naples (1)",
+            "Venetia (1)",
+            "Burgundy (1)",
+            "Bavaria & Swabia (1)",
+            "Sicily (1)"
+        ],
+        "merchants": [
+            "Genoa",
+            "Adriatic Sea"
+        ],
+        "military": [
+            "Central Italy (Army 1: 2 Infantry, 1 Artillery)",
+            "C. Mediterranean (L. Ship)",
+            "Adriatic Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Brandenburg-Prussia",
+        "year": "1618",
+        "state_religion": "Protestant",
+        "ideas": [
+            "Cannons",
+            "Line Infantry"
+        ],
+        "provinces": [
+            "Berlin",
+            "Potsdam",
+            "Altmark",
+            "Neumark",
+            "Kleve",
+            "Königsberg",
+            "Osterode"
+        ],
+        "influence": [
+            "Lower Saxony (2)",
+            "Rhineland (2)",
+            "Saxony (1)",
+            "Pomerania (1)",
+            "Westphalia (1)"
+        ],
+        "relations": [
+            "Palatinate",
+            "Pomerania"
+        ],
+        "merchants": [
+            "Saxony",
+            "Lübeck"
+        ],
+        "military": [
+            "Brandenburg (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Baltic Sea (1 L. Ship)"
+        ]
+    },
+    {
+        "realm": "Venice",
+        "year": "1618",
+        "state_religion": "Catholic",
+        "ideas": [
+            "Cannons",
+            "Free Trade",
+            "Tolerance"
+        ],
+        "provinces": [
+            "Venezia (L)",
+            "Verona",
+            "Treviso",
+            "Brescia",
+            "Zara",
+            "Creta"
+        ],
+        "influence": [
+            "Lombardy (1)",
+            "Central Italy (1)",
+            "Sicily (1)"
+        ],
+        "merchants": [
+            "Adriatic Sea",
+            "Black Sea",
+            "Alexandria"
+        ],
+        "military": [
+            "Venetia (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Adriatic Sea (L. Ship)",
+            "E. Mediterranean (L. Ship)",
+            "Aegean Sea (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Ottomans II (Egypt)",
+        "year": "1618",
+        "state_religion": "Muslim",
+        "ideas": [
+            "Cannons",
+            "Noble Knights"
+        ],
+        "provinces": [
+            "All in Egypt, Palestine, Syria, Karaman, Rum, Kurdistan, Iraq, Cyrenaica, Cyprus",
+            "Tripoli",
+            "Tunis",
+            "Sousse",
+            "Bizerte",
+            "Qafsah",
+            "Mitidja",
+            "Qusantinah"
+        ],
+        "distant_provinces": [
+            "Upper Egypt (L)",
+            "Yemen",
+            "Basra",
+            "Hejaz"
+        ],
+        "influence": [
+            "Tunisia (1)",
+            "Algiers (1)",
+            "Tripolitania (1)"
+        ],
+        "relations": [
+            "Ottomans I (perm.)",
+            "Algiers"
+        ],
+        "merchants": [
+            "Alexandria",
+            "Aleppo"
+        ],
+        "military": [
+            "Egypt (Army 1: 2 Infantry, 1 Cavalry)",
+            "E. Mediterranean (L. Ship, Fleet: 2 Galleys)",
+            "Indian Ocean (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Spain II (Aragon)",
+        "year": "1618",
+        "state_religion": "Counter-Reformed",
+        "ideas": [
+            "Cannons",
+            "Tercios/Janissaries"
+        ],
+        "provinces": [
+            "All in Aragon, Naples",
+            "Milano (L)",
+            "Cremona",
+            "Franche-Comté",
+            "Luxembourg",
+            "Namur",
+            "Artois",
+            "Brugge",
+            "Antwerpen",
+            "Gent",
+            "Sardegna",
+            "Palermo",
+            "Mesina",
+            "Temcen",
+            "Oran"
+        ],
+        "influence": [
+            "Sicily (1)",
+            "Central Italy (1)",
+            "Lombardy (1)",
+            "Burgundy (1)",
+            "Rhineland (1)",
+            "Corsica & Sard. (1)"
+        ],
+        "relations": [
+            "Spain I (perm.)"
+        ],
+        "merchants": [
+            "Genoa",
+            "Adriatic Sea"
+        ],
+        "military": [
+            "Naples (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "W. Mediterranean (L. Ship)",
+            "C. Mediterranean (L. Ship)"
+        ]
+    },
+    {
+        "realm": "Interregnum Player Aid",
+        "year": "1618",
+        "card_type": "player_aid",
+        "rules": [
+            "PRs with no Ruler have these effects while in the Interregnum state:",
+            "May not Declare War",
+            "May not enter Royal Marriages",
+            "May at any time assign a Leader from their hand as a new Ruler",
+            "PRs that enter Phase 3, Step F, with no Ruler immediately suffer these effects:",
+            "Lose 1",
+            "Flip all [symbol] on their Realm to the [symbol] side",
+            "Player Realms with a Ruler labeled as a Regent, Privy Council, Estates-General, or similar are not considered to be in a state of Interregnum, but may still have restrictions on e.g. DoW."
+        ]
+    }
+]

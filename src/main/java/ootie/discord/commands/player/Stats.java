@@ -1,6 +1,7 @@
 package ootie.discord.commands.player;
 
 import java.util.List;
+
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
@@ -16,7 +17,7 @@ import ootie.service.player.PlayerStatsService;
 class Stats extends GameStateSubcommand {
 
     Stats() {
-        super(Constants.STATS, "Player Stats: Command tokens, trade goods, commodities", true, true);
+        super(Constants.STATS, "Player Stats: Ducats, monarch power, other stuff", true, true);
         addOptions(new OptionData(
                         OptionType.STRING, Constants.DUCATS, "Ducat count - can use +1/-1 etc. to add/subtract"))
                 .addOptions(new OptionData(

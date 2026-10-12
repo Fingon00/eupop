@@ -21,18 +21,18 @@ import org.apache.commons.lang3.function.Consumers;
 
 class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
-    private static final List<String> SLASHCOMMANDS_WITH_MODALS = Arrays.asList(Constants.EDIT_TRACK_RECORD);
+
 
     @Override
     public void onSlashCommandInteraction(@Nonnull SlashCommandInteractionEvent event) {
         if (!canReceiveCommands(event)) return;
 
-        if (!isModalCommand(event)) {
+       
             Command<SlashCommandInteractionEvent> command = getCommand(event);
             event.getInteraction()
                     .deferReply(command.isEphemeral(event))
                     .queue(Consumers.nop(), BotLogger::catchRestError);
-        }
+        
 
         queue(event);
     }
@@ -72,7 +72,7 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
                 logSlashCommand(event);
                 command.execute(event);
                 command.postExecute(event);
-                if (!isModalCommand(event) && !resolvedCommand.isEphemeral(event)) {
+                if (!resolvedCommand.isEphemeral(event)) {
                     event.getHook().deleteOriginal().queue(Consumers.nop(), BotLogger::catchRestError);
                 }
             }
@@ -85,9 +85,7 @@ class SlashCommandListener extends ListenerAdapter implements CommandListener {
         warnForLongRunningCommands(event, processStartTime);
     }
 
-    private static boolean isModalCommand(SlashCommandInteractionEvent event) {
-        return SLASHCOMMANDS_WITH_MODALS.contains(event.getInteraction().getSubcommandName());
-    }
+
 
     private static void logSlashCommand(SlashCommandInteractionEvent event) {
         Member member = event.getMember();

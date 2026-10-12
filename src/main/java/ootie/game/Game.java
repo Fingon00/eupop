@@ -2,6 +2,7 @@ package ootie.game;
 
 import java.util.AbstractMap.SimpleEntry;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -12,6 +13,7 @@ import lombok.Getter;
 import lombok.Setter;
 import ootie.image.Mapper;
 import ootie.json.JsonMapperManager;
+import ootie.model.ActionCardModel;
 import ootie.model.AreaModel;
 import tools.jackson.databind.json.JsonMapper;
 
@@ -90,6 +92,26 @@ public class Game extends GameProperties {
 
     public Player getPlayer(String id) {
         return players.get(id);
+    }
+
+    public void addActionCard(String id) {
+        ActionCardModel mod = Mapper.getActionCards().get(id);
+        if (mod != null) {
+            switch (mod.getType()) {
+                case "administrative":
+                    getAdministrativeActionCardDeck().add(mod.getId());
+                    Collections.shuffle(getAdministrativeActionCardDeck());
+                    break;
+                case "military":
+                    getMilitaryActionCardDeck().add(mod.getId());
+                    Collections.shuffle(getMilitaryActionCardDeck());
+                    break;
+                case "diplomatic":
+                    getDiplomaticActionCardDeck().add(mod.getId());
+                    Collections.shuffle(getDiplomaticActionCardDeck());
+                    break;
+            }
+        }
     }
 
     public void newGameSetup() {

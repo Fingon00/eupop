@@ -1,6 +1,8 @@
 package ootie.game;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +20,9 @@ public class GameProperties {
     private boolean hasEnded;
     // Decks
     public Map<String, AreaObject> areas;
+    private List<String> diplomaticActionCardDeck = new ArrayList<>();
+    private List<String> militaryActionCardDeck = new ArrayList<>();
+    private List<String> administrativeActionCardDeck = new ArrayList<>();
 
     // private Map<String, Integer> discardActionCards = new LinkedHashMap<>();
     // private Set<String> playedActionCards = new LinkedHashSet<>();
