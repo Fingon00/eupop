@@ -24,6 +24,10 @@ public class GameProperties {
     private List<String> militaryActionCardDeck = new ArrayList<>();
     private List<String> administrativeActionCardDeck = new ArrayList<>();
 
+    private List<String> diplomaticIdeas = new ArrayList<>();
+    private List<String> militaryIdeas = new ArrayList<>();
+    private List<String> administrativeIdeas = new ArrayList<>();
+
     private List<String> eventDeck = new ArrayList<>();
     private List<String> revealedEventCards = new ArrayList<>();
     private List<String> unrevealedEventCards = new ArrayList<>();

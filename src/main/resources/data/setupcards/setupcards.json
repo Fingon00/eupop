@@ -1,5 +1,6 @@
 [
     {
+        "id": "001-1",
         "realm": "austria",
         "year": "1444",
         "state_religion": "Catholic",
@@ -40,6 +41,7 @@
         ]
     },
     {
+        "id": "002-1",
         "realm": "Castile",
         "year": "1444",
         "state_religion": "Catholic",
@@ -74,6 +76,7 @@
         ]
     },
     {
+        "id": "003-1",
         "realm": "England",
         "year": "1444",
         "state_religion": "Catholic",
@@ -114,6 +117,7 @@
         ]
     },
     {
+        "id": "004-1",
         "realm": "France",
         "year": "1444",
         "state_religion": "Catholic",
@@ -155,6 +159,7 @@
         ]
     },
     {
+        "id": "005-1",
         "realm": "Muscovy",
         "year": "1444",
         "state_religion": "Orthodox",
@@ -195,6 +200,7 @@
         ]
     },
     {
+        "id": "006-1",
         "realm": "Ottomans",
         "year": "1444",
         "state_religion": "Muslim",
@@ -233,6 +239,7 @@
         ]
     },
     {
+        "id": "007-1",
         "realm": "Poland",
         "year": "1444",
         "state_religion": "Catholic",
@@ -270,6 +277,7 @@
         ]
     },
     {
+        "id": "008-1",
         "realm": "Denmark",
         "year": "1444",
         "state_religion": "Catholic",
@@ -308,6 +316,7 @@
         ]
     },
     {
+        "id": "009-1",
         "realm": "Sweden",
         "year": "1444",
         "state_religion": "Catholic",
@@ -340,6 +349,7 @@
         ]
     },
     {
+        "id": "010-1",
         "realm": "Portugal",
         "year": "1444",
         "state_religion": "Catholic",
@@ -370,6 +380,7 @@
         ]
     },
     {
+        "id": "011-1",
         "realm": "Netherlands",
         "year": "1444",
         "state_religion": "Catholic",
@@ -408,6 +419,7 @@
         ]
     },
     {
+        "id": "012-1",
         "realm": "Papal States",
         "year": "1444",
         "state_religion": "Catholic",
@@ -437,6 +449,7 @@
         ]
     },
     {
+        "id": "013-1",
         "realm": "Brandenburg",
         "year": "1444",
         "state_religion": "Catholic",
@@ -462,6 +475,7 @@
         ]
     },
     {
+        "id": "014-1",
         "realm": "Venice",
         "year": "1444",
         "state_religion": "Catholic",
@@ -500,6 +514,7 @@
         ]
     },
     {
+        "id": "015-1",
         "realm": "Mamluks",
         "year": "1444",
         "state_religion": "Muslim",
@@ -535,6 +550,7 @@
         ]
     },
     {
+        "id": "016-1",
         "realm": "Byzantium",
         "year": "1444",
         "state_religion": "Orthodox",
@@ -566,6 +582,7 @@
         ]
     },
     {
+        "id": "017-1",
         "realm": "Ulm",
         "year": "1444",
         "state_religion": "Catholic",
@@ -592,6 +609,7 @@
         ]
     },
     {
+        "id": "001-2",
         "realm": "Austria",
         "year": "1618",
         "state_religion": "Counter-Reformed",
@@ -636,6 +654,7 @@
         ]
     },
     {
+        "id": "002-2",
         "realm": "Spain I (Castile)",
         "year": "1618",
         "state_religion": "Counter-Reformed",
@@ -685,6 +704,7 @@
         ]
     },
     {
+        "id": "003-2",
         "realm": "England",
         "year": "1618",
         "state_religion": "Protestant",
@@ -730,6 +750,7 @@
         ]
     },
     {
+        "id": "004-2",
         "realm": "France",
         "year": "1618",
         "state_religion": "Counter-Reformed",
@@ -780,6 +801,7 @@
         ]
     },
     {
+        "id": "005-2",
         "realm": "Russia",
         "year": "1618",
         "state_religion": "Orthodox",
@@ -819,6 +841,7 @@
         ]
     },
     {
+        "id": "006-2",
         "realm": "Ottomans I (Rumelia)",
         "year": "1618",
         "state_religion": "Muslim",
@@ -869,6 +892,7 @@
         ]
     },
     {
+        "id": "007-2",
         "realm": "Polish-Lithuanian Commonwealth",
         "year": "1618",
         "state_religion": "Counter-Reformed",
@@ -905,6 +929,7 @@
         ]
     },
     {
+        "id": "008-2",
         "realm": "Denmark",
         "year": "1618",
         "state_religion": "Protestant",
@@ -949,6 +974,7 @@
         ]
     },
     {
+        "id": "009-2",
         "realm": "Sweden",
         "year": "1618",
         "state_religion": "Protestant",
@@ -991,6 +1017,7 @@
         ]
     },
     {
+        "id": "010-2",
         "realm": "Portugal",
         "year": "1618",
         "state_religion": "Counter-Reformed",
@@ -1049,6 +1076,7 @@
         ]
     },
     {
+        "id": "011-2",
         "realm": "Netherlands",
         "year": "1618",
         "state_religion": "Protestant",
@@ -1098,6 +1126,7 @@
         ]
     },
     {
+        "id": "012-2",
         "realm": "Papal States",
         "year": "1618",
         "state_religion": "Counter-Reformed",
@@ -1131,6 +1160,7 @@
         ]
     },
     {
+        "id": "013-2",
         "realm": "Brandenburg-Prussia",
         "year": "1618",
         "state_religion": "Protestant",
@@ -1168,6 +1198,7 @@
         ]
     },
     {
+        "id": "014-2",
         "realm": "Venice",
         "year": "1618",
         "state_religion": "Catholic",
@@ -1202,6 +1233,7 @@
         ]
     },
     {
+        "id": "015-2",
         "realm": "Ottomans II (Egypt)",
         "year": "1618",
         "state_religion": "Muslim",
@@ -1245,6 +1277,7 @@
         ]
     },
     {
+        "id": "018-2",
         "realm": "Spain II (Aragon)",
         "year": "1618",
         "state_religion": "Counter-Reformed",
@@ -1288,21 +1321,6 @@
             "Naples (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
             "W. Mediterranean (L. Ship)",
             "C. Mediterranean (L. Ship)"
-        ]
-    },
-    {
-        "realm": "Interregnum Player Aid",
-        "year": "1618",
-        "card_type": "player_aid",
-        "rules": [
-            "PRs with no Ruler have these effects while in the Interregnum state:",
-            "May not Declare War",
-            "May not enter Royal Marriages",
-            "May at any time assign a Leader from their hand as a new Ruler",
-            "PRs that enter Phase 3, Step F, with no Ruler immediately suffer these effects:",
-            "Lose 1",
-            "Flip all [symbol] on their Realm to the [symbol] side",
-            "Player Realms with a Ruler labeled as a Regent, Privy Council, Estates-General, or similar are not considered to be in a state of Interregnum, but may still have restrictions on e.g. DoW."
         ]
     }
 ]

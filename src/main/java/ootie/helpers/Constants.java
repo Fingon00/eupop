@@ -62,6 +62,7 @@ public final class Constants {
     public static final String SEARCH_CHARACTERS = "characters";
     public static final String CHARACTER = "character";
     public static final String EVENTS = "events";
+    public static final String IDEAS = "ideas";
     public static final String SHOW = "show";
 
     public static final String SEARCH_SOURCES = "sources";

@@ -11,6 +11,9 @@ import java.util.Map;
 import java.util.Set;
 import lombok.Getter;
 import lombok.Setter;
+import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
+import ootie.discord.JdaService;
+import ootie.helpers.Constants;
 import ootie.image.Mapper;
 import ootie.json.JsonMapperManager;
 import ootie.model.ActionCardModel;
@@ -71,6 +74,22 @@ public class Game extends GameProperties {
         player.setUserName(name);
         players.put(id, player);
         return player;
+    }
+
+    public TextChannel getMainGameChannel() {
+        if (JdaService.jda == null) return null;
+        try {
+            return JdaService.jda.getTextChannelById(getSavedChannelID());
+        } catch (Exception e) {
+            List<TextChannel> gameChannels =
+                    JdaService.jda.getTextChannelsByName(getName() + Constants.ACTIONS_CHANNEL_SUFFIX, true);
+            if (gameChannels.size() == 1) {
+                TextChannel mainGameChannel = gameChannels.getFirst();
+                setSavedChannelID(mainGameChannel.getId());
+                return mainGameChannel;
+            }
+        }
+        return null;
     }
 
     public void addAreas() {

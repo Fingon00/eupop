@@ -19,6 +19,10 @@ public class IdeaModel implements ModelInterface, EmbeddableModel {
     private String id;
     private String name;
     private String type;
+    private String effect;
+    private String instantEffect;
+    private int age;
+    private boolean governmentForm;
     private ComponentSource source = ComponentSource.base;
 
     @Override
@@ -43,21 +47,6 @@ public class IdeaModel implements ModelInterface, EmbeddableModel {
         eb.setTitle(title);
 
         String description = "";
-        // DESCRIPTION
-        // if (getPermanentEffect().isPresent()) {
-        //     description += getPermanentEffect().get();
-        // }
-
-        // // FIELDS
-        // if (getWindow().isPresent()) {
-        //     if (!description.isEmpty()) description += "\n\n";
-        //     description += getWindow().get() + "\n" + getWindowEffect().orElse("");
-        // }
-
-        // if (notes != null) {
-        //     description += "\n-# [" + notes + "]";
-        // }
-
         eb.setDescription(description);
 
         // FOOTER

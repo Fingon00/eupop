@@ -80,6 +80,12 @@ class AutoCompleteProvider {
                 //                 .toList();
                 // event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
             }
+            case Constants.AC_TYPE -> {
+                String enteredValue = event.getFocusedOption().getValue();
+                var values = List.of("administrative", "military", "diplomatic");
+                List<Command.Choice> options = mapTo25ChoicesThatContain(values, enteredValue);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
             case Constants.SOURCE -> {
                 String enteredValue = event.getFocusedOption().getValue();
                 List<Command.Choice> options = Stream.of(ComponentSource.values())
@@ -160,19 +166,19 @@ class AutoCompleteProvider {
     //     event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
     // }
 
-    // private static void replyWith25ChoicesThatContainValue(
-    //         CommandAutoCompleteInteractionEvent event, Collection<String> toFilter) {
-    //     String enteredValue = event.getFocusedOption().getValue();
-    //     var options = mapTo25ChoicesThatContain(toFilter, enteredValue);
-    //     event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
-    // }
+    private static void replyWith25ChoicesThatContainValue(
+            CommandAutoCompleteInteractionEvent event, Collection<String> toFilter) {
+        String enteredValue = event.getFocusedOption().getValue();
+        var options = mapTo25ChoicesThatContain(toFilter, enteredValue);
+        event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+    }
 
-    // private static List<Command.Choice> mapTo25ChoicesThatContain(Collection<String> toFilter, String toContain) {
-    //     return toFilter.stream()
-    //             .filter(string -> string.toLowerCase().contains(toContain.toLowerCase()))
-    //             .sorted()
-    //             .limit(25)
-    //             .map(string -> new Command.Choice(string, string))
-    //             .toList();
-    // }
+    private static List<Command.Choice> mapTo25ChoicesThatContain(Collection<String> toFilter, String toContain) {
+        return toFilter.stream()
+                .filter(string -> string.toLowerCase().contains(toContain.toLowerCase()))
+                .sorted()
+                .limit(25)
+                .map(string -> new Command.Choice(string, string))
+                .toList();
+    }
 }

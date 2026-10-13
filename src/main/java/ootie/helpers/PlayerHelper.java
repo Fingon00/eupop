@@ -28,7 +28,6 @@ public class PlayerHelper {
         g.setComposite(AlphaComposite.SrcOver);
         g.drawImage(mapImage, 0, 0, null);
         g.setFont(g.getFont().deriveFont(80f));
-
         DrawingUtil.superDrawStringCentered(
                 g, "" + player.getDucats(), 215, 638, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
 
@@ -47,6 +46,31 @@ public class PlayerHelper {
 
         FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "playerArea");
         MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
+    }
+
+    public static void showActionCards(Player player, SlashCommandInteractionEvent event) {
+        if (player.getActionCards().isEmpty()) {
+            return;
+        }
+        BufferedImage cardImage = ImageHelper.read(ResourceHelper.getInstance()
+                .getCharacterFile(player.getActionCards().getFirst()));
+
+        BufferedImage finalImage = new BufferedImage(
+                cardImage.getWidth() * player.getActionCards().size()
+                        + 20 * (player.getActionCards().size() - 1),
+                cardImage.getHeight(),
+                BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = finalImage.createGraphics();
+        int x = 0;
+        for (String ac : player.getActionCards()) {
+            BufferedImage cardImage2 =
+                    ImageHelper.read(ResourceHelper.getInstance().getCharacterFile(ac));
+            g.drawImage(cardImage2, x, 0, null);
+            x += cardImage2.getWidth() + 20;
+        }
+
+        FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "actioncards");
+        MessageHelper.sendFileUploadToChannel(player.getCardsInfoThread(), fileUpload);
     }
 
     public static void drawCharacters(Player player, Graphics2D g, String color) {

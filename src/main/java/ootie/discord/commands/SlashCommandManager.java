@@ -10,6 +10,7 @@ import ootie.discord.commands.bothelper.BothelperCommand;
 import ootie.discord.commands.character.CharacterCommand;
 import ootie.discord.commands.events.EventsCommand;
 import ootie.discord.commands.game.GameCommand;
+import ootie.discord.commands.ideas.IdeasCommand;
 import ootie.discord.commands.player.PlayerCommand;
 import ootie.discord.commands.search.SearchCommand;
 
@@ -23,6 +24,7 @@ public class SlashCommandManager {
                     new GameCommand(),
                     new PlayerCommand(),
                     new EventsCommand(),
+                    new IdeasCommand(),
                     new CharacterCommand())
             .collect(Collectors.toMap(ParentCommand::getName, command -> command));
 

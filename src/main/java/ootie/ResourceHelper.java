@@ -3,9 +3,13 @@ package ootie;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
+
 import javax.annotation.Nullable;
+
 import ootie.helpers.Storage;
+import ootie.image.Mapper;
 import software.amazon.awssdk.utils.StringUtils;
 
 public final class ResourceHelper {
@@ -110,12 +114,21 @@ public final class ResourceHelper {
 
     @Nullable
     public String getCharacterFile(String name) {
-        return getResourceFromFolder("images/Action Cards/", name + ".png");
+        Set<String> acs = Mapper.getActionCards().keySet();
+        if(acs.contains(name)){
+            return getResourceFromFolder("images/Action Cards/", name + ".png");
+        }
+        return getResourceFromFolder("images/Setup Cards/", name + ".png");
     }
 
     @Nullable
     public String getMapFile(String name) {
         return getResourceFromFolder("images/Maps/", name + ".png");
+    }
+
+    @Nullable
+    public String getIdeaFile(String name) {
+        return getResourceFromFolder("images/Ideas/", name + ".png");
     }
 
     @Nullable
