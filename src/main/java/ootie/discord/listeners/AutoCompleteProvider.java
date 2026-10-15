@@ -86,6 +86,12 @@ class AutoCompleteProvider {
                 List<Command.Choice> options = mapTo25ChoicesThatContain(values, enteredValue);
                 event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
             }
+            case Constants.SIZE -> {
+                String enteredValue = event.getFocusedOption().getValue();
+                var values = List.of("small", "large");
+                List<Command.Choice> options = mapTo25ChoicesThatContain(values, enteredValue);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
             case Constants.SOURCE -> {
                 String enteredValue = event.getFocusedOption().getValue();
                 List<Command.Choice> options = Stream.of(ComponentSource.values())
@@ -98,6 +104,11 @@ class AutoCompleteProvider {
             case Constants.CHARACTER -> {
                 List<Command.Choice> options =
                         searchModels(event, Mapper.getCharacters().values(), null);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
+            case Constants.PROVINCE -> {
+                List<Command.Choice> options =
+                        searchModels(event, Mapper.getProvinces().values(), null);
                 event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
             }
         }

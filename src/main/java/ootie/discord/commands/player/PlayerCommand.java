@@ -9,7 +9,8 @@ import ootie.helpers.Constants;
 
 public class PlayerCommand implements ParentCommand {
 
-    private final Map<String, Subcommand> subcommands = Stream.of(new Stats(), new Setup(), new DrawActionCard())
+    private final Map<String, Subcommand> subcommands = Stream.of(
+                    new Stats(), new Setup(), new DrawActionCard(), new AddProvince())
             .collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
 
     @Override

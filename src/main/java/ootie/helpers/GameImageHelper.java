@@ -9,10 +9,12 @@ import java.util.List;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.game.Game;
+import ootie.game.Player;
 import ootie.image.DrawingUtil;
 import ootie.image.ImageHelper;
 import ootie.image.Mapper;
 import ootie.model.IdeaModel;
+import ootie.model.ProvinceModel;
 import ootie.service.image.FileUploadService;
 
 public class GameImageHelper {
@@ -59,6 +61,50 @@ public class GameImageHelper {
         }
 
         FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "events");
+        return fileUpload;
+    }
+
+    public static FileUpload drawMap(Game game) {
+        BufferedImage mapImage = ImageHelper.read(ResourceHelper.getInstance().getMapFile("fullmap1444"));
+        Graphics2D g = mapImage.createGraphics();
+        int w = 6803;
+        int h = 4104;
+        double minx = -21.45; // -18.45 //-20.95 //-21
+        double miny = -12.74; // -12.14
+        double maxx = 21.53; // 20.81 //21
+        double maxy = 13.35; // 11.65
+        for (Player player : game.getPlayers().values()) {
+            for (String prov : player.getSmallProvinces()) {
+                if (Mapper.getProvinces().containsKey(prov)) {
+                    ProvinceModel model = Mapper.getProvinces().get(prov);
+                    double x = model.getX();
+                    double y = model.getY();
+                    double nx = (x - minx) / (maxx - minx);
+                    double ny = (y - miny) / (maxy - miny);
+                    int px = (int) (nx * w);
+                    int py = (int) ((1 - ny) * h);
+                    BufferedImage townImage = ImageHelper.readScaled(
+                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.46f);
+                    g.drawImage(townImage, px, py, null);
+                }
+            }
+            for (String prov : player.getLargeProvinces()) {
+                if (Mapper.getProvinces().containsKey(prov)) {
+                    ProvinceModel model = Mapper.getProvinces().get(prov);
+                    double x = model.getX();
+                    double y = model.getY();
+                    double nx = (x - minx) / (maxx - minx);
+                    double ny = (y - miny) / (maxy - miny);
+                    int px = (int) (nx * w);
+                    int py = (int) ((1 - ny) * h);
+                    BufferedImage townImage = ImageHelper.readScaled(
+                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.595f);
+                    g.drawImage(townImage, px, py, null);
+                }
+            }
+        }
+
+        FileUpload fileUpload = FileUploadService.createFileUpload(mapImage, "fullmap1444");
         return fileUpload;
     }
 

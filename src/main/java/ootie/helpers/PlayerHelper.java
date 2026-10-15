@@ -4,6 +4,7 @@ import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
@@ -146,7 +147,7 @@ public class PlayerHelper {
         BufferedImage vassalImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Vassal"), 0.51f);
         for (int x = 0; x < 10; x++) {
-            if (x < player.getLargeProvinces().size()) continue;
+            if (x < player.getVassalProvinces().size()) continue;
             g.drawImage(vassalImage, 580 + x * (vassalImage.getWidth() + 15), 480, null);
         }
 

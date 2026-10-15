@@ -166,6 +166,7 @@ public final class Constants {
     public static final String TECH_TYPE = "tech_type";
     public static final String STATS = "stats";
     public static final String DRAW_ACTIONCARD = "draw_actioncard";
+    public static final String ADD_PROVINCE = "add_province";
     public static final String SEND_TG = "send_tg";
     public static final String SEND_COMMODITIES = "send_commodities";
     public static final String SETUP = "setup";
@@ -451,36 +452,14 @@ public final class Constants {
     public static final String SET_ORCHESTRATOR_OPTION = "set_orchestrator_type";
     public static final String SAVE_DATA_OPTION = "save_data";
     public static final String AC_TYPE = "ac_type";
+    public static final String PROVINCE = "province";
+    public static final String SIZE = "size";
 
-    public static final String EXHAUSTED_ABILITIES = "exhausted_abilities";
-    public static final String ABILITY_INFO = "ability_info";
-    public static final String ABILITY_ADD = "ability_add";
-    public static final String ABILITY_REMOVE = "ability_remove";
-    public static final String RELIC_LOOK_AT_TOP = "look_at_top";
     public static final String CARDS_INFO_THREAD_CHANNEL_ID = "cards_info_thread_channel_id";
     public static final String DRAFT_BAG_INFO_THREAD_CHANNEL_ID = "draft_bag_info_thread_channel_id";
     public static final String LATEST_COMMAND = "latest_command";
-    public static final String BORDER_ANOMALIES = "border_anomalies";
-    public static final String LATEST_OUTCOME_VOTED_FOR = "latest_outcome_voted_for";
-    public static final String LATEST_AFTER_MSG = "latest_after_msg";
-    public static final String LATEST_WHEN_MSG = "latest_when_msg";
-    public static final String LATEST_TRANSACTION_MSG = "latest_transaction_msg";
     public static final String PHASE_OF_GAME = "phase_of_game";
     public static final String ALL_SLASH_COMMANDS = "all_slash_commands";
-    public static final String PLAYERS_WHO_HIT_PERSISTENT_NO_AFTER = "players_who_hit_persistent_no_after";
-    public static final String PLAYERS_WHO_HIT_PERSISTENT_NO_WHEN = "players_who_hit_persistent_no_when";
-    public static final String HACK_ELECTION_STATUS = "hack_election_status";
-    public static final String CC_N_PLASTIC_LIMIT = "cc_n_plastic_limit";
-    public static final String DRAFT_MODE = "draft_mode";
-    public static final String BAN_LIST = "ban_list";
-    public static final String BOT_ALL_REACTS = "bot_all_reacts";
-    public static final String BOT_FACTION_REACTS = "bot_faction_reacts";
-    public static final String BOT_COLOR_REACTS = "bot_color_reacts";
-    public static final String BOT_STRAT_REACTS = "bot_strat_reacts";
-    public static final String HAS_HAD_A_STATUS_PHASE = "has_had_a_status_phase";
-    public static final String BOT_SHUSHING = "bot_shushing";
-    public static final String RELIC_SEND = "send";
-    public static final String FOLLOWED_SC = "followed_sc";
 
     // Installation constants
     public static final String INSTALLATION = "installation";

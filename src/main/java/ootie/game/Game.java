@@ -17,7 +17,6 @@ import ootie.helpers.Constants;
 import ootie.image.Mapper;
 import ootie.json.JsonMapperManager;
 import ootie.model.ActionCardModel;
-import ootie.model.AreaModel;
 import tools.jackson.databind.json.JsonMapper;
 
 public class Game extends GameProperties {
@@ -90,23 +89,6 @@ public class Game extends GameProperties {
             }
         }
         return null;
-    }
-
-    public void addAreas() {
-        if (getAreas() == null || getAreas().isEmpty()) {
-            for (AreaModel areaModel : Mapper.getAreas().values()) {
-                if (!areas.keySet().contains(areaModel.getId())) {
-                    areas.put(
-                            areaModel.getId(),
-                            new AreaObject(
-                                    areaModel.getId(),
-                                    "Catholic",
-                                    new ArrayList<>(),
-                                    new ArrayList<>(),
-                                    new ArrayList<>()));
-                }
-            }
-        }
     }
 
     public Player getPlayer(String id) {

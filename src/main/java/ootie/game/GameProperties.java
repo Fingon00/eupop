@@ -19,7 +19,6 @@ public class GameProperties {
     private String name;
     private boolean hasEnded;
     // Decks
-    public Map<String, AreaObject> areas;
     private List<String> diplomaticActionCardDeck = new ArrayList<>();
     private List<String> militaryActionCardDeck = new ArrayList<>();
     private List<String> administrativeActionCardDeck = new ArrayList<>();

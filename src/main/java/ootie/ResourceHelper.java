@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
-
 import javax.annotation.Nullable;
-
 import ootie.helpers.Storage;
 import ootie.image.Mapper;
 import software.amazon.awssdk.utils.StringUtils;
@@ -115,7 +113,7 @@ public final class ResourceHelper {
     @Nullable
     public String getCharacterFile(String name) {
         Set<String> acs = Mapper.getActionCards().keySet();
-        if(acs.contains(name)){
+        if (acs.contains(name)) {
             return getResourceFromFolder("images/Action Cards/", name + ".png");
         }
         return getResourceFromFolder("images/Setup Cards/", name + ".png");
