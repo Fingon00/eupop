@@ -1,6 +1,7 @@
 package ootie.discord.commands;
 
 import java.util.List;
+
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
@@ -12,7 +13,7 @@ import ootie.message.MessageHelper;
 public class ShowGameCommand extends GameStateCommand {
 
     public ShowGameCommand() {
-        super(false, false);
+        super(false, true);
     }
 
     @Override

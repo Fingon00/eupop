@@ -198,6 +198,7 @@ public final class Constants {
     public static final String BOT = "bot";
     public static final String CHANGED_FOCUS = "changed_focus";
     public static final String DIPLO_POWER = "diplo_power";
+    public static final String PRESTIGE = "prestige";
     public static final String ADMIN_POWER = "admin_power";
     public static final String MILITARY_POWER = "military_power";
     public static final String STABILITY = "stability";

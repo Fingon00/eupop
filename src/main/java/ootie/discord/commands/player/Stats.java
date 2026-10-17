@@ -1,6 +1,7 @@
 package ootie.discord.commands.player;
 
 import java.util.List;
+
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
@@ -9,6 +10,7 @@ import ootie.discord.commands.GameStateSubcommand;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.helpers.Constants;
+import ootie.helpers.GameImageHelper;
 import ootie.helpers.PlayerHelper;
 import ootie.message.MessageHelper;
 import ootie.service.player.PlayerStatsService;
@@ -31,6 +33,11 @@ class Stats extends GameStateSubcommand {
                         OptionType.STRING,
                         Constants.DIPLO_POWER,
                         "Diplomatic power count - can use +1/-1 etc. to add/subtract"))
+
+                .addOptions(new OptionData(
+                        OptionType.STRING,
+                        Constants.PRESTIGE,
+                        "Prestige - can use +1/-1 etc. to add/subtract"))
                 .addOptions(new OptionData(
                         OptionType.STRING, Constants.STABILITY, "Stability count - can use +1/-1 etc. to add/subtract"))
                 .addOptions(new OptionData(OptionType.STRING, Constants.STATE_RELIGION, "State religion"))
@@ -81,6 +88,12 @@ class Stats extends GameStateSubcommand {
                     event, game, player, militaryPower, player::setMilitaryPower, player::getMilitaryPower);
         }
 
+        OptionMapping prestige = event.getOption(Constants.PRESTIGE);
+        if (prestige != null) {
+            PlayerStatsService.setValue(
+                    event, game, player, prestige, player::setPrestige, player::getPrestige);
+        }
+
         OptionMapping stability = event.getOption(Constants.STABILITY);
         if (stability != null) {
             PlayerStatsService.setValue(event, game, player, stability, player::setStability, player::getStability);
@@ -116,6 +129,7 @@ class Stats extends GameStateSubcommand {
             MessageHelper.sendMessageToEventChannel(event, message.toString());
         }
         PlayerHelper.drawPlayerArea(player, event);
+        MessageHelper.sendFileUploadToChannel(event.getChannel(), GameImageHelper.drawMap(game));
     }
 
     private static String getGeneralMessage(OptionMapping option) {

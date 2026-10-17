@@ -6,6 +6,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.game.Game;
@@ -65,8 +66,13 @@ public class GameImageHelper {
     }
 
     public static FileUpload drawMap(Game game) {
-        BufferedImage mapImage = ImageHelper.read(ResourceHelper.getInstance().getMapFile("fullmap1444"));
+        BufferedImage ogImage = ImageHelper.read(ResourceHelper.getInstance().getMapFile("fullmap1444"));
+        int outputWidth = ogImage.getWidth() / 2;
+        int outputHeight = ogImage.getHeight() / 2;
+        BufferedImage mapImage = new BufferedImage(outputWidth, outputHeight, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = mapImage.createGraphics();
+        g.drawImage(ogImage, 0, 0, outputWidth, outputHeight, null);
+        g.scale(0.5, 0.5);
         int w = 6803;
         int h = 4104;
         double minx = -21.45; // -18.45 //-20.95 //-21
@@ -74,6 +80,11 @@ public class GameImageHelper {
         double maxx = 21.53; // 20.81 //21
         double maxy = 13.35; // 11.65
         for (Player player : game.getPlayers().values()) {
+            if(player.getColor() == null){
+                continue;
+            }
+            BufferedImage townImage = ImageHelper.readScaled(
+                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.46f);
             for (String prov : player.getSmallProvinces()) {
                 if (Mapper.getProvinces().containsKey(prov)) {
                     ProvinceModel model = Mapper.getProvinces().get(prov);
@@ -83,11 +94,14 @@ public class GameImageHelper {
                     double ny = (y - miny) / (maxy - miny);
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
-                    BufferedImage townImage = ImageHelper.readScaled(
-                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.46f);
+                    px -=100;
+                    py -=100;
+                    
                     g.drawImage(townImage, px, py, null);
                 }
             }
+            townImage = ImageHelper.readScaled(
+                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.595f);
             for (String prov : player.getLargeProvinces()) {
                 if (Mapper.getProvinces().containsKey(prov)) {
                     ProvinceModel model = Mapper.getProvinces().get(prov);
@@ -97,12 +111,29 @@ public class GameImageHelper {
                     double ny = (y - miny) / (maxy - miny);
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
-                    BufferedImage townImage = ImageHelper.readScaled(
-                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.595f);
+                    px -=100;
+                    py -=100;
                     g.drawImage(townImage, px, py, null);
                 }
             }
+            BufferedImage prestigeImage = ImageHelper.readScaled(
+                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Prestige"), 0.5f);
+            int playerP = player.getPrestige();
+            int prestX = 120 + (((playerP/30)%2)*100);
+            int prestY = 3825- ((playerP-1) %30 * 150);
+            if(playerP == 0){
+                prestY = 3975;
+            }
+            g.drawImage(prestigeImage, prestX, prestY, null);
+            if(playerP > 60){
+                prestX = 120;
+                prestY = 3900;
+                prestigeImage = ImageHelper.readScaled(
+                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "60Prestige"), 0.5f);
+                g.drawImage(prestigeImage, prestX, prestY, null);
+            }
         }
+        g.dispose();
 
         FileUpload fileUpload = FileUploadService.createFileUpload(mapImage, "fullmap1444");
         return fileUpload;

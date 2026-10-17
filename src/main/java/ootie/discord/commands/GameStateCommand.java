@@ -15,15 +15,14 @@ public abstract class GameStateCommand implements ParentCommand, GameStateContai
 
     @Override
     public boolean accept(SlashCommandInteractionEvent event) {
-        return ParentCommand.super.accept(event);
-        // && CommandHelper.acceptIfValidGame(
-        //         event, commandGameState.saveGame(), commandGameState.playerCommand());
+        return ParentCommand.super.accept(event) && CommandHelper.acceptIfValidGame(
+                event, commandGameState.saveGame(), commandGameState.playerCommand());
     }
 
     @Override
     public void preExecute(SlashCommandInteractionEvent event) {
-        // ParentCommand.super.preExecute(event);
-        // commandGameState.preExecute(event);
+        ParentCommand.super.preExecute(event);
+        commandGameState.preExecute(event);
     }
 
     @Override

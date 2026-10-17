@@ -17,9 +17,8 @@ public abstract class GameStateSubcommand extends Subcommand implements GameStat
 
     @Override
     public boolean accept(SlashCommandInteractionEvent event) {
-        return super.accept(event);
-        // && CommandHelper.acceptIfValidGame(
-        //         event, commandGameState.saveGame(), commandGameState.playerCommand());
+        return super.accept(event) && CommandHelper.acceptIfValidGame(
+                event, commandGameState.saveGame(), commandGameState.playerCommand());
     }
 
     @Override
