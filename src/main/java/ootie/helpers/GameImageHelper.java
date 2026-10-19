@@ -94,8 +94,8 @@ public class GameImageHelper {
                     double ny = (y - miny) / (maxy - miny);
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
-                    px -=100;
-                    py -=100;
+                    px -=80;
+                    py -=50;
                     
                     g.drawImage(townImage, px, py, null);
                 }
@@ -111,27 +111,25 @@ public class GameImageHelper {
                     double ny = (y - miny) / (maxy - miny);
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
-                    px -=100;
-                    py -=100;
+                    px -=80;
+                    py -=105;
                     g.drawImage(townImage, px, py, null);
                 }
             }
+            int playerP = player.getPrestige();
             BufferedImage prestigeImage = ImageHelper.readScaled(
                             ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Prestige"), 0.5f);
-            int playerP = player.getPrestige();
-            int prestX = 120 + (((playerP/30)%2)*100);
-            int prestY = 3825- ((playerP-1) %30 * 150);
+            if(playerP > 60){
+                prestigeImage = ImageHelper.readScaled(
+                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "60Prestige"), 0.5f);
+            }
+            int prestX = 120 + ((((playerP-1)/30)%2)*129);
+            int prestY = 3847- ((playerP-1) %30 * 127);
             if(playerP == 0){
                 prestY = 3975;
             }
             g.drawImage(prestigeImage, prestX, prestY, null);
-            if(playerP > 60){
-                prestX = 120;
-                prestY = 3900;
-                prestigeImage = ImageHelper.readScaled(
-                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "60Prestige"), 0.5f);
-                g.drawImage(prestigeImage, prestX, prestY, null);
-            }
+            
         }
         g.dispose();
 
