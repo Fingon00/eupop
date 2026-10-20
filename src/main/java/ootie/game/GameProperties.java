@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,6 +29,16 @@ public class GameProperties {
     private List<String> administrativeIdeas = new ArrayList<>();
 
     private List<String> eventDeck = new ArrayList<>();
+    private List<String> powerStruggleDeck = new ArrayList<>();
+    private String activePowerStruggle;
+    private List<String> nonRomaCardinals = new ArrayList<>();
+    private List<String> passedPlayerOrder = new ArrayList<>();
+    private List<String> playerOrder = new ArrayList<>();
+    private String romaCardinal;
+    private String emperorer;
+    private String hreReligion;
+    private int imperialAuthority = 3;
+    private int imperialManpower = 0;
     private List<String> revealedEventCards = new ArrayList<>();
     private List<String> unrevealedEventCards = new ArrayList<>();
 

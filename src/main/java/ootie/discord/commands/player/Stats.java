@@ -1,7 +1,6 @@
 package ootie.discord.commands.player;
 
 import java.util.List;
-
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
@@ -33,11 +32,8 @@ class Stats extends GameStateSubcommand {
                         OptionType.STRING,
                         Constants.DIPLO_POWER,
                         "Diplomatic power count - can use +1/-1 etc. to add/subtract"))
-
                 .addOptions(new OptionData(
-                        OptionType.STRING,
-                        Constants.PRESTIGE,
-                        "Prestige - can use +1/-1 etc. to add/subtract"))
+                        OptionType.STRING, Constants.PRESTIGE, "Prestige - can use +1/-1 etc. to add/subtract"))
                 .addOptions(new OptionData(
                         OptionType.STRING, Constants.STABILITY, "Stability count - can use +1/-1 etc. to add/subtract"))
                 .addOptions(new OptionData(OptionType.STRING, Constants.STATE_RELIGION, "State religion"))
@@ -90,8 +86,7 @@ class Stats extends GameStateSubcommand {
 
         OptionMapping prestige = event.getOption(Constants.PRESTIGE);
         if (prestige != null) {
-            PlayerStatsService.setValue(
-                    event, game, player, prestige, player::setPrestige, player::getPrestige);
+            PlayerStatsService.setValue(event, game, player, prestige, player::setPrestige, player::getPrestige);
         }
 
         OptionMapping stability = event.getOption(Constants.STABILITY);

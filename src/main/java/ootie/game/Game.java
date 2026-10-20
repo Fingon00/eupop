@@ -42,6 +42,11 @@ public class Game extends GameProperties {
     // @Getter
     // private DisplayType displayTypeForced;
 
+
+    public List<Player> getGamePlayers(){
+        return new ArrayList<>(getPlayers().values());
+    }
+
     @Setter
     @Getter
     private Date lastActivePlayerChange = new Date(0);

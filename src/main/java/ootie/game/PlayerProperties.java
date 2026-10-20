@@ -33,6 +33,8 @@ public class PlayerProperties {
     private boolean isBot;
     private boolean changedNatFocus;
     private boolean usedEvent;
+    private boolean defendingHRE;
+    private boolean committedToCrusade;
 
     // private Map<String, Integer> breakthroughTGs = new LinkedHashMap<>();
 

@@ -65,6 +65,73 @@ public class GameImageHelper {
         return fileUpload;
     }
 
+    public static FileUpload drawHREnPC(Game game) {
+        BufferedImage ogImage = ImageHelper.read(ResourceHelper.getInstance().getMiscFile("HRE_PC"));
+        BufferedImage mapImage = new BufferedImage(ogImage.getWidth(), ogImage.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = mapImage.createGraphics();
+        g.drawImage(ogImage, 0, 0, ogImage.getWidth(), ogImage.getHeight(), null);
+        int playerCount = 0;
+        for(Player p : game.getGamePlayers()){
+            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(p, "Claim"));
+            if(p.isDefendingHRE()){
+                g.drawImage(playerChit, 986, 433, null);
+                g.setFont(g.getFont().deriveFont(80f));
+                DrawingUtil.superDrawStringCentered(
+                g, "" + game.getImperialManpower(), 883, 687, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
+            }
+            if(p.isCommittedToCrusade()){
+                int xMod = playerCount%3 * playerChit.getWidth();
+                int yMod = playerCount/3 * playerChit.getHeight();
+                g.drawImage(playerChit, 920+xMod, 270+yMod, null);
+            }
+            int xMod = playerCount%2 * playerChit.getWidth()-20;
+            int yMod = playerCount * playerChit.getHeight();
+            if(p.isUsedEvent()){
+                if(p.isPassed()){
+                    int order = game.getPassedPlayerOrder().indexOf(p.getColor());
+                    yMod = (playerChit.getHeight() + 20)*order;
+                    xMod = 0;
+                    if(order == 5){
+                        xMod = 50;
+                    }
+                    g.drawImage(playerChit, 1340+xMod, 132+yMod, null);
+                }else{
+                    g.drawImage(playerChit, 1217+xMod, 125+yMod, null);
+                }
+            }else{
+                g.drawImage(playerChit, 1104+xMod, 125+yMod, null);
+            }
+            playerCount++;
+        }
+
+        if(game.getRomaCardinal() != null){
+            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(game.getRomaCardinal(), "Claim"));
+            g.drawImage(playerChit, 155, 175, null);
+        }
+        playerCount = 0;
+        for(String color : game.getNonRomaCardinals()){
+            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "Claim"));
+            int xMod = playerCount * 145;
+            g.drawImage(playerChit, 283+xMod, 175, null);
+            playerCount++;
+        }
+
+
+        BufferedImage stabilityImage =
+                ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile("Imperial Authority"), 0.31f);
+        g.drawImage(stabilityImage, 550 + game.getImperialAuthority() * (stabilityImage.getWidth() + 8), 70, null);
+
+        String stateReligion = game.getHreReligion();
+        if (stateReligion != null) {
+            BufferedImage religionImage =
+                    ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile(stateReligion), 0.60f);
+            g.drawImage(religionImage, 100, 593, null);
+        }
+        
+        FileUpload fileUpload = FileUploadService.createFileUpload(mapImage, "hre_pc");
+        return fileUpload;
+    }
+
     public static FileUpload drawMap(Game game) {
         BufferedImage ogImage = ImageHelper.read(ResourceHelper.getInstance().getMapFile("fullmap1444"));
         int outputWidth = ogImage.getWidth() / 2;
@@ -80,11 +147,11 @@ public class GameImageHelper {
         double maxx = 21.53; // 20.81 //21
         double maxy = 13.35; // 11.65
         for (Player player : game.getPlayers().values()) {
-            if(player.getColor() == null){
+            if (player.getColor() == null) {
                 continue;
             }
             BufferedImage townImage = ImageHelper.readScaled(
-                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.46f);
+                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.46f);
             for (String prov : player.getSmallProvinces()) {
                 if (Mapper.getProvinces().containsKey(prov)) {
                     ProvinceModel model = Mapper.getProvinces().get(prov);
@@ -94,14 +161,14 @@ public class GameImageHelper {
                     double ny = (y - miny) / (maxy - miny);
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
-                    px -=80;
-                    py -=50;
-                    
+                    px -= 80;
+                    py -= 50;
+
                     g.drawImage(townImage, px, py, null);
                 }
             }
             townImage = ImageHelper.readScaled(
-                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.595f);
+                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.595f);
             for (String prov : player.getLargeProvinces()) {
                 if (Mapper.getProvinces().containsKey(prov)) {
                     ProvinceModel model = Mapper.getProvinces().get(prov);
@@ -111,25 +178,24 @@ public class GameImageHelper {
                     double ny = (y - miny) / (maxy - miny);
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
-                    px -=80;
-                    py -=105;
+                    px -= 80;
+                    py -= 105;
                     g.drawImage(townImage, px, py, null);
                 }
             }
             int playerP = player.getPrestige();
             BufferedImage prestigeImage = ImageHelper.readScaled(
-                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Prestige"), 0.5f);
-            if(playerP > 60){
+                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Prestige"), 0.5f);
+            if (playerP > 60) {
                 prestigeImage = ImageHelper.readScaled(
-                            ResourceHelper.getInstance().getPlayerFile(player.getColor(), "60Prestige"), 0.5f);
+                        ResourceHelper.getInstance().getPlayerFile(player.getColor(), "60Prestige"), 0.5f);
             }
-            int prestX = 120 + ((((playerP-1)/30)%2)*129);
-            int prestY = 3847- ((playerP-1) %30 * 127);
-            if(playerP == 0){
+            int prestX = 120 + ((((playerP - 1) / 30) % 2) * 129);
+            int prestY = 3847 - ((playerP - 1) % 30 * 127);
+            if (playerP == 0) {
                 prestY = 3975;
             }
             g.drawImage(prestigeImage, prestX, prestY, null);
-            
         }
         g.dispose();
 

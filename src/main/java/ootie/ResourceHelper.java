@@ -5,7 +5,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
+
 import javax.annotation.Nullable;
+
+import ootie.game.Player;
 import ootie.helpers.Storage;
 import ootie.image.Mapper;
 import software.amazon.awssdk.utils.StringUtils;
@@ -131,6 +134,15 @@ public final class ResourceHelper {
 
     @Nullable
     public String getPlayerFile(String color, String name) {
+        return getResourceFromFolder("images/" + StringUtils.capitalize(color) + " Tokens/", name + ".png");
+    }
+
+    @Nullable
+    public String getPlayerFile(Player player, String name) {
+        String color = "Yellow";
+        if(player != null && player.getColor() != null){
+            color = player.getColor();
+        }
         return getResourceFromFolder("images/" + StringUtils.capitalize(color) + " Tokens/", name + ".png");
     }
 
