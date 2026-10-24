@@ -1,8 +1,12 @@
 package ootie.game;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+
 import javax.annotation.Nullable;
+
 import lombok.Data;
 
 @Data
@@ -22,9 +26,14 @@ public class PlayerProperties {
     private int diploPower = 3;
     private int militaryPower = 3;
     private int stability = 0;
+    private int botPower = 0;
     private int prestige;
     private int manpowerExhausted;
     private int manpowerAvailable;
+    private Army army1 = new Army();
+    private Army army2 = new Army();
+    private Army army3 = new Army();
+    private Fleet fleet = new Fleet();
     private String stateReligion = "Catholic";
     private String diploAdvisor;
     private String militaryAdvisor;
@@ -42,7 +51,12 @@ public class PlayerProperties {
     private List<String> largeProvinces = new ArrayList<>();
     private List<String> smallProvinces = new ArrayList<>();
     private List<String> vassalProvinces = new ArrayList<>();
+    private List<String> unrestProvinces = new ArrayList<>();
     private List<String> actionCards = new ArrayList<>();
     private List<String> missions = new ArrayList<>();
     private List<String> ideas = new ArrayList<>();
+
+    private List<String> singularInfantry = new ArrayList<>();
+    private Map<String, Boolean> lightShips = new LinkedHashMap<>();
+    private Map<String, Boolean> merchants = new LinkedHashMap<>();
 }

@@ -1,0 +1,238 @@
+[
+    {
+        "id": "barbary-pirate-menace",
+        "name": "Barbary Pirate Menace",
+        "areas": [
+            "western mediterranean",
+            "central mediterranean",
+            "gulf of lion"
+        ],
+        "text": "For Ships and other items adjacent to the marked areas: Ports: 1 per Tax Value Controlled, ignoring own starting Provinces (these count as 1/2). Per Merchant: 2. Per Pirate: Christian PRs lose 2 prestige, Muslim PRs score 2 prestige. Per Ship: 1.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "imperial-balance-of-power",
+        "name": "Imperial Balance of Power",
+        "areas": [
+            "saxony",
+            "all areas adjacent to saxony",
+            "pomerania",
+            "switzerland",
+            "lombardy",
+            "central italy"
+        ],
+        "text": "PRs score 1 prestige for each NPR in Battleground Areas where they are the only PR to have 3 or more influence. PRs do not score any prestige for their own starting Core Provinces.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "defying-destiny",
+        "name": "Defying Destiny",
+        "areas": [
+            "rhineland",
+            "westphalia",
+            "bohemia",
+            "austria",
+            "royal hungary",
+            "croatia & bosnia",
+            "lombardy",
+            "central italy"
+        ],
+        "text": "PRs ignore their starting Provinces. They score 3 prestige if valid in the marked area at or above the listed target, and lose 3 prestige if not. Age II: Initial Tax x1. Age III: Initial Tax x2. Age IV: Initial Tax x3.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "silk-route-rivalry",
+        "name": "Silk Route Rivalry",
+        "areas": [
+            "samarkand",
+            "khiva",
+            "all areas adjacent to samarkand and khiva on the india & arabia and northern & central asia maps"
+        ],
+        "text": "The PR with the most Units in the Battleground Areas scores 3 prestige. If Great Horde or Persia have fewer than 3 units, or Muscovy fewer than 2 units, in these Areas, they lose 3 prestige.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "race-for-el-dorado",
+        "name": "Race For El Dorado",
+        "areas": [
+            "all distant areas with gold provinces on the america, africa, and india & arabia maps"
+        ],
+        "text": "The PRs with the most Heavy Ships in the Distant Continents and the most money in their Treasury (after deductions) each score 3 prestige. The PRs with the least each lose 3 prestige.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "lord-of-the-pontic-steppes",
+        "name": "Lord of the Pontic Steppes",
+        "areas": [
+            "astrakhan",
+            "moldavia",
+            "eastern ukraine",
+            "all areas adjacent to eastern ukraine"
+        ],
+        "text": "PRs ignore their own starting Core Provinces. If Muscovy, Novgorod, Lithuania, Poland, or Great Horde has valid units in fewer than 2 of these Areas, they lose 3 prestige.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "struggle-for-the-balkans",
+        "name": "Struggle for the Balkans",
+        "areas": [
+            "hungarian plain",
+            "royal hungary",
+            "dalmatia",
+            "croatia & bosnia",
+            "serbia & albania",
+            "moldavia"
+        ],
+        "text": "The PR with the most Units in the Battleground Areas scores 3 prestige. If Ottomans or Austria have fewer than 6 units in these Areas, or Poland fewer than 4 units, they lose 3 prestige.",
+        "source": "base"
+    },
+    {
+        "id": "distant-trade",
+        "name": "Distant Trade",
+        "areas": [
+            "areas adjacent to the indian ocean trade node",
+            "areas adjacent to the east indies trade node",
+            "areas adjacent to the china & japan trade node"
+        ],
+        "text": "PRs score 2 prestige for each of those Trade Nodes where only they have an adjacent town. If France, Castile, or England has units adjacent to fewer than 2 of these Nodes, they lose 3 prestige.",
+        "source": "base"
+    },
+    {
+        "id": "the-holy-league",
+        "name": "The Holy League",
+        "areas": [
+            "algiers",
+            "tunisia",
+            "palestine",
+            "aegean archipelago",
+            "serbia & albania",
+            "hungarian plain",
+            "crimea"
+        ],
+        "text": "PRs only score prestige for qualifying units with Realms that have the same State Religion as them. If Castile, Austria, or Ottomans has units in fewer than 2 of these Areas, they lose 3 prestige.",
+        "source": "base"
+    },
+    {
+        "id": "the-italian-wars",
+        "name": "The Italian Wars",
+        "areas": [
+            "flanders & wallonia",
+            "rhineland",
+            "burgundy",
+            "lombardy",
+            "venetia",
+            "central italy",
+            "naples"
+        ],
+        "text": "The Papal Controller scores 2 prestige. If France, Castile, or Austria has units in fewer than 2 of these Areas, they lose 3 prestige.",
+        "source": "base"
+    },
+    {
+        "id": "thirty-years-war",
+        "name": "Thirty Years’ War",
+        "areas": [
+            "all hre elector areas",
+            "pomerania",
+            "flanders & wallonia",
+            "bavaria & swabia"
+        ],
+        "text": "If 3 or more Elector Areas are Catholic, increase imperial authority by 1; if fewer, decrease it by 2. Then, the Emperor scores prestige equal to 2 x imperial authority - 4. Their Allies score or lose half of this.",
+        "source": "base"
+    },
+    {
+        "id": "great-northern-war",
+        "name": "Great Northern War",
+        "areas": [
+            "jutland",
+            "götaland & skåne",
+            "pomerania",
+            "prussia",
+            "estonia & livonia",
+            "lithuania",
+            "karelia",
+            "finland"
+        ],
+        "text": "If Poland, Sweden, Denmark, or Muscovy has units in fewer than 3 of these Areas, they lose 3 prestige.",
+        "source": "base"
+    },
+    {
+        "id": "the-deluge",
+        "name": "The Deluge",
+        "areas": [
+            "wielkopolska",
+            "prussia",
+            "estonia & livonia",
+            "white ruthenia",
+            "eastern ukraine",
+            "moldavia"
+        ],
+        "text": "Poland loses prestige equal to the total Tax Value of the opponent's units in these Areas. If any PR adjacent to Poland has units in fewer than 2 of these Areas, they lose 3 prestige.",
+        "source": "base"
+    },
+    {
+        "id": "war-of-spanish-succession",
+        "name": "War of Spanish Succession",
+        "areas": [
+            "flanders & wallonia",
+            "burgundy",
+            "lombardy",
+            "naples",
+            "aragon",
+            "florida",
+            "virginia",
+            "new england",
+            "canada"
+        ],
+        "text": "PRs with the qualifying alliance with Castile, or 6 or more units adjacent to the North America Trade Node, score 3 prestige. If Castile, France, or England has units in fewer than 3 of these Areas, they lose 3 prestige.",
+        "source": "base"
+    },
+    {
+        "id": "napoleonic-wars",
+        "name": "Napoleonic Wars",
+        "areas": [
+            "castile",
+            "seine",
+            "netherlands",
+            "brandenburg",
+            "austria",
+            "central italy",
+            "mazovia & malopolska",
+            "moscow & ryazan",
+            "egypt"
+        ],
+        "text": "PRs only score prestige for Areas where they had no Core Provinces at the start of the game. PRs score 5 prestige if they Occupy the Capital of an Opponent.",
+        "source": "base"
+    },
+    {
+        "id": "seven-years-war",
+        "name": "Seven Years’ War",
+        "areas": [
+            "westphalia",
+            "lower saxony",
+            "saxony",
+            "pomerania",
+            "prussia",
+            "wielkopolska",
+            "bohemia",
+            "portugal"
+        ],
+        "text": "PRs score 2 prestige for each Distant Trade Node where they are the only PR to have an adjacent Port, and 2 prestige for each Distant Trade Node where they are the only PR with adjacent Ships.",
+        "source": "base"
+    },
+    {
+        "id": "race-for-the-riches-of-india",
+        "name": "Race for the Riches of India",
+        "areas": [
+            "dehli",
+            "doab",
+            "bengal",
+            "baluchistan",
+            "gujarat",
+            "deccan",
+            "goa",
+            "coromandel"
+        ],
+        "text": "If a PR is the only PR to have towns among the Battleground Areas, they score 5 prestige. PRs with no towns, vassals, alliances, royal marriages, or Military Units on the INDIA & ARABIA map, lose 3 prestige.",
+        "source": "defying_destiny"
+    }
+]

@@ -42,8 +42,7 @@ public class Game extends GameProperties {
     // @Getter
     // private DisplayType displayTypeForced;
 
-
-    public List<Player> getGamePlayers(){
+    public List<Player> getGamePlayers() {
         return new ArrayList<>(getPlayers().values());
     }
 

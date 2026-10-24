@@ -67,55 +67,58 @@ public class GameImageHelper {
 
     public static FileUpload drawHREnPC(Game game) {
         BufferedImage ogImage = ImageHelper.read(ResourceHelper.getInstance().getMiscFile("HRE_PC"));
-        BufferedImage mapImage = new BufferedImage(ogImage.getWidth(), ogImage.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        BufferedImage mapImage =
+                new BufferedImage(ogImage.getWidth(), ogImage.getHeight(), BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = mapImage.createGraphics();
         g.drawImage(ogImage, 0, 0, ogImage.getWidth(), ogImage.getHeight(), null);
         int playerCount = 0;
-        for(Player p : game.getGamePlayers()){
-            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(p, "Claim"));
-            if(p.isDefendingHRE()){
+        for (Player p : game.getGamePlayers()) {
+            BufferedImage playerChit =
+                    ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(p, "Claim"));
+            if (p.isDefendingHRE()) {
                 g.drawImage(playerChit, 986, 433, null);
                 g.setFont(g.getFont().deriveFont(80f));
                 DrawingUtil.superDrawStringCentered(
-                g, "" + game.getImperialManpower(), 883, 687, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
+                        g, "" + game.getImperialManpower(), 883, 687, Color.BLACK, DrawingUtil.stroke(7), Color.WHITE);
             }
-            if(p.isCommittedToCrusade()){
-                int xMod = playerCount%3 * playerChit.getWidth();
-                int yMod = playerCount/3 * playerChit.getHeight();
-                g.drawImage(playerChit, 920+xMod, 270+yMod, null);
+            if (p.isCommittedToCrusade()) {
+                int xMod = playerCount % 3 * playerChit.getWidth();
+                int yMod = playerCount / 3 * playerChit.getHeight();
+                g.drawImage(playerChit, 920 + xMod, 270 + yMod, null);
             }
-            int xMod = playerCount%2 * playerChit.getWidth()-20;
+            int xMod = playerCount % 2 * playerChit.getWidth() - 20;
             int yMod = playerCount * playerChit.getHeight();
-            if(p.isUsedEvent()){
-                if(p.isPassed()){
+            if (p.isUsedEvent()) {
+                if (p.isPassed()) {
                     int order = game.getPassedPlayerOrder().indexOf(p.getColor());
-                    yMod = (playerChit.getHeight() + 20)*order;
+                    yMod = (playerChit.getHeight() + 20) * order;
                     xMod = 0;
-                    if(order == 5){
+                    if (order == 5) {
                         xMod = 50;
                     }
-                    g.drawImage(playerChit, 1340+xMod, 132+yMod, null);
-                }else{
-                    g.drawImage(playerChit, 1217+xMod, 125+yMod, null);
+                    g.drawImage(playerChit, 1340 + xMod, 132 + yMod, null);
+                } else {
+                    g.drawImage(playerChit, 1217 + xMod, 125 + yMod, null);
                 }
-            }else{
-                g.drawImage(playerChit, 1104+xMod, 125+yMod, null);
+            } else {
+                g.drawImage(playerChit, 1104 + xMod, 125 + yMod, null);
             }
             playerCount++;
         }
 
-        if(game.getRomaCardinal() != null){
-            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(game.getRomaCardinal(), "Claim"));
+        if (game.getRomaCardinal() != null) {
+            BufferedImage playerChit =
+                    ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(game.getRomaCardinal(), "Claim"));
             g.drawImage(playerChit, 155, 175, null);
         }
         playerCount = 0;
-        for(String color : game.getNonRomaCardinals()){
-            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "Claim"));
+        for (String color : game.getNonRomaCardinals()) {
+            BufferedImage playerChit =
+                    ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "Claim"));
             int xMod = playerCount * 145;
-            g.drawImage(playerChit, 283+xMod, 175, null);
+            g.drawImage(playerChit, 283 + xMod, 175, null);
             playerCount++;
         }
-
 
         BufferedImage stabilityImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile("Imperial Authority"), 0.31f);
@@ -127,7 +130,7 @@ public class GameImageHelper {
                     ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile(stateReligion), 0.60f);
             g.drawImage(religionImage, 100, 593, null);
         }
-        
+
         FileUpload fileUpload = FileUploadService.createFileUpload(mapImage, "hre_pc");
         return fileUpload;
     }
@@ -152,6 +155,8 @@ public class GameImageHelper {
             }
             BufferedImage townImage = ImageHelper.readScaled(
                     ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.46f);
+            BufferedImage unrestImage = ImageHelper.readScaled(
+                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Unrest_White"), 0.46f);
             for (String prov : player.getSmallProvinces()) {
                 if (Mapper.getProvinces().containsKey(prov)) {
                     ProvinceModel model = Mapper.getProvinces().get(prov);
@@ -163,10 +168,17 @@ public class GameImageHelper {
                     int py = (int) ((1 - ny) * h);
                     px -= 80;
                     py -= 50;
+                    if(player.getUnrestProvinces().contains(prov)){
+                        g.drawImage(unrestImage, px, py, null);
+                    }else{
+                        g.drawImage(townImage, px, py, null);
+                    }
 
-                    g.drawImage(townImage, px, py, null);
+                    
                 }
             }
+            unrestImage = ImageHelper.readScaled(
+                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Unrest_White"), 0.595f);
             townImage = ImageHelper.readScaled(
                     ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.595f);
             for (String prov : player.getLargeProvinces()) {
@@ -180,15 +192,26 @@ public class GameImageHelper {
                     int py = (int) ((1 - ny) * h);
                     px -= 80;
                     py -= 105;
-                    g.drawImage(townImage, px, py, null);
+                    if(player.getUnrestProvinces().contains(prov)){
+                        g.drawImage(unrestImage, px, py, null);
+                    }else{
+                        g.drawImage(townImage, px, py, null);
+                    }
                 }
             }
             int playerP = player.getPrestige();
             BufferedImage prestigeImage = ImageHelper.readScaled(
                     ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Prestige"), 0.5f);
+            BufferedImage negativePImage = ImageHelper.readScaled(
+                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Negative Prestige"), 0.25f);
             if (playerP > 60) {
                 prestigeImage = ImageHelper.readScaled(
                         ResourceHelper.getInstance().getPlayerFile(player.getColor(), "60Prestige"), 0.5f);
+            }
+            boolean negative = false;
+            if(playerP < 0){
+                playerP = Math.abs(playerP);
+                negative = true;
             }
             int prestX = 120 + ((((playerP - 1) / 30) % 2) * 129);
             int prestY = 3847 - ((playerP - 1) % 30 * 127);
@@ -196,6 +219,9 @@ public class GameImageHelper {
                 prestY = 3975;
             }
             g.drawImage(prestigeImage, prestX, prestY, null);
+            if(negative){
+                g.drawImage(negativePImage, prestX, prestY, null);
+            }
         }
         g.dispose();
 
