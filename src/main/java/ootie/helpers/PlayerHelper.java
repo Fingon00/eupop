@@ -7,6 +7,8 @@ import java.awt.image.BufferedImage;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
+import ootie.game.Army;
+import ootie.game.Fleet;
 import ootie.game.Player;
 import ootie.image.DrawingUtil;
 import ootie.image.ImageHelper;
@@ -45,6 +47,28 @@ public class PlayerHelper {
         drawCharacters(player, g, color);
 
         FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "playerArea");
+        MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
+    }
+
+    public static void drawArmysNFleets(Player player, SlashCommandInteractionEvent event) {
+        String color = player.getColor();
+        if (player.getColor() == null || player.getColor().isEmpty()) {
+            color = "Purple";
+        }
+        BufferedImage armyImage = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "Army"));
+        BufferedImage fleetImage = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "Fleet"));
+
+        BufferedImage finalImage = new BufferedImage(
+                armyImage.getWidth() + fleetImage.getWidth(), armyImage.getHeight() + 91, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = finalImage.createGraphics();
+        g.drawImage(armyImage, 0, 0, null);
+        g.drawImage(fleetImage, armyImage.getWidth(), 0, null);
+        drawArmy(player, player.getArmy1(), g, 50);
+        drawArmy(player, player.getArmy2(), g, 450);
+        drawArmy(player, player.getArmy3(), g, 850);
+        drawFleet(player, player.getFleet(), g, 1250);
+        drawForceCharacters(player, g, color);
+        FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "forces");
         MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
     }
 
@@ -118,6 +142,94 @@ public class PlayerHelper {
                     eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
             g2d.dispose();
             g.drawImage(croppedImage, 1340, leaderheightLoc, null);
+        }
+    }
+
+    public static void drawArmy(Player player, Army army, Graphics2D g, int xPos) {
+        BufferedImage armyImage =
+                ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(player, "Infantry"), 0.3f);
+        for (int x = 0; x < army.getInfantry(); x++) {
+            int y = 250 + ((armyImage.getHeight() + 10) * (x / 5));
+            int xP = xPos + (armyImage.getWidth() + 10) * (x % 5);
+            g.drawImage(armyImage, xP, y, null);
+        }
+        for (int x = 0; x < army.getCavalry(); x++) {
+            int y = 450 + ((armyImage.getHeight() + 10) * (x / 5));
+            int xP = xPos + (armyImage.getWidth() + 10) * (x % 5);
+            g.drawImage(armyImage, xP, y, null);
+        }
+        for (int x = 0; x < army.getArtillery(); x++) {
+            int y = 650 + ((armyImage.getHeight() + 10) * (x / 5));
+            int xP = xPos + (armyImage.getWidth() + 10) * (x % 5);
+            g.drawImage(armyImage, xP, y, null);
+        }
+    }
+
+    public static void drawFleet(Player player, Fleet fleet, Graphics2D g, int xPos) {
+        BufferedImage armyImage =
+                ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(player, "Infantry"), 0.5f);
+        for (int x = 0; x < fleet.getLightShips(); x++) {
+            int y = 250 + ((armyImage.getHeight() + 10) * (x / 5));
+            int xP = xPos + (armyImage.getWidth() + 10) * (x % 5);
+            g.drawImage(armyImage, xP, y, null);
+        }
+        for (int x = 0; x < fleet.getHeavyShips(); x++) {
+            int y = 450 + ((armyImage.getHeight() + 10) * (x / 5));
+            int xP = xPos + (armyImage.getWidth() + 10) * (x % 5);
+            g.drawImage(armyImage, xP, y, null);
+        }
+        for (int x = 0; x < fleet.getGalleys(); x++) {
+            int y = 650 + ((armyImage.getHeight() + 10) * (x / 5));
+            int xP = xPos + (armyImage.getWidth() + 10) * (x % 5);
+            g.drawImage(armyImage, xP, y, null);
+        }
+    }
+
+    public static void drawForceCharacters(Player player, Graphics2D g, String color) {
+        int cropX = 10;
+        int cropY = 464;
+        int cropWidth = 356;
+        int cropHeight = 91;
+        int leaderheightLoc = 789 + 97;
+        if (player.getArmy1().getLeader() != null) {
+            BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance()
+                    .getCharacterFile(player.getArmy1().getLeader()));
+            BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+            Graphics2D g2d = croppedImage.createGraphics();
+            g2d.drawImage(
+                    eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
+            g2d.dispose();
+            g.drawImage(croppedImage, 40, leaderheightLoc, null);
+        }
+        if (player.getArmy2().getLeader() != null) {
+            BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance()
+                    .getCharacterFile(player.getArmy2().getLeader()));
+            BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+            Graphics2D g2d = croppedImage.createGraphics();
+            g2d.drawImage(
+                    eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
+            g2d.dispose();
+            g.drawImage(croppedImage, 440, leaderheightLoc, null);
+        }
+        if (player.getArmy3().getLeader() != null) {
+            BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance()
+                    .getCharacterFile(player.getArmy3().getLeader()));
+            BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+            Graphics2D g2d = croppedImage.createGraphics();
+            g2d.drawImage(
+                    eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
+            g2d.dispose();
+            g.drawImage(croppedImage, 840, leaderheightLoc, null);
+        }
+        if (player.getFleet().getLeader() != null) {
+            BufferedImage eventImage = ImageHelper.read(ResourceHelper.getInstance()
+                    .getCharacterFile(player.getFleet().getLeader()));
+            BufferedImage croppedImage = new BufferedImage(cropWidth, cropHeight, eventImage.getType());
+            Graphics2D g2d = croppedImage.createGraphics();
+            g2d.drawImage(
+                    eventImage, 0, 0, cropWidth, cropHeight, cropX, cropY, cropX + cropWidth, cropY + cropHeight, null);
+            g2d.dispose();
+            g.drawImage(croppedImage, 1240, leaderheightLoc, null);
         }
     }
 

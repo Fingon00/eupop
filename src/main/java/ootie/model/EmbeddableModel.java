@@ -3,7 +3,7 @@ package ootie.model;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import ootie.model.Source.ComponentSource;
 
-public interface EmbeddableModel {
+public interface EmbeddableModel extends ModelInterface {
     ComponentSource getSource();
 
     MessageEmbed getRepresentationEmbed();

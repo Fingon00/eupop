@@ -167,6 +167,8 @@ public final class Constants {
     public static final String STATS = "stats";
     public static final String DRAW_ACTIONCARD = "draw_actioncard";
     public static final String ADD_PROVINCE = "add_province";
+    public static final String MANAGE_PROVINCE = "manage_province";
+    public static final String MANAGE_UNITS = "manage_units";
     public static final String SEND_TG = "send_tg";
     public static final String SEND_COMMODITIES = "send_commodities";
     public static final String SETUP = "setup";
@@ -454,7 +456,18 @@ public final class Constants {
     public static final String SAVE_DATA_OPTION = "save_data";
     public static final String AC_TYPE = "ac_type";
     public static final String PROVINCE = "province";
+    public static final String FORCE = "force";
+    public static final String MANAGE_FORCE = "manage_force";
     public static final String SIZE = "size";
+    public static final String PROVINCE_ACTION = "province_action";
+    public static final String INFANTRY = "infantry";
+    public static final String CAVALRY = "cavalry";
+    public static final String ARTILLERY = "artillery";
+    public static final String SEARCH_LOCATIONS = "locations";
+    public static final String LIGHT_SHIPS = "light_ships";
+    public static final String HEAVY_SHIPS = "heavy_ships";
+    public static final String DAMAGED_HEAVYS = "damaged_heavys";
+    public static final String GALLEYS = "galleys";
 
     public static final String CARDS_INFO_THREAD_CHANNEL_ID = "cards_info_thread_channel_id";
     public static final String DRAFT_BAG_INFO_THREAD_CHANNEL_ID = "draft_bag_info_thread_channel_id";

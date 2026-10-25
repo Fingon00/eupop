@@ -99,6 +99,18 @@ public class Game extends GameProperties {
         return players.get(id);
     }
 
+    public Player getPlayerByRealmOrColor(String id) {
+        if (id == null) {
+            return null;
+        }
+        for (Player p : players.values()) {
+            if (id.equalsIgnoreCase(p.getColor()) || id.equalsIgnoreCase(p.getRealm())) {
+                return p;
+            }
+        }
+        return null;
+    }
+
     public void addActionCard(String id) {
         ActionCardModel mod = Mapper.getActionCards().get(id);
         if (mod != null) {

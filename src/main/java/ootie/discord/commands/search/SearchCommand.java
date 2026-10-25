@@ -9,7 +9,8 @@ import ootie.helpers.Constants;
 
 public class SearchCommand implements ParentCommand {
 
-    private final Map<String, Subcommand> subcommands = Stream.of(new SearchEventsSubcommand(), new SearchCharacters())
+    private final Map<String, Subcommand> subcommands = Stream.of(
+                    new SearchEventsSubcommand(), new SearchCharacters(), new SearchLocations())
             .collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
 
     @Override

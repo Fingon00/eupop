@@ -1,5 +1,6 @@
 package ootie.discord.listeners;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -17,7 +18,6 @@ import ootie.image.Mapper;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.model.EmbeddableModel;
-import ootie.model.ModelInterface;
 import ootie.model.Source.ComponentSource;
 import org.apache.commons.lang3.function.Consumers;
 import org.jetbrains.annotations.NotNull;
@@ -92,6 +92,24 @@ class AutoCompleteProvider {
                 List<Command.Choice> options = mapTo25ChoicesThatContain(values, enteredValue);
                 event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
             }
+            case Constants.PROVINCE_ACTION -> {
+                String enteredValue = event.getFocusedOption().getValue();
+                var values = List.of("make_small", "make_large", "add_unrest", "remove_unrest", "add", "remove");
+                List<Command.Choice> options = mapTo25ChoicesThatContain(values, enteredValue);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
+            case Constants.COLOR -> {
+                String enteredValue = event.getFocusedOption().getValue();
+                var values = List.of("Purple", "Yellow", "White", "Teal", "Blue", "Red");
+                List<Command.Choice> options = mapTo25ChoicesThatContain(values, enteredValue);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
+            case Constants.FORCE -> {
+                String enteredValue = event.getFocusedOption().getValue();
+                var values = List.of("army1", "army2", "army3", "fleet");
+                List<Command.Choice> options = mapTo25ChoicesThatContain(values, enteredValue);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
             case Constants.SOURCE -> {
                 String enteredValue = event.getFocusedOption().getValue();
                 List<Command.Choice> options = Stream.of(ComponentSource.values())
@@ -139,15 +157,23 @@ class AutoCompleteProvider {
         switch (subCommandName) {
             case Constants.SEARCH_EVENTS ->
                 options = searchModels(event, Mapper.getEvents().values(), source);
-            case "characters" ->
+            case Constants.SEARCH_CHARACTERS ->
                 options = searchModels(event, Mapper.getCharacters().values(), source);
+            case Constants.SEARCH_LOCATIONS -> {
+                List<EmbeddableModel> locations =
+                        new ArrayList<>(Mapper.getProvinces().values());
+                locations.addAll(Mapper.getAreas().values());
+                options = searchModels(event, locations, source);
+            }
         }
         event.replyChoices(Objects.requireNonNullElse(options, Collections.emptyList()))
                 .queue(Consumers.nop(), BotLogger::catchRestError);
     }
 
-    private static <T extends ModelInterface & EmbeddableModel> List<Command.Choice> searchModels(
-            CommandAutoCompleteInteractionEvent event, Collection<T> models, ComponentSource source) {
+    private static List<Command.Choice> searchModels(
+            CommandAutoCompleteInteractionEvent event,
+            Collection<? extends EmbeddableModel> models,
+            ComponentSource source) {
         String enteredValue = event.getFocusedOption().getValue().toLowerCase();
         return models.stream()
                 .filter(model -> model.getSource() != null)

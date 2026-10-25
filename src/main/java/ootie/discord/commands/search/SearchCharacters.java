@@ -9,7 +9,7 @@ import ootie.message.MessageHelper;
 class SearchCharacters extends SearchComponentModelSubcommand {
 
     public SearchCharacters() {
-        super(Constants.SEARCH_CHARACTERS, "List all events");
+        super(Constants.SEARCH_CHARACTERS, "Search for a particular character");
     }
 
     @Override

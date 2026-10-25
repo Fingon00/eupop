@@ -6,7 +6,6 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.game.Game;
@@ -14,6 +13,7 @@ import ootie.game.Player;
 import ootie.image.DrawingUtil;
 import ootie.image.ImageHelper;
 import ootie.image.Mapper;
+import ootie.model.AreaModel;
 import ootie.model.IdeaModel;
 import ootie.model.ProvinceModel;
 import ootie.service.image.FileUploadService;
@@ -107,14 +107,15 @@ public class GameImageHelper {
         }
 
         if (game.getRomaCardinal() != null) {
-            BufferedImage playerChit =
-                    ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(game.getRomaCardinal(), "Claim"));
+            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance()
+                    .getPlayerFile(
+                            game.getPlayerByRealmOrColor(game.getRomaCardinal()).getColor(), "Cube"));
             g.drawImage(playerChit, 155, 175, null);
         }
         playerCount = 0;
-        for (String color : game.getNonRomaCardinals()) {
-            BufferedImage playerChit =
-                    ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "Claim"));
+        for (String realm : game.getNonRomaCardinals()) {
+            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance()
+                    .getPlayerFile(game.getPlayerByRealmOrColor(realm).getColor(), "Cube"));
             int xMod = playerCount * 145;
             g.drawImage(playerChit, 283 + xMod, 175, null);
             playerCount++;
@@ -168,13 +169,11 @@ public class GameImageHelper {
                     int py = (int) ((1 - ny) * h);
                     px -= 80;
                     py -= 50;
-                    if(player.getUnrestProvinces().contains(prov)){
+                    if (player.getUnrestProvinces().contains(prov)) {
                         g.drawImage(unrestImage, px, py, null);
-                    }else{
+                    } else {
                         g.drawImage(townImage, px, py, null);
                     }
-
-                    
                 }
             }
             unrestImage = ImageHelper.readScaled(
@@ -192,9 +191,9 @@ public class GameImageHelper {
                     int py = (int) ((1 - ny) * h);
                     px -= 80;
                     py -= 105;
-                    if(player.getUnrestProvinces().contains(prov)){
+                    if (player.getUnrestProvinces().contains(prov)) {
                         g.drawImage(unrestImage, px, py, null);
-                    }else{
+                    } else {
                         g.drawImage(townImage, px, py, null);
                     }
                 }
@@ -209,7 +208,7 @@ public class GameImageHelper {
                         ResourceHelper.getInstance().getPlayerFile(player.getColor(), "60Prestige"), 0.5f);
             }
             boolean negative = false;
-            if(playerP < 0){
+            if (playerP < 0) {
                 playerP = Math.abs(playerP);
                 negative = true;
             }
@@ -219,10 +218,44 @@ public class GameImageHelper {
                 prestY = 3975;
             }
             g.drawImage(prestigeImage, prestX, prestY, null);
-            if(negative){
+            if (negative) {
                 g.drawImage(negativePImage, prestX, prestY, null);
             }
         }
+        g.dispose();
+
+        FileUpload fileUpload = FileUploadService.createFileUpload(mapImage, "fullmap1444");
+        return fileUpload;
+    }
+
+    public static FileUpload drawSpecificLocation(String location) {
+        BufferedImage ogImage = ImageHelper.read(ResourceHelper.getInstance().getMapFile("fullmap1444"));
+        int radius = 300;
+        BufferedImage mapImage = new BufferedImage(radius * 2, radius * 2, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = mapImage.createGraphics();
+        int w = 6803;
+        int h = 4104;
+        double minx = -21.45;
+        double miny = -12.74;
+        double maxx = 21.53;
+        double maxy = 13.35;
+        int px = 0;
+        int py = 0;
+        if (Mapper.getProvinces().containsKey(location)) {
+            ProvinceModel model = Mapper.getProvinces().get(location);
+            double x = model.getX();
+            double y = model.getY();
+            double nx = (x - minx) / (maxx - minx);
+            double ny = (y - miny) / (maxy - miny);
+            px = (int) (nx * w);
+            py = (int) ((1 - ny) * h);
+        }
+        if (Mapper.getAreas().containsKey(location)) {
+            AreaModel model = Mapper.getAreas().get(location);
+            px = model.getReligiousCenter()[0];
+            py = model.getReligiousCenter()[1];
+        }
+        g.drawImage(ogImage, 0, 0, radius * 2, radius * 2, px - radius, py - radius, px + radius, py + radius, null);
         g.dispose();
 
         FileUpload fileUpload = FileUploadService.createFileUpload(mapImage, "fullmap1444");
