@@ -8,13 +8,14 @@ import ootie.discord.commands.GameStateSubcommand;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.helpers.Constants;
+import ootie.helpers.PlayerHelper;
 import ootie.message.MessageHelper;
 
 class ChangeColor extends GameStateSubcommand {
 
     ChangeColor() {
         super(Constants.CHANGE_COLOR, "Change Color", true, true);
-        addOptions(new OptionData(OptionType.STRING, Constants.COLOR, "Color of units").setAutoComplete(true));
+        addOptions(new OptionData(OptionType.STRING, Constants.COLOR, "Color of units").setAutoComplete(true).setRequired(true));
     }
 
     @Override
@@ -27,5 +28,7 @@ class ChangeColor extends GameStateSubcommand {
             return;
         }
         player.setColor(color);
+        PlayerHelper.drawPlayerArea(player, event);
+        PlayerHelper.drawArmysNFleets(player, event);
     }
 }
