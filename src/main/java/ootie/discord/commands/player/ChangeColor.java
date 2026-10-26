@@ -15,7 +15,9 @@ class ChangeColor extends GameStateSubcommand {
 
     ChangeColor() {
         super(Constants.CHANGE_COLOR, "Change Color", true, true);
-        addOptions(new OptionData(OptionType.STRING, Constants.COLOR, "Color of units").setAutoComplete(true).setRequired(true));
+        addOptions(new OptionData(OptionType.STRING, Constants.COLOR, "Color of units")
+                .setAutoComplete(true)
+                .setRequired(true));
     }
 
     @Override

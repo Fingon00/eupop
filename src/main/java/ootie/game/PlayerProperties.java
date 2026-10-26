@@ -55,6 +55,7 @@ public class PlayerProperties {
     private List<String> ideas = new ArrayList<>();
 
     private List<String> singularInfantry = new ArrayList<>();
+    private List<String> influence = new ArrayList<>();
     private Map<String, Boolean> lightShips = new LinkedHashMap<>();
     private Map<String, Boolean> merchants = new LinkedHashMap<>();
 }

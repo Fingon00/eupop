@@ -129,6 +129,25 @@ class AutoCompleteProvider {
                         searchModels(event, Mapper.getProvinces().values(), null);
                 event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
             }
+            case Constants.RELIGION, Constants.STATE_RELIGION -> {
+                String enteredValue = event.getFocusedOption().getValue();
+                var values = List.of(
+                        "Catholic",
+                        "Protestant",
+                        "Orthodox",
+                        "Muslim",
+                        "Revolutionary",
+                        "Counter-Reformed",
+                        "Diverse Faiths",
+                        "None");
+                List<Command.Choice> options = mapTo25ChoicesThatContain(values, enteredValue);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
+            case Constants.AREA -> {
+                List<Command.Choice> options =
+                        searchModels(event, Mapper.getAreas().values(), null);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
         }
     }
 

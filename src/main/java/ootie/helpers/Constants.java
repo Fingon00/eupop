@@ -168,6 +168,7 @@ public final class Constants {
     public static final String DRAW_ACTIONCARD = "draw_actioncard";
     public static final String ADD_PROVINCE = "add_province";
     public static final String MANAGE_PROVINCE = "manage_province";
+    public static final String MANAGE_AREA = "manage_area";
     public static final String MANAGE_UNITS = "manage_units";
     public static final String SEND_TG = "send_tg";
     public static final String SEND_COMMODITIES = "send_commodities";
@@ -460,7 +461,11 @@ public final class Constants {
     public static final String MANAGE_FORCE = "manage_force";
     public static final String SIZE = "size";
     public static final String PROVINCE_ACTION = "province_action";
+    public static final String AREA = "area";
+    public static final String INFLUENCE = "influence";
+    public static final String RELIGION = "religion";
     public static final String INFANTRY = "infantry";
+    public static final String REBELS = "rebels";
     public static final String CAVALRY = "cavalry";
     public static final String ARTILLERY = "artillery";
     public static final String SEARCH_LOCATIONS = "locations";

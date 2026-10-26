@@ -15,7 +15,8 @@ public class PlayerCommand implements ParentCommand {
                     new DrawActionCard(),
                     new ManageProvince(),
                     new ChangeColor(),
-                    new ManageForce())
+                    new ManageForce(),
+                    new ManageArea())
             .collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
 
     @Override

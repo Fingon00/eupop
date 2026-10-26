@@ -17,6 +17,7 @@ public class GameProperties {
     private String launchPostThreadID;
     private String savedChannelID;
     private String name;
+    private String mapUsed = "fullMap1444";
     private boolean hasEnded;
     // Decks
     private List<String> diplomaticActionCardDeck = new ArrayList<>();
@@ -33,6 +34,7 @@ public class GameProperties {
     private List<String> nonRomaCardinals = new ArrayList<>();
     private List<String> passedPlayerOrder = new ArrayList<>();
     private List<String> playerOrder = new ArrayList<>();
+    private List<String> rebels = new ArrayList<>();
     private String romaCardinal;
     private String emperorer;
     private String hreReligion;
@@ -48,6 +50,8 @@ public class GameProperties {
 
     // Stored Values
     private Map<String, String> storedValueMap = new HashMap<>();
+
+    private Map<String, String> storedAreaReligions = new HashMap<>();
 
     // Misc Helpers
     public String getID() {
