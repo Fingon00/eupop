@@ -6,6 +6,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.game.Game;
@@ -230,7 +231,7 @@ public class GameImageHelper {
 
     public static FileUpload drawSpecificLocation(String location) {
         BufferedImage ogImage = ImageHelper.read(ResourceHelper.getInstance().getMapFile("fullmap1444"));
-        int radius = 300;
+        int radius = 400;
         BufferedImage mapImage = new BufferedImage(radius * 2, radius * 2, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = mapImage.createGraphics();
         int w = 6803;

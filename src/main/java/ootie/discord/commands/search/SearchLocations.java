@@ -15,7 +15,6 @@ class SearchLocations extends SearchComponentModelSubcommand {
     @Override
     public void execute(SlashCommandInteractionEvent event) {
         String searchString = event.getOption(Constants.SEARCH, null, OptionMapping::getAsString);
-
         MessageHelper.sendFileUploadToChannel(event.getChannel(), GameImageHelper.drawSpecificLocation(searchString));
     }
 }
