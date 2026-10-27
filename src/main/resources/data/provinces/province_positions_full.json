@@ -1235,12 +1235,12 @@
     "y": -3.67
   },
   {
-    "province": "stgallen",
+    "province": "st-gallen",
     "x": 0.05,
     "y": -1.42
   },
   {
-    "province": "franchecomte",
+    "province": "franch-comte",
     "x": -1.8,
     "y": -1.15
   },
@@ -1505,7 +1505,7 @@
     "y": 4.61
   },
   {
-    "province": "nizhnynovgorod",
+    "province": "nizhny_novgorod",
     "x": 18.86,
     "y": 5.28
   },
@@ -1560,7 +1560,7 @@
     "y": 11.65
   },
   {
-    "province": "alquds",
+    "province": "al-quds",
     "x": 14.83,
     "y": -11.65
   },

@@ -307,7 +307,7 @@
             "seine"
         ],
         "provinces": [
-            "franche-comte",
+            "-comte",
             "bourgogne",
             "lyon",
             "savoie"
@@ -497,7 +497,7 @@
             "serbia_&_albania"
         ],
         "provinces": [
-            "zagreh",
+            "zagreb",
             "bosnia"
         ],
         "mountainBorders": [
@@ -1303,7 +1303,7 @@
         ],
         "provinces": [
             "gharb",
-            "centa",
+            "ceuta",
             "fez",
             "marrakech",
             "tangiers"
@@ -1770,7 +1770,7 @@
             "central_mediterranean"
         ],
         "provinces": [
-            "palermin",
+            "palermo",
             "mesina",
             "malta"
         ],
@@ -1849,7 +1849,7 @@
         "provinces": [
             "geneve",
             "bern",
-            "st_gallen"
+            "st-gallen"
         ],
         "mountainBorders": [
             "bavaria_&_swabia",
@@ -2066,7 +2066,7 @@
             "trondelag"
         ],
         "provinces": [
-            "bergenlius"
+            "bergenhus"
         ],
         "mountainBorders": [
             "ostlandet",
