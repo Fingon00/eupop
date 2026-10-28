@@ -79,6 +79,46 @@ public class Game extends GameProperties {
         return player;
     }
 
+    public List<String> getInfluenceInArea(String area) {
+        List<String> influence = new ArrayList<>();
+        for (Player player : getGamePlayers()) {
+            for (String inf : player.getInfluence()) {
+                if (inf.equalsIgnoreCase(area)) {
+                    influence.add(player.getColor());
+                }
+            }
+        }
+        return influence;
+    }
+
+    public List<String> getUnitsInArea(String area) {
+        List<String> units = new ArrayList<>();
+        for (Player player : getGamePlayers()) {
+            for (String inf : player.getSingularInfantry()) {
+                if (inf.equalsIgnoreCase(area)) {
+                    units.add(player.getColor() + "_infantry");
+                }
+            }
+            if (area.equalsIgnoreCase(player.getArmy1().getLocation())) {
+                units.add(player.getColor() + "_army1");
+            }
+            if (area.equalsIgnoreCase(player.getArmy2().getLocation())) {
+                units.add(player.getColor() + "_army2");
+            }
+            if (area.equalsIgnoreCase(player.getArmy3().getLocation())) {
+                units.add(player.getColor() + "_army3");
+            }
+        }
+
+        for (String rebel : getRebels()) {
+            if (rebel.equalsIgnoreCase(area)) {
+                units.add("rebel_rebel");
+            }
+        }
+
+        return units;
+    }
+
     public TextChannel getMainGameChannel() {
         if (JdaService.jda == null) return null;
         try {

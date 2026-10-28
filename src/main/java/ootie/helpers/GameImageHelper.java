@@ -107,15 +107,23 @@ public class GameImageHelper {
         }
 
         if (game.getRomaCardinal() != null) {
-            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance()
-                    .getPlayerFile(
-                            game.getPlayerByRealmOrColor(game.getRomaCardinal()).getColor(), "Cube"));
+            BufferedImage playerChit = ImageHelper.readScaled(
+                    ResourceHelper.getInstance()
+                            .getPlayerFile(
+                                    game.getPlayerByRealmOrColor(game.getRomaCardinal())
+                                            .getColor(),
+                                    "Cube"),
+                    50,
+                    50);
             g.drawImage(playerChit, 155, 175, null);
         }
         playerCount = 0;
         for (String realm : game.getNonRomaCardinals()) {
-            BufferedImage playerChit = ImageHelper.read(ResourceHelper.getInstance()
-                    .getPlayerFile(game.getPlayerByRealmOrColor(realm).getColor(), "Cube"));
+            BufferedImage playerChit = ImageHelper.readScaled(
+                    ResourceHelper.getInstance()
+                            .getPlayerFile(game.getPlayerByRealmOrColor(realm).getColor(), "Cube"),
+                    50,
+                    50);
             int xMod = playerCount * 145;
             g.drawImage(playerChit, 283 + xMod, 175, null);
             playerCount++;
@@ -224,20 +232,57 @@ public class GameImageHelper {
         }
         BufferedImage rebelImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile("Rebel"), 0.3f);
-        BufferedImage religionImage =
-                ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile("Catholic"), 0.60f);
 
         for (AreaModel area : Mapper.getAreas().values()) {
-            g.drawImage(
-                    religionImage,
-                    area.getReligiousCenter()[0] - religionImage.getWidth() / 2,
-                    area.getReligiousCenter()[1] - religionImage.getHeight() / 2,
-                    null);
-            g.drawImage(
-                    rebelImage,
-                    area.getInfantryPlacement()[0] - rebelImage.getWidth() / 2,
-                    area.getInfantryPlacement()[1] - rebelImage.getHeight() / 2,
-                    null);
+            // g.drawImage(
+            //         religionImage,
+            //         area.getReligiousCenter()[0] - religionImage.getWidth() / 2,
+            //         area.getReligiousCenter()[1] - religionImage.getHeight() / 2,
+            //         null);
+            // g.drawImage(
+            //         rebelImage,
+            //         area.getInfantryPlacement()[0] - rebelImage.getWidth() / 2,
+            //         area.getInfantryPlacement()[1] - rebelImage.getHeight() / 2,
+            //         null);
+            if (game.getStoredAreaReligions().containsKey(area.getId())) {
+                BufferedImage religionImage = ImageHelper.readScaled(
+                        ResourceHelper.getInstance()
+                                .getMiscFile(game.getStoredAreaReligions().get(area.getId())),
+                        0.60f);
+                g.drawImage(
+                        religionImage,
+                        area.getReligiousCenter()[0] - religionImage.getWidth() / 2,
+                        area.getReligiousCenter()[1] - religionImage.getHeight() / 2,
+                        null);
+            }
+            int x = 0;
+            for (String influence : game.getInfluenceInArea(area.getId())) {
+                BufferedImage playerCube =
+                        ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(influence, "Cube"), 50, 50);
+                g.drawImage(playerCube, area.getReligiousCenter()[0] - 80 + x, area.getReligiousCenter()[1] - 80, null);
+                x += 40;
+            }
+            for (String infantry : game.getUnitsInArea(area.getId())) {
+                if (infantry.contains("rebel")) {
+                    g.drawImage(
+                            rebelImage,
+                            area.getInfantryPlacement()[0] - rebelImage.getWidth() / 2 + x,
+                            area.getInfantryPlacement()[1] - rebelImage.getHeight() / 2,
+                            null);
+                }
+                float scale = 0.25f;
+                if (infantry.contains("army")) {
+                    scale = 0.35f;
+                }
+                BufferedImage playerInf = ImageHelper.readScaled(
+                        ResourceHelper.getInstance().getPlayerFile(infantry.split("_")[1], "Infantry"), scale);
+                g.drawImage(
+                        playerInf,
+                        area.getInfantryPlacement()[0] - rebelImage.getWidth() + x,
+                        area.getInfantryPlacement()[1] - rebelImage.getWidth(),
+                        null);
+                x += 40;
+            }
         }
         g.dispose();
 
