@@ -14,6 +14,10 @@
         "religiousCenter": [
             5053,
             3542
+        ],
+        "infantryPlacement": [
+            5063,
+            3469
         ]
     },
     {
@@ -36,6 +40,10 @@
         "religiousCenter": [
             2583,
             3739
+        ],
+        "infantryPlacement": [
+            2766,
+            3682
         ]
     },
     {
@@ -60,6 +68,10 @@
         "religiousCenter": [
             2210,
             3403
+        ],
+        "infantryPlacement": [
+            1992,
+            3422
         ],
         "cube_location": [
             2051,
@@ -89,6 +101,10 @@
         "religiousCenter": [
             2527,
             2505
+        ],
+        "infantryPlacement": [
+            2496,
+            2607
         ],
         "cube_location": [
             2400,
@@ -122,6 +138,10 @@
             2378,
             2858
         ],
+        "infantryPlacement": [
+            2591,
+            2874
+        ],
         "cube_location": [
             2466,
             2846
@@ -145,6 +165,10 @@
         "religiousCenter": [
             6449,
             2419
+        ],
+        "infantryPlacement": [
+            6539,
+            2318
         ]
     },
     {
@@ -171,6 +195,10 @@
         "religiousCenter": [
             4043,
             2318
+        ],
+        "infantryPlacement": [
+            4000,
+            2236
         ]
     },
     {
@@ -194,6 +222,10 @@
         "religiousCenter": [
             5235,
             3264
+        ],
+        "infantryPlacement": [
+            5286,
+            3356
         ]
     },
     {
@@ -222,6 +254,10 @@
         "religiousCenter": [
             3483,
             2163
+        ],
+        "infantryPlacement": [
+            3600,
+            2077
         ]
     },
     {
@@ -245,6 +281,10 @@
         "religiousCenter": [
             4100,
             1942
+        ],
+        "infantryPlacement": [
+            3956,
+            1940
         ]
     },
     {
@@ -267,6 +307,10 @@
         "religiousCenter": [
             3971,
             1653
+        ],
+        "infantryPlacement": [
+            3876,
+            1608
         ]
     },
     {
@@ -291,6 +335,10 @@
             2149,
             2057
         ],
+        "infantryPlacement": [
+            2374,
+            2133
+        ],
         "cube_location": [
             2330,
             2054
@@ -307,7 +355,7 @@
             "seine"
         ],
         "provinces": [
-            "-comte",
+            "franche-comte",
             "bourgogne",
             "lyon",
             "savoie"
@@ -320,6 +368,10 @@
         "religiousCenter": [
             2879,
             2230
+        ],
+        "infantryPlacement": [
+            3065,
+            2398
         ],
         "cube_location": [
             2970,
@@ -347,6 +399,10 @@
             2245,
             3103
         ],
+        "infantryPlacement": [
+            2120,
+            3144
+        ],
         "cube_location": [
             1733,
             2766
@@ -370,6 +426,10 @@
         "religiousCenter": [
             6656,
             2642
+        ],
+        "infantryPlacement": [
+            6629,
+            2725
         ]
     },
     {
@@ -395,6 +455,10 @@
         "religiousCenter": [
             3756,
             2901
+        ],
+        "infantryPlacement": [
+            3783,
+            2800
         ]
     },
     {
@@ -418,6 +482,10 @@
         "religiousCenter": [
             6129,
             1089
+        ],
+        "infantryPlacement": [
+            6057,
+            1254
         ]
     },
     {
@@ -442,6 +510,10 @@
         "religiousCenter": [
             6245,
             2706
+        ],
+        "infantryPlacement": [
+            6211,
+            2606
         ]
     },
     {
@@ -459,6 +531,10 @@
         "religiousCenter": [
             3438,
             3110
+        ],
+        "infantryPlacement": [
+            3434,
+            3211
         ]
     },
     {
@@ -484,6 +560,10 @@
         "religiousCenter": [
             6013,
             2205
+        ],
+        "infantryPlacement": [
+            5846,
+            2168
         ]
     },
     {
@@ -508,6 +588,10 @@
         "religiousCenter": [
             4326,
             2709
+        ],
+        "infantryPlacement": [
+            4213,
+            2571
         ]
     },
     {
@@ -523,6 +607,10 @@
         "religiousCenter": [
             5493,
             3632
+        ],
+        "infantryPlacement": [
+            5558,
+            3622
         ]
     },
     {
@@ -541,6 +629,10 @@
         "religiousCenter": [
             5151,
             3908
+        ],
+        "infantryPlacement": [
+            4810,
+            3839
         ]
     },
     {
@@ -564,6 +656,10 @@
         "religiousCenter": [
             4068,
             2666
+        ],
+        "infantryPlacement": [
+            4177,
+            2815
         ]
     },
     {
@@ -584,6 +680,10 @@
         "religiousCenter": [
             2433,
             1399
+        ],
+        "infantryPlacement": [
+            2489,
+            1530
         ],
         "cube_location": [
             2431,
@@ -608,6 +708,10 @@
         "religiousCenter": [
             5783,
             1809
+        ],
+        "infantryPlacement": [
+            5704,
+            1926
         ]
     },
     {
@@ -627,6 +731,10 @@
         "religiousCenter": [
             5151,
             3908
+        ],
+        "infantryPlacement": [
+            5357,
+            3875
         ]
     },
     {
@@ -651,6 +759,10 @@
         "religiousCenter": [
             5070,
             1155
+        ],
+        "infantryPlacement": [
+            4744,
+            993
         ]
     },
     {
@@ -669,6 +781,10 @@
         "religiousCenter": [
             4879,
             498
+        ],
+        "infantryPlacement": [
+            4783,
+            671
         ]
     },
     {
@@ -694,6 +810,10 @@
             3035,
             1880
         ],
+        "infantryPlacement": [
+            2900,
+            1820
+        ],
         "cube_location": [
             2870,
             1789
@@ -717,6 +837,10 @@
         "religiousCenter": [
             3885,
             865
+        ],
+        "infantryPlacement": [
+            3989,
+            968
         ]
     },
     {
@@ -740,6 +864,10 @@
         "religiousCenter": [
             4729,
             3407
+        ],
+        "infantryPlacement": [
+            4690,
+            3316
         ]
     },
     {
@@ -759,6 +887,10 @@
         "religiousCenter": [
             4324,
             2379
+        ],
+        "infantryPlacement": [
+            4471,
+            2323
         ]
     },
     {
@@ -777,6 +909,10 @@
         "religiousCenter": [
             6300,
             3483
+        ],
+        "infantryPlacement": [
+            6493,
+            3588
         ]
     },
     {
@@ -796,6 +932,10 @@
         "religiousCenter": [
             1628,
             1271
+        ],
+        "infantryPlacement": [
+            1657,
+            1415
         ],
         "cube_location": [
             1590,
@@ -821,6 +961,10 @@
         "religiousCenter": [
             3439,
             1127
+        ],
+        "infantryPlacement": [
+            3405,
+            1050
         ]
     },
     {
@@ -847,6 +991,10 @@
         "religiousCenter": [
             5659,
             3339
+        ],
+        "infantryPlacement": [
+            5673,
+            3280
         ]
     },
     {
@@ -870,6 +1018,10 @@
         "religiousCenter": [
             5383,
             500
+        ],
+        "infantryPlacement": [
+            5448,
+            500
         ]
     },
     {
@@ -887,6 +1039,10 @@
         "religiousCenter": [
             6563,
             1667
+        ],
+        "infantryPlacement": [
+            6591,
+            1421
         ]
     },
     {
@@ -912,6 +1068,10 @@
         "religiousCenter": [
             6008,
             3235
+        ],
+        "infantryPlacement": [
+            6233,
+            3263
         ]
     },
     {
@@ -938,6 +1098,10 @@
         "religiousCenter": [
             3043,
             2678
+        ],
+        "infantryPlacement": [
+            2812,
+            2700
         ],
         "cube_location": [
             2631,
@@ -967,6 +1131,10 @@
             1918,
             2702
         ],
+        "infantryPlacement": [
+            1753,
+            2730
+        ],
         "cube_location": [
             1733,
             2766
@@ -990,6 +1158,10 @@
         "religiousCenter": [
             4861,
             1251
+        ],
+        "infantryPlacement": [
+            4938,
+            1397
         ]
     },
     {
@@ -1012,6 +1184,10 @@
         "religiousCenter": [
             2813,
             2577
+        ],
+        "infantryPlacement": [
+            2675,
+            2389
         ],
         "cube_location": [
             2732,
@@ -1048,6 +1224,10 @@
         "religiousCenter": [
             3279,
             2694
+        ],
+        "infantryPlacement": [
+            3358,
+            2605
         ]
     },
     {
@@ -1074,6 +1254,10 @@
             3590,
             1590
         ],
+        "infantryPlacement": [
+            3455,
+            1537
+        ],
         "cube_location": [
             3482,
             1521
@@ -1093,6 +1277,10 @@
         "religiousCenter": [
             1350,
             3824
+        ],
+        "infantryPlacement": [
+            1309,
+            3908
         ]
     },
     {
@@ -1116,6 +1304,10 @@
         "religiousCenter": [
             4659,
             3094
+        ],
+        "infantryPlacement": [
+            4808,
+            2960
         ]
     },
     {
@@ -1139,6 +1331,10 @@
         "religiousCenter": [
             4703,
             1619
+        ],
+        "infantryPlacement": [
+            4544,
+            1845
         ]
     },
     {
@@ -1163,6 +1359,10 @@
         "religiousCenter": [
             5261,
             2294
+        ],
+        "infantryPlacement": [
+            5350,
+            2396
         ]
     },
     {
@@ -1185,6 +1385,10 @@
         "religiousCenter": [
             5980,
             1674
+        ],
+        "infantryPlacement": [
+            5922,
+            1484
         ]
     },
     {
@@ -1204,6 +1408,10 @@
         "religiousCenter": [
             4087,
             3118
+        ],
+        "infantryPlacement": [
+            4109,
+            3200
         ]
     },
     {
@@ -1228,6 +1436,10 @@
             3223,
             1431
         ],
+        "infantryPlacement": [
+            3081,
+            1544
+        ],
         "cube_location": [
             3119,
             1448
@@ -1251,6 +1463,10 @@
         "religiousCenter": [
             4141,
             651
+        ],
+        "infantryPlacement": [
+            4194,
+            247
         ]
     },
     {
@@ -1268,6 +1484,10 @@
         "religiousCenter": [
             3111,
             3827
+        ],
+        "infantryPlacement": [
+            3227,
+            3884
         ]
     },
     {
@@ -1291,6 +1511,10 @@
         "religiousCenter": [
             5595,
             3029
+        ],
+        "infantryPlacement": [
+            5369,
+            3057
         ]
     },
     {
@@ -1313,6 +1537,10 @@
         "religiousCenter": [
             1820,
             3856
+        ],
+        "infantryPlacement": [
+            1935,
+            3781
         ]
     },
     {
@@ -1334,6 +1562,10 @@
         "religiousCenter": [
             2403,
             1276
+        ],
+        "infantryPlacement": [
+            2253,
+            1258
         ],
         "cube_location": [
             2176,
@@ -1359,6 +1591,10 @@
         "religiousCenter": [
             5692,
             941
+        ],
+        "infantryPlacement": [
+            5312,
+            1000
         ]
     },
     {
@@ -1382,6 +1618,10 @@
         "religiousCenter": [
             3590,
             402
+        ],
+        "infantryPlacement": [
+            3629,
+            525
         ]
     },
     {
@@ -1401,6 +1641,10 @@
         "religiousCenter": [
             4879,
             498
+        ],
+        "infantryPlacement": [
+            4985,
+            250
         ]
     },
     {
@@ -1420,6 +1664,10 @@
         "religiousCenter": [
             5651,
             3984
+        ],
+        "infantryPlacement": [
+            5698,
+            3866
         ]
     },
     {
@@ -1440,6 +1688,10 @@
         "religiousCenter": [
             6446,
             813
+        ],
+        "infantryPlacement": [
+            6411,
+            1056
         ]
     },
     {
@@ -1463,6 +1715,10 @@
         "religiousCenter": [
             4168,
             1368
+        ],
+        "infantryPlacement": [
+            4063,
+            1373
         ]
     },
     {
@@ -1481,6 +1737,10 @@
         "religiousCenter": [
             5383,
             500
+        ],
+        "infantryPlacement": [
+            5461,
+            324
         ]
     },
     {
@@ -1500,6 +1760,10 @@
         "religiousCenter": [
             1657,
             3292
+        ],
+        "infantryPlacement": [
+            1599,
+            3093
         ],
         "cube_location": [
             1618,
@@ -1528,6 +1792,10 @@
         "religiousCenter": [
             4590,
             1479
+        ],
+        "infantryPlacement": [
+            4425,
+            1431
         ]
     },
     {
@@ -1553,6 +1821,10 @@
         "religiousCenter": [
             5063,
             1738
+        ],
+        "infantryPlacement": [
+            4965,
+            1962
         ]
     },
     {
@@ -1579,6 +1851,10 @@
         "religiousCenter": [
             3326,
             2138
+        ],
+        "infantryPlacement": [
+            3235,
+            2118
         ],
         "cube_location": [
             3212,
@@ -1612,6 +1888,10 @@
         "religiousCenter": [
             4333,
             2060
+        ],
+        "infantryPlacement": [
+            4559,
+            2105
         ]
     },
     {
@@ -1638,6 +1918,10 @@
         "religiousCenter": [
             6115,
             3102
+        ],
+        "infantryPlacement": [
+            5945,
+            3068
         ]
     },
     {
@@ -1659,6 +1943,10 @@
         "religiousCenter": [
             6563,
             1667
+        ],
+        "infantryPlacement": [
+            6376,
+            1741
         ]
     },
     {
@@ -1682,6 +1970,10 @@
         "religiousCenter": [
             3680,
             1873
+        ],
+        "infantryPlacement": [
+            3769,
+            1782
         ]
     },
     {
@@ -1702,6 +1994,10 @@
         "religiousCenter": [
             1962,
             764
+        ],
+        "infantryPlacement": [
+            2085,
+            829
         ],
         "cube_location": [
             1966,
@@ -1729,6 +2025,10 @@
         "religiousCenter": [
             2842,
             1934
+        ],
+        "infantryPlacement": [
+            2782,
+            1969
         ],
         "cube_location": [
             2757,
@@ -1762,6 +2062,10 @@
         "religiousCenter": [
             4656,
             2823
+        ],
+        "infantryPlacement": [
+            4513,
+            2801
         ]
     },
     {
@@ -1779,6 +2083,10 @@
         "religiousCenter": [
             3837,
             3616
+        ],
+        "infantryPlacement": [
+            3852,
+            3511
         ]
     },
     {
@@ -1794,6 +2102,10 @@
         "religiousCenter": [
             3815,
             1219
+        ],
+        "infantryPlacement": [
+            3719,
+            1201
         ]
     },
     {
@@ -1812,6 +2124,10 @@
         "religiousCenter": [
             1981,
             3957
+        ],
+        "infantryPlacement": [
+            2035,
+            3996
         ]
     },
     {
@@ -1835,6 +2151,10 @@
         "religiousCenter": [
             4141,
             651
+        ],
+        "infantryPlacement": [
+            4201,
+            735
         ]
     },
     {
@@ -1862,6 +2182,10 @@
         "religiousCenter": [
             3491,
             2353
+        ],
+        "infantryPlacement": [
+            3339,
+            2366
         ]
     },
     {
@@ -1884,6 +2208,10 @@
         "religiousCenter": [
             5965,
             3525
+        ],
+        "infantryPlacement": [
+            5907,
+            3605
         ]
     },
     {
@@ -1911,6 +2239,10 @@
         "religiousCenter": [
             3626,
             2387
+        ],
+        "infantryPlacement": [
+            3672,
+            2333
         ]
     },
     {
@@ -1937,6 +2269,10 @@
         "religiousCenter": [
             6618,
             3079
+        ],
+        "infantryPlacement": [
+            6547,
+            3075
         ]
     },
     {
@@ -1964,6 +2300,10 @@
         "religiousCenter": [
             4826,
             2223
+        ],
+        "infantryPlacement": [
+            4791,
+            2322
         ]
     },
     {
@@ -1982,6 +2322,10 @@
         "religiousCenter": [
             3672,
             3984
+        ],
+        "infantryPlacement": [
+            3766,
+            3974
         ]
     },
     {
@@ -2006,6 +2350,10 @@
         "religiousCenter": [
             3590,
             402
+        ],
+        "infantryPlacement": [
+            3780,
+            158
         ]
     },
     {
@@ -2026,6 +2374,10 @@
         "religiousCenter": [
             3528,
             3901
+        ],
+        "infantryPlacement": [
+            3434,
+            3688
         ]
     },
     {
@@ -2055,6 +2407,10 @@
         "religiousCenter": [
             3990,
             2444
+        ],
+        "infantryPlacement": [
+            3917,
+            2467
         ]
     },
     {
@@ -2076,6 +2432,10 @@
         "religiousCenter": [
             3590,
             402
+        ],
+        "infantryPlacement": [
+            3370,
+            444
         ]
     },
     {
@@ -2096,6 +2456,10 @@
         "religiousCenter": [
             5692,
             941
+        ],
+        "infantryPlacement": [
+            5852,
+            841
         ]
     },
     {
@@ -2118,9 +2482,9 @@
             2128,
             1443
         ],
-        "cube_location": [
-            2126,
-            1441
+        "infantryPlacement": [
+            2193,
+            1642
         ]
     },
     {
@@ -2145,6 +2509,10 @@
         "religiousCenter": [
             4776,
             2682
+        ],
+        "infantryPlacement": [
+            5023,
+            2783
         ]
     },
     {
@@ -2165,6 +2533,10 @@
         "religiousCenter": [
             5472,
             2119
+        ],
+        "infantryPlacement": [
+            5308,
+            2126
         ]
     },
     {
@@ -2188,6 +2560,10 @@
         "religiousCenter": [
             3421,
             1690
+        ],
+        "infantryPlacement": [
+            3314,
+            1797
         ],
         "cube_location": [
             3261,
@@ -2215,6 +2591,10 @@
         "religiousCenter": [
             5651,
             1574
+        ],
+        "infantryPlacement": [
+            5335,
+            1487
         ]
     },
     {
@@ -2239,6 +2619,10 @@
         "religiousCenter": [
             4104,
             1747
+        ],
+        "infantryPlacement": [
+            4256,
+            1810
         ]
     }
 ]

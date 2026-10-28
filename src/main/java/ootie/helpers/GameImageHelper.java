@@ -222,6 +222,23 @@ public class GameImageHelper {
                 g.drawImage(negativePImage, prestX, prestY, null);
             }
         }
+        BufferedImage rebelImage =
+                ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile("Rebel"), 0.3f);
+        BufferedImage religionImage =
+                ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile("Catholic"), 0.60f);
+
+        for (AreaModel area : Mapper.getAreas().values()) {
+            g.drawImage(
+                    religionImage,
+                    area.getReligiousCenter()[0] - religionImage.getWidth() / 2,
+                    area.getReligiousCenter()[1] - religionImage.getHeight() / 2,
+                    null);
+            g.drawImage(
+                    rebelImage,
+                    area.getInfantryPlacement()[0] - rebelImage.getWidth() / 2,
+                    area.getInfantryPlacement()[1] - rebelImage.getHeight() / 2,
+                    null);
+        }
         g.dispose();
 
         FileUpload fileUpload = FileUploadService.createFileUpload(mapImage, "fullmap1444");

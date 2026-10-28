@@ -17,6 +17,7 @@ public class AreaModel implements ModelInterface, EmbeddableModel {
     private String religion;
     private String type;
     private int[] religiousCenter;
+    private int[] infantryPlacement;
 
     @Override
     public boolean isValid() {
