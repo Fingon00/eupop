@@ -28,7 +28,7 @@ class ManageProvince extends GameStateSubcommand {
         Game game = getGame();
         Player player = getPlayer();
         String province = event.getOption(Constants.PROVINCE).getAsString();
-        String action = event.getOption(Constants.PROVINCE).getAsString();
+        String action = event.getOption(Constants.PROVINCE_ACTION).getAsString();
 
         switch (action) {
             case "make_small" -> {

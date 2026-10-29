@@ -6,6 +6,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.game.Game;
@@ -175,11 +176,13 @@ public class GameImageHelper {
                     double ny = (y - miny) / (maxy - miny);
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
-                    px -= 80;
-                    py -= 50;
                     if (player.getUnrestProvinces().contains(prov)) {
+                        px -= unrestImage.getWidth()/2;
+                        py -= unrestImage.getHeight()/2-40;
                         g.drawImage(unrestImage, px, py, null);
                     } else {
+                        px -= townImage.getWidth()/2;
+                        py -= townImage.getHeight()/2-40;
                         g.drawImage(townImage, px, py, null);
                     }
                 }
@@ -197,11 +200,13 @@ public class GameImageHelper {
                     double ny = (y - miny) / (maxy - miny);
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
-                    px -= 80;
-                    py -= 105;
                     if (player.getUnrestProvinces().contains(prov)) {
+                        px -= unrestImage.getWidth()/2;
+                        py -= unrestImage.getHeight()/2 -40;
                         g.drawImage(unrestImage, px, py, null);
                     } else {
+                        px -= townImage.getWidth()/2;
+                        py -= townImage.getHeight()/2-40;
                         g.drawImage(townImage, px, py, null);
                     }
                 }
@@ -275,7 +280,7 @@ public class GameImageHelper {
                     scale = 0.35f;
                 }
                 BufferedImage playerInf = ImageHelper.readScaled(
-                        ResourceHelper.getInstance().getPlayerFile(infantry.split("_")[1], "Infantry"), scale);
+                        ResourceHelper.getInstance().getPlayerFile(infantry.split("_")[0], "Infantry"), scale);
                 g.drawImage(
                         playerInf,
                         area.getInfantryPlacement()[0] - rebelImage.getWidth() + x,
