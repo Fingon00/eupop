@@ -1,0 +1,3917 @@
+[
+    {
+        "id": "T01-1",
+        "name": "Chinaware",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "expandedTradeIncome": [
+            19,
+            14,
+            8
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "China & Japan",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Canton",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Xian",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Kyushu",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Hangzhou",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "East Indies",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Malacca",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Siam",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Burma",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "South Sumatra",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {}
+    },
+    {
+        "id": "T13-3",
+        "name": "Iron",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "expandedTradeIncome": [
+            14,
+            8,
+            5
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Saxony",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Dresden",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Berlin",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Braunschweig",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Praha",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Virginia",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Great Lakes",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Canada",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Kazan",
+            "additionalRequirements": "Novgorod",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Kazan",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Volga",
+                    "tradeValue": 3
+                },
+                "keyProvince3": {
+                    "name": "Ural",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {}
+            }
+        }
+    },
+    {
+        "id": "T02-1",
+        "name": "Cloth",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "expandedTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "English Channel",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Amsterdam",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Antwerpen",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Brugge",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "London",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Genoa",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Genova",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Firenze",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Montpellier",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Valencia",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Alexandria",
+            "additionalRequirements": "Aleppo",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Iskandariyya",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Qahirah",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Dumyat",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Hejaz",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T02-2",
+        "name": "Cloth",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "expandedTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "English Channel",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Amsterdam",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Antwerpen",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Normandie",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "London",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Champagne",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Champagne",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Savoie",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Lorraine",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Geneve",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Adriatic Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Venezia",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Milano",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Brescia",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Rijeka",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T02-3",
+        "name": "Cloth",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "expandedTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "English Channel",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "London",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Essex",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "York",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Antwerpen",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Saxony",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Praha",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Berlin",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Magdeburg",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Frankfurt",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Maghreb",
+            "additionalRequirements": "Genoa",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Tunis",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Gharb",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Tlemcen",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Timbuktu",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T02-4",
+        "name": "Cloth",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "expandedTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Champagne",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Champagne",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Bourgogne",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Lorraine",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Geneve",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Wien",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Wien",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Pozsony",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Regensburg",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Ulm",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Krakow",
+            "additionalRequirements": "Lubeck",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Krakow",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Warszawa",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Lwow",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Silesia",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T03-1",
+        "name": "Cocoa",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "expandedTradeIncome": [
+            19,
+            14,
+            8
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "S. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Pernambuco",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Bahia",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Rio de Janeiro",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Amazonas",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mexico",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Central America",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "New Granada",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Guyana",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {}
+    },
+    {
+        "id": "T04-1",
+        "name": "Coffee",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "expandedTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "S. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Guyana",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Pernambuco",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Bahia",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Ivory Coast",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Benin",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Songhai",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Timbuktu",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Yemen",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Ethiopia",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Adal",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Coromandel",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T05-1",
+        "name": "Copper",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "expandedTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "East Indies",
+            "additionalRequirements": "China & Japan",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Malacca",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Burma",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "South Sumatra",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Black Sea",
+            "additionalRequirements": "Wien",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Constantinople",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Hudavendigar",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Basarabia",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Trebizond",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Kazan",
+            "additionalRequirements": "Novgorod",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Kazan",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Nizhny Novgorod",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Perm",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Viatka",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T06-1",
+        "name": "Cotton",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "expandedTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Bengal",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Gujarat",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Doab",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Delhi",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mississippi",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Virginia",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Florida",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Antilles",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "East Indies",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Moluccas",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Java",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Papua",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        }
+    },
+    {
+        "id": "T07-1",
+        "name": "Dyes",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "expandedTradeIncome": [
+            19,
+            14,
+            8
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Delhi",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Gujarat",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Doab",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Deccan",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Ivory Coast",
+            "additionalRequirements": "Maghreb",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Songhai",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Benin",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Gold Coast",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Black Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Constantinople",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Tbilisi",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Caffa",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        }
+    },
+    {
+        "id": "T08-1",
+        "name": "Fish",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "North Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lothian",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Aberdeen",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Bergenhus",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Trondheim",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Lubeck",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lubeck",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Kobenhavn",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Lund",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Hamburg",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Sevilla",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Sevilla",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Lisboa",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Porto",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Ceuta",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T08-2",
+        "name": "Fish",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "North Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lothian",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Aberdeen",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Bergenhus",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Trondheim",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Genoa",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Genova",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Barcelona",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Mesina",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Napoli",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Sevilla",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Sevilla",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Lisboa",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Porto",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Ceuta",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T08-3",
+        "name": "Fish",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "English Channel",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Amsterdam",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "London",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Wessex",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Rennes",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Lubeck",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lubeck",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Kobenhavn",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Lund",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Hamburg",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Adriatic Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Venezia",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Ragusa",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Athina",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Creta",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T09-1",
+        "name": "Fur",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "expandedTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Hudson Bay",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Canada",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Great Lakes",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "New England",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Novgorod",
+            "additionalRequirements": "Baltic Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Novgorod",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Neva",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Ladoga",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Arkhangelsk",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Kazan",
+            "additionalRequirements": "Astrakhan",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "West Siberia",
+                    "tradeValue": 3
+                },
+                "keyProvince2": {
+                    "name": "Kazan",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Perm",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Tyumen",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T10-1",
+        "name": "Glass",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "expandedTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "English Channel",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "London",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Antwerpen",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Caux",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Liege",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Adriatic Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Venezia",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Ragusa",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {},
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Genoa",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Genova",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Siena",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Barcelona",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        }
+    },
+    {
+        "id": "T11-1",
+        "name": "Gold",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            22,
+            16,
+            10
+        ],
+        "expandedTradeIncome": [
+            22,
+            16,
+            10
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Wien",
+            "additionalRequirements": "Must Own a Key Province to collect a ducat",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Pest",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Pozsony",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Tirol",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Rudohori",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Maghreb",
+            "additionalRequirements": "Must Own a Key Province to collect a ducat",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Timbuktu",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Songhai",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Tafilalt",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Marrakech",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Ivory Coast",
+            "additionalRequirements": "Must Own a Key Province to collect a ducat",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mali",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Songhai",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Benin",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Gold Coast",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T11-2",
+        "name": "Gold",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            22,
+            16,
+            10
+        ],
+        "expandedTradeIncome": [
+            22,
+            16,
+            10
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "S. America",
+            "additionalRequirements": "Must Own a Key Province to collect a ducat",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Cuzco",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Charcas",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Minas Gerais",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "La Plata",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "Must Own a Key Province to collect a ducat",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mexico",
+                    "tradeValue": 3
+                },
+                "keyProvince2": {
+                    "name": "New Granada",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {},
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "Must Own a Key Province to collect a ducat",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mutapa",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Ethiopia",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Kilwa",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Yemen",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T11-3",
+        "name": "Gold",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            22,
+            16,
+            10
+        ],
+        "expandedTradeIncome": [
+            22,
+            16,
+            10
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "S. America",
+            "additionalRequirements": "Must Own a Key Province to collect a ducat",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Cuzco",
+                    "tradeValue": 3
+                },
+                "keyProvince2": {
+                    "name": "Charcas",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Minas Gerais",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "La Plata",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "Must Own a Key Province to collect a ducat",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mexico",
+                    "tradeValue": 3
+                },
+                "keyProvince2": {
+                    "name": "New Granada",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {},
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "Must Own a Key Province to collect a ducat",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mutapa",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Ethiopia",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Kilwa",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Yemen",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T12-1",
+        "name": "Grain",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mississippi",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Great Plains",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Virginia",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Great Lakes",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Alexandria",
+            "additionalRequirements": "Adriatic Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Iskandariyya",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Dumyat",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Qahirah",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Al-Quds",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Novgorod",
+            "additionalRequirements": "Baltic Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Novgorod",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Moskva",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Tver",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Suzdal",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T12-2",
+        "name": "Grain",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Wien",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Wien",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Munchen",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Pozsony",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Pest",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Krakow",
+            "additionalRequirements": "Baltic Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Krakow",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Kulm",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Silesia",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Sieradz",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Kazan",
+            "additionalRequirements": "Astrakhan",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Kazan",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Murom",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Volga",
+                    "tradeValue": 3
+                },
+                "keyProvince4": {}
+            }
+        }
+    },
+    {
+        "id": "T12-3",
+        "name": "Grain",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Ivory Coast",
+            "additionalRequirements": "Maghreb",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Songhai",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Katsina",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {},
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Kiev",
+            "additionalRequirements": "Novgorod",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Kijevas",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Smolenskas",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Vilnius",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Odoyev",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Baltic Sea",
+            "additionalRequirements": "Lubeck",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Danzig",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Stockholm",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Riga",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Reval",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T13-1",
+        "name": "Iron",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "expandedTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Wien",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Wien",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Karnten",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Lienz",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Hunyad",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Champagne",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Champagne",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Lorraine",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Namur",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Bern",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Novgorod",
+            "additionalRequirements": "Kiev",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Novgorod",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Moskva",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Vladimir",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Polockas",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T13-2",
+        "name": "Iron",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "expandedTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Bordeaux",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Bordeaux",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Bourbon",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Navarra",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Nantes",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Baltic Sea",
+            "additionalRequirements": "Lubeck",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Danzig",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Stockholm",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Bergslagen",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Reval",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Astrakhan",
+            "additionalRequirements": "Kiev",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Astrakhan",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Tambov",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Nogai",
+                    "tradeValue": 3
+                },
+                "keyProvince4": {
+                    "name": "Samarkand",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T14-1",
+        "name": "Ivory",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "expandedTradeIncome": [
+            19,
+            14,
+            8
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Ivory Coast",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mali",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Benin",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Kongo",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "East Indies",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Siam",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Burma",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {},
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mutapa",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Kilwa",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Ajuuraan",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {}
+            }
+        }
+    },
+    {
+        "id": "T15-1",
+        "name": "Livestock",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Sevilla",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Sevilla",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Salamanca",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Galicia",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Badajoz",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Alexandria",
+            "additionalRequirements": "Adriatic Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Iskandariyya",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Qahirah",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Bangazi",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Upper Egypt",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Kiev",
+            "additionalRequirements": "Krakow",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Kijevas",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Vilnius",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Voluine",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Podole",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T15-2",
+        "name": "Livestock",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "North Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lothian",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Perth",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Pale",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Laighin",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Maghreb",
+            "additionalRequirements": "Sevilla",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Timbuktu",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Songhai",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Katsina",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Tripoli",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Aleppo",
+            "additionalRequirements": "Alexandria",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Halab",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Karaman",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Dimashq",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Tarabulus",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T15-3",
+        "name": "Livestock",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Lubeck",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lubeck",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Slesvig",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Holstein",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Bremen",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Bordeaux",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Bordeaux",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Poitou",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Limousin",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Bourbon",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Astrakhan",
+            "additionalRequirements": "Kazan",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Astrakhan",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Saratov",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Nogai",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Samarkand",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T16-1",
+        "name": "Naval Supplies",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Lubeck",
+            "additionalRequirements": "North Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lubeck",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Lund",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Akershus",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Kobenhavn",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Virginia",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "New England",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Canada",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Hudson Bay",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Baltic Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Danzig",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Stockholm",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Riga",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Konigsberg",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T17-1",
+        "name": "Paper",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "expandedTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Genoa",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Genova",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Roma",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Lyon",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Avignon",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Saxony",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Frankfurt",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Nurnberg",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Praha",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Mainz",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Champagne",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Champagne",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Paris",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Bourgogne",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Lorraine",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T18-1",
+        "name": "Salt",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "expandedTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Adriatic Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Venezia",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Ferrara",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Ragusa",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Bosnia",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Wien",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Wien",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Salzburg",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Regensburg",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Pest",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Black Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Constantinople",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Caffa",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Azov",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Izmir",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T18-2",
+        "name": "Salt",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "expandedTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Bordeaux",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Bordeaux",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Nantes",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Saintonge",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Rennes",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "China & Japan",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Hangzhou",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Xian",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {},
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Krakow",
+            "additionalRequirements": "Lubeck",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Krakow",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Lwow",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Silesia",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Poznan",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T19-1",
+        "name": "Silk",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "expandedTradeIncome": [
+            19,
+            14,
+            8
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Isfahan",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Delhi",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Doab",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Bengal",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "China & Japan",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Hangzhou",
+                    "tradeValue": 3
+                },
+                "keyProvince2": {
+                    "name": "Kyushu",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Chengdu",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Aleppo",
+            "additionalRequirements": "Alexandria",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Halab",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Dimashq",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Tabriz",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Baghdad",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T19-2",
+        "name": "Silk",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "expandedTradeIncome": [
+            19,
+            14,
+            8
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Isfahan",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Delhi",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Doab",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Bengal",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "China & Japan",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Hangzhou",
+                    "tradeValue": 3
+                },
+                "keyProvince2": {
+                    "name": "Kyushu",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Chengdu",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Aleppo",
+            "additionalRequirements": "Alexandria",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Halab",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Dimashq",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Tabriz",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Baghdad",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T20-1",
+        "name": "Slaves",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "expandedTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Ivory Coast",
+            "additionalRequirements": "Maghreb",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Kongo",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Mali",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Angola",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Benin",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Kilwa",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Yemen",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Ethiopia",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Madagascar",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Black Sea",
+            "additionalRequirements": "Alexandria",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Constantinople",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Caffa",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Azov",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Circassia",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T21-1",
+        "name": "Spices",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "expandedTradeIncome": [
+            19,
+            14,
+            8
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "East Indies",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Malacca",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Moluccas",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Philippines",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Brunei",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Coromandel",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Bengal",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Goa",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Fars",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Alexandria",
+            "additionalRequirements": "Adriatic Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Iskandariyya",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Qahirah",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Yemen",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Hejaz",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T21-2",
+        "name": "Spices",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "expandedTradeIncome": [
+            19,
+            14,
+            8
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "East Indies",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Malacca",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Moluccas",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Philippines",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Brunei",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Coromandel",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Bengal",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Goa",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Fars",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "China & Japan",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Canton",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Chengdu",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {},
+                "keyProvince4": {}
+            }
+        }
+    },
+    {
+        "id": "T22-1",
+        "name": "Sugar",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "expandedTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Maghreb",
+            "additionalRequirements": "Sevilla",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Marrakech",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Sus",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Tunis",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Madeira",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Mexico",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Antilles",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Florida",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "S. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Bahia",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Pernambuco",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Amazonas",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Guyana",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T23-1",
+        "name": "Tea",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "expandedTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "China & Japan",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Hangzhou",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Chengdu",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Kyushu",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Canton",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "East Indies",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Malacca",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Siam",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Burma",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Astrakhan",
+            "additionalRequirements": "Black Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Astrakhan",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Samarkand",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {},
+                "keyProvince4": {}
+            }
+        }
+    },
+    {
+        "id": "T24-1",
+        "name": "Tobacco",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            14,
+            10,
+            6
+        ],
+        "expandedTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "N. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Virginia",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Great Lakes",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Mississippi",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Antilles",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "S. America",
+            "additionalRequirements": "A town/vassal/DNPR must exist on a Key Province",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Bahia",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Pernambuco",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Amazonas",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "New Granada",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {}
+    },
+    {
+        "id": "T25-1",
+        "name": "Wine",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "expandedTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Bordeaux",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Bordeaux",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Toulouse",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Nantes",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Armagnac",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Saxony",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Frankfurt",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Nurnberg",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Praha",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Pfalz",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Genoa",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Genova",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Firenze",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Provence",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Piemonte",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T25-2",
+        "name": "Wine",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "expandedTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Champagne",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Champagne",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Bourgogne",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Berry",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Orleans",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Sevilla",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Sevilla",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Porto",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Beira",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Valencia",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Adriatic Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Ragusa",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Bari",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Morea",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Naxos",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T26-1",
+        "name": "Wool",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "expandedTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "North Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lancashire",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Northumberland",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Shrewsbury",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Ulaidh",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Sevilla",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Sevilla",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Madrid",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Cordoba",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Burgos",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Black Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Constantinople",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Basarabia",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Edirnas",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Selanik",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T26-2",
+        "name": "Wool",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "expandedTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Adriatic Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Ragusa",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Zara",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Zagreb",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Beograd",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Kiev",
+            "additionalRequirements": "Krakow",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Kijevas",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Naugardukas",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Minskas",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Smolenskas",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Aleppo",
+            "additionalRequirements": "Black Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Halab",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Mush",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Urfa",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Mosul",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T16-2",
+        "name": "Naval Supplies",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Lubeck",
+            "additionalRequirements": "North Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lubeck",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Lund",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Akershus",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Borgarsysla",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Baltic Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Riga",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Goldingen",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Nyland",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Ostergotaland",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Novgorod",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Novgorod",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Pskov",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Tver",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Belozero",
+                    "tradeValue": 2
+                }
+            }
+        }
+    },
+    {
+        "id": "T27-1",
+        "name": "Gems",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            16,
+            12,
+            7
+        ],
+        "expandedTradeIncome": [
+            19,
+            14,
+            8
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Baltic Sea",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Danzig",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Konigsberg",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {},
+                "keyProvince4": {}
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Indian Ocean",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Herat",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Hormuz",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Deccan",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Coromandel",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "China & Japan",
+            "additionalRequirements": "East Indies",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Beijing",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Xian",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Philippines",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Siam",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T12-3-59102",
+        "name": "Grain",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            7,
+            5,
+            3
+        ],
+        "expandedTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Maghreb",
+            "additionalRequirements": "Sevilla",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Tunis",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Bizerte",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Tlemcen",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Gharb",
+                    "tradeValue": 1
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Kiev",
+            "additionalRequirements": "Novgorod",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Kijevas",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Vilnius",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Poltava",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Ryazan",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "North Sea",
+            "additionalRequirements": "English Channel",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Lothian",
+                    "tradeValue": 1
+                },
+                "keyProvince2": {
+                    "name": "Ulaidh",
+                    "tradeValue": 1
+                },
+                "keyProvince3": {
+                    "name": "Laighin",
+                    "tradeValue": 1
+                },
+                "keyProvince4": {
+                    "name": "Vestjylland",
+                    "tradeValue": 1
+                }
+            }
+        }
+    },
+    {
+        "id": "T26-3",
+        "name": "Wool",
+        "tradeValueThresholds": [
+            6,
+            3,
+            1
+        ],
+        "regularTradeIncome": [
+            9,
+            7,
+            4
+        ],
+        "expandedTradeIncome": [
+            11,
+            8,
+            5
+        ],
+        "tradeNode1": {
+            "tradeNodeName": "Astrakhan",
+            "additionalRequirements": "",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Astrakhan",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Sarai",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Kazakhstan",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Samarkand",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode2": {
+            "tradeNodeName": "Wien",
+            "additionalRequirements": "Adriatic Sea",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Wien",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "Augsburg",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Pest",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Szepes",
+                    "tradeValue": 2
+                }
+            }
+        },
+        "tradeNode3": {
+            "tradeNodeName": "Saxony",
+            "additionalRequirements": "Champagne",
+            "keyProvinces": {
+                "keyProvince1": {
+                    "name": "Frankfurt",
+                    "tradeValue": 2
+                },
+                "keyProvince2": {
+                    "name": "St. Gallen",
+                    "tradeValue": 2
+                },
+                "keyProvince3": {
+                    "name": "Munster",
+                    "tradeValue": 2
+                },
+                "keyProvince4": {
+                    "name": "Mainz",
+                    "tradeValue": 2
+                }
+            }
+        }
+    }
+]
