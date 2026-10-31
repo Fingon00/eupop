@@ -3,6 +3,7 @@ package ootie.discord.commands.search;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
 import ootie.discord.commands.ParentCommand;
 import ootie.discord.commands.Subcommand;
 import ootie.helpers.Constants;
@@ -17,6 +18,7 @@ public class SearchCommand implements ParentCommand {
             new SearchActionCards(),
             new SearchIdeas(),
             new SearchSetupCards(),
+            new SearchBotCards(),
             new SearchTradeCards(),
             new SearchPowerStruggles());
 

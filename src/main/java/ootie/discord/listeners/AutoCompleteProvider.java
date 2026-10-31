@@ -7,6 +7,10 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import org.apache.commons.lang3.function.Consumers;
+import org.jetbrains.annotations.NotNull;
+
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.events.interaction.command.CommandAutoCompleteInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.Command;
@@ -19,8 +23,6 @@ import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.model.EmbeddableModel;
 import ootie.model.Source.ComponentSource;
-import org.apache.commons.lang3.function.Consumers;
-import org.jetbrains.annotations.NotNull;
 
 @UtilityClass
 class AutoCompleteProvider {
@@ -186,6 +188,8 @@ class AutoCompleteProvider {
                 options = searchModels(event, Mapper.getIdeas().values(), source);
             case Constants.SEARCH_SETUP_CARDS ->
                 options = searchModels(event, Mapper.getSetupCards().values(), source);
+            case Constants.SEARCH_BOT_CARDS ->
+                options = searchModels(event, Mapper.getBotCards().values(), source);
             case Constants.SEARCH_TRADE_CARDS ->
                 options = searchModels(event, Mapper.getTradeCards().values(), source);
             case Constants.SEARCH_POWER_STRUGGLES ->

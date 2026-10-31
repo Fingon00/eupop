@@ -1,0 +1,194 @@
+[
+    {
+        "id": "15",
+        "action1": "Convert",
+        "action2": "Papal Curia",
+        "warAction": "Military",
+        "botPower": 2,
+        "actionCard": "administrative"
+    },
+    {
+        "id": "07",
+        "action1": "Diplomacy",
+        "action2": "",
+        "warAction": "",
+        "botPower": 2,
+        "actionCard": "diplomatic"
+    },
+    {
+        "id": "23",
+        "action1": "Unrest",
+        "action2": "Focus (War)",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": "military"
+    },
+    {
+        "id": "12",
+        "action1": "Colonize",
+        "action2": "",
+        "warAction": "Military",
+        "botPower": 3,
+        "actionCard": ""
+    },
+    {
+        "id": "16",
+        "action1": "Convert",
+        "action2": "Focus (Eco)",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": ""
+    },
+    {
+        "id": "17",
+        "action1": "Convert",
+        "action2": "Focus (Exp)",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": ""
+    },
+    {
+        "id": "18",
+        "action1": "Convert",
+        "action2": "Focus (Pol)",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": ""
+    },
+    {
+        "id": "19",
+        "action1": "Convert",
+        "action2": "Focus (War)",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": ""
+    },
+    {
+        "id": "06",
+        "action1": "Diplomacy",
+        "action2": "",
+        "warAction": "Military",
+        "botPower": 3,
+        "actionCard": ""
+    },
+    {
+        "id": "08",
+        "action1": "Diplomacy",
+        "action2": "",
+        "warAction": "",
+        "botPower": 2,
+        "actionCard": "diplomatic"
+    },
+    {
+        "id": "01",
+        "action1": "Event",
+        "action2": "",
+        "warAction": "",
+        "botPower": 0,
+        "actionCard": ""
+    },
+    {
+        "id": "11",
+        "action1": "Explore",
+        "action2": "",
+        "warAction": "Naval",
+        "botPower": 2,
+        "actionCard": ""
+    },
+    {
+        "id": "24",
+        "action1": "Idea",
+        "action2": "",
+        "warAction": "",
+        "botPower": 3,
+        "actionCard": ""
+    },
+    {
+        "id": "02",
+        "action1": "Military",
+        "action2": "",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": "military"
+    },
+    {
+        "id": "03",
+        "action1": "Military",
+        "action2": "",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": "military"
+    },
+    {
+        "id": "04",
+        "action1": "Military",
+        "action2": "",
+        "warAction": "",
+        "botPower": 2,
+        "actionCard": ""
+    },
+    {
+        "id": "05",
+        "action1": "Diplomacy",
+        "action2": "",
+        "warAction": "Military",
+        "botPower": 3,
+        "actionCard": ""
+    },
+    {
+        "id": "09",
+        "action1": "Naval",
+        "action2": "",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": "military"
+    },
+    {
+        "id": "10",
+        "action1": "Naval",
+        "action2": "",
+        "warAction": "",
+        "botPower": 2,
+        "actionCard": ""
+    },
+    {
+        "id": "14",
+        "action1": "Papal Curia",
+        "action2": "Spy",
+        "warAction": "Spy",
+        "botPower": 2,
+        "actionCard": "administrative"
+    },
+    {
+        "id": "20",
+        "action1": "Unrest",
+        "action2": "Focus (Eco)",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": ""
+    },
+    {
+        "id": "21",
+        "action1": "Unrest",
+        "action2": "Focus (Exp)",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": "administrative"
+    },
+    {
+        "id": "22",
+        "action1": "Unrest",
+        "action2": "Focus (Pol)",
+        "warAction": "",
+        "botPower": 1,
+        "actionCard": "diplomatic"
+    },
+    {
+        "id": "13",
+        "action1": "Unrest",
+        "action2": "Spy",
+        "warAction": "Spy",
+        "botPower": 2,
+        "actionCard": ""
+    }
+]

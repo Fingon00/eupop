@@ -64,6 +64,7 @@ public final class Constants {
     public static final String SEARCH_ACTION_CARDS = "actioncards";
     public static final String SEARCH_IDEAS = "ideas";
     public static final String SEARCH_SETUP_CARDS = "setupcards";
+    public static final String SEARCH_BOT_CARDS = "botcards";
     public static final String SEARCH_TRADE_CARDS = "tradecards";
     public static final String SEARCH_POWER_STRUGGLES = "powerstruggles";
     public static final String CHARACTER = "character";

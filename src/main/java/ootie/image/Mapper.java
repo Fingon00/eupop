@@ -7,12 +7,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import lombok.experimental.UtilityClass;
 import ootie.ResourceHelper;
 import ootie.json.JsonMapperManager;
 import ootie.logging.BotLogger;
 import ootie.model.ActionCardModel;
 import ootie.model.AreaModel;
+import ootie.model.BotCardModel;
 import ootie.model.CharacterModel;
 import ootie.model.EventModel;
 import ootie.model.IdeaModel;
@@ -40,6 +42,8 @@ public class Mapper {
     private static final Map<String, IdeaModel> ideas = new HashMap<>();
     private static final Map<String, SetupCardModel> setupCards = new HashMap<>();
     private static final Map<String, TradeCardModel> tradeCards = new HashMap<>();
+    private static final Map<String, BotCardModel> botCards = new HashMap<>();
+
 
     private static final JsonMapper jsonMapper =
             JsonMapperManager.basic().rebuild().build();
@@ -64,6 +68,7 @@ public class Mapper {
         importJsonObjectsFromFolder("setupcards", setupCards, SetupCardModel.class);
         importJsonObjectsFromFolder("tradecards", tradeCards, TradeCardModel.class);
         importJsonObjectsFromFolder("powerstruggles", powerStruggles, PowerStruggleModel.class);
+        importJsonObjectsFromFolder("botcards", botCards, BotCardModel.class);
     }
 
     public static boolean isValidEvent(String eventID) {
@@ -72,6 +77,10 @@ public class Mapper {
 
     public static Map<String, EventModel> getEvents() {
         return new HashMap<>(events);
+    }
+
+    public static Map<String, BotCardModel> getBotCards() {
+        return new HashMap<>(botCards);
     }
 
     public static Map<String, ProvinceModel> getProvinces() {
