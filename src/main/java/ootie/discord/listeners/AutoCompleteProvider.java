@@ -178,6 +178,18 @@ class AutoCompleteProvider {
                 options = searchModels(event, Mapper.getEvents().values(), source);
             case Constants.SEARCH_CHARACTERS ->
                 options = searchModels(event, Mapper.getCharacters().values(), source);
+            case Constants.SEARCH_MILESTONES ->
+                options = searchModels(event, Mapper.getMilestones().values(), source);
+            case Constants.SEARCH_ACTION_CARDS ->
+                options = searchModels(event, Mapper.getActionCards().values(), source);
+            case Constants.SEARCH_IDEAS ->
+                options = searchModels(event, Mapper.getIdeas().values(), source);
+            case Constants.SEARCH_SETUP_CARDS ->
+                options = searchModels(event, Mapper.getSetupCards().values(), source);
+            case Constants.SEARCH_TRADE_CARDS ->
+                options = searchModels(event, Mapper.getTradeCards().values(), source);
+            case Constants.SEARCH_POWER_STRUGGLES ->
+                options = searchModels(event, Mapper.getPowerStruggles().values(), source);
             case Constants.SEARCH_LOCATIONS -> {
                 List<EmbeddableModel> locations =
                         new ArrayList<>(Mapper.getProvinces().values());
@@ -196,7 +208,9 @@ class AutoCompleteProvider {
         String enteredValue = event.getFocusedOption().getValue().toLowerCase();
         return models.stream()
                 .filter(model -> model.getSource() != null)
-                .filter(model -> model.search(enteredValue, source))
+                .filter(model -> model.searchSource(source))
+                .filter(model -> model.search(enteredValue)
+                        || (model.getID() != null && model.getID().toLowerCase().contains(enteredValue)))
                 .limit(25)
                 .map(model -> new Command.Choice(model.getAutoCompleteName(), model.getAlias()))
                 .toList();

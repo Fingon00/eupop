@@ -1,17 +1,27 @@
 package ootie.discord.commands.search;
 
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import ootie.discord.commands.ParentCommand;
 import ootie.discord.commands.Subcommand;
 import ootie.helpers.Constants;
 
 public class SearchCommand implements ParentCommand {
 
-    private final Map<String, Subcommand> subcommands = Stream.of(
-                    new SearchEventsSubcommand(), new SearchCharacters(), new SearchLocations())
-            .collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
+    private final List<Subcommand> searchSubcommandList = List.of(
+            new SearchEventsSubcommand(),
+            new SearchCharacters(),
+            new SearchLocations(),
+            new SearchMilestones(),
+            new SearchActionCards(),
+            new SearchIdeas(),
+            new SearchSetupCards(),
+            new SearchTradeCards(),
+            new SearchPowerStruggles());
+
+    private final Map<String, Subcommand> subcommands =
+            searchSubcommandList.stream().collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
 
     @Override
     public String getName() {
@@ -28,8 +38,8 @@ public class SearchCommand implements ParentCommand {
         return subcommands;
     }
 
-    private final Map<String, Subcommand> searchSubcommands = Stream.of(new SearchEventsSubcommand())
-            .collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
+    private final Map<String, Subcommand> searchSubcommands =
+            searchSubcommandList.stream().collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
 
     @Override
     public Map<String, Subcommand> getSearchSubcommands() {

@@ -60,6 +60,12 @@ public final class Constants {
     // no /search generic_cards yet
     public static final String SEARCH_LEADERS = "leaders";
     public static final String SEARCH_CHARACTERS = "characters";
+    public static final String SEARCH_MILESTONES = "milestones";
+    public static final String SEARCH_ACTION_CARDS = "actioncards";
+    public static final String SEARCH_IDEAS = "ideas";
+    public static final String SEARCH_SETUP_CARDS = "setupcards";
+    public static final String SEARCH_TRADE_CARDS = "tradecards";
+    public static final String SEARCH_POWER_STRUGGLES = "powerstruggles";
     public static final String CHARACTER = "character";
     public static final String EVENTS = "events";
     public static final String IDEAS = "ideas";

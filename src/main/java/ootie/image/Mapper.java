@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import lombok.experimental.UtilityClass;
 import ootie.ResourceHelper;
 import ootie.json.JsonMapperManager;
@@ -17,6 +16,7 @@ import ootie.model.AreaModel;
 import ootie.model.CharacterModel;
 import ootie.model.EventModel;
 import ootie.model.IdeaModel;
+import ootie.model.MilestoneModel;
 import ootie.model.ModelInterface;
 import ootie.model.PowerStruggleModel;
 import ootie.model.ProvinceModel;
@@ -32,6 +32,7 @@ public class Mapper {
     private static final Map<String, EventModel> events = new HashMap<>();
     private static final Map<String, SourceModel> sources = new HashMap<>();
     private static final Map<String, ProvinceModel> provinces = new HashMap<>();
+    private static final Map<String, MilestoneModel> milestones = new HashMap<>();
     private static final Map<String, AreaModel> areas = new HashMap<>();
     private static final Map<String, PowerStruggleModel> powerStruggles = new HashMap<>();
     private static final Map<String, CharacterModel> characters = new HashMap<>();
@@ -55,6 +56,7 @@ public class Mapper {
         importJsonObjectsFromFolder("events", events, EventModel.class);
         importJsonObjectsFromFolder("sources", sources, SourceModel.class);
         importJsonObjectsFromFolder("provinces", provinces, ProvinceModel.class);
+        importJsonObjectsFromFolder("milestones", milestones, MilestoneModel.class);
         importJsonObjectsFromFolder("areas", areas, AreaModel.class);
         importJsonObjectsFromFolder("characters", characters, CharacterModel.class);
         importJsonObjectsFromFolder("actioncards", actionCards, ActionCardModel.class);
@@ -74,6 +76,10 @@ public class Mapper {
 
     public static Map<String, ProvinceModel> getProvinces() {
         return new HashMap<>(provinces);
+    }
+
+    public static Map<String, MilestoneModel> getMilestones() {
+        return new HashMap<>(milestones);
     }
 
     public static Map<String, SetupCardModel> getSetupCards() {

@@ -6,7 +6,6 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.game.Game;
@@ -177,12 +176,12 @@ public class GameImageHelper {
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
                     if (player.getUnrestProvinces().contains(prov)) {
-                        px -= unrestImage.getWidth()/2;
-                        py -= unrestImage.getHeight()/2-40;
+                        px -= unrestImage.getWidth() / 2;
+                        py -= unrestImage.getHeight() / 2 - 40;
                         g.drawImage(unrestImage, px, py, null);
                     } else {
-                        px -= townImage.getWidth()/2;
-                        py -= townImage.getHeight()/2-40;
+                        px -= townImage.getWidth() / 2;
+                        py -= townImage.getHeight() / 2 - 40;
                         g.drawImage(townImage, px, py, null);
                     }
                 }
@@ -201,12 +200,12 @@ public class GameImageHelper {
                     int px = (int) (nx * w);
                     int py = (int) ((1 - ny) * h);
                     if (player.getUnrestProvinces().contains(prov)) {
-                        px -= unrestImage.getWidth()/2;
-                        py -= unrestImage.getHeight()/2 -40;
+                        px -= unrestImage.getWidth() / 2;
+                        py -= unrestImage.getHeight() / 2 - 40;
                         g.drawImage(unrestImage, px, py, null);
                     } else {
-                        px -= townImage.getWidth()/2;
-                        py -= townImage.getHeight()/2-40;
+                        px -= townImage.getWidth() / 2;
+                        py -= townImage.getHeight() / 2 - 40;
                         g.drawImage(townImage, px, py, null);
                     }
                 }

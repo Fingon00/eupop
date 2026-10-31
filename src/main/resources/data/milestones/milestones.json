@@ -1,0 +1,674 @@
+[
+    {
+        "id": "Acquire Subjects",
+        "age": 1,
+        "type": "expansion",
+        "text": "Have 4+ Vassals on the board (not counting any starting Vassals).",
+        "source": "base"
+    },
+    {
+        "id": "Build a Trade Fleet",
+        "age": 1,
+        "type": "expansion",
+        "text": "Build 4+ Light Ships during a single Turn.",
+        "source": "base"
+    },
+    {
+        "id": "Build to Force Limit",
+        "age": 1,
+        "type": "politics",
+        "text": "Have 9+ Manpower, with all Manpower Deployed.",
+        "source": "base"
+    },
+    {
+        "id": "Claims & Alliances",
+        "age": 1,
+        "type": "warfare",
+        "text": "Have a Core Token or Alliance in 2+ of these: ARAGON, TUNISIA, NAPLES, LOMBARDY, FLANDERS & WALLONIA, LOWER SAXONY, BOHEMIA, or PRUSSIA, with 3+ Cubes in total among those two Areas.",
+        "source": "base"
+    },
+    {
+        "id": "Conquer Enemy Lands",
+        "age": 1,
+        "type": "politics",
+        "text": "Successfully Siege 2+ Provinces on the same Turn.",
+        "source": "base"
+    },
+    {
+        "id": "Crusader King",
+        "age": 1,
+        "type": "politics",
+        "text": "Have your Ruler as a General in a Battle versus a Realm of another faith than your State Religion.",
+        "source": "base"
+    },
+    {
+        "id": "Discover New Continents",
+        "age": 1,
+        "type": "expansion",
+        "text": "Place a Core Token by performing a successful Explore Action.",
+        "source": "base"
+    },
+    {
+        "id": "Dynastic Ties",
+        "age": 1,
+        "type": "warfare",
+        "text": "Have 2+ Royal Marriages in play, and 4+ Cubes in at least 2 of those Realms. At least one Royal Marriage must be with a Realm where you had no Royal Marriage at the start of the game.",
+        "source": "base"
+    },
+    {
+        "id": "Expand Nation",
+        "age": 1,
+        "type": "expansion",
+        "text": "Own Provinces in 2+ different Areas that do not contain any of your Core Provinces.",
+        "source": "base"
+    },
+    {
+        "id": "Focus Power",
+        "age": 1,
+        "type": "economics",
+        "text": "Have 8+ Cubes of one type.",
+        "source": "base"
+    },
+    {
+        "id": "Full Cabinet",
+        "age": 1,
+        "type": "economics",
+        "text": "Have a Ruler, a General/Admiral, and one of each type of Advisor employed at the same time. (Must be scored on your own Turn.)",
+        "source": "base"
+    },
+    {
+        "id": "High Income",
+        "age": 1,
+        "type": "economics",
+        "text": "Have a Tax Income surplus of 15+ ducats, after paying Expenses.",
+        "source": "base"
+    },
+    {
+        "id": "Italian Friends",
+        "age": 1,
+        "type": "warfare",
+        "text": "Have 3+ Cubes in each of 3 of the following Areas: LOMBARDY, VENETIA, CENTRAL ITALY, or DALMATIA.",
+        "source": "base"
+    },
+    {
+        "id": "Prosperity",
+        "age": 1,
+        "type": "expansion",
+        "text": "Exhaust all the uses on a Cubes Display Card that you have in play by performing Actions listed on the card.",
+        "source": "base"
+    },
+    {
+        "id": "Reliable Government",
+        "age": 1,
+        "type": "economics",
+        "text": "Have +2 Stability or higher.",
+        "source": "base"
+    },
+    {
+        "id": "Victorious in Battle",
+        "age": 1,
+        "type": "politics",
+        "text": "Win a Land Battle against an NPR or Rebel Army of 3+ Units.",
+        "source": "base"
+    },
+    {
+        "id": "Trade Expansion",
+        "age": 1,
+        "type": "economics",
+        "text": "Take a Trade Action, while eligible to collect Trade Income from 5+ Trade Nodes.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Trade Partnership",
+        "age": 1,
+        "type": "economics",
+        "text": "Take a Trade Action in which 1+ other PRs also collects ducats, and where the total Trade Income collected amounts to 15+ ducats.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Coastal Expansion",
+        "age": 1,
+        "type": "expansion",
+        "text": "Own 3+ Ports that were not part of your Realm at the start of the game.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Religious Assimilation",
+        "age": 1,
+        "type": "expansion",
+        "text": "Own Provinces in 2+ Areas that had their starting Religion changed to your State Religion.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Divine Favor",
+        "age": 1,
+        "type": "warfare",
+        "text": "Be the Papal Controller, with 3+ Cardinals or, as a Muslim Realm, have an Alliance or Royal Marriage with 4+ other Muslim Realms.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Stake your Claim",
+        "age": 1,
+        "type": "warfare",
+        "text": "Place 3+ Claims in a single Fabricate Claims Action.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Gunpowder Logistics",
+        "age": 1,
+        "type": "politics",
+        "text": "Have 3+ Artillery Units in your Armies.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Swords for Hire",
+        "age": 1,
+        "type": "politics",
+        "text": "Have 4+ Mercenary Units Deployed in your Armies, with 1+ being Cavalry or Artillery.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Annex a Realm",
+        "age": 2,
+        "type": "warfare",
+        "text": "Own all original core Provinces of one of these realms: >Portugal, >Naples, >Hungary, >Tunis, Denmark, or >Sweden. (If your PR is one of these realms, do not count your own Core Provinces.)",
+        "source": "base"
+    },
+    {
+        "id": "Circumnavigation",
+        "age": 2,
+        "type": "expansion",
+        "text": "Move a ship from the AMERICA map to the FAR EAST map, or vice versa, using one of the G, H, or I Sea Zone connections on the Distant Continents board.",
+        "source": "base"
+    },
+    {
+        "id": "Cleanse Heresy",
+        "age": 2,
+        "type": "politics",
+        "text": "Enforce Force Conversion Peace Terms against any Realm.",
+        "source": "base"
+    },
+    {
+        "id": "Colonial Tension",
+        "age": 2,
+        "type": "warfare",
+        "text": "Have a Core Token on a Distant Area with an Opponent's Port.",
+        "source": "base"
+    },
+    {
+        "id": "Create a Grand Fleet",
+        "age": 2,
+        "type": "expansion",
+        "text": "Have 3+ Heavy Ships or 10+ Galleys.",
+        "source": "base"
+    },
+    {
+        "id": "Dominate the Empire",
+        "age": 2,
+        "type": "politics",
+        "text": "Successfully Siege an Opponent's Province in the HRE worth 2+ Tax Value on the same Turn.",
+        "source": "base"
+    },
+    {
+        "id": "Epic Victory",
+        "age": 2,
+        "type": "politics",
+        "text": "Win a Battle against an Opponent who had 5+ Units fighting on their side.",
+        "source": "base"
+    },
+    {
+        "id": "Expand Overseas",
+        "age": 2,
+        "type": "expansion",
+        "text": "Own Provinces on 2+ of the Distant Continents. (If your PR starts with any Distant Provinces, these do not count.)",
+        "source": "base"
+    },
+    {
+        "id": "Fill the Coffers",
+        "age": 2,
+        "type": "economics",
+        "text": "Have 35+ ducats and no loans in your Treasury.",
+        "source": "base"
+    },
+    {
+        "id": "Global Trade Network",
+        "age": 2,
+        "type": "economics",
+        "text": "Have Merchants on 2+ Distant Continents.",
+        "source": "base"
+    },
+    {
+        "id": "Humiliate a Rival",
+        "age": 2,
+        "type": "politics",
+        "text": "Enforce Humiliation Peace Terms against an Opponent.",
+        "source": "base"
+    },
+    {
+        "id": "Innovative Administration",
+        "age": 2,
+        "type": "economics",
+        "text": "Have Researched 4+ Ideas.",
+        "source": "base"
+    },
+    {
+        "id": "Lucrative Trade",
+        "age": 2,
+        "type": "economics",
+        "text": "Perform a Trade Action earning you 15+ ducats (including bonuses from Ideas).",
+        "source": "base"
+    },
+    {
+        "id": "Mare Nostrum",
+        "age": 2,
+        "type": "expansion",
+        "text": "Own 2+ of Gibraltar, Malta, Genova, Pisa, Ragusa, Rhodes, Cyprus.",
+        "source": "base"
+    },
+    {
+        "id": "Religious Unity",
+        "age": 2,
+        "type": "warfare",
+        "text": "All Main Map Areas of your Realm must follow your State Religion at the end of Age II. (If multiple PRs achieve this, highest number of Main Map Areas breaks ties.)",
+        "source": "base"
+    },
+    {
+        "id": "Suppress Revolts",
+        "age": 2,
+        "type": "warfare",
+        "text": "During Phase 3, Step I, have no Wars. (If multiple players achieve this simultaneously, highest number of Provinces breaks ties.)",
+        "source": "base"
+    },
+    {
+        "id": "Resourceful",
+        "age": 2,
+        "type": "economics",
+        "text": "Have 4+ Action Cards in hand and 2+ Display Cards in play.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Trade Monopoly",
+        "age": 2,
+        "type": "economics",
+        "text": "Perform a Trade Action in which you Own 2+ Key Provinces in the selected Trade Node, none of them being your starting Provinces.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Cultural Assimilation",
+        "age": 2,
+        "type": "expansion",
+        "text": "Gain a Core Token in an Area that does not have any of your starting Provinces, by using an Action card.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Continental Powerhouse",
+        "age": 2,
+        "type": "expansion",
+        "text": "Control 3+ Provinces in an Area not adjacent to any Sea Zone, with none being among your starting Provinces.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Diplomatic Reputation",
+        "age": 2,
+        "type": "warfare",
+        "text": "Have the most Alliances in 4+ Areas, while having a total of 8+ Alliances between them.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Tolerant Policies",
+        "age": 2,
+        "type": "warfare",
+        "text": "Have Researched “Tolerance” and have 2+ Alliances with Realms that have another State Religion than yours.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "War Reparations",
+        "age": 2,
+        "type": "politics",
+        "text": "Return Provinces worth 5+ Tax Value in exchange for ducats while Enforcing “Keep Current Board State” Peace Terms.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "On a Distant Shore",
+        "age": 2,
+        "type": "politics",
+        "text": "Win a Naval Battle on a Distant Continent against a PR or NPR.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "A Bright Generation",
+        "age": 3,
+        "type": "economics",
+        "text": "During Phase 4, Step D, earn 5+ Cubes of each type.",
+        "source": "base"
+    },
+    {
+        "id": "Gold Fever",
+        "age": 3,
+        "type": "economics",
+        "text": "Own 3+ Gold Provinces.",
+        "source": "base"
+    },
+    {
+        "id": "Merchant Fleet",
+        "age": 3,
+        "type": "economics",
+        "text": "Occupy 4+ Trade Protection slots adjacent to each of two different Trade Nodes (count no slot twice).",
+        "source": "base"
+    },
+    {
+        "id": "Wise Council",
+        "age": 3,
+        "type": "economics",
+        "text": "Have at least two Advisors with +3 Skill in your employment at the same time. (Must be scored on your own Turn.)",
+        "source": "base"
+    },
+    {
+        "id": "Colonial Empire",
+        "age": 3,
+        "type": "expansion",
+        "text": "Own 5+ Provinces on a single Distant Continent.",
+        "source": "base"
+    },
+    {
+        "id": "Consolidate Borders",
+        "age": 3,
+        "type": "expansion",
+        "text": "Have 4+ Stability on the board.",
+        "source": "base"
+    },
+    {
+        "id": "Trade Centers & Estuaries",
+        "age": 3,
+        "type": "expansion",
+        "text": "Own 3+ of these Distant Provinces: Timbuktu, Benin, Kongo, Kilwa, Basra, Hormuz, Coromandel, Bengal, Samarkand, Malacca, Canton, Hangzhou, and Kyushu.",
+        "source": "base"
+    },
+    {
+        "id": "Where the Sun Never Sets",
+        "age": 3,
+        "type": "expansion",
+        "text": "Own Provinces on 4+ Distant Continents.",
+        "source": "base"
+    },
+    {
+        "id": "Lead the Coalition Forces",
+        "age": 3,
+        "type": "warfare",
+        "text": "Have 8+ Allied Units deployed in your Armies.",
+        "source": "base"
+    },
+    {
+        "id": "Enemy of my Enemy",
+        "age": 3,
+        "type": "warfare",
+        "text": "Have an Alliance with one Opponent, while at War with another Opponent.",
+        "source": "base"
+    },
+    {
+        "id": "Peacemaker",
+        "age": 3,
+        "type": "warfare",
+        "text": "During Phase 3, Step D, make Peace with 3+ different Realms, including at least one Opponent.",
+        "source": "base"
+    },
+    {
+        "id": "Religious Diversity",
+        "age": 3,
+        "type": "warfare",
+        "text": "Have 3+ different Religions in your Main Map Areas and no Wars.",
+        "source": "base"
+    },
+    {
+        "id": "Balance of Power",
+        "age": 3,
+        "type": "politics",
+        "text": "Enforce Peace (other than White Peace) on an Opponent who has more Prestige than you on the Prestige track (prior to Peace Resolution). That Opponent loses 3 Prestige.",
+        "source": "base"
+    },
+    {
+        "id": "Formidable Armed Forces",
+        "age": 3,
+        "type": "politics",
+        "text": "Have a combined total of Military and Naval maintenance expenses of 20+ ducats during Phase 4. (If multiple players achieve this simultaneously, highest expenses break ties.)",
+        "source": "base"
+    },
+    {
+        "id": "Rule the Waves",
+        "age": 3,
+        "type": "politics",
+        "text": "Win a Naval Combat against an Opponent, in which they lose 4+ Ships.",
+        "source": "base"
+    },
+    {
+        "id": "Seize Colonies",
+        "age": 3,
+        "type": "politics",
+        "text": "Enforce a Peace on an Opponent in which you gain Ownership of at least one of their de jure Distant Provinces.",
+        "source": "base"
+    },
+    {
+        "id": "Deep Pockets",
+        "age": 3,
+        "type": "economics",
+        "text": "Have 50+ ducats or 20+ Monarch power at the start of Phase 1 (Having the fewest loans breaks ties.)",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Master of Commerce",
+        "age": 3,
+        "type": "economics",
+        "text": "Have 2+ activated Merchants in Expanded Trade Nodes.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "European Hegemony",
+        "age": 3,
+        "type": "expansion",
+        "text": "Own Provinces in the Main Map worth 30+ Tax Value.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Centralized Government",
+        "age": 3,
+        "type": "expansion",
+        "text": "Have Researched a Government Form Idea, while having at least +2 Stability, and 2+ Legitimacy in play.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Encourage Independence",
+        "age": 3,
+        "type": "expansion",
+        "text": "Cause a Province from another PR to be Liberated due to taking the Support Rebels Action on the Spy Network card, or while taking an Event Action.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Sphere of Influence",
+        "age": 3,
+        "type": "warfare",
+        "text": "Have 15+ Royal Marriages in play.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Liberator",
+        "age": 3,
+        "type": "politics",
+        "text": "Enforce a “Keep Current Board State” Peace Term on an Opponent that leads to an NPR being Liberated.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Bring it On!",
+        "age": 3,
+        "type": "politics",
+        "text": "Win 2 Battles on the same Turn.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Dominate Europe",
+        "age": 4,
+        "type": "economics",
+        "text": "Have a Port adjacent to 5+ of these Sea Zones: BALTIC SEA, NORTH SEA, ENGLISH CH., C. ATLANTIC, C. MED., E. MED., or BLACK SEA, and/or Areas: HUNGARIAN PLAIN, BAVARIA & SWABIA, WHITE RUTHENIA, and KAZAN.",
+        "source": "base"
+    },
+    {
+        "id": "Enlightened Rule",
+        "age": 4,
+        "type": "economics",
+        "text": "Have Researched 8+ Ideas.",
+        "source": "base"
+    },
+    {
+        "id": "Revolutionary Profits",
+        "age": 4,
+        "type": "economics",
+        "text": "Have Researched the “Revolutionary Regime” Idea, with 30+ ducats and no loans in your Treasury.",
+        "source": "base"
+    },
+    {
+        "id": "Workshop of the World",
+        "age": 4,
+        "type": "economics",
+        "text": "Have Researched the “Industrial Revolution” Idea. Own 3+ Provinces with Large Manufactories and 2+ Provinces adjacent to either the North America or Indian Ocean Trade Nodes.",
+        "source": "base"
+    },
+    {
+        "id": "Grand Empire",
+        "age": 4,
+        "type": "expansion",
+        "text": "Own 12+ Distant Provinces or have a Base Tax Income of 40+ ducats.",
+        "source": "base"
+    },
+    {
+        "id": "Jewel in the Crown",
+        "age": 4,
+        "type": "expansion",
+        "text": "Own 4+ of Delhi, Doab, Bengal, Gujarat, Goa, Deccan, and Coromandel.",
+        "source": "base"
+    },
+    {
+        "id": "Maritime Power",
+        "age": 4,
+        "type": "expansion",
+        "text": "Own Provinces adjacent to 6+ different Sea Zones. Have a Ship in each of these Sea Zones.",
+        "source": "base"
+    },
+    {
+        "id": "Terra Australis",
+        "age": 4,
+        "type": "expansion",
+        "text": "Own 2+ of Eastern Australia, Southern Australia, and Western Australia.",
+        "source": "base"
+    },
+    {
+        "id": "Diplomatic Ventures",
+        "age": 4,
+        "type": "warfare",
+        "text": "Have 3+ Alliances and 3+ Royal Marriages on the board, with at least 4 different Realms, including at least one Opponent.",
+        "source": "base"
+    },
+    {
+        "id": "Dismantle the HRE",
+        "age": 4,
+        "type": "warfare",
+        "text": "Occupy, Own, or Vassalize all Provinces in 3+ original Elector Areas. Set the HRE value to 0 when achieved.",
+        "source": "base"
+    },
+    {
+        "id": "A Helping Hand",
+        "age": 4,
+        "type": "warfare",
+        "text": "Have an Alliance with the PR with the lowest amount of Prestige, and either give that Player Realm 10+ ducats during a P-to-P Diplomacy Action, or accept a CtA from that PR.",
+        "source": "base"
+    },
+    {
+        "id": "Turn of the Tide",
+        "age": 4,
+        "type": "warfare",
+        "text": "End an Alliance with an Opponent and enter an Alliance with another Opponent during the same Turn.",
+        "source": "base"
+    },
+    {
+        "id": "Cut Down to Size",
+        "age": 4,
+        "type": "politics",
+        "text": "As part of a Peace Resolution, Liberate 4+ NPR Provinces on which an Opponent had a Port or Fleet, all in a single Area.",
+        "source": "base"
+    },
+    {
+        "id": "Military Hubris",
+        "age": 4,
+        "type": "politics",
+        "text": "Be at War with 2+ Opponents at once, and win a Battle against at least one of them, where they had 7+ Units participating in the Battle.",
+        "source": "base"
+    },
+    {
+        "id": "Our Man on the Throne",
+        "age": 4,
+        "type": "politics",
+        "text": "Enforce Peace on an Opponent, using the Secure Desired Succession Peace Term.",
+        "source": "base"
+    },
+    {
+        "id": "Share the Spoils",
+        "age": 4,
+        "type": "politics",
+        "text": "Be one of 2+ PRs that gain Ownership of Core Provinces from the same Opponent during a single Round. (Resolve in Turn order during Phase 3, at the end of Step D.)",
+        "source": "base"
+    },
+    {
+        "id": "Clash of Ideas",
+        "age": 4,
+        "type": "politics",
+        "text": "Have a Government Form Idea Researched and Enforce a Peace on an Opponent who does not have the same Government Form as you.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Distant Monopolies",
+        "age": 4,
+        "type": "economics",
+        "text": "Perform a Trade Action targeting a Distant Trade Node in which you, your Vassals, or your NPR Allies Own all the Key Provinces.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Unlimited Funds",
+        "age": 4,
+        "type": "economics",
+        "text": "Have 70+ ducats and no loans.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Naval Superpower",
+        "age": 4,
+        "type": "expansion",
+        "text": "Own 6+ Large Ports in the Main Map, and have a Fleet with 4+ Heavy Ships and an Admiral assigned to it.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Assimilated Minorities",
+        "age": 4,
+        "type": "expansion",
+        "text": "Own Core Provinces that were not among your starting Provinces worth 15+ Tax Income.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Embrace the Revolution",
+        "age": 4,
+        "type": "warfare",
+        "text": "Have Revolutionary tokens in 5+ Areas of your Realm and 2+ Alliances with Realms that have Revolutionary Ideology as their State Religion.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "A Holy Alliance",
+        "age": 4,
+        "type": "warfare",
+        "text": "Have Alliances with 2+ Realms, each with 10+ Base Tax Income and the same State Religion as yours, and no Areas in your Realm with Revolutionary tokens.",
+        "source": "defying_destiny"
+    },
+    {
+        "id": "Native Support",
+        "age": 4,
+        "type": "politics",
+        "text": "Enforce Peace on another PR while you have 2+ Distant NPRs as Active Allies on your side.",
+        "source": "defying_destiny"
+    }
+]
