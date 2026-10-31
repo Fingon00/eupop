@@ -13,7 +13,10 @@ final class SearchImageHelper {
     private SearchImageHelper() {}
 
     static void sendImage(SlashCommandInteractionEvent event, String folder, String imageName, String description) {
-        String normalizedFolder = folder.endsWith(File.separator) ? folder : folder + File.separator;
+        String normalizedFolder = folder.replace("/", File.separator);
+        if (!normalizedFolder.endsWith(File.separator)) {
+            normalizedFolder += File.separator;
+        }
         String imagePath = ResourceHelper.getResourceFromFolder(normalizedFolder, imageName + ".png");
         if (imagePath == null) {
             MessageHelper.sendMessageToChannel(event.getChannel(), "Could not find image for " + description);
