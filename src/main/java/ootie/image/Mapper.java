@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import lombok.experimental.UtilityClass;
 import ootie.ResourceHelper;
 import ootie.json.JsonMapperManager;
@@ -17,9 +18,11 @@ import ootie.model.CharacterModel;
 import ootie.model.EventModel;
 import ootie.model.IdeaModel;
 import ootie.model.ModelInterface;
+import ootie.model.PowerStruggleModel;
 import ootie.model.ProvinceModel;
 import ootie.model.SetupCardModel;
 import ootie.model.SourceModel;
+import ootie.model.TradeCardModel;
 import tools.jackson.databind.JavaType;
 import tools.jackson.databind.json.JsonMapper;
 
@@ -30,10 +33,12 @@ public class Mapper {
     private static final Map<String, SourceModel> sources = new HashMap<>();
     private static final Map<String, ProvinceModel> provinces = new HashMap<>();
     private static final Map<String, AreaModel> areas = new HashMap<>();
+    private static final Map<String, PowerStruggleModel> powerStruggles = new HashMap<>();
     private static final Map<String, CharacterModel> characters = new HashMap<>();
     private static final Map<String, ActionCardModel> actionCards = new HashMap<>();
     private static final Map<String, IdeaModel> ideas = new HashMap<>();
     private static final Map<String, SetupCardModel> setupCards = new HashMap<>();
+    private static final Map<String, TradeCardModel> tradeCards = new HashMap<>();
 
     private static final JsonMapper jsonMapper =
             JsonMapperManager.basic().rebuild().build();
@@ -55,6 +60,8 @@ public class Mapper {
         importJsonObjectsFromFolder("actioncards", actionCards, ActionCardModel.class);
         importJsonObjectsFromFolder("ideas", ideas, IdeaModel.class);
         importJsonObjectsFromFolder("setupcards", setupCards, SetupCardModel.class);
+        importJsonObjectsFromFolder("tradecards", tradeCards, TradeCardModel.class);
+        importJsonObjectsFromFolder("powerstruggles", powerStruggles, PowerStruggleModel.class);
     }
 
     public static boolean isValidEvent(String eventID) {
@@ -71,6 +78,14 @@ public class Mapper {
 
     public static Map<String, SetupCardModel> getSetupCards() {
         return new HashMap<>(setupCards);
+    }
+
+    public static Map<String, PowerStruggleModel> getPowerStruggles() {
+        return new HashMap<>(powerStruggles);
+    }
+
+    public static Map<String, TradeCardModel> getTradeCards() {
+        return new HashMap<>(tradeCards);
     }
 
     public static Map<String, IdeaModel> getIdeas() {
