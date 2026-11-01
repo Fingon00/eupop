@@ -1,0 +1,676 @@
+[
+    {
+        "id": "north_sea",
+        "borders": [
+            "lower_saxony",
+            "netherlands",
+            "jutland",
+            "vestlandet",
+            "doggerbank",
+            "norwegian_sea",
+            "skagerrak"
+        ],
+        "tradeProtection1": [
+            2808,
+            904
+        ],
+        "tradeProtection2": [
+            2927,
+            907
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "hamburg",
+            "slesvig",
+            "friesland",
+            "amsterdam"
+        ],
+        "adjacentTradeNodes": [
+            "English Channel",
+            "North Sea"
+        ]
+    },
+    {
+        "id": "adriatic_sea",
+        "borders": [
+            "central_italy",
+            "dalmatia",
+            "greece",
+            "naples",
+            "serbia_&_albania",
+            "venetia",
+            "central_mediterranean",
+            "eastern_mediterranean"
+        ],
+        "tradeProtection2": [
+            4218,
+            3000
+        ],
+        "tradeProtection3": [
+            43334,
+            3000
+        ],
+        "tradeProtection1": [
+            4070,
+            2943
+        ],
+        "adjacentPorts": [
+            "venezia",
+            "ancona",
+            "zara",
+            "rijeka",
+            "ragusa",
+            "bari",
+            "albania",
+            "verona",
+            "treviso",
+            "krain",
+            "ferrara",
+            "yanya"
+        ],
+        "adjacentTradeNodes": [
+            "Adriatic Sea"
+        ]
+    },
+    {
+        "id": "aegean_sea",
+        "borders": [
+            "aydin",
+            "greece",
+            "macedonia_&_thrace",
+            "northern_anatolia",
+            "aegean_archipelago",
+            "black_sea",
+            "eastern_mediterranean"
+        ],
+        "tradeProtection1": [
+            4890,
+            3193
+        ],
+        "tradeProtection2": [
+            5000,
+            3196
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "selanik",
+            "athina",
+            "naxos",
+            "creta",
+            "rhodes",
+            "izmir",
+            "creta",
+            "constantinople",
+            "hudavendigar",
+            "mentese",
+            "morea"
+        ],
+        "adjacentTradeNodes": [
+            "Black Sea",
+            "Alexandria"
+        ]
+    },
+    {
+        "id": "baltic_sea",
+        "borders": [
+            "estonia_&_livonia",
+            "gotaland_&_skane",
+            "pomerania",
+            "prussia",
+            "svealand",
+            "gulf_of_bothnia",
+            "skagerrak"
+        ],
+        "tradeProtection1": [
+            4232,
+            1205
+        ],
+        "tradeProtection2": [
+            4344,
+            1209
+        ],
+        "tradeProtection3": [
+            4464,
+            1209
+        ],
+        "adjacentPorts": [
+            "stockholm",
+            "riga",
+            "danzig",
+            "livland",
+            "goldingen",
+            "ostergotland",
+            "gotland",
+            "stettin",
+            "konigsberg"
+        ],
+        "adjacentTradeNodes": [
+            "Baltic Sea",
+            "Lubeck"
+        ]
+    },
+    {
+        "id": "bay_of_biscay",
+        "borders": [
+            "aquitaine",
+            "aragon",
+            "brittany_&_normandy",
+            "leon",
+            "central_atlantic",
+            "eastern_atlantic",
+            "english_channel"
+        ],
+        "tradeProtection1": [
+            2000,
+            2472
+        ],
+        "tradeProtection2": [
+            2117,
+            2474
+        ],
+        "tradeProtection3": [
+            2230,
+            2476
+        ],
+        "adjacentPorts": [
+            "bordeaux",
+            "nantes",
+            "galicia",
+            "rennes",
+            "saintonge"
+        ],
+        "adjacentTradeNodes": [
+            "Bordeaux"
+        ]
+    },
+    {
+        "id": "black_sea",
+        "borders": [
+            "circassia",
+            "crimea",
+            "macedonia_&_thrace",
+            "moldavia",
+            "northern_anatolia",
+            "rum",
+            "wallachia_&_bulgaria",
+            "aegean_sea"
+        ],
+        "tradeProtection1": [
+            5346,
+            2642
+        ],
+        "tradeProtection2": [
+            5463,
+            2642
+        ],
+        "tradeProtection3": [
+            5579,
+            2642
+        ],
+        "adjacentPorts": [
+            "constantinople",
+            "caffa",
+            "trebizond",
+            "kastamonu",
+            "silistre",
+            "basarabia",
+            "edisanas",
+            "crimea",
+            "azov",
+            "circassia",
+            "guria"
+        ],
+        "adjacentTradeNodes": [
+            "Black Sea"
+        ]
+    },
+    {
+        "id": "central_atlantic",
+        "borders": [
+            "andalucia",
+            "leon",
+            "macaronesia",
+            "northern_morocco",
+            "portugal",
+            "southern_morocco",
+            "bay_of_biscay",
+            "eastern_atlantic",
+            "western_mediterranean",
+            "southeastern_atlantic"
+        ],
+        "tradeProtection1": [
+            1304,
+            3054
+        ],
+        "tradeProtection2": [
+            1424,
+            3052
+        ],
+        "tradeProtection3": [
+            1362,
+            3152
+        ],
+        "adjacentPorts": [
+            "porto",
+            "lisboa",
+            "sevilla",
+            "canarias",
+            "madeira",
+            "tangiers",
+            "gharb",
+            "galicia",
+            "gibraltar"
+        ],
+        "adjacentTradeNodes": [
+            "Sevilla",
+            "Bordeaux"
+        ]
+    },
+    {
+        "id": "central_mediterranean",
+        "borders": [
+            "central_italy",
+            "corsica_&_sardinia",
+            "cyrenaica",
+            "naples",
+            "sicily",
+            "tripolitania",
+            "tunisia",
+            "western_mediterranean",
+            "adriatic_sea",
+            "eastern_mediterranean",
+            "gulf_of_lion"
+        ],
+        "tradeProtection1": [
+            3638,
+            3274
+        ],
+        "tradeProtection2": [
+            3756,
+            3274
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "napoli",
+            "bizerte",
+            "sardenya",
+            "roma",
+            "siena",
+            "pisa",
+            "corsica",
+            "salerno",
+            "palermo",
+            "mesina",
+            "malta",
+            "tunis",
+            "sousse",
+            "tripoli",
+            "bangazi"
+        ],
+        "adjacentTradeNodes": [
+            "Adriatic Sea",
+            "Genoa"
+        ]
+    },
+    {
+        "id": "doggerbank",
+        "borders": [
+            "east_anglia",
+            "northumbria",
+            "scotland",
+            "north_sea",
+            "northeastern_atlantic",
+            "english_channel"
+        ],
+        "tradeProtection1": [
+            2527,
+            1129
+        ],
+        "tradeProtection2": [
+            2644,
+            1132
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "aberdeen",
+            "lothian",
+            "northumberland",
+            "essex"
+        ],
+        "adjacentTradeNodes": [
+            "English Channel",
+            "North Sea"
+        ]
+    },
+    {
+        "id": "eastern_atlantic",
+        "borders": [
+            "ireland",
+            "wales_&_wessex",
+            "northeastern_atlantic",
+            "bay_of_biscay",
+            "central_atlantic",
+            "english_channel",
+            "caribbean_sea",
+            "northwestern_atlantic"
+        ],
+        "tradeProtection1": [
+            1404,
+            2158
+        ],
+        "tradeProtection2": [
+            1523,
+            2160
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "laighin",
+            "mhumhain",
+            "wales",
+            "wessex"
+        ],
+        "adjacentTradeNodes": [
+            "Bordeaux"
+        ]
+    },
+    {
+        "id": "eastern_mediterranean",
+        "borders": [
+            "aegean_archipelago",
+            "aydin",
+            "cyprus",
+            "cyrenaica",
+            "egypt",
+            "greece",
+            "karaman",
+            "palestine",
+            "syria",
+            "central_mediterranean",
+            "aegean_sea"
+        ],
+        "tradeProtection1": [
+            4466,
+            3598
+        ],
+        "tradeProtection2": [
+            4583,
+            3598
+        ],
+        "tradeProtection3": [
+            4698,
+            3598
+        ],
+        "adjacentPorts": [
+            "creta",
+            "rhodes",
+            "cyprus",
+            "iskandariyya",
+            "jaffa",
+            "gazzah",
+            "mentese",
+            "teke",
+            "adana",
+            "tarabulus",
+            "dumyat",
+            "karaman",
+            "morea",
+            "yanya"
+        ],
+        "adjacentTradeNodes": [
+            "Alexandria",
+            "Adriatic Sea"
+        ]
+    },
+    {
+        "id": "english_channel",
+        "borders": [
+            "brittany_&_normandy",
+            "east_anglia",
+            "flanders_&_wallonia",
+            "netherlands",
+            "seine",
+            "wales_&_wessex",
+            "north_sea",
+            "doggerbank",
+            "bay_of_biscay",
+            "eastern_atlantic"
+        ],
+        "tradeProtection1": [
+            2397,
+            1844
+        ],
+        "tradeProtection2": [
+            2517,
+            1777
+        ],
+        "tradeProtection3": [
+            2646,
+            1629
+        ],
+        "adjacentPorts": [
+            "london",
+            "essex",
+            "wessex",
+            "amsterdam",
+            "zeeland",
+            "brugge",
+            "antwerpen",
+            "caux",
+            "normandie",
+            "rennes",
+            "picardie",
+            "gent"
+        ],
+        "adjacentTradeNodes": [
+            "English Channel"
+        ]
+    },
+    {
+        "id": "gulf_of_bothnia",
+        "borders": [
+            "estonia_&_livonia",
+            "finland",
+            "karelia",
+            "norrland",
+            "ostrobothnia",
+            "svealand",
+            "baltic_sea"
+        ],
+        "tradeProtection1": [
+            4423,
+            400
+        ],
+        "tradeProtection2": [
+            4423,
+            479
+        ],
+        "tradeProtection3": [
+            4423,
+            583
+        ],
+        "adjacentPorts": [
+            "abo",
+            "nyland",
+            "halsingland",
+            "stockholm",
+            "neva",
+            "reval"
+        ],
+        "adjacentTradeNodes": [
+            "Baltic Sea"
+        ]
+    },
+    {
+        "id": "gulf_of_lion",
+        "borders": [
+            "aragon",
+            "central_italy",
+            "corsica_&_sardinia",
+            "languedoc",
+            "lombardy",
+            "western_mediterranean",
+            "central_mediterranean"
+        ],
+        "tradeProtection1": [
+            2952,
+            2930
+        ],
+        "tradeProtection2": [
+            3068,
+            2930
+        ],
+        "tradeProtection3": [
+            3188,
+            2930
+        ],
+        "adjacentPorts": [
+            "barcelona",
+            "valencia",
+            "provence",
+            "montpellier",
+            "genova",
+            "baleares",
+            "pisa",
+            "corsica"
+        ],
+        "adjacentTradeNodes": [
+            "Genoa"
+        ]
+    },
+    {
+        "id": "northeastern_atlantic",
+        "borders": [
+            "ireland",
+            "northumbria",
+            "scotland",
+            "wales_&_wessex",
+            "doggerbank",
+            "norwegian_sea",
+            "eastern_atlantic",
+            "northwestern_atlantic"
+        ],
+        "tradeProtection1": [
+            2078,
+            440
+        ],
+        "tradeProtection2": [
+            2196,
+            440
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "ulaidh",
+            "pale",
+            "laighin",
+            "aberdeen",
+            "wales",
+            "ayrshire",
+            "lancashire"
+        ],
+        "adjacentTradeNodes": [
+            "North Sea"
+        ]
+    },
+    {
+        "id": "norwegian_sea",
+        "borders": [
+            "trondelag",
+            "vestlandet",
+            "north_sea",
+            "northeastern_atlantic"
+        ],
+        "tradeProtection1": [
+            2634,
+            341
+        ],
+        "tradeProtection2": [
+            2752,
+            341
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "bergenhus",
+            "trondheim"
+        ],
+        "adjacentTradeNodes": [
+            "North Sea"
+        ]
+    },
+    {
+        "id": "skagerrak",
+        "borders": [
+            "gotaland_&_skane",
+            "jutland",
+            "ostlandet",
+            "pomerania",
+            "sjaelland_&_fyn",
+            "north_sea",
+            "baltic_sea"
+        ],
+        "tradeProtection1": [
+            3595,
+            816
+        ],
+        "tradeProtection2": [
+            3595,
+            908
+        ],
+        "tradeProtection3": [
+            3670,
+            979
+        ],
+        "adjacentPorts": [
+            "kobenhavn",
+            "ostjylland",
+            "holstein",
+            "lubeck",
+            "mecklenburg",
+            "stralsund",
+            "stettin",
+            "akershus",
+            "borgarsysla",
+            "lund"
+        ],
+        "adjacentTradeNodes": [
+            "Lubeck"
+        ]
+    },
+    {
+        "id": "western_mediterranean",
+        "borders": [
+            "algiers",
+            "andalucia",
+            "aragon",
+            "castile",
+            "northern_morocco",
+            "central_mediterranean",
+            "gulf_of_lion",
+            "central_atlantic"
+        ],
+        "tradeProtection1": [
+            2546,
+            3342
+        ],
+        "tradeProtection2": [
+            2664,
+            3342
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "gibraltar",
+            "valencia",
+            "oran",
+            "mitidja",
+            "ceuta",
+            "tangiers",
+            "tlemcen",
+            "kabylia",
+            "baleares",
+            "murcia"
+        ],
+        "adjacentTradeNodes": [
+            "Genoa",
+            "Sevilla"
+        ]
+    }
+]

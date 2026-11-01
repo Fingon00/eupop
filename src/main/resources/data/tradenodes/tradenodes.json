@@ -1,0 +1,184 @@
+[
+    {
+        "id": "Adriatic Sea",
+        "location": [
+            4257,
+            3303
+        ]
+    },
+    {
+        "id": "Aleppo",
+        "location": [
+            6037,
+            3613
+        ]
+    },
+    {
+        "id": "Alexandria",
+        "location": [
+            5203,
+            3620
+        ]
+    },
+    {
+        "id": "Astrakhan",
+        "location": [
+            6584,
+            2398
+        ]
+    },
+    {
+        "id": "Baltic Sea",
+        "location": [
+            4489,
+            777
+        ]
+    },
+    {
+        "id": "Black Sea",
+        "location": [
+            5349,
+            2807
+        ]
+    },
+    {
+        "id": "Bordeaux",
+        "location": [
+            1696,
+            2424
+        ]
+    },
+    {
+        "id": "Champagne",
+        "location": [
+            2761,
+            2088
+        ]
+    },
+    {
+        "id": "China & Japan",
+        "location": [
+            939,
+            3318
+        ]
+    },
+    {
+        "id": "East Indies",
+        "location": [
+            593,
+            3729
+        ]
+    },
+    {
+        "id": "English Channel",
+        "location": [
+            2735,
+            1475
+        ]
+    },
+    {
+        "id": "Genoa",
+        "location": [
+            3116,
+            3081
+        ]
+    },
+    {
+        "id": "Indian Ocean",
+        "location": [
+            648,
+            2753
+        ]
+    },
+    {
+        "id": "Ivory Coast",
+        "location": [
+            598,
+            2090
+        ]
+    },
+    {
+        "id": "Kazan",
+        "location": [
+            6584,
+            1459
+        ]
+    },
+    {
+        "id": "Kiev",
+        "location": [
+            5193,
+            1844
+        ]
+    },
+    {
+        "id": "Krakow",
+        "location": [
+            4480,
+            1794
+        ]
+    },
+    {
+        "id": "Lubeck",
+        "location": [
+            3991,
+            1222
+        ]
+    },
+    {
+        "id": "Maghreb",
+        "location": [
+            2571,
+            3913
+        ]
+    },
+    {
+        "id": "N. America",
+        "location": [
+            985,
+            428
+        ]
+    },
+    {
+        "id": "North Sea",
+        "location": [
+            2414,
+            437
+        ]
+    },
+    {
+        "id": "Novgorod",
+        "location": [
+            5291,
+            943
+        ]
+    },
+    {
+        "id": "S. America",
+        "location": [
+            615,
+            1129
+        ]
+    },
+    {
+        "id": "Saxony",
+        "location": [
+            3470,
+            1856
+        ]
+    },
+    {
+        "id": "Sevilla",
+        "location": [
+            1695,
+            3509
+        ]
+    },
+    {
+        "id": "Wien",
+        "location": [
+            3896,
+            2125
+        ]
+    }
+]
