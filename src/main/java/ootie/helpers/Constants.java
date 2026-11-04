@@ -180,6 +180,7 @@ public final class Constants {
     public static final String SEND_TG = "send_tg";
     public static final String SEND_COMMODITIES = "send_commodities";
     public static final String SETUP = "setup";
+    public static final String SETUP_CARDS = "setup_cards";
     public static final String SETUP_STARTING_FLEET = "setup_starting_fleet";
     public static final String WEIRD_GAME_SETUP = "weird_game_setup";
     public static final String GALACTIC_EVENTS_SETUP = "galactic_events_setup";
@@ -212,6 +213,7 @@ public final class Constants {
     public static final String ADMIN_POWER = "admin_power";
     public static final String MILITARY_POWER = "military_power";
     public static final String STABILITY = "stability";
+    public static final String COLONISTS = "colonists";
     public static final String STATE_RELIGION = "state_religion";
     public static final String CLEANUP = "cleanup";
 

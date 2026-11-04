@@ -36,6 +36,8 @@ class Stats extends GameStateSubcommand {
                         OptionType.STRING, Constants.PRESTIGE, "Prestige - can use +1/-1 etc. to add/subtract"))
                 .addOptions(new OptionData(
                         OptionType.STRING, Constants.STABILITY, "Stability count - can use +1/-1 etc. to add/subtract"))
+                .addOptions(new OptionData(
+                        OptionType.STRING, Constants.COLONISTS, "Colonists count - can use +1/-1 etc. to add/subtract"))
                 .addOptions(new OptionData(OptionType.STRING, Constants.STATE_RELIGION, "State religion"))
                 .addOptions(new OptionData(OptionType.STRING, Constants.COLOR, "Color"))
                 .addOptions(new OptionData(OptionType.BOOLEAN, Constants.PASSED, "Set whether player has passed y/n"))
@@ -87,6 +89,11 @@ class Stats extends GameStateSubcommand {
         OptionMapping prestige = event.getOption(Constants.PRESTIGE);
         if (prestige != null) {
             PlayerStatsService.setValue(event, game, player, prestige, player::setPrestige, player::getPrestige);
+        }
+
+        OptionMapping colonists = event.getOption(Constants.COLONISTS);
+        if (colonists != null) {
+            PlayerStatsService.setValue(event, game, player, colonists, player::setColonists, player::getColonists);
         }
 
         OptionMapping stability = event.getOption(Constants.STABILITY);

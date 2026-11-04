@@ -102,7 +102,7 @@ public class SetupCardModel implements ModelInterface, EmbeddableModel {
 
     @Override
     public String getAutoCompleteName() {
-        String auto = realm + " (" + id + ")";
+        String auto = realm + " " + year + " (" + id + ")";
         return auto;
     }
 }

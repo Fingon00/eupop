@@ -129,6 +129,11 @@ class AutoCompleteProvider {
                         searchModels(event, Mapper.getProvinces().values(), null);
                 event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
             }
+            case Constants.SETUP_CARDS -> {
+                List<Command.Choice> options =
+                        searchModels(event, Mapper.getSetupCards().values(), null);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
             case Constants.RELIGION, Constants.STATE_RELIGION -> {
                 String enteredValue = event.getFocusedOption().getValue();
                 var values = List.of(

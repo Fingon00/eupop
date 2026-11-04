@@ -16,6 +16,7 @@ class Setup extends GameStateSubcommand {
 
     Setup() {
         super(Constants.SETUP, "Player initialisation: Realm and Color", true, true);
+        addOptions(new OptionData(OptionType.USER, Constants.SETUP_CARDS, "Setup card"));
         addOptions(new OptionData(OptionType.STRING, Constants.REALM, "Faction Name")
                 .setAutoComplete(true)
                 .setRequired(true)); // Change this to setup Card
