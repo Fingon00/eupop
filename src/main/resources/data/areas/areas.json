@@ -33,7 +33,8 @@
             "tlemcen",
             "oran",
             "mitidja",
-            "kabylia"
+            "kabylia",
+            "qusantinah"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -126,7 +127,8 @@
             "navarra",
             "zaragoza",
             "barcelona",
-            "valencia"
+            "valencia",
+            "baleares"
         ],
         "mountainBorders": [
             "leon",
@@ -212,7 +214,8 @@
         "provinces": [
             "izmir",
             "teke",
-            "mentese"
+            "mentese",
+            "kutahya"
         ],
         "mountainBorders": [
             "northern_anatolia",
@@ -300,7 +303,8 @@
         "provinces": [
             "berlin",
             "potsdam",
-            "altmark"
+            "altmark",
+            "neumark"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -475,7 +479,8 @@
             "yaroslavl",
             "suzdal",
             "murom",
-            "vladimir"
+            "vladimir",
+            "kasimov"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -550,10 +555,11 @@
         ],
         "provinces": [
             "azov",
+            "yedishkul",
             "crimea",
             "caffa",
             "zaporoze",
-            "kyzyl-yar"
+            "kyzylyar"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -578,7 +584,8 @@
         ],
         "provinces": [
             "zagreb",
-            "bosnia"
+            "bosnia",
+            "hum"
         ],
         "mountainBorders": [
             "austria",
@@ -724,7 +731,8 @@
         "provinces": [
             "qahirah",
             "iskandariyya",
-            "dumyat"
+            "dumyat",
+            "fayyum"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -979,7 +987,8 @@
         ],
         "provinces": [
             "adana",
-            "karaman"
+            "karaman",
+            "konya"
         ],
         "mountainBorders": [
             "aydin",
@@ -1057,7 +1066,8 @@
         "provinces": [
             "urfa",
             "mush",
-            "mosul"
+            "mosul",
+            "bitlis"
         ],
         "mountainBorders": [
             "rum",
@@ -1151,7 +1161,8 @@
         ],
         "provinces": [
             "zemaitija",
-            "vilnius"
+            "vilnius",
+            "kaunas"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -1322,7 +1333,8 @@
         "provinces": [
             "warszawa",
             "lublin",
-            "krakow"
+            "krakow",
+            "sandomierz"
         ],
         "mountainBorders": [
             "royal_hungary"
@@ -1378,7 +1390,8 @@
             "tver",
             "moskva",
             "ryazan",
-            "odoyev"
+            "odoyev",
+            "rzhev"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -1681,7 +1694,8 @@
         "provinces": [
             "perm",
             "viatka",
-            "nizhny_novgorod"
+            "nizhny_novgorod",
+            "galich"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -1708,7 +1722,8 @@
             "lubeck",
             "stettin",
             "stralsund",
-            "mecklenburg"
+            "mecklenburg",
+            "koslin"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -1730,7 +1745,8 @@
             "ostrobothnia"
         ],
         "provinces": [
-            "arkhangelsk"
+            "arkhangelsk",
+            "kargopol"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -1785,7 +1801,8 @@
             "danzig",
             "kulm",
             "osterode",
-            "konigsberg"
+            "konigsberg",
+            "marienburg"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -1811,7 +1828,8 @@
         ],
         "provinces": [
             "voluine",
-            "lwow"
+            "lwow",
+            "naugardukas"
         ],
         "mountainBorders": [
             "royal_hungary",
@@ -1907,7 +1925,8 @@
         "provinces": [
             "amasya",
             "trebizond",
-            "erzurum"
+            "erzurum",
+            "sivas"
         ],
         "mountainBorders": [
             "transcaucasia",
@@ -1936,7 +1955,8 @@
         ],
         "provinces": [
             "tambov",
-            "saratov"
+            "saratov",
+            "don"
         ],
         "mountainBorders": [],
         "type": "area",
@@ -2050,7 +2070,8 @@
         "provinces": [
             "beograd",
             "kosovo",
-            "albania"
+            "albania",
+            "smederevo"
         ],
         "mountainBorders": [
             "macedonia_&_thrace",
@@ -2623,6 +2644,1593 @@
         "infantryPlacement": [
             4256,
             1810
+        ]
+    },
+    {
+        "id": "TIMBUKTU",
+        "borders": [
+            "SONGHAI"
+        ],
+        "provinces": [
+            "timbuktu"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            571,
+            1550
+        ]
+    },
+    {
+        "id": "BENIN",
+        "borders": [
+            "KATSINA"
+        ],
+        "provinces": [
+            "benin"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            686,
+            1731
+        ]
+    },
+    {
+        "id": "SONGHAI",
+        "borders": [
+            "TIMBUKTU",
+            "KATSINA"
+        ],
+        "provinces": [
+            "songhai"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            671,
+            1607
+        ]
+    },
+    {
+        "id": "ETHIOPIA",
+        "borders": [
+            "ADAL",
+            "AJUURAAN"
+        ],
+        "provinces": [
+            "ethiopia"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1017,
+            1679
+        ]
+    },
+    {
+        "id": "ADAL",
+        "borders": [
+            "ETHIOPIA"
+        ],
+        "provinces": [
+            "adal"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1100,
+            1670
+        ]
+    },
+    {
+        "id": "GOLDCOAST",
+        "borders": [
+            "MALI"
+        ],
+        "provinces": [
+            "goldcoast"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            585,
+            1724
+        ]
+    },
+    {
+        "id": "MALI",
+        "borders": [
+            "GOLDCOAST"
+        ],
+        "provinces": [
+            "mali"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            495,
+            1668
+        ]
+    },
+    {
+        "id": "MUTAPA",
+        "borders": [
+            "KILWA"
+        ],
+        "provinces": [
+            "mutapa"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            946,
+            2000
+        ]
+    },
+    {
+        "id": "KILWA",
+        "borders": [
+            "MUTAPA",
+            "MADAGASCAR",
+            "CENTRALAFRICA"
+        ],
+        "provinces": [
+            "kilwa"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1030,
+            1917
+        ]
+    },
+    {
+        "id": "KATSINA",
+        "borders": [
+            "BENIN",
+            "SONGHAI"
+        ],
+        "provinces": [
+            "katsina"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            759,
+            1664
+        ]
+    },
+    {
+        "id": "KONGO",
+        "borders": [],
+        "provinces": [
+            "kongo"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            772,
+            1851
+        ]
+    },
+    {
+        "id": "AJUURAAN",
+        "borders": [
+            "ETHIOPIA"
+        ],
+        "provinces": [
+            "ajuuraan"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1090,
+            1771
+        ]
+    },
+    {
+        "id": "UPPEREGYPT",
+        "borders": [],
+        "provinces": [
+            "upperegypt"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            954,
+            1541
+        ]
+    },
+    {
+        "id": "ANGOLA",
+        "borders": [],
+        "provinces": [
+            "angola"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            774,
+            1982
+        ]
+    },
+    {
+        "id": "MADAGASCAR",
+        "borders": [
+            "KILWA"
+        ],
+        "provinces": [
+            "madagascar"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1111,
+            1999
+        ]
+    },
+    {
+        "id": "CENTRALAFRICA",
+        "borders": [
+            "KILWA"
+        ],
+        "provinces": [
+            "centralafrica"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            933,
+            1821
+        ]
+    },
+    {
+        "id": "NATAL",
+        "borders": [
+            "CAPEOFGOODHOPE"
+        ],
+        "provinces": [
+            "natal"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            929,
+            2118
+        ]
+    },
+    {
+        "id": "CAPEOFGOODHOPE",
+        "borders": [
+            "NATAL"
+        ],
+        "provinces": [
+            "capeofgoodhope"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            837,
+            2156
+        ]
+    },
+    {
+        "id": "PERNAMBUCO",
+        "borders": [],
+        "provinces": [
+            "pernambuco"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1117,
+            855
+        ]
+    },
+    {
+        "id": "BAHIA",
+        "borders": [],
+        "provinces": [
+            "bahia"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1120,
+            962
+        ]
+    },
+    {
+        "id": "RIODEJANEIRO",
+        "borders": [],
+        "provinces": [
+            "riodejaneiro"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1077,
+            1074
+        ]
+    },
+    {
+        "id": "AMAZONAS",
+        "borders": [
+            "CUZCO",
+            "MINASGERAIS"
+        ],
+        "provinces": [
+            "amazonas"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            916,
+            885
+        ]
+    },
+    {
+        "id": "MEXICO",
+        "borders": [],
+        "provinces": [
+            "mexico"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            582,
+            657
+        ]
+    },
+    {
+        "id": "CENTRALAMERICA",
+        "borders": [],
+        "provinces": [
+            "centralamerica"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            693,
+            684
+        ]
+    },
+    {
+        "id": "NEWGRANADA",
+        "borders": [],
+        "provinces": [
+            "newgranada"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            837,
+            753
+        ]
+    },
+    {
+        "id": "GUYANA",
+        "borders": [],
+        "provinces": [
+            "guyana"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            946,
+            773
+        ]
+    },
+    {
+        "id": "MISSISSIPPI",
+        "borders": [
+            "FLORIDA"
+        ],
+        "provinces": [
+            "mississippi"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            633,
+            528
+        ]
+    },
+    {
+        "id": "VIRGINIA",
+        "borders": [
+            "GREATLAKES",
+            "NEWENGLAND"
+        ],
+        "provinces": [
+            "virginia"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            772,
+            456
+        ]
+    },
+    {
+        "id": "FLORIDA",
+        "borders": [
+            "MISSISSIPPI",
+            "ANTILLES"
+        ],
+        "provinces": [
+            "florida"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            729,
+            563
+        ]
+    },
+    {
+        "id": "ANTILLES",
+        "borders": [
+            "FLORIDA"
+        ],
+        "provinces": [
+            "antilles"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            811,
+            638
+        ]
+    },
+    {
+        "id": "HUDSONBAY",
+        "borders": [],
+        "provinces": [
+            "hudsonbay"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            669,
+            276
+        ]
+    },
+    {
+        "id": "CANADA",
+        "borders": [
+            "NEWENGLAND"
+        ],
+        "provinces": [
+            "canada"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            786,
+            331
+        ]
+    },
+    {
+        "id": "GREATLAKES",
+        "borders": [
+            "VIRGINIA"
+        ],
+        "provinces": [
+            "greatlakes"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            685,
+            404
+        ]
+    },
+    {
+        "id": "NEWENGLAND",
+        "borders": [
+            "VIRGINIA",
+            "CANADA"
+        ],
+        "provinces": [
+            "newengland"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            867,
+            416
+        ]
+    },
+    {
+        "id": "CUZCO",
+        "borders": [
+            "AMAZONAS",
+            "CHARCAS",
+            "QUITO"
+        ],
+        "provinces": [
+            "cuzco"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            821,
+            961
+        ]
+    },
+    {
+        "id": "CHARCAS",
+        "borders": [
+            "CUZCO"
+        ],
+        "provinces": [
+            "charcas"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            894,
+            1027
+        ]
+    },
+    {
+        "id": "MINASGERAIS",
+        "borders": [
+            "AMAZONAS"
+        ],
+        "provinces": [
+            "minasgerais"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1006,
+            967
+        ]
+    },
+    {
+        "id": "LAPLATA",
+        "borders": [],
+        "provinces": [
+            "laplata"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            937,
+            1159
+        ]
+    },
+    {
+        "id": "GREATPLAINS",
+        "borders": [],
+        "provinces": [
+            "greatplains"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            566,
+            413
+        ]
+    },
+    {
+        "id": "CALIFORNIA",
+        "borders": [],
+        "provinces": [
+            "california"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            484,
+            536
+        ]
+    },
+    {
+        "id": "CHILE",
+        "borders": [],
+        "provinces": [
+            "chile"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            830,
+            1171
+        ]
+    },
+    {
+        "id": "QUITO",
+        "borders": [
+            "CUZCO"
+        ],
+        "provinces": [
+            "quito"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            761,
+            862
+        ]
+    },
+    {
+        "id": "HEJAZ",
+        "borders": [
+            "NAJD"
+        ],
+        "provinces": [
+            "hejaz"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            474,
+            2659
+        ]
+    },
+    {
+        "id": "YEMEN",
+        "borders": [],
+        "provinces": [
+            "yemen"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            522,
+            2762
+        ]
+    },
+    {
+        "id": "COROMANDEL",
+        "borders": [
+            "GOA"
+        ],
+        "provinces": [
+            "coromandel"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            989,
+            2831
+        ]
+    },
+    {
+        "id": "BENGAL",
+        "borders": [
+            "DOAB"
+        ],
+        "provinces": [
+            "bengal"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1119,
+            2637
+        ]
+    },
+    {
+        "id": "GUJARAT",
+        "borders": [],
+        "provinces": [
+            "gujarat"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            875,
+            2630
+        ]
+    },
+    {
+        "id": "DOAB",
+        "borders": [
+            "BENGAL",
+            "DELHI"
+        ],
+        "provinces": [
+            "doab"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1035,
+            2571
+        ]
+    },
+    {
+        "id": "DELHI",
+        "borders": [
+            "DOAB"
+        ],
+        "provinces": [
+            "delhi"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            951,
+            2505
+        ]
+    },
+    {
+        "id": "DECCAN",
+        "borders": [
+            "GOA"
+        ],
+        "provinces": [
+            "deccan"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            982,
+            2707
+        ]
+    },
+    {
+        "id": "SAMARKAND",
+        "borders": [
+            "BALKH",
+            "KHIVA"
+        ],
+        "provinces": [
+            "samarkand"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            767,
+            2384
+        ]
+    },
+    {
+        "id": "ISFAHAN",
+        "borders": [
+            "BASRA",
+            "KHIVA"
+        ],
+        "provinces": [
+            "isfahan"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            596,
+            2449
+        ]
+    },
+    {
+        "id": "GOA",
+        "borders": [
+            "COROMANDEL",
+            "DECCAN"
+        ],
+        "provinces": [
+            "goa"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            914,
+            2749
+        ]
+    },
+    {
+        "id": "FARS",
+        "borders": [
+            "HERAT",
+            "HORMUZ"
+        ],
+        "provinces": [
+            "fars"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            645,
+            2568
+        ]
+    },
+    {
+        "id": "BALKH",
+        "borders": [
+            "SAMARKAND"
+        ],
+        "provinces": [
+            "balkh"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            816,
+            2479
+        ]
+    },
+    {
+        "id": "HERAT",
+        "borders": [
+            "FARS",
+            "BALUCHISTAN"
+        ],
+        "provinces": [
+            "herat"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            712,
+            2488
+        ]
+    },
+    {
+        "id": "BALUCHISTAN",
+        "borders": [
+            "HERAT",
+            "HORMUZ"
+        ],
+        "provinces": [
+            "baluchistan"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            769,
+            2587
+        ]
+    },
+    {
+        "id": "BASRA",
+        "borders": [
+            "ISFAHAN"
+        ],
+        "provinces": [
+            "basra"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            525,
+            2504
+        ]
+    },
+    {
+        "id": "NAJD",
+        "borders": [
+            "HEJAZ"
+        ],
+        "provinces": [
+            "najd"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            534,
+            2614
+        ]
+    },
+    {
+        "id": "KHIVA",
+        "borders": [
+            "SAMARKAND",
+            "ISFAHAN"
+        ],
+        "provinces": [
+            "khiva"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            671,
+            2372
+        ]
+    },
+    {
+        "id": "HORMUZ",
+        "borders": [
+            "FARS",
+            "BALUCHISTAN"
+        ],
+        "provinces": [
+            "hormuz"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            677,
+            2666
+        ]
+    },
+    {
+        "id": "CANTON",
+        "borders": [],
+        "provinces": [
+            "canton"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            639,
+            3229
+        ]
+    },
+    {
+        "id": "XIAN",
+        "borders": [
+            "CHENGDU"
+        ],
+        "provinces": [
+            "xian"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            618,
+            3086
+        ]
+    },
+    {
+        "id": "KYUSHU",
+        "borders": [
+            "HONSHU",
+            "KOREA"
+        ],
+        "provinces": [
+            "kyushu"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            930,
+            3131
+        ]
+    },
+    {
+        "id": "HANGZHOU",
+        "borders": [],
+        "provinces": [
+            "hangzhou"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            745,
+            3175
+        ]
+    },
+    {
+        "id": "MALACCA",
+        "borders": [
+            "ACEH"
+        ],
+        "provinces": [
+            "malacca"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            590,
+            3493
+        ]
+    },
+    {
+        "id": "SIAM",
+        "borders": [
+            "BURMA"
+        ],
+        "provinces": [
+            "siam"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            568,
+            3358
+        ]
+    },
+    {
+        "id": "BURMA",
+        "borders": [
+            "SIAM"
+        ],
+        "provinces": [
+            "burma"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            481,
+            3286
+        ]
+    },
+    {
+        "id": "SOUTHSUMATRA",
+        "borders": [
+            "ACEH"
+        ],
+        "provinces": [
+            "southsumatra"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            574,
+            3603
+        ]
+    },
+    {
+        "id": "MOLUCCAS",
+        "borders": [],
+        "provinces": [
+            "moluccas"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            832,
+            3544
+        ]
+    },
+    {
+        "id": "JAVA",
+        "borders": [],
+        "provinces": [
+            "java"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            675,
+            3628
+        ]
+    },
+    {
+        "id": "PAPUA",
+        "borders": [],
+        "provinces": [
+            "papua"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1057,
+            3603
+        ]
+    },
+    {
+        "id": "CHENGDU",
+        "borders": [
+            "XIAN"
+        ],
+        "provinces": [
+            "chengdu"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            533,
+            3172
+        ]
+    },
+    {
+        "id": "PHILIPPINES",
+        "borders": [],
+        "provinces": [
+            "philippines"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            816,
+            3348
+        ]
+    },
+    {
+        "id": "BRUNEI",
+        "borders": [],
+        "provinces": [
+            "brunei"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            707,
+            3482
+        ]
+    },
+    {
+        "id": "BEIJING",
+        "borders": [],
+        "provinces": [
+            "beijing"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            723,
+            3024
+        ]
+    },
+    {
+        "id": "HONSHU",
+        "borders": [
+            "KYUSHU"
+        ],
+        "provinces": [
+            "honshu"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1013,
+            3059
+        ]
+    },
+    {
+        "id": "KOREA",
+        "borders": [
+            "KYUSHU"
+        ],
+        "provinces": [
+            "korea"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            856,
+            3065
+        ]
+    },
+    {
+        "id": "ACEH",
+        "borders": [
+            "MALACCA",
+            "SOUTHSUMATRA"
+        ],
+        "provinces": [
+            "aceh"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            509,
+            3514
+        ]
+    },
+    {
+        "id": "TIMOR",
+        "borders": [],
+        "provinces": [
+            "timor"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            823,
+            3657
+        ]
+    },
+    {
+        "id": "VOGELKOP",
+        "borders": [],
+        "provinces": [
+            "vogelkop"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            940,
+            3559
+        ]
+    },
+    {
+        "id": "EASTERNAUSTRALIA",
+        "borders": [
+            "SOUTHERNAUSTRALIA"
+        ],
+        "provinces": [
+            "easternaustralia"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1136,
+            3857
+        ]
+    },
+    {
+        "id": "SOUTHERNAUSTRALIA",
+        "borders": [
+            "EASTERNAUSTRALIA"
+        ],
+        "provinces": [
+            "southernaustralia"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            1049,
+            3948
+        ]
+    },
+    {
+        "id": "WESTERNAUSTRALIA",
+        "borders": [],
+        "provinces": [
+            "westernaustralia"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            786,
+            3905
+        ]
+    },
+    {
+        "id": "WESTSIBERIA",
+        "borders": [
+            "URAL",
+            "TYUMEN",
+            "OIRAT",
+            "EASTSIBERIA"
+        ],
+        "provinces": [
+            "westsiberia"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            6074,
+            270
+        ]
+    },
+    {
+        "id": "TYUMEN",
+        "borders": [
+            "URAL",
+            "VOLGA",
+            "NOGAI",
+            "WESTSIBERIA",
+            "OIRAT",
+            "KAZAKHSTAN"
+        ],
+        "provinces": [
+            "tyumen"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            5965,
+            408
+        ]
+    },
+    {
+        "id": "VOLGA",
+        "borders": [
+            "NOGAI",
+            "URAL",
+            "TYUMEN",
+            "saratov",
+            "kazan"
+        ],
+        "provinces": [
+            "volga"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            5783,
+            423
+        ]
+    },
+    {
+        "id": "NOGAI",
+        "borders": [
+            "VOLGA",
+            "TYUMEN",
+            "KHIVA",
+            "astrakhan",
+            "KAZAKHSTAN"
+        ],
+        "provinces": [
+            "nogai"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            5797,
+            567
+        ]
+    },
+    {
+        "id": "URAL",
+        "borders": [
+            "perm",
+            "VOLGA",
+            "WESTSIBERIA",
+            "TYUMEN"
+        ],
+        "provinces": [
+            "ural"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            5869,
+            278
+        ]
+    },
+    {
+        "id": "EASTSIBERIA",
+        "borders": [
+            "OKHOTSK",
+            "MANCHU",
+            "MONGOLIA",
+            "OIRAT",
+            "WESTSIBERIA"
+        ],
+        "provinces": [
+            "eastsiberia"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            6302,
+            375
+        ]
+    },
+    {
+        "id": "OKHOTSK",
+        "borders": [
+            "EASTSIBERIA",
+            "MANCHU",
+            "FURDAN"
+        ],
+        "provinces": [
+            "okhotsk"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            6505,
+            396
+        ]
+    },
+    {
+        "id": "OIRAT",
+        "borders": [
+            "CHAGATAI",
+            "YARKAND",
+            "KAZAKHSTAN",
+            "WESTSIBERIA",
+            "MONGOLIA",
+            "EASTSIBERIA",
+            "TYUMEN",
+            "XIAN"
+        ],
+        "provinces": [
+            "oirat"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            6149,
+            512
+        ]
+    },
+    {
+        "id": "MONGOLIA",
+        "borders": [
+            "OIRAT",
+            "EASTSIBERIA",
+            "MANCHU",
+            "BEIJING",
+            "XIAN"
+        ],
+        "provinces": [
+            "mongolia"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            6301,
+            578
+        ]
+    },
+    {
+        "id": "MANCHU",
+        "borders": [
+            "FURDAN",
+            "OKHOTSK",
+            "EASTSIBERIA",
+            "MONGOLIA",
+            "BEIJING",
+            "KOREA"
+        ],
+        "provinces": [
+            "manchu"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            6408,
+            589
+        ]
+    },
+    {
+        "id": "FURDAN",
+        "borders": [
+            "MANCHU",
+            "OKHOTSK",
+            "KOREA"
+        ],
+        "provinces": [
+            "furdan"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            6502,
+            594
+        ]
+    },
+    {
+        "id": "CHAGATAI",
+        "borders": [
+            "OIRAT",
+            "KAZAKHSTAN",
+            "SAMARKAND",
+            "XIAN"
+        ],
+        "provinces": [
+            "chagatai"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            6054,
+            596
+        ]
+    },
+    {
+        "id": "YARKAND",
+        "borders": [
+            "OIRAT",
+            "KAZAKHSTAN",
+            "SAMARKAND",
+            "XIAN"
+        ],
+        "provinces": [
+            "yarkand"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            6054,
+            596
+        ]
+    },
+    {
+        "id": "KAZAKHSTAN",
+        "borders": [
+            "SAMARKAND",
+            "NOGAI",
+            "CHAGATAI",
+            "TYUMEN",
+            "YARKAND"
+        ],
+        "provinces": [
+            "kazakhstan"
+        ],
+        "mountainBorders": [],
+        "type": "distant",
+        "religiousCenter": [],
+        "infantryPlacement": [
+            5921,
+            563
         ]
     }
 ]

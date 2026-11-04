@@ -60,7 +60,7 @@
             "Aragon (2)",
             "Portugal (1)",
             "Burgundy (1)",
-            "C. Italy (1)"
+            "Central Italy (1)"
         ],
         "relations": [
             "Andalucia"
@@ -101,7 +101,7 @@
             "Portugal (2)",
             "Brittany & Normandy (1)",
             "Seine (1)",
-            "Flanders & Wall. (1)"
+            "Flanders & Wallonia (1)"
         ],
         "relations": [
             "Portugal"
@@ -145,7 +145,7 @@
             "Scotland",
             "Provence",
             "Aquitaine",
-            "Brit. & Normandy"
+            "Brittany & Normandy"
         ],
         "merchants": [
             "Champ.",
@@ -244,13 +244,13 @@
         "year": "1444",
         "state_religion": "Catholic",
         "provinces": [
-            "Kraków (L)",
+            "Krakow (L)",
             "Lublin",
             "Sandomierz",
-            "Poznań",
+            "Poznan",
             "Kalisz",
             "Sieradz",
-            "Lwów",
+            "Lwow",
             "Podole"
         ],
         "distant_provinces": [
@@ -282,19 +282,19 @@
         "year": "1444",
         "state_religion": "Catholic",
         "provinces": [
-            "København (L)",
+            "Kobenhavn (L)",
             "Lund (L)",
             "Gotland",
             "Vestjyland",
-            "Østjyland"
+            "Ostjyland"
         ],
         "distant_provinces": [
             "Slesvig",
             "Holstein"
         ],
         "influence": [
-            "Götaland & Skåne (2)",
-            "Østlandet (2)",
+            "Gotaland & Skåne (2)",
+            "Ostlandet (2)",
             "Vestlandet (1)",
             "Trøndelag (1)",
             "Svealand (1)",
@@ -323,15 +323,15 @@
         "provinces": [
             "Stockholm (L)",
             "Bergslagen",
-            "Östergötland",
-            "Hälsingland",
-            "Österbotten",
-            "Åbo",
+            "Ostergotland",
+            "Halsingland",
+            "Osterbotten",
+            "Abo",
             "Nyland"
         ],
         "influence": [
-            "Trøndelag (2)",
-            "Østlandet (1)",
+            "Trondelag (2)",
+            "Ostlandet (1)",
             "Jutland (1)",
             "Pomerania (1)"
         ],
@@ -682,7 +682,7 @@
         ],
         "influence": [
             "Portugal (2)",
-            "C. Italy (1)"
+            "Central Italy (1)"
         ],
         "relations": [
             "Portugal",
@@ -737,12 +737,10 @@
             "English Channel",
             "North Sea"
         ],
-        "colonists": [
-            "2"
-        ],
+        "colonists": 2,
         "military": [
             "E. Anglia (Army 1: 2 Infantry, 1 Artillery)",
-            "English Ch. (L. Ship, Fleet: 2 H. Ships)",
+            "English Ch. (L. Ship, Fleet: 2 Heavy Ships)",
             "Doggerbank (2 L. Ships)",
             "E. Atlantic (L. Ship)",
             "N.E. Atlantic (L. Ship)",
@@ -760,7 +758,7 @@
             "Cannons"
         ],
         "provinces": [
-            "All in Brit. & Norm., Aquitaine, Loire",
+            "All in Brittany & Normandy, Aquitaine, Loire",
             "Paris (L)",
             "Champagne (L)",
             "Bourgogne (L)",
@@ -789,13 +787,11 @@
             "Champ.",
             "Bordeaux"
         ],
-        "colonists": [
-            "2"
-        ],
+        "colonists": 2,
         "military": [
             "Seine (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
             "Gulf of Lion (L. Ship)",
-            "Bay of Biscay (L. Ship, Fleet: H. Ship)",
+            "Bay of Biscay (L. Ship, Fleet: Heavy Ship)",
             "E. Atlantic (L. Ship)",
             "N.W. Atlantic (L. Ship)"
         ]
@@ -810,7 +806,7 @@
             "Noble Knights"
         ],
         "provinces": [
-            "All in Moscow & Ryazan, C. Russia, Perm, Novgorod, Vologda, Pomorye, Saratov, Kazan",
+            "All in Moscow & Ryazan, Central Russia, Perm, Novgorod, Vologda, Pomorye, Saratov, Kazan",
             "Astrakhan",
             "Sarai",
             "Ladoga",
@@ -851,7 +847,7 @@
             "Tercios/Jan."
         ],
         "provinces": [
-            "All in Maced. & Thrace, Northern Anatolia, Aydin, Greece, Serbia & Albania, Hungarian Plain",
+            "All in Macedonia & Thrace, Northern Anatolia, Aydin, Greece, Serbia & Albania, Hungarian Plain",
             "Naxos",
             "Rhodes",
             "Bosnia",
@@ -902,7 +898,7 @@
             "Noble Knights"
         ],
         "provinces": [
-            "All in Mazovia & Malopolska, Red Ruthenia, Lithuania, White Ruthenia, W. Ukraine, E. Ukraine",
+            "All in Mazovia & Malopolska, Red Ruthenia, Lithuania, White Ruthenia, Western Ukraine, Eastern Ukraine",
             "Danzig",
             "Kulm",
             "Poznań",
@@ -1062,9 +1058,7 @@
             "S. America",
             "Indian Ocean"
         ],
-        "colonists": [
-            "1"
-        ],
+        "colonists": 1,
         "military": [
             "Portugal (Army 1: 2 Infantry, 1 Cavalry)",
             "C. Atlantic (2 L. Ships)",
@@ -1102,7 +1096,7 @@
         ],
         "relations": [
             "England",
-            "Flanders & Wall.",
+            "Flanders & Wallonia",
             "Cape of Good Hope"
         ],
         "merchants": [
@@ -1110,18 +1104,16 @@
             "North America",
             "East Indies"
         ],
-        "colonists": [
-            "2"
-        ],
+        "colonists": 2,
         "military": [
-            "Nether. (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
-            "English Ch. (L. Ship)",
+            "Netherlands (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "English Channel (L. Ship)",
             "North Sea (L. Ship)",
-            "E. Atlantic (L. Ship)",
-            "Carib. Sea (L. Ship)",
-            "S.E. Atlantic (L. Ship)",
-            "East Afr. Coast (L. Ship)",
-            "Indian Ocn. (L. Ship)",
+            "East Atlantic (L. Ship)",
+            "Caribbean Sea (L. Ship)",
+            "SouthEast Atlantic (L. Ship)",
+            "East African Coast (L. Ship)",
+            "Indian Ocean (L. Ship)",
             "East Indies (L. Ship)"
         ]
     },
@@ -1308,7 +1300,7 @@
             "Lombardy (1)",
             "Burgundy (1)",
             "Rhineland (1)",
-            "Corsica & Sard. (1)"
+            "Corsica & Sardinia (1)"
         ],
         "relations": [
             "Spain I (perm.)"

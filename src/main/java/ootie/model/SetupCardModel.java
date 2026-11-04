@@ -17,8 +17,14 @@ public class SetupCardModel implements ModelInterface, EmbeddableModel {
     private String state_religion;
     private List<String> merchants;
     private List<String> provinces;
+    private List<String> distant_provinces;
     private List<String> military;
     private List<String> influence;
+    private int colonists;
+    private List<String> alliances;
+    private List<String> truces;
+    private List<String> royalMarriages;
+    private List<String> claims;
 
     @Override
     public boolean isValid() {

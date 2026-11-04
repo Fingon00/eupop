@@ -23,8 +23,9 @@ public class PlayerProperties {
     private int adminPower = 3;
     private int diploPower = 3;
     private int militaryPower = 3;
-    private int stability = 0;
-    private int botPower = 0;
+    private int stability;
+    private int botPower;
+    private int colonists;
     private int prestige;
     private int manpowerExhausted;
     private int manpowerAvailable;
@@ -46,6 +47,10 @@ public class PlayerProperties {
     // private Map<String, Integer> breakthroughTGs = new LinkedHashMap<>();
 
     // private Set<String> abilities = new HashSet<>();
+    private List<String> alliances = new ArrayList<>();
+    private List<String> truces = new ArrayList<>();
+    private List<String> royalMarriages = new ArrayList<>();
+    private List<String> claims = new ArrayList<>();
     private List<String> largeProvinces = new ArrayList<>();
     private List<String> smallProvinces = new ArrayList<>();
     private List<String> vassalProvinces = new ArrayList<>();
@@ -56,6 +61,6 @@ public class PlayerProperties {
 
     private List<String> singularInfantry = new ArrayList<>();
     private List<String> influence = new ArrayList<>();
-    private Map<String, Boolean> lightShips = new LinkedHashMap<>();
+    private Map<String, int[]> lightShips = new LinkedHashMap<>();
     private Map<String, Boolean> merchants = new LinkedHashMap<>();
 }

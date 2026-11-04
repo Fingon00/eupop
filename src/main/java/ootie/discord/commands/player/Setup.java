@@ -55,6 +55,6 @@ class Setup extends GameStateSubcommand {
             MessageHelper.sendMessageToChannel(event.getMessageChannel(), "Someone already is set up to use " + color);
             return;
         }
-        PlayerSetupService.setupPlayer(color, realm, player, game, event);
+        PlayerSetupService.setupPlayer(color, realm, player, game, event, null, player.isBot());
     }
 }

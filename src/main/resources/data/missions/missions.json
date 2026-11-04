@@ -1,0 +1,2773 @@
+[
+    {
+        "id": "generic_1A",
+        "name": "Rearmament",
+        "code": "1A",
+        "realm": "generic",
+        "prestige": 1,
+        "goal": "Have all your Manpower Deployed (at least 5 Units).",
+        "effect": "Gain a Claim token in an Area adjacent by land to your Realm.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2H"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "generic_1A_2",
+        "name": "Rearmament",
+        "code": "1A",
+        "realm": "generic",
+        "prestige": 1,
+        "goal": "Have all your Manpower Deployed (at least 5 Units).",
+        "effect": "Gain a Claim token in an Area adjacent by land to your Realm.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2H"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "generic_1B",
+        "name": "Build a Fleet",
+        "code": "1B",
+        "realm": "generic",
+        "prestige": 1,
+        "goal": "Have 1+ Heavy Ships and 4+ Light Ships.",
+        "effect": "Gain 1 Diplomatic Power, or Appoint an Admiral for free from the top 5 cards of any discard pile.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "generic_1C",
+        "name": "Consolidate Power",
+        "code": "1C",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Have at least +1 Stability, no Provinces with Unrest, and 2+ Influence in an Area adjacent to your Realm.",
+        "effect": "Gain a Royal Marriage with an NPR in an Area where you have 2+ Influence.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2C",
+            "2G",
+            "2H",
+            "2I"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "generic_1C_2",
+        "name": "Consolidate Power",
+        "code": "1C",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Have at least +1 Stability, no Provinces with Unrest, and 2+ Influence in an Area adjacent to your Realm.",
+        "effect": "Gain a Royal Marriage with an NPR in an Area where you have 2+ Influence.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2C",
+            "2G",
+            "2H",
+            "2I"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "generic_1D",
+        "name": "Merchant Fleet",
+        "code": "1D",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Occupy 5+ Trade Protection slots, adjacent to a total of at least 3 Trade Nodes.",
+        "effect": "Gain a third Merchant or 2 Diplomatic Power.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "generic_1E",
+        "name": "Control Electors",
+        "code": "1E",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "In 3+ of Rhineland, Westphalia, Saxony, Brandenburg, or Bohemia, either have the most Influence (min. 2, no tie) or Own all Provinces in the Area.",
+        "effect": "Increase Imperial Authority by 1 or gain +1 Manpower.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2E",
+            "2I"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "generic_1F",
+        "name": "Expand the Nation",
+        "code": "1F",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "In an Area adjacent to any of your Core Provinces, Own 2+ Provinces that are not among your Core Provinces.",
+        "effect": "Gain 2 Military Power or a Claim token adjacent to your Realm.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "generic_1F_2",
+        "name": "Expand the Nation",
+        "code": "1F",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "In an Area adjacent to any of your Core Provinces, Own 2+ Provinces that are not among your Core Provinces.",
+        "effect": "Gain 2 Military Power or a Claim token adjacent to your Realm.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "generic_2A",
+        "name": "Our Natural Borders",
+        "code": "2A",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Own all Provinces in the Area where your Capital is located.",
+        "effect": "Gain +1 Prestige, and add a Core token in an Area where you now Own all Provinces.",
+        "prerequisiteMissions": [
+            "1A",
+            "1F"
+        ],
+        "unlocks": [
+            "3A",
+            "3K",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2A_2",
+        "name": "Our Natural Borders",
+        "code": "2A",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Own all Provinces in the Area where your Capital is located.",
+        "effect": "Gain +1 Prestige, and add a Core token in an Area where you now Own all Provinces.",
+        "prerequisiteMissions": [
+            "1A",
+            "1F"
+        ],
+        "unlocks": [
+            "3A",
+            "3K",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2B",
+        "name": "Colonial Ventures",
+        "code": "2B",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Have a Town in 2+ Territories on any of the Distant Continents.",
+        "effect": "You may pay 1 Light Ship to Expand a Trade Node adjacent to your Capital Area. Gain 1 Colonist.",
+        "prerequisiteMissions": [
+            "1B",
+            "1D"
+        ],
+        "unlocks": [
+            "3B",
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2B_2",
+        "name": "Colonial Ventures",
+        "code": "2B",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Have a Town in 2+ Territories on any of the Distant Continents.",
+        "effect": "You may pay 1 Light Ship to Expand a Trade Node adjacent to your Capital Area. Gain 1 Colonist.",
+        "prerequisiteMissions": [
+            "1B",
+            "1D"
+        ],
+        "unlocks": [
+            "3B",
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2C",
+        "name": "Thriving Towns",
+        "code": "2C",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Own and have Large Towns on 2+ of your Core Provinces that were Small at the start of the game.",
+        "effect": "Gain 5 Ducats and 2 Influence in any Area adjacent to your Realm.",
+        "prerequisiteMissions": [
+            "1C",
+            "2B"
+        ],
+        "unlocks": [
+            "3C",
+            "3K"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2C_2",
+        "name": "Thriving Towns",
+        "code": "2C",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Own and have Large Towns on 2+ of your Core Provinces that were Small at the start of the game.",
+        "effect": "Gain 5 Ducats and 2 Influence in any Area adjacent to your Realm.",
+        "prerequisiteMissions": [
+            "1C",
+            "2B"
+        ],
+        "unlocks": [
+            "3C",
+            "3K"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2D",
+        "name": "Dominate Trade",
+        "code": "2D",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Own 4+ Ports adjacent to a Maritime Trade Node where you occupy all Trade Protection slots. At least one of these Ports is not your Core Province.",
+        "effect": "Gain 2 Light Ships adjacent to this Node.",
+        "prerequisiteMissions": [
+            "1B",
+            "1D"
+        ],
+        "unlocks": [
+            "3D",
+            "3L",
+            "3M"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2E_2",
+        "name": "Become Emperor",
+        "code": "2E",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Be the current Emperor of the Holy Roman Empire.",
+        "effect": "Increase Imperial Authority by 1 or gain 1 Stability.",
+        "prerequisiteMissions": [
+            "1E",
+            "2H"
+        ],
+        "unlocks": [
+            "3J"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2F",
+        "name": "Marching On",
+        "code": "2F",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Own 2+ Provinces in an Area that was not adjacent by land to your Realm at the start of the game.",
+        "effect": "Gain a Claim token in the Area closest to your Realm (choose if multiple) with Opponent Provinces.",
+        "prerequisiteMissions": [
+            "1F",
+            "2A"
+        ],
+        "unlocks": [
+            "3A",
+            "3D",
+            "3G",
+            "3L"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2F_2",
+        "name": "Marching On",
+        "code": "2F",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Own 2+ Provinces in an Area that was not adjacent by land to your Realm at the start of the game.",
+        "effect": "Gain a Claim token in the Area closest to your Realm (choose if multiple) with Opponent Provinces.",
+        "prerequisiteMissions": [
+            "1F",
+            "2A"
+        ],
+        "unlocks": [
+            "3A",
+            "3D",
+            "3G",
+            "3L"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2G",
+        "name": "Religious Unity",
+        "code": "2G",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "All your Areas follow your State Religion. At least one of these Areas has been converted from another starting Religion.",
+        "effect": "Gain 1 Stability or remove 2 Unrest.",
+        "prerequisiteMissions": [
+            "1C"
+        ],
+        "unlocks": [
+            "3G"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2H",
+        "name": "Alliances and Dynasties",
+        "code": "2H",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Have an Alliance or Royal Marriage with 3+ Realms, at least 2 of which you did not have an Alliance or Royal Marriage with at the start of the game.",
+        "effect": "Gain 2 Influence in an Area adjacent to your Realm.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [
+            "3H",
+            "2E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2H_2",
+        "name": "Alliances and Dynasties",
+        "code": "2H",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Have an Alliance or Royal Marriage with 3+ Realms, at least 2 of which you did not have an Alliance or Royal Marriage with at the start of the game.",
+        "effect": "Gain 2 Influence in an Area adjacent to your Realm.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [
+            "3H",
+            "2E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_2I",
+        "name": "Imperial Religious Unity",
+        "code": "2I",
+        "realm": "generic",
+        "prestige": 4,
+        "goal": "State Religion is Counter-Reformed or Protestant. There are 4+ Elector Areas that have the same Religion as you. Max. 3 Towns in Elector Areas are Owned by Opponents of a different State Religion.",
+        "effect": "Increase Imperial Authority by 2 and gain 2 Military Power.",
+        "prerequisiteMissions": [
+            "1C",
+            "1E"
+        ],
+        "unlocks": [
+            "3C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3A",
+        "name": "Territorial Ambitions",
+        "code": "3A",
+        "realm": "generic",
+        "prestige": 4,
+        "goal": "Own or Vassalize 4+ Provinces in an Area where you have no Core Provinces, which is adjacent by land to another of your Areas.",
+        "effect": "Gain a Core token in an Area where you Own all Provinces.",
+        "prerequisiteMissions": [
+            "2A",
+            "2F"
+        ],
+        "unlocks": [
+            "4A",
+            "4O",
+            "4P",
+            "3J"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3A_2",
+        "name": "Territorial Ambitions",
+        "code": "3A",
+        "realm": "generic",
+        "prestige": 4,
+        "goal": "Own or Vassalize 4+ Provinces in an Area where you have no Core Provinces, which is adjacent by land to another of your Areas.",
+        "effect": "Gain a Core token in an Area where you Own all Provinces.",
+        "prerequisiteMissions": [
+            "2A",
+            "2F"
+        ],
+        "unlocks": [
+            "4A",
+            "4O",
+            "4P",
+            "3J"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3B",
+        "name": "Colonial Power",
+        "code": "3B",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Own 4+ Ports facing at least 2 of these Sea Zones: S.W. Atlantic, S.E. Atlantic, East African Coast, Indian Ocean, East Indies, or Great Australian Bight.",
+        "effect": "Gain 3 Colonists.",
+        "prerequisiteMissions": [
+            "2B",
+            "3K"
+        ],
+        "unlocks": [
+            "4B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3C",
+        "name": "Beacon of Light",
+        "code": "3C",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Have at least +2 Stability, while also having Researched 4+ Ideas.",
+        "effect": "Gain 2 Light Ships and Appoint an Advisor for free from the top 5 cards of any discard pile.",
+        "prerequisiteMissions": [
+            "2C",
+            "2I"
+        ],
+        "unlocks": [
+            "3H"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3D",
+        "name": "Amphibious Assault",
+        "code": "3D",
+        "realm": "generic",
+        "prestige": 4,
+        "goal": "Own or Vassalize 3+ Provinces in an Area where you have no Core Provinces, which is adjacent by sea, but not by land, to any of your other Areas.",
+        "effect": "Gain a Claim token in an Area adjacent by sea to any of those Provinces.",
+        "prerequisiteMissions": [
+            "2D",
+            "2F"
+        ],
+        "unlocks": [
+            "4A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3G",
+        "name": "Spread the True Faith",
+        "code": "3G",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Have Catholic State Religion, and Own all Provinces in 2+ Areas that were initially Muslim, but are now Catholic. Or vice versa.",
+        "effect": "Gain 2 Military Power or a Claim token adjacent by land to one of the Areas above.",
+        "prerequisiteMissions": [
+            "2F",
+            "2G"
+        ],
+        "unlocks": [
+            "3M"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3H",
+        "name": "Secure Inheritance",
+        "code": "3H",
+        "realm": "generic",
+        "prestige": 3,
+        "goal": "Own or Vassalize all Provinces of an NPR with 3+ Base Tax Income that you had a Royal Marriage and/or Alliance with at the start of the Round.",
+        "effect": "Gain 2 Light Ships.",
+        "prerequisiteMissions": [
+            "2H",
+            "3C"
+        ],
+        "unlocks": [
+            "4N",
+            "4O"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3J",
+        "name": "Regional Dominance",
+        "code": "3J",
+        "realm": "generic",
+        "prestige": 4,
+        "goal": "Have a Base Tax Income of 15+ Ducats. Own 4+ Provinces that are Core Provinces of an adjacent Realm which had a higher Base Tax Income than you at the start of the game.",
+        "effect": "Gain 2 Light Ships or 2 Military Power.",
+        "prerequisiteMissions": [
+            "2E",
+            "3A"
+        ],
+        "unlocks": [
+            "4N"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3K",
+        "name": "Leave the HRE",
+        "code": "3K",
+        "realm": "generic",
+        "prestige": 2,
+        "goal": "Your Capital is within the initial HRE borders. Own all Provinces in the Capital Area. Have a Government Idea, a Base Tax Income of 6+ Ducats, or Own 2+ Towns outside of the HRE.",
+        "effect": "Gain 2 Light Ships or 3 Colonists. Your Realm leaves the HRE. Place Not HRE in all HRE Areas where you Own all Provinces.",
+        "prerequisiteMissions": [
+            "2A",
+            "2C"
+        ],
+        "unlocks": [
+            "3B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3L",
+        "name": "Dominate the Baltic",
+        "code": "3L",
+        "realm": "generic",
+        "prestige": 4,
+        "goal": "Own or Vassalize 6+ Ports facing Skagerrak, Baltic Sea, or Gulf of Bothnia.",
+        "effect": "Gain 2 Light Ships.",
+        "prerequisiteMissions": [
+            "2D",
+            "2F"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_3M",
+        "name": "Mare Nostrum",
+        "code": "3M",
+        "realm": "generic",
+        "prestige": 4,
+        "goal": "Own or Vassalize 3+ of Gibraltar, Malta, Corsica, Tunis, Crete, Constantinople, Iskandariyya, or Cyprus.",
+        "effect": "Gain 2 Light Ships, or Appoint an Admiral for free from the top 5 cards of any discard pile.",
+        "prerequisiteMissions": [
+            "2D",
+            "3G"
+        ],
+        "unlocks": [
+            "4P"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_4A",
+        "name": "Conquer Rival Lands",
+        "code": "4A",
+        "realm": "generic",
+        "prestige": 6,
+        "goal": "Own 3+ Provinces that are Core Provinces of one of your Opponents.",
+        "effect": "Gain a Claim token in the Area closest to your Realm (choose if multiple) with Opponent Provinces.",
+        "prerequisiteMissions": [
+            "3A",
+            "3D"
+        ],
+        "unlocks": [
+            "5A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_4B",
+        "name": "Colonial Empire",
+        "code": "4B",
+        "realm": "generic",
+        "prestige": 4,
+        "goal": "Either Own 5+ Provinces adjacent to each other on a single Distant Continent, or Provinces on 4+ different Distant Continents.",
+        "effect": "Gain an Alliance with any Distant Realm adjacent to your Realm.",
+        "prerequisiteMissions": [
+            "3B",
+            "5A"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_4N",
+        "name": "German Confederation",
+        "code": "4N",
+        "realm": "generic",
+        "prestige": 7,
+        "goal": "Own or Vassalize 12+ Provinces in original HRE Areas. Have 2+ Alliances with HRE member Realms.",
+        "effect": "Gain 2 Influence in any HRE Area. Set Imperial Authority to 0.",
+        "prerequisiteMissions": [
+            "3H",
+            "3J"
+        ],
+        "unlocks": [
+            "5A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_4O",
+        "name": "Unite Italy",
+        "code": "4O",
+        "realm": "generic",
+        "prestige": 8,
+        "goal": "Own 15+ Provinces in Lombardy, Venetia, Central Italy, Naples, Sicily, or Corsica & Sardinia.",
+        "effect": "Gain 2 Military Power and a Core token in 2 of these Areas where you Own all Provinces.",
+        "prerequisiteMissions": [
+            "3A",
+            "3H"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_4P",
+        "name": "Dominate the Balkans",
+        "code": "4P",
+        "realm": "generic",
+        "prestige": 5,
+        "goal": "Own or Vassalize all Provinces in 2+ of Dalmatia, Croatia & Bosnia, Serbia & Albania, or Wallachia & Bulgaria.",
+        "effect": "Gain 2 Military Power or a Claim token adjacent by land to one of the Areas above.",
+        "prerequisiteMissions": [
+            "3A",
+            "3M"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "generic_5A",
+        "name": "Grand Empire",
+        "code": "5A",
+        "realm": "generic",
+        "prestige": 8,
+        "goal": "Have a Base Tax Income of 40+ Ducats, all in Areas connected to each other by land.",
+        "effect": "Gain 3 Manpower.",
+        "prerequisiteMissions": [
+            "4A",
+            "4N"
+        ],
+        "unlocks": [
+            "4B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Brandenburg_1C",
+        "name": "Hohenzollern Dynasty",
+        "code": "1C",
+        "realm": "Brandenburg",
+        "prestige": 2,
+        "goal": "Have a Royal Marriage and an Alliance with a Realm in the HRE.",
+        "effect": "Gain 2 Influence in an HRE Area adjacent to your Realm.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2C",
+            "2G",
+            "2H",
+            "2I"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Brandenburg_2A",
+        "name": "King in Prussia",
+        "code": "2A",
+        "realm": "Brandenburg",
+        "prestige": 3,
+        "goal": "Own or Vassalize 2+ Provinces in Prussia or Wielkopolska, and have a Manpower of 6+.",
+        "effect": "Gain +1 Manpower and a Claim token in an Area adjacent to your Realm.",
+        "prerequisiteMissions": [
+            "1A",
+            "1F"
+        ],
+        "unlocks": [
+            "3A",
+            "3K",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Brandenburg_2F",
+        "name": "Baltic Ports",
+        "code": "2F",
+        "realm": "Brandenburg",
+        "prestige": 2,
+        "goal": "Own or Vassalize 2+ Provinces in Pomerania.",
+        "effect": "Develop one Small Town into a Large Town.",
+        "prerequisiteMissions": [
+            "1F",
+            "2A"
+        ],
+        "unlocks": [
+            "3A",
+            "3D",
+            "3G",
+            "3L"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Brandenburg_2I",
+        "name": "Join Protestant Union",
+        "code": "2I",
+        "realm": "Brandenburg",
+        "prestige": 3,
+        "goal": "State Religion is Protestant. Have an Alliance with 2+ Protestant Realms, of which 1+ must be in the HRE. There are 2+ Protestant Elector Areas.",
+        "effect": "Gain 2 Military Power.",
+        "prerequisiteMissions": [
+            "1C",
+            "1E"
+        ],
+        "unlocks": [
+            "3C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_1D",
+        "name": "Control the Spice Trade",
+        "code": "1D",
+        "realm": "Ottomans",
+        "prestige": 2,
+        "goal": "Occupy 2+ Trade Protection slots adjacent to the Indian Ocean Trade Node and 2+ Trade Protection slots adjacent to the Alexandria Trade Node.",
+        "effect": "Gain 2 Trade Power.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2B",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Ottomans_2A",
+        "name": "Pacify the Bedouins",
+        "code": "2A",
+        "realm": "Ottomans",
+        "prestige": 4,
+        "goal": "Own or Vassalize 3+ of Hejaz, Najd, Yemen, and Hormuz.",
+        "effect": "Gain 1 Military Power or 1 Light Ship in the Indian Ocean. You may pay 3 Military Power to Research the “Noble Knights” Idea.",
+        "prerequisiteMissions": [
+            "1A",
+            "1D"
+        ],
+        "unlocks": [
+            "3A",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_2H",
+        "name": "Charm the Beyliks",
+        "code": "2H",
+        "realm": "Ottomans",
+        "prestige": 2,
+        "goal": "Either have 1+ Vassal token in Karaman or Kurdistan, or have an Alliance or Royal Marriage with 2+ different Non-Player Realms there.",
+        "effect": "Gain 2 Influence in an Area adjacent to your Realm.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [
+            "3H"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_4O",
+        "name": "Restore the Caliphate",
+        "code": "4O",
+        "realm": "Ottomans",
+        "prestige": 7,
+        "goal": "Own or Vassalize 9+ Provinces in Northern Morocco, Algiers, Tunisia, Tripolitania, Kurdistan, or Iraq.",
+        "effect": "Gain 2 Military Power and Stability in 2 of these Areas where you Own all Provinces.",
+        "prerequisiteMissions": [
+            "3A",
+            "3H"
+        ],
+        "unlocks": [
+            "5A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Netherlands_1D",
+        "name": "Monopolize Channel Trade",
+        "code": "1D",
+        "realm": "Netherlands",
+        "prestige": 2,
+        "goal": "Occupy 5+ Trade Protection slots adjacent to the English Channel Trade Node.",
+        "effect": "Gain a third Merchant or 2 Trade Power.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Netherlands_2A",
+        "name": "Unite the Low Countries",
+        "code": "2A",
+        "realm": "Netherlands",
+        "prestige": 4,
+        "goal": "Own or Vassalize all Provinces in the Netherlands, plus Antwerpen, Gent, and Brugge.",
+        "effect": "Develop one Small Town into a Large Town, and gain +1 Manpower and a Claim token in Flanders & Wallonia.",
+        "prerequisiteMissions": [
+            "1A",
+            "1F"
+        ],
+        "unlocks": [
+            "3A",
+            "3K",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Netherlands_2H",
+        "name": "Fight the Catholic League",
+        "code": "2H",
+        "realm": "Netherlands",
+        "prestige": 2,
+        "goal": "State Religion is Protestant. Have Alliances with 2+ Realms in Protestant Elector Areas. Be at War with an HRE Realm with a different State Religion than your own.",
+        "effect": "Gain 2 Military Power.",
+        "prerequisiteMissions": [
+            "1C"
+        ],
+        "unlocks": [
+            "3H"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Netherlands_3B",
+        "name": "Establish the VOC",
+        "code": "3B",
+        "realm": "Netherlands",
+        "prestige": 4,
+        "goal": "Own 4+ of Cape of Good Hope, Goa, Coromandel, Malacca, Brunei, South Sumatra, Java, Timor, or Moluccas.",
+        "effect": "Pay 3 Trade Power to Research the “Trade Companies” Idea or gain 2 Trade Power.",
+        "prerequisiteMissions": [
+            "2B",
+            "3K"
+        ],
+        "unlocks": [
+            "4B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Papal States_1F",
+        "name": "Patrimony of St. Peter",
+        "code": "1F",
+        "realm": "Papal States",
+        "prestige": 2,
+        "goal": "Own or Vassalize 2+ Provinces in Central Italy that are not among your Core Provinces.",
+        "effect": "Gain 2 Military Power or a Claim token in or adjacent by land to Central Italy.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Papal States_3K",
+        "name": "Counter the Reformation",
+        "code": "3K",
+        "realm": "Papal States",
+        "prestige": 3,
+        "goal": "Counter-Reformed Areas outnumber Protestant Areas on the board. There are 2+ Counter-Reformed HRE Elector Areas, and you have an Alliance with a Non-Player Realm in one of them.",
+        "effect": "Gain 3 Trade Power.",
+        "prerequisiteMissions": [
+            "2A",
+            "2C"
+        ],
+        "unlocks": [
+            "3H"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Papal States_3H",
+        "name": "Holy League",
+        "code": "3H",
+        "realm": "Papal States",
+        "prestige": 3,
+        "goal": "Be at War with a Realm that is a valid target under an ongoing Crusade. Have an Alliance with 2+ Catholic Realms also at War with the target. The target has 2+ Provinces occupied by Catholic Realms.",
+        "effect": "Gain 2 Military Power or 10 Ducats.",
+        "prerequisiteMissions": [
+            "2H",
+            "3K"
+        ],
+        "unlocks": [
+            "4O",
+            "4P"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Papal States_4P",
+        "name": "Reclaim the Holy Land",
+        "code": "4P",
+        "realm": "Papal States",
+        "prestige": 4,
+        "goal": "All Provinces in Palestine are Owned by you or a Catholic Realm Allied to you. Palestine is Catholic.",
+        "effect": "Gain 3 Trade Power.",
+        "prerequisiteMissions": [
+            "3A",
+            "3H"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Portugal_1F",
+        "name": "Continue Reconquista",
+        "code": "1F",
+        "realm": "Portugal",
+        "prestige": 3,
+        "goal": "Own or Vassalize 2+ Ports in Northern Morocco or Algiers that are not among your Core Provinces.",
+        "effect": "Gain 2 Military Power or a Claim token in Tunisia or Southern Morocco.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Portugal_2B",
+        "name": "Sea Route to India",
+        "code": "2B",
+        "realm": "Portugal",
+        "prestige": 3,
+        "goal": "Own 1+ Ports facing the Southeastern Atlantic, and 1+ Ports facing the East African Coast or Indian Ocean, and have 2+ Ships adjacent to the Indian Ocean Trade Node.",
+        "effect": "Gain 2 Trade Power and 10 Ducats.",
+        "prerequisiteMissions": [
+            "1B",
+            "1D"
+        ],
+        "unlocks": [
+            "3B",
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Portugal_2D",
+        "name": "Found Brazilian Colony",
+        "code": "2D",
+        "realm": "Portugal",
+        "prestige": 3,
+        "goal": "Own 2+ of Pernambuco, Bahia, Rio de Janeiro, Minas Gerais, or Amazonas.",
+        "effect": "Gain 2 Colonists and +1 Manpower.",
+        "prerequisiteMissions": [
+            "1B",
+            "1D"
+        ],
+        "unlocks": [
+            "3B",
+            "3D",
+            "3M"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Portugal_3B",
+        "name": "Dominate Spice Trade",
+        "code": "3B",
+        "realm": "Portugal",
+        "prestige": 5,
+        "goal": "Own 4+ Ports facing the Indian Ocean or the East Indies.",
+        "effect": "Gain 2 Light Ships in the East Indies.",
+        "prerequisiteMissions": [
+            "2B",
+            "2D"
+        ],
+        "unlocks": [
+            "4B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Milan_1F",
+        "name": "Expand the Terraferma",
+        "code": "1F",
+        "realm": "Milan",
+        "prestige": 2,
+        "goal": "Own or Vassalize 2+ Provinces in Lombardy or Central Italy that are not among your Core Provinces.",
+        "effect": "Gain 2 Military Power or a Claim token in Lombardy or Central Italy.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2F"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Milan_2B",
+        "name": "Expand the Arsenal",
+        "code": "2B",
+        "realm": "Milan",
+        "prestige": 3,
+        "goal": "Have 12+ Ships deployed, of which 6+ are Light Ships. No Opponent has more Ships in total in Sea Zones marked with a Battleground Area.",
+        "effect": "You may pay 1 Administrative Power to expand the Adriatic Sea Trade Node or the Alexandria Trade Node.",
+        "prerequisiteMissions": [
+            "1B",
+            "1D"
+        ],
+        "unlocks": [
+            "3D",
+            "3L",
+            "3M",
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Milan_3L",
+        "name": "Stato da Mar",
+        "code": "3L",
+        "realm": "Milan",
+        "prestige": 7,
+        "goal": "Own or Vassalize 10+ Ports in Dalmatia, Greece, Cyprus, Aegean Archipelago, Macedonia & Thrace, Egypt, Sicily, or Corsica & Sardinia.",
+        "effect": "Gain 3 Trade Power or 3 Military Power.",
+        "prerequisiteMissions": [
+            "2B",
+            "2F"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Milan_3M",
+        "name": "Monopolize the Adriatic",
+        "code": "3M",
+        "realm": "Milan",
+        "prestige": 4,
+        "goal": "Own or Vassalize 8+ Ports facing the Adriatic Sea. The Adriatic Sea Trade Node is Expanded.",
+        "effect": "Gain either 2 Light Ships or 4 Galleys in the Adriatic Sea.",
+        "prerequisiteMissions": [
+            "2B",
+            "2D"
+        ],
+        "unlocks": [
+            "4P"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Austria_1A",
+        "name": "Secure Electors",
+        "code": "1A",
+        "realm": "Austria",
+        "prestige": 1,
+        "goal": "Have the most Influence in 3+ of RHINELAND, WESTPHALIA, SAXONY, BRANDENBURG, or BOHEMIA, with 3+ Influence in each of these 3 Areas.",
+        "effect": "Gain a Claim token in an Elector Area where you have Influence.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2B",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Austria_1B",
+        "name": "Decline of Hungary",
+        "code": "1B",
+        "realm": "Austria",
+        "prestige": 1,
+        "goal": "Have a Base Tax Income of 11+ Ducats.",
+        "effect": "Gain either 2 Influence or a Claim token in either ROYAL HUNGARY or HUNGARIAN PLAIN.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Austria_1C",
+        "name": "Defend the Empire",
+        "code": "1C",
+        "realm": "Austria",
+        "prestige": 4,
+        "goal": "Own or Vassalize 2+ of Brescia, Franche-Comté, Namur, Luxembourg, or Holstein. No HRE Provinces Owned by Non-HRE Opponents.",
+        "effect": "Increase Imperial Authority or your Stability by 1. Gain 3 Influence in any HRE Areas.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2C",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Austria_2A",
+        "name": "Restore Religious Unity",
+        "code": "2A",
+        "realm": "Austria",
+        "prestige": 5,
+        "goal": "State Religion is Counter-Reformed. There are 4+ Catholic Elector Areas. Maximum 3 Towns in Elector Areas are owned by non-Catholic Opponents.",
+        "effect": "Increase Imperial Authority by 1 or change an HRE Area's Religion to Counter-Reformed.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [
+            "3A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Austria_2B",
+        "name": "King Albert's Legacy",
+        "code": "2B",
+        "realm": "Austria",
+        "prestige": 4,
+        "goal": "Own or Vassalize 5+ among Silesia, Zagreb, Rijeka, or any Provinces in BOHEMIA or ROYAL HUNGARY.",
+        "effect": "Gain a Claim token or 2 Influence adjacent to one of those Provinces.",
+        "prerequisiteMissions": [
+            "1A",
+            "1B"
+        ],
+        "unlocks": [
+            "3B",
+            "3C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Austria_2C",
+        "name": "The Iron Crown of Italy",
+        "code": "2C",
+        "realm": "Austria",
+        "prestige": 4,
+        "goal": "Own or Vassalize 5+ Provinces in LOMBARDY, CENTRAL ITALY, or NAPLES.",
+        "effect": "Increase Imperial Authority by 1 or gain a Claim token in DALMATIA, VENETIA, NAPLES, or SICILY. Gain 2 Influence in any HRE Areas.",
+        "prerequisiteMissions": [
+            "1C"
+        ],
+        "unlocks": [
+            "3C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Austria_2D",
+        "name": "Burgundian Inheritance",
+        "code": "2D",
+        "realm": "Austria",
+        "prestige": 4,
+        "goal": "Own or Vassalize 5+ Provinces in FLANDERS & WALLONIA or NETHERLANDS.",
+        "effect": "Gain 2 Cardinals.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Austria_3A",
+        "name": "The Holy League",
+        "code": "3A",
+        "realm": "Austria",
+        "prestige": 5,
+        "goal": "Have an Alliance token with the Papal States and another Catholic Realm outside of the HRE. Be at War with a Muslim Realm and Occupy 2+ of their Provinces.",
+        "effect": "Gain a Cardinal, 1 Military Power, and Ducats equal to the number of Land Units deployed.",
+        "prerequisiteMissions": [
+            "2A",
+            "3B"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Austria_3B",
+        "name": "Fate of Hungary",
+        "code": "3B",
+        "realm": "Austria",
+        "prestige": 4,
+        "goal": "Own or Vassalize all Provinces in 2+ of ROYAL HUNGARY, HUNGARIAN PLAIN, or TRANSYLVANIA.",
+        "effect": "Gain 2 Military Power or a Claim token in CROATIA & BOSNIA or SERBIA & ALBANIA.",
+        "prerequisiteMissions": [
+            "2B"
+        ],
+        "unlocks": [
+            "4B",
+            "4E",
+            "3A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Austria_3C",
+        "name": "Adriatic Ports",
+        "code": "3C",
+        "realm": "Austria",
+        "prestige": 3,
+        "goal": "Own 4+ Ports facing the ADRIATIC SEA.",
+        "effect": "You may either gain 3 Galleys in the ADRIATIC SEA or pay 1 Administrative Power to Expand the Adriatic Sea Trade Node.",
+        "prerequisiteMissions": [
+            "2B",
+            "2C"
+        ],
+        "unlocks": [
+            "4B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Austria_4B",
+        "name": "Dominate the Balkans",
+        "code": "4B",
+        "realm": "Austria",
+        "prestige": 4,
+        "goal": "Own or Vassalize 6+ Provinces in DALMATIA, CROATIA & BOSNIA, SERBIA & ALBANIA, or WALLACHIA & BULGARIA.",
+        "effect": "Remove a total of 2 Unrest from any of these Provinces.",
+        "prerequisiteMissions": [
+            "3B",
+            "3C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Austria_4E",
+        "name": "Austrian Galicia",
+        "code": "4E",
+        "realm": "Austria",
+        "prestige": 6,
+        "goal": "Own or Vassalize 4+ Provinces in WIELKOPOLSKA, MAZOVIA & MALOPOLSKA, or RED RUTHENIA.",
+        "effect": "Gain a Claim token or 2 Influence in either BRANDENBURG or WESTERN UKRAINE.",
+        "prerequisiteMissions": [
+            "3B"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Denmark Sweden_1A",
+        "name": "The Norwegian Crown",
+        "code": "1A",
+        "realm": "Denmark Sweden",
+        "prestige": 2,
+        "goal": "Own or Vassalize all Provinces in TRØNDELAG, VESTLANDET, and ØSTLANDET.",
+        "effect": "Gain 2 Light Ships in the NORTH SEA and a Claim token adjacent to ØSTLANDET.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Denmark Sweden_1B",
+        "name": "King of the Wends",
+        "code": "1B",
+        "realm": "Denmark Sweden",
+        "prestige": 4,
+        "goal": "Own or Vassalize 2+ Provinces in POMERANIA.",
+        "effect": "Gain a Claim token or 2 Influence in POMERANIA, or an Area adjacent to it by land.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Denmark Sweden_1C",
+        "name": "Consolidate Power",
+        "code": "1C",
+        "realm": "Denmark Sweden",
+        "prestige": 2,
+        "goal": "Have a Ruler, at least +1 Stability, and no Unrest in own Core Provinces. Have an Alliance with a Realm which was not your Ally at the start of the game.",
+        "effect": "Gain 2 Administrative Power or 2 Diplomatic Power.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Denmark Sweden_2A",
+        "name": "Our Land by Right",
+        "code": "2A",
+        "realm": "Denmark Sweden",
+        "prestige": 3,
+        "goal": "Own all Provinces in every Area where you have Core Provinces.",
+        "effect": "Gain a Claim token or 2 Influence in an Area adjacent to GÖTALAND & SKÅNE.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [
+            "3A",
+            "3B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Denmark Sweden_2B",
+        "name": "Decline of the Hansa",
+        "code": "2B",
+        "realm": "Denmark Sweden",
+        "prestige": 4,
+        "goal": "Own or Vassalize 2+ of Lübeck, Riga, Hamburg, or Bremen.",
+        "effect": "Gain 2 Diplomatic Power or a third Merchant.",
+        "prerequisiteMissions": [
+            "1B",
+            "2C"
+        ],
+        "unlocks": [
+            "3B",
+            "3D"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Denmark Sweden_2C",
+        "name": "Dominate Northern Trade",
+        "code": "2C",
+        "realm": "Denmark Sweden",
+        "prestige": 1,
+        "goal": "Occupy 5+ Trade Protection Slots, adjacent to at least 4 Trade Nodes in total.",
+        "effect": "Gain 2 Diplomatic Power.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [
+            "3C",
+            "3D",
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Denmark Sweden_3A",
+        "name": "Unify Scandinavia",
+        "code": "3A",
+        "realm": "Denmark Sweden",
+        "prestige": 5,
+        "goal": "Own or Vassalize all Danish, Swedish, and Norwegian Core Provinces.",
+        "effect": "Gain 1 Stability and a Core token in 2 Areas adjacent to your Capital Area where you Own all Provinces.",
+        "prerequisiteMissions": [
+            "2A"
+        ],
+        "unlocks": [
+            "4A",
+            "3C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Denmark Sweden_3B",
+        "name": "Meddle in Imperial Affairs",
+        "code": "3B",
+        "realm": "Denmark Sweden",
+        "prestige": 6,
+        "goal": "Have Protestant State Religion and an Alliance with 2+ Protestant Realms within the HRE. Occupy or Own 4+ non-Coastal original HRE Provinces.",
+        "effect": "Gain 2 Military Power or 2 Influence in any Protestant HRE Area.",
+        "prerequisiteMissions": [
+            "2A",
+            "2B"
+        ],
+        "unlocks": [
+            "4B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Denmark Sweden_3C",
+        "name": "Reclaim Baltic Shores",
+        "code": "3C",
+        "realm": "Denmark Sweden",
+        "prestige": 4,
+        "goal": "Own or Vassalize 3+ Provinces in KARELIA, ESTONIA & LIVONIA, or PRUSSIA, of which 2+ must be Ports.",
+        "effect": "Gain 1 Military Power and a Claim token in one of the Areas above.",
+        "prerequisiteMissions": [
+            "2C",
+            "3A"
+        ],
+        "unlocks": [
+            "4A",
+            "4B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Denmark Sweden_3D",
+        "name": "Establish Colonies",
+        "code": "3D",
+        "realm": "Denmark Sweden",
+        "prestige": 4,
+        "goal": "Own 2+ of New England, Antilles, Gold Coast, or Coromandel.",
+        "effect": "Gain 10 Ducats and 2 Colonists.",
+        "prerequisiteMissions": [
+            "2B",
+            "2C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Denmark Sweden_4A",
+        "name": "Claim Karelia",
+        "code": "4A",
+        "realm": "Denmark Sweden",
+        "prestige": 5,
+        "goal": "Own or Vassalize 3+ Provinces in POMORYE, KARELIA, or NOVGOROD.",
+        "effect": "Gain 2 Military Power and a Claim token in ESTONIA & LIVONIA.",
+        "prerequisiteMissions": [
+            "3A",
+            "3C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Denmark Sweden_4B",
+        "name": "The Polish Deluge",
+        "code": "4B",
+        "realm": "Denmark Sweden",
+        "prestige": 7,
+        "goal": "Own or Vassalize 5+ Provinces in PRUSSIA, WIELKOPOLSKA, MAZOVIA & MALOPOLSKA, or LITHUANIA.",
+        "effect": "Gain 3 Military Power.",
+        "prerequisiteMissions": [
+            "3B",
+            "3C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "England_1C",
+        "name": "Expand Angevin Empire",
+        "code": "1C",
+        "realm": "England",
+        "prestige": 5,
+        "goal": "Own or Vassalize Provinces worth 7+ Ducats of Tax Value in any of SEINE, AQUITAINE, BRITTANY & NORMANDY, LOIRE, or BURGUNDY.",
+        "effect": "Gain a total of 3 Influence in any Areas adjacent to SEINE.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "England_2A",
+        "name": "Dominate British Isles",
+        "code": "2A",
+        "realm": "England",
+        "prestige": 3,
+        "goal": "Own or Vassalize all Provinces in either SCOTLAND or IRELAND. Have no Rebel Unit or Rebel Town in your Realm.",
+        "effect": "Gain 1 Diplomatic Power and build up to 4 Light Ships at 2 Ducats each.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [
+            "3A",
+            "3E",
+            "2B",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "England_3A",
+        "name": "Form Great Britain",
+        "code": "3A",
+        "realm": "England",
+        "prestige": 4,
+        "goal": "Own all Provinces in IRELAND, SCOTLAND, NORTHUMBRIA, WALES & WESSEX, and EAST ANGLIA. Have 2+ Large Towns in these Areas.",
+        "effect": "Gain a Core token in IRELAND and SCOTLAND. Remove 2 Unrest.",
+        "prerequisiteMissions": [
+            "2A"
+        ],
+        "unlocks": [
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "England_3B",
+        "name": "Mediterranean Authority",
+        "code": "3B",
+        "realm": "England",
+        "prestige": 5,
+        "goal": "Own or Vassalize 2+ of Gibraltar, Baleares, Malta, Creta, or Cyprus.",
+        "effect": "Gain a Claim token in an Area adjacent to either the CENTRAL or the EASTERN MEDITERRANEAN Sea Zone.",
+        "prerequisiteMissions": [
+            "2B"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "England_3E",
+        "name": "Church of England",
+        "code": "3E",
+        "realm": "England",
+        "prestige": 3,
+        "goal": "State Religion is Protestant or Counter-Reformed. Maximum one of your Areas does not have the State Religion.",
+        "effect": "Gain 3 Influence in total in any Areas with your State Religion.",
+        "prerequisiteMissions": [
+            "2A"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "England_3F",
+        "name": "Colonial Ambitions",
+        "code": "3F",
+        "realm": "England",
+        "prestige": 5,
+        "goal": "Own 4+ Provinces adjacent to the SOUTHEASTERN ATLANTIC, EAST AFRICAN COAST, EAST INDIES, or GREAT AUSTRALIAN BIGHT Sea Zones.",
+        "effect": "Gain 3 Colonists and 1 Light Ship adjacent to one of these Trade Nodes.",
+        "prerequisiteMissions": [
+            "2B",
+            "2D"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "England_2C",
+        "name": "Continental Possessions",
+        "code": "2C",
+        "realm": "England",
+        "prestige": 5,
+        "goal": "Own or Vassalize 4+ Provinces in NETHERLANDS, FLANDERS & WALLONIA, or LOWER SAXONY.",
+        "effect": "Gain 3 Diplomatic Power.",
+        "prerequisiteMissions": [
+            "1C",
+            "3A"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "England_3G",
+        "name": "East India Company",
+        "code": "3G",
+        "realm": "England",
+        "prestige": 6,
+        "goal": "Own or Vassalize 3+ of Bengal, Deccan, Coromandel, Gujarat, or Malacca.",
+        "effect": "Gain 2 Infantry Units in any of your Distant Towns or pay 3 Diplomatic Power to Research ‘Trade Companies’.",
+        "prerequisiteMissions": [
+            "2B",
+            "2D"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "England_1A",
+        "name": "Levy the Troops",
+        "code": "1A",
+        "realm": "England",
+        "prestige": 1,
+        "goal": "Have all your Manpower Deployed.",
+        "effect": "Gain a Claim token or an Alliance token in IRELAND, and a Claim token or 2 Influence in SCOTLAND.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "England_1B",
+        "name": "The Admiralty",
+        "code": "1B",
+        "realm": "England",
+        "prestige": 1,
+        "goal": "Have 2+ Heavy Ships and 4+ Light Ships.",
+        "effect": "Gain 2 Diplomatic Power, and Appoint either an Advisor or an Admiral for free from your hand.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "England_2B",
+        "name": "Maritime Empire",
+        "code": "2B",
+        "realm": "England",
+        "prestige": 3,
+        "goal": "Have more Heavy Ships than each Opponent (min. 3). Have Light Ships adjacent to 5+ Maritime Trade Nodes.",
+        "effect": "Gain a Claim token in ANDALUCIA or a Territory with an Opponent's Town adjacent to one of your Ships.",
+        "prerequisiteMissions": [
+            "1B",
+            "2A"
+        ],
+        "unlocks": [
+            "3B",
+            "3F",
+            "3G"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "England_2D",
+        "name": "Settle in America",
+        "code": "2D",
+        "realm": "England",
+        "prestige": 3,
+        "goal": "Own 2+ of New England, Virginia, Hudson Bay, Canada, or Antilles.",
+        "effect": "Gain 1 Colonist. You may pay 1 Administrative Power to Expand the English Channel Trade Node.",
+        "prerequisiteMissions": [
+            "1B",
+            "2A"
+        ],
+        "unlocks": [
+            "3F",
+            "3G"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "France_1A",
+        "name": "End English Occupation",
+        "code": "1A",
+        "realm": "France",
+        "prestige": 5,
+        "goal": "England has no Town in AQUITAINE and BRITTANY & NORMANDY.",
+        "effect": "Gain a Claim token in SEINE, and either remove 2 Unrest or gain 2 Influence in AQUITAINE, BRITTANY & NORMANDY, or LANGUEDOC.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "France_1B",
+        "name": "Subjugate French Dukes",
+        "code": "1B",
+        "realm": "France",
+        "prestige": 3,
+        "goal": "Own or Vassalize Provence, Anjou, Nantes, and Rennes.",
+        "effect": "Gain a Claim token in BURGUNDY or LOMBARDY. In each of BRITTANY & NORMANDY and AQUITAINE, if you own all Provinces, gain a Core token there. If you gain no Core token, gain 2 Military Power.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "France_1C",
+        "name": "Reincorporate Burgundy",
+        "code": "1C",
+        "realm": "France",
+        "prestige": 3,
+        "goal": "Own or Vassalize Bourgogne.",
+        "effect": "Either remove 2 Unrest or gain a Claim token in RHINELAND, FLANDERS & WALLONIA, or LOMBARDY.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "France_2A",
+        "name": "French Naval Power",
+        "code": "2A",
+        "realm": "France",
+        "prestige": 1,
+        "goal": "Have 2+ Heavy Ships and 4+ Light Ships.",
+        "effect": "Gain 2 Diplomatic Power.",
+        "prerequisiteMissions": [
+            "1A",
+            "3B"
+        ],
+        "unlocks": [
+            "3A",
+            "3D",
+            "3E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "France_2B",
+        "name": "Italian Ambitions",
+        "code": "2B",
+        "realm": "France",
+        "prestige": 5,
+        "goal": "Own or Vassalize 5+ Provinces in LOMBARDY or CENTRAL ITALY.",
+        "effect": "Gain a Core token in an Area where you own all Provinces, and either 2 Galleys or 1 Light Ship in the GULF OF LION.",
+        "prerequisiteMissions": [
+            "1B",
+            "2C"
+        ],
+        "unlocks": [
+            "3B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "France_2C",
+        "name": "Imperial Border Conflict",
+        "code": "2C",
+        "realm": "France",
+        "prestige": 4,
+        "goal": "Own or Vassalize Savoie and at least one of Luxembourg, Namur, Lorraine, Sundgau, or Brugge.",
+        "effect": "Either gain 4 Influence or 2 Claim tokens in HRE Areas adjacent to your Realm.",
+        "prerequisiteMissions": [
+            "1C"
+        ],
+        "unlocks": [
+            "3A",
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "France_3A",
+        "name": "Secure the Low Countries",
+        "code": "3A",
+        "realm": "France",
+        "prestige": 6,
+        "goal": "Own or Vassalize 5+ Provinces in NETHERLANDS or FLANDERS & WALLONIA.",
+        "effect": "Gain 2 Diplomatic Power and 2 Light Ships in the ENGLISH CHANNEL.",
+        "prerequisiteMissions": [
+            "2A",
+            "2C"
+        ],
+        "unlocks": [
+            "4B",
+            "4E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "France_3B",
+        "name": "Claim the Two Sicilies",
+        "code": "3B",
+        "realm": "France",
+        "prestige": 4,
+        "goal": "Own or Vassalize 3+ Provinces in NAPLES or SICILY.",
+        "effect": "Gain a Claim token or 2 Influence in either CENTRAL ITALY or ARAGON.",
+        "prerequisiteMissions": [
+            "2B"
+        ],
+        "unlocks": [
+            "4B",
+            "2A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "France_3D",
+        "name": "Bases in North America",
+        "code": "3D",
+        "realm": "France",
+        "prestige": 2,
+        "goal": "Own 2+ of these Distant Provinces: Mississippi, Canada, Hudson Bay, Antilles, or Guyana.",
+        "effect": "You may pay 1 Administrative Power to Expand the Bordeaux Trade Node.",
+        "prerequisiteMissions": [
+            "2A"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "France_3E",
+        "name": "The Guinean Coast",
+        "code": "3E",
+        "realm": "France",
+        "prestige": 3,
+        "goal": "Own 2+ of these Distant Provinces: Mali, Gold Coast, or Benin.",
+        "effect": "Gain 10 Ducats.",
+        "prerequisiteMissions": [
+            "2A",
+            "4B"
+        ],
+        "unlocks": [
+            "4E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "France_4B",
+        "name": "Mediterranean Control",
+        "code": "4B",
+        "realm": "France",
+        "prestige": 5,
+        "goal": "Own or Vassalize 4+ of Baleares, Corsica, Sardenya, Malta, Tunis, Oran, or Mitidja.",
+        "effect": "Gain a Claim token in any Area adjacent to the CENTRAL MEDITERRANEAN or EASTERN MEDITERRANEAN.",
+        "prerequisiteMissions": [
+            "3A",
+            "3B"
+        ],
+        "unlocks": [
+            "3E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "France_4E",
+        "name": "Co. des Indes Orientales",
+        "code": "4E",
+        "realm": "France",
+        "prestige": 4,
+        "goal": "Own 2+ of these Distant Provinces: Bengal, Deccan, Coromandel, Malacca, Burma, or Siam.",
+        "effect": "Gain 2 Infantry Units in any of your Distant Towns or pay 3 Diplomatic Power to Research ‘Trade Companies’.",
+        "prerequisiteMissions": [
+            "3A",
+            "3E"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Spain_1A",
+        "name": "Claims in Aragon",
+        "code": "1A",
+        "realm": "Spain",
+        "prestige": 2,
+        "goal": "Own or Vassalize 4+ Provinces in ARAGON.",
+        "effect": "Gain a Claim token in either NAPLES, SICILY, or CORSICA & SARDINIA, or place 2 Influence cubes adjacent to your Realm.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Spain_1B",
+        "name": "La Reconquista",
+        "code": "1B",
+        "realm": "Spain",
+        "prestige": 2,
+        "goal": "Own all Provinces in ANDALUCIA.",
+        "effect": "Gain a Claim token in ARAGON or NORTHERN MOROCCO, or place a Catholic token in ANDALUCIA. You may pay 2 Military Power to Research ?Tercios/Janissaries?. ",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Spain_1C",
+        "name": "Discover Caribbean",
+        "code": "1C",
+        "realm": "Spain",
+        "prestige": 2,
+        "goal": "Have a Claim token on a Territory facing the CARIBBEAN SEA.",
+        "effect": "Either gain 3 Colonists or a Claim token in the Antilles.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Spain_2A",
+        "name": "Form Spain",
+        "code": "2A",
+        "realm": "Spain",
+        "prestige": 3,
+        "goal": "Own all Provinces in ARAGON, ANDALUCIA, LEON, and CASTILE. Have no Vassals or Allies in any of these Areas.",
+        "effect": "Gain a Core token in ANDALUCIA and ARAGON. Remove 2 Military Power.",
+        "prerequisiteMissions": [
+            "1A"
+        ],
+        "unlocks": [
+            "3A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Spain_2B",
+        "name": "Continue Reconquista",
+        "code": "2B",
+        "realm": "Spain",
+        "prestige": 4,
+        "goal": "Own or Vassalize 3+ Provinces in NORTHERN MOROCCO, ALGIERS, or TUNISIA.",
+        "effect": "Gain a Vassal token.",
+        "prerequisiteMissions": [
+            "1B",
+            "3A"
+        ],
+        "unlocks": [
+            "3B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Spain_2C",
+        "name": "The Spanish Main",
+        "code": "2C",
+        "realm": "Spain",
+        "prestige": 4,
+        "goal": "Own 3+ of Mississippi, Florida, Antilles, New Granada, Guyana, or La Plata.",
+        "effect": "Gain 2 Colonists, or pay 1 Administrative Power to Expand the Sevilla Trade Node.",
+        "prerequisiteMissions": [
+            "1C"
+        ],
+        "unlocks": [
+            "3C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Spain_2D",
+        "name": "Italian Ambition",
+        "code": "2D",
+        "realm": "Spain",
+        "prestige": 4,
+        "goal": "Own or Vassalize 5+ Provinces in NAPLES, SICILY, and CORSICA & SARDINIA.",
+        "effect": "Gain 2 Claim tokens in CENTRAL ITALY, LOMBARDY, LANGUEDOC, BURGUNDY, or FLANDERS & WALLONIA.",
+        "prerequisiteMissions": [
+            "1A"
+        ],
+        "unlocks": [
+            "3D",
+            "3E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Spain_3A",
+        "name": "Iberian Union",
+        "code": "3A",
+        "realm": "Spain",
+        "prestige": 4,
+        "goal": "Own or Vassalize all Provinces in PORTUGAL, MACARONESIA, ARAGON, ANDALUCIA, LEON, and CASTILE.",
+        "effect": "Gain 3 Military Power or 3 Light Ships in the CENTRAL ATLANTIC.",
+        "prerequisiteMissions": [
+            "2A",
+            "2B"
+        ],
+        "unlocks": [
+            "3D",
+            "4C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Spain_3C",
+        "name": "El Dorado",
+        "code": "3C",
+        "realm": "Spain",
+        "prestige": 5,
+        "goal": "Own or Vassalize 3+ of Mexico, Central America, Cuzco, or Charcas.",
+        "effect": "Gain 2 Military Power or 2 Colonists. You may sacrifice 2 Prestige and either pay 2 Military Power or gain 2 Trade Power to gain 30 Ducats.",
+        "prerequisiteMissions": [
+            "2C"
+        ],
+        "unlocks": [
+            "4C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Spain_3D",
+        "name": "Italian Conquest",
+        "code": "3D",
+        "realm": "Spain",
+        "prestige": 5,
+        "goal": "Own or Vassalize 5+ Provinces in LOMBARDY, VENETIA, or CENTRAL ITALY. No Opponents have Core tokens in CENTRAL ITALY.",
+        "effect": "Gain a Royal Marriage with any NPR in one of the above Areas.",
+        "prerequisiteMissions": [
+            "2D"
+        ],
+        "unlocks": [
+            "4C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Spain_3E",
+        "name": "Defend the Catholic Faith",
+        "code": "3E",
+        "realm": "Spain",
+        "prestige": 6,
+        "goal": "State Religion is Counter-Reformed. Own 4+ Provinces in NETHERLANDS, FLANDERS & WALLONIA, or BURGUNDY. All of your Areas and 3+ HRE Elector Areas are Catholic.",
+        "effect": "Increase Stability by 1. Gain a Claim token.",
+        "prerequisiteMissions": [
+            "2D",
+            "3A"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Spain_4C",
+        "name": "The Spanish Moluccas",
+        "code": "4C",
+        "realm": "Spain",
+        "prestige": 4,
+        "goal": "Own 2+ Provinces adjacent to the EAST INDIES Sea Zone.",
+        "effect": "Gain 2 Light Ships in the EAST INDIES Sea Zone.",
+        "prerequisiteMissions": [
+            "3A",
+            "3C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Russia_1A",
+        "name": "Integrate Principalities",
+        "code": "1A",
+        "realm": "Russia",
+        "prestige": 2,
+        "goal": "Own 3+ of Perm, Beloozero, Pskov, Yaroslavl, Tver, Odoyev, or Ryazan.",
+        "effect": "Gain a Claim token in Ural, and either a Claim token or 2 Influence cubes in NOVGOROD or an Area containing any of the Provinces above.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Russia_1B",
+        "name": "To Arms!",
+        "code": "1B",
+        "realm": "Russia",
+        "prestige": 1,
+        "goal": "Have all your Active Ally tokens Deployed.",
+        "effect": "Gain a Claim token in NOVGOROD, WHITE RUTHENIA, KAZAN, or SARATOV.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Russia_1C",
+        "name": "Tame the Steppes",
+        "code": "1C",
+        "realm": "Russia",
+        "prestige": 2,
+        "goal": "Own or Vassalize any 2+ of Kazan, Volga, or any Provinces in SARATOV.",
+        "effect": "Gain a Claim token in 2 of ASTRAKHAN, SARATOV, KAZAN, or Volga. You may pay 3 Military Power to Research ?Noble Knights?.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2C",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Russia_2A",
+        "name": "Conquer Novgorod",
+        "code": "2A",
+        "realm": "Russia",
+        "prestige": 4,
+        "goal": "Own or Vassalize 4+ Provinces in NOVGOROD, KARELIA, or POMORYE.",
+        "effect": "Gain a Claim token in an Area adjacent to your Realm, and 2 Influence cubes in MOSCOW & RYAZAN, CENTRAL RUSSIA, or PERM.",
+        "prerequisiteMissions": [
+            "1A",
+            "1B"
+        ],
+        "unlocks": [
+            "3A",
+            "3E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Russia_2B",
+        "name": "Liberate Ruthenia",
+        "code": "2B",
+        "realm": "Russia",
+        "prestige": 5,
+        "goal": "Own or Vassalize any 4+ Provinces in WHITE RUTHENIA, WESTERN UKRAINE, or EASTERN UKRAINE.",
+        "effect": "Gain 2 Claim tokens or 4 Influence cubes in Areas adjacent to your Realm.",
+        "prerequisiteMissions": [
+            "1B"
+        ],
+        "unlocks": [
+            "3B",
+            "3E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Russia_3B",
+        "name": "Control the Volga",
+        "code": "3B",
+        "realm": "Russia",
+        "prestige": 5,
+        "goal": "Own or Vassalize Provinces with a total Tax Value of 6 among Kazan, Volga, or any Provinces in SARATOV or ASTRAKHAN.",
+        "effect": "Gain a Claim token in CRIMEA, Nogai, or Tyumen.",
+        "prerequisiteMissions": [
+            "2C"
+        ],
+        "unlocks": [
+            "3C"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Russia_2D",
+        "name": "The Siberian Frontier",
+        "code": "2D",
+        "realm": "Russia",
+        "prestige": 2,
+        "goal": "Own Ural and West Siberia.",
+        "effect": "Gain a Claim token in East Siberia.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Russia_3A",
+        "name": "Form Russia",
+        "code": "3A",
+        "realm": "Russia",
+        "prestige": 4,
+        "goal": "Own all Provinces in MOSCOW & RYAZAN, CENTRAL RUSSIA, VOLOGDA, PERM, NOVGOROD, KARELIA, and POMORYE. Have at least +1 Stability.",
+        "effect": "Gain Influence cubes in 3 of these Areas, and a Claim token in SARATOV or WHITE RUTHENIA.",
+        "prerequisiteMissions": [
+            "2A"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Russia_3B",
+        "name": "Black Sea Ports",
+        "code": "3B",
+        "realm": "Russia",
+        "prestige": 5,
+        "goal": "Own or Vassalize 5+ Ports facing the BLACK SEA.",
+        "effect": "Gain 2 Light Ships in the BLACK SEA.",
+        "prerequisiteMissions": [
+            "2B",
+            "2C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Russia_3C",
+        "name": "Consolidate the Steppes",
+        "code": "3C",
+        "realm": "Russia",
+        "prestige": 4,
+        "goal": "Own 2+ of Tyumen, Nogai, and Kazakhstan.",
+        "effect": "Gain 3 Military Power and a Claim token adjacent to one of those Areas.",
+        "prerequisiteMissions": [
+            "2C",
+            "2D"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Russia_3D",
+        "name": "Reach the Pacific Ocean",
+        "code": "3D",
+        "realm": "Russia",
+        "prestige": 3,
+        "goal": "Own East Siberia and Okhotsk.",
+        "effect": "Gain 1 Light Ship in the SEA OF OKHOTSK, and either 2 Trade Power in Furdan or a Claim token.",
+        "prerequisiteMissions": [
+            "2D"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Russia_3E",
+        "name": "Window on the West",
+        "code": "3E",
+        "realm": "Russia",
+        "prestige": 5,
+        "goal": "Own or Vassalize 5+ Ports facing the BALTIC SEA or GULF OF BOTHNIA.",
+        "effect": "Develop a Small Town adjacent to the BALTIC SEA or GULF OF BOTHNIA into a Large Town; gain 2 Trade Power.",
+        "prerequisiteMissions": [
+            "2A",
+            "2B"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_1A",
+        "name": "City of the World?s Desire",
+        "code": "1A",
+        "realm": "Ottomans",
+        "prestige": 3,
+        "goal": "Own or Vassalize Constantinople, and at least one of Athina, Morea, or Naxos.",
+        "effect": "Gain Imperial Authority in MACEDONIA & THRACE and a Claim token in SERBIA & ALBANIA. You may pay 2 Diplomatic Power to immediately Research the ?Tolerance? Idea.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Ottomans_1B",
+        "name": "Expand Devshirme System",
+        "code": "1B",
+        "realm": "Ottomans",
+        "prestige": 1,
+        "goal": "Have all your Active Ally tokens Deployed.",
+        "effect": "Gain a Claim token in NORTHERN ANATOLIA and KARAMAN. You may pay 2 Military Power to immediately Research the ?Tercios/Janissaries? Idea.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Ottomans_1C",
+        "name": "Last Crusader Bastion",
+        "code": "1C",
+        "realm": "Ottomans",
+        "prestige": 2,
+        "goal": "Annex or Vassalize Rhodes during Peace Resolution.",
+        "effect": "Gain 1 Galley, and a Claim token in AEGEAN ARCHIPELAGO or CYPRUS.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2C"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Ottomans_2A",
+        "name": "Balkan Foothold",
+        "code": "2A",
+        "realm": "Ottomans",
+        "prestige": 4,
+        "goal": "Own or Vassalize 5+ Provinces in SERBIA & ALBANIA, CROATIA & BOSNIA, or WALLACHIA & BULGARIA.",
+        "effect": "Gain a Claim token in 3 of DALMATIA, HUNGARIAN PLAIN, TRANSYLVANIA, or any of the Areas above.",
+        "prerequisiteMissions": [
+            "1A"
+        ],
+        "unlocks": [
+            "3A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_2B",
+        "name": "Safeguard Anatolia",
+        "code": "2B",
+        "realm": "Ottomans",
+        "prestige": 4,
+        "goal": "Own or Vassalize 5+ Provinces in KARAMAN, or in Areas adjacent to KARAMAN by land, that are not among your Core Provinces.",
+        "effect": "Gain a Claim token in 3 of RUM, KURDISTAN, CRIMEA, SYRIA, or PALESTINE.",
+        "prerequisiteMissions": [
+            "1B"
+        ],
+        "unlocks": [
+            "3B",
+            "3D",
+            "3E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_2C",
+        "name": "Mediterranean Supremacy",
+        "code": "2C",
+        "realm": "Ottomans",
+        "prestige": 2,
+        "goal": "Own or Vassalize 2+ of Creta, Cyprus, Malta, Sardenya, or Baleares.",
+        "effect": "Gain 1 Light Ship, and a Claim token in NAPLES or SICILY.",
+        "prerequisiteMissions": [
+            "1C"
+        ],
+        "unlocks": [
+            "3B",
+            "3C",
+            "3D"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_3A",
+        "name": "Control the Danube",
+        "code": "3A",
+        "realm": "Ottomans",
+        "prestige": 6,
+        "goal": "Own or Vassalize Beograd, Pest, and 2+ other original Hungarian Core Provinces.",
+        "effect": "Gain 2 Military Power, and a Claim token in ROYAL HUNGARY.",
+        "prerequisiteMissions": [
+            "2A"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_3B",
+        "name": "Conquer Levant",
+        "code": "3B",
+        "realm": "Ottomans",
+        "prestige": 5,
+        "goal": "Occupy, Own, or Vassalize 4+ Provinces in SYRIA or PALESTINE.",
+        "effect": "Gain 2 Military Power, and a Claim token in EGYPT and CYRENAICA.",
+        "prerequisiteMissions": [
+            "2B",
+            "2C"
+        ],
+        "unlocks": [
+            "4B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_3C",
+        "name": "Control Barbary Coast",
+        "code": "3C",
+        "realm": "Ottomans",
+        "prestige": 4,
+        "goal": "Own or Vassalize 6+ Provinces in TRIPOLITANIA, TUNISIA, or ALGIERS.",
+        "effect": "Gain 2 Galleys, and a Claim token in any of the above Areas.",
+        "prerequisiteMissions": [
+            "2C"
+        ],
+        "unlocks": [
+            "4B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_3D",
+        "name": "Control Black Sea",
+        "code": "3D",
+        "realm": "Ottomans",
+        "prestige": 3,
+        "goal": "Own or Vassalize 9+ Ports facing the BLACK SEA.",
+        "effect": "Gain 2 Light Ships.",
+        "prerequisiteMissions": [
+            "2B",
+            "2C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_3E",
+        "name": "Conquer Mesopotamia",
+        "code": "3E",
+        "realm": "Ottomans",
+        "prestige": 6,
+        "goal": "Own or Vassalize Mosul, Kirkuk, Tikrit, Baghdad, and Basra.",
+        "effect": "Gain 3 Military Power.",
+        "prerequisiteMissions": [
+            "2B"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Ottomans_4B",
+        "name": "Conquer Egypt",
+        "code": "4B",
+        "realm": "Ottomans",
+        "prestige": 6,
+        "goal": "Own or Vassalize all Provinces in EGYPT and CYRENAICA.",
+        "effect": "Gain a Claim token in 3 of Hejaz, Yemen, AEGEAN ARCHIPELAGO, TRIPOLITANIA, TUNISIA, or ALGIERS.",
+        "prerequisiteMissions": [
+            "3B",
+            "3C"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Poland_1A",
+        "name": "Recover from Varna",
+        "code": "1A",
+        "realm": "Poland",
+        "prestige": 2,
+        "goal": "Have 2+ Military Power, a Royal Marriage token, and a Ruler (not Interregnum) in play.",
+        "effect": "Gain 1 Stability. You may pay 3 Diplomatic Power to immediately Research ?Tolerance?.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A",
+            "2D"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Poland_1B",
+        "name": "Defeat the Knights",
+        "code": "1B",
+        "realm": "Poland",
+        "prestige": 3,
+        "goal": "Own or Vassalize 3+ Provinces in PRUSSIA.",
+        "effect": "Gain 2 Galleys in the BALTIC SEA and a Claim token in an Area adjacent to it, or pay 3 Military Power to immediately Research ?Noble Knights?.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Poland_1C",
+        "name": "Reincorporate Mazovia",
+        "code": "1C",
+        "realm": "Poland",
+        "prestige": 1,
+        "goal": "Own Warszawa, and have 3+ Large Towns.",
+        "effect": "Draw an Administrative or Diplomatic Action Card, or gain a Claim token in LITHUANIA and RED RUTHENIA.",
+        "prerequisiteMissions": [],
+        "unlocks": [
+            "2A"
+        ],
+        "source": "base",
+        "startingMission": true
+    },
+    {
+        "id": "Poland_2A",
+        "name": "The Commonwealth",
+        "code": "2A",
+        "realm": "Poland",
+        "prestige": 4,
+        "goal": "Own or Vassalize all Provinces in LITHUANIA.",
+        "effect": "Gain a Claim token or 2 Influence cubes in 2 of RED RUTHENIA, WHITE RUTHENIA, WESTERN UKRAINE, EASTERN UKRAINE, or MOLDAVIA.",
+        "prerequisiteMissions": [
+            "1A",
+            "1C"
+        ],
+        "unlocks": [
+            "3A",
+            "3B",
+            "3E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Poland_2B",
+        "name": "The Polish Navy",
+        "code": "2B",
+        "realm": "Poland",
+        "prestige": 2,
+        "goal": "Own 2+ Ports and 4+ Light Ships.",
+        "effect": "Gain a Claim token in an Area adjacent to a Sea Zone that has any of your Ports facing it.",
+        "prerequisiteMissions": [
+            "1B",
+            "3E"
+        ],
+        "unlocks": [
+            "3B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Poland_2D",
+        "name": "Jagiellonian Dynasty",
+        "code": "2D",
+        "realm": "Poland",
+        "prestige": 5,
+        "goal": "Own or Vassalize 4+ Provinces in BOHEMIA, ROYAL HUNGARY, HUNGARIAN PLAIN, or TRANSYLVANIA.",
+        "effect": "Gain a Claim token or 2 Influence cubes in any Area with Bohemian or Hungarian Core Provinces.",
+        "prerequisiteMissions": [
+            "1A"
+        ],
+        "unlocks": [
+            "3D"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Poland_3A",
+        "name": "Break the Rus",
+        "code": "3A",
+        "realm": "Poland",
+        "prestige": 6,
+        "goal": "Own or Vassalize 8+ Provinces adjacent to MOSCOW & RYAZAN.",
+        "effect": "Gain a third Merchant or 3 Trade Power.",
+        "prerequisiteMissions": [
+            "2A",
+            "3B"
+        ],
+        "unlocks": [
+            "3D"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Poland_3B",
+        "name": "Dominate the Baltic",
+        "code": "3B",
+        "realm": "Poland",
+        "prestige": 4,
+        "goal": "Own or Vassalize 4+ Provinces in ESTONIA & LIVONIA or POMORYE.",
+        "effect": "You may pay 1 Administrative Power to Expand the L?beck Trade Node adjacent to the Baltic Sea.",
+        "prerequisiteMissions": [
+            "2A",
+            "2B"
+        ],
+        "unlocks": [
+            "4B",
+            "4F",
+            "3A"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Poland_3D",
+        "name": "Revenge for Varna",
+        "code": "3D",
+        "realm": "Poland",
+        "prestige": 6,
+        "goal": "Own or Vassalize all Provinces in WALLACHIA & BULGARIA.",
+        "effect": "Gain 3 Military Power.",
+        "prerequisiteMissions": [
+            "2D"
+        ],
+        "unlocks": [
+            "3E"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Poland_3E",
+        "name": "Black Sea Ports",
+        "code": "3E",
+        "realm": "Poland",
+        "prestige": 4,
+        "goal": "Own or Vassalize 4+ Ports facing the BLACK SEA.",
+        "effect": "Gain 1 Light Ship or 2 Galleys in the BLACK SEA, and a Claim token in an Area adjacent to it.",
+        "prerequisiteMissions": [
+            "2A",
+            "3D"
+        ],
+        "unlocks": [
+            "2B"
+        ],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Poland_4B",
+        "name": "House of Vasa",
+        "code": "4B",
+        "realm": "Poland",
+        "prestige": 4,
+        "goal": "Own or Vassalize 4+ Provinces in SVEALAND, G?TALAND & SK?NE, or FINLAND.",
+        "effect": "Gain 2 Light Ships in the BALTIC SEA.",
+        "prerequisiteMissions": [
+            "3B"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    },
+    {
+        "id": "Poland_4F",
+        "name": "House of Wettin",
+        "code": "4F",
+        "realm": "Poland",
+        "prestige": 4,
+        "goal": "Own or Vassalize 3+ Provinces adjacent to SAXONY.",
+        "effect": "Gain a total of 3 Influence cubes in any Areas within the HRE.",
+        "prerequisiteMissions": [
+            "3A"
+        ],
+        "unlocks": [],
+        "source": "base",
+        "startingMission": false
+    }
+]

@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import lombok.experimental.UtilityClass;
 import ootie.ResourceHelper;
 import ootie.json.JsonMapperManager;
@@ -43,7 +42,6 @@ public class Mapper {
     private static final Map<String, SetupCardModel> setupCards = new HashMap<>();
     private static final Map<String, TradeCardModel> tradeCards = new HashMap<>();
     private static final Map<String, BotCardModel> botCards = new HashMap<>();
-
 
     private static final JsonMapper jsonMapper =
             JsonMapperManager.basic().rebuild().build();

@@ -1,7 +1,6 @@
 package ootie.discord.commands.search;
 
 import java.util.List;
-
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import ootie.helpers.Constants;
 import ootie.image.Mapper;
