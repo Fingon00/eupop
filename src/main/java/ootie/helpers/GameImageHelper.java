@@ -6,6 +6,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.game.Game;
@@ -163,9 +164,9 @@ public class GameImageHelper {
                 continue;
             }
             BufferedImage townImage = ImageHelper.readScaled(
-                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.46f);
+                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Town"), 0.36f);
             BufferedImage unrestImage = ImageHelper.readScaled(
-                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Unrest_White"), 0.46f);
+                    ResourceHelper.getInstance().getPlayerFile(player.getColor(), "Unrest_White"), 0.36f);
             for (String prov : player.getSmallProvinces()) {
                 if (Mapper.getProvinces().containsKey(prov)) {
                     ProvinceModel model = Mapper.getProvinces().get(prov);
@@ -177,11 +178,11 @@ public class GameImageHelper {
                     int py = (int) ((1 - ny) * h);
                     if (player.getUnrestProvinces().contains(prov)) {
                         px -= unrestImage.getWidth() / 2;
-                        py -= unrestImage.getHeight() / 2 - 40;
+                        py = py - unrestImage.getHeight() / 2 - 40;
                         g.drawImage(unrestImage, px, py, null);
                     } else {
                         px -= townImage.getWidth() / 2;
-                        py -= townImage.getHeight() / 2 - 40;
+                        py = py - townImage.getHeight() / 2 - 40;
                         g.drawImage(townImage, px, py, null);
                     }
                 }
@@ -201,11 +202,11 @@ public class GameImageHelper {
                     int py = (int) ((1 - ny) * h);
                     if (player.getUnrestProvinces().contains(prov)) {
                         px -= unrestImage.getWidth() / 2;
-                        py -= unrestImage.getHeight() / 2 - 40;
+                        py = py - unrestImage.getHeight() / 2 - 45;
                         g.drawImage(unrestImage, px, py, null);
                     } else {
                         px -= townImage.getWidth() / 2;
-                        py -= townImage.getHeight() / 2 - 40;
+                        py = py - townImage.getHeight() / 2 - 45;
                         g.drawImage(townImage, px, py, null);
                     }
                 }

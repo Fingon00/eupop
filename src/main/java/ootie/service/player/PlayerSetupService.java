@@ -1,5 +1,7 @@
 package ootie.service.player;
 
+import org.apache.commons.lang3.StringUtils;
+
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import ootie.game.Game;
@@ -7,7 +9,6 @@ import ootie.game.Player;
 import ootie.image.Mapper;
 import ootie.model.AreaModel;
 import ootie.model.SetupCardModel;
-import org.apache.commons.lang3.StringUtils;
 
 @UtilityClass
 public class PlayerSetupService {
@@ -20,19 +21,15 @@ public class PlayerSetupService {
 
     public static void setupPlayer(
             String color,
-            String realm,
             Player player,
             Game game,
             GenericInteractionCreateEvent event,
             String setupCardID,
             boolean isBot) {
         resetPlayer(player, game);
-        player.setRealm(realm);
         player.setColor(color);
         player.setBot(isBot);
-        if (setupCardID != null) {
-            setupPlayer(player, game, setupCardID);
-        }
+        setupPlayer(player, game, setupCardID);
     }
 
     public static void setupPlayer(Player player, Game game, String setupCardID) {
@@ -69,14 +66,18 @@ public class PlayerSetupService {
         player.setRuler(setupCardID);
         for (String influence : setupCardModel.getInfluence()) {
             if (influence.contains("(")) {
-                String numberString = StringUtils.substringBefore(")", StringUtils.substringAfter("(", influence));
+                String numberString = StringUtils.substringBefore(StringUtils.substringAfter("(", influence),")");
                 String areaName = StringUtils.substringBefore("(", influence)
                         .trim()
                         .toLowerCase()
                         .replaceAll(" ", "_");
-                int num = Integer.parseInt(numberString);
-                for (int x = 0; x < num; x++) {
-                    player.getInfluence().add(areaName);
+                try {
+                    int num = Integer.parseInt(numberString);
+                    for (int x = 0; x < num; x++) {
+                        player.getInfluence().add(areaName);
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Error on " + influence);
                 }
             }
         }
@@ -103,16 +104,20 @@ public class PlayerSetupService {
                 player.getArmy1().setLocation(loc);
                 String units = StringUtils.substringAfter(unit, ":");
                 for (String un : units.split(",")) {
-                    un = un.replace(")", "").toLowerCase();
-                    int amount = Integer.parseInt(StringUtils.substringBefore(un, " "));
-                    if (un.contains("infantry")) {
-                        player.getArmy1().setInfantry(amount);
-                    }
-                    if (un.contains("cav")) {
-                        player.getArmy1().setCavalry(amount);
-                    }
-                    if (un.contains("artillery")) {
-                        player.getArmy1().setArtillery(amount);
+                    String un2 = un.replace(")", "").toLowerCase().trim();
+                    try {
+                        int amount = Integer.parseInt(StringUtils.substringBefore(un2, " "));
+                        if (un2.contains("infantry")) {
+                            player.getArmy1().setInfantry(amount);
+                        }
+                        if (un2.contains("cav")) {
+                            player.getArmy1().setCavalry(amount);
+                        }
+                        if (un2.contains("artillery")) {
+                            player.getArmy1().setArtillery(amount);
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Error on " + un);
                     }
                 }
             }
@@ -124,17 +129,21 @@ public class PlayerSetupService {
                 player.getFleet().setLocation(loc);
                 String units = StringUtils.substringAfter(unit, ":");
                 for (String un : units.split(",")) {
-                    un = un.replace(")", "").toLowerCase();
-                    int amount = Integer.parseInt(StringUtils.substringBefore(un, " "));
-                    if (un.contains("galley")) {
-                        player.getFleet().setGalleys(amount);
-                    }
-                    if (un.contains("heavy") || un.contains("h.")) {
-                        player.getFleet().setHeavyShips(amount);
-                        ;
-                    }
-                    if (un.contains("light")) {
-                        player.getFleet().setLightShips(amount);
+                    un = un.replace(")", "").toLowerCase().trim();
+                    try {
+                        int amount = Integer.parseInt(StringUtils.substringBefore(un, " "));
+                        if (un.contains("galley")) {
+                            player.getFleet().setGalleys(amount);
+                        }
+                        if (un.contains("heavy") || un.contains("h.")) {
+                            player.getFleet().setHeavyShips(amount);
+                            ;
+                        }
+                        if (un.contains("light")) {
+                            player.getFleet().setLightShips(amount);
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Error on " + un);
                     }
                 }
             }
@@ -146,16 +155,20 @@ public class PlayerSetupService {
                 player.getArmy2().setLocation(loc);
                 String units = StringUtils.substringAfter(unit, ":");
                 for (String un : units.split(",")) {
-                    un = un.replace(")", "").toLowerCase();
-                    int amount = Integer.parseInt(StringUtils.substringBefore(un, " "));
-                    if (un.contains("infantry")) {
-                        player.getArmy2().setInfantry(amount);
-                    }
-                    if (un.contains("cav")) {
-                        player.getArmy2().setCavalry(amount);
-                    }
-                    if (un.contains("artillery")) {
-                        player.getArmy2().setArtillery(amount);
+                    un = un.replace(")", "").toLowerCase().trim();
+                    try {
+                        int amount = Integer.parseInt(StringUtils.substringBefore(un, " "));
+                        if (un.contains("infantry")) {
+                            player.getArmy2().setInfantry(amount);
+                        }
+                        if (un.contains("cav")) {
+                            player.getArmy2().setCavalry(amount);
+                        }
+                        if (un.contains("artillery")) {
+                            player.getArmy2().setArtillery(amount);
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Error on " + un);
                     }
                 }
             }

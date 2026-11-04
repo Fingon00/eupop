@@ -1,5 +1,6 @@
 package ootie.discord.commands.player;
 
+import java.util.List;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
@@ -9,17 +10,18 @@ import ootie.discord.commands.GameStateSubcommand;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.helpers.Constants;
+import ootie.image.Mapper;
 import ootie.message.MessageHelper;
+import ootie.model.SetupCardModel;
 import ootie.service.player.PlayerSetupService;
 
 class Setup extends GameStateSubcommand {
 
     Setup() {
-        super(Constants.SETUP, "Player initialisation: Realm and Color", true, true);
-        addOptions(new OptionData(OptionType.USER, Constants.SETUP_CARDS, "Setup card"));
-        addOptions(new OptionData(OptionType.STRING, Constants.REALM, "Faction Name")
+        super(Constants.SETUP, "Player initialisation", true, true);
+        addOptions(new OptionData(OptionType.STRING, Constants.SETUP_CARDS, "Setup card")
                 .setAutoComplete(true)
-                .setRequired(true)); // Change this to setup Card
+                .setRequired(true));
         addOptions(new OptionData(OptionType.STRING, Constants.COLOR, "Color of units").setAutoComplete(true));
         addOptions(new OptionData(OptionType.USER, Constants.PLAYER, "Player for which you set up realm"));
     }
@@ -27,12 +29,21 @@ class Setup extends GameStateSubcommand {
     @Override
     public void execute(SlashCommandInteractionEvent event) {
         Game game = getGame();
-        String realm = event.getOption(Constants.REALM, null, OptionMapping::getAsString);
-        if (game.getPlayerByRealmOrColor(realm) != null) {
-            MessageHelper.sendMessageToChannel(event.getMessageChannel(), "Someone already is set up to use " + realm);
+        String setupCardID = event.getOption(Constants.SETUP_CARDS, null, OptionMapping::getAsString);
+        Player player = getPlayer();
+        SetupCardModel setup = Mapper.getSetupCards().get(setupCardID);
+        if (setup == null) {
+            MessageHelper.sendMessageToChannel(
+                    event.getMessageChannel(), "No setup card with this id was found: " + setupCardID);
             return;
         }
-        Player player = getPlayer();
+        if (game.getPlayerByRealmOrColor(setup.getRealm()) != null
+                && game.getPlayerByRealmOrColor(setup.getRealm()) != player) {
+            MessageHelper.sendMessageToChannel(
+                    event.getMessageChannel(), "Someone already is set up to use " + setup.getRealm());
+            return;
+        }
+
         if (event.getOption(Constants.PLAYER) == null) {
             String botUserID = "botUser";
             for (int x = 1; x < 100; x++) {
@@ -52,10 +63,16 @@ class Setup extends GameStateSubcommand {
             }
         }
         String color = event.getOption(Constants.COLOR, OptionMapping::getAsString);
-        if (game.getPlayerByRealmOrColor(color) != null) {
-            MessageHelper.sendMessageToChannel(event.getMessageChannel(), "Someone already is set up to use " + color);
-            return;
+        if (color == null
+                || (game.getPlayerByRealmOrColor(color) != null && game.getPlayerByRealmOrColor(color) != player)) {
+            List<String> colors = List.of("Purple", "Yellow", "White", "Teal", "Blue", "Red");
+            for (String col : colors) {
+                if (game.getPlayerByRealmOrColor(col) == null) {
+                    color = col;
+                    break;
+                }
+            }
         }
-        PlayerSetupService.setupPlayer(color, realm, player, game, event, null, player.isBot());
+        PlayerSetupService.setupPlayer(color, player, game, event, setupCardID, player.isBot());
     }
 }
