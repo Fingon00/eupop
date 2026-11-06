@@ -1,0 +1,2510 @@
+[
+  {
+    "province": "timbuktu",
+    "x": 571,
+    "y": 1550,
+    "capital": true
+  },
+  {
+    "province": "benin",
+    "x": 686,
+    "y": 1731,
+    "capital": true
+  },
+  {
+    "province": "songhai",
+    "x": 671,
+    "y": 1607,
+    "capital": true
+  },
+  {
+    "province": "ethiopia",
+    "x": 1017,
+    "y": 1679,
+    "capital": true
+  },
+  {
+    "province": "adal",
+    "x": 1100,
+    "y": 1670,
+    "capital": true
+  },
+  {
+    "province": "goldcoast",
+    "x": 585,
+    "y": 1724,
+    "capital": false
+  },
+  {
+    "province": "mali",
+    "x": 495,
+    "y": 1668,
+    "capital": true
+  },
+  {
+    "province": "mutapa",
+    "x": 946,
+    "y": 2000,
+    "capital": true
+  },
+  {
+    "province": "kilwa",
+    "x": 1030,
+    "y": 1917,
+    "capital": true
+  },
+  {
+    "province": "katsina",
+    "x": 759,
+    "y": 1664,
+    "capital": true
+  },
+  {
+    "province": "kongo",
+    "x": 772,
+    "y": 1851,
+    "capital": true
+  },
+  {
+    "province": "ajuuraan",
+    "x": 1090,
+    "y": 1771,
+    "capital": true
+  },
+  {
+    "province": "upperegypt",
+    "x": 954,
+    "y": 1541,
+    "capital": false
+  },
+  {
+    "province": "angola",
+    "x": 774,
+    "y": 1982,
+    "capital": false
+  },
+  {
+    "province": "madagascar",
+    "x": 1111,
+    "y": 1999,
+    "capital": true
+  },
+  {
+    "province": "centralafrica",
+    "x": 933,
+    "y": 1821,
+    "capital": true
+  },
+  {
+    "province": "natal",
+    "x": 929,
+    "y": 2118,
+    "capital": false
+  },
+  {
+    "province": "capeofgoodhope",
+    "x": 837,
+    "y": 2156,
+    "capital": false
+  },
+  {
+    "province": "pernambuco",
+    "x": 1117,
+    "y": 855,
+    "capital": false
+  },
+  {
+    "province": "bahia",
+    "x": 1120,
+    "y": 962,
+    "capital": false
+  },
+  {
+    "province": "riodejaneiro",
+    "x": 1077,
+    "y": 1074,
+    "capital": false
+  },
+  {
+    "province": "amazonas",
+    "x": 916,
+    "y": 885,
+    "capital": false
+  },
+  {
+    "province": "mexico",
+    "x": 582,
+    "y": 657,
+    "capital": true
+  },
+  {
+    "province": "centralamerica",
+    "x": 693,
+    "y": 684,
+    "capital": true
+  },
+  {
+    "province": "newgranada",
+    "x": 837,
+    "y": 753,
+    "capital": false
+  },
+  {
+    "province": "guyana",
+    "x": 946,
+    "y": 773,
+    "capital": false
+  },
+  {
+    "province": "mississippi",
+    "x": 633,
+    "y": 528,
+    "capital": false
+  },
+  {
+    "province": "virginia",
+    "x": 772,
+    "y": 456,
+    "capital": false
+  },
+  {
+    "province": "florida",
+    "x": 729,
+    "y": 563,
+    "capital": false
+  },
+  {
+    "province": "antilles",
+    "x": 811,
+    "y": 638,
+    "capital": false
+  },
+  {
+    "province": "hudsonbay",
+    "x": 669,
+    "y": 276,
+    "capital": false
+  },
+  {
+    "province": "canada",
+    "x": 786,
+    "y": 331,
+    "capital": false
+  },
+  {
+    "province": "greatlakes",
+    "x": 685,
+    "y": 404,
+    "capital": false
+  },
+  {
+    "province": "newengland",
+    "x": 867,
+    "y": 416,
+    "capital": false
+  },
+  {
+    "province": "cuzco",
+    "x": 821,
+    "y": 961,
+    "capital": true
+  },
+  {
+    "province": "charcas",
+    "x": 894,
+    "y": 1027,
+    "capital": false
+  },
+  {
+    "province": "minasgerais",
+    "x": 1006,
+    "y": 967,
+    "capital": false
+  },
+  {
+    "province": "laplata",
+    "x": 937,
+    "y": 1159,
+    "capital": false
+  },
+  {
+    "province": "greatplains",
+    "x": 566,
+    "y": 413,
+    "capital": false
+  },
+  {
+    "province": "california",
+    "x": 484,
+    "y": 536,
+    "capital": false
+  },
+  {
+    "province": "chile",
+    "x": 830,
+    "y": 1171,
+    "capital": false
+  },
+  {
+    "province": "quito",
+    "x": 761,
+    "y": 862,
+    "capital": false
+  },
+  {
+    "province": "hejaz",
+    "x": 474,
+    "y": 2659,
+    "capital": true
+  },
+  {
+    "province": "yemen",
+    "x": 522,
+    "y": 2762,
+    "capital": true
+  },
+  {
+    "province": "coromandel",
+    "x": 989,
+    "y": 2831,
+    "capital": false
+  },
+  {
+    "province": "bengal",
+    "x": 1119,
+    "y": 2637,
+    "capital": true
+  },
+  {
+    "province": "gujarat",
+    "x": 875,
+    "y": 2630,
+    "capital": true
+  },
+  {
+    "province": "doab",
+    "x": 1035,
+    "y": 2571,
+    "capital": false
+  },
+  {
+    "province": "delhi",
+    "x": 951,
+    "y": 2505,
+    "capital": true
+  },
+  {
+    "province": "deccan",
+    "x": 982,
+    "y": 2707,
+    "capital": true
+  },
+  {
+    "province": "samarkand",
+    "x": 767,
+    "y": 2384,
+    "capital": true
+  },
+  {
+    "province": "isfahan",
+    "x": 596,
+    "y": 2449,
+    "capital": true
+  },
+  {
+    "province": "goa",
+    "x": 914,
+    "y": 2749,
+    "capital": true
+  },
+  {
+    "province": "fars",
+    "x": 645,
+    "y": 2568,
+    "capital": true
+  },
+  {
+    "province": "balkh",
+    "x": 816,
+    "y": 2479,
+    "capital": false
+  },
+  {
+    "province": "herat",
+    "x": 712,
+    "y": 2488,
+    "capital": true
+  },
+  {
+    "province": "baluchistan",
+    "x": 769,
+    "y": 2587,
+    "capital": true
+  },
+  {
+    "province": "basra",
+    "x": 525,
+    "y": 2504,
+    "capital": true
+  },
+  {
+    "province": "najd",
+    "x": 534,
+    "y": 2614,
+    "capital": true
+  },
+  {
+    "province": "khiva",
+    "x": 671,
+    "y": 2372,
+    "capital": false
+  },
+  {
+    "province": "hormuz",
+    "x": 677,
+    "y": 2666,
+    "capital": true
+  },
+  {
+    "province": "canton",
+    "x": 639,
+    "y": 3229,
+    "capital": false
+  },
+  {
+    "province": "xian",
+    "x": 618,
+    "y": 3086,
+    "capital": false
+  },
+  {
+    "province": "kyushu",
+    "x": 930,
+    "y": 3131,
+    "capital": false
+  },
+  {
+    "province": "hangzhou",
+    "x": 745,
+    "y": 3175,
+    "capital": false
+  },
+  {
+    "province": "malacca",
+    "x": 590,
+    "y": 3493,
+    "capital": true
+  },
+  {
+    "province": "siam",
+    "x": 568,
+    "y": 3358,
+    "capital": true
+  },
+  {
+    "province": "burma",
+    "x": 481,
+    "y": 3286,
+    "capital": true
+  },
+  {
+    "province": "southsumatra",
+    "x": 574,
+    "y": 3603,
+    "capital": false
+  },
+  {
+    "province": "moluccas",
+    "x": 832,
+    "y": 3544,
+    "capital": false
+  },
+  {
+    "province": "java",
+    "x": 675,
+    "y": 3628,
+    "capital": true
+  },
+  {
+    "province": "papua",
+    "x": 1057,
+    "y": 3603,
+    "capital": false
+  },
+  {
+    "province": "chengdu",
+    "x": 533,
+    "y": 3172,
+    "capital": false
+  },
+  {
+    "province": "philippines",
+    "x": 816,
+    "y": 3348,
+    "capital": false
+  },
+  {
+    "province": "brunei",
+    "x": 707,
+    "y": 3482,
+    "capital": true
+  },
+  {
+    "province": "beijing",
+    "x": 723,
+    "y": 3024,
+    "capital": true
+  },
+  {
+    "province": "honshu",
+    "x": 1013,
+    "y": 3059,
+    "capital": true
+  },
+  {
+    "province": "korea",
+    "x": 856,
+    "y": 3065,
+    "capital": true
+  },
+  {
+    "province": "aceh",
+    "x": 509,
+    "y": 3514,
+    "capital": true
+  },
+  {
+    "province": "timor",
+    "x": 823,
+    "y": 3657,
+    "capital": false
+  },
+  {
+    "province": "vogelkop",
+    "x": 940,
+    "y": 3559,
+    "capital": false
+  },
+  {
+    "province": "easternaustralia",
+    "x": 1136,
+    "y": 3857,
+    "capital": false
+  },
+  {
+    "province": "southernaustralia",
+    "x": 1049,
+    "y": 3948,
+    "capital": false
+  },
+  {
+    "province": "westernaustralia",
+    "x": 786,
+    "y": 3905,
+    "capital": false
+  },
+  {
+    "province": "westsiberia",
+    "x": 6074,
+    "y": 270,
+    "capital": false
+  },
+  {
+    "province": "tyumen",
+    "x": 5965,
+    "y": 408,
+    "capital": true
+  },
+  {
+    "province": "volga",
+    "x": 5783,
+    "y": 423,
+    "capital": false
+  },
+  {
+    "province": "nogai",
+    "x": 5797,
+    "y": 567,
+    "capital": true
+  },
+  {
+    "province": "ural",
+    "x": 5869,
+    "y": 278,
+    "capital": false
+  },
+  {
+    "province": "eastsiberia",
+    "x": 6302,
+    "y": 375,
+    "capital": false
+  },
+  {
+    "province": "okhotsk",
+    "x": 6505,
+    "y": 396,
+    "capital": false
+  },
+  {
+    "province": "oirat",
+    "x": 6149,
+    "y": 512,
+    "capital": true
+  },
+  {
+    "province": "mongolia",
+    "x": 6301,
+    "y": 578,
+    "capital": true
+  },
+  {
+    "province": "manchu",
+    "x": 6408,
+    "y": 589,
+    "capital": true
+  },
+  {
+    "province": "furdan",
+    "x": 6502,
+    "y": 594,
+    "capital": false
+  },
+  {
+    "province": "chagatai",
+    "x": 6054,
+    "y": 596,
+    "capital": true
+  },
+  {
+    "province": "yarkand",
+    "x": 6054,
+    "y": 596,
+    "capital": false
+  },
+  {
+    "province": "kazakhstan",
+    "x": 5921,
+    "y": 563,
+    "capital": false
+  },
+  {
+    "province": "amsterdam",
+    "x": 2993,
+    "y": 1565,
+    "capital": true
+  },
+  {
+    "province": "antwerpen",
+    "x": 2999,
+    "y": 1772,
+    "capital": true
+  },
+  {
+    "province": "brugge",
+    "x": 2798,
+    "y": 1760,
+    "capital": true
+  },
+  {
+    "province": "london",
+    "x": 2470,
+    "y": 1678,
+    "capital": true
+  },
+  {
+    "province": "genova",
+    "x": 3396,
+    "y": 2700,
+    "capital": true
+  },
+  {
+    "province": "firenze",
+    "x": 3653,
+    "y": 2815,
+    "capital": true
+  },
+  {
+    "province": "montpellier",
+    "x": 2901,
+    "y": 2771,
+    "capital": false
+  },
+  {
+    "province": "valencia",
+    "x": 2448,
+    "y": 3169,
+    "capital": true
+  },
+  {
+    "province": "normandie",
+    "x": 2431,
+    "y": 2022,
+    "capital": false
+  },
+  {
+    "province": "champagne",
+    "x": 2923,
+    "y": 2062,
+    "capital": false
+  },
+  {
+    "province": "savoie",
+    "x": 3129,
+    "y": 2507,
+    "capital": true
+  },
+  {
+    "province": "lorraine",
+    "x": 3151,
+    "y": 2120,
+    "capital": true
+  },
+  {
+    "province": "geneve",
+    "x": 3190,
+    "y": 2379,
+    "capital": false
+  },
+  {
+    "province": "venezia",
+    "x": 3801,
+    "y": 2614,
+    "capital": true
+  },
+  {
+    "province": "milano",
+    "x": 3395,
+    "y": 2510,
+    "capital": true
+  },
+  {
+    "province": "brescia",
+    "x": 3539,
+    "y": 2532,
+    "capital": false
+  },
+  {
+    "province": "rijeka",
+    "x": 3987,
+    "y": 2634,
+    "capital": false
+  },
+  {
+    "province": "essex",
+    "x": 2600,
+    "y": 1620,
+    "capital": false
+  },
+  {
+    "province": "york",
+    "x": 2315,
+    "y": 1319,
+    "capital": false
+  },
+  {
+    "province": "praha",
+    "x": 3990,
+    "y": 1956,
+    "capital": true
+  },
+  {
+    "province": "berlin",
+    "x": 3917,
+    "y": 1565,
+    "capital": true
+  },
+  {
+    "province": "magdeburg",
+    "x": 3678,
+    "y": 1665,
+    "capital": true
+  },
+  {
+    "province": "frankfurt",
+    "x": 3398,
+    "y": 1876,
+    "capital": false
+  },
+  {
+    "province": "tunis",
+    "x": 3517,
+    "y": 3611,
+    "capital": true
+  },
+  {
+    "province": "gharb",
+    "x": 1737,
+    "y": 3795,
+    "capital": false
+  },
+  {
+    "province": "tlemcen",
+    "x": 2391,
+    "y": 3709,
+    "capital": true
+  },
+  {
+    "province": "bourgogne",
+    "x": 2972,
+    "y": 2312,
+    "capital": true
+  },
+  {
+    "province": "wien",
+    "x": 4091,
+    "y": 2247,
+    "capital": true
+  },
+  {
+    "province": "pozsony",
+    "x": 4253,
+    "y": 2156,
+    "capital": false
+  },
+  {
+    "province": "regensburg",
+    "x": 3714,
+    "y": 2044,
+    "capital": false
+  },
+  {
+    "province": "ulm",
+    "x": 3482,
+    "y": 2090,
+    "capital": true
+  },
+  {
+    "province": "silesia",
+    "x": 4169,
+    "y": 1865,
+    "capital": true
+  },
+  {
+    "province": "lothian",
+    "x": 2160,
+    "y": 1085,
+    "capital": true
+  },
+  {
+    "province": "aberdeen",
+    "x": 2222,
+    "y": 899,
+    "capital": false
+  },
+  {
+    "province": "bergenhus",
+    "x": 3230,
+    "y": 585,
+    "capital": false
+  },
+  {
+    "province": "trondheim",
+    "x": 3670,
+    "y": 313,
+    "capital": false
+  },
+  {
+    "province": "lubeck",
+    "x": 3648,
+    "y": 1423,
+    "capital": true
+  },
+  {
+    "province": "kobenhavn",
+    "x": 3722,
+    "y": 1182,
+    "capital": true
+  },
+  {
+    "province": "lund",
+    "x": 3934,
+    "y": 1110,
+    "capital": false
+  },
+  {
+    "province": "hamburg",
+    "x": 3509,
+    "y": 1488,
+    "capital": true
+  },
+  {
+    "province": "sevilla",
+    "x": 1859,
+    "y": 3404,
+    "capital": false
+  },
+  {
+    "province": "lisboa",
+    "x": 1576,
+    "y": 3202,
+    "capital": true
+  },
+  {
+    "province": "porto",
+    "x": 1625,
+    "y": 2968,
+    "capital": false
+  },
+  {
+    "province": "ceuta",
+    "x": 1981,
+    "y": 3628,
+    "capital": false
+  },
+  {
+    "province": "barcelona",
+    "x": 2739,
+    "y": 2987,
+    "capital": false
+  },
+  {
+    "province": "mesina",
+    "x": 3958,
+    "y": 3503,
+    "capital": false
+  },
+  {
+    "province": "napoli",
+    "x": 3955,
+    "y": 3166,
+    "capital": true
+  },
+  {
+    "province": "wessex",
+    "x": 2157,
+    "y": 1772,
+    "capital": false
+  },
+  {
+    "province": "rennes",
+    "x": 2250,
+    "y": 2107,
+    "capital": false
+  },
+  {
+    "province": "ragusa",
+    "x": 4241,
+    "y": 2899,
+    "capital": true
+  },
+  {
+    "province": "caux",
+    "x": 2542,
+    "y": 1959,
+    "capital": false
+  },
+  {
+    "province": "liege",
+    "x": 3103,
+    "y": 1840,
+    "capital": true
+  },
+  {
+    "province": "siena",
+    "x": 3648,
+    "y": 2949,
+    "capital": true
+  },
+  {
+    "province": "pest",
+    "x": 4348,
+    "y": 2302,
+    "capital": true
+  },
+  {
+    "province": "tirol",
+    "x": 3602,
+    "y": 2323,
+    "capital": false
+  },
+  {
+    "province": "rudohori",
+    "x": 3876,
+    "y": 1917,
+    "capital": false
+  },
+  {
+    "province": "sundgau",
+    "x": 3232,
+    "y": 2202,
+    "capital": false
+  },
+  {
+    "province": "tafilalt",
+    "x": 2083,
+    "y": 3979,
+    "capital": false
+  },
+  {
+    "province": "marrakech",
+    "x": 1707,
+    "y": 3930,
+    "capital": false
+  },
+  {
+    "province": "munchen",
+    "x": 3708,
+    "y": 2195,
+    "capital": true
+  },
+  {
+    "province": "kulm",
+    "x": 4333,
+    "y": 1560,
+    "capital": false
+  },
+  {
+    "province": "sieradz",
+    "x": 4340,
+    "y": 1871,
+    "capital": false
+  },
+  {
+    "province": "danzig",
+    "x": 4333,
+    "y": 1393,
+    "capital": false
+  },
+  {
+    "province": "stockholm",
+    "x": 4294,
+    "y": 780,
+    "capital": true
+  },
+  {
+    "province": "karnten",
+    "x": 3844,
+    "y": 2353,
+    "capital": false
+  },
+  {
+    "province": "lienz",
+    "x": 3738,
+    "y": 2359,
+    "capital": false
+  },
+  {
+    "province": "namur",
+    "x": 2950,
+    "y": 1923,
+    "capital": false
+  },
+  {
+    "province": "bern",
+    "x": 3265,
+    "y": 2343,
+    "capital": true
+  },
+  {
+    "province": "bordeaux",
+    "x": 2416,
+    "y": 2537,
+    "capital": false
+  },
+  {
+    "province": "bourbon",
+    "x": 2839,
+    "y": 2403,
+    "capital": false
+  },
+  {
+    "province": "navarra",
+    "x": 2304,
+    "y": 2777,
+    "capital": true
+  },
+  {
+    "province": "nantes",
+    "x": 2304,
+    "y": 2236,
+    "capital": true
+  },
+  {
+    "province": "bergslagen",
+    "x": 4017,
+    "y": 646,
+    "capital": false
+  },
+  {
+    "province": "stettin",
+    "x": 4002,
+    "y": 1458,
+    "capital": false
+  },
+  {
+    "province": "dresden",
+    "x": 3874,
+    "y": 1813,
+    "capital": true
+  },
+  {
+    "province": "braunschweig",
+    "x": 3542,
+    "y": 1735,
+    "capital": true
+  },
+  {
+    "province": "salamanca",
+    "x": 1864,
+    "y": 3020,
+    "capital": false
+  },
+  {
+    "province": "galicia",
+    "x": 1704,
+    "y": 2653,
+    "capital": false
+  },
+  {
+    "province": "badajoz",
+    "x": 1848,
+    "y": 3257,
+    "capital": false
+  },
+  {
+    "province": "perth",
+    "x": 2087,
+    "y": 968,
+    "capital": false
+  },
+  {
+    "province": "pale",
+    "x": 1806,
+    "y": 1373,
+    "capital": false
+  },
+  {
+    "province": "laighin",
+    "x": 1772,
+    "y": 1506,
+    "capital": true
+  },
+  {
+    "province": "tripoli",
+    "x": 3800,
+    "y": 3964,
+    "capital": false
+  },
+  {
+    "province": "slesvig",
+    "x": 3434,
+    "y": 1278,
+    "capital": false
+  },
+  {
+    "province": "holstein",
+    "x": 3524,
+    "y": 1360,
+    "capital": true
+  },
+  {
+    "province": "bremen",
+    "x": 3377,
+    "y": 1519,
+    "capital": true
+  },
+  {
+    "province": "poitou",
+    "x": 2540,
+    "y": 2417,
+    "capital": false
+  },
+  {
+    "province": "limousin",
+    "x": 2676,
+    "y": 2540,
+    "capital": false
+  },
+  {
+    "province": "akershus",
+    "x": 3665,
+    "y": 649,
+    "capital": true
+  },
+  {
+    "province": "roma",
+    "x": 3773,
+    "y": 3067,
+    "capital": true
+  },
+  {
+    "province": "lyon",
+    "x": 2985,
+    "y": 2513,
+    "capital": false
+  },
+  {
+    "province": "avignon",
+    "x": 2944,
+    "y": 2639,
+    "capital": false
+  },
+  {
+    "province": "nurnberg",
+    "x": 3632,
+    "y": 2010,
+    "capital": true
+  },
+  {
+    "province": "mainz",
+    "x": 3396,
+    "y": 1993,
+    "capital": true
+  },
+  {
+    "province": "paris",
+    "x": 2682,
+    "y": 2074,
+    "capital": true
+  },
+  {
+    "province": "ferrara",
+    "x": 3735,
+    "y": 2708,
+    "capital": true
+  },
+  {
+    "province": "bosnia",
+    "x": 4295,
+    "y": 2623,
+    "capital": true
+  },
+  {
+    "province": "salzburg",
+    "x": 3803,
+    "y": 2243,
+    "capital": false
+  },
+  {
+    "province": "saintonge",
+    "x": 2402,
+    "y": 2398,
+    "capital": false
+  },
+  {
+    "province": "poznan",
+    "x": 4159,
+    "y": 1697,
+    "capital": false
+  },
+  {
+    "province": "sus",
+    "x": 1875,
+    "y": 4003,
+    "capital": false
+  },
+  {
+    "province": "madeira",
+    "x": 1304,
+    "y": 3677,
+    "capital": false
+  },
+  {
+    "province": "toulouse",
+    "x": 2708,
+    "y": 2748,
+    "capital": false
+  },
+  {
+    "province": "armagnac",
+    "x": 2502,
+    "y": 2713,
+    "capital": false
+  },
+  {
+    "province": "pfalz",
+    "x": 3279,
+    "y": 2046,
+    "capital": true
+  },
+  {
+    "province": "provence",
+    "x": 3100,
+    "y": 2831,
+    "capital": true
+  },
+  {
+    "province": "piemonte",
+    "x": 3257,
+    "y": 2622,
+    "capital": false
+  },
+  {
+    "province": "berry",
+    "x": 2758,
+    "y": 2326,
+    "capital": false
+  },
+  {
+    "province": "orleans",
+    "x": 2630,
+    "y": 2258,
+    "capital": false
+  },
+  {
+    "province": "bari",
+    "x": 4186,
+    "y": 3100,
+    "capital": false
+  },
+  {
+    "province": "lancashire",
+    "x": 2220,
+    "y": 1357,
+    "capital": false
+  },
+  {
+    "province": "northumberland",
+    "x": 2280,
+    "y": 1175,
+    "capital": false
+  },
+  {
+    "province": "shrewsbury",
+    "x": 2234,
+    "y": 1499,
+    "capital": false
+  },
+  {
+    "province": "ulaidh",
+    "x": 1761,
+    "y": 1192,
+    "capital": true
+  },
+  {
+    "province": "madrid",
+    "x": 2113,
+    "y": 3070,
+    "capital": true
+  },
+  {
+    "province": "cordoba",
+    "x": 1999,
+    "y": 3342,
+    "capital": false
+  },
+  {
+    "province": "burgos",
+    "x": 2084,
+    "y": 2864,
+    "capital": false
+  },
+  {
+    "province": "zara",
+    "x": 4072,
+    "y": 2803,
+    "capital": false
+  },
+  {
+    "province": "zagreb",
+    "x": 4151,
+    "y": 2496,
+    "capital": true
+  },
+  {
+    "province": "beira",
+    "x": 1711,
+    "y": 3084,
+    "capital": false
+  },
+  {
+    "province": "ayrshire",
+    "x": 1999,
+    "y": 1145,
+    "capital": false
+  },
+  {
+    "province": "mhumhain",
+    "x": 1625,
+    "y": 1558,
+    "capital": true
+  },
+  {
+    "province": "wales",
+    "x": 2054,
+    "y": 1566,
+    "capital": false
+  },
+  {
+    "province": "oxford",
+    "x": 2364,
+    "y": 1598,
+    "capital": false
+  },
+  {
+    "province": "maine",
+    "x": 2489,
+    "y": 2181,
+    "capital": false
+  },
+  {
+    "province": "artois",
+    "x": 2765,
+    "y": 1895,
+    "capital": false
+  },
+  {
+    "province": "picardie",
+    "x": 2670,
+    "y": 1879,
+    "capital": false
+  },
+  {
+    "province": "anjou",
+    "x": 2480,
+    "y": 2302,
+    "capital": false
+  },
+  {
+    "province": "canarias",
+    "x": 1310,
+    "y": 4001,
+    "capital": false
+  },
+  {
+    "province": "fez",
+    "x": 2071,
+    "y": 3762,
+    "capital": true
+  },
+  {
+    "province": "tangiers",
+    "x": 1883,
+    "y": 3654,
+    "capital": false
+  },
+  {
+    "province": "qafsah",
+    "x": 3342,
+    "y": 3941,
+    "capital": true
+  },
+  {
+    "province": "oran",
+    "x": 2629,
+    "y": 3625,
+    "capital": false
+  },
+  {
+    "province": "mitidja",
+    "x": 2866,
+    "y": 3573,
+    "capital": false
+  },
+  {
+    "province": "qusantinah",
+    "x": 3216,
+    "y": 3592,
+    "capital": false
+  },
+  {
+    "province": "kabylia",
+    "x": 3051,
+    "y": 3594,
+    "capital": false
+  },
+  {
+    "province": "bizerte",
+    "x": 3385,
+    "y": 3578,
+    "capital": false
+  },
+  {
+    "province": "sousse",
+    "x": 3526,
+    "y": 3757,
+    "capital": false
+  },
+  {
+    "province": "murcia",
+    "x": 2341,
+    "y": 3397,
+    "capital": false
+  },
+  {
+    "province": "zaragoza",
+    "x": 2462,
+    "y": 2958,
+    "capital": false
+  },
+  {
+    "province": "baleares",
+    "x": 2803,
+    "y": 3218,
+    "capital": false
+  },
+  {
+    "province": "malta",
+    "x": 3920,
+    "y": 3701,
+    "capital": false
+  },
+  {
+    "province": "palermo",
+    "x": 3748,
+    "y": 3492,
+    "capital": false
+  },
+  {
+    "province": "salerno",
+    "x": 4058,
+    "y": 3268,
+    "capital": false
+  },
+  {
+    "province": "pisa",
+    "x": 3567,
+    "y": 2875,
+    "capital": false
+  },
+  {
+    "province": "ancona",
+    "x": 3874,
+    "y": 2850,
+    "capital": false
+  },
+  {
+    "province": "cremona",
+    "x": 3460,
+    "y": 2581,
+    "capital": false
+  },
+  {
+    "province": "mantova",
+    "x": 3581,
+    "y": 2661,
+    "capital": true
+  },
+  {
+    "province": "parma",
+    "x": 3504,
+    "y": 2677,
+    "capital": false
+  },
+  {
+    "province": "st-gallen",
+    "x": 3403,
+    "y": 2323,
+    "capital": false
+  },
+  {
+    "province": "franche-comte",
+    "x": 3110,
+    "y": 2280,
+    "capital": false
+  },
+  {
+    "province": "zeeland",
+    "x": 2921,
+    "y": 1653,
+    "capital": false
+  },
+  {
+    "province": "gelre",
+    "x": 3149,
+    "y": 1604,
+    "capital": true
+  },
+  {
+    "province": "breda",
+    "x": 3077,
+    "y": 1689,
+    "capital": false
+  },
+  {
+    "province": "friesland",
+    "x": 3134,
+    "y": 1470,
+    "capital": true
+  },
+  {
+    "province": "gent",
+    "x": 2896,
+    "y": 1774,
+    "capital": false
+  },
+  {
+    "province": "luxembourg",
+    "x": 3103,
+    "y": 1972,
+    "capital": false
+  },
+  {
+    "province": "hannover",
+    "x": 3480,
+    "y": 1640,
+    "capital": false
+  },
+  {
+    "province": "kleve",
+    "x": 3208,
+    "y": 1717,
+    "capital": true
+  },
+  {
+    "province": "koln",
+    "x": 3202,
+    "y": 1827,
+    "capital": true
+  },
+  {
+    "province": "trier",
+    "x": 3214,
+    "y": 1952,
+    "capital": true
+  },
+  {
+    "province": "munster",
+    "x": 3319,
+    "y": 1681,
+    "capital": true
+  },
+  {
+    "province": "borgarsysla",
+    "x": 3722,
+    "y": 770,
+    "capital": false
+  },
+  {
+    "province": "vestjylland",
+    "x": 3352,
+    "y": 1090,
+    "capital": false
+  },
+  {
+    "province": "ostjylland",
+    "x": 3526,
+    "y": 1097,
+    "capital": false
+  },
+  {
+    "province": "ostergotland",
+    "x": 4135,
+    "y": 915,
+    "capital": false
+  },
+  {
+    "province": "gotland",
+    "x": 4329,
+    "y": 1003,
+    "capital": false
+  },
+  {
+    "province": "halsingland",
+    "x": 4246,
+    "y": 443,
+    "capital": false
+  },
+  {
+    "province": "wittenberg",
+    "x": 3781,
+    "y": 1736,
+    "capital": false
+  },
+  {
+    "province": "leipzig",
+    "x": 3637,
+    "y": 1812,
+    "capital": false
+  },
+  {
+    "province": "augsburg",
+    "x": 3580,
+    "y": 2194,
+    "capital": true
+  },
+  {
+    "province": "landshut",
+    "x": 3803,
+    "y": 2136,
+    "capital": false
+  },
+  {
+    "province": "steiermark",
+    "x": 3947,
+    "y": 2329,
+    "capital": false
+  },
+  {
+    "province": "osterreich",
+    "x": 4066,
+    "y": 2120,
+    "capital": false
+  },
+  {
+    "province": "verona",
+    "x": 3673,
+    "y": 2576,
+    "capital": false
+  },
+  {
+    "province": "treviso",
+    "x": 3790,
+    "y": 2505,
+    "capital": false
+  },
+  {
+    "province": "krain",
+    "x": 3900,
+    "y": 2541,
+    "capital": false
+  },
+  {
+    "province": "potsdam",
+    "x": 3803,
+    "y": 1610,
+    "capital": false
+  },
+  {
+    "province": "altmark",
+    "x": 3700,
+    "y": 1557,
+    "capital": false
+  },
+  {
+    "province": "neumark",
+    "x": 4093,
+    "y": 1554,
+    "capital": false
+  },
+  {
+    "province": "koslin",
+    "x": 4173,
+    "y": 1385,
+    "capital": false
+  },
+  {
+    "province": "stralsund",
+    "x": 3874,
+    "y": 1382,
+    "capital": false
+  },
+  {
+    "province": "mecklenburg",
+    "x": 3762,
+    "y": 1396,
+    "capital": true
+  },
+  {
+    "province": "hum",
+    "x": 4213,
+    "y": 2735,
+    "capital": false
+  },
+  {
+    "province": "kalisz",
+    "x": 4306,
+    "y": 1720,
+    "capital": false
+  },
+  {
+    "province": "granada",
+    "x": 2098,
+    "y": 3422,
+    "capital": true
+  },
+  {
+    "province": "gibraltar",
+    "x": 1908,
+    "y": 3523,
+    "capital": false
+  },
+  {
+    "province": "sopron",
+    "x": 4191,
+    "y": 2302,
+    "capital": false
+  },
+  {
+    "province": "olomouc",
+    "x": 4188,
+    "y": 1994,
+    "capital": false
+  },
+  {
+    "province": "budejovice",
+    "x": 3945,
+    "y": 2079,
+    "capital": false
+  },
+  {
+    "province": "corsica",
+    "x": 3448,
+    "y": 2933,
+    "capital": false
+  },
+  {
+    "province": "sardenya",
+    "x": 3429,
+    "y": 3311,
+    "capital": false
+  },
+  {
+    "province": "iskandariyya",
+    "x": 5262,
+    "y": 3868,
+    "capital": false
+  },
+  {
+    "province": "qahirah",
+    "x": 5362,
+    "y": 3979,
+    "capital": true
+  },
+  {
+    "province": "dumyat",
+    "x": 5452,
+    "y": 3882,
+    "capital": false
+  },
+  {
+    "province": "krakow",
+    "x": 4482,
+    "y": 1977,
+    "capital": false
+  },
+  {
+    "province": "warszawa",
+    "x": 4588,
+    "y": 1706,
+    "capital": true
+  },
+  {
+    "province": "lwow",
+    "x": 4905,
+    "y": 2101,
+    "capital": false
+  },
+  {
+    "province": "constantinople",
+    "x": 5243,
+    "y": 2980,
+    "capital": true
+  },
+  {
+    "province": "hudavendigar",
+    "x": 5199,
+    "y": 3124,
+    "capital": false
+  },
+  {
+    "province": "basarabia",
+    "x": 5302,
+    "y": 2523,
+    "capital": false
+  },
+  {
+    "province": "trebizond",
+    "x": 6068,
+    "y": 3015,
+    "capital": true
+  },
+  {
+    "province": "kazan",
+    "x": 6578,
+    "y": 1374,
+    "capital": true
+  },
+  {
+    "province": "nizhny_novgorod",
+    "x": 6380,
+    "y": 1269,
+    "capital": false
+  },
+  {
+    "province": "perm",
+    "x": 6639,
+    "y": 797,
+    "capital": true
+  },
+  {
+    "province": "viatka",
+    "x": 6625,
+    "y": 1033,
+    "capital": false
+  },
+  {
+    "province": "tblisi",
+    "x": 6459,
+    "y": 2900,
+    "capital": true
+  },
+  {
+    "province": "caffa",
+    "x": 5834,
+    "y": 2553,
+    "capital": false
+  },
+  {
+    "province": "athina",
+    "x": 4849,
+    "y": 3380,
+    "capital": true
+  },
+  {
+    "province": "creta",
+    "x": 4981,
+    "y": 3650,
+    "capital": false
+  },
+  {
+    "province": "novgorod",
+    "x": 5452,
+    "y": 983,
+    "capital": true
+  },
+  {
+    "province": "neva",
+    "x": 5311,
+    "y": 860,
+    "capital": false
+  },
+  {
+    "province": "ladoga",
+    "x": 5456,
+    "y": 825,
+    "capital": false
+  },
+  {
+    "province": "arkhangelsk",
+    "x": 5639,
+    "y": 267,
+    "capital": false
+  },
+  {
+    "province": "al-quds",
+    "x": 5742,
+    "y": 3932,
+    "capital": false
+  },
+  {
+    "province": "moskva",
+    "x": 5869,
+    "y": 1344,
+    "capital": true
+  },
+  {
+    "province": "tver",
+    "x": 5799,
+    "y": 1252,
+    "capital": true
+  },
+  {
+    "province": "suzdal",
+    "x": 6193,
+    "y": 1223,
+    "capital": false
+  },
+  {
+    "province": "murom",
+    "x": 6315,
+    "y": 1403,
+    "capital": false
+  },
+  {
+    "province": "kijevas",
+    "x": 5375,
+    "y": 1989,
+    "capital": false
+  },
+  {
+    "province": "smolenskas",
+    "x": 5501,
+    "y": 1513,
+    "capital": false
+  },
+  {
+    "province": "vilnius",
+    "x": 4911,
+    "y": 1525,
+    "capital": true
+  },
+  {
+    "province": "odoyev",
+    "x": 5850,
+    "y": 1615,
+    "capital": true
+  },
+  {
+    "province": "riga",
+    "x": 4837,
+    "y": 1135,
+    "capital": true
+  },
+  {
+    "province": "reval",
+    "x": 4867,
+    "y": 895,
+    "capital": false
+  },
+  {
+    "province": "hunyad",
+    "x": 4731,
+    "y": 2491,
+    "capital": false
+  },
+  {
+    "province": "vladimir",
+    "x": 6117,
+    "y": 1407,
+    "capital": false
+  },
+  {
+    "province": "polockas",
+    "x": 5270,
+    "y": 1332,
+    "capital": false
+  },
+  {
+    "province": "astrakhan",
+    "x": 6673,
+    "y": 2321,
+    "capital": false
+  },
+  {
+    "province": "tambov",
+    "x": 6176,
+    "y": 1722,
+    "capital": false
+  },
+  {
+    "province": "bangazi",
+    "x": 4468,
+    "y": 3830,
+    "capital": false
+  },
+  {
+    "province": "voluine",
+    "x": 4887,
+    "y": 1832,
+    "capital": false
+  },
+  {
+    "province": "podole",
+    "x": 5156,
+    "y": 2134,
+    "capital": false
+  },
+  {
+    "province": "halab",
+    "x": 5913,
+    "y": 3438,
+    "capital": false
+  },
+  {
+    "province": "karaman",
+    "x": 5592,
+    "y": 3462,
+    "capital": false
+  },
+  {
+    "province": "dimashq",
+    "x": 5853,
+    "y": 3688,
+    "capital": false
+  },
+  {
+    "province": "tarabulus",
+    "x": 5823,
+    "y": 3550,
+    "capital": false
+  },
+  {
+    "province": "saratov",
+    "x": 6502,
+    "y": 1898,
+    "capital": true
+  },
+  {
+    "province": "konigsberg",
+    "x": 4542,
+    "y": 1351,
+    "capital": false
+  },
+  {
+    "province": "osterode",
+    "x": 4452,
+    "y": 1439,
+    "capital": false
+  },
+  {
+    "province": "azov",
+    "x": 6098,
+    "y": 2354,
+    "capital": false
+  },
+  {
+    "province": "izmir",
+    "x": 5125,
+    "y": 3330,
+    "capital": false
+  },
+  {
+    "province": "tabriz",
+    "x": 6617,
+    "y": 3270,
+    "capital": true
+  },
+  {
+    "province": "baghdad",
+    "x": 6518,
+    "y": 3680,
+    "capital": false
+  },
+  {
+    "province": "circassia",
+    "x": 6125,
+    "y": 2677,
+    "capital": true
+  },
+  {
+    "province": "morea",
+    "x": 4762,
+    "y": 3540,
+    "capital": false
+  },
+  {
+    "province": "naxos",
+    "x": 5008,
+    "y": 3421,
+    "capital": true
+  },
+  {
+    "province": "edisanas",
+    "x": 5486,
+    "y": 2403,
+    "capital": false
+  },
+  {
+    "province": "selanik",
+    "x": 4742,
+    "y": 3100,
+    "capital": false
+  },
+  {
+    "province": "beograd",
+    "x": 4530,
+    "y": 2674,
+    "capital": false
+  },
+  {
+    "province": "naugardukas",
+    "x": 5014,
+    "y": 1643,
+    "capital": false
+  },
+  {
+    "province": "minskas",
+    "x": 5185,
+    "y": 1562,
+    "capital": false
+  },
+  {
+    "province": "mush",
+    "x": 6212,
+    "y": 3208,
+    "capital": true
+  },
+  {
+    "province": "urfa",
+    "x": 6081,
+    "y": 3352,
+    "capital": false
+  },
+  {
+    "province": "mosul",
+    "x": 6385,
+    "y": 3375,
+    "capital": false
+  },
+  {
+    "province": "jaffa",
+    "x": 5750,
+    "y": 3806,
+    "capital": false
+  },
+  {
+    "province": "gazzah",
+    "x": 5631,
+    "y": 3908,
+    "capital": false
+  },
+  {
+    "province": "fayyum",
+    "x": 5269,
+    "y": 4009,
+    "capital": false
+  },
+  {
+    "province": "cyprus",
+    "x": 5623,
+    "y": 3611,
+    "capital": false
+  },
+  {
+    "province": "yanya",
+    "x": 4599,
+    "y": 3279,
+    "capital": false
+  },
+  {
+    "province": "kirkuk",
+    "x": 6500,
+    "y": 3493,
+    "capital": false
+  },
+  {
+    "province": "tikrit",
+    "x": 6404,
+    "y": 3553,
+    "capital": false
+  },
+  {
+    "province": "yerevan",
+    "x": 6475,
+    "y": 3081,
+    "capital": false
+  },
+  {
+    "province": "rhodes",
+    "x": 5142,
+    "y": 3536,
+    "capital": true
+  },
+  {
+    "province": "edirne",
+    "x": 5066,
+    "y": 2995,
+    "capital": false
+  },
+  {
+    "province": "ankara",
+    "x": 5524,
+    "y": 3155,
+    "capital": false
+  },
+  {
+    "province": "kastamonu",
+    "x": 5661,
+    "y": 2941,
+    "capital": true
+  },
+  {
+    "province": "konya",
+    "x": 5546,
+    "y": 3300,
+    "capital": false
+  },
+  {
+    "province": "adana",
+    "x": 5761,
+    "y": 3421,
+    "capital": true
+  },
+  {
+    "province": "abo",
+    "x": 4588,
+    "y": 655,
+    "capital": false
+  },
+  {
+    "province": "nyland",
+    "x": 4963,
+    "y": 748,
+    "capital": false
+  },
+  {
+    "province": "osterbotten",
+    "x": 4811,
+    "y": 302,
+    "capital": false
+  },
+  {
+    "province": "kargopol",
+    "x": 5585,
+    "y": 369,
+    "capital": false
+  },
+  {
+    "province": "olonets",
+    "x": 5595,
+    "y": 632,
+    "capital": false
+  },
+  {
+    "province": "pskov",
+    "x": 5172,
+    "y": 1017,
+    "capital": true
+  },
+  {
+    "province": "galich",
+    "x": 6315,
+    "y": 1112,
+    "capital": false
+  },
+  {
+    "province": "sarai",
+    "x": 6537,
+    "y": 2184,
+    "capital": false
+  },
+  {
+    "province": "majar",
+    "x": 6312,
+    "y": 2493,
+    "capital": false
+  },
+  {
+    "province": "terek",
+    "x": 6540,
+    "y": 2631,
+    "capital": false
+  },
+  {
+    "province": "shirvan",
+    "x": 6689,
+    "y": 2790,
+    "capital": true
+  },
+  {
+    "province": "guria",
+    "x": 6269,
+    "y": 2894,
+    "capital": false
+  },
+  {
+    "province": "imereti",
+    "x": 6331,
+    "y": 2807,
+    "capital": true
+  },
+  {
+    "province": "kyzylyar",
+    "x": 5889,
+    "y": 2340,
+    "capital": false
+  },
+  {
+    "province": "yedishkul",
+    "x": 5767,
+    "y": 2392,
+    "capital": false
+  },
+  {
+    "province": "crimea",
+    "x": 5707,
+    "y": 2510,
+    "capital": true
+  },
+  {
+    "province": "szabolcs",
+    "x": 4588,
+    "y": 2279,
+    "capital": false
+  },
+  {
+    "province": "torda",
+    "x": 4846,
+    "y": 2411,
+    "capital": false
+  },
+  {
+    "province": "albania",
+    "x": 4474,
+    "y": 3070,
+    "capital": true
+  },
+  {
+    "province": "kosovo",
+    "x": 4537,
+    "y": 2927,
+    "capital": false
+  },
+  {
+    "province": "smederevo",
+    "x": 4617,
+    "y": 2704,
+    "capital": true
+  },
+  {
+    "province": "sofya",
+    "x": 4851,
+    "y": 2821,
+    "capital": false
+  },
+  {
+    "province": "silistre",
+    "x": 5183,
+    "y": 2749,
+    "capital": false
+  },
+  {
+    "province": "tirgoviste",
+    "x": 4932,
+    "y": 2648,
+    "capital": true
+  },
+  {
+    "province": "buzau",
+    "x": 5126,
+    "y": 2576,
+    "capital": false
+  },
+  {
+    "province": "marienburg",
+    "x": 4452,
+    "y": 1437,
+    "capital": true
+  },
+  {
+    "province": "bitlis",
+    "x": 6361,
+    "y": 3251,
+    "capital": true
+  },
+  {
+    "province": "cernigovas",
+    "x": 5595,
+    "y": 1837,
+    "capital": false
+  },
+  {
+    "province": "poltava",
+    "x": 5717,
+    "y": 2066,
+    "capital": false
+  },
+  {
+    "province": "suceava",
+    "x": 5136,
+    "y": 2351,
+    "capital": true
+  },
+  {
+    "province": "rzhev",
+    "x": 5617,
+    "y": 1228,
+    "capital": false
+  },
+  {
+    "province": "ryazan",
+    "x": 6052,
+    "y": 1557,
+    "capital": true
+  },
+  {
+    "province": "goldingen",
+    "x": 4621,
+    "y": 1090,
+    "capital": false
+  },
+  {
+    "province": "livland",
+    "x": 4895,
+    "y": 1031,
+    "capital": true
+  },
+  {
+    "province": "kaunas",
+    "x": 4816,
+    "y": 1428,
+    "capital": false
+  },
+  {
+    "province": "zemaitija",
+    "x": 4735,
+    "y": 1291,
+    "capital": false
+  },
+  {
+    "province": "lublin",
+    "x": 4691,
+    "y": 1862,
+    "capital": false
+  },
+  {
+    "province": "sandomierz",
+    "x": 4609,
+    "y": 1930,
+    "capital": false
+  },
+  {
+    "province": "szepes",
+    "x": 4461,
+    "y": 2147,
+    "capital": false
+  },
+  {
+    "province": "kasimov",
+    "x": 6211,
+    "y": 1521,
+    "capital": false
+  },
+  {
+    "province": "yaroslavl",
+    "x": 6005,
+    "y": 1123,
+    "capital": true
+  },
+  {
+    "province": "vologda",
+    "x": 6011,
+    "y": 945,
+    "capital": false
+  },
+  {
+    "province": "beloozero",
+    "x": 5880,
+    "y": 784,
+    "capital": true
+  },
+  {
+    "province": "don",
+    "x": 6241,
+    "y": 2151,
+    "capital": false
+  },
+  {
+    "province": "mentese",
+    "x": 5234,
+    "y": 3448,
+    "capital": false
+  },
+  {
+    "province": "teke",
+    "x": 5368,
+    "y": 3422,
+    "capital": false
+  },
+  {
+    "province": "kutahya",
+    "x": 5343,
+    "y": 3238,
+    "capital": false
+  },
+  {
+    "province": "amasya",
+    "x": 5813,
+    "y": 3043,
+    "capital": false
+  },
+  {
+    "province": "sivas",
+    "x": 5910,
+    "y": 3144,
+    "capital": false
+  },
+  {
+    "province": "erzurum",
+    "x": 6215,
+    "y": 3083,
+    "capital": false
+  },
+  {
+    "province": "zaporoze",
+    "x": 5769,
+    "y": 2274,
+    "capital": false
+  }
+]

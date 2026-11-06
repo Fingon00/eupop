@@ -153,12 +153,6 @@ public class GameImageHelper {
         Graphics2D g = mapImage.createGraphics();
         g.drawImage(ogImage, 0, 0, outputWidth, outputHeight, null);
         g.scale(0.5, 0.5);
-        int w = 6803;
-        int h = 4104;
-        double minx = -21.45; // -18.45 //-20.95 //-21
-        double miny = -12.74; // -12.14
-        double maxx = 21.53; // 20.81 //21
-        double maxy = 13.35; // 11.65
         for (Player player : game.getPlayers().values()) {
             if (player.getColor() == null) {
                 continue;
@@ -170,19 +164,15 @@ public class GameImageHelper {
             for (String prov : player.getSmallProvinces()) {
                 if (Mapper.getProvinces().containsKey(prov)) {
                     ProvinceModel model = Mapper.getProvinces().get(prov);
-                    double x = model.getX();
-                    double y = model.getY();
-                    double nx = (x - minx) / (maxx - minx);
-                    double ny = (y - miny) / (maxy - miny);
-                    int px = (int) (nx * w);
-                    int py = (int) ((1 - ny) * h);
+                    int px = model.getX();
+                    int py = model.getY();
                     if (player.getUnrestProvinces().contains(prov)) {
                         px -= unrestImage.getWidth() / 2;
-                        py = py - unrestImage.getHeight() / 2 - 40;
+                        py = py - unrestImage.getHeight() / 2 - 45;
                         g.drawImage(unrestImage, px, py, null);
                     } else {
                         px -= townImage.getWidth() / 2;
-                        py = py - townImage.getHeight() / 2 - 40;
+                        py = py - townImage.getHeight() / 2 - 45;
                         g.drawImage(townImage, px, py, null);
                     }
                 }
@@ -194,12 +184,8 @@ public class GameImageHelper {
             for (String prov : player.getLargeProvinces()) {
                 if (Mapper.getProvinces().containsKey(prov)) {
                     ProvinceModel model = Mapper.getProvinces().get(prov);
-                    double x = model.getX();
-                    double y = model.getY();
-                    double nx = (x - minx) / (maxx - minx);
-                    double ny = (y - miny) / (maxy - miny);
-                    int px = (int) (nx * w);
-                    int py = (int) ((1 - ny) * h);
+                    int px = model.getX();
+                    int py = model.getY();
                     if (player.getUnrestProvinces().contains(prov)) {
                         px -= unrestImage.getWidth() / 2;
                         py = py - unrestImage.getHeight() / 2 - 45;
@@ -264,7 +250,7 @@ public class GameImageHelper {
             for (String influence : game.getInfluenceInArea(area.getId())) {
                 BufferedImage playerCube =
                         ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(influence, "Cube"), 50, 50);
-                g.drawImage(playerCube, area.getReligiousCenter()[0] - 80 + x, area.getReligiousCenter()[1] - 80, null);
+                g.drawImage(playerCube, area.getReligiousCenter()[0] - 60 + x, area.getReligiousCenter()[1] - 60, null);
                 x += 40;
             }
             for (String infantry : game.getUnitsInArea(area.getId())) {
@@ -300,22 +286,12 @@ public class GameImageHelper {
         int radius = 400;
         BufferedImage mapImage = new BufferedImage(radius * 2, radius * 2, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = mapImage.createGraphics();
-        int w = 6803;
-        int h = 4104;
-        double minx = -21.45;
-        double miny = -12.74;
-        double maxx = 21.53;
-        double maxy = 13.35;
         int px = 0;
         int py = 0;
         if (Mapper.getProvinces().containsKey(location)) {
             ProvinceModel model = Mapper.getProvinces().get(location);
-            double x = model.getX();
-            double y = model.getY();
-            double nx = (x - minx) / (maxx - minx);
-            double ny = (y - miny) / (maxy - miny);
-            px = (int) (nx * w);
-            py = (int) ((1 - ny) * h);
+            px = model.getX();
+            py = model.getY();
         }
         if (Mapper.getAreas().containsKey(location)) {
             AreaModel model = Mapper.getAreas().get(location);

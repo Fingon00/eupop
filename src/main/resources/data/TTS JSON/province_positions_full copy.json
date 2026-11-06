@@ -2,2091 +2,2509 @@
   {
     "province": "timbuktu",
     "x": -17.84,
-    "y": 3.49
+    "y": 3.49,
+    "capital": true
   },
   {
     "province": "benin",
     "x": -17.11,
-    "y": 2.34
+    "y": 2.34,
+    "capital": true
   },
   {
     "province": "songhai",
     "x": -17.21,
-    "y": 3.13
+    "y": 3.13,
+    "capital": true
   },
   {
     "province": "ethiopia",
     "x": -15.02,
-    "y": 2.67
+    "y": 2.67,
+    "capital": true
   },
   {
     "province": "adal",
     "x": -14.5,
-    "y": 2.73
+    "y": 2.73,
+    "capital": true
   },
   {
     "province": "goldcoast",
     "x": -17.75,
-    "y": 2.39
+    "y": 2.39,
+    "capital": false
   },
   {
     "province": "mali",
     "x": -18.32,
-    "y": 2.74
+    "y": 2.74,
+    "capital": true
   },
   {
     "province": "mutapa",
     "x": -15.47,
-    "y": 0.63
+    "y": 0.63,
+    "capital": true
   },
   {
     "province": "kilwa",
     "x": -14.94,
-    "y": 1.16
+    "y": 1.16,
+    "capital": true
   },
   {
     "province": "katsina",
     "x": -16.65,
-    "y": 2.77
+    "y": 2.77,
+    "capital": true
   },
   {
     "province": "kongo",
     "x": -16.57,
-    "y": 1.58
+    "y": 1.58,
+    "capital": true
   },
   {
     "province": "ajuuraan",
     "x": -14.56,
-    "y": 2.09
+    "y": 2.09,
+    "capital": true
   },
   {
     "province": "upperegypt",
     "x": -15.42,
-    "y": 3.55
+    "y": 3.55,
+    "capital": false
   },
   {
     "province": "angola",
     "x": -16.56,
-    "y": 0.75
+    "y": 0.75,
+    "capital": false
   },
   {
     "province": "madagascar",
     "x": -14.43,
-    "y": 0.64
+    "y": 0.64,
+    "capital": true
   },
   {
     "province": "centralafrica",
     "x": -15.55,
-    "y": 1.77
+    "y": 1.77,
+    "capital": true
   },
   {
     "province": "natal",
     "x": -15.58,
-    "y": -0.12
+    "y": -0.12,
+    "capital": false
   },
   {
     "province": "capeofgoodhope",
     "x": -16.16,
-    "y": -0.36
+    "y": -0.36,
+    "capital": false
   },
   {
     "province": "pernambuco",
     "x": -14.39,
-    "y": 7.91
+    "y": 7.91,
+    "capital": false
   },
   {
     "province": "bahia",
     "x": -14.37,
-    "y": 7.23
+    "y": 7.23,
+    "capital": false
   },
   {
     "province": "riodejaneiro",
     "x": -14.64,
-    "y": 6.52
+    "y": 6.52,
+    "capital": false
   },
   {
     "province": "amazonas",
     "x": -15.66,
-    "y": 7.72
+    "y": 7.72,
+    "capital": false
   },
   {
     "province": "mexico",
     "x": -17.77,
-    "y": 9.17
+    "y": 9.17,
+    "capital": true
   },
   {
     "province": "centralamerica",
     "x": -17.07,
-    "y": 9.0
+    "y": 9.0,
+    "capital": true
   },
   {
     "province": "newgranada",
     "x": -16.16,
-    "y": 8.56
+    "y": 8.56,
+    "capital": false
   },
   {
     "province": "guyana",
     "x": -15.47,
-    "y": 8.43
+    "y": 8.43,
+    "capital": false
   },
   {
     "province": "mississippi",
     "x": -17.45,
-    "y": 9.99
+    "y": 9.99,
+    "capital": false
   },
   {
     "province": "virginia",
     "x": -16.57,
-    "y": 10.45
+    "y": 10.45,
+    "capital": false
   },
   {
     "province": "florida",
     "x": -16.84,
-    "y": 9.77
+    "y": 9.77,
+    "capital": false
   },
   {
     "province": "antilles",
     "x": -16.32,
-    "y": 9.29
+    "y": 9.29,
+    "capital": false
   },
   {
     "province": "hudsonbay",
     "x": -17.22,
-    "y": 11.59
+    "y": 11.59,
+    "capital": false
   },
   {
     "province": "canada",
     "x": -16.48,
-    "y": 11.24
+    "y": 11.24,
+    "capital": false
   },
   {
     "province": "greatlakes",
     "x": -17.12,
-    "y": 10.78
+    "y": 10.78,
+    "capital": false
   },
   {
     "province": "newengland",
     "x": -15.97,
-    "y": 10.7
+    "y": 10.7,
+    "capital": false
   },
   {
     "province": "cuzco",
     "x": -16.26,
-    "y": 7.24
+    "y": 7.24,
+    "capital": true
   },
   {
     "province": "charcas",
     "x": -15.8,
-    "y": 6.82
+    "y": 6.82,
+    "capital": false
   },
   {
     "province": "minasgerais",
     "x": -15.09,
-    "y": 7.2
+    "y": 7.2,
+    "capital": false
   },
   {
     "province": "laplata",
     "x": -15.53,
-    "y": 5.98
+    "y": 5.98,
+    "capital": false
   },
   {
     "province": "greatplains",
     "x": -17.87,
-    "y": 10.72
+    "y": 10.72,
+    "capital": false
   },
   {
     "province": "california",
     "x": -18.39,
-    "y": 9.94
+    "y": 9.94,
+    "capital": false
   },
   {
     "province": "chile",
     "x": -16.2,
-    "y": 5.9
+    "y": 5.9,
+    "capital": false
   },
   {
     "province": "quito",
     "x": -16.64,
-    "y": 7.87
+    "y": 7.87,
+    "capital": false
   },
   {
     "province": "hejaz",
     "x": -18.45,
-    "y": -3.56
+    "y": -3.56,
+    "capital": true
   },
   {
     "province": "yemen",
     "x": -18.15,
-    "y": -4.21
+    "y": -4.21,
+    "capital": true
   },
   {
     "province": "coromandel",
     "x": -15.2,
-    "y": -4.65
+    "y": -4.65,
+    "capital": false
   },
   {
     "province": "bengal",
     "x": -14.38,
-    "y": -3.42
+    "y": -3.42,
+    "capital": true
   },
   {
     "province": "gujarat",
     "x": -15.92,
-    "y": -3.37
+    "y": -3.37,
+    "capital": true
   },
   {
     "province": "doab",
     "x": -14.91,
-    "y": -3.0
+    "y": -3.0,
+    "capital": false
   },
   {
     "province": "delhi",
     "x": -15.44,
-    "y": -2.58
+    "y": -2.58,
+    "capital": true
   },
   {
     "province": "deccan",
     "x": -15.24,
-    "y": -3.86
+    "y": -3.86,
+    "capital": true
   },
   {
     "province": "samarkand",
     "x": -16.6,
-    "y": -1.81
+    "y": -1.81,
+    "capital": true
   },
   {
     "province": "isfahan",
     "x": -17.68,
-    "y": -2.22
+    "y": -2.22,
+    "capital": true
   },
   {
     "province": "goa",
     "x": -15.67,
-    "y": -4.13
+    "y": -4.13,
+    "capital": true
   },
   {
     "province": "fars",
     "x": -17.37,
-    "y": -2.98
+    "y": -2.98,
+    "capital": true
   },
   {
     "province": "balkh",
     "x": -16.29,
-    "y": -2.41
+    "y": -2.41,
+    "capital": false
   },
   {
     "province": "herat",
     "x": -16.95,
-    "y": -2.47
+    "y": -2.47,
+    "capital": true
   },
   {
     "province": "baluchistan",
     "x": -16.59,
-    "y": -3.1
+    "y": -3.1,
+    "capital": true
   },
   {
     "province": "basra",
     "x": -18.13,
-    "y": -2.57
+    "y": -2.57,
+    "capital": true
   },
   {
     "province": "najd",
     "x": -18.07,
-    "y": -3.27
+    "y": -3.27,
+    "capital": true
   },
   {
     "province": "khiva",
     "x": -17.21,
-    "y": -1.73
+    "y": -1.73,
+    "capital": false
   },
   {
     "province": "hormuz",
     "x": -17.17,
-    "y": -3.6
+    "y": -3.6,
+    "capital": true
   },
   {
     "province": "canton",
     "x": -17.41,
-    "y": -7.18
+    "y": -7.18,
+    "capital": false
   },
   {
     "province": "xian",
     "x": -17.54,
-    "y": -6.27
+    "y": -6.27,
+    "capital": false
   },
   {
     "province": "kyushu",
     "x": -15.57,
-    "y": -6.56
+    "y": -6.56,
+    "capital": false
   },
   {
     "province": "hangzhou",
     "x": -16.74,
-    "y": -6.84
+    "y": -6.84,
+    "capital": false
   },
   {
     "province": "malacca",
     "x": -17.72,
-    "y": -8.86
+    "y": -8.86,
+    "capital": true
   },
   {
     "province": "siam",
     "x": -17.86,
-    "y": -8.0
+    "y": -8.0,
+    "capital": true
   },
   {
     "province": "burma",
     "x": -18.41,
-    "y": -7.54
+    "y": -7.54,
+    "capital": true
   },
   {
     "province": "southsumatra",
     "x": -17.82,
-    "y": -9.56
+    "y": -9.56,
+    "capital": false
   },
   {
     "province": "moluccas",
     "x": -16.19,
-    "y": -9.18
+    "y": -9.18,
+    "capital": false
   },
   {
     "province": "java",
     "x": -17.18,
-    "y": -9.72
+    "y": -9.72,
+    "capital": true
   },
   {
     "province": "papua",
     "x": -14.77,
-    "y": -9.56
+    "y": -9.56,
+    "capital": false
   },
   {
     "province": "chengdu",
     "x": -18.08,
-    "y": -6.82
+    "y": -6.82,
+    "capital": false
   },
   {
     "province": "philippines",
     "x": -16.29,
-    "y": -7.94
+    "y": -7.94,
+    "capital": false
   },
   {
     "province": "brunei",
     "x": -16.98,
-    "y": -8.79
+    "y": -8.79,
+    "capital": true
   },
   {
     "province": "beijing",
     "x": -16.88,
-    "y": -5.88
+    "y": -5.88,
+    "capital": true
   },
   {
     "province": "honshu",
     "x": -15.05,
-    "y": -6.1
+    "y": -6.1,
+    "capital": true
   },
   {
     "province": "korea",
     "x": -16.04,
-    "y": -6.14
+    "y": -6.14,
+    "capital": true
   },
   {
     "province": "aceh",
     "x": -18.23,
-    "y": -8.99
+    "y": -8.99,
+    "capital": true
   },
   {
     "province": "timor",
     "x": -16.25,
-    "y": -9.9
+    "y": -9.9,
+    "capital": false
   },
   {
     "province": "vogelkop",
     "x": -15.51,
-    "y": -9.28
+    "y": -9.28,
+    "capital": false
   },
   {
     "province": "easternaustralia",
     "x": -14.27,
-    "y": -11.17
+    "y": -11.17,
+    "capital": false
   },
   {
     "province": "southernaustralia",
     "x": -14.82,
-    "y": -11.75
+    "y": -11.75,
+    "capital": false
   },
   {
     "province": "westernaustralia",
     "x": -16.48,
-    "y": -11.48
+    "y": -11.48,
+    "capital": false
   },
   {
     "province": "westsiberia",
     "x": 16.93,
-    "y": 11.63
+    "y": 11.63,
+    "capital": false
   },
   {
     "province": "tyumen",
     "x": 16.24,
-    "y": 10.75
+    "y": 10.75,
+    "capital": true
   },
   {
     "province": "volga",
     "x": 15.09,
-    "y": 10.66
+    "y": 10.66,
+    "capital": false
   },
   {
     "province": "nogai",
     "x": 15.18,
-    "y": 9.74
+    "y": 9.74,
+    "capital": true
   },
   {
     "province": "ural",
     "x": 15.63,
-    "y": 11.58
+    "y": 11.58,
+    "capital": false
   },
   {
     "province": "eastsiberia",
     "x": 18.37,
-    "y": 10.96
+    "y": 10.96,
+    "capital": false
   },
   {
     "province": "okhotsk",
     "x": 19.65,
-    "y": 10.83
+    "y": 10.83,
+    "capital": false
   },
   {
     "province": "oirat",
     "x": 17.4,
-    "y": 10.09
+    "y": 10.09,
+    "capital": true
   },
   {
     "province": "mongolia",
     "x": 18.36,
-    "y": 9.67
+    "y": 9.67,
+    "capital": true
   },
   {
     "province": "manchu",
     "x": 19.04,
-    "y": 9.6
+    "y": 9.6,
+    "capital": true
   },
   {
     "province": "furdan",
     "x": 19.63,
-    "y": 9.57
+    "y": 9.57,
+    "capital": false
   },
   {
     "province": "chagatai",
     "x": 16.8,
-    "y": 9.56
+    "y": 9.56,
+    "capital": true
   },
   {
     "province": "yarkand",
     "x": 16.8,
-    "y": 9.56
+    "y": 9.56,
+    "capital": false
   },
   {
     "province": "kazakhstan",
     "x": 15.96,
-    "y": 9.77
+    "y": 9.77,
+    "capital": false
   },
   {
     "province": "amsterdam",
     "x": -2.54,
-    "y": 3.4
+    "y": 3.4,
+    "capital": true
   },
   {
     "province": "antwerpen",
     "x": -2.5,
-    "y": 2.08
+    "y": 2.08,
+    "capital": true
   },
   {
     "province": "brugge",
     "x": -3.77,
-    "y": 2.16
+    "y": 2.16,
+    "capital": true
   },
   {
     "province": "london",
     "x": -5.84,
-    "y": 2.68
+    "y": 2.68,
+    "capital": true
   },
   {
     "province": "genova",
     "x": 0.01,
-    "y": -3.82
+    "y": -3.82,
+    "capital": true
   },
   {
     "province": "firenze",
     "x": 1.63,
-    "y": -4.55
+    "y": -4.55,
+    "capital": true
   },
   {
     "province": "montpellier",
     "x": -3.12,
-    "y": -4.27
+    "y": -4.27,
+    "capital": false
   },
   {
     "province": "valencia",
     "x": -5.98,
-    "y": -6.8
+    "y": -6.8,
+    "capital": true
   },
   {
     "province": "normandie",
     "x": -6.09,
-    "y": 0.49
+    "y": 0.49,
+    "capital": false
   },
   {
     "province": "champagne",
     "x": -2.98,
-    "y": 0.24
+    "y": 0.24,
+    "capital": false
   },
   {
     "province": "savoie",
     "x": -1.68,
-    "y": -2.59
+    "y": -2.59,
+    "capital": true
   },
   {
     "province": "lorraine",
     "x": -1.54,
-    "y": -0.13
+    "y": -0.13,
+    "capital": true
   },
   {
     "province": "geneve",
     "x": -1.29,
-    "y": -1.78
+    "y": -1.78,
+    "capital": false
   },
   {
     "province": "venezia",
     "x": 2.57,
-    "y": -3.27
+    "y": -3.27,
+    "capital": true
   },
   {
     "province": "milano",
     "x": 0.0,
-    "y": -2.61
+    "y": -2.61,
+    "capital": true
   },
   {
     "province": "brescia",
     "x": 0.91,
-    "y": -2.75
+    "y": -2.75,
+    "capital": false
   },
   {
     "province": "rijeka",
     "x": 3.74,
-    "y": -3.4
+    "y": -3.4,
+    "capital": false
   },
   {
     "province": "essex",
     "x": -5.02,
-    "y": 3.05
+    "y": 3.05,
+    "capital": false
   },
   {
     "province": "york",
     "x": -6.82,
-    "y": 4.96
+    "y": 4.96,
+    "capital": false
   },
   {
     "province": "praha",
     "x": 3.76,
-    "y": 0.91
+    "y": 0.91,
+    "capital": true
   },
   {
     "province": "berlin",
     "x": 3.3,
-    "y": 3.4
+    "y": 3.4,
+    "capital": true
   },
   {
     "province": "magdeburg",
     "x": 1.79,
-    "y": 2.76
+    "y": 2.76,
+    "capital": true
   },
   {
     "province": "frankfurt",
     "x": 0.02,
-    "y": 1.42
+    "y": 1.42,
+    "capital": false
   },
   {
     "province": "tunis",
     "x": 0.77,
-    "y": -9.61
+    "y": -9.61,
+    "capital": true
   },
   {
     "province": "gharb",
     "x": -10.47,
-    "y": -10.78
+    "y": -10.78,
+    "capital": false
   },
   {
     "province": "tlemcen",
     "x": -6.34,
-    "y": -10.23
+    "y": -10.23,
+    "capital": true
   },
   {
     "province": "bourgogne",
     "x": -2.67,
-    "y": -1.35
+    "y": -1.35,
+    "capital": true
   },
   {
     "province": "wien",
     "x": 4.4,
-    "y": -0.94
+    "y": -0.94,
+    "capital": true
   },
   {
     "province": "pozsony",
     "x": 5.42,
-    "y": -0.36
+    "y": -0.36,
+    "capital": false
   },
   {
     "province": "regensburg",
     "x": 2.02,
-    "y": 0.35
+    "y": 0.35,
+    "capital": false
   },
   {
     "province": "ulm",
     "x": 0.55,
-    "y": 0.06
+    "y": 0.06,
+    "capital": true
   },
   {
     "province": "silesia",
     "x": 4.89,
-    "y": 1.49
+    "y": 1.49,
+    "capital": true
   },
   {
     "province": "lothian",
     "x": -7.8,
-    "y": 6.45
+    "y": 6.45,
+    "capital": true
   },
   {
     "province": "aberdeen",
     "x": -7.41,
-    "y": 7.63
+    "y": 7.63,
+    "capital": false
   },
   {
     "province": "bergenhus",
     "x": -1.04,
-    "y": 9.63
+    "y": 9.63,
+    "capital": false
   },
   {
     "province": "trondheim",
     "x": 1.74,
-    "y": 11.36
+    "y": 11.36,
+    "capital": false
   },
   {
     "province": "lubeck",
     "x": 1.6,
-    "y": 4.3
+    "y": 4.3,
+    "capital": true
   },
   {
     "province": "kobenhavn",
     "x": 2.07,
-    "y": 5.83
+    "y": 5.83,
+    "capital": true
   },
   {
     "province": "lund",
     "x": 3.41,
-    "y": 6.29
+    "y": 6.29,
+    "capital": false
   },
   {
     "province": "hamburg",
     "x": 0.72,
-    "y": 3.89
+    "y": 3.89,
+    "capital": true
   },
   {
     "province": "sevilla",
     "x": -9.7,
-    "y": -8.29
+    "y": -8.29,
+    "capital": false
   },
   {
     "province": "lisboa",
     "x": -11.49,
-    "y": -7.01
+    "y": -7.01,
+    "capital": true
   },
   {
     "province": "porto",
     "x": -11.18,
-    "y": -5.52
+    "y": -5.52,
+    "capital": false
   },
   {
     "province": "ceuta",
     "x": -8.93,
-    "y": -9.72
+    "y": -9.72,
+    "capital": false
   },
   {
     "province": "barcelona",
     "x": -4.14,
-    "y": -5.64
+    "y": -5.64,
+    "capital": false
   },
   {
     "province": "mesina",
     "x": 3.56,
-    "y": -8.92
+    "y": -8.92,
+    "capital": false
   },
   {
     "province": "napoli",
     "x": 3.54,
-    "y": -6.78
+    "y": -6.78,
+    "capital": true
   },
   {
     "province": "wessex",
     "x": -7.82,
-    "y": 2.08
+    "y": 2.08,
+    "capital": false
   },
   {
     "province": "rennes",
     "x": -7.23,
-    "y": -0.05
+    "y": -0.05,
+    "capital": false
   },
   {
     "province": "ragusa",
     "x": 5.35,
-    "y": -5.08
+    "y": -5.08,
+    "capital": true
   },
   {
     "province": "caux",
     "x": -5.39,
-    "y": 0.89
+    "y": 0.89,
+    "capital": false
   },
   {
     "province": "liege",
     "x": -1.84,
-    "y": 1.65
+    "y": 1.65,
+    "capital": true
   },
   {
     "province": "siena",
     "x": 1.6,
-    "y": -5.4
+    "y": -5.4,
+    "capital": true
   },
   {
     "province": "pest",
     "x": 6.02,
-    "y": -1.29
+    "y": -1.29,
+    "capital": true
   },
   {
     "province": "tirol",
     "x": 1.31,
-    "y": -1.42
+    "y": -1.42,
+    "capital": false
   },
   {
     "province": "rudohori",
     "x": 3.04,
-    "y": 1.16
+    "y": 1.16,
+    "capital": false
   },
   {
     "province": "sundgau",
     "x": -1.03,
-    "y": -0.65
+    "y": -0.65,
+    "capital": false
   },
   {
     "province": "tafilalt",
     "x": -8.29,
-    "y": -11.95
+    "y": -11.95,
+    "capital": false
   },
   {
     "province": "marrakech",
     "x": -10.66,
-    "y": -11.64
+    "y": -11.64,
+    "capital": false
   },
   {
     "province": "munchen",
     "x": 1.98,
-    "y": -0.61
+    "y": -0.61,
+    "capital": true
   },
   {
     "province": "kulm",
     "x": 5.93,
-    "y": 3.43
+    "y": 3.43,
+    "capital": false
   },
   {
     "province": "sieradz",
     "x": 5.97,
-    "y": 1.45
+    "y": 1.45,
+    "capital": false
   },
   {
     "province": "danzig",
     "x": 5.93,
-    "y": 4.49
+    "y": 4.49,
+    "capital": false
   },
   {
     "province": "stockholm",
     "x": 5.68,
-    "y": 8.39
+    "y": 8.39,
+    "capital": true
   },
   {
     "province": "karnten",
     "x": 2.84,
-    "y": -1.61
+    "y": -1.61,
+    "capital": false
   },
   {
     "province": "lienz",
     "x": 2.17,
-    "y": -1.65
+    "y": -1.65,
+    "capital": false
   },
   {
     "province": "namur",
     "x": -2.81,
-    "y": 1.12
+    "y": 1.12,
+    "capital": false
   },
   {
     "province": "bern",
     "x": -0.82,
-    "y": -1.55
+    "y": -1.55,
+    "capital": true
   },
   {
     "province": "bordeaux",
     "x": -6.18,
-    "y": -2.78
+    "y": -2.78,
+    "capital": false
   },
   {
     "province": "bourbon",
     "x": -3.51,
-    "y": -1.93
+    "y": -1.93,
+    "capital": false
   },
   {
     "province": "navarra",
     "x": -6.89,
-    "y": -4.31
+    "y": -4.31,
+    "capital": true
   },
   {
     "province": "nantes",
     "x": -6.89,
-    "y": -0.87
+    "y": -0.87,
+    "capital": true
   },
   {
     "province": "bergslagen",
     "x": 3.93,
-    "y": 9.24
+    "y": 9.24,
+    "capital": false
   },
   {
     "province": "stettin",
     "x": 3.84,
-    "y": 4.08
+    "y": 4.08,
+    "capital": false
   },
   {
     "province": "dresden",
     "x": 3.03,
-    "y": 1.82
+    "y": 1.82,
+    "capital": true
   },
   {
     "province": "braunschweig",
     "x": 0.93,
-    "y": 2.32
+    "y": 2.32,
+    "capital": true
   },
   {
     "province": "salamanca",
     "x": -9.67,
-    "y": -5.85
+    "y": -5.85,
+    "capital": false
   },
   {
     "province": "galicia",
     "x": -10.68,
-    "y": -3.52
+    "y": -3.52,
+    "capital": false
   },
   {
     "province": "badajoz",
     "x": -9.77,
-    "y": -7.36
+    "y": -7.36,
+    "capital": false
   },
   {
     "province": "perth",
     "x": -8.26,
-    "y": 7.19
+    "y": 7.19,
+    "capital": false
   },
   {
     "province": "pale",
     "x": -10.04,
-    "y": 4.62
+    "y": 4.62,
+    "capital": false
   },
   {
     "province": "laighin",
     "x": -10.25,
-    "y": 3.77
+    "y": 3.77,
+    "capital": true
   },
   {
     "province": "tripoli",
     "x": 2.56,
-    "y": -11.85
+    "y": -11.85,
+    "capital": false
   },
   {
     "province": "slesvig",
     "x": 0.25,
-    "y": 5.22
+    "y": 5.22,
+    "capital": false
   },
   {
     "province": "holstein",
     "x": 0.82,
-    "y": 4.7
+    "y": 4.7,
+    "capital": true
   },
   {
     "province": "bremen",
     "x": -0.11,
-    "y": 3.69
+    "y": 3.69,
+    "capital": true
   },
   {
     "province": "poitou",
     "x": -5.4,
-    "y": -2.02
+    "y": -2.02,
+    "capital": false
   },
   {
     "province": "limousin",
     "x": -4.54,
-    "y": -2.8
+    "y": -2.8,
+    "capital": false
   },
   {
     "province": "akershus",
     "x": 1.71,
-    "y": 9.22
+    "y": 9.22,
+    "capital": true
   },
   {
     "province": "roma",
     "x": 2.39,
-    "y": -6.15
+    "y": -6.15,
+    "capital": true
   },
   {
     "province": "lyon",
     "x": -2.59,
-    "y": -2.63
+    "y": -2.63,
+    "capital": false
   },
   {
     "province": "avignon",
     "x": -2.85,
-    "y": -3.43
+    "y": -3.43,
+    "capital": false
   },
   {
     "province": "nurnberg",
     "x": 1.5,
-    "y": 0.57
+    "y": 0.57,
+    "capital": true
   },
   {
     "province": "mainz",
     "x": 0.01,
-    "y": 0.68
+    "y": 0.68,
+    "capital": true
   },
   {
     "province": "paris",
     "x": -4.5,
-    "y": 0.16
+    "y": 0.16,
+    "capital": true
   },
   {
     "province": "ferrara",
     "x": 2.15,
-    "y": -3.87
+    "y": -3.87,
+    "capital": true
   },
   {
     "province": "bosnia",
     "x": 5.69,
-    "y": -3.33
+    "y": -3.33,
+    "capital": true
   },
   {
     "province": "salzburg",
     "x": 2.58,
-    "y": -0.91
+    "y": -0.91,
+    "capital": false
   },
   {
     "province": "saintonge",
     "x": -6.27,
-    "y": -1.9
+    "y": -1.9,
+    "capital": false
   },
   {
     "province": "poznan",
     "x": 4.83,
-    "y": 2.56
+    "y": 2.56,
+    "capital": false
   },
   {
     "province": "sus",
     "x": -9.6,
-    "y": -12.1
+    "y": -12.1,
+    "capital": false
   },
   {
     "province": "madeira",
     "x": -13.21,
-    "y": -10.03
+    "y": -10.03,
+    "capital": false
   },
   {
     "province": "toulouse",
     "x": -4.34,
-    "y": -4.12
+    "y": -4.12,
+    "capital": false
   },
   {
     "province": "armagnac",
     "x": -5.64,
-    "y": -3.9
+    "y": -3.9,
+    "capital": false
   },
   {
     "province": "pfalz",
     "x": -0.73,
-    "y": 0.34
+    "y": 0.34,
+    "capital": true
   },
   {
     "province": "provence",
     "x": -1.86,
-    "y": -4.65
+    "y": -4.65,
+    "capital": true
   },
   {
     "province": "piemonte",
     "x": -0.87,
-    "y": -3.32
+    "y": -3.32,
+    "capital": false
   },
   {
     "province": "berry",
     "x": -4.02,
-    "y": -1.44
+    "y": -1.44,
+    "capital": false
   },
   {
     "province": "orleans",
     "x": -4.83,
-    "y": -1.01
+    "y": -1.01,
+    "capital": false
   },
   {
     "province": "bari",
     "x": 5.0,
-    "y": -6.36
+    "y": -6.36,
+    "capital": false
   },
   {
     "province": "lancashire",
     "x": -7.42,
-    "y": 4.72
+    "y": 4.72,
+    "capital": false
   },
   {
     "province": "northumberland",
     "x": -7.04,
-    "y": 5.88
+    "y": 5.88,
+    "capital": false
   },
   {
     "province": "shrewsbury",
     "x": -7.33,
-    "y": 3.82
+    "y": 3.82,
+    "capital": false
   },
   {
     "province": "ulaidh",
     "x": -10.32,
-    "y": 5.77
+    "y": 5.77,
+    "capital": true
   },
   {
     "province": "madrid",
     "x": -8.1,
-    "y": -6.17
+    "y": -6.17,
+    "capital": true
   },
   {
     "province": "cordoba",
     "x": -8.82,
-    "y": -7.9
+    "y": -7.9,
+    "capital": false
   },
   {
     "province": "burgos",
     "x": -8.28,
-    "y": -4.86
+    "y": -4.86,
+    "capital": false
   },
   {
     "province": "zara",
     "x": 4.28,
-    "y": -4.47
+    "y": -4.47,
+    "capital": false
   },
   {
     "province": "zagreb",
     "x": 4.78,
-    "y": -2.52
+    "y": -2.52,
+    "capital": true
   },
   {
     "province": "beira",
     "x": -10.64,
-    "y": -6.26
+    "y": -6.26,
+    "capital": false
   },
   {
     "province": "ayrshire",
     "x": -8.82,
-    "y": 6.07
+    "y": 6.07,
+    "capital": false
   },
   {
     "province": "mhumhain",
     "x": -11.18,
-    "y": 3.44
+    "y": 3.44,
+    "capital": true
   },
   {
     "province": "wales",
     "x": -8.47,
-    "y": 3.39
+    "y": 3.39,
+    "capital": false
   },
   {
     "province": "oxford",
     "x": -6.51,
-    "y": 3.19
+    "y": 3.19,
+    "capital": false
   },
   {
     "province": "maine",
     "x": -5.72,
-    "y": -0.52
+    "y": -0.52,
+    "capital": false
   },
   {
     "province": "artois",
     "x": -3.98,
-    "y": 1.3
+    "y": 1.3,
+    "capital": false
   },
   {
     "province": "picardie",
     "x": -4.58,
-    "y": 1.4
+    "y": 1.4,
+    "capital": false
   },
   {
     "province": "anjou",
     "x": -5.78,
-    "y": -1.29
+    "y": -1.29,
+    "capital": false
   },
   {
     "province": "canarias",
     "x": -13.17,
-    "y": -12.09
+    "y": -12.09,
+    "capital": false
   },
   {
     "province": "fez",
     "x": -8.36,
-    "y": -10.57
+    "y": -10.57,
+    "capital": true
   },
   {
     "province": "tangiers",
     "x": -9.55,
-    "y": -9.88
+    "y": -9.88,
+    "capital": false
   },
   {
     "province": "qafsah",
     "x": -0.33,
-    "y": -11.71
+    "y": -11.71,
+    "capital": true
   },
   {
     "province": "oran",
     "x": -4.84,
-    "y": -9.7
+    "y": -9.7,
+    "capital": false
   },
   {
     "province": "mitidja",
     "x": -3.34,
-    "y": -9.37
+    "y": -9.37,
+    "capital": false
   },
   {
     "province": "qusantinah",
     "x": -1.13,
-    "y": -9.49
+    "y": -9.49,
+    "capital": false
   },
   {
     "province": "kabylia",
     "x": -2.17,
-    "y": -9.5
+    "y": -9.5,
+    "capital": false
   },
   {
     "province": "bizerte",
     "x": -0.06,
-    "y": -9.4
+    "y": -9.4,
+    "capital": false
   },
   {
     "province": "sousse",
     "x": 0.83,
-    "y": -10.54
+    "y": -10.54,
+    "capital": false
   },
   {
     "province": "murcia",
     "x": -6.66,
-    "y": -8.25
+    "y": -8.25,
+    "capital": false
   },
   {
     "province": "zaragoza",
     "x": -5.89,
-    "y": -5.46
+    "y": -5.46,
+    "capital": false
   },
   {
     "province": "baleares",
     "x": -3.74,
-    "y": -7.11
+    "y": -7.11,
+    "capital": false
   },
   {
     "province": "malta",
     "x": 3.32,
-    "y": -10.18
+    "y": -10.18,
+    "capital": false
   },
   {
     "province": "palermo",
     "x": 2.23,
-    "y": -8.85
+    "y": -8.85,
+    "capital": false
   },
   {
     "province": "salerno",
     "x": 4.19,
-    "y": -7.43
+    "y": -7.43,
+    "capital": false
   },
   {
     "province": "pisa",
     "x": 1.09,
-    "y": -4.93
+    "y": -4.93,
+    "capital": false
   },
   {
     "province": "ancona",
     "x": 3.03,
-    "y": -4.77
+    "y": -4.77,
+    "capital": false
   },
   {
     "province": "cremona",
     "x": 0.41,
-    "y": -3.06
+    "y": -3.06,
+    "capital": false
   },
   {
     "province": "mantova",
     "x": 1.18,
-    "y": -3.57
+    "y": -3.57,
+    "capital": true
   },
   {
     "province": "parma",
     "x": 0.69,
-    "y": -3.67
+    "y": -3.67,
+    "capital": false
   },
   {
     "province": "st-gallen",
     "x": 0.05,
-    "y": -1.42
+    "y": -1.42,
+    "capital": false
   },
   {
     "province": "franche-comte",
     "x": -1.8,
-    "y": -1.15
+    "y": -1.15,
+    "capital": false
   },
   {
     "province": "zeeland",
     "x": -2.99,
-    "y": 2.84
+    "y": 2.84,
+    "capital": false
   },
   {
     "province": "gelre",
     "x": -1.55,
-    "y": 3.15
+    "y": 3.15,
+    "capital": true
   },
   {
     "province": "breda",
     "x": -2.01,
-    "y": 2.61
+    "y": 2.61,
+    "capital": false
   },
   {
     "province": "friesland",
     "x": -1.65,
-    "y": 4.0
+    "y": 4.0,
+    "capital": true
   },
   {
     "province": "gent",
     "x": -3.15,
-    "y": 2.07
+    "y": 2.07,
+    "capital": false
   },
   {
     "province": "luxembourg",
     "x": -1.84,
-    "y": 0.81
+    "y": 0.81,
+    "capital": false
   },
   {
     "province": "hannover",
     "x": 0.54,
-    "y": 2.92
+    "y": 2.92,
+    "capital": false
   },
   {
     "province": "kleve",
     "x": -1.18,
-    "y": 2.43
+    "y": 2.43,
+    "capital": true
   },
   {
     "province": "koln",
     "x": -1.22,
-    "y": 1.73
+    "y": 1.73,
+    "capital": true
   },
   {
     "province": "trier",
     "x": -1.14,
-    "y": 0.94
+    "y": 0.94,
+    "capital": true
   },
   {
     "province": "munster",
     "x": -0.48,
-    "y": 2.66
+    "y": 2.66,
+    "capital": true
   },
   {
     "province": "borgarsysla",
     "x": 2.07,
-    "y": 8.45
+    "y": 8.45,
+    "capital": false
   },
   {
     "province": "vestjylland",
     "x": -0.27,
-    "y": 6.42
+    "y": 6.42,
+    "capital": false
   },
   {
     "province": "ostjylland",
     "x": 0.83,
-    "y": 6.37
+    "y": 6.37,
+    "capital": false
   },
   {
     "province": "ostergotland",
     "x": 4.68,
-    "y": 7.53
+    "y": 7.53,
+    "capital": false
   },
   {
     "province": "gotland",
     "x": 5.9,
-    "y": 6.97
+    "y": 6.97,
+    "capital": false
   },
   {
     "province": "halsingland",
     "x": 5.38,
-    "y": 10.53
+    "y": 10.53,
+    "capital": false
   },
   {
     "province": "wittenberg",
     "x": 2.44,
-    "y": 2.31
+    "y": 2.31,
+    "capital": false
   },
   {
     "province": "leipzig",
     "x": 1.53,
-    "y": 1.83
+    "y": 1.83,
+    "capital": false
   },
   {
     "province": "augsburg",
     "x": 1.17,
-    "y": -0.6
+    "y": -0.6,
+    "capital": true
   },
   {
     "province": "landshut",
     "x": 2.58,
-    "y": -0.23
+    "y": -0.23,
+    "capital": false
   },
   {
     "province": "steiermark",
     "x": 3.49,
-    "y": -1.46
+    "y": -1.46,
+    "capital": false
   },
   {
     "province": "osterreich",
     "x": 4.24,
-    "y": -0.13
+    "y": -0.13,
+    "capital": false
   },
   {
     "province": "verona",
     "x": 1.76,
-    "y": -3.03
+    "y": -3.03,
+    "capital": false
   },
   {
     "province": "treviso",
     "x": 2.5,
-    "y": -2.58
+    "y": -2.58,
+    "capital": false
   },
   {
     "province": "krain",
     "x": 3.19,
-    "y": -2.81
+    "y": -2.81,
+    "capital": false
   },
   {
     "province": "potsdam",
     "x": 2.58,
-    "y": 3.11
+    "y": 3.11,
+    "capital": false
   },
   {
     "province": "altmark",
     "x": 1.93,
-    "y": 3.45
+    "y": 3.45,
+    "capital": false
   },
   {
     "province": "neumark",
     "x": 4.41,
-    "y": 3.47
+    "y": 3.47,
+    "capital": false
   },
   {
     "province": "koslin",
     "x": 4.92,
-    "y": 4.54
+    "y": 4.54,
+    "capital": false
   },
   {
     "province": "stralsund",
     "x": 3.03,
-    "y": 4.56
+    "y": 4.56,
+    "capital": false
   },
   {
     "province": "mecklenburg",
     "x": 2.32,
-    "y": 4.47
+    "y": 4.47,
+    "capital": true
   },
   {
     "province": "hum",
     "x": 5.17,
-    "y": -4.04
+    "y": -4.04,
+    "capital": false
   },
   {
     "province": "kalisz",
     "x": 5.76,
-    "y": 2.41
+    "y": 2.41,
+    "capital": false
   },
   {
     "province": "granada",
     "x": -8.19,
-    "y": -8.41
+    "y": -8.41,
+    "capital": true
   },
   {
     "province": "gibraltar",
     "x": -9.39,
-    "y": -9.05
+    "y": -9.05,
+    "capital": false
   },
   {
     "province": "sopron",
     "x": 5.03,
-    "y": -1.29
+    "y": -1.29,
+    "capital": false
   },
   {
     "province": "olomouc",
     "x": 5.01,
-    "y": 0.67
+    "y": 0.67,
+    "capital": false
   },
   {
     "province": "budejovice",
     "x": 3.48,
-    "y": 0.13
+    "y": 0.13,
+    "capital": false
   },
   {
     "province": "corsica",
     "x": 0.34,
-    "y": -5.3
+    "y": -5.3,
+    "capital": false
   },
   {
     "province": "sardenya",
     "x": 0.22,
-    "y": -7.7
+    "y": -7.7,
+    "capital": false
   },
   {
     "province": "iskandariyya",
     "x": 11.8,
-    "y": -11.24
+    "y": -11.24,
+    "capital": false
   },
   {
     "province": "qahirah",
     "x": 12.43,
-    "y": -11.95
+    "y": -11.95,
+    "capital": true
   },
   {
     "province": "dumyat",
     "x": 13.0,
-    "y": -11.33
+    "y": -11.33,
+    "capital": false
   },
   {
     "province": "krakow",
     "x": 6.87,
-    "y": 0.78
+    "y": 0.78,
+    "capital": false
   },
   {
     "province": "warszawa",
     "x": 7.54,
-    "y": 2.5
+    "y": 2.5,
+    "capital": true
   },
   {
     "province": "lwow",
     "x": 9.54,
-    "y": -0.01
+    "y": -0.01,
+    "capital": false
   },
   {
     "province": "constantinople",
     "x": 11.68,
-    "y": -5.6
+    "y": -5.6,
+    "capital": true
   },
   {
     "province": "hudavendigar",
     "x": 11.4,
-    "y": -6.51
+    "y": -6.51,
+    "capital": false
   },
   {
     "province": "basarabia",
     "x": 12.05,
-    "y": -2.69
+    "y": -2.69,
+    "capital": false
   },
   {
     "province": "trebizond",
     "x": 16.89,
-    "y": -5.82
+    "y": -5.82,
+    "capital": true
   },
   {
     "province": "kazan",
     "x": 20.11,
-    "y": 4.61
+    "y": 4.61,
+    "capital": true
   },
   {
     "province": "nizhny_novgorod",
     "x": 18.86,
-    "y": 5.28
+    "y": 5.28,
+    "capital": false
   },
   {
     "province": "perm",
     "x": 20.5,
-    "y": 8.28
+    "y": 8.28,
+    "capital": true
   },
   {
     "province": "viatka",
     "x": 20.41,
-    "y": 6.78
+    "y": 6.78,
+    "capital": false
   },
   {
     "province": "tblisi",
     "x": 19.36,
-    "y": -5.09
+    "y": -5.09,
+    "capital": true
   },
   {
     "province": "caffa",
     "x": 15.41,
-    "y": -2.88
+    "y": -2.88,
+    "capital": false
   },
   {
     "province": "athina",
     "x": 9.19,
-    "y": -8.14
+    "y": -8.14,
+    "capital": true
   },
   {
     "province": "creta",
     "x": 10.02,
-    "y": -9.86
+    "y": -9.86,
+    "capital": false
   },
   {
     "province": "novgorod",
     "x": 13.0,
-    "y": 7.1
+    "y": 7.1,
+    "capital": true
   },
   {
     "province": "neva",
     "x": 12.11,
-    "y": 7.88
+    "y": 7.88,
+    "capital": false
   },
   {
     "province": "ladoga",
     "x": 13.02,
-    "y": 8.1
+    "y": 8.1,
+    "capital": false
   },
   {
     "province": "arkhangelsk",
     "x": 14.18,
-    "y": 11.65
+    "y": 11.65,
+    "capital": false
   },
   {
     "province": "al-quds",
     "x": 14.83,
-    "y": -11.65
+    "y": -11.65,
+    "capital": false
   },
   {
     "province": "moskva",
     "x": 15.63,
-    "y": 4.8
+    "y": 4.8,
+    "capital": true
   },
   {
     "province": "tver",
     "x": 15.19,
-    "y": 5.39
+    "y": 5.39,
+    "capital": true
   },
   {
     "province": "suzdal",
     "x": 17.68,
-    "y": 5.57
+    "y": 5.57,
+    "capital": false
   },
   {
     "province": "murom",
     "x": 18.45,
-    "y": 4.43
+    "y": 4.43,
+    "capital": false
   },
   {
     "province": "kijevas",
     "x": 12.51,
-    "y": 0.7
+    "y": 0.7,
+    "capital": false
   },
   {
     "province": "smolenskas",
     "x": 13.31,
-    "y": 3.73
+    "y": 3.73,
+    "capital": false
   },
   {
     "province": "vilnius",
     "x": 9.58,
-    "y": 3.65
+    "y": 3.65,
+    "capital": true
   },
   {
     "province": "odoyev",
     "x": 15.51,
-    "y": 3.08
+    "y": 3.08,
+    "capital": true
   },
   {
     "province": "riga",
     "x": 9.11,
-    "y": 6.13
+    "y": 6.13,
+    "capital": true
   },
   {
     "province": "reval",
     "x": 9.3,
-    "y": 7.66
+    "y": 7.66,
+    "capital": false
   },
   {
     "province": "hunyad",
     "x": 8.44,
-    "y": -2.49
+    "y": -2.49,
+    "capital": false
   },
   {
     "province": "vladimir",
     "x": 17.2,
-    "y": 4.4
+    "y": 4.4,
+    "capital": false
   },
   {
     "province": "polockas",
     "x": 11.85,
-    "y": 4.88
+    "y": 4.88,
+    "capital": false
   },
   {
     "province": "astrakhan",
     "x": 20.71,
-    "y": -1.41
+    "y": -1.41,
+    "capital": false
   },
   {
     "province": "tambov",
     "x": 17.57,
-    "y": 2.4
+    "y": 2.4,
+    "capital": false
   },
   {
     "province": "bangazi",
     "x": 6.78,
-    "y": -11.0
+    "y": -11.0,
+    "capital": false
   },
   {
     "province": "voluine",
     "x": 9.43,
-    "y": 1.7
+    "y": 1.7,
+    "capital": false
   },
   {
     "province": "podole",
     "x": 11.13,
-    "y": -0.22
+    "y": -0.22,
+    "capital": false
   },
   {
     "province": "halab",
     "x": 15.91,
-    "y": -8.51
+    "y": -8.51,
+    "capital": false
   },
   {
     "province": "karaman",
     "x": 13.88,
-    "y": -8.66
+    "y": -8.66,
+    "capital": false
   },
   {
     "province": "dimashq",
     "x": 15.53,
-    "y": -10.1
+    "y": -10.1,
+    "capital": false
   },
   {
     "province": "tarabulus",
     "x": 15.34,
-    "y": -9.22
+    "y": -9.22,
+    "capital": false
   },
   {
     "province": "saratov",
     "x": 19.63,
-    "y": 1.28
+    "y": 1.28,
+    "capital": true
   },
   {
     "province": "konigsberg",
     "x": 7.25,
-    "y": 4.76
+    "y": 4.76,
+    "capital": false
   },
   {
     "province": "osterode",
     "x": 6.68,
-    "y": 4.2
+    "y": 4.2,
+    "capital": false
   },
   {
     "province": "azov",
     "x": 17.08,
-    "y": -1.62
+    "y": -1.62,
+    "capital": false
   },
   {
     "province": "izmir",
     "x": 10.93,
-    "y": -7.82
+    "y": -7.82,
+    "capital": false
   },
   {
     "province": "tabriz",
     "x": 20.36,
-    "y": -7.44
+    "y": -7.44,
+    "capital": true
   },
   {
     "province": "baghdad",
     "x": 19.73,
-    "y": -10.05
+    "y": -10.05,
+    "capital": false
   },
   {
     "province": "circassia",
     "x": 17.25,
-    "y": -3.67
+    "y": -3.67,
+    "capital": true
   },
   {
     "province": "morea",
     "x": 8.64,
-    "y": -9.16
+    "y": -9.16,
+    "capital": false
   },
   {
     "province": "naxos",
     "x": 10.19,
-    "y": -8.4
+    "y": -8.4,
+    "capital": true
   },
   {
     "province": "edisanas",
     "x": 13.21,
-    "y": -1.93
+    "y": -1.93,
+    "capital": false
   },
   {
     "province": "selanik",
     "x": 8.51,
-    "y": -6.36
+    "y": -6.36,
+    "capital": false
   },
   {
     "province": "beograd",
     "x": 7.17,
-    "y": -3.65
+    "y": -3.65,
+    "capital": false
   },
   {
     "province": "naugardukas",
     "x": 10.23,
-    "y": 2.9
+    "y": 2.9,
+    "capital": false
   },
   {
     "province": "minskas",
     "x": 11.31,
-    "y": 3.42
+    "y": 3.42,
+    "capital": false
   },
   {
     "province": "mush",
     "x": 17.8,
-    "y": -7.05
+    "y": -7.05,
+    "capital": true
   },
   {
     "province": "urfa",
     "x": 16.97,
-    "y": -7.96
+    "y": -7.96,
+    "capital": false
   },
   {
     "province": "mosul",
     "x": 18.89,
-    "y": -8.11
+    "y": -8.11,
+    "capital": false
   },
   {
     "province": "jaffa",
     "x": 14.88,
-    "y": -10.85
+    "y": -10.85,
+    "capital": false
   },
   {
     "province": "gazzah",
     "x": 14.13,
-    "y": -11.5
+    "y": -11.5,
+    "capital": false
   },
   {
     "province": "fayyum",
     "x": 11.84,
-    "y": -12.14
+    "y": -12.14,
+    "capital": false
   },
   {
     "province": "cyprus",
     "x": 14.08,
-    "y": -9.61
+    "y": -9.61,
+    "capital": false
   },
   {
     "province": "yanya",
     "x": 7.61,
-    "y": -7.5
+    "y": -7.5,
+    "capital": false
   },
   {
     "province": "kirkuk",
     "x": 19.62,
-    "y": -8.86
+    "y": -8.86,
+    "capital": false
   },
   {
     "province": "tikrit",
     "x": 19.01,
-    "y": -9.24
+    "y": -9.24,
+    "capital": false
   },
   {
     "province": "yerevan",
     "x": 19.46,
-    "y": -6.24
+    "y": -6.24,
+    "capital": false
   },
   {
     "province": "rhodes",
     "x": 11.04,
-    "y": -9.13
+    "y": -9.13,
+    "capital": true
   },
   {
     "province": "edirne",
     "x": 10.56,
-    "y": -5.69
+    "y": -5.69,
+    "capital": false
   },
   {
     "province": "ankara",
     "x": 13.45,
-    "y": -6.71
+    "y": -6.71,
+    "capital": false
   },
   {
     "province": "kastamonu",
     "x": 14.32,
-    "y": -5.35
+    "y": -5.35,
+    "capital": true
   },
   {
     "province": "konya",
     "x": 13.59,
-    "y": -7.63
+    "y": -7.63,
+    "capital": false
   },
   {
     "province": "adana",
     "x": 14.95,
-    "y": -8.4
+    "y": -8.4,
+    "capital": true
   },
   {
     "province": "abo",
     "x": 7.54,
-    "y": 9.18
+    "y": 9.18,
+    "capital": false
   },
   {
     "province": "nyland",
     "x": 9.91,
-    "y": 8.59
+    "y": 8.59,
+    "capital": false
   },
   {
     "province": "osterbotten",
     "x": 8.95,
-    "y": 11.43
+    "y": 11.43,
+    "capital": false
   },
   {
     "province": "kargopol",
     "x": 13.84,
-    "y": 11.0
+    "y": 11.0,
+    "capital": false
   },
   {
     "province": "olonets",
     "x": 13.9,
-    "y": 9.33
+    "y": 9.33,
+    "capital": false
   },
   {
     "province": "pskov",
     "x": 11.23,
-    "y": 6.88
+    "y": 6.88,
+    "capital": true
   },
   {
     "province": "galich",
     "x": 18.45,
-    "y": 6.28
+    "y": 6.28,
+    "capital": false
   },
   {
     "province": "sarai",
     "x": 19.85,
-    "y": -0.54
+    "y": -0.54,
+    "capital": false
   },
   {
     "province": "majar",
     "x": 18.43,
-    "y": -2.5
+    "y": -2.5,
+    "capital": false
   },
   {
     "province": "terek",
     "x": 19.87,
-    "y": -3.38
+    "y": -3.38,
+    "capital": false
   },
   {
     "province": "shirvan",
     "x": 20.81,
-    "y": -4.39
+    "y": -4.39,
+    "capital": true
   },
   {
     "province": "guria",
     "x": 18.16,
-    "y": -5.05
+    "y": -5.05,
+    "capital": false
   },
   {
     "province": "imereti",
     "x": 18.55,
-    "y": -4.5
+    "y": -4.5,
+    "capital": true
   },
   {
     "province": "kyzylyar",
     "x": 15.76,
-    "y": -1.53
+    "y": -1.53,
+    "capital": false
   },
   {
     "province": "yedishkul",
     "x": 14.99,
-    "y": -1.86
+    "y": -1.86,
+    "capital": false
   },
   {
     "province": "crimea",
     "x": 14.61,
-    "y": -2.61
+    "y": -2.61,
+    "capital": true
   },
   {
     "province": "szabolcs",
     "x": 7.54,
-    "y": -1.14
+    "y": -1.14,
+    "capital": false
   },
   {
     "province": "torda",
     "x": 9.17,
-    "y": -1.98
+    "y": -1.98,
+    "capital": false
   },
   {
     "province": "albania",
     "x": 6.82,
-    "y": -6.17
+    "y": -6.17,
+    "capital": true
   },
   {
     "province": "kosovo",
     "x": 7.22,
-    "y": -5.26
+    "y": -5.26,
+    "capital": false
   },
   {
     "province": "smederevo",
     "x": 7.72,
-    "y": -3.84
+    "y": -3.84,
+    "capital": true
   },
   {
     "province": "sofya",
     "x": 9.2,
-    "y": -4.59
+    "y": -4.59,
+    "capital": false
   },
   {
     "province": "silistre",
     "x": 11.3,
-    "y": -4.13
+    "y": -4.13,
+    "capital": false
   },
   {
     "province": "tirgoviste",
     "x": 9.71,
-    "y": -3.49
+    "y": -3.49,
+    "capital": true
   },
   {
     "province": "buzau",
     "x": 10.94,
-    "y": -3.03
+    "y": -3.03,
+    "capital": false
   },
   {
     "province": "marienburg",
     "x": 6.68,
-    "y": 4.21
+    "y": 4.21,
+    "capital": true
   },
   {
     "province": "bitlis",
     "x": 18.74,
-    "y": -7.32
+    "y": -7.32,
+    "capital": true
   },
   {
     "province": "cernigovas",
     "x": 13.9,
-    "y": 1.67
+    "y": 1.67,
+    "capital": false
   },
   {
     "province": "poltava",
     "x": 14.67,
-    "y": 0.21
+    "y": 0.21,
+    "capital": false
   },
   {
     "province": "suceava",
     "x": 11.0,
-    "y": -1.6
+    "y": -1.6,
+    "capital": true
   },
   {
     "province": "rzhev",
     "x": 14.04,
-    "y": 5.54
+    "y": 5.54,
+    "capital": false
   },
   {
     "province": "ryazan",
     "x": 16.79,
-    "y": 3.45
+    "y": 3.45,
+    "capital": true
   },
   {
     "province": "goldingen",
     "x": 7.75,
-    "y": 6.42
+    "y": 6.42,
+    "capital": false
   },
   {
     "province": "livland",
     "x": 9.48,
-    "y": 6.79
+    "y": 6.79,
+    "capital": true
   },
   {
     "province": "kaunas",
     "x": 8.98,
-    "y": 4.27
+    "y": 4.27,
+    "capital": false
   },
   {
     "province": "zemaitija",
     "x": 8.47,
-    "y": 5.14
+    "y": 5.14,
+    "capital": false
   },
   {
     "province": "lublin",
     "x": 8.19,
-    "y": 1.51
+    "y": 1.51,
+    "capital": false
   },
   {
     "province": "sandomierz",
     "x": 7.67,
-    "y": 1.08
+    "y": 1.08,
+    "capital": false
   },
   {
     "province": "szepes",
     "x": 6.74,
-    "y": -0.3
+    "y": -0.3,
+    "capital": false
   },
   {
     "province": "kasimov",
     "x": 17.79,
-    "y": 3.68
+    "y": 3.68,
+    "capital": false
   },
   {
     "province": "yaroslavl",
     "x": 16.49,
-    "y": 6.21
+    "y": 6.21,
+    "capital": true
   },
   {
     "province": "vologda",
     "x": 16.53,
-    "y": 7.34
+    "y": 7.34,
+    "capital": false
   },
   {
     "province": "beloozero",
     "x": 15.7,
-    "y": 8.36
+    "y": 8.36,
+    "capital": true
   },
   {
     "province": "don",
     "x": 17.98,
-    "y": -0.33
+    "y": -0.33,
+    "capital": false
   },
   {
     "province": "mentese",
     "x": 11.62,
-    "y": -8.57
+    "y": -8.57,
+    "capital": false
   },
   {
     "province": "teke",
     "x": 12.47,
-    "y": -8.41
+    "y": -8.41,
+    "capital": false
   },
   {
     "province": "kutahya",
     "x": 12.31,
-    "y": -7.24
+    "y": -7.24,
+    "capital": false
   },
   {
     "province": "amasya",
     "x": 15.28,
-    "y": -6.0
+    "y": -6.0,
+    "capital": false
   },
   {
     "province": "sivas",
     "x": 15.89,
-    "y": -6.64
+    "y": -6.64,
+    "capital": false
   },
   {
     "province": "erzurum",
     "x": 17.82,
-    "y": -6.25
+    "y": -6.25,
+    "capital": false
   },
   {
     "province": "zaporoze",
     "x": 15.0,
-    "y": -1.11
+    "y": -1.11,
+    "capital": false
   }
 ]

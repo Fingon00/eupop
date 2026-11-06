@@ -9,8 +9,11 @@ import ootie.model.Source.ComponentSource;
 public class ProvinceModel implements ModelInterface, EmbeddableModel {
 
     private String province;
-    private double x;
-    private double y;
+    private int x;
+    private int y;
+    private String realm1444;
+    private String realm1618;
+    private boolean capital;
     private ComponentSource source = ComponentSource.base;
 
     @Override

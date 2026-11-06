@@ -27,8 +27,9 @@
             "Westphalia (1)",
             "Saxony (1)"
         ],
-        "relations": [
-            "Emperor of HRE (3)",
+        "emperor": true,
+        "emperorStability": 3,
+        "royalMarriage": [
             "Hungary"
         ],
         "merchants": [
@@ -62,7 +63,7 @@
             "Burgundy (1)",
             "Central Italy (1)"
         ],
-        "relations": [
+        "claims": [
             "Andalucia"
         ],
         "merchants": [
@@ -103,7 +104,10 @@
             "Seine (1)",
             "Flanders & Wallonia (1)"
         ],
-        "relations": [
+        "royalMarriage": [
+            "Portugal"
+        ],
+        "alliance": [
             "Portugal"
         ],
         "merchants": [
@@ -124,7 +128,7 @@
         "provinces": [
             "Paris (L)",
             "Champagne (L)",
-            "Orléans (L)",
+            "Orleans (L)",
             "Lyon (L)",
             "Saintonge",
             "Poitou",
@@ -141,14 +145,16 @@
             "Burgundy (1)",
             "Lombardy (1)"
         ],
-        "relations": [
+        "alliance": [
             "Scotland",
-            "Provence",
+            "Provence"
+        ],
+        "claims": [
             "Aquitaine",
             "Brittany & Normandy"
         ],
         "merchants": [
-            "Champ.",
+            "Champagne",
             "Bordeaux"
         ],
         "military": [
@@ -187,7 +193,7 @@
             "Vologda (1)",
             "Central Russia (1)"
         ],
-        "relations": [
+        "royalMarriage": [
             "Tver",
             "Odoyev"
         ],
@@ -213,7 +219,7 @@
             "Silistre",
             "Ankara",
             "Izmir",
-            "Kütahya",
+            "Kutahya",
             "Menteşe",
             "Teke",
             "Amasya",
@@ -226,7 +232,7 @@
             "Wallachia & Bulgaria (1)",
             "Serbia & Albania (1)"
         ],
-        "relations": [
+        "claims": [
             "Macedonia & Thrace"
         ],
         "merchants": [
@@ -253,9 +259,9 @@
             "Lwow",
             "Podole"
         ],
-        "distant_provinces": [
+        "vassals": [
             "Warszawa",
-            "Suçeava",
+            "Suceava",
             "Basarabia"
         ],
         "influence": [
@@ -265,7 +271,7 @@
             "Bohemia (1)",
             "Royal Hungary (1)"
         ],
-        "relations": [
+        "royalMarriage": [
             "Lithuania"
         ],
         "merchants": [
@@ -296,17 +302,21 @@
             "Gotaland & Skåne (2)",
             "Ostlandet (2)",
             "Vestlandet (1)",
-            "Trøndelag (1)",
+            "Trondelag (1)",
             "Svealand (1)",
             "Jutland (1)",
             "Pomerania (1)"
         ],
-        "relations": [
+        "royalMarriage": [
+            "Sweden",
+            "Norway"
+        ],
+        "alliance": [
             "Sweden",
             "Norway"
         ],
         "merchants": [
-            "Lübeck",
+            "Lubeck",
             "North Sea"
         ],
         "military": [
@@ -335,9 +345,12 @@
             "Jutland (1)",
             "Pomerania (1)"
         ],
-        "relations": [
+        "royalMarriage": [
             "Denmark",
             "Norway"
+        ],
+        "alliance": [
+            "Denmark"
         ],
         "merchants": [
             "Baltic Sea",
@@ -364,10 +377,13 @@
             "Aragon (2)",
             "Central Italy (1)"
         ],
-        "relations": [
+        "royalMarriage": [
             "England"
         ],
-        "distant_relations": [
+        "alliance": [
+            "England"
+        ],
+        "claims": [
             "Gold Coast"
         ],
         "merchants": [
@@ -406,7 +422,10 @@
             "Seine (1)",
             "Rhineland (1)"
         ],
-        "relations": [
+        "alliance": [
+            "Burgundy"
+        ],
+        "royalMarriage": [
             "Burgundy"
         ],
         "merchants": [
@@ -487,7 +506,7 @@
             "Zara",
             "Creta"
         ],
-        "distant_provinces": [
+        "vassals": [
             "Naxos"
         ],
         "influence": [
@@ -498,7 +517,7 @@
             "Aegean Archipelago (1)",
             "Egypt (1)"
         ],
-        "relations": [
+        "alliance": [
             "Albania",
             "Knights"
         ],
@@ -568,7 +587,7 @@
             "Circassia (1)",
             "Transcaucasia (1)"
         ],
-        "relations": [
+        "claims": [
             "Macedonia & Thrace",
             "Greece"
         ],
@@ -595,10 +614,6 @@
             "Rhineland (1)",
             "Saxony (1)",
             "Westphalia (1)"
-        ],
-        "relations": [
-            "Wien",
-            "Saxony"
         ],
         "merchants": [
             "Wien",
@@ -638,9 +653,12 @@
             "Bavaria & Swabia (1)",
             "Rhineland (1)"
         ],
-        "relations": [
-            "Emperor of HRE (2)",
-            "Bavaria",
+        "emperor": true,
+        "emperorStability": 2,
+        "alliance": [
+            "Bavaria"
+        ],
+        "royalMarriage": [
             "Spain I",
             "Tuscany"
         ],
@@ -659,7 +677,7 @@
         "year": "1618",
         "state_religion": "Counter-Reformed",
         "ideas": [
-            "QftNW",
+            "Quest for the New World",
             "Cannons",
             "Tercios/Jan."
         ],
@@ -684,11 +702,14 @@
             "Portugal (2)",
             "Central Italy (1)"
         ],
-        "relations": [
+        "royalMarriage": [
             "Portugal",
-            "Spain II (perm.)",
             "Austria",
             "France"
+        ],
+        "alliance": [
+            "Portugal",
+            "Spain II (perm.)"
         ],
         "merchants": [
             "Sevilla",
@@ -723,13 +744,16 @@
             "Scotland (2)",
             "Portugal (2)"
         ],
-        "relations": [
+        "alliance": [
             "Scotland",
-            "Netherlands",
+            "Netherlands"
+        ],
+        "royalMarriage": [
+            "Scotland",
             "Denmark",
             "Palatinate"
         ],
-        "distant_provinces": [
+        "claims": [
             "New England",
             "Virginia"
         ],
@@ -774,17 +798,17 @@
             "Rhineland (1)",
             "Svealand (1)"
         ],
-        "relations": [
-            "Spain I",
-            "Burgundy",
-            "Seine"
+        "royalMarriage": [
+            "Spain I"
         ],
-        "distant_relations": [
+        "claims": [
+            "Burgundy",
+            "Seine",
             "Canada",
             "New England"
         ],
         "merchants": [
-            "Champ.",
+            "Champagne",
             "Bordeaux"
         ],
         "colonists": 2,
@@ -811,20 +835,22 @@
             "Sarai",
             "Ladoga",
             "Olonets",
-            "Majar"
-        ],
-        "distant_provinces": [
             "Volga (L)",
             "Tyumen",
             "Ural",
             "W. Siberia"
         ],
+        "vassals": [
+            "Majar"
+        ],
         "influence": [
             "Crimea (1)",
             "Circassia (1)"
         ],
-        "relations": [
-            "Truce: Sweden",
+        "truce": [
+            "Sweden"
+        ],
+        "claims": [
             "White Ruthenia",
             "Eastern Ukraine"
         ],
@@ -857,7 +883,7 @@
             "Caffa",
             "Azov"
         ],
-        "distant_provinces": [
+        "vassals": [
             "Torda",
             "Hunyad",
             "Tirgoviste",
@@ -872,8 +898,10 @@
             "Wallachia & Bulgaria (1)",
             "Transylvania (1)"
         ],
-        "relations": [
-            "Ottomans II (perm.)",
+        "alliance": [
+            "Ottomans II (perm.)"
+        ],
+        "claims": [
             "Royal Hungary",
             "Aegean Archipelago"
         ],
@@ -882,7 +910,7 @@
             "Adriatic Sea"
         ],
         "military": [
-            "Mace. & Thra. (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Macedonia & Thrace (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
             "Aegean Sea (L. Ship, Fleet: 3 Galleys)",
             "Black Sea (L. Ship)"
         ]
@@ -905,7 +933,9 @@
             "Kalisz",
             "Sieradz",
             "Livland",
-            "Riga",
+            "Riga"
+        ],
+        "vassals": [
             "Goldingen",
             "Edisanas",
             "Zaporozye"
@@ -935,16 +965,18 @@
             "Cannons"
         ],
         "provinces": [
-            "København (L)",
+            "Kobenhavn (L)",
             "Lund (L)",
             "Gotland",
             "Vestjyland",
-            "Østjyland",
+            "Ostjyland",
             "Slesvig",
             "Borgarsysla",
             "Akershus",
             "Bergenhus",
-            "Trondheim",
+            "Trondheim"
+        ],
+        "vassals": [
             "Holstein"
         ],
         "influence": [
@@ -953,17 +985,20 @@
             "Jutland (1)",
             "Pomerania (1)"
         ],
-        "relations": [
+        "alliance": [
             "Bremen",
             "Brunswick",
             "England"
         ],
+        "royalMarriage": [
+            "England"
+        ],
         "merchants": [
-            "Lübeck",
+            "Lubeck",
             "North Sea"
         ],
         "military": [
-            "Sjælland & Fyn (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
+            "Sjaelland & Fyn (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
             "Skagerrak (2 L. Ships)",
             "North Sea (L. Ship)",
             "Baltic Sea (L. Ship)"
@@ -982,10 +1017,10 @@
         "provinces": [
             "Stockholm (L)",
             "Bergslagen",
-            "Östergötland",
-            "Hälsingland",
-            "Österbotten",
-            "Åbo",
+            "Ostergotland",
+            "Halsingland",
+            "Osterbotten",
+            "Abo",
             "Nyland",
             "Neva",
             "Reval"
@@ -996,8 +1031,10 @@
             "Saxony (1)",
             "Pomerania (1)"
         ],
-        "relations": [
-            "Truce: Russia",
+        "truce": [
+            "Russia"
+        ],
+        "claims": [
             "Estonia & Livonia",
             "Pomerania"
         ],
@@ -1042,20 +1079,24 @@
             "Kongo (L)",
             "Kilwa"
         ],
+        "vassals": [
+            "Kongo (L)",
+            "Kilwa"
+        ],
         "influence": [
             "East Anglia (2)",
             "Seine (1)",
             "Central Italy (1)"
         ],
-        "relations": [
+        "alliance": [
             "Spain I"
         ],
-        "distant_relations": [
-            "South America"
+        "royalMarriage": [
+            "Spain I"
         ],
         "merchants": [
             "Sevilla",
-            "S. America",
+            "South America",
             "Indian Ocean"
         ],
         "colonists": 1,
