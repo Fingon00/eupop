@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 import javax.annotation.Nullable;
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.components.buttons.Button;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.ISnowflake;
 import net.dv8tion.jda.api.entities.Member;
@@ -24,6 +25,7 @@ import net.dv8tion.jda.api.managers.channel.concrete.TextChannelManager;
 import net.dv8tion.jda.api.managers.channel.concrete.ThreadChannelManager;
 import net.dv8tion.jda.api.requests.restaction.ChannelAction;
 import ootie.discord.JdaService;
+import ootie.discord.buttons.Buttons;
 import ootie.discord.utility.DiscordRoleUtility;
 import ootie.game.Game;
 import ootie.game.persistence.GameManager;
@@ -33,6 +35,7 @@ import ootie.image.Mapper;
 import ootie.logging.BotLogger;
 import ootie.message.MessageHelper;
 import ootie.model.ActionCardModel;
+import ootie.model.ScenarioModel;
 import ootie.settings.GlobalSettings;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.function.Consumers;
@@ -179,6 +182,20 @@ public class CreateGameService {
                 .createThreadChannel(newBotThreadName)
                 .setAutoArchiveDuration(ThreadChannel.AutoArchiveDuration.TIME_1_WEEK)
                 .complete();
+        for (Member member : members) {
+            if (missingMembers.contains(member)) continue; // skip members who aren't on the new server yet
+            botThread.addThreadMember(member).queue();
+        }
+
+        List<Button> scenarioButtons = new ArrayList<>();
+        for (ScenarioModel mod : Mapper.getScenarios().values()) {
+            scenarioButtons.add(Buttons.green("startScenario_" + mod.getId(), mod.getName() + "(" + mod.getId() + ")"));
+        }
+
+        MessageHelper.sendMessageToChannel(
+                actionsChannel,
+                role.getAsMention() + " you can use these buttons to launch a scenario.",
+                scenarioButtons);
 
         // Report Channel Creation back to Launch channel
         String message = "Role and Channels have been set up:\n> " + role.getName()

@@ -1,0 +1,25 @@
+[
+    {
+        "id": "S1-00",
+        "name": "Introductory Scenario",
+        "eventsA1H1": [
+            "11A-1",
+            "12A-1",
+            "13A-1",
+            "14A-1",
+            "153B",
+            "102-1",
+            "103-1",
+            "104-1"
+        ],
+        "realms": [
+            "France",
+            "Castile",
+            "England"
+        ],
+        "source": "base",
+        "firstPlayer": "France",
+        "numberOfRounds": 2,
+        "startingAge": 1
+    }
+]

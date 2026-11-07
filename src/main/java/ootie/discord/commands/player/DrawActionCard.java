@@ -23,16 +23,7 @@ class DrawActionCard extends GameStateSubcommand {
         Game game = getGame();
         Player player = getPlayer();
         String type = event.getOption(Constants.AC_TYPE).getAsString();
-
-        if ("administrative".equalsIgnoreCase(type)) {
-            player.getActionCards().add(game.getAdministrativeActionCardDeck().removeFirst());
-        }
-        if ("military".equalsIgnoreCase(type)) {
-            player.getActionCards().add(game.getMilitaryActionCardDeck().removeFirst());
-        }
-        if ("diplomatic".equalsIgnoreCase(type)) {
-            player.getActionCards().add(game.getDiplomaticActionCardDeck().removeFirst());
-        }
-        PlayerHelper.showActionCards(player, event);
+        PlayerHelper.drawActionCard(player, type, game);
+        PlayerHelper.showActionCards(player);
     }
 }

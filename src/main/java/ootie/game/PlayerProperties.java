@@ -57,6 +57,7 @@ public class PlayerProperties {
     private List<String> unrestProvinces = new ArrayList<>();
     private List<String> actionCards = new ArrayList<>();
     private List<String> missions = new ArrayList<>();
+    private List<String> unusedMissions = new ArrayList<>();
     private List<String> ideas = new ArrayList<>();
 
     private List<String> singularInfantry = new ArrayList<>();

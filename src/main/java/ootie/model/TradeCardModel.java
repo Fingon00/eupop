@@ -12,7 +12,10 @@ public class TradeCardModel implements ModelInterface, EmbeddableModel {
 
     private String id;
     private String name;
-    private ComponentSource source = ComponentSource.base;
+    private ComponentSource source;
+    private boolean hasStar;
+    private boolean hasCross;
+    private int[] continentNumbers;
     private int[] tradeValueThresholds;
     private int[] regularTradeIncome;
     private int[] expandedTradeIncome;

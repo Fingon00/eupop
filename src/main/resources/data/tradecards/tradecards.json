@@ -1,6 +1,12 @@
 [
     {
         "id": "T01-1",
+        "source": "base",
+        "hasCross": true,
+        "hasStar": false,
+        "continentNumbers": [
+            4
+        ],
         "name": "Chinaware",
         "tradeValueThresholds": [
             6,
@@ -65,6 +71,12 @@
     },
     {
         "id": "T13-3",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            1
+        ],
         "name": "Iron",
         "tradeValueThresholds": [
             6,
@@ -144,6 +156,10 @@
     },
     {
         "id": "T02-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Cloth",
         "tradeValueThresholds": [
             6,
@@ -229,6 +245,10 @@
     },
     {
         "id": "T02-2",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Cloth",
         "tradeValueThresholds": [
             6,
@@ -314,6 +334,10 @@
     },
     {
         "id": "T02-3",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Cloth",
         "tradeValueThresholds": [
             6,
@@ -399,6 +423,10 @@
     },
     {
         "id": "T02-4",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Cloth",
         "tradeValueThresholds": [
             6,
@@ -484,6 +512,12 @@
     },
     {
         "id": "T03-1",
+        "source": "base",
+        "hasCross": true,
+        "hasStar": false,
+        "continentNumbers": [
+            1
+        ],
         "name": "Cocoa",
         "tradeValueThresholds": [
             6,
@@ -548,6 +582,14 @@
     },
     {
         "id": "T04-1",
+        "source": "base",
+        "hasCross": true,
+        "hasStar": false,
+        "continentNumbers": [
+            1,
+            2,
+            3
+        ],
         "name": "Coffee",
         "tradeValueThresholds": [
             6,
@@ -627,6 +669,12 @@
     },
     {
         "id": "T05-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            4
+        ],
         "name": "Copper",
         "tradeValueThresholds": [
             6,
@@ -709,6 +757,14 @@
     },
     {
         "id": "T06-1",
+        "source": "base",
+        "hasCross": true,
+        "hasStar": false,
+        "continentNumbers": [
+            1,
+            3,
+            4
+        ],
         "name": "Cotton",
         "tradeValueThresholds": [
             6,
@@ -791,6 +847,13 @@
     },
     {
         "id": "T07-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            2,
+            3
+        ],
         "name": "Dyes",
         "tradeValueThresholds": [
             6,
@@ -870,6 +933,10 @@
     },
     {
         "id": "T08-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Fish",
         "tradeValueThresholds": [
             6,
@@ -955,6 +1022,10 @@
     },
     {
         "id": "T08-2",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Fish",
         "tradeValueThresholds": [
             6,
@@ -1040,6 +1111,10 @@
     },
     {
         "id": "T08-3",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Fish",
         "tradeValueThresholds": [
             6,
@@ -1125,6 +1200,12 @@
     },
     {
         "id": "T09-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": true,
+        "continentNumbers": [
+            1
+        ],
         "name": "Fur",
         "tradeValueThresholds": [
             6,
@@ -1210,6 +1291,10 @@
     },
     {
         "id": "T10-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Glass",
         "tradeValueThresholds": [
             6,
@@ -1286,6 +1371,12 @@
     },
     {
         "id": "T11-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            2
+        ],
         "name": "Gold",
         "tradeValueThresholds": [
             6,
@@ -1371,6 +1462,13 @@
     },
     {
         "id": "T11-2",
+        "source": "base",
+        "hasCross": true,
+        "hasStar": false,
+        "continentNumbers": [
+            1,
+            3
+        ],
         "name": "Gold",
         "tradeValueThresholds": [
             6,
@@ -1450,6 +1548,13 @@
     },
     {
         "id": "T11-3",
+        "source": "base",
+        "hasCross": true,
+        "hasStar": false,
+        "continentNumbers": [
+            1,
+            3
+        ],
         "name": "Gold",
         "tradeValueThresholds": [
             6,
@@ -1529,6 +1634,12 @@
     },
     {
         "id": "T12-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            1
+        ],
         "name": "Grain",
         "tradeValueThresholds": [
             6,
@@ -1614,6 +1725,10 @@
     },
     {
         "id": "T12-2",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Grain",
         "tradeValueThresholds": [
             6,
@@ -1696,6 +1811,12 @@
     },
     {
         "id": "T12-3",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            2
+        ],
         "name": "Grain",
         "tradeValueThresholds": [
             6,
@@ -1775,6 +1896,10 @@
     },
     {
         "id": "T13-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Iron",
         "tradeValueThresholds": [
             6,
@@ -1860,6 +1985,10 @@
     },
     {
         "id": "T13-2",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Iron",
         "tradeValueThresholds": [
             6,
@@ -1945,6 +2074,14 @@
     },
     {
         "id": "T14-1",
+        "source": "base",
+        "hasCross": true,
+        "hasStar": false,
+        "continentNumbers": [
+            2,
+            3,
+            4
+        ],
         "name": "Ivory",
         "tradeValueThresholds": [
             6,
@@ -2018,6 +2155,10 @@
     },
     {
         "id": "T15-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Livestock",
         "tradeValueThresholds": [
             6,
@@ -2103,6 +2244,10 @@
     },
     {
         "id": "T15-2",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Livestock",
         "tradeValueThresholds": [
             6,
@@ -2188,6 +2333,10 @@
     },
     {
         "id": "T15-3",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Livestock",
         "tradeValueThresholds": [
             6,
@@ -2273,6 +2422,12 @@
     },
     {
         "id": "T16-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            1
+        ],
         "name": "Naval Supplies",
         "tradeValueThresholds": [
             6,
@@ -2358,6 +2513,10 @@
     },
     {
         "id": "T17-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Paper",
         "tradeValueThresholds": [
             6,
@@ -2443,6 +2602,10 @@
     },
     {
         "id": "T18-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Salt",
         "tradeValueThresholds": [
             6,
@@ -2528,6 +2691,12 @@
     },
     {
         "id": "T18-2",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            4
+        ],
         "name": "Salt",
         "tradeValueThresholds": [
             6,
@@ -2607,6 +2776,13 @@
     },
     {
         "id": "T19-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": true,
+        "continentNumbers": [
+            3,
+            4
+        ],
         "name": "Silk",
         "tradeValueThresholds": [
             6,
@@ -2689,6 +2865,13 @@
     },
     {
         "id": "T19-2",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": true,
+        "continentNumbers": [
+            3,
+            4
+        ],
         "name": "Silk",
         "tradeValueThresholds": [
             6,
@@ -2771,6 +2954,13 @@
     },
     {
         "id": "T20-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            2,
+            3
+        ],
         "name": "Slaves",
         "tradeValueThresholds": [
             6,
@@ -2856,6 +3046,13 @@
     },
     {
         "id": "T21-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            3,
+            4
+        ],
         "name": "Spices",
         "tradeValueThresholds": [
             6,
@@ -2941,6 +3138,13 @@
     },
     {
         "id": "T21-2",
+        "source": "base",
+        "hasCross": true,
+        "hasStar": false,
+        "continentNumbers": [
+            3,
+            4
+        ],
         "name": "Spices",
         "tradeValueThresholds": [
             6,
@@ -3020,6 +3224,12 @@
     },
     {
         "id": "T22-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [
+            1
+        ],
         "name": "Sugar",
         "tradeValueThresholds": [
             6,
@@ -3102,6 +3312,12 @@
     },
     {
         "id": "T23-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": true,
+        "continentNumbers": [
+            4
+        ],
         "name": "Tea",
         "tradeValueThresholds": [
             6,
@@ -3178,6 +3394,12 @@
     },
     {
         "id": "T24-1",
+        "source": "base",
+        "hasCross": true,
+        "hasStar": false,
+        "continentNumbers": [
+            1
+        ],
         "name": "Tobacco",
         "tradeValueThresholds": [
             6,
@@ -3242,6 +3464,10 @@
     },
     {
         "id": "T25-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Wine",
         "tradeValueThresholds": [
             6,
@@ -3327,6 +3553,10 @@
     },
     {
         "id": "T25-2",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Wine",
         "tradeValueThresholds": [
             6,
@@ -3412,6 +3642,10 @@
     },
     {
         "id": "T26-1",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Wool",
         "tradeValueThresholds": [
             6,
@@ -3497,6 +3731,10 @@
     },
     {
         "id": "T26-2",
+        "source": "base",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Wool",
         "tradeValueThresholds": [
             6,
@@ -3582,6 +3820,10 @@
     },
     {
         "id": "T16-2",
+        "source": "defying_destiny",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Naval Supplies",
         "tradeValueThresholds": [
             6,
@@ -3667,6 +3909,13 @@
     },
     {
         "id": "T27-1",
+        "source": "defying_destiny",
+        "hasCross": false,
+        "hasStar": true,
+        "continentNumbers": [
+            3,
+            4
+        ],
         "name": "Gems",
         "tradeValueThresholds": [
             6,
@@ -3745,92 +3994,11 @@
         }
     },
     {
-        "id": "T12-3-59102",
-        "name": "Grain",
-        "tradeValueThresholds": [
-            6,
-            3,
-            1
-        ],
-        "regularTradeIncome": [
-            7,
-            5,
-            3
-        ],
-        "expandedTradeIncome": [
-            9,
-            7,
-            4
-        ],
-        "tradeNode1": {
-            "tradeNodeName": "Maghreb",
-            "additionalRequirements": "Sevilla",
-            "keyProvinces": {
-                "keyProvince1": {
-                    "name": "Tunis",
-                    "tradeValue": 1
-                },
-                "keyProvince2": {
-                    "name": "Bizerte",
-                    "tradeValue": 1
-                },
-                "keyProvince3": {
-                    "name": "Tlemcen",
-                    "tradeValue": 1
-                },
-                "keyProvince4": {
-                    "name": "Gharb",
-                    "tradeValue": 1
-                }
-            }
-        },
-        "tradeNode2": {
-            "tradeNodeName": "Kiev",
-            "additionalRequirements": "Novgorod",
-            "keyProvinces": {
-                "keyProvince1": {
-                    "name": "Kijevas",
-                    "tradeValue": 2
-                },
-                "keyProvince2": {
-                    "name": "Vilnius",
-                    "tradeValue": 2
-                },
-                "keyProvince3": {
-                    "name": "Poltava",
-                    "tradeValue": 2
-                },
-                "keyProvince4": {
-                    "name": "Ryazan",
-                    "tradeValue": 2
-                }
-            }
-        },
-        "tradeNode3": {
-            "tradeNodeName": "North Sea",
-            "additionalRequirements": "English Channel",
-            "keyProvinces": {
-                "keyProvince1": {
-                    "name": "Lothian",
-                    "tradeValue": 1
-                },
-                "keyProvince2": {
-                    "name": "Ulaidh",
-                    "tradeValue": 1
-                },
-                "keyProvince3": {
-                    "name": "Laighin",
-                    "tradeValue": 1
-                },
-                "keyProvince4": {
-                    "name": "Vestjylland",
-                    "tradeValue": 1
-                }
-            }
-        }
-    },
-    {
         "id": "T26-3",
+        "source": "defying_destiny",
+        "hasCross": false,
+        "hasStar": false,
+        "continentNumbers": [],
         "name": "Wool",
         "tradeValueThresholds": [
             6,

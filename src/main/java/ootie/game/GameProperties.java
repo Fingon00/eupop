@@ -17,7 +17,7 @@ public class GameProperties {
     private String launchPostThreadID;
     private String savedChannelID;
     private String name;
-    private String mapUsed = "fullMap1444";
+    private String scenario;
     private boolean hasEnded;
     // Decks
     private List<String> diplomaticActionCardDeck = new ArrayList<>();
@@ -28,9 +28,14 @@ public class GameProperties {
     private List<String> militaryIdeas = new ArrayList<>();
     private List<String> administrativeIdeas = new ArrayList<>();
 
+    private List<String> tradeDeck = new ArrayList<>();
+    private List<String> tradeDeckDiscard = new ArrayList<>();
+    private List<String> economicMilestones = new ArrayList<>();
+    private List<String> expansionMilestones = new ArrayList<>();
+    private List<String> politicalMilestones = new ArrayList<>();
+    private List<String> warfareMilestones = new ArrayList<>();
     private List<String> eventDeck = new ArrayList<>();
     private List<String> powerStruggleDeck = new ArrayList<>();
-    private String activePowerStruggle;
     private List<String> nonRomaCardinals = new ArrayList<>();
     private List<String> passedPlayerOrder = new ArrayList<>();
     private List<String> playerOrder = new ArrayList<>();
@@ -49,7 +54,19 @@ public class GameProperties {
     // private Set<String> playedActionCards = new LinkedHashSet<>();
 
     // Stored Values
-    private Map<String, String> storedValueMap = new HashMap<>();
+    private Map<String, String> storedValues = new HashMap<>();
+
+    public String getStoredValue(String key) {
+        if (storedValues.get(key) != null) {
+            return storedValues.get(key);
+        } else {
+            return "";
+        }
+    }
+
+    public void setStoredValue(String key, String value) {
+        storedValues.put(key, value);
+    }
 
     private Map<String, String> storedAreaReligions = new HashMap<>();
 

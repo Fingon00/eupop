@@ -8,6 +8,7 @@ import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.game.Army;
 import ootie.game.Fleet;
+import ootie.game.Game;
 import ootie.game.Player;
 import ootie.image.ImageHelper;
 import ootie.message.MessageHelper;
@@ -109,7 +110,19 @@ public class PlayerHelper {
         MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
     }
 
-    public static void showActionCards(Player player, SlashCommandInteractionEvent event) {
+    public static void drawActionCard(Player player, String type, Game game) {
+        if ("administrative".equalsIgnoreCase(type)) {
+            player.getActionCards().add(game.getAdministrativeActionCardDeck().removeFirst());
+        }
+        if ("military".equalsIgnoreCase(type)) {
+            player.getActionCards().add(game.getMilitaryActionCardDeck().removeFirst());
+        }
+        if ("diplomatic".equalsIgnoreCase(type)) {
+            player.getActionCards().add(game.getDiplomaticActionCardDeck().removeFirst());
+        }
+    }
+
+    public static void showActionCards(Player player) {
         if (player.getActionCards().isEmpty()) {
             return;
         }
@@ -131,6 +144,31 @@ public class PlayerHelper {
         }
 
         FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "actioncards");
+        MessageHelper.sendFileUploadToChannel(player.getCardsInfoThread(), fileUpload);
+    }
+
+    public static void showMissions(Player player) {
+        if (player.getMissions().isEmpty()) {
+            return;
+        }
+        BufferedImage cardImage = ImageHelper.read(
+                ResourceHelper.getInstance().getMissionFile(player.getMissions().getFirst()));
+
+        BufferedImage finalImage = new BufferedImage(
+                cardImage.getWidth() * player.getMissions().size()
+                        + 20 * (player.getMissions().size() - 1),
+                cardImage.getHeight(),
+                BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = finalImage.createGraphics();
+        int x = 0;
+        for (String ac : player.getMissions()) {
+            BufferedImage cardImage2 =
+                    ImageHelper.read(ResourceHelper.getInstance().getMissionFile(ac));
+            g.drawImage(cardImage2, x, 0, null);
+            x += cardImage2.getWidth() + 20;
+        }
+
+        FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "missions");
         MessageHelper.sendFileUploadToChannel(player.getCardsInfoThread(), fileUpload);
     }
 

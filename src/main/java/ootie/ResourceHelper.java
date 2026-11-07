@@ -121,6 +121,12 @@ public final class ResourceHelper {
     }
 
     @Nullable
+    public String getMissionFile(String name) {
+        String owner = name.split("_")[0];
+        return getResourceFromFolder("images/Mission Cards/" + owner + " Missions/", name + ".png");
+    }
+
+    @Nullable
     public String getMapFile(String name) {
         return getResourceFromFolder("images/Maps/", name + ".png");
     }

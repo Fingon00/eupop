@@ -672,5 +672,401 @@
             "Genoa",
             "Sevilla"
         ]
+    },
+    {
+        "id": "northwestern_atlantic",
+        "borders": [
+            "canada",
+            "virginia",
+            "hudsonbay",
+            "newengland",
+            "caribbean_sea",
+            "eastern_atlantic",
+            "northeastern_atlantic"
+        ],
+        "tradeProtection1": [
+            1026,
+            325
+        ],
+        "tradeProtection2": [
+            1138,
+            325
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "canada",
+            "virginia",
+            "hudsonbay",
+            "newengland"
+        ],
+        "adjacentTradeNodes": [
+            "North America"
+        ]
+    },
+    {
+        "id": "caribbean_sea",
+        "borders": [
+            "florida",
+            "mississippi",
+            "antilles",
+            "newgranada",
+            "centralamerica",
+            "mexico",
+            "guyana",
+            "northwestern_atlantic",
+            "eastern_atlantic",
+            "eastern_pacific",
+            "central_atlantic",
+            "south_western_atlantic"
+        ],
+        "tradeProtection1": [
+            920,
+            561
+        ],
+        "tradeProtection2": [
+            1029,
+            617
+        ],
+        "tradeProtection3": [
+            1137,
+            582
+        ],
+        "adjacentPorts": [
+            "florida",
+            "mississippi",
+            "antilles",
+            "newgranada",
+            "centralamerica",
+            "mexico",
+            "guyana"
+        ],
+        "adjacentTradeNodes": [
+            "North America"
+        ]
+    },
+    {
+        "id": "eastern_pacific",
+        "borders": [
+            "caribbean_sea",
+            "southeastern_pacific",
+            "sea_of_japan",
+            "east_indies"
+        ],
+        "tradeProtection1": [],
+        "tradeProtection2": [],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "california",
+            "quito"
+        ],
+        "adjacentTradeNodes": []
+    },
+    {
+        "id": "southeastern_pacific",
+        "borders": [
+            "south_western_atlantic",
+            "eastern_pacific",
+            "east_indies",
+            "great_australian_bight",
+            "quito",
+            "chile",
+            "cuzco"
+        ],
+        "tradeProtection1": [
+            537,
+            1014
+        ],
+        "tradeProtection2": [
+            650,
+            1017
+        ],
+        "tradeProtection3": [
+            763,
+            1020
+        ],
+        "adjacentPorts": [
+            "quito",
+            "chile",
+            "cuzco"
+        ],
+        "adjacentTradeNodes": [
+            "South America"
+        ]
+    },
+    {
+        "id": "south_western_atlantic",
+        "borders": [
+            "southeastern_pacific",
+            "caribbean_sea",
+            "central_atlantic",
+            "laplata",
+            "riodejaneiro",
+            "bahia",
+            "pernambuco"
+        ],
+        "tradeProtection1": [
+            963,
+            1232
+        ],
+        "tradeProtection2": [
+            1083,
+            1232
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "laplata",
+            "riodejaneiro",
+            "bahia",
+            "pernambuco"
+        ],
+        "adjacentTradeNodes": [
+            "South America"
+        ]
+    },
+    {
+        "id": "southeastern_atlantic",
+        "borders": [
+            "east_african_coast",
+            "central_atlantic",
+            "mali",
+            "goldcoast",
+            "benin",
+            "kongo",
+            "angola",
+            "capeofgoodhope"
+        ],
+        "tradeProtection1": [
+            501,
+            1951
+        ],
+        "tradeProtection2": [
+            626,
+            1956
+        ],
+        "tradeProtection3": [
+            502,
+            2054
+        ],
+        "adjacentPorts": [
+            "mali",
+            "goldcoast",
+            "benin",
+            "kongo",
+            "angola",
+            "capeofgoodhope"
+        ],
+        "adjacentTradeNodes": [
+            "Ivory Coast"
+        ]
+    },
+    {
+        "id": "east_african_coast",
+        "borders": [
+            "southeastern_atlantic",
+            "indian_ocean",
+            "madagascar",
+            "kilwa",
+            "ajuuraan",
+            "adal",
+            "upperegypt",
+            "capeofgoodhope",
+            "natal"
+        ],
+        "tradeProtection1": [
+            1133,
+            1842
+        ],
+        "tradeProtection2": [
+            1074,
+            2066
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "madagascar",
+            "kilwa",
+            "ajuuraan",
+            "adal",
+            "upperegypt",
+            "capeofgoodhope",
+            "natal"
+        ],
+        "adjacentTradeNodes": [
+            "Indian Ocean"
+        ]
+    },
+    {
+        "id": "indian_ocean",
+        "borders": [
+            "east_indies",
+            "east_african_coast",
+            "yemen",
+            "hormuz",
+            "baluchistan",
+            "gujarat",
+            "coromandel",
+            "bengal",
+            "fars",
+            "basra",
+            "hejaz",
+            "goa"
+        ],
+        "tradeProtection1": [
+            775,
+            2660
+        ],
+        "tradeProtection2": [
+            836,
+            2732
+        ],
+        "tradeProtection3": [
+            839,
+            2819
+        ],
+        "adjacentPorts": [
+            "yemen",
+            "hormuz",
+            "baluchistan",
+            "gujarat",
+            "coromandel",
+            "bengal",
+            "fars",
+            "basra",
+            "hejaz",
+            "goa"
+        ],
+        "adjacentTradeNodes": [
+            "Indian Ocean"
+        ]
+    },
+    {
+        "id": "sea_of_japan",
+        "borders": [
+            "east_indies",
+            "eastern_pacific",
+            "sea_of_okhotsk",
+            "beijing",
+            "korea",
+            "kyushu",
+            "honshu",
+            "hangzhou",
+            "canton",
+            "philiippines"
+        ],
+        "tradeProtection1": [
+            867,
+            3205
+        ],
+        "tradeProtection2": [
+            982,
+            3205
+        ],
+        "tradeProtection3": [
+            1092,
+            3205
+        ],
+        "adjacentPorts": [
+            "beijing",
+            "korea",
+            "kyushu",
+            "honshu",
+            "hangzhou",
+            "canton",
+            "philiippines"
+        ],
+        "adjacentTradeNodes": [
+            "China & Japan"
+        ]
+    },
+    {
+        "id": "east_indies",
+        "borders": [
+            "sea_of_japan",
+            "indian_ocean",
+            "eastern_pacific",
+            "southeastern_pacific",
+            "great_australian_bight",
+            "moluccas",
+            "papua",
+            "vogelkop",
+            "timor",
+            "java",
+            "southsumatra",
+            "aceh",
+            "malacca",
+            "siam",
+            "philiippines"
+        ],
+        "tradeProtection1": [
+            496,
+            3605
+        ],
+        "tradeProtection2": [
+            496,
+            3696
+        ],
+        "tradeProtection3": [
+            496,
+            3790
+        ],
+        "adjacentPorts": [
+            "moluccas",
+            "papua",
+            "vogelkop",
+            "timor",
+            "java",
+            "southsumatra",
+            "aceh",
+            "malacca",
+            "siam",
+            "philiippines"
+        ],
+        "adjacentTradeNodes": [
+            "China & Japan",
+            "East Indies"
+        ]
+    },
+    {
+        "id": "great_australian_bight",
+        "borders": [
+            "indian_ocean",
+            "southeastern_pacific",
+            "east_indies",
+            "westernaustralia",
+            "southernaustralia",
+            "easternaustralia"
+        ],
+        "tradeProtection1": [
+            532,
+            3905
+        ],
+        "tradeProtection2": [
+            646,
+            3905
+        ],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "westernaustralia",
+            "southernaustralia",
+            "easternaustralia"
+        ],
+        "adjacentTradeNodes": [
+            "East Indies"
+        ]
+    },
+    {
+        "id": "sea_of_okhotsk",
+        "borders": [
+            "sea_of_japan",
+            "okhotsk",
+            "furdan"
+        ],
+        "tradeProtection1": [],
+        "tradeProtection2": [],
+        "tradeProtection3": [],
+        "adjacentPorts": [
+            "okhotsk",
+            "furdan"
+        ],
+        "adjacentTradeNodes": []
     }
 ]
