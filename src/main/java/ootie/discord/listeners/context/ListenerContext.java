@@ -1,5 +1,7 @@
 package ootie.discord.listeners.context;
 
+import org.apache.commons.lang3.function.Consumers;
+
 import lombok.Getter;
 import lombok.Setter;
 import net.dv8tion.jda.api.entities.Message.Interaction;
@@ -14,7 +16,6 @@ import ootie.game.persistence.GameManager;
 import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import ootie.service.game.GameNameService;
-import org.apache.commons.lang3.function.Consumers;
 
 @Getter
 public abstract class ListenerContext {
@@ -61,7 +62,7 @@ public abstract class ListenerContext {
 
         if (game != null) {
             String userID = event.getUser().getId();
-
+            player = game.getPlayer(userID);
             if (player == null && !allowsNonPlayerInteraction()) {
                 String message = event.getUser().getAsMention() + " is not a player of the game";
                 if (event instanceof IReplyCallback replyCallback) {

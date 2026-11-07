@@ -3,6 +3,7 @@ package ootie.discord.buttons;
 import java.text.DecimalFormat;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
@@ -75,6 +76,7 @@ public class ButtonProcessor {
         } catch (Exception e) {
             BotLogger.error(new LogOrigin(event, context), "Something went wrong with button interaction", e);
         } finally {
+            event.getHook().deleteOriginal().queue();
             RollbarManager.clear();
         }
 

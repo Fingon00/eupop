@@ -7,7 +7,12 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
+
 import javax.annotation.Nullable;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.function.Consumers;
+
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.components.buttons.Button;
@@ -37,8 +42,6 @@ import ootie.message.MessageHelper;
 import ootie.model.ActionCardModel;
 import ootie.model.ScenarioModel;
 import ootie.settings.GlobalSettings;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.function.Consumers;
 
 @UtilityClass
 public class CreateGameService {
@@ -189,7 +192,7 @@ public class CreateGameService {
 
         List<Button> scenarioButtons = new ArrayList<>();
         for (ScenarioModel mod : Mapper.getScenarios().values()) {
-            scenarioButtons.add(Buttons.green("startScenario_" + mod.getId(), mod.getName() + "(" + mod.getId() + ")"));
+            scenarioButtons.add(Buttons.green("startScenario_" + mod.getId(), mod.getName() + " (" + mod.getId() + ")"));
         }
 
         MessageHelper.sendMessageToChannel(
