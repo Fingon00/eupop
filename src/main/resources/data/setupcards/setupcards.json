@@ -72,8 +72,8 @@
         ],
         "military": [
             "Castile (Army 1: 2 Infantry)",
-            "W. Mediterranean (L. Ship)",
-            "C. Atlantic (L. Ship)"
+            "Western Mediterranean (L. Ship)",
+            "Central Atlantic (L. Ship)"
         ]
     },
     {
@@ -117,7 +117,7 @@
         "military": [
             "East Anglia (Army 1: 2 Infantry)",
             "English Channel (2 L. Ships)",
-            "E. Atlantic (L. Ship)"
+            "Eastern Atlantic (L. Ship)"
         ]
     },
     {
@@ -528,7 +528,7 @@
         "military": [
             "Venetia (Army 1: 2 Infantry)",
             "Adriatic Sea (L. Ship, Fleet: 2 Galleys)",
-            "E. Mediterranean (L. Ship)",
+            "Eastern Mediterranean (L. Ship)",
             "Aegean Sea (L. Ship)"
         ]
     },
@@ -565,7 +565,7 @@
         ],
         "military": [
             "Egypt (Army 1: 2 Infantry, 1 Cavalry)",
-            "E. Mediterranean (L. Ship, Fleet: 2 Galleys)"
+            "Eastern Mediterranean (L. Ship, Fleet: 2 Galleys)"
         ]
     },
     {
@@ -717,10 +717,10 @@
         ],
         "military": [
             "Castile (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
-            "C. Atlantic (L. Ship)",
+            "Central Atlantic (L. Ship)",
             "Caribbean Sea (L. Ship)",
-            "S.W. Atlantic (L. Ship)",
-            "S.E. Pacific (L. Ship)",
+            "Southwestern Atlantic (L. Ship)",
+            "Southeastern Pacific (L. Ship)",
             "East Indies (L. Ship)"
         ]
     },
@@ -763,12 +763,12 @@
         ],
         "colonists": 2,
         "military": [
-            "E. Anglia (Army 1: 2 Infantry, 1 Artillery)",
+            "Eastern Anglia (Army 1: 2 Infantry, 1 Artillery)",
             "English Ch. (L. Ship, Fleet: 2 Heavy Ships)",
             "Doggerbank (2 L. Ships)",
-            "E. Atlantic (L. Ship)",
-            "N.E. Atlantic (L. Ship)",
-            "N.W. Atlantic (L. Ship)"
+            "Eastern Atlantic (L. Ship)",
+            "Northeast Atlantic (L. Ship)",
+            "Northwest Atlantic (L. Ship)"
         ]
     },
     {
@@ -816,8 +816,8 @@
             "Seine (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
             "Gulf of Lion (L. Ship)",
             "Bay of Biscay (L. Ship, Fleet: Heavy Ship)",
-            "E. Atlantic (L. Ship)",
-            "N.W. Atlantic (L. Ship)"
+            "Eastern Atlantic (L. Ship)",
+            "Northwestern Atlantic (L. Ship)"
         ]
     },
     {
@@ -1103,8 +1103,8 @@
         "military": [
             "Portugal (Army 1: 2 Infantry, 1 Cavalry)",
             "C. Atlantic (2 L. Ships)",
-            "S.W. Atlantic (L. Ship)",
-            "S.E. Atlantic (L. Ship)",
+            "Southwestern Atlantic (L. Ship)",
+            "Southeastern Atlantic (L. Ship)",
             "East African Coast (L. Ship)",
             "Indian Ocean (L. Ship)",
             "East Indies (L. Ship)"
@@ -1152,7 +1152,7 @@
             "North Sea (L. Ship)",
             "East Atlantic (L. Ship)",
             "Caribbean Sea (L. Ship)",
-            "SouthEast Atlantic (L. Ship)",
+            "Southeastern Atlantic (L. Ship)",
             "East African Coast (L. Ship)",
             "Indian Ocean (L. Ship)",
             "East Indies (L. Ship)"
@@ -1352,8 +1352,8 @@
         ],
         "military": [
             "Naples (Army 1: 2 Infantry, 1 Cavalry, 1 Artillery)",
-            "W. Mediterranean (L. Ship)",
-            "C. Mediterranean (L. Ship)"
+            "Western Mediterranean (L. Ship)",
+            "Central Mediterranean (L. Ship)"
         ]
     }
 ]

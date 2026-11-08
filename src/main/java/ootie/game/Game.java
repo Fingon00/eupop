@@ -91,6 +91,18 @@ public class Game extends GameProperties {
         return influence;
     }
 
+    public List<String> getClaimsInArea(String area) {
+        List<String> claims = new ArrayList<>();
+        for (Player player : getGamePlayers()) {
+            for (String claim : player.getClaims()) {
+                if (claim.equalsIgnoreCase(area)) {
+                    claims.add(player.getColor());
+                }
+            }
+        }
+        return claims;
+    }
+
     public List<String> getUnitsInArea(String area) {
         List<String> units = new ArrayList<>();
         for (Player player : getGamePlayers()) {
@@ -107,6 +119,19 @@ public class Game extends GameProperties {
             }
             if (area.equalsIgnoreCase(player.getArmy3().getLocation())) {
                 units.add(player.getColor() + "_army3");
+            }
+            if (area.equalsIgnoreCase(player.getFleet().getLocation())) {
+                units.add(player.getColor() + "_fleet");
+            }
+            int[] ships = player.getLightShips().get(area);
+            if (ships != null && ships.length != 0) {
+                for (int x = 0; x < ships[0]; x++) {
+                    if (x < ships[1]) {
+                        units.add(player.getColor() + "_ship_protected");
+                    } else {
+                        units.add(player.getColor() + "_ship_unprotected");
+                    }
+                }
             }
         }
 

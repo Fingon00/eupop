@@ -35,5 +35,6 @@ public class ShowGameCommand extends GameStateCommand {
     public void execute(SlashCommandInteractionEvent event) {
         Game game = getGame();
         MessageHelper.sendFileUploadToChannel(event.getChannel(), GameImageHelper.drawMap(game));
+        MessageHelper.sendFileUploadToChannel(event.getChannel(), GameImageHelper.drawStats(game));
     }
 }

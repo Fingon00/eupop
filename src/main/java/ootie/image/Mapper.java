@@ -22,6 +22,7 @@ import ootie.model.ModelInterface;
 import ootie.model.PowerStruggleModel;
 import ootie.model.ProvinceModel;
 import ootie.model.ScenarioModel;
+import ootie.model.SeazoneModel;
 import ootie.model.SetupCardModel;
 import ootie.model.SourceModel;
 import ootie.model.TradeCardModel;
@@ -44,6 +45,7 @@ public class Mapper {
     private static final Map<String, TradeCardModel> tradeCards = new HashMap<>();
     private static final Map<String, BotCardModel> botCards = new HashMap<>();
     private static final Map<String, ScenarioModel> scenarios = new HashMap<>();
+    private static final Map<String, SeazoneModel> seazones = new HashMap<>();
 
     private static final JsonMapper jsonMapper =
             JsonMapperManager.basic().rebuild().build();
@@ -70,6 +72,7 @@ public class Mapper {
         importJsonObjectsFromFolder("powerstruggles", powerStruggles, PowerStruggleModel.class);
         importJsonObjectsFromFolder("botcards", botCards, BotCardModel.class);
         importJsonObjectsFromFolder("scenarios", scenarios, ScenarioModel.class);
+        importJsonObjectsFromFolder("seazones", seazones, SeazoneModel.class);
     }
 
     public static boolean isValidEvent(String eventID) {
@@ -82,6 +85,10 @@ public class Mapper {
 
     public static Map<String, BotCardModel> getBotCards() {
         return new HashMap<>(botCards);
+    }
+
+    public static Map<String, SeazoneModel> getSeazones() {
+        return new HashMap<>(seazones);
     }
 
     public static Map<String, ScenarioModel> getScenarios() {

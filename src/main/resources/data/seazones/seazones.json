@@ -47,7 +47,7 @@
             3000
         ],
         "tradeProtection3": [
-            43334,
+            4334,
             3000
         ],
         "tradeProtection1": [
@@ -196,16 +196,16 @@
             "aegean_sea"
         ],
         "tradeProtection1": [
-            5346,
-            2642
+            5386,
+            2652
         ],
         "tradeProtection2": [
-            5463,
-            2642
+            5503,
+            2652
         ],
         "tradeProtection3": [
-            5579,
-            2642
+            5619,
+            2652
         ],
         "adjacentPorts": [
             "constantinople",
@@ -239,16 +239,16 @@
             "southeastern_atlantic"
         ],
         "tradeProtection1": [
-            1304,
-            3054
+            1344,
+            3064
         ],
         "tradeProtection2": [
-            1424,
-            3052
+            1464,
+            3062
         ],
         "tradeProtection3": [
-            1362,
-            3152
+            1402,
+            3162
         ],
         "adjacentPorts": [
             "porto",
@@ -282,12 +282,12 @@
             "gulf_of_lion"
         ],
         "tradeProtection1": [
-            3638,
-            3274
+            3678,
+            3284
         ],
         "tradeProtection2": [
-            3756,
-            3274
+            3796,
+            3284
         ],
         "tradeProtection3": [],
         "adjacentPorts": [
@@ -323,12 +323,12 @@
             "english_channel"
         ],
         "tradeProtection1": [
-            2527,
-            1129
+            2567,
+            1139
         ],
         "tradeProtection2": [
-            2644,
-            1132
+            2684,
+            1142
         ],
         "tradeProtection3": [],
         "adjacentPorts": [
@@ -355,12 +355,12 @@
             "northwestern_atlantic"
         ],
         "tradeProtection1": [
-            1404,
-            2158
+            1444,
+            2168
         ],
         "tradeProtection2": [
-            1523,
-            2160
+            1563,
+            2170
         ],
         "tradeProtection3": [],
         "adjacentPorts": [
@@ -389,16 +389,16 @@
             "aegean_sea"
         ],
         "tradeProtection1": [
-            4466,
-            3598
+            4506,
+            3608
         ],
         "tradeProtection2": [
-            4583,
-            3598
+            4623,
+            3608
         ],
         "tradeProtection3": [
-            4698,
-            3598
+            4738,
+            3608
         ],
         "adjacentPorts": [
             "creta",
@@ -436,16 +436,16 @@
             "eastern_atlantic"
         ],
         "tradeProtection1": [
-            2397,
-            1844
+            2437,
+            1854
         ],
         "tradeProtection2": [
-            2517,
-            1777
+            2557,
+            1787
         ],
         "tradeProtection3": [
-            2646,
-            1629
+            2686,
+            1639
         ],
         "adjacentPorts": [
             "london",
@@ -477,16 +477,16 @@
             "baltic_sea"
         ],
         "tradeProtection1": [
-            4423,
-            400
+            4463,
+            410
         ],
         "tradeProtection2": [
-            4423,
-            479
+            4463,
+            489
         ],
         "tradeProtection3": [
-            4423,
-            583
+            4463,
+            593
         ],
         "adjacentPorts": [
             "abo",
@@ -512,16 +512,16 @@
             "central_mediterranean"
         ],
         "tradeProtection1": [
-            2952,
-            2930
+            2992,
+            2940
         ],
         "tradeProtection2": [
-            3068,
-            2930
+            3108,
+            2940
         ],
         "tradeProtection3": [
-            3188,
-            2930
+            3228,
+            2940
         ],
         "adjacentPorts": [
             "barcelona",
@@ -550,12 +550,12 @@
             "northwestern_atlantic"
         ],
         "tradeProtection1": [
-            2078,
-            440
+            2118,
+            450
         ],
         "tradeProtection2": [
-            2196,
-            440
+            2236,
+            450
         ],
         "tradeProtection3": [],
         "adjacentPorts": [
@@ -580,12 +580,12 @@
             "northeastern_atlantic"
         ],
         "tradeProtection1": [
-            2634,
-            341
+            2674,
+            351
         ],
         "tradeProtection2": [
-            2752,
-            341
+            2792,
+            351
         ],
         "tradeProtection3": [],
         "adjacentPorts": [
@@ -608,16 +608,16 @@
             "baltic_sea"
         ],
         "tradeProtection1": [
-            3595,
-            816
+            3635,
+            826
         ],
         "tradeProtection2": [
-            3595,
-            908
+            3635,
+            918
         ],
         "tradeProtection3": [
-            3670,
-            979
+            3710,
+            989
         ],
         "adjacentPorts": [
             "kobenhavn",
@@ -648,12 +648,12 @@
             "central_atlantic"
         ],
         "tradeProtection1": [
-            2546,
-            3342
+            2586,
+            3352
         ],
         "tradeProtection2": [
-            2664,
-            3342
+            2704,
+            3352
         ],
         "tradeProtection3": [],
         "adjacentPorts": [

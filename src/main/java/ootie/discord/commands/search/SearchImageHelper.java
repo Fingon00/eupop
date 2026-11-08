@@ -8,7 +8,7 @@ import ootie.image.ImageHelper;
 import ootie.message.MessageHelper;
 import ootie.service.image.FileUploadService;
 
-final class SearchImageHelper {
+public final class SearchImageHelper {
 
     private SearchImageHelper() {}
 
@@ -26,5 +26,18 @@ final class SearchImageHelper {
         BufferedImage image = ImageHelper.read(imagePath);
         var upload = FileUploadService.createFileUpload(image, imageName).setDescription(description);
         MessageHelper.sendFileUploadToChannel(event.getChannel(), upload);
+    }
+
+    public static BufferedImage getImage(String folder, String imageName) {
+        String normalizedFolder = folder.replace("/", File.separator);
+        if (!normalizedFolder.endsWith(File.separator)) {
+            normalizedFolder += File.separator;
+        }
+        String imagePath = ResourceHelper.getResourceFromFolder(normalizedFolder, imageName + ".png");
+        if (imagePath == null) {
+            return null;
+        }
+        BufferedImage image = ImageHelper.read(imagePath);
+        return image;
     }
 }

@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.List;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
+import ootie.discord.commands.search.SearchImageHelper;
 import ootie.game.Game;
 import ootie.game.Player;
 import ootie.image.DrawingUtil;
@@ -15,13 +16,103 @@ import ootie.image.ImageHelper;
 import ootie.image.Mapper;
 import ootie.model.AreaModel;
 import ootie.model.IdeaModel;
+import ootie.model.MilestoneModel;
 import ootie.model.ProvinceModel;
+import ootie.model.SeazoneModel;
+import ootie.model.Source.ComponentSource;
 import ootie.service.image.FileUploadService;
 
 public class GameImageHelper {
 
-    public static FileUpload drawEvents(Game game) {
+    public static BufferedImage getDecksImage(Game game) {
+        BufferedImage exampleImage =
+                ImageHelper.read(ResourceHelper.getInstance().getCardBackFile("AdministrativeAction"));
+        BufferedImage finalImage = new BufferedImage(
+                (exampleImage.getWidth() + 10) * 4 - 10, exampleImage.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = finalImage.createGraphics();
+        int x = 0;
+        g.drawImage(exampleImage, x, 0, null);
+        x += exampleImage.getWidth() + 10;
 
+        BufferedImage diploImage = ImageHelper.read(ResourceHelper.getInstance().getCardBackFile("WarfareAction"));
+        g.drawImage(diploImage, x, 0, null);
+        x += exampleImage.getWidth() + 10;
+
+        BufferedImage warfareImage =
+                ImageHelper.read(ResourceHelper.getInstance().getCardBackFile("DiplomaticAction"));
+        g.drawImage(warfareImage, x, 0, null);
+        x += exampleImage.getWidth() + 10;
+
+        BufferedImage tradeImage = ImageHelper.read(ResourceHelper.getInstance().getCardBackFile("Trade Card"));
+        g.drawImage(tradeImage, x, 0, null);
+
+        return finalImage;
+    }
+
+    public static BufferedImage getMilestonesImage(Game game) {
+        MilestoneModel model = Mapper.getMilestones().get(0);
+        BufferedImage exampleImage = getMilestoneImage(model);
+        BufferedImage finalImage = new BufferedImage(
+                (exampleImage.getWidth() + 10) * 4 - 10, exampleImage.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = finalImage.createGraphics();
+
+        int x = 0;
+        if (game.getWarfareMilestones() != null && !game.getWarfareMilestones().isEmpty()) {
+            String wMilestone = game.getWarfareMilestones().getFirst();
+            BufferedImage wBufferedImage =
+                    getMilestoneImage(Mapper.getMilestones().get(wMilestone));
+            g.drawImage(wBufferedImage, x, 0, null);
+            x += exampleImage.getWidth() + 10;
+        }
+        if (game.getPoliticalMilestones() != null
+                && !game.getPoliticalMilestones().isEmpty()) {
+            String pMilestone = game.getPoliticalMilestones().getFirst();
+            BufferedImage pBufferedImage =
+                    getMilestoneImage(Mapper.getMilestones().get(pMilestone));
+            g.drawImage(pBufferedImage, x, 0, null);
+            x += exampleImage.getWidth() + 10;
+        }
+        if (game.getEconomicMilestones() != null
+                && !game.getEconomicMilestones().isEmpty()) {
+            String eMilestone = game.getEconomicMilestones().getFirst();
+            BufferedImage eBufferedImage =
+                    getMilestoneImage(Mapper.getMilestones().get(eMilestone));
+            g.drawImage(eBufferedImage, x, 0, null);
+            x += exampleImage.getWidth() + 10;
+        }
+        if (game.getExpansionMilestones() != null
+                && !game.getExpansionMilestones().isEmpty()) {
+            String exMilestone = game.getExpansionMilestones().getFirst();
+            BufferedImage exBufferedImage =
+                    getMilestoneImage(Mapper.getMilestones().get(exMilestone));
+            g.drawImage(exBufferedImage, x, 0, null);
+            x += exampleImage.getWidth() + 10;
+        }
+        return finalImage;
+    }
+
+    public static BufferedImage getMilestoneImage(MilestoneModel model) {
+        String age =
+                switch (model.getAge()) {
+                    case 1 -> "I";
+                    case 2 -> "II";
+                    case 3 -> "III";
+                    case 4 -> "IV";
+                    default -> throw new IllegalArgumentException("Invalid milestone age: " + model.getAge());
+                };
+        String folder = model.getSource() == ComponentSource.defying_destiny
+                ? "images/Milestones/DD Milestones Age " + age
+                : "images/Milestones/Milestones_Age_" + age;
+        BufferedImage exampleImage = SearchImageHelper.getImage(folder, model.getId());
+        return exampleImage;
+    }
+
+    public static FileUpload drawEvents(Game game) {
+        FileUpload fileUpload = FileUploadService.createFileUpload(getEventsImage(game), "events");
+        return fileUpload;
+    }
+
+    public static BufferedImage getEventsImage(Game game) {
         List<String> revealedEvents = game.getRevealedEventCards();
         if (revealedEvents.isEmpty()) {
             revealedEvents.add("11A-1");
@@ -38,8 +129,7 @@ public class GameImageHelper {
         // 376x585
         // 600x924
         if (revealedEvents.size() + unrevealedEvents.size() < 1) {
-            return FileUploadService.createFileUpload(
-                    new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB), "events");
+            return new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
         }
         BufferedImage cardBackImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getCardBackFile("Age" + age + "Event"), 600, 924);
@@ -61,11 +151,76 @@ public class GameImageHelper {
             x += cardBackImage.getWidth() + 10;
         }
 
-        FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "events");
-        return fileUpload;
+        return finalImage;
+    }
+
+    public static BufferedImage drawPlayerAreas(Game game) {
+        Player p1 = game.getGamePlayers().get(0);
+        BufferedImage pBoard = PlayerHelper.getPlayerAreaImage(p1);
+        BufferedImage pUnits = PlayerHelper.getArmysNFleetsImage(p1);
+        int maxH = Math.max(pBoard.getHeight(), pUnits.getHeight())
+                * game.getGamePlayers().size();
+        int maxW = pBoard.getWidth() + pUnits.getWidth();
+
+        BufferedImage statsImage = new BufferedImage(maxW, maxH, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = statsImage.createGraphics();
+        int y = 0;
+        for (Player p : game.getGamePlayers()) {
+            int x = 0;
+            g.drawImage(PlayerHelper.getPlayerAreaImage(p), x, y, null);
+            x = pBoard.getWidth();
+            g.drawImage(PlayerHelper.getArmysNFleetsImage(p), x, y, null);
+            y += maxH / game.getGamePlayers().size();
+        }
+        return statsImage;
+    }
+
+    public static FileUpload drawStats(Game game) {
+
+        BufferedImage eventsImage = getEventsImage(game);
+        BufferedImage milestonesImage = getMilestonesImage(game);
+        BufferedImage decksImage = getDecksImage(game);
+        BufferedImage hreImage = getHREnPCImage(game);
+        BufferedImage ideaImage = getIdeasImage(game);
+        BufferedImage playerAreas = drawPlayerAreas(game);
+        int maxH = Math.max(
+                playerAreas.getHeight(),
+                eventsImage.getHeight()
+                        + milestonesImage.getHeight()
+                        + decksImage.getHeight()
+                        + hreImage.getHeight()
+                        + ideaImage.getHeight());
+        int maxW = playerAreas.getWidth()
+                + Math.max(
+                        eventsImage.getWidth(),
+                        Math.max(
+                                milestonesImage.getWidth(),
+                                Math.max(decksImage.getWidth(), Math.max(ideaImage.getWidth(), hreImage.getWidth()))));
+
+        BufferedImage statsImage = new BufferedImage(maxW, maxH, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = statsImage.createGraphics();
+        int x = 0;
+        int y = 0;
+        g.drawImage(playerAreas, x, y, null);
+        x = playerAreas.getWidth();
+        g.drawImage(eventsImage, x, y, null);
+        y += eventsImage.getHeight();
+        g.drawImage(milestonesImage, x, y, null);
+        y += milestonesImage.getHeight();
+        g.drawImage(decksImage, x, y, null);
+        y += decksImage.getHeight();
+        g.drawImage(hreImage, x, y, null);
+        y += hreImage.getHeight();
+        g.drawImage(ideaImage, x, y, null);
+
+        return FileUploadService.createFileUpload(statsImage, "stats");
     }
 
     public static FileUpload drawHREnPC(Game game) {
+        return FileUploadService.createFileUpload(getHREnPCImage(game), "hre_pc");
+    }
+
+    public static BufferedImage getHREnPCImage(Game game) {
         BufferedImage ogImage = ImageHelper.read(ResourceHelper.getInstance().getMiscFile("HRE_PC"));
         BufferedImage mapImage =
                 new BufferedImage(ogImage.getWidth(), ogImage.getHeight(), BufferedImage.TYPE_INT_ARGB);
@@ -140,17 +295,20 @@ public class GameImageHelper {
             g.drawImage(religionImage, 100, 593, null);
         }
 
-        FileUpload fileUpload = FileUploadService.createFileUpload(mapImage, "hre_pc");
-        return fileUpload;
+        return mapImage;
     }
 
     public static FileUpload drawMap(Game game) {
         BufferedImage ogImage = ImageHelper.read(ResourceHelper.getInstance().getMapFile("fullmap1444"));
+        if (game.getScenario().equalsIgnoreCase("S1-00")) {
+            ogImage = ogImage.getSubimage(0, 0, 4409, ogImage.getHeight());
+        }
         int outputWidth = ogImage.getWidth() / 2;
         int outputHeight = ogImage.getHeight() / 2;
         BufferedImage mapImage = new BufferedImage(outputWidth, outputHeight, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = mapImage.createGraphics();
         g.drawImage(ogImage, 0, 0, outputWidth, outputHeight, null);
+
         g.scale(0.5, 0.5);
         for (Player player : game.getPlayers().values()) {
             if (player.getColor() == null) {
@@ -223,6 +381,42 @@ public class GameImageHelper {
         BufferedImage rebelImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile("Rebel"), 0.3f);
 
+        for (SeazoneModel seazoneModel : Mapper.getSeazones().values()) {
+            int x = 0;
+            int protectedShips = 0;
+            for (String ship : game.getUnitsInArea(seazoneModel.getId())) {
+                float scale = 0.25f;
+                if (ship.contains("fleet")) {
+                    scale = 0.35f;
+                }
+                BufferedImage playerShip = ImageHelper.readScaled(
+                        ResourceHelper.getInstance().getPlayerFile(ship.split("_")[0], "Ship"), scale);
+                int xCoord = seazoneModel.getTradeProtection1()[0] - playerShip.getWidth() / 2;
+                int yCoord = seazoneModel.getTradeProtection1()[1] - playerShip.getHeight() / 2 - 5;
+
+                if (ship.contains("_protected")) {
+                    protectedShips++;
+                    switch (protectedShips) {
+                        case 2:
+                            xCoord = seazoneModel.getTradeProtection2()[0] - playerShip.getWidth() / 2;
+                            yCoord = seazoneModel.getTradeProtection2()[1] - playerShip.getHeight() / 2 - 5;
+                            break;
+                        case 3:
+                            xCoord = seazoneModel.getTradeProtection3()[0] - playerShip.getWidth() / 2;
+                            yCoord = seazoneModel.getTradeProtection3()[1] - playerShip.getHeight() / 2 - 5;
+                            break;
+
+                        default:
+                            break;
+                    }
+                } else {
+                    xCoord += x * 40;
+                    yCoord -= playerShip.getHeight();
+                }
+                g.drawImage(playerShip, xCoord, yCoord, null);
+                x++;
+            }
+        }
         for (AreaModel area : Mapper.getAreas().values()) {
             // g.drawImage(
             //         religionImage,
@@ -247,11 +441,31 @@ public class GameImageHelper {
             }
             int x = 0;
             for (String influence : game.getInfluenceInArea(area.getId())) {
+                int cosResult = (int) (50 * Math.cos(Math.toRadians(x)));
+                int sinResult = (int) (50 * Math.sin(Math.toRadians(x)));
                 BufferedImage playerCube =
-                        ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(influence, "Cube"), 50, 50);
-                g.drawImage(playerCube, area.getReligiousCenter()[0] - 60 + x, area.getReligiousCenter()[1] - 60, null);
-                x += 40;
+                        ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(influence, "Cube"), 30, 30);
+                g.drawImage(
+                        playerCube,
+                        area.getReligiousCenter()[0] + cosResult - playerCube.getWidth() / 2,
+                        area.getReligiousCenter()[1] + sinResult - playerCube.getHeight() / 2,
+                        null);
+                x += 72;
             }
+            x = 0;
+            for (String claim : game.getClaimsInArea(area.getId())) {
+                int cosResult = (int) (20 * Math.cos(Math.toRadians(x)));
+                int sinResult = (int) (20 * Math.sin(Math.toRadians(x)));
+                BufferedImage playerCube =
+                        ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(claim, "Claim"), 30, 30);
+                g.drawImage(
+                        playerCube,
+                        area.getReligiousCenter()[0] + cosResult - playerCube.getWidth() / 2,
+                        area.getReligiousCenter()[1] + sinResult - playerCube.getHeight() / 2,
+                        null);
+                x += 72;
+            }
+            x = 0;
             for (String infantry : game.getUnitsInArea(area.getId())) {
                 if (infantry.contains("rebel")) {
                     g.drawImage(
@@ -305,6 +519,10 @@ public class GameImageHelper {
     }
 
     public static FileUpload drawIdeas(Game game) {
+        return FileUploadService.createFileUpload(getIdeasImage(game), "ideas");
+    }
+
+    public static BufferedImage getIdeasImage(Game game) {
 
         int age = game.getAge();
 
@@ -444,7 +662,6 @@ public class GameImageHelper {
             y += cardImage.getHeight() + 30;
         }
 
-        FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "ideas");
-        return fileUpload;
+        return finalImage;
     }
 }

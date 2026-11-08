@@ -76,7 +76,18 @@ public class PlayerSetupService {
             }
         }
         player.setColonists(setupCardModel.getColonists());
-
+        if (setupCardModel.getClaims() != null) {
+            player.setClaims(setupCardModel.getClaims());
+        }
+        if (setupCardModel.getAlliances() != null) {
+            player.setAlliances(setupCardModel.getAlliances());
+        }
+        if (setupCardModel.getRoyalMarriages() != null) {
+            player.setRoyalMarriages(setupCardModel.getRoyalMarriages());
+        }
+        if (setupCardModel.getTruces() != null) {
+            player.setTruces(setupCardModel.getTruces());
+        }
         for (String unit : setupCardModel.getMilitary()) {
             if (unit.contains("L. Ship")) {
                 String loc = StringUtils.substringBefore(unit, "(")

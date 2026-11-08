@@ -51,6 +51,7 @@ public class PlayerProperties {
     private List<String> truces = new ArrayList<>();
     private List<String> royalMarriages = new ArrayList<>();
     private List<String> claims = new ArrayList<>();
+    private List<String> cbs = new ArrayList<>();
     private List<String> largeProvinces = new ArrayList<>();
     private List<String> smallProvinces = new ArrayList<>();
     private List<String> vassalProvinces = new ArrayList<>();

@@ -2,7 +2,6 @@ package ootie.service.scenario;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.components.actionrow.ActionRow;
 import net.dv8tion.jda.api.components.buttons.Button;
@@ -149,7 +148,10 @@ public class StartScenarioService {
     public static void putBotInSeat(Game game, String buttonID, ButtonInteractionEvent event) {
         String realm = buttonID.split("_")[1];
         game.setStoredValue(realm + "State", "bot");
-        event.getMessage().editMessage(getStateMessage(game, realm)).setComponents(getMessageComponentTree(getStateButtons(game, realm))).queue();
+        event.getMessage()
+                .editMessage(getStateMessage(game, realm))
+                .setComponents(getMessageComponentTree(getStateButtons(game, realm)))
+                .queue();
     }
 
     @ButtonHandler("putPlayerInSeat")
@@ -160,7 +162,10 @@ public class StartScenarioService {
             buttons.add(
                     Buttons.green("putSpecificPlayerInSeat_" + realm + "_" + player.getUserID(), player.getUserName()));
         }
-        event.getMessage().editMessage("Please choose the player who should take the seat of " + realm).setComponents(getMessageComponentTree(buttons)).queue();
+        event.getMessage()
+                .editMessage("Please choose the player who should take the seat of " + realm)
+                .setComponents(getMessageComponentTree(buttons))
+                .queue();
     }
 
     @ButtonHandler("putSpecificPlayerInSeat")
@@ -168,6 +173,9 @@ public class StartScenarioService {
         String realm = buttonID.split("_")[1];
         String userID = buttonID.split("_")[2];
         game.setStoredValue(realm + "State", userID);
-        event.getMessage().editMessage(getStateMessage(game, realm)).setComponents(getMessageComponentTree(getStateButtons(game, realm))).queue();
+        event.getMessage()
+                .editMessage(getStateMessage(game, realm))
+                .setComponents(getMessageComponentTree(getStateButtons(game, realm)))
+                .queue();
     }
 }

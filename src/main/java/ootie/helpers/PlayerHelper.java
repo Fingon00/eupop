@@ -17,6 +17,11 @@ import ootie.service.image.FileUploadService;
 public class PlayerHelper {
 
     public static void drawPlayerArea(Player player, SlashCommandInteractionEvent event) {
+        FileUpload fileUpload = FileUploadService.createFileUpload(getPlayerAreaImage(player), "playerArea");
+        MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
+    }
+
+    public static BufferedImage getPlayerAreaImage(Player player) {
         String color = player.getColor();
         if (player.getColor() == null || player.getColor().isEmpty()) {
             color = "Purple";
@@ -84,11 +89,15 @@ public class PlayerHelper {
         drawStateReligion(player, g);
         drawCharacters(player, g, color);
 
-        FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "playerArea");
-        MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
+        return finalImage;
     }
 
     public static void drawArmysNFleets(Player player, SlashCommandInteractionEvent event) {
+        MessageHelper.sendFileUploadToChannel(
+                event.getChannel(), FileUploadService.createFileUpload(getArmysNFleetsImage(player), "forces"));
+    }
+
+    public static BufferedImage getArmysNFleetsImage(Player player) {
         String color = player.getColor();
         if (player.getColor() == null || player.getColor().isEmpty()) {
             color = "Purple";
@@ -106,8 +115,7 @@ public class PlayerHelper {
         drawArmy(player, player.getArmy3(), g, 860);
         drawFleet(player, player.getFleet(), g, 1240);
         drawForceCharacters(player, g, color);
-        FileUpload fileUpload = FileUploadService.createFileUpload(finalImage, "forces");
-        MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
+        return finalImage;
     }
 
     public static void drawActionCard(Player player, String type, Game game) {
