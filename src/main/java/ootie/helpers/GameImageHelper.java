@@ -34,7 +34,7 @@ public class GameImageHelper {
         g.drawImage(exampleImage, x, 0, null);
         x += exampleImage.getWidth() + 10;
 
-        BufferedImage diploImage = ImageHelper.read(ResourceHelper.getInstance().getCardBackFile("WarfareAction"));
+        BufferedImage diploImage = ImageHelper.read(ResourceHelper.getInstance().getCardBackFile("MilitaryAction"));
         g.drawImage(diploImage, x, 0, null);
         x += exampleImage.getWidth() + 10;
 
@@ -43,14 +43,14 @@ public class GameImageHelper {
         g.drawImage(warfareImage, x, 0, null);
         x += exampleImage.getWidth() + 10;
 
-        BufferedImage tradeImage = ImageHelper.read(ResourceHelper.getInstance().getCardBackFile("Trade Card"));
+        BufferedImage tradeImage = ImageHelper.read(ResourceHelper.getInstance().getCardBackFile("TradeCard"));
         g.drawImage(tradeImage, x, 0, null);
 
         return finalImage;
     }
 
     public static BufferedImage getMilestonesImage(Game game) {
-        MilestoneModel model = Mapper.getMilestones().get(0);
+        MilestoneModel model = Mapper.getMilestones().get("Dynastic Ties");
         BufferedImage exampleImage = getMilestoneImage(model);
         BufferedImage finalImage = new BufferedImage(
                 (exampleImage.getWidth() + 10) * 4 - 10, exampleImage.getHeight(), BufferedImage.TYPE_INT_ARGB);
@@ -134,10 +134,11 @@ public class GameImageHelper {
         BufferedImage cardBackImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getCardBackFile("Age" + age + "Event"), 600, 924);
         BufferedImage finalImage = new BufferedImage(
-                (cardBackImage.getWidth() + 10) * (unrevealedEvents.size() + revealedEvents.size()) - 10,
-                cardBackImage.getHeight(),
+                ((cardBackImage.getWidth() + 10) * (unrevealedEvents.size() + revealedEvents.size()) - 10) / 2,
+                cardBackImage.getHeight() / 2,
                 BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = finalImage.createGraphics();
+        g.scale(0.5, 0.5);
 
         int x = 0;
         for (String event : revealedEvents) {
@@ -191,6 +192,7 @@ public class GameImageHelper {
                         + hreImage.getHeight()
                         + ideaImage.getHeight());
         int maxW = playerAreas.getWidth()
+                + 10
                 + Math.max(
                         eventsImage.getWidth(),
                         Math.max(
@@ -202,7 +204,7 @@ public class GameImageHelper {
         int x = 0;
         int y = 0;
         g.drawImage(playerAreas, x, y, null);
-        x = playerAreas.getWidth();
+        x = playerAreas.getWidth() + 10;
         g.drawImage(eventsImage, x, y, null);
         y += eventsImage.getHeight();
         g.drawImage(milestonesImage, x, y, null);
@@ -212,6 +214,7 @@ public class GameImageHelper {
         g.drawImage(hreImage, x, y, null);
         y += hreImage.getHeight();
         g.drawImage(ideaImage, x, y, null);
+        System.out.println(statsImage.getWidth() + " " + statsImage.getHeight());
 
         return FileUploadService.createFileUpload(statsImage, "stats");
     }
