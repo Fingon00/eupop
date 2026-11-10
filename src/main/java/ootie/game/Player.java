@@ -1,11 +1,17 @@
 package ootie.game;
 
 import java.util.Objects;
+
 import javax.annotation.Nullable;
+
+import org.apache.commons.lang3.StringUtils;
+
 import lombok.Getter;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.concrete.ThreadChannel;
 import net.dv8tion.jda.api.requests.restaction.ThreadChannelAction;
+import net.dv8tion.jda.api.utils.FileUpload;
+import ootie.discord.commands.search.SearchImageHelper;
 import ootie.discord.utility.DiscordChannelUtility;
 import ootie.discord.utility.DiscordErrorUtility;
 import ootie.discord.utility.DiscordThreadUtility;
@@ -13,7 +19,7 @@ import ootie.helpers.Constants;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.message.MessageHelper;
-import org.apache.commons.lang3.StringUtils;
+import ootie.service.image.FileUploadService;
 
 public class Player extends PlayerProperties {
 
@@ -64,6 +70,31 @@ public class Player extends PlayerProperties {
         return createIfMissing ? createAndGreetCardsInfoThread(parentChannel, threadName) : null;
     }
 
+    public void spendBotPower(int power){
+        setBotPower(getBotPower()-power);
+        setSpentBotPower(getSpentBotPower()+power);
+        MessageHelper.sendMessageToChannel(getCardsInfoThreadParentChannel(), getUserName() +" spent "+power+" bot power.");
+    }
+
+    public String drawBotCard(){
+        String botCard = getBotDeck().getFirst();
+        FileUpload fileUpload = FileUploadService.createFileUpload(SearchImageHelper.getImage("images/Bot Cards/", botCard), "botcard");
+        MessageHelper.sendMessageWithFile(getCardsInfoThreadParentChannel(), fileUpload, getUserName() +" drew this bot card:", false);
+        getBotDeckDiscard().add(botCard);
+        return botCard;
+    }
+
+    public void scorePrestige(int prestige, String reason){
+        setPrestige(getPrestige()+prestige);
+        String announcement = getUserName()+" scored "+prestige+" prestige (now at "+getPrestige()+" total prestige)";
+        if(reason != null){
+            announcement += " due to "+reason;
+        }else{
+            announcement+=".";
+        }
+        MessageHelper.sendMessageToChannel(getCardsInfoThreadParentChannel(), announcement);
+    }
+
     @Nullable
     public ThreadChannel createCardsInfoThread() {
 
@@ -78,7 +109,7 @@ public class Player extends PlayerProperties {
     }
 
     @Nullable
-    private TextChannel getCardsInfoThreadParentChannel() {
+    public TextChannel getCardsInfoThreadParentChannel() {
         TextChannel parentChannel = game.getMainGameChannel();
         if (parentChannel == null && !game.isHasEnded()) {
             BotLogger.warning(
@@ -86,6 +117,11 @@ public class Player extends PlayerProperties {
                     "`Player.getCardsInfoThreadParentChannel`: parent channel is null for game: " + game.getName());
         }
         return parentChannel;
+    }
+
+    @Nullable
+    public TextChannel getActionsChannel() {
+        return getCardsInfoThreadParentChannel();
     }
 
     private String getCardsInfoThreadName() {

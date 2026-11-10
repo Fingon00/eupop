@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
+
 import lombok.Getter;
 
 public final class DiceHelper {
@@ -15,7 +16,7 @@ public final class DiceHelper {
 
         public Die(int threshold) {
             this.threshold = threshold;
-            result = ThreadLocalRandom.current().nextInt(1, 11);
+            result = ThreadLocalRandom.current().nextInt(1, 6);
         }
 
         String printResult() {

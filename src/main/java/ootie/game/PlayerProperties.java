@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
 import javax.annotation.Nullable;
+
 import lombok.Data;
 
 @Data
@@ -25,6 +27,7 @@ public class PlayerProperties {
     private int militaryPower = 3;
     private int stability;
     private int botPower;
+    private int spentBotPower;
     private int colonists;
     private int prestige;
     private int manpowerExhausted;
@@ -43,6 +46,7 @@ public class PlayerProperties {
     private boolean usedEvent;
     private boolean defendingHRE;
     private boolean committedToCrusade;
+    private String botDifficulty = "Normal";
 
     // private Map<String, Integer> breakthroughTGs = new LinkedHashMap<>();
 
@@ -56,11 +60,15 @@ public class PlayerProperties {
     private List<String> smallProvinces = new ArrayList<>();
     private List<String> vassalProvinces = new ArrayList<>();
     private List<String> unrestProvinces = new ArrayList<>();
+    private List<String> coredAreas = new ArrayList<>();
+    private List<String> botFocusCubes = new ArrayList<>();
     private List<String> actionCards = new ArrayList<>();
     private List<String> missions = new ArrayList<>();
     private List<String> unusedMissions = new ArrayList<>();
     private List<String> ideas = new ArrayList<>();
-
+    private List<String> botDeckDiscard = new ArrayList<>();
+    private List<String> botDeck = new ArrayList<>();
+    private List<String> atWarWith = new ArrayList<>();
     private List<String> singularInfantry = new ArrayList<>();
     private List<String> influence = new ArrayList<>();
     private Map<String, int[]> lightShips = new LinkedHashMap<>();
