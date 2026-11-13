@@ -6,6 +6,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
 import ootie.discord.commands.search.SearchImageHelper;
@@ -294,7 +295,7 @@ public class GameImageHelper {
         String stateReligion = game.getHreReligion();
         if (stateReligion != null) {
             BufferedImage religionImage =
-                    ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile(stateReligion), 0.60f);
+                    ImageHelper.readScaled(ResourceHelper.getInstance().getReligionFile(stateReligion), 0.60f);
             g.drawImage(religionImage, 100, 593, null);
         }
 
@@ -434,7 +435,7 @@ public class GameImageHelper {
             if (game.getStoredAreaReligions().containsKey(area.getId())) {
                 BufferedImage religionImage = ImageHelper.readScaled(
                         ResourceHelper.getInstance()
-                                .getMiscFile(game.getStoredAreaReligions().get(area.getId())),
+                                .getReligionFile(game.getStoredAreaReligions().get(area.getId())),
                         0.60f);
                 g.drawImage(
                         religionImage,

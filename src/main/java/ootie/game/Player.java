@@ -1,11 +1,7 @@
 package ootie.game;
 
 import java.util.Objects;
-
 import javax.annotation.Nullable;
-
-import org.apache.commons.lang3.StringUtils;
-
 import lombok.Getter;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.concrete.ThreadChannel;
@@ -20,6 +16,7 @@ import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.message.MessageHelper;
 import ootie.service.image.FileUploadService;
+import org.apache.commons.lang3.StringUtils;
 
 public class Player extends PlayerProperties {
 
@@ -70,27 +67,31 @@ public class Player extends PlayerProperties {
         return createIfMissing ? createAndGreetCardsInfoThread(parentChannel, threadName) : null;
     }
 
-    public void spendBotPower(int power){
-        setBotPower(getBotPower()-power);
-        setSpentBotPower(getSpentBotPower()+power);
-        MessageHelper.sendMessageToChannel(getCardsInfoThreadParentChannel(), getUserName() +" spent "+power+" bot power.");
+    public void spendBotPower(int power) {
+        setBotPower(getBotPower() - power);
+        setSpentBotPower(getSpentBotPower() + power);
+        MessageHelper.sendMessageToChannel(
+                getCardsInfoThreadParentChannel(), getUserName() + " spent " + power + " bot power.");
     }
 
-    public String drawBotCard(){
+    public String drawBotCard() {
         String botCard = getBotDeck().getFirst();
-        FileUpload fileUpload = FileUploadService.createFileUpload(SearchImageHelper.getImage("images/Bot Cards/", botCard), "botcard");
-        MessageHelper.sendMessageWithFile(getCardsInfoThreadParentChannel(), fileUpload, getUserName() +" drew this bot card:", false);
+        FileUpload fileUpload =
+                FileUploadService.createFileUpload(SearchImageHelper.getImage("images/Bot Cards/", botCard), "botcard");
+        MessageHelper.sendMessageWithFile(
+                getCardsInfoThreadParentChannel(), fileUpload, getUserName() + " drew this bot card:", false);
         getBotDeckDiscard().add(botCard);
         return botCard;
     }
 
-    public void scorePrestige(int prestige, String reason){
-        setPrestige(getPrestige()+prestige);
-        String announcement = getUserName()+" scored "+prestige+" prestige (now at "+getPrestige()+" total prestige)";
-        if(reason != null){
-            announcement += " due to "+reason;
-        }else{
-            announcement+=".";
+    public void scorePrestige(int prestige, String reason) {
+        setPrestige(getPrestige() + prestige);
+        String announcement =
+                getUserName() + " scored " + prestige + " prestige (now at " + getPrestige() + " total prestige)";
+        if (reason != null) {
+            announcement += " due to " + reason;
+        } else {
+            announcement += ".";
         }
         MessageHelper.sendMessageToChannel(getCardsInfoThreadParentChannel(), announcement);
     }

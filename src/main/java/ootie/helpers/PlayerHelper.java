@@ -3,6 +3,7 @@ package ootie.helpers;
 import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.utils.FileUpload;
 import ootie.ResourceHelper;
@@ -21,7 +22,67 @@ public class PlayerHelper {
         MessageHelper.sendFileUploadToChannel(event.getChannel(), fileUpload);
     }
 
+    public static BufferedImage getBotPlayerAreaImage(Player player) {
+        String color = player.getColor();
+        if (player.getColor() == null || player.getColor().isEmpty()) {
+            color = "Purple";
+        }
+        BufferedImage mapImage = ImageHelper.read(ResourceHelper.getInstance().getPlayerFile(color, "BotPlayerArea"));
+
+        BufferedImage finalImage =
+                new BufferedImage(mapImage.getWidth(), mapImage.getHeight() + 91, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = finalImage.createGraphics();
+        g.drawImage(mapImage, 0, 0, null);
+        drawTownsandVassals(player, g, color);
+        drawStateReligion(player, g);
+
+        int powerY = 140;
+
+        BufferedImage cubeImage =
+                ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Cube"), 50, 50);
+        for (int x = 0; x < player.getBotPower(); x++) {
+            g.drawImage(
+                    cubeImage,
+                    70 + x % 5 * (cubeImage.getWidth() + 10),
+                    powerY + (x / 5) * (cubeImage.getHeight() + 10),
+                    null);
+        }
+        for (int x = 0; x < player.getSpentBotPower(); x++) {
+            g.drawImage(
+                    cubeImage,
+                    335 + x % 5 * (cubeImage.getWidth() + 10),
+                    powerY + (x / 5) * (cubeImage.getHeight() + 10),
+                    null);
+        }
+
+        for (int x = 0; x < player.getBotFocusCubes().size(); x++) {
+            int startingPos = 645;
+            switch (player.getBotFocusCubes().get(x)) {
+                case "expansion" -> {
+                    startingPos = 932;
+                }
+                case "politics" -> {
+                    startingPos = 1213;
+                }
+                case "warfare" -> {
+                    startingPos = 1460;
+                }
+            }
+            g.drawImage(
+                    cubeImage,
+                    startingPos + x % 5 * (cubeImage.getWidth() + 10),
+                    565 + (x / 5) * (cubeImage.getHeight() + 10),
+                    null);
+        }
+        drawArmy(player, player.getArmy1(), g, 80);
+
+        return finalImage;
+    }
+
     public static BufferedImage getPlayerAreaImage(Player player) {
+        if (player.isBot()) {
+            return getBotPlayerAreaImage(player);
+        }
         String color = player.getColor();
         if (player.getColor() == null || player.getColor().isEmpty()) {
             color = "Purple";
@@ -231,9 +292,20 @@ public class PlayerHelper {
     public static void drawArmy(Player player, Army army, Graphics2D g, int xPos) {
         BufferedImage armyImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(player, "Infantry"), 0.25f);
+        int yStart = 220;
+        int infInRow = 6;
+        if (player.isBot()) {
+            yStart = 674;
+            infInRow = 8;
+            for (int x = 0; x < player.getManpowerAvailable(); x++) {
+                int y = 440 + ((armyImage.getHeight() + 10) * (x / infInRow));
+                int xP = xPos + (armyImage.getWidth() + 10) * (x % infInRow);
+                g.drawImage(armyImage, xP, y, null);
+            }
+        }
         for (int x = 0; x < army.getInfantry(); x++) {
-            int y = 220 + ((armyImage.getHeight() + 10) * (x / 6));
-            int xP = xPos + (armyImage.getWidth() + 10) * (x % 6);
+            int y = yStart + ((armyImage.getHeight() + 10) * (x / infInRow));
+            int xP = xPos + (armyImage.getWidth() + 10) * (x % infInRow);
             g.drawImage(armyImage, xP, y, null);
         }
         for (int x = 0; x < army.getCavalry(); x++) {
@@ -340,9 +412,11 @@ public class PlayerHelper {
 
         BufferedImage vassalImage =
                 ImageHelper.readScaled(ResourceHelper.getInstance().getPlayerFile(color, "Vassal"), 0.51f);
-        for (int x = 0; x < 10; x++) {
-            if (x < player.getVassalProvinces().size()) continue;
-            g.drawImage(vassalImage, 580 + x * (vassalImage.getWidth() + 15), 480, null);
+        if (!player.isBot()) {
+            for (int x = 0; x < 10; x++) {
+                if (x < (player.getVassalProvinces().size() + 1) / 2) continue;
+                g.drawImage(vassalImage, 580 + x * (vassalImage.getWidth() + 15), 480, null);
+            }
         }
 
         g.setComposite(AlphaComposite.SrcOver);
@@ -356,10 +430,16 @@ public class PlayerHelper {
 
     public static void drawStateReligion(Player player, Graphics2D g) {
         String stateReligion = player.getStateReligion();
+        int x = 429;
+        int y = 728;
+        if (player.isBot()) {
+            x = 784;
+            y = 728;
+        }
         if (stateReligion != null) {
             BufferedImage religionImage =
-                    ImageHelper.readScaled(ResourceHelper.getInstance().getMiscFile(stateReligion), 0.60f);
-            g.drawImage(religionImage, 429, 728, null);
+                    ImageHelper.readScaled(ResourceHelper.getInstance().getReligionFile(stateReligion), 0.60f);
+            g.drawImage(religionImage, x, y, null);
         }
     }
 }

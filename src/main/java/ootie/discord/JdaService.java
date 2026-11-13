@@ -1,6 +1,5 @@
 package ootie.discord;
 
-import jakarta.annotation.Nullable;
 import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.List;
@@ -10,6 +9,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
+
+import org.apache.commons.lang3.function.Consumers;
+
+import jakarta.annotation.Nullable;
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -37,10 +40,10 @@ import ootie.image.MapRenderPipeline;
 import ootie.image.Mapper;
 import ootie.logging.BotLogger;
 import ootie.logging.LogBufferManager;
+import ootie.service.emoji.ApplicationEmojiService;
 import ootie.settings.GlobalSettings;
 import ootie.spring.context.SpringContext;
 import ootie.spring.service.deploy.ActiveLeaseService;
-import org.apache.commons.lang3.function.Consumers;
 
 @UtilityClass
 public class JdaService {
@@ -165,7 +168,7 @@ public class JdaService {
     public static void loadStaticDataAndResources() {
         BotLogger.info("LOADING DATA");
         jda.getPresence().setActivity(Activity.customStatus("STARTING UP: Loading Data"));
-
+        ApplicationEmojiService.uploadNewEmojis();
         // load all /resources/data/ .json and .properties files, except
         // logging.properties, each into 1 HashMap or
         // Properties

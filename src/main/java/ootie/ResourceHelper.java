@@ -5,7 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
+
 import javax.annotation.Nullable;
+
 import ootie.game.Player;
 import ootie.helpers.Storage;
 import ootie.image.Mapper;
@@ -158,6 +160,11 @@ public final class ResourceHelper {
     @Nullable
     public String getMiscFile(String name) {
         return getResourceFromFolder("images/Misc Symbols/", name + ".png");
+    }
+
+    @Nullable
+    public String getReligionFile(String name) {
+        return getResourceFromFolder("images/Religions/", name + ".png");
     }
 
     private String getCachedResource(Map<String, String> cache, String folder, String name) {
