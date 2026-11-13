@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
-
 import javax.annotation.Nullable;
-
 import ootie.game.Player;
 import ootie.helpers.Storage;
 import ootie.image.Mapper;

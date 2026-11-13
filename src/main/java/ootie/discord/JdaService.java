@@ -1,5 +1,6 @@
 package ootie.discord;
 
+import jakarta.annotation.Nullable;
 import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.List;
@@ -9,10 +10,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-
-import org.apache.commons.lang3.function.Consumers;
-
-import jakarta.annotation.Nullable;
 import lombok.experimental.UtilityClass;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -44,6 +41,7 @@ import ootie.service.emoji.ApplicationEmojiService;
 import ootie.settings.GlobalSettings;
 import ootie.spring.context.SpringContext;
 import ootie.spring.service.deploy.ActiveLeaseService;
+import org.apache.commons.lang3.function.Consumers;
 
 @UtilityClass
 public class JdaService {

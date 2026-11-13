@@ -1,121 +1,104 @@
 package ootie.service.emoji;
 
 public enum DiceEmojis implements OotieEmoji {
-    // Green
-    d10green_0,
-    d10green_1,
-    d10green_2,
-    d10green_3,
-    d10green_4,
-    d10green_5,
-    d10green_6,
-    d10green_7,
-    d10green_8,
-    d10green_9,
-    // Red
-    d10red_0,
-    d10red_1,
-    d10red_2,
-    d10red_3,
-    d10red_4,
-    d10red_5,
-    d10red_6,
-    d10red_7,
-    d10red_8,
-    d10red_9,
-    // Blue
-    d10blue_0,
-    d10blue_1,
-    d10blue_2,
-    d10blue_3,
-    d10blue_4,
-    d10blue_5,
-    d10blue_6,
-    d10blue_7,
-    d10blue_8,
-    d10blue_9,
-    // Gray
-    d10grey_0,
-    d10grey_1,
-    d10grey_2,
-    d10grey_3,
-    d10grey_4,
-    d10grey_5,
-    d10grey_6,
-    d10grey_7,
-    d10grey_8,
-    d10grey_9;
+    infantry1,
+    infantry2,
+    infantry3,
+    infantry4,
+    infantry5,
+    infantry6,
+    exploration1,
+    exploration2,
+    exploration3,
+    exploration4,
+    exploration5,
+    exploration6,
+    artillery1,
+    artillery2,
+    artillery3,
+    artillery4,
+    artillery5,
+    artillery6,
+    cavalry1,
+    cavalry2,
+    cavalry3,
+    cavalry4,
+    cavalry5,
+    cavalry6,
+    rebel1,
+    rebel2,
+    rebel3,
+    rebel4,
+    rebel5,
+    rebel6;
 
-    public static String getDieEmoji(String color, int value) {
-        return switch (color) {
-            case "red" -> getRedDieEmoji(value);
-            case "blue" -> getBlueDieEmoji(value);
-            case "green" -> getGreenDieEmoji(value);
-            case "gray", "grey" -> getGrayDieEmoji(value);
+    public static String getDieEmoji(String type, int value) {
+        return switch (type) {
+            case "infantry" -> getInfantryDieEmoji(value);
+            case "exploration" -> getExplorationDieEmoji(value);
+            case "artillery" -> getArtilleryDieEmoji(value);
+            case "cavalry" -> getCavalryDieEmoji(value);
+            case "rebel" -> getRebelDieEmoji(value);
             default -> String.valueOf(value);
         };
     }
 
-    public static String getRedDieEmoji(int value) {
+    public static String getInfantryDieEmoji(int value) {
         return switch (value) {
-            case 0, 10 -> d10red_0.toString();
-            case 1 -> d10red_1.toString();
-            case 2 -> d10red_2.toString();
-            case 3 -> d10red_3.toString();
-            case 4 -> d10red_4.toString();
-            case 5 -> d10red_5.toString();
-            case 6 -> d10red_6.toString();
-            case 7 -> d10red_7.toString();
-            case 8 -> d10red_8.toString();
-            case 9 -> d10red_9.toString();
+            case 1 -> infantry1.toString();
+            case 2 -> infantry2.toString();
+            case 3 -> infantry3.toString();
+            case 4 -> infantry4.toString();
+            case 5 -> infantry5.toString();
+            case 6 -> infantry6.toString();
             default -> String.valueOf(value);
         };
     }
 
-    public static String getGreenDieEmoji(int value) {
+    public static String getExplorationDieEmoji(int value) {
         return switch (value) {
-            case 0, 10 -> d10green_0.toString();
-            case 1 -> d10green_1.toString();
-            case 2 -> d10green_2.toString();
-            case 3 -> d10green_3.toString();
-            case 4 -> d10green_4.toString();
-            case 5 -> d10green_5.toString();
-            case 6 -> d10green_6.toString();
-            case 7 -> d10green_7.toString();
-            case 8 -> d10green_8.toString();
-            case 9 -> d10green_9.toString();
+            case 1 -> exploration1.toString();
+            case 2 -> exploration2.toString();
+            case 3 -> exploration3.toString();
+            case 4 -> exploration4.toString();
+            case 5 -> exploration5.toString();
+            case 6 -> exploration6.toString();
             default -> String.valueOf(value);
         };
     }
 
-    private static String getBlueDieEmoji(int value) {
+    public static String getArtilleryDieEmoji(int value) {
         return switch (value) {
-            case 0, 10 -> d10blue_0.toString();
-            case 1 -> d10blue_1.toString();
-            case 2 -> d10blue_2.toString();
-            case 3 -> d10blue_3.toString();
-            case 4 -> d10blue_4.toString();
-            case 5 -> d10blue_5.toString();
-            case 6 -> d10blue_6.toString();
-            case 7 -> d10blue_7.toString();
-            case 8 -> d10blue_8.toString();
-            case 9 -> d10blue_9.toString();
+            case 1 -> artillery1.toString();
+            case 2 -> artillery2.toString();
+            case 3 -> artillery3.toString();
+            case 4 -> artillery4.toString();
+            case 5 -> artillery5.toString();
+            case 6 -> artillery6.toString();
             default -> String.valueOf(value);
         };
     }
 
-    public static String getGrayDieEmoji(int value) {
+    public static String getCavalryDieEmoji(int value) {
         return switch (value) {
-            case 0, 10 -> d10grey_0.toString();
-            case 1 -> d10grey_1.toString();
-            case 2 -> d10grey_2.toString();
-            case 3 -> d10grey_3.toString();
-            case 4 -> d10grey_4.toString();
-            case 5 -> d10grey_5.toString();
-            case 6 -> d10grey_6.toString();
-            case 7 -> d10grey_7.toString();
-            case 8 -> d10grey_8.toString();
-            case 9 -> d10grey_9.toString();
+            case 1 -> cavalry1.toString();
+            case 2 -> cavalry2.toString();
+            case 3 -> cavalry3.toString();
+            case 4 -> cavalry4.toString();
+            case 5 -> cavalry5.toString();
+            case 6 -> cavalry6.toString();
+            default -> String.valueOf(value);
+        };
+    }
+
+    public static String getRebelDieEmoji(int value) {
+        return switch (value) {
+            case 1 -> rebel1.toString();
+            case 2 -> rebel2.toString();
+            case 3 -> rebel3.toString();
+            case 4 -> rebel4.toString();
+            case 5 -> rebel5.toString();
+            case 6 -> rebel6.toString();
             default -> String.valueOf(value);
         };
     }
