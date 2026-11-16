@@ -20,6 +20,7 @@ public class SlashCommandManager {
     private static final Map<String, ParentCommand> commands = Stream.of(
                     new SearchCommand(),
                     new ShowGameCommand(),
+                    new RollDiceCommand(),
                     new BothelperCommand(),
                     new GameCommand(),
                     new PlayerCommand(),

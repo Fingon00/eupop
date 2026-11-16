@@ -65,6 +65,11 @@ class AutoCompleteProvider {
             String subcommandName,
             String gameName) {
         switch (optionName) {
+            case Constants.DICE_TYPE -> {
+                String enteredValue = event.getFocusedOption().getValue();
+                List<Command.Choice> options = mapTo25ChoicesThatContain(Constants.DICE_TYPES, enteredValue);
+                event.replyChoices(options).queue(Consumers.nop(), BotLogger::catchRestError);
+            }
             case Constants.UNDO_TO_COMMAND -> {
                 if (!GameManager.isValid(gameName)) return;
                 Game game = GameManager.getManagedGame(gameName).getGame();

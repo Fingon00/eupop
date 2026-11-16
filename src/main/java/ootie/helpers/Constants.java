@@ -38,6 +38,11 @@ public final class Constants {
     // Game Modes
 
     public static final String SHOW_GAME = "show_game";
+    public static final String ROLL_DICE = "roll_dice";
+    public static final String DICE_TYPE = "dice_type";
+    public static final String DICE_COUNT = "dice_count";
+    public static final int MAX_DICE_PER_ROLL = 30;
+    public static final List<String> DICE_TYPES = List.of("infantry", "exploration", "artillery", "cavalry", "rebel");
 
     public static final String SAVE_GAMES = "save_games";
     public static final String SAVE_GAME = "save_game";
