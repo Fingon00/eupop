@@ -17,6 +17,7 @@ import ootie.helpers.Constants;
 import ootie.image.Mapper;
 import ootie.json.JsonMapperManager;
 import ootie.model.ActionCardModel;
+import ootie.model.ProvinceModel;
 import tools.jackson.databind.json.JsonMapper;
 
 public class Game extends GameProperties {
@@ -77,6 +78,57 @@ public class Game extends GameProperties {
         player.setUserName(name);
         players.put(id, player);
         return player;
+    }
+
+    public Player getProvinceOwner(String province) {
+        Player owner = null;
+        for (Player player : getGamePlayers()) {
+            if (player.getAllProvinces().contains(province)) {
+                return player;
+            }
+        }
+        return owner;
+    }
+
+    public List<Player> getPlayersWhoCompletedMilestone(String milestone) {
+        List<Player> milestonePs = new ArrayList<>();
+        for (Player player : getGamePlayers()) {
+            if (player.getCompletedMilestones().contains(milestone)) {
+                milestonePs.add(player);
+            }
+        }
+        return milestonePs;
+    }
+
+    public List<Player> getPlayersWhoResearchedIdea(String idea) {
+        List<Player> milestonePs = new ArrayList<>();
+        for (Player player : getGamePlayers()) {
+            if (player.getIdeas().contains(idea)) {
+                milestonePs.add(player);
+            }
+        }
+        return milestonePs;
+    }
+
+    public void convertArea(String area, String religion) {
+        getConvertedAreas().put(area, religion);
+    }
+
+    public int getProvinceTaxValue(String province) {
+        Player owner = getProvinceOwner(province);
+        if (owner != null) {
+            if (owner.getLargeProvinces().contains(province)) {
+                return 2;
+            } else {
+                return 1;
+            }
+        } else {
+            ProvinceModel prov = Mapper.getProvinces().get(province);
+            if (prov.isLarge()) {
+                return 2;
+            }
+        }
+        return 1;
     }
 
     public List<String> getInfluenceInArea(String area) {

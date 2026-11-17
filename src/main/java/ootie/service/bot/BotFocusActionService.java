@@ -18,18 +18,52 @@ public class BotFocusActionService {
             int threshold = bot.getBotDifficulty().equalsIgnoreCase("Easy") ? 2 : 3;
             if (bot.getBotFocusCubes().size() >= threshold) {
                 bot.setBotFocusCubes(new ArrayList<>());
-                boolean availableMilestone = false; // Check this
-                if (availableMilestone) {
+                String availableMilestone = getAvailableMilestone(bot, game, type);
+                if (availableMilestone.isEmpty()) {
                     bot.setBotPower(bot.getBotPower() + 2);
-                    // Score Milestone
+                    bot.completeMilestone(availableMilestone);
                 } else {
                     bot.scorePrestige(3, "no available milestone to score of type: " + type);
                 }
             }
-
             resolved = true;
         }
 
         return resolved;
+    }
+
+    public static String getAvailableMilestone(Player bot, Game game, String type) {
+        String milestone = "";
+        switch (type.toLowerCase()) {
+            case "political" -> {
+                for (String m : game.getPoliticalMilestones()) {
+                    if (!bot.getCompletedMilestones().contains(m)) {
+                        return m;
+                    }
+                }
+            }
+            case "expansion" -> {
+                for (String m : game.getExpansionMilestones()) {
+                    if (!bot.getCompletedMilestones().contains(m)) {
+                        return m;
+                    }
+                }
+            }
+            case "economic" -> {
+                for (String m : game.getEconomicMilestones()) {
+                    if (!bot.getCompletedMilestones().contains(m)) {
+                        return m;
+                    }
+                }
+            }
+            case "warfare" -> {
+                for (String m : game.getWarfareMilestones()) {
+                    if (!bot.getCompletedMilestones().contains(m)) {
+                        return m;
+                    }
+                }
+            }
+        }
+        return milestone;
     }
 }

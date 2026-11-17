@@ -53,7 +53,7 @@ public class GameProperties {
     private List<String> unrevealedEventCards = new ArrayList<>();
 
     private int age = 1;
-
+    private Map<String, String> convertedAreas = new HashMap<>();
     // private Map<String, Integer> discardActionCards = new LinkedHashMap<>();
     // private Set<String> playedActionCards = new LinkedHashSet<>();
 

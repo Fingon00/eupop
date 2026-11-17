@@ -14,6 +14,7 @@ public class ProvinceModel implements ModelInterface, EmbeddableModel {
     private String realm1444;
     private String realm1618;
     private boolean capital;
+    private boolean isLarge;
     private ComponentSource source = ComponentSource.base;
 
     @Override

@@ -69,6 +69,7 @@ public class PlayerProperties {
     private List<String> atWarWith = new ArrayList<>();
     private List<String> singularInfantry = new ArrayList<>();
     private List<String> influence = new ArrayList<>();
+    private List<String> completedMilestones = new ArrayList<>();
     private Map<String, int[]> lightShips = new LinkedHashMap<>();
     private Map<String, Boolean> merchants = new LinkedHashMap<>();
 }

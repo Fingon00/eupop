@@ -1,5 +1,7 @@
 package ootie.game;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import javax.annotation.Nullable;
 import lombok.Getter;
@@ -51,6 +53,13 @@ public class Player extends PlayerProperties {
         return getCardsInfoThread(true);
     }
 
+    public List<String> getAllProvinces() {
+        List<String> allProvinces = new ArrayList<>();
+        allProvinces.addAll(getSmallProvinces());
+        allProvinces.addAll(getLargeProvinces());
+        return allProvinces;
+    }
+
     @Nullable
     private ThreadChannel getCardsInfoThread(boolean createIfMissing) {
         TextChannel parentChannel = getCardsInfoThreadParentChannel();
@@ -94,6 +103,45 @@ public class Player extends PlayerProperties {
             announcement += ".";
         }
         MessageHelper.sendMessageToChannel(getCardsInfoThreadParentChannel(), announcement);
+    }
+
+    public void completeMilestone(String milestone) {
+
+        MessageHelper.sendMessageToChannel(
+                getCardsInfoThreadParentChannel(), getUserName() + " completed the " + milestone + " milestone.");
+        int prestigeToScore = 0;
+        int numOfPrevPlayers =
+                getGame().getPlayersWhoCompletedMilestone(milestone).size();
+        if (numOfPrevPlayers == 0) {
+            prestigeToScore = 5;
+        }
+        if (numOfPrevPlayers == 1) {
+            prestigeToScore = 3;
+        }
+        if (numOfPrevPlayers == 1) {
+            prestigeToScore = 1;
+        }
+        if (prestigeToScore > 0) {
+            scorePrestige(prestigeToScore, "completing the " + milestone + " milestone.");
+        }
+        getCompletedMilestones().add(milestone);
+    }
+
+    public void researchIdea(String idea) {
+        MessageHelper.sendMessageToChannel(
+                getCardsInfoThreadParentChannel(), getUserName() + " researched the " + idea + " idea.");
+        List<Player> players = getGame().getPlayersWhoResearchedIdea(idea);
+        if (players.isEmpty()) {
+            scorePrestige(2, "researching the " + idea + " idea.");
+        } else {
+            if (players.size() < 3) {
+                for (Player p2 : players) {
+                    p2.scorePrestige(1, "someone else researching the " + idea + " idea");
+                }
+            }
+        }
+
+        getIdeas().add(idea);
     }
 
     @Nullable

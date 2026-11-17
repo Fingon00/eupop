@@ -47,13 +47,14 @@ public class RollDiceCommand implements ParentCommand {
         }
         if (diceCount < 1 || diceCount > Constants.MAX_DICE_PER_ROLL) {
             MessageHelper.sendMessageToChannel(
-                    event.getChannel(), "The number of dice must be between 1 and " + Constants.MAX_DICE_PER_ROLL
-                            + ".");
+                    event.getChannel(),
+                    "The number of dice must be between 1 and " + Constants.MAX_DICE_PER_ROLL + ".");
             return;
         }
 
         List<String> results = IntStream.range(0, diceCount)
-                .mapToObj(roll -> DiceEmojis.getDieEmoji(diceType, ThreadLocalRandom.current().nextInt(1, 7)))
+                .mapToObj(roll -> DiceEmojis.getDieEmoji(
+                        diceType, ThreadLocalRandom.current().nextInt(1, 7)))
                 .toList();
         String diceNoun = diceCount == 1 ? "die" : "dice";
         MessageHelper.sendMessageToChannel(
