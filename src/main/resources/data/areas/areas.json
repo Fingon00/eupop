@@ -18,7 +18,8 @@
         "infantryPlacement": [
             5063,
             3469
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "algiers",
@@ -45,7 +46,8 @@
         "infantryPlacement": [
             2766,
             3682
-        ]
+        ],
+        "startingReligion1444": "Muslim"
     },
     {
         "id": "andalucia",
@@ -77,7 +79,8 @@
         "cube_location": [
             2051,
             3318
-        ]
+        ],
+        "startingReligion1444": "Diverse Faiths"
     },
     {
         "id": "aquitaine",
@@ -110,7 +113,8 @@
         "cube_location": [
             2400,
             2606
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "aragon",
@@ -147,7 +151,8 @@
         "cube_location": [
             2466,
             2846
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "astrakhan",
@@ -171,7 +176,8 @@
         "infantryPlacement": [
             6539,
             2318
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "austria",
@@ -201,7 +207,8 @@
         "infantryPlacement": [
             4000,
             2236
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "aydin",
@@ -229,7 +236,8 @@
         "infantryPlacement": [
             5286,
             3356
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "bavaria_&_swabia",
@@ -261,7 +269,8 @@
         "infantryPlacement": [
             3600,
             2077
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "bohemia",
@@ -288,7 +297,8 @@
         "infantryPlacement": [
             3956,
             1940
-        ]
+        ],
+        "startingReligion1444": "Diverse Faiths"
     },
     {
         "id": "brandenburg",
@@ -315,7 +325,8 @@
         "infantryPlacement": [
             3876,
             1608
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "brittany_&_normandy",
@@ -346,7 +357,8 @@
         "cube_location": [
             2330,
             2054
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "burgundy",
@@ -380,7 +392,8 @@
         "cube_location": [
             2970,
             2400
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "castile",
@@ -410,7 +423,8 @@
         "cube_location": [
             1733,
             2766
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "caucasus",
@@ -434,7 +448,8 @@
         "infantryPlacement": [
             6629,
             2725
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "central_italy",
@@ -463,7 +478,8 @@
         "infantryPlacement": [
             3783,
             2800
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "central_russia",
@@ -491,7 +507,8 @@
         "infantryPlacement": [
             6057,
             1254
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "circassia",
@@ -519,7 +536,8 @@
         "infantryPlacement": [
             6211,
             2606
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "corsica_&_sardinia",
@@ -540,7 +558,8 @@
         "infantryPlacement": [
             3434,
             3211
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "crimea",
@@ -570,7 +589,8 @@
         "infantryPlacement": [
             5846,
             2168
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "croatia_&_bosnia",
@@ -599,7 +619,8 @@
         "infantryPlacement": [
             4213,
             2571
-        ]
+        ],
+        "startingReligion1444": "Diverse Faiths"
     },
     {
         "id": "cyprus",
@@ -618,7 +639,8 @@
         "infantryPlacement": [
             5558,
             3622
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "cyrenaica",
@@ -640,7 +662,8 @@
         "infantryPlacement": [
             4810,
             3839
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "dalmatia",
@@ -667,7 +690,8 @@
         "infantryPlacement": [
             4177,
             2815
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "east_anglia",
@@ -695,7 +719,8 @@
         "cube_location": [
             2431,
             1519
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "eastern_ukraine",
@@ -719,7 +744,8 @@
         "infantryPlacement": [
             5704,
             1926
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "egypt",
@@ -743,7 +769,8 @@
         "infantryPlacement": [
             5357,
             3875
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "estonia_&_livonia",
@@ -771,7 +798,8 @@
         "infantryPlacement": [
             4744,
             993
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "finland",
@@ -793,7 +821,8 @@
         "infantryPlacement": [
             4783,
             671
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "flanders_&_wallonia",
@@ -825,7 +854,8 @@
         "cube_location": [
             2870,
             1789
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "gotaland_&_skane",
@@ -849,7 +879,8 @@
         "infantryPlacement": [
             3989,
             968
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "greece",
@@ -876,7 +907,8 @@
         "infantryPlacement": [
             4690,
             3316
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "hungarian_plain",
@@ -899,7 +931,8 @@
         "infantryPlacement": [
             4471,
             2323
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "iraq",
@@ -921,7 +954,8 @@
         "infantryPlacement": [
             6493,
             3588
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "ireland",
@@ -948,7 +982,8 @@
         "cube_location": [
             1590,
             1402
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "jutland",
@@ -973,7 +1008,8 @@
         "infantryPlacement": [
             3405,
             1050
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "karaman",
@@ -1004,7 +1040,8 @@
         "infantryPlacement": [
             5673,
             3280
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "karelia",
@@ -1031,7 +1068,8 @@
         "infantryPlacement": [
             5448,
             500
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "kazan",
@@ -1052,7 +1090,8 @@
         "infantryPlacement": [
             6591,
             1421
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "kurdistan",
@@ -1082,7 +1121,8 @@
         "infantryPlacement": [
             6233,
             3263
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "languedoc",
@@ -1116,7 +1156,8 @@
         "cube_location": [
             2631,
             2760
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "leon",
@@ -1148,7 +1189,8 @@
         "cube_location": [
             1733,
             2766
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "lithuania",
@@ -1173,7 +1215,8 @@
         "infantryPlacement": [
             4938,
             1397
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "loire",
@@ -1203,7 +1246,8 @@
         "cube_location": [
             2732,
             2496
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "lombardy",
@@ -1239,7 +1283,8 @@
         "infantryPlacement": [
             3358,
             2605
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "lower_saxony",
@@ -1272,7 +1317,8 @@
         "cube_location": [
             3482,
             1521
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "macaronesia",
@@ -1292,7 +1338,8 @@
         "infantryPlacement": [
             1309,
             3908
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "macedonia_&_thrace",
@@ -1319,7 +1366,8 @@
         "infantryPlacement": [
             4808,
             2960
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "mazovia_&_malopolska",
@@ -1347,7 +1395,8 @@
         "infantryPlacement": [
             4544,
             1845
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "moldavia",
@@ -1375,7 +1424,8 @@
         "infantryPlacement": [
             5350,
             2396
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "moscow_&_ryazan",
@@ -1402,7 +1452,8 @@
         "infantryPlacement": [
             5922,
             1484
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "naples",
@@ -1425,7 +1476,8 @@
         "infantryPlacement": [
             4109,
             3200
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "netherlands",
@@ -1456,7 +1508,8 @@
         "cube_location": [
             3119,
             1448
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "norrland",
@@ -1480,7 +1533,8 @@
         "infantryPlacement": [
             4194,
             247
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "north_sahara",
@@ -1501,7 +1555,8 @@
         "infantryPlacement": [
             3227,
             3884
-        ]
+        ],
+        "startingReligion1444": "Muslim"
     },
     {
         "id": "northern_anatolia",
@@ -1528,7 +1583,8 @@
         "infantryPlacement": [
             5369,
             3057
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "northern_morocco",
@@ -1554,7 +1610,8 @@
         "infantryPlacement": [
             1935,
             3781
-        ]
+        ],
+        "startingReligion1444": "Muslim"
     },
     {
         "id": "northumbria",
@@ -1583,7 +1640,8 @@
         "cube_location": [
             2176,
             1218
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "novgorod",
@@ -1608,7 +1666,8 @@
         "infantryPlacement": [
             5312,
             1000
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "ostlandet",
@@ -1635,7 +1694,8 @@
         "infantryPlacement": [
             3629,
             525
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "ostrobothnia",
@@ -1658,7 +1718,8 @@
         "infantryPlacement": [
             4985,
             250
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "palestine",
@@ -1681,7 +1742,8 @@
         "infantryPlacement": [
             5698,
             3866
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "perm",
@@ -1706,7 +1768,8 @@
         "infantryPlacement": [
             6411,
             1056
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "pomerania",
@@ -1734,7 +1797,8 @@
         "infantryPlacement": [
             4063,
             1373
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "pomorye",
@@ -1757,7 +1821,8 @@
         "infantryPlacement": [
             5461,
             324
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "portugal",
@@ -1784,7 +1849,8 @@
         "cube_location": [
             1618,
             3209
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "prussia",
@@ -1813,7 +1879,8 @@
         "infantryPlacement": [
             4425,
             1431
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "red_ruthenia",
@@ -1843,7 +1910,8 @@
         "infantryPlacement": [
             4965,
             1962
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "rhineland",
@@ -1877,7 +1945,8 @@
         "cube_location": [
             3212,
             2076
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "royal_hungary",
@@ -1910,7 +1979,8 @@
         "infantryPlacement": [
             4559,
             2105
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "rum",
@@ -1941,7 +2011,8 @@
         "infantryPlacement": [
             5945,
             3068
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "saratov",
@@ -1967,7 +2038,8 @@
         "infantryPlacement": [
             6376,
             1741
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "saxony",
@@ -1994,7 +2066,8 @@
         "infantryPlacement": [
             3769,
             1782
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "scotland",
@@ -2022,7 +2095,8 @@
         "cube_location": [
             1966,
             879
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "seine",
@@ -2053,7 +2127,8 @@
         "cube_location": [
             2757,
             2043
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "serbia_&_albania",
@@ -2087,7 +2162,8 @@
         "infantryPlacement": [
             4513,
             2801
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "sicily",
@@ -2108,7 +2184,8 @@
         "infantryPlacement": [
             3852,
             3511
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "sjaelland_&_fyn",
@@ -2127,7 +2204,8 @@
         "infantryPlacement": [
             3719,
             1201
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "southern_morocco",
@@ -2149,7 +2227,8 @@
         "infantryPlacement": [
             2035,
             3996
-        ]
+        ],
+        "startingReligion1444": "Muslim"
     },
     {
         "id": "svealand",
@@ -2176,7 +2255,8 @@
         "infantryPlacement": [
             4201,
             735
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "switzerland",
@@ -2207,7 +2287,8 @@
         "infantryPlacement": [
             3339,
             2366
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "syria",
@@ -2233,7 +2314,8 @@
         "infantryPlacement": [
             5907,
             3605
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "tirol",
@@ -2264,7 +2346,8 @@
         "infantryPlacement": [
             3672,
             2333
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "transcaucasia",
@@ -2294,7 +2377,8 @@
         "infantryPlacement": [
             6547,
             3075
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "transylvania",
@@ -2325,7 +2409,8 @@
         "infantryPlacement": [
             4791,
             2322
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "tripolitania",
@@ -2347,7 +2432,8 @@
         "infantryPlacement": [
             3766,
             3974
-        ]
+        ],
+        "startingReligion1444": "Muslim"
     },
     {
         "id": "trondelag",
@@ -2375,7 +2461,8 @@
         "infantryPlacement": [
             3780,
             158
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "tunisia",
@@ -2399,7 +2486,8 @@
         "infantryPlacement": [
             3434,
             3688
-        ]
+        ],
+        "startingReligion1444": "Muslim"
     },
     {
         "id": "venetia",
@@ -2432,7 +2520,8 @@
         "infantryPlacement": [
             3917,
             2467
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "vestlandet",
@@ -2457,7 +2546,8 @@
         "infantryPlacement": [
             3370,
             444
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "vologda",
@@ -2481,7 +2571,8 @@
         "infantryPlacement": [
             5852,
             841
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "wales_&_wessex",
@@ -2506,7 +2597,8 @@
         "infantryPlacement": [
             2193,
             1642
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "wallachia_&_bulgaria",
@@ -2534,7 +2626,8 @@
         "infantryPlacement": [
             5023,
             2783
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "western_ukraine",
@@ -2558,7 +2651,8 @@
         "infantryPlacement": [
             5308,
             2126
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "westphalia",
@@ -2589,7 +2683,8 @@
         "cube_location": [
             3261,
             1770
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "white_ruthenia",
@@ -2616,7 +2711,8 @@
         "infantryPlacement": [
             5335,
             1487
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "wielkopolska",
@@ -2644,7 +2740,8 @@
         "infantryPlacement": [
             4256,
             1810
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "TIMBUKTU",
@@ -2660,7 +2757,8 @@
         "infantryPlacement": [
             571,
             1550
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "BENIN",
@@ -2676,7 +2774,8 @@
         "infantryPlacement": [
             686,
             1731
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "SONGHAI",
@@ -2693,7 +2792,8 @@
         "infantryPlacement": [
             671,
             1607
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "ETHIOPIA",
@@ -2710,7 +2810,8 @@
         "infantryPlacement": [
             1017,
             1679
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "ADAL",
@@ -2726,7 +2827,8 @@
         "infantryPlacement": [
             1100,
             1670
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "GOLDCOAST",
@@ -2742,7 +2844,8 @@
         "infantryPlacement": [
             585,
             1724
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MALI",
@@ -2758,7 +2861,8 @@
         "infantryPlacement": [
             495,
             1668
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MUTAPA",
@@ -2774,7 +2878,8 @@
         "infantryPlacement": [
             946,
             2000
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "KILWA",
@@ -2792,7 +2897,8 @@
         "infantryPlacement": [
             1030,
             1917
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "KATSINA",
@@ -2809,7 +2915,8 @@
         "infantryPlacement": [
             759,
             1664
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "KONGO",
@@ -2823,7 +2930,8 @@
         "infantryPlacement": [
             772,
             1851
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "AJUURAAN",
@@ -2839,7 +2947,8 @@
         "infantryPlacement": [
             1090,
             1771
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "UPPEREGYPT",
@@ -2853,7 +2962,8 @@
         "infantryPlacement": [
             954,
             1541
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "ANGOLA",
@@ -2867,7 +2977,8 @@
         "infantryPlacement": [
             774,
             1982
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MADAGASCAR",
@@ -2883,7 +2994,8 @@
         "infantryPlacement": [
             1111,
             1999
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CENTRALAFRICA",
@@ -2899,7 +3011,8 @@
         "infantryPlacement": [
             933,
             1821
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "NATAL",
@@ -2915,7 +3028,8 @@
         "infantryPlacement": [
             929,
             2118
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CAPEOFGOODHOPE",
@@ -2931,7 +3045,8 @@
         "infantryPlacement": [
             837,
             2156
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "PERNAMBUCO",
@@ -2945,7 +3060,8 @@
         "infantryPlacement": [
             1117,
             855
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "BAHIA",
@@ -2959,7 +3075,8 @@
         "infantryPlacement": [
             1120,
             962
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "RIODEJANEIRO",
@@ -2973,7 +3090,8 @@
         "infantryPlacement": [
             1077,
             1074
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "AMAZONAS",
@@ -2990,7 +3108,8 @@
         "infantryPlacement": [
             916,
             885
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MEXICO",
@@ -3004,7 +3123,8 @@
         "infantryPlacement": [
             582,
             657
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CENTRALAMERICA",
@@ -3018,7 +3138,8 @@
         "infantryPlacement": [
             693,
             684
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "NEWGRANADA",
@@ -3032,7 +3153,8 @@
         "infantryPlacement": [
             837,
             753
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "GUYANA",
@@ -3046,7 +3168,8 @@
         "infantryPlacement": [
             946,
             773
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MISSISSIPPI",
@@ -3062,7 +3185,8 @@
         "infantryPlacement": [
             633,
             528
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "VIRGINIA",
@@ -3079,7 +3203,8 @@
         "infantryPlacement": [
             772,
             456
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "FLORIDA",
@@ -3096,7 +3221,8 @@
         "infantryPlacement": [
             729,
             563
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "ANTILLES",
@@ -3112,7 +3238,8 @@
         "infantryPlacement": [
             811,
             638
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "HUDSONBAY",
@@ -3126,7 +3253,8 @@
         "infantryPlacement": [
             669,
             276
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CANADA",
@@ -3142,7 +3270,8 @@
         "infantryPlacement": [
             786,
             331
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "GREATLAKES",
@@ -3158,7 +3287,8 @@
         "infantryPlacement": [
             685,
             404
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "NEWENGLAND",
@@ -3175,7 +3305,8 @@
         "infantryPlacement": [
             867,
             416
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CUZCO",
@@ -3193,7 +3324,8 @@
         "infantryPlacement": [
             821,
             961
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CHARCAS",
@@ -3209,7 +3341,8 @@
         "infantryPlacement": [
             894,
             1027
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MINASGERAIS",
@@ -3225,7 +3358,8 @@
         "infantryPlacement": [
             1006,
             967
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "LAPLATA",
@@ -3239,7 +3373,8 @@
         "infantryPlacement": [
             937,
             1159
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "GREATPLAINS",
@@ -3253,7 +3388,8 @@
         "infantryPlacement": [
             566,
             413
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CALIFORNIA",
@@ -3267,7 +3403,8 @@
         "infantryPlacement": [
             484,
             536
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CHILE",
@@ -3281,7 +3418,8 @@
         "infantryPlacement": [
             830,
             1171
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "QUITO",
@@ -3297,7 +3435,8 @@
         "infantryPlacement": [
             761,
             862
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "HEJAZ",
@@ -3313,7 +3452,8 @@
         "infantryPlacement": [
             474,
             2659
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "YEMEN",
@@ -3327,7 +3467,8 @@
         "infantryPlacement": [
             522,
             2762
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "COROMANDEL",
@@ -3343,7 +3484,8 @@
         "infantryPlacement": [
             989,
             2831
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "BENGAL",
@@ -3359,7 +3501,8 @@
         "infantryPlacement": [
             1119,
             2637
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "GUJARAT",
@@ -3373,7 +3516,8 @@
         "infantryPlacement": [
             875,
             2630
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "DOAB",
@@ -3390,7 +3534,8 @@
         "infantryPlacement": [
             1035,
             2571
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "DELHI",
@@ -3406,7 +3551,8 @@
         "infantryPlacement": [
             951,
             2505
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "DECCAN",
@@ -3422,7 +3568,8 @@
         "infantryPlacement": [
             982,
             2707
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "SAMARKAND",
@@ -3439,7 +3586,8 @@
         "infantryPlacement": [
             767,
             2384
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "ISFAHAN",
@@ -3456,7 +3604,8 @@
         "infantryPlacement": [
             596,
             2449
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "GOA",
@@ -3473,7 +3622,8 @@
         "infantryPlacement": [
             914,
             2749
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "FARS",
@@ -3490,7 +3640,8 @@
         "infantryPlacement": [
             645,
             2568
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "BALKH",
@@ -3506,7 +3657,8 @@
         "infantryPlacement": [
             816,
             2479
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "HERAT",
@@ -3523,7 +3675,8 @@
         "infantryPlacement": [
             712,
             2488
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "BALUCHISTAN",
@@ -3540,7 +3693,8 @@
         "infantryPlacement": [
             769,
             2587
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "BASRA",
@@ -3556,7 +3710,8 @@
         "infantryPlacement": [
             525,
             2504
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "NAJD",
@@ -3572,7 +3727,8 @@
         "infantryPlacement": [
             534,
             2614
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "KHIVA",
@@ -3589,7 +3745,8 @@
         "infantryPlacement": [
             671,
             2372
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "HORMUZ",
@@ -3606,7 +3763,8 @@
         "infantryPlacement": [
             677,
             2666
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CANTON",
@@ -3620,7 +3778,8 @@
         "infantryPlacement": [
             639,
             3229
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "XIAN",
@@ -3636,7 +3795,8 @@
         "infantryPlacement": [
             618,
             3086
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "KYUSHU",
@@ -3653,7 +3813,8 @@
         "infantryPlacement": [
             930,
             3131
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "HANGZHOU",
@@ -3667,7 +3828,8 @@
         "infantryPlacement": [
             745,
             3175
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MALACCA",
@@ -3683,7 +3845,8 @@
         "infantryPlacement": [
             590,
             3493
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "SIAM",
@@ -3699,7 +3862,8 @@
         "infantryPlacement": [
             568,
             3358
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "BURMA",
@@ -3715,7 +3879,8 @@
         "infantryPlacement": [
             481,
             3286
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "SOUTHSUMATRA",
@@ -3731,7 +3896,8 @@
         "infantryPlacement": [
             574,
             3603
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MOLUCCAS",
@@ -3745,7 +3911,8 @@
         "infantryPlacement": [
             832,
             3544
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "JAVA",
@@ -3759,7 +3926,8 @@
         "infantryPlacement": [
             675,
             3628
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "PAPUA",
@@ -3773,7 +3941,8 @@
         "infantryPlacement": [
             1057,
             3603
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CHENGDU",
@@ -3789,7 +3958,8 @@
         "infantryPlacement": [
             533,
             3172
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "PHILIPPINES",
@@ -3803,7 +3973,8 @@
         "infantryPlacement": [
             816,
             3348
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "BRUNEI",
@@ -3817,7 +3988,8 @@
         "infantryPlacement": [
             707,
             3482
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "BEIJING",
@@ -3831,7 +4003,8 @@
         "infantryPlacement": [
             723,
             3024
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "HONSHU",
@@ -3847,7 +4020,8 @@
         "infantryPlacement": [
             1013,
             3059
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "KOREA",
@@ -3863,7 +4037,8 @@
         "infantryPlacement": [
             856,
             3065
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "ACEH",
@@ -3880,7 +4055,8 @@
         "infantryPlacement": [
             509,
             3514
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "TIMOR",
@@ -3894,7 +4070,8 @@
         "infantryPlacement": [
             823,
             3657
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "VOGELKOP",
@@ -3908,7 +4085,8 @@
         "infantryPlacement": [
             940,
             3559
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "EASTERNAUSTRALIA",
@@ -3924,7 +4102,8 @@
         "infantryPlacement": [
             1136,
             3857
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "SOUTHERNAUSTRALIA",
@@ -3940,7 +4119,8 @@
         "infantryPlacement": [
             1049,
             3948
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "WESTERNAUSTRALIA",
@@ -3954,7 +4134,8 @@
         "infantryPlacement": [
             786,
             3905
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "WESTSIBERIA",
@@ -3973,7 +4154,8 @@
         "infantryPlacement": [
             6074,
             270
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "TYUMEN",
@@ -3994,7 +4176,8 @@
         "infantryPlacement": [
             5965,
             408
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "VOLGA",
@@ -4014,7 +4197,8 @@
         "infantryPlacement": [
             5783,
             423
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "NOGAI",
@@ -4034,7 +4218,8 @@
         "infantryPlacement": [
             5797,
             567
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "URAL",
@@ -4053,7 +4238,8 @@
         "infantryPlacement": [
             5869,
             278
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "EASTSIBERIA",
@@ -4073,7 +4259,8 @@
         "infantryPlacement": [
             6302,
             375
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "OKHOTSK",
@@ -4091,7 +4278,8 @@
         "infantryPlacement": [
             6505,
             396
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "OIRAT",
@@ -4114,7 +4302,8 @@
         "infantryPlacement": [
             6149,
             512
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MONGOLIA",
@@ -4134,7 +4323,8 @@
         "infantryPlacement": [
             6301,
             578
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "MANCHU",
@@ -4155,7 +4345,8 @@
         "infantryPlacement": [
             6408,
             589
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "FURDAN",
@@ -4173,7 +4364,8 @@
         "infantryPlacement": [
             6502,
             594
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "CHAGATAI",
@@ -4192,7 +4384,8 @@
         "infantryPlacement": [
             6054,
             596
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "YARKAND",
@@ -4211,7 +4404,8 @@
         "infantryPlacement": [
             6054,
             596
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     },
     {
         "id": "KAZAKHSTAN",
@@ -4231,6 +4425,7 @@
         "infantryPlacement": [
             5921,
             563
-        ]
+        ],
+        "startingReligion1444": "Catholic"
     }
 ]

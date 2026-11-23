@@ -1069,8 +1069,7 @@ public class MessageHelper {
                 button = Button.of(button.getStyle(), button.getCustomId(), label);
             }
             if (button.getEmoji() instanceof UnicodeEmoji emoji
-                    && StringUtils.countMatches(emoji.getAsCodepoints(), "+") > 4) { // TODO: something better than
-                // (plus_sign_count > 4)
+                    && StringUtils.countMatches(emoji.getAsCodepoints(), "+") > 4) {
                 String label = button.getLabel();
                 if (label.isBlank()) {
                     label = String.format(":%s:", emoji.getName());

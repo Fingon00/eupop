@@ -24,7 +24,6 @@ import org.apache.commons.lang3.StringUtils;
 @UtilityClass
 public class GameManager {
 
-    // TODO: We can evaluate dropping the managed objects entirely
     private static final Set<String> gameNames = ConcurrentHashMap.newKeySet();
     private static final ConcurrentMap<String, ManagedGame> gameNameToManagedGame = new ConcurrentHashMap<>();
     private static final ConcurrentMap<String, ManagedPlayer> userIdToManagedPlayer = new ConcurrentHashMap<>();

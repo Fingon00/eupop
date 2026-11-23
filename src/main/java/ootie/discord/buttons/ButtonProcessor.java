@@ -91,7 +91,6 @@ public class ButtonProcessor {
     }
 
     private static void log(ButtonInteractionEvent event) {
-        // TODO: These timings are temporary to track down any spikes...
         int warningThresholdSeconds = 1;
         new TimedRunnable("ButtonProcessor BotLogger log", warningThresholdSeconds, () -> BotLogger.logButton(event))
                 .run();

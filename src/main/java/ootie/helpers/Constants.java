@@ -170,8 +170,8 @@ public final class Constants {
     public static final String PLAYER7 = "player7";
     public static final String PLAYER8 = "player8";
     public static final String PLAYER = "player";
-    public static final String PLAYER_FACTION = "player_or_faction";
-    public static final String FACTION_COLOR = "faction_or_color";
+    public static final String PLAYER_REALM = "player_or_realm";
+    public static final String REALM_COLOR = "realm_or_color";
     public static final String EXPEDITION = "expedition";
     public static final String TARGET_FACTION_OR_COLOR = "target_faction_or_color";
     public static final String TARGET_PLAYER = "target_player";

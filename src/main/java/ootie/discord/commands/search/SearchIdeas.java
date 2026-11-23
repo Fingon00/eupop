@@ -17,6 +17,6 @@ class SearchIdeas extends SearchModelSubcommand<IdeaModel> {
 
     @Override
     protected void sendResult(IdeaModel model, SlashCommandInteractionEvent event) {
-        SearchImageHelper.sendImage(event, "images/Ideas/", model.getId(), model.getName());
+        SearchImageHelper.sendImage(event.getChannel(), "images/Ideas/", model.getId(), model.getName());
     }
 }

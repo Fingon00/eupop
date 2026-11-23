@@ -29,6 +29,6 @@ class SearchMilestones extends SearchModelSubcommand<MilestoneModel> {
         String folder = model.getSource() == ComponentSource.defying_destiny
                 ? "images/Milestones/DD Milestones Age " + age
                 : "images/Milestones/Milestones_Age_" + age;
-        SearchImageHelper.sendImage(event, folder, model.getId(), model.getId());
+        SearchImageHelper.sendImage(event.getChannel(), folder, model.getId(), model.getId());
     }
 }

@@ -16,6 +16,9 @@ public class PlayerCommand implements ParentCommand {
                     new ManageProvince(),
                     new ChangeColor(),
                     new ManageForce(),
+                    new TurnEnd(),
+                    new TurnStart(),
+                    new Pass(),
                     new ManageArea())
             .collect(Collectors.toMap(Subcommand::getName, subcommand -> subcommand));
 

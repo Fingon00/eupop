@@ -47,7 +47,7 @@ public class BotExploreActionService {
 
     public static boolean rollDieNode(Player bot, Game game) {
         int result = new Random().nextInt(6) + 1;
-        // TODO: Display roll result
+        MessageHelper.sendMessageToChannel(game.getMainGameChannel(), "The die rolled a " + result);
         if (result < 5) {
             return eligibleTerNode(bot, game, result);
         } else {

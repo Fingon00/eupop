@@ -2,7 +2,7 @@ package ootie.discord.commands.search;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import ootie.ResourceHelper;
 import ootie.image.ImageHelper;
 import ootie.message.MessageHelper;
@@ -12,20 +12,20 @@ public final class SearchImageHelper {
 
     private SearchImageHelper() {}
 
-    static void sendImage(SlashCommandInteractionEvent event, String folder, String imageName, String description) {
+    public static void sendImage(MessageChannel channel, String folder, String imageName, String description) {
         String normalizedFolder = folder.replace("/", File.separator);
         if (!normalizedFolder.endsWith(File.separator)) {
             normalizedFolder += File.separator;
         }
         String imagePath = ResourceHelper.getResourceFromFolder(normalizedFolder, imageName + ".png");
         if (imagePath == null) {
-            MessageHelper.sendMessageToChannel(event.getChannel(), "Could not find image for " + description);
+            MessageHelper.sendMessageToChannel(channel, "Could not find image for " + description);
             return;
         }
 
         BufferedImage image = ImageHelper.read(imagePath);
         var upload = FileUploadService.createFileUpload(image, imageName).setDescription(description);
-        MessageHelper.sendFileUploadToChannel(event.getChannel(), upload);
+        MessageHelper.sendFileUploadToChannel(channel, upload);
     }
 
     public static BufferedImage getImage(String folder, String imageName) {

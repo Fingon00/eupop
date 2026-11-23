@@ -14,9 +14,13 @@ import ootie.discord.utility.DiscordChannelUtility;
 import ootie.discord.utility.DiscordErrorUtility;
 import ootie.discord.utility.DiscordThreadUtility;
 import ootie.helpers.Constants;
+import ootie.image.Mapper;
 import ootie.logging.BotLogger;
 import ootie.logging.LogOrigin;
 import ootie.message.MessageHelper;
+import ootie.model.AreaModel;
+import ootie.model.ProvinceModel;
+import ootie.service.bot.BotConvertActionService;
 import ootie.service.image.FileUploadService;
 import org.apache.commons.lang3.StringUtils;
 
@@ -97,6 +101,72 @@ public class Player extends PlayerProperties {
         setPrestige(getPrestige() + prestige);
         String announcement =
                 getUserName() + " scored " + prestige + " prestige (now at " + getPrestige() + " total prestige)";
+        if (reason != null) {
+            announcement += " due to " + reason;
+        } else {
+            announcement += ".";
+        }
+        MessageHelper.sendMessageToChannel(getCardsInfoThreadParentChannel(), announcement);
+    }
+
+    public void gainDucats(int ducats, String reason) {
+        setDucats(getDucats() + ducats);
+        String announcement = getUserName() + " gained " + ducats + " ducats (now at " + getDucats() + " total ducats)";
+        if (reason != null) {
+            announcement += " due to " + reason;
+        } else {
+            announcement += ".";
+        }
+        MessageHelper.sendMessageToChannel(getCardsInfoThreadParentChannel(), announcement);
+    }
+
+    public List<String> getCoreableAreas() {
+        List<String> areas = new ArrayList<>();
+        for (String province : getAllProvinces()) {
+            AreaModel area = BotConvertActionService.getAreaByProvince(province);
+            if (area.getProvinces().size() == 1) {
+                continue;
+            }
+            if (getCoredAreas().contains(area.getAlias())) {
+                continue;
+            }
+            boolean allOwned = true;
+            boolean allCore = true;
+            for (String prov : area.getProvinces()) {
+                if (!getAllProvinces().contains(prov)) {
+                    allOwned = false;
+                }
+                ProvinceModel pro = Mapper.getProvinces().get(prov);
+                if (!pro.getRealm1444().equalsIgnoreCase(getRealm())) {
+                    allCore = false;
+                }
+            }
+            if (allOwned && !allCore) {
+                areas.add(area.getId());
+            }
+        }
+
+        return areas;
+    }
+
+    public int getTaxValueOfArea(String area) {
+        AreaModel aM = Mapper.getAreas().get(area);
+        int taxValue = 0;
+        for (String prov : aM.getProvinces()) {
+            if (getLargeProvinces().contains(prov)) {
+                taxValue += 2;
+            } else {
+                taxValue += 1;
+            }
+        }
+
+        return taxValue;
+    }
+
+    public void gainBotPower(int botPower, String reason) {
+        setBotPower(getBotPower() + botPower);
+        String announcement =
+                getUserName() + " gained " + botPower + " bot power (now at " + getBotPower() + " unused bot power)";
         if (reason != null) {
             announcement += " due to " + reason;
         } else {

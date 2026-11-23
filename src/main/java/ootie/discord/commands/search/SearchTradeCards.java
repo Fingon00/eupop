@@ -17,6 +17,6 @@ class SearchTradeCards extends SearchModelSubcommand<TradeCardModel> {
 
     @Override
     protected void sendResult(TradeCardModel model, SlashCommandInteractionEvent event) {
-        SearchImageHelper.sendImage(event, "images/Trade Cards/", model.getId(), model.getName());
+        SearchImageHelper.sendImage(event.getChannel(), "images/Trade Cards/", model.getId(), model.getName());
     }
 }

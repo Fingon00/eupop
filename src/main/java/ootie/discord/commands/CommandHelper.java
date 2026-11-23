@@ -68,7 +68,7 @@ public class CommandHelper {
             return game.getPlayer(playerID);
         }
 
-        OptionMapping factionColorOption = event.getOption(Constants.FACTION_COLOR);
+        OptionMapping factionColorOption = event.getOption(Constants.REALM_COLOR);
         if (factionColorOption != null) {
             String factionColor = factionColorOption.getAsString().toLowerCase();
             Player player = getPlayerByRealmColor(factionColor, game);
@@ -93,7 +93,7 @@ public class CommandHelper {
      */
     @Nullable
     public static Player getPlayerFromReplaceEvent(Game game, GenericCommandInteractionEvent event) {
-        String nameOrID = event.getOption(Constants.PLAYER_FACTION).getAsString();
+        String nameOrID = event.getOption(Constants.PLAYER_REALM).getAsString();
         int replaceIndex = nameOrID.lastIndexOf(" / ");
         String name = nameOrID.substring(replaceIndex < 0 ? 0 : replaceIndex + 3);
 

@@ -9,7 +9,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 @UtilityClass
 public class RequestContext {
 
-    // TODO: Debate combining this with the Command/Button processing context
     private static final ThreadLocal<Game> game = new ThreadLocal<>();
     private static final ThreadLocal<Boolean> saveGame = ThreadLocal.withInitial(() -> Boolean.TRUE);
 

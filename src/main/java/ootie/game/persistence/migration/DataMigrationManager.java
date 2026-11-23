@@ -138,9 +138,6 @@ public class DataMigrationManager {
             }
 
             var game = managedGame.getGame();
-
-            // TODO: Confirm games aren't able to make changes during this
-
         }
         return migrationsApplied;
     }

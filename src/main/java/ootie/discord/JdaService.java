@@ -63,9 +63,6 @@ public class JdaService {
             CacheFlag.STICKER,
             CacheFlag.VOICE_STATE);
 
-    // TODO:
-    // we may not want to trust any old "Admin" role on a server
-    // should actually have admin rights
     public static final Set<Role> adminRoles = new HashSet<>();
     public static final Set<Role> developerRoles = new HashSet<>();
     public static final Set<Role> bothelperRoles = new HashSet<>();

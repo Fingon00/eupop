@@ -101,9 +101,15 @@ public class BotConvertActionService {
     public static Map<String, String> getAreasWithRD(Player player, Game game) {
         Map<String, String> areasWithRD = new HashMap<>();
         String stateReligion = player.getStateReligion();
+        if ("Counter-Reformed".equalsIgnoreCase(stateReligion)) {
+            stateReligion = "Catholic";
+        }
         for (String province : player.getAllProvinces()) {
             AreaModel area = getAreaByProvince(province);
-            String areaReligion = "Catholic"; // TODO: Change this to actually look up the right religion
+            String areaReligion = area.getStartingReligion1444();
+            if (area.getProvinces().size() == 1) {
+                continue;
+            }
             if (game.getConvertedAreas().containsKey(area.getAlias())) {
                 areaReligion = game.getConvertedAreas().get(area.getAlias());
             }

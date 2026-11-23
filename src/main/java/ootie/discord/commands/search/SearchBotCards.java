@@ -17,6 +17,6 @@ class SearchBotCards extends SearchModelSubcommand<BotCardModel> {
 
     @Override
     protected void sendResult(BotCardModel model, SlashCommandInteractionEvent event) {
-        SearchImageHelper.sendImage(event, "images/Bot Cards/", model.getId(), model.getId());
+        SearchImageHelper.sendImage(event.getChannel(), "images/Bot Cards/", model.getId(), model.getId());
     }
 }

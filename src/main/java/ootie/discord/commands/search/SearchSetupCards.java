@@ -17,6 +17,6 @@ class SearchSetupCards extends SearchModelSubcommand<SetupCardModel> {
 
     @Override
     protected void sendResult(SetupCardModel model, SlashCommandInteractionEvent event) {
-        SearchImageHelper.sendImage(event, "images/Setup Cards/", model.getId(), model.getRealm());
+        SearchImageHelper.sendImage(event.getChannel(), "images/Setup Cards/", model.getId(), model.getRealm());
     }
 }

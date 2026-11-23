@@ -14,7 +14,7 @@ public class AreaModel implements ModelInterface, EmbeddableModel {
     private List<String> borders = new ArrayList<>();
     private List<String> mountainBorders = new ArrayList<>();
     private List<String> provinces = new ArrayList<>();
-    private String religion;
+    private String startingReligion1444;
     private String type;
     private int[] religiousCenter;
     private int[] infantryPlacement;

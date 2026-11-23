@@ -45,9 +45,9 @@ class Stats extends GameStateSubcommand {
                 .addOptions(new OptionData(
                         OptionType.BOOLEAN, Constants.CHANGED_FOCUS, "Set whether player has changed focus"))
                 .addOptions(new OptionData(OptionType.USER, Constants.PLAYER, "Player for which you set stats"))
-                .addOptions(new OptionData(
-                                OptionType.STRING, Constants.FACTION_COLOR, "Set stats for another Faction or Color")
-                        .setAutoComplete(true));
+                .addOptions(
+                        new OptionData(OptionType.STRING, Constants.REALM_COLOR, "Set stats for another Realm or Color")
+                                .setAutoComplete(true));
     }
 
     @Override
@@ -57,7 +57,7 @@ class Stats extends GameStateSubcommand {
 
         List<OptionMapping> optionMappings = event.getOptions();
         optionMappings.remove(event.getOption(Constants.PLAYER));
-        optionMappings.remove(event.getOption(Constants.FACTION_COLOR));
+        optionMappings.remove(event.getOption(Constants.REALM_COLOR));
         // NO OPTIONS SELECTED, JUST DISPLAY STATS
 
         if (optionMappings.isEmpty()) {

@@ -17,6 +17,6 @@ class SearchPowerStruggles extends SearchModelSubcommand<PowerStruggleModel> {
 
     @Override
     protected void sendResult(PowerStruggleModel model, SlashCommandInteractionEvent event) {
-        SearchImageHelper.sendImage(event, "images/Power Struggles/", model.getId(), model.getName());
+        SearchImageHelper.sendImage(event.getChannel(), "images/Power Struggles/", model.getId(), model.getName());
     }
 }

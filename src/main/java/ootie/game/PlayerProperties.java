@@ -24,12 +24,13 @@ public class PlayerProperties {
     private int diploPower = 3;
     private int militaryPower = 3;
     private int stability;
-    private int botPower;
+    private int botPower = 9;
     private int spentBotPower;
     private int colonists;
     private int prestige;
     private int manpowerExhausted;
     private int manpowerAvailable;
+    private String capital;
     private Army army1 = new Army();
     private Army army2 = new Army();
     private Army army3 = new Army();

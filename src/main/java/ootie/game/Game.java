@@ -27,22 +27,6 @@ public class Game extends GameProperties {
     @Getter
     private Map<String, Player> players = new LinkedHashMap<>();
 
-    // @Getter
-    // private final Map<Integer, Boolean> scPlayed = new HashMap<>();
-
-    // private List<String> listOfTilePinged = new ArrayList<>();
-
-    // // TODO (Jazz): These should be easily added to GameProperties
-    // @Getter
-    // private Map<String, Integer> thalnosUnits = new HashMap<>();
-
-    // @Getter
-    // private Map<String, String> currentAgendaVotes = new HashMap<>();
-
-    // @Setter
-    // @Getter
-    // private DisplayType displayTypeForced;
-
     public List<Player> getGamePlayers() {
         return new ArrayList<>(getPlayers().values());
     }
@@ -78,6 +62,39 @@ public class Game extends GameProperties {
         player.setUserName(name);
         players.put(id, player);
         return player;
+    }
+
+    public Player getNextPlayer(Player player) {
+        List<String> playerOrder = new ArrayList<>();
+        playerOrder.addAll(getPlayerOrder());
+        Collections.rotate(playerOrder, -1 * playerOrder.indexOf(player.getRealm()) - 1);
+        for (String realm : playerOrder) {
+            Player p2 = getPlayerByRealmOrColor(realm);
+            if (!p2.isPassed()) {
+                return p2;
+            }
+        }
+        return null;
+    }
+
+    public List<Player> getPassedPlayers() {
+        List<Player> passed = new ArrayList<>();
+        for (Player player : getGamePlayers()) {
+            if (player.isPassed()) {
+                passed.add(player);
+            }
+        }
+        return passed;
+    }
+
+    public boolean canPlayerTakeANormalTurn(Player player) {
+        String key = "remainingPlayersWithTurn";
+        if (!getStoredValue("passMoneyRanOut").isEmpty() && !getStoredValue(key).contains(player.getRealm())) {
+            return false;
+        } else {
+            setStoredValue(key, getStoredValue(key).replace(player.getRealm(), ""));
+            return true;
+        }
     }
 
     public Player getProvinceOwner(String province) {
